@@ -1,0 +1,87 @@
+2025-09-14T21:14:52.859307 INFO: Attempting direct fetch for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:52.912435 ERROR: Direct fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:52.912725 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:53.412715 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:14:53.414344 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:53.449412 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:53.449678 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:53.482908 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:14:53.483096 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:53.516649 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:53.516848 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:56.127421 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:14:56.127513 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:56.127539 INFO: Attempting archive.today for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:14:59.252900 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:00.168379 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:15:00.168834 INFO: Attempting archive.is for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:02.181996 INFO: Attempting archive.li for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:05.766963 INFO: Attempting archive.fo for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:07.925542 INFO: Attempting archive.ph for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:11.785408 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:11.933357 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:11.934836 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.289864 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:15:29.291387 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.410517 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-14T21:15:29.411956 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:15:29.412481 INFO: Google Search fallback: searching for 'mag 10Radiolab t.html'
+2025-09-14T21:15:29.453031 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:15:29.461263 INFO: Attempting direct fetch for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.506242 ERROR: Direct fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.506433 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.766748 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:15:29.768776 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.806278 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.806465 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.837540 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:15:29.837747 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.868185 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:29.868458 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:33.323847 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:15:33.323966 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:15:33.323995 INFO: Attempting archive.today for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:36.036089 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:36.925834 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:15:36.926262 INFO: Attempting archive.is for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:40.197970 INFO: Attempting archive.li for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:42.885281 INFO: Attempting archive.fo for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:45.264099 INFO: Attempting archive.ph for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:47.492576 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:47.522928 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:47.523108 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:48.844185 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:15:48.845671 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.015495 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-14T21:15:49.017102 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:15:49.017546 INFO: Google Search fallback: searching for 'mag 10Radiolab t.html'
+2025-09-14T21:15:49.050341 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:15:49.058334 INFO: Attempting direct fetch for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.090173 ERROR: Direct fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.090342 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.640762 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:15:49.642499 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.676335 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.676540 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.708932 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:15:49.709130 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.739585 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:49.739836 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:52.043515 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:15:52.044489 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:15:52.044552 INFO: Attempting archive.today for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:55.149328 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:56.056486 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:15:56.056946 INFO: Attempting archive.is for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:15:58.145155 INFO: Attempting archive.li for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:00.139249 INFO: Attempting archive.fo for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:02.652415 INFO: Attempting archive.ph for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:05.835892 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:05.998089 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:05.998309 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:07.270847 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:16:07.272120 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print
+2025-09-14T21:16:07.973815 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-14T21:16:07.975391 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/04/10/magazine/mag-10Radiolab-t.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:16:07.975983 INFO: Google Search fallback: searching for 'mag 10Radiolab t.html'
+2025-09-14T21:16:08.010691 INFO: Google Search fallback did not find alternative URL

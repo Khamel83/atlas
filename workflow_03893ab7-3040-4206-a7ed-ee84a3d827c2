@@ -1,0 +1,32 @@
+2025-09-15T05:39:28.562269 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:32.601530 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:39:32.674697 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:39:32.674811 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:39:32.674851 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:33.857811 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus: cannot use a string pattern on a bytes-like object
+2025-09-15T05:39:33.860068 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:34.392564 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:39:34.392701 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:39:34.392728 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:34.642553 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus: cannot use a string pattern on a bytes-like object
+2025-09-15T05:39:34.644852 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:35.195585 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T05:39:35.195717 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:39:35.195743 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:37.516002 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:39:37.516120 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:39:37.516146 INFO: Attempting archive.today for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:42.180236 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:43.065645 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:39:43.066159 INFO: Attempting archive.is for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:46.681621 INFO: Attempting archive.li for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:49.493766 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:52.651846 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:54.723091 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:39:56.089211 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:39:56.089330 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:39:56.089362 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:40:02.674930 INFO: Found Wayback snapshot from 20230326094116: http://web.archive.org/web/20230326094116/https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:40:02.675108 INFO: Timeframe 20231201 failed: [Errno 32] Broken pipe
+2025-09-15T05:40:14.070749 INFO: Found Wayback snapshot from 20191110020039: http://web.archive.org/web/20191110020039/https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus
+2025-09-15T05:40:15.688010 INFO: Successfully fetched https://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus using wayback_machine_enhanced

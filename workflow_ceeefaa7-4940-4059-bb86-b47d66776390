@@ -1,0 +1,114 @@
+2025-09-14T20:43:06.316855 INFO: Attempting direct fetch for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:07.024387 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:07.156846 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:07.156965 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:07.157002 INFO: Attempting Reader Mode strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:08.661225 ERROR: Reader mode fetch failed for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:43:08.661417 INFO: Attempting JS Disabled strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:09.379568 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:09.379699 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:09.379727 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:09.526155 ERROR: Refresh stop fetch failed for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:43:09.526516 INFO: Attempting Inspect Element strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:10.243938 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:10.244031 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:10.244059 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:12.755437 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:43:12.755604 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:12.755633 INFO: Attempting archive.today for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:15.818800 INFO: No existing archive found, creating new archive for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:16.699433 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:43:16.699914 INFO: Attempting archive.is for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:19.129545 INFO: Attempting archive.li for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:21.757942 INFO: Attempting archive.fo for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:24.489728 INFO: Attempting archive.ph for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:28.267859 INFO: Attempting Googlebot spoof for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:28.819489 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:28.819634 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:28.819666 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:32.054155 INFO: Found Wayback snapshot from 20200213152113: http://web.archive.org/web/20200213152113/https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:32.876995 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:32.877131 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:32.877157 INFO: Attempting Wayback Machine for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:32.987162 INFO: Found Wayback snapshot: http://web.archive.org/web/20200213152113/https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:33.295327 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:33.295483 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:33.295516 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html. Attempting Google Search fallback...
+2025-09-14T20:43:33.295697 INFO: Google Search fallback: searching for 'larry ray sarah lawrence students.html'
+2025-09-14T20:43:33.327571 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:43:33.339534 INFO: Attempting direct fetch for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:33.602681 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:33.733684 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:33.733803 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:33.733837 INFO: Attempting Reader Mode strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:33.926834 ERROR: Reader mode fetch failed for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:43:33.927026 INFO: Attempting JS Disabled strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:34.386385 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:34.386489 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:34.386515 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:34.758677 ERROR: Refresh stop fetch failed for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:43:34.759520 INFO: Attempting Inspect Element strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:35.420027 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:35.420155 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:35.420207 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:39.515971 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:43:39.516084 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:39.516114 INFO: Attempting archive.today for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:42.829889 INFO: No existing archive found, creating new archive for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:43.709446 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:43:43.709862 INFO: Attempting archive.is for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:46.256098 INFO: Attempting archive.li for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:49.507535 INFO: Attempting archive.fo for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:53.284758 INFO: Attempting archive.ph for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:57.001372 INFO: Attempting Googlebot spoof for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:57.236382 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:57.236511 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:57.236537 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:57.366112 INFO: Found Wayback snapshot from 20200213152113: http://web.archive.org/web/20200213152113/https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:57.862400 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:57.862532 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:57.862558 INFO: Attempting Wayback Machine for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:57.996575 INFO: Found Wayback snapshot: http://web.archive.org/web/20200213152113/https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:58.211701 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:58.211815 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:58.211864 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html. Attempting Google Search fallback...
+2025-09-14T20:43:58.211934 INFO: Google Search fallback: searching for 'larry ray sarah lawrence students.html'
+2025-09-14T20:43:58.243427 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:43:58.254017 INFO: Attempting direct fetch for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:58.519557 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:58.815410 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:58.815543 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:58.815620 INFO: Attempting Reader Mode strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:59.020325 ERROR: Reader mode fetch failed for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:43:59.020527 INFO: Attempting JS Disabled strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:59.456339 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:43:59.456454 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:43:59.456484 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:43:59.626694 ERROR: Refresh stop fetch failed for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:43:59.627457 INFO: Attempting Inspect Element strategy for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:00.474800 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:44:00.474911 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:44:00.474939 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:03.794536 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:44:03.794662 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:44:03.794694 INFO: Attempting archive.today for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:06.987165 INFO: No existing archive found, creating new archive for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:07.846114 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:44:07.846483 INFO: Attempting archive.is for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:10.861380 INFO: Attempting archive.li for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:14.200404 INFO: Attempting archive.fo for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:17.194836 INFO: Attempting archive.ph for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:20.788752 INFO: Attempting Googlebot spoof for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:21.335761 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:44:21.335879 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:44:21.335904 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:21.469978 INFO: Found Wayback snapshot from 20200213152113: http://web.archive.org/web/20200213152113/https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:21.708034 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:44:21.708161 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:44:21.708188 INFO: Attempting Wayback Machine for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:21.825911 INFO: Found Wayback snapshot: http://web.archive.org/web/20200213152113/https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html
+2025-09-14T20:44:22.042045 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T20:44:22.042154 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:44:22.042185 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/2019/04/larry-ray-sarah-lawrence-students.html. Attempting Google Search fallback...
+2025-09-14T20:44:22.042251 INFO: Google Search fallback: searching for 'larry ray sarah lawrence students.html'
+2025-09-14T20:44:22.074696 INFO: Google Search fallback did not find alternative URL

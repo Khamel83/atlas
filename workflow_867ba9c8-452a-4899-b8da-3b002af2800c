@@ -1,0 +1,120 @@
+2025-09-15T14:05:05.988168 INFO: Attempting direct fetch for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:06.877077 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:07.350859 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:07.350977 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:07.351015 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:07.536319 ERROR: Reader mode fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:05:07.538211 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:07.909985 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:07.990464 ERROR: Refresh stop fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:05:07.992905 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:08.526999 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:11.581675 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:05:11.581775 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:11.581801 INFO: Attempting archive.today for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:15.287114 INFO: No existing archive found, creating new archive for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:16.166920 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:05:16.167470 INFO: Attempting archive.is for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:19.136785 INFO: Attempting archive.li for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:22.274488 INFO: Attempting archive.fo for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:24.358377 INFO: Attempting archive.ph for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:27.766444 INFO: Attempting Googlebot spoof for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:28.203783 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:28.203883 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:28.203908 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:28.826284 INFO: Found Wayback snapshot from 20250526145812: http://web.archive.org/web/20250526145812/https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:30.453157 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:30.453259 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:30.453286 INFO: Attempting Wayback Machine for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:30.608538 INFO: Found Wayback snapshot: http://web.archive.org/web/20250526145812/https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:31.243699 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:31.243816 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:31.243849 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/tags/jack-dorsey/. Attempting Google Search fallback...
+2025-09-15T14:05:31.243914 INFO: Google Search fallback: searching for 'jack dorsey'
+2025-09-15T14:05:31.275914 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:05:31.284677 INFO: Attempting direct fetch for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:31.870662 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:32.246046 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:32.246151 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:32.246190 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:32.447460 ERROR: Reader mode fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:05:32.449167 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:32.933661 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:33.082993 ERROR: Refresh stop fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:05:33.087084 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:33.087282 ERROR: Inspect element fetch failed for https://nymag.com/tags/jack-dorsey/: [Errno 32] Broken pipe
+2025-09-15T14:05:33.087326 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:36.187271 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:05:36.187438 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:36.187467 INFO: Attempting archive.today for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:38.502690 INFO: No existing archive found, creating new archive for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:39.397169 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:05:39.397627 INFO: Attempting archive.is for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:42.501861 INFO: Attempting archive.li for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:45.109958 INFO: Attempting archive.fo for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:47.741817 INFO: Attempting archive.ph for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:51.246822 INFO: Attempting Googlebot spoof for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:51.655714 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:51.655836 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:51.655863 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:51.778248 INFO: Found Wayback snapshot from 20250526145812: http://web.archive.org/web/20250526145812/https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:52.360859 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:52.360978 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:52.361006 INFO: Attempting Wayback Machine for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:52.492657 INFO: Found Wayback snapshot: http://web.archive.org/web/20250526145812/https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:53.070405 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:53.070507 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:53.070540 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/tags/jack-dorsey/. Attempting Google Search fallback...
+2025-09-15T14:05:53.070660 INFO: Google Search fallback: searching for 'jack dorsey'
+2025-09-15T14:05:53.103194 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:05:53.114131 INFO: Attempting direct fetch for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:53.670718 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:54.063747 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:05:54.063853 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:05:54.063894 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:54.198624 ERROR: Reader mode fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:05:54.200210 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:54.576109 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:54.671136 ERROR: Refresh stop fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:05:54.673192 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:05:55.558752 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:00.539761 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:06:00.539870 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:00.539896 INFO: Attempting archive.today for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:02.372177 INFO: No existing archive found, creating new archive for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:03.234538 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:06:03.235247 INFO: Attempting archive.is for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:06.887628 INFO: Attempting archive.li for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:10.199293 INFO: Attempting archive.fo for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:14.041337 INFO: Attempting archive.ph for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:15.935967 INFO: Attempting Googlebot spoof for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:16.431095 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:06:16.431218 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:16.431243 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:16.655381 INFO: Found Wayback snapshot from 20250526145812: http://web.archive.org/web/20250526145812/https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:17.120881 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:06:17.121002 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:17.121027 INFO: Attempting Wayback Machine for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:17.237262 INFO: Found Wayback snapshot: http://web.archive.org/web/20250526145812/https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:17.697679 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:06:17.697800 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:17.697833 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/tags/jack-dorsey/. Attempting Google Search fallback...
+2025-09-15T14:06:17.697898 INFO: Google Search fallback: searching for 'jack dorsey'
+2025-09-15T14:06:17.733503 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:06:17.740743 INFO: Attempting direct fetch for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:18.221579 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:06:18.764020 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:06:18.764274 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:18.764318 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:18.883112 ERROR: Reader mode fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:06:18.885421 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:19.281707 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:19.414073 ERROR: Refresh stop fetch failed for https://nymag.com/tags/jack-dorsey/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:06:19.416527 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:19.967208 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:22.894673 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:06:22.894788 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:22.894816 INFO: Attempting archive.today for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:25.743365 INFO: No existing archive found, creating new archive for https://nymag.com/tags/jack-dorsey/
+2025-09-15T14:06:26.634334 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:06:26.635115 INFO: Attempting archive.is for https://nymag.com/tags/jack-dorsey/

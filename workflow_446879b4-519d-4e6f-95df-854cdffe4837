@@ -1,0 +1,152 @@
+2025-09-15T14:50:23.106121 INFO: Attempting direct fetch for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:23.392917 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:23.568656 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:23.568776 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:23.568820 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:23.649427 ERROR: Reader mode fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:50:23.651407 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:23.827704 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:23.827818 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:23.827845 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:23.973765 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:50:23.975673 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:24.347411 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:24.347521 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:24.347552 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:27.472288 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:50:27.472401 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:27.472428 INFO: Attempting archive.today for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:31.110091 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:32.016692 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:50:32.017088 INFO: Attempting archive.is for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:35.200373 INFO: Attempting archive.li for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:37.241101 INFO: Attempting archive.fo for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:40.288578 INFO: Attempting archive.ph for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:43.867622 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:44.224209 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:44.224325 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:44.224352 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:44.993257 INFO: Found Wayback snapshot from 20250909210802: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:49.604919 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:49.605043 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:49.605068 INFO: Attempting Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:49.739170 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:49.969638 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:49.969754 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:49.969791 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/sarah-perez/. Attempting Google Search fallback...
+2025-09-15T14:50:49.969856 INFO: Google Search fallback: searching for 'sarah perez'
+2025-09-15T14:50:50.002317 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:50:50.009946 INFO: Attempting direct fetch for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:50.318923 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:50.487504 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:50.487674 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:50.487726 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:50.568017 ERROR: Reader mode fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:50:50.569615 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:50.805028 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:50.805152 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:50.805184 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:50.890787 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:50:50.892352 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:51.258424 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:50:51.258534 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:51.258562 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:53.687259 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:50:53.687370 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:50:53.687398 INFO: Attempting archive.today for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:56.799713 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:50:57.710902 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:50:57.711337 INFO: Attempting archive.is for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:00.581827 INFO: Attempting archive.li for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:04.026081 INFO: Attempting archive.fo for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:06.184793 INFO: Attempting archive.ph for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:09.377780 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:09.600349 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:09.600471 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:09.600499 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:09.712740 INFO: Found Wayback snapshot from 20250909210802: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:09.961539 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:09.961679 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:09.961708 INFO: Attempting Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:10.093126 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:10.331364 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:10.331482 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:10.331517 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/sarah-perez/. Attempting Google Search fallback...
+2025-09-15T14:51:10.331611 INFO: Google Search fallback: searching for 'sarah perez'
+2025-09-15T14:51:10.363310 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:51:10.383300 INFO: Attempting direct fetch for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:10.820312 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:10.995046 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:10.995170 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:10.995214 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:11.079082 ERROR: Reader mode fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:51:11.081236 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:11.259215 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:11.259327 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:11.259353 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:11.356866 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:51:11.358807 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:11.736876 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:11.736974 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:11.737000 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:14.789883 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:51:14.789982 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:14.790010 INFO: Attempting archive.today for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:18.207160 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:19.103624 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:51:19.104064 INFO: Attempting archive.is for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:21.471232 INFO: Attempting archive.li for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:24.875394 INFO: Attempting archive.fo for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:27.333815 INFO: Attempting archive.ph for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:30.970507 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:31.197238 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:31.197361 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:31.197391 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:31.429322 INFO: Found Wayback snapshot from 20250909210802: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:31.678267 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:31.678375 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:31.678401 INFO: Attempting Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:31.809950 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:32.060809 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:32.060935 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:32.060988 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/sarah-perez/. Attempting Google Search fallback...
+2025-09-15T14:51:32.061053 INFO: Google Search fallback: searching for 'sarah perez'
+2025-09-15T14:51:32.061113 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T14:51:32.072028 INFO: Attempting direct fetch for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:32.355456 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:32.532471 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:32.532570 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:32.532665 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:32.631089 ERROR: Reader mode fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:51:32.632767 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:33.087244 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:33.087355 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:33.087382 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:33.181306 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/sarah-perez/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:51:33.183731 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:33.497276 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:33.497386 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:33.497413 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:36.680686 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:51:36.680801 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:36.680831 INFO: Attempting archive.today for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:40.956872 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:41.878378 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:51:41.878933 INFO: Attempting archive.is for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:45.737467 INFO: Attempting archive.li for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:49.563356 INFO: Attempting archive.fo for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:52.788157 INFO: Attempting archive.ph for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:55.377276 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:55.673288 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:55.673406 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:55.673439 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:55.827894 INFO: Found Wayback snapshot from 20250909210802: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:56.060820 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:56.060933 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:56.060959 INFO: Attempting Wayback Machine for https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:56.180113 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909210802/https://techcrunch.com/author/sarah-perez/
+2025-09-15T14:51:56.419390 INFO: Content is very short (70 words). Likely a teaser.
+2025-09-15T14:51:56.419504 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:51:56.419544 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/sarah-perez/. Attempting Google Search fallback...
+2025-09-15T14:51:56.419636 INFO: Google Search fallback: searching for 'sarah perez'
+2025-09-15T14:51:56.451306 INFO: Google Search fallback did not find alternative URL

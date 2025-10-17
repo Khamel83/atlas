@@ -1,0 +1,128 @@
+2025-09-15T12:03:48.569967 INFO: Attempting direct fetch for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:04:18.858202 ERROR: Direct fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T12:04:18.858332 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:04:39.011909 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:04:39.012050 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:04:59.148143 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:04:59.148287 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:02.209262 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:22.292896 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:05:22.293043 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:26.289648 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:05:26.289757 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:05:26.289785 INFO: Attempting archive.today for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:31.209352 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:32.131897 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:05:32.132383 INFO: Attempting archive.is for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:34.782433 INFO: Attempting archive.li for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:37.396555 INFO: Attempting archive.fo for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:40.488237 INFO: Attempting archive.ph for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:43.940525 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:59.012976 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T12:05:59.013117 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:05:59.964541 INFO: Found Wayback snapshot from 20250127200709: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:06:07.560034 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:06:07.560143 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:06:07.560170 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:06:07.676488 INFO: Found Wayback snapshot: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:06:07.993660 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:06:07.993771 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:06:07.993803 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/coronavirus/. Attempting Google Search fallback...
+2025-09-15T12:06:07.993867 INFO: Google Search fallback: searching for 'coronavirus'
+2025-09-15T12:06:08.026454 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:06:08.033976 INFO: Attempting direct fetch for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:06:38.132204 ERROR: Direct fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T12:06:38.132342 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:06:58.268407 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:06:58.268535 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:18.344301 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:07:18.344433 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:21.460887 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:41.541183 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:07:41.541312 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:44.688348 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:07:44.688461 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:07:44.688487 INFO: Attempting archive.today for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:48.919250 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:49.831185 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:07:49.832146 INFO: Attempting archive.is for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:52.756478 INFO: Attempting archive.li for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:54.899445 INFO: Attempting archive.fo for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:07:58.700315 INFO: Attempting archive.ph for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:01.530520 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:16.656944 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T12:08:16.657052 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:16.812890 INFO: Found Wayback snapshot from 20250127200709: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:17.368065 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:08:17.368171 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:08:17.368198 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:17.604273 INFO: Found Wayback snapshot: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:17.940366 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:08:17.940482 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:08:17.940515 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/coronavirus/. Attempting Google Search fallback...
+2025-09-15T12:08:17.940580 INFO: Google Search fallback: searching for 'coronavirus'
+2025-09-15T12:08:17.973396 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:08:17.981518 INFO: Attempting direct fetch for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:17.981707 ERROR: Direct fetch failed for https://www.washingtonpost.com/coronavirus/: [Errno 32] Broken pipe
+2025-09-15T12:08:17.981760 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:38.109167 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:08:38.109321 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:08:58.214643 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:08:58.214789 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:01.314336 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:21.454361 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:09:21.454537 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:24.543060 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:09:24.543170 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:09:24.543196 INFO: Attempting archive.today for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:27.821997 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:28.732802 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:09:28.734049 INFO: Attempting archive.is for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:31.310552 INFO: Attempting archive.li for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:34.136732 INFO: Attempting archive.fo for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:36.843644 INFO: Attempting archive.ph for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:40.632905 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:55.711904 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T12:09:55.712037 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:56.023573 INFO: Found Wayback snapshot from 20250127200709: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:56.350466 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:09:56.350600 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:09:56.350632 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:56.519567 INFO: Found Wayback snapshot: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:09:56.835077 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:09:56.835191 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:09:56.835222 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/coronavirus/. Attempting Google Search fallback...
+2025-09-15T12:09:56.835284 INFO: Google Search fallback: searching for 'coronavirus'
+2025-09-15T12:09:56.868064 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:09:56.875537 INFO: Attempting direct fetch for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:10:26.963158 ERROR: Direct fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T12:10:26.963307 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:10:47.116010 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:10:47.116152 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:07.251414 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:11:07.251539 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:10.367222 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:30.490791 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:11:30.490933 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:33.289941 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:11:33.290047 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:11:33.290073 INFO: Attempting archive.today for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:37.594754 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:38.493029 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:11:38.493981 INFO: Attempting archive.is for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:41.080181 INFO: Attempting archive.li for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:44.408989 INFO: Attempting archive.fo for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:48.308535 INFO: Attempting archive.ph for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:11:52.000326 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:12:07.123486 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T12:12:07.123704 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:12:11.349961 INFO: Found Wayback snapshot from 20250127200709: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:12:16.716890 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:12:16.717011 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:12:16.717039 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:12:16.856027 INFO: Found Wayback snapshot: http://web.archive.org/web/20250127200709/https://www.washingtonpost.com/coronavirus/
+2025-09-15T12:12:17.167982 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:12:17.168082 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:12:17.168115 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/coronavirus/. Attempting Google Search fallback...
+2025-09-15T12:12:17.168176 INFO: Google Search fallback: searching for 'coronavirus'
+2025-09-15T12:12:17.202065 INFO: Google Search fallback did not find alternative URL

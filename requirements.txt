@@ -1,0 +1,43 @@
+# Atlas - Personal Knowledge Automation System
+# Core dependencies for content ingestion and management
+
+# Content ingestion and processing
+feedparser>=6.0.0
+readability-lxml>=0.8.1
+yt-dlp>=2023.10.0
+
+# Communication interfaces
+python-telegram-bot>=20.0
+
+# Configuration and data handling
+pyyaml>=6.0
+requests>=2.31.0
+
+# Gmail API
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.1.0
+
+# YouTube API
+google-api-python-client>=2.100.0
+
+# Database
+aiosqlite>=0.19.0
+
+# Performance and monitoring
+psutil>=5.9.0
+uvicorn>=0.24.0
+
+# CLI and utilities
+click>=8.1.0
+rich>=13.0.0
+
+# Development and testing (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Logging
+structlog>=23.0.0

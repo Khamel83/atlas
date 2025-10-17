@@ -1,0 +1,102 @@
+2025-09-14T20:21:41.254363 INFO: Attempting direct fetch for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:41.573228 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:21:41.581954 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:21:41.582039 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:21:41.582074 INFO: Attempting Reader Mode strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:41.821737 ERROR: Reader mode fetch failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:21:41.823291 INFO: Attempting JS Disabled strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:42.095027 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-14T20:21:42.095165 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:21:42.095193 INFO: Attempting Refresh Stop strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:42.331078 ERROR: Refresh stop fetch failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:21:42.332373 INFO: Attempting Inspect Element strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:42.578981 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-14T20:21:42.579082 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:21:42.579146 INFO: Attempting removepaywalls.com bypass for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:45.620680 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:21:45.620792 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:21:45.620819 INFO: Attempting archive.today for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:48.350015 INFO: No existing archive found, creating new archive for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:49.222817 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:21:49.223225 INFO: Attempting archive.is for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:52.476748 INFO: Attempting archive.li for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:55.312903 INFO: Attempting archive.fo for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:21:57.961461 INFO: Attempting archive.ph for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:00.507409 INFO: Attempting Googlebot spoof for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:00.749540 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:22:00.749696 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:00.749725 INFO: Attempting Enhanced Wayback Machine for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:20.885898 ERROR: Enhanced Wayback Machine failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: No archived snapshots found in any timeframe
+2025-09-14T20:22:20.887357 INFO: Attempting Wayback Machine for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:21.009059 ERROR: Wayback Machine failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: No archived snapshots found
+2025-09-14T20:22:21.010975 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false. Attempting Google Search fallback...
+2025-09-14T20:22:21.011792 INFO: Google Search fallback: searching for 'sign in'
+2025-09-14T20:22:21.047044 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:22:21.055992 INFO: Attempting direct fetch for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:21.321992 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:22:21.330462 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:22:21.330561 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:21.330616 INFO: Attempting Reader Mode strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:21.560618 ERROR: Reader mode fetch failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:22:21.562406 INFO: Attempting JS Disabled strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:21.832364 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-14T20:22:21.832475 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:21.832503 INFO: Attempting Refresh Stop strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:22.059649 ERROR: Refresh stop fetch failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:22:22.062731 INFO: Attempting Inspect Element strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:22.315111 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-14T20:22:22.315220 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:22.315260 INFO: Attempting removepaywalls.com bypass for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:24.994117 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:22:24.994237 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:24.994264 INFO: Attempting archive.today for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:28.505933 INFO: No existing archive found, creating new archive for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:29.414406 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:22:29.415254 INFO: Attempting archive.is for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:32.452372 INFO: Attempting archive.li for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:36.154905 INFO: Attempting archive.fo for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:39.832003 INFO: Attempting archive.ph for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:42.524047 INFO: Attempting Googlebot spoof for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:42.753445 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:22:42.753555 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:42.753580 INFO: Attempting Enhanced Wayback Machine for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:44.226363 ERROR: Enhanced Wayback Machine failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: No archived snapshots found in any timeframe
+2025-09-14T20:22:44.227960 INFO: Attempting Wayback Machine for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:44.347308 ERROR: Wayback Machine failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: No archived snapshots found
+2025-09-14T20:22:44.349338 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false. Attempting Google Search fallback...
+2025-09-14T20:22:44.350213 INFO: Google Search fallback: searching for 'sign in'
+2025-09-14T20:22:44.384406 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:22:44.392141 INFO: Attempting direct fetch for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:44.657299 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:22:44.670613 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:22:44.670758 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:44.670803 INFO: Attempting Reader Mode strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:44.897377 ERROR: Reader mode fetch failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:22:44.899434 INFO: Attempting JS Disabled strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:45.143662 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-14T20:22:45.143833 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:45.143881 INFO: Attempting Refresh Stop strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:45.380034 ERROR: Refresh stop fetch failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:22:45.382215 INFO: Attempting Inspect Element strategy for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:45.625303 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-14T20:22:45.625430 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:45.625458 INFO: Attempting removepaywalls.com bypass for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:48.890140 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:22:48.890262 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:22:48.890290 INFO: Attempting archive.today for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:51.769934 INFO: No existing archive found, creating new archive for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:52.648234 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:22:52.649079 INFO: Attempting archive.is for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:56.406231 INFO: Attempting archive.li for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:22:58.919741 INFO: Attempting archive.fo for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:23:02.684716 INFO: Attempting archive.ph for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:23:04.621816 INFO: Attempting Googlebot spoof for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:23:04.845992 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-14T20:23:04.846092 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:04.846119 INFO: Attempting Enhanced Wayback Machine for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:23:06.142353 ERROR: Enhanced Wayback Machine failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: No archived snapshots found in any timeframe
+2025-09-14T20:23:06.143751 INFO: Attempting Wayback Machine for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false
+2025-09-14T20:23:06.274134 ERROR: Wayback Machine failed for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false: No archived snapshots found
+2025-09-14T20:23:06.276218 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/sign-in?redirect=%2Fp%2Fthe-ultimate-guide-to-negotiating&for_pub=lenny&change_user=false. Attempting Google Search fallback...
+2025-09-14T20:23:06.277132 INFO: Google Search fallback: searching for 'sign in'
+2025-09-14T20:23:06.310491 INFO: Google Search fallback did not find alternative URL

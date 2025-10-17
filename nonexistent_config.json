@@ -1,0 +1,19 @@
+{
+  "worker_command": [
+    "python3",
+    "-c",
+    "import time; time.sleep(60)"
+  ],
+  "min_workers": 1,
+  "max_workers": 5,
+  "scale_up_threshold": 100,
+  "scale_down_threshold": 10,
+  "scale_up_delay": 30,
+  "scale_down_delay": 300,
+  "health_check_interval": 30,
+  "worker_timeout": 3600,
+  "resource_limits": {
+    "max_memory_percent": 80,
+    "max_cpu_percent": 90
+  }
+}

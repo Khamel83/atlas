@@ -1,0 +1,120 @@
+2025-09-15T16:48:01.982035 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:02.189949 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:02.278419 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:02.278522 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:02.278565 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:02.439000 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:48:02.442968 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:02.718442 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:02.718557 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:02.718634 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:02.772097 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:48:02.774811 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:03.150477 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T16:48:03.150633 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:03.150667 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:05.550126 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:48:05.550241 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:05.550267 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:08.861401 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:09.756506 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:48:09.756986 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:11.889987 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:13.827883 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:16.643261 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:19.141466 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:19.398802 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:19.398930 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:19.398958 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:24.979149 INFO: Found Wayback snapshot from 20231204100418: http://web.archive.org/web/20231204100418/https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:30.182828 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:30.182980 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:30.183008 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:30.358203 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: No archived snapshots found
+2025-09-15T16:48:30.361018 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke. Attempting Google Search fallback...
+2025-09-15T16:48:30.361667 INFO: Google Search fallback: searching for 'on succession jeremy strong doesnt get the joke'
+2025-09-15T16:48:30.395945 INFO: Google Search fallback did not find alternative URL
+2025-09-15T16:48:30.406650 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:30.506980 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:30.576653 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:30.576776 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:30.576818 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:30.632302 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:48:30.635105 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:30.815271 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:30.815384 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:30.815413 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:30.867806 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:48:30.870365 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:31.179455 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T16:48:31.179560 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:31.179604 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:35.796251 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:48:35.796358 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:35.796384 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:39.299301 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:40.174952 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:48:40.175520 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:42.641236 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:45.731320 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:49.131178 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:49.141839 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:49.236452 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:49.433633 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:49.433761 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:49.433802 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:49.490239 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:48:49.492847 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:49.671809 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:48:49.671921 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:49.671948 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:49.724583 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:48:49.727099 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:50.039010 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T16:48:50.039112 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:50.039138 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:54.861628 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:48:54.861752 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:48:54.861780 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:48:59.293680 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:00.205825 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:49:00.206319 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:03.246520 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:05.865224 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:08.173739 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:10.092323 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:10.360480 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:49:10.360632 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:49:10.360665 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:10.637650 INFO: Found Wayback snapshot from 20231204100418: http://web.archive.org/web/20231204100418/https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:10.841256 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:49:10.841390 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:49:10.841416 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:10.972560 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: No archived snapshots found
+2025-09-15T16:49:10.975284 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke. Attempting Google Search fallback...
+2025-09-15T16:49:10.975811 INFO: Google Search fallback: searching for 'on succession jeremy strong doesnt get the joke'
+2025-09-15T16:49:11.008931 INFO: Google Search fallback did not find alternative URL
+2025-09-15T16:49:11.016917 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:11.115278 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:49:11.184276 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:49:11.184402 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:49:11.184445 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:11.239686 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:49:11.242421 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:11.435827 INFO: Paywall element '.paywall' detected.
+2025-09-15T16:49:11.435941 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:49:11.435973 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:11.489767 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke: cannot use a string pattern on a bytes-like object
+2025-09-15T16:49:11.492190 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:11.811632 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T16:49:11.811739 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:49:11.811766 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:16.430079 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:49:16.430202 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:49:16.430227 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:20.974942 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:21.851509 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:49:21.852132 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:24.412017 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:26.506493 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke
+2025-09-15T16:49:28.710450 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/12/13/on-succession-jeremy-strong-doesnt-get-the-joke

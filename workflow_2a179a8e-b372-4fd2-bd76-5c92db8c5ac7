@@ -1,0 +1,112 @@
+2025-09-14T20:32:11.405044 INFO: Attempting direct fetch for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:12.258700 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:12.927957 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:12.928080 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:12.928120 INFO: Attempting Reader Mode strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:13.613971 ERROR: Reader mode fetch failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: cannot use a string pattern on a bytes-like object
+2025-09-14T20:32:13.616434 INFO: Attempting JS Disabled strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:13.916822 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:13.916936 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:13.916962 INFO: Attempting Refresh Stop strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:14.019704 ERROR: Refresh stop fetch failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: cannot use a string pattern on a bytes-like object
+2025-09-14T20:32:14.022271 INFO: Attempting Inspect Element strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:14.757970 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:14.758078 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:14.758106 INFO: Attempting removepaywalls.com bypass for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:17.534930 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:32:17.535055 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:17.535084 INFO: Attempting archive.today for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:20.159748 INFO: No existing archive found, creating new archive for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:21.047235 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:32:21.048043 INFO: Attempting archive.is for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:23.019544 INFO: Attempting archive.li for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:26.208085 INFO: Attempting archive.fo for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:28.337652 INFO: Attempting archive.ph for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:31.007691 INFO: Attempting Googlebot spoof for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:31.536103 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:31.536226 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:31.536251 INFO: Attempting Enhanced Wayback Machine for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:32.248265 INFO: Found Wayback snapshot from 20250815115825: http://web.archive.org/web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:33.501208 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:33.501309 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:33.501349 INFO: Attempting Wayback Machine for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:33.745184 INFO: Found Wayback snapshot: http://web.archive.org/web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:34.617582 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:34.617776 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:34.617809 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101. Attempting Google Search fallback...
+2025-09-14T20:32:34.617872 INFO: Google Search fallback: searching for 'id1544171101'
+2025-09-14T20:32:34.670870 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:32:34.683169 INFO: Attempting direct fetch for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:35.273409 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:35.743685 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:35.743800 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:35.743838 INFO: Attempting Reader Mode strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:35.830403 ERROR: Reader mode fetch failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: cannot use a string pattern on a bytes-like object
+2025-09-14T20:32:35.831920 INFO: Attempting JS Disabled strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:36.223921 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:36.224011 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:36.224039 INFO: Attempting Refresh Stop strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:36.413629 ERROR: Refresh stop fetch failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: cannot use a string pattern on a bytes-like object
+2025-09-14T20:32:36.415443 INFO: Attempting Inspect Element strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:37.172397 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:37.172506 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:37.172533 INFO: Attempting removepaywalls.com bypass for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:40.742560 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:32:40.742677 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:40.742707 INFO: Attempting archive.today for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:43.354733 INFO: No existing archive found, creating new archive for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:44.238289 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:32:44.239027 INFO: Attempting archive.is for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:47.883692 INFO: Attempting archive.li for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:50.535258 INFO: Attempting archive.fo for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:53.165534 INFO: Attempting archive.ph for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:56.638262 INFO: Attempting Googlebot spoof for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:57.052485 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:57.052617 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:57.052647 INFO: Attempting Enhanced Wayback Machine for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:57.183865 INFO: Found Wayback snapshot from 20250815115825: http://web.archive.org/web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:57.612114 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:57.612233 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:57.612269 INFO: Attempting Wayback Machine for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:57.727876 INFO: Found Wayback snapshot: http://web.archive.org/web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:57.751230 ERROR: Wayback Machine failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2329b9a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-14T20:32:57.751343 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101. Attempting Google Search fallback...
+2025-09-14T20:32:57.751410 INFO: Google Search fallback: searching for 'id1544171101'
+2025-09-14T20:32:57.783269 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:32:57.791697 INFO: Attempting direct fetch for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:58.193370 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:58.699797 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:58.699906 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:58.699943 INFO: Attempting Reader Mode strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:58.893052 ERROR: Reader mode fetch failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: cannot use a string pattern on a bytes-like object
+2025-09-14T20:32:58.894951 INFO: Attempting JS Disabled strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:59.291734 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:32:59.291846 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:32:59.291875 INFO: Attempting Refresh Stop strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:32:59.482497 ERROR: Refresh stop fetch failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: cannot use a string pattern on a bytes-like object
+2025-09-14T20:32:59.484549 INFO: Attempting Inspect Element strategy for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:00.003420 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:33:00.003534 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:33:00.003576 INFO: Attempting removepaywalls.com bypass for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:04.868628 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:33:04.868779 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:33:04.868809 INFO: Attempting archive.today for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:08.203971 INFO: No existing archive found, creating new archive for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:09.098772 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:33:09.099403 INFO: Attempting archive.is for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:11.675024 INFO: Attempting archive.li for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:15.051527 INFO: Attempting archive.fo for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:17.192245 INFO: Attempting archive.ph for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:21.019681 INFO: Attempting Googlebot spoof for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:21.909041 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:33:21.909156 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:33:21.909183 INFO: Attempting Enhanced Wayback Machine for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:22.039671 INFO: Found Wayback snapshot from 20250815115825: http://web.archive.org/web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:22.601122 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-14T20:33:22.601235 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:33:22.601406 INFO: Attempting Wayback Machine for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:22.729307 INFO: Found Wayback snapshot: http://web.archive.org/web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101
+2025-09-14T20:33:22.752835 ERROR: Wayback Machine failed for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /web/20250815115825/https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x24f92c10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-14T20:33:22.752943 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.apple.com/us/podcast/under-the-influence-with-jo-piazza/id1544171101. Attempting Google Search fallback...
+2025-09-14T20:33:22.753016 INFO: Google Search fallback: searching for 'id1544171101'
+2025-09-14T20:33:22.841640 INFO: Google Search fallback did not find alternative URL

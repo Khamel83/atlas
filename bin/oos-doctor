@@ -1,0 +1,308 @@
+#!/usr/bin/env python3
+"""
+OOS Doctor - Auto-Documentation and Consistency CLI
+
+Interactive tool for maintaining code quality, documentation, and consistency.
+"Saves you from yourself" with automated checks and smart suggestions.
+"""
+
+import sys
+import asyncio
+import json
+from pathlib import Path
+from typing import List, Dict, Any
+
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
+from auto_documentation import get_auto_documentation_system, AutoDocumentationSystem
+
+
+class OOSDoctor:
+    """Interactive OOS Doctor CLI"""
+
+    def __init__(self):
+        self.system = get_auto_documentation_system()
+
+    async def run_interactive(self):
+        """Run interactive doctor session"""
+        print("🩺 OOS Doctor - Code Health Checkup")
+        print("=" * 50)
+        print()
+
+        # Get current directory files
+        current_dir = Path.cwd()
+        python_files = list(current_dir.rglob("*.py"))
+
+        if not python_files:
+            print("❌ No Python files found in current directory")
+            return
+
+        print(f"📁 Found {len(python_files)} Python files")
+        print()
+
+        # Offer options
+        print("🔍 What would you like me to check?")
+        print("  1. Quick health check (consistency only)")
+        print("  2. Full documentation review")
+        print("  3. Fix all auto-fixable issues")
+        print("  4. Setup auto-documentation system")
+        print("  5. Check specific files")
+
+        while True:
+            choice = input("\nChoose option (1-5): ").strip()
+            if choice in ['1', '2', '3', '4', '5']:
+                break
+            print("❌ Please enter 1-5")
+
+        if choice == '1':
+            await self._quick_health_check(python_files)
+        elif choice == '2':
+            await self._full_documentation_review(python_files)
+        elif choice == '3':
+            await self._fix_all_issues(python_files)
+        elif choice == '4':
+            await self._setup_system()
+        elif choice == '5':
+            await self._check_specific_files()
+
+    async def _quick_health_check(self, files: List[Path]):
+        """Quick consistency health check"""
+        print("\n🔍 Running quick health check...")
+
+        file_paths = [str(f) for f in files[:10]]  # Limit to first 10 files
+        issues = await self.system.consistency_enforcer.check_consistency(file_paths)
+
+        self._display_health_summary(issues)
+
+        if issues:
+            auto_fixable = [issue for issue in issues if issue.get('auto_fix', False)]
+            if auto_fixable:
+                print(f"\n💡 {len(auto_fixable)} issues can be auto-fixed")
+                fix = input("Fix them now? (y/n): ").strip().lower()
+                if fix in ['y', 'yes']:
+                    fixed = await self.system.consistency_enforcer.auto_fix_issues(auto_fixable)
+                    print(f"✅ Fixed issues in {len(fixed)} files")
+        else:
+            print("🎉 No consistency issues found!")
+
+    async def _full_documentation_review(self, files: List[Path]):
+        """Full documentation review"""
+        print("\n📚 Running full documentation review...")
+
+        file_paths = [str(f) for f in files]
+        result = await self.system.process_files(file_paths)
+
+        print(f"\n📊 Documentation Review Results:")
+        print(f"   Files processed: {len(result.files_processed)}")
+        print(f"   Documentation gaps: {len(result.documentation_generated)}")
+        print(f"   Consistency issues: {len(result.consistency_issues)}")
+
+        if result.documentation_generated:
+            print(f"\n📝 Files needing documentation:")
+            for doc in result.documentation_generated[:5]:
+                print(f"   - {doc}")
+            if len(result.documentation_generated) > 5:
+                print(f"   ... and {len(result.documentation_generated) - 5} more")
+
+        if result.consistency_issues:
+            self._display_consistency_issues(result.consistency_issues[:5])
+
+        if result.commit_suggested:
+            print(f"\n💭 Suggested commit message:")
+            print(f"   {result.commit_message}")
+
+    async def _fix_all_issues(self, files: List[Path]):
+        """Fix all auto-fixable issues"""
+        print("\n🔧 Fixing all auto-fixable issues...")
+
+        file_paths = [str(f) for f in files]
+        issues = await self.system.consistency_enforcer.check_consistency(file_paths)
+
+        auto_fixable = [issue for issue in issues if issue.get('auto_fix', False)]
+
+        if not auto_fixable:
+            print("✅ No auto-fixable issues found")
+            return
+
+        print(f"🔨 Found {len(auto_fixable)} auto-fixable issues")
+
+        # Show what will be fixed
+        for issue in auto_fixable[:3]:
+            print(f"   - {issue['file']}: {issue['message']}")
+        if len(auto_fixable) > 3:
+            print(f"   ... and {len(auto_fixable) - 3} more")
+
+        confirm = input(f"\nFix all {len(auto_fixable)} issues? (y/n): ").strip().lower()
+        if confirm in ['y', 'yes']:
+            fixed_files = await self.system.consistency_enforcer.auto_fix_issues(auto_fixable)
+            print(f"✅ Fixed issues in {len(fixed_files)} files")
+
+            # Offer to commit
+            if fixed_files:
+                commit = input("Create commit for fixes? (y/n): ").strip().lower()
+                if commit in ['y', 'yes']:
+                    message = await self.system.git_integration.suggest_commit_message(fixed_files)
+                    success = await self.system.git_integration.create_smart_commit(fixed_files, message)
+                    if success:
+                        print("✅ Changes committed successfully")
+                    else:
+                        print("❌ Failed to create commit")
+        else:
+            print("❌ Fix operation cancelled")
+
+    async def _setup_system(self):
+        """Setup auto-documentation system"""
+        print("\n⚙️  Setting up auto-documentation system...")
+
+        try:
+            await self.system.initialize()
+            print("✅ Auto-documentation system initialized!")
+            print()
+            print("📋 What was set up:")
+            print("   - Pre-commit hooks for consistency checks")
+            print("   - Post-commit hooks for documentation reminders")
+            print("   - Git integration for smart commit messages")
+            print()
+            print("💡 Next steps:")
+            print("   - Run 'oos-doctor' regularly to maintain code health")
+            print("   - Use 'git commit' as usual - hooks will run automatically")
+            print("   - Check documentation with 'oos-doctor' option 2")
+
+        except Exception as e:
+            print(f"❌ Setup failed: {e}")
+
+    async def _check_specific_files(self):
+        """Check specific files"""
+        print("\n📂 Enter file paths to check (one per line, empty line to finish):")
+
+        files = []
+        while True:
+            file_path = input("File: ").strip()
+            if not file_path:
+                break
+
+            path = Path(file_path)
+            if path.exists():
+                files.append(str(path))
+                print(f"   ✅ Added {file_path}")
+            else:
+                print(f"   ❌ File not found: {file_path}")
+
+        if not files:
+            print("❌ No valid files specified")
+            return
+
+        print(f"\n🔍 Checking {len(files)} files...")
+        result = await self.system.process_files(files)
+
+        self._display_detailed_results(result)
+
+    def _display_health_summary(self, issues: List[Dict[str, Any]]):
+        """Display health check summary"""
+        if not issues:
+            print("✅ All consistency checks passed!")
+            return
+
+        # Group by severity
+        errors = [i for i in issues if i['severity'] == 'error']
+        warnings = [i for i in issues if i['severity'] == 'warning']
+        info = [i for i in issues if i['severity'] == 'info']
+
+        print(f"\n📊 Health Check Results:")
+        if errors:
+            print(f"   ❌ Errors: {len(errors)}")
+        if warnings:
+            print(f"   ⚠️  Warnings: {len(warnings)}")
+        if info:
+            print(f"   ℹ️  Info: {len(info)}")
+
+        # Show top issues
+        print(f"\n🔍 Top issues:")
+        for issue in issues[:3]:
+            severity_icon = {"error": "❌", "warning": "⚠️", "info": "ℹ️"}[issue['severity']]
+            print(f"   {severity_icon} {Path(issue['file']).name}:{issue['line']} - {issue['message']}")
+
+        if len(issues) > 3:
+            print(f"   ... and {len(issues) - 3} more issues")
+
+    def _display_consistency_issues(self, issues: List[Dict[str, Any]]):
+        """Display consistency issues"""
+        print(f"\n⚠️  Consistency Issues:")
+        for issue in issues:
+            severity_icon = {"error": "❌", "warning": "⚠️", "info": "ℹ️"}[issue['severity']]
+            file_name = Path(issue['file']).name
+            print(f"   {severity_icon} {file_name}:{issue['line']} - {issue['message']}")
+
+    def _display_detailed_results(self, result):
+        """Display detailed results"""
+        print(f"\n📊 Detailed Results:")
+        print(f"   Files processed: {len(result.files_processed)}")
+        print(f"   Documentation generated: {len(result.documentation_generated)}")
+        print(f"   Consistency issues: {len(result.consistency_issues)}")
+
+        if result.documentation_generated:
+            print(f"\n📝 Documentation Generated:")
+            for doc in result.documentation_generated:
+                print(f"   - {doc}")
+
+        if result.consistency_issues:
+            self._display_consistency_issues(result.consistency_issues)
+
+        if result.commit_suggested:
+            print(f"\n💭 Suggested actions:")
+            print(f"   - Review and commit changes")
+            if result.commit_message:
+                print(f"   - Suggested commit: {result.commit_message[:60]}...")
+
+    async def run_command(self, command: str, files: List[str] = None):
+        """Run specific command"""
+        if command == "check":
+            if files:
+                file_paths = [str(Path(f).resolve()) for f in files if Path(f).exists()]
+                if file_paths:
+                    result = await self.system.process_files(file_paths)
+                    self._display_detailed_results(result)
+                else:
+                    print("❌ No valid files found")
+            else:
+                print("❌ No files specified for check command")
+
+        elif command == "fix":
+            if files:
+                file_paths = [str(Path(f).resolve()) for f in files if Path(f).exists()]
+                if file_paths:
+                    await self._fix_all_issues([Path(f) for f in file_paths])
+                else:
+                    print("❌ No valid files found")
+            else:
+                print("❌ No files specified for fix command")
+
+        elif command == "setup":
+            await self._setup_system()
+
+        else:
+            print(f"❌ Unknown command: {command}")
+
+
+async def main():
+    """Main CLI entry point"""
+    import argparse
+
+    parser = argparse.ArgumentParser(description="OOS Doctor - Code Health and Documentation Tool")
+    parser.add_argument("command", nargs="?", choices=["check", "fix", "setup"], help="Command to run")
+    parser.add_argument("files", nargs="*", help="Files to process")
+    parser.add_argument("--interactive", "-i", action="store_true", help="Run in interactive mode")
+
+    args = parser.parse_args()
+
+    doctor = OOSDoctor()
+
+    if args.interactive or not args.command:
+        await doctor.run_interactive()
+    else:
+        await doctor.run_command(args.command, args.files)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

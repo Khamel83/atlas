@@ -1,0 +1,54 @@
+2025-09-15T14:51:58.625692 INFO: Attempting direct fetch for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:51:58.890785 ERROR: Direct fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:51:58.891932 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:51:59.807096 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:51:59.808497 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:51:59.887848 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:51:59.889461 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:51:59.975943 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:51:59.977101 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:00.064910 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:00.067378 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:02.686934 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:52:02.687046 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:52:02.687072 INFO: Attempting archive.today for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:06.210662 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:07.133407 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:52:07.133814 INFO: Attempting archive.is for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:09.902613 INFO: Attempting archive.li for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:12.764995 INFO: Attempting archive.fo for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:16.617862 INFO: Attempting archive.ph for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:19.991681 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:20.107795 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:20.109016 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:20.109396 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: [Errno 32] Broken pipe
+2025-09-15T14:52:20.109440 INFO: Attempting Wayback Machine for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.267217 ERROR: Wayback Machine failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: No archived snapshots found
+2025-09-15T14:52:25.268561 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html. Attempting Google Search fallback...
+2025-09-15T14:52:25.269018 INFO: Google Search fallback: searching for 'covid vaccine testing states.html'
+2025-09-15T14:52:25.300658 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:52:25.308760 INFO: Attempting direct fetch for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.388672 ERROR: Direct fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.389828 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.616785 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:52:25.619116 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.699201 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.700576 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.779375 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:52:25.780795 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.869009 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:25.870508 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:30.743946 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:52:30.744069 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:52:30.744097 INFO: Attempting archive.today for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:34.556280 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:35.437033 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:52:35.437429 INFO: Attempting archive.is for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:39.080627 INFO: Attempting archive.li for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:41.163205 INFO: Attempting archive.fo for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:44.661896 INFO: Attempting archive.ph for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:47.647169 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:47.721699 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:47.722870 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:48.305145 INFO: Found Wayback snapshot from 20231205171516: http://web.archive.org/web/20231205171516/https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html
+2025-09-15T14:52:52.832523 INFO: Successfully fetched https://www.nytimes.com/2022/03/30/us/covid-vaccine-testing-states.html using wayback_machine_enhanced

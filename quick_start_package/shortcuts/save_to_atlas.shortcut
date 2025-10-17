@@ -1,0 +1,105 @@
+{
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.geturl",
+      "WFWorkflowActionParameters": {
+        "WFInput": "Clipboard"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getwebpage",
+      "WFWorkflowActionParameters": {
+        "WFHTMLToMarkdown": true
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getitemname"
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters": {
+        "WFVariableName": "PageTitle"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.geturl",
+      "WFWorkflowActionParameters": {
+        "WFInput": "Clipboard"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters": {
+        "WFVariableName": "PageURL"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getwebpage",
+      "WFWorkflowActionParameters": {
+        "WFHTMLToMarkdown": true,
+        "WFInput": "PageURL"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters": {
+        "WFVariableName": "PageContent"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": {
+          "Value": {
+            "string": "{\n  \"url\": \"{{PageURL}}\",\n  \"title\": \"{{PageTitle}}\",\n  \"content\": \"{{PageContent}}\"\n}",
+            "attachmentsByRange": {
+              "15": {
+                "Type": "Variable",
+                "VariableName": "PageURL"
+              },
+              "35": {
+                "Type": "Variable", 
+                "VariableName": "PageTitle"
+              },
+              "57": {
+                "Type": "Variable",
+                "VariableName": "PageContent"  
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.request",
+      "WFWorkflowActionParameters": {
+        "WFRequestVariable": "Request",
+        "WFHTTPMethod": "POST",
+        "WFHTTPHeaders": {
+          "Content-Type": "application/json"
+        },
+        "WFRequestURL": "https://atlas.khamel.com/save_url",
+        "WFHTTPBodyType": "Form"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.shownotification",
+      "WFWorkflowActionParameters": {
+        "WFNotificationActionTitle": "Saved to Atlas!",
+        "WFNotificationActionBody": "{{PageTitle}} has been saved to your Atlas knowledge base."
+      }
+    }
+  ],
+  "WFWorkflowName": "Save to Atlas",
+  "WFWorkflowDescription": "Save the current Safari page to your Atlas knowledge base",
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 4274264319,
+    "WFWorkflowIconGlyphNumber": 59511
+  },
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowHasShortcutInputVariables": false
+}

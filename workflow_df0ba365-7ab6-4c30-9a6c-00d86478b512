@@ -1,0 +1,140 @@
+2025-09-14T23:15:09.786987 INFO: Attempting direct fetch for https://harpers.org/tag/avocado/
+2025-09-14T23:15:10.478582 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:10.512691 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:10.512834 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:10.512874 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:10.919707 ERROR: Reader mode fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:15:10.921726 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:11.387461 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:11.387551 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:11.387577 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:11.633858 ERROR: Refresh stop fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:15:11.638504 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:12.165414 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:12.165525 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:12.165550 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/avocado/
+2025-09-14T23:15:16.071238 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:15:16.071328 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:16.071353 INFO: Attempting archive.today for https://harpers.org/tag/avocado/
+2025-09-14T23:15:19.803137 INFO: No existing archive found, creating new archive for https://harpers.org/tag/avocado/
+2025-09-14T23:15:20.693231 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:15:20.694008 INFO: Attempting archive.is for https://harpers.org/tag/avocado/
+2025-09-14T23:15:22.669855 INFO: Attempting archive.li for https://harpers.org/tag/avocado/
+2025-09-14T23:15:25.168098 INFO: Attempting archive.fo for https://harpers.org/tag/avocado/
+2025-09-14T23:15:28.023104 INFO: Attempting archive.ph for https://harpers.org/tag/avocado/
+2025-09-14T23:15:31.907273 INFO: Attempting Googlebot spoof for https://harpers.org/tag/avocado/
+2025-09-14T23:15:32.007068 ERROR: Googlebot spoof failed for https://harpers.org/tag/avocado/: 403 Client Error: Forbidden for url: https://harpers.org/tag/avocado/
+2025-09-14T23:15:32.008750 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:15:38.424975 INFO: Found Wayback snapshot from 20240719155658: http://web.archive.org/web/20240719155658/https://harpers.org/tag/avocado/
+2025-09-14T23:15:39.156254 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:39.156378 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:39.156405 INFO: Attempting Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:15:39.288892 ERROR: Wayback Machine failed for https://harpers.org/tag/avocado/: No archived snapshots found
+2025-09-14T23:15:39.291112 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/avocado/. Attempting Google Search fallback...
+2025-09-14T23:15:39.291368 INFO: Google Search fallback: searching for 'avocado'
+2025-09-14T23:15:39.359938 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:15:39.374507 INFO: Attempting direct fetch for https://harpers.org/tag/avocado/
+2025-09-14T23:15:39.695060 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:39.736993 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:39.737129 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:39.737188 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:40.151709 ERROR: Reader mode fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:15:40.153602 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:40.414918 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:40.415026 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:40.415051 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:40.617344 ERROR: Refresh stop fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:15:40.619474 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:15:41.100812 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:15:41.100911 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:41.100937 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/avocado/
+2025-09-14T23:15:44.551666 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:15:44.551773 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:44.551799 INFO: Attempting archive.today for https://harpers.org/tag/avocado/
+2025-09-14T23:15:46.830501 INFO: No existing archive found, creating new archive for https://harpers.org/tag/avocado/
+2025-09-14T23:15:47.717205 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:15:47.717933 INFO: Attempting archive.is for https://harpers.org/tag/avocado/
+2025-09-14T23:15:50.425056 INFO: Attempting archive.li for https://harpers.org/tag/avocado/
+2025-09-14T23:15:53.080749 INFO: Attempting archive.fo for https://harpers.org/tag/avocado/
+2025-09-14T23:15:56.626845 INFO: Attempting archive.ph for https://harpers.org/tag/avocado/
+2025-09-14T23:16:00.520633 INFO: Attempting Googlebot spoof for https://harpers.org/tag/avocado/
+2025-09-14T23:16:00.627683 ERROR: Googlebot spoof failed for https://harpers.org/tag/avocado/: 403 Client Error: Forbidden for url: https://harpers.org/tag/avocado/
+2025-09-14T23:16:00.629310 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:16:00.869678 INFO: Found Wayback snapshot from 20240719155658: http://web.archive.org/web/20240719155658/https://harpers.org/tag/avocado/
+2025-09-14T23:16:00.992676 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:00.992800 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:00.992826 INFO: Attempting Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:16:01.110953 ERROR: Wayback Machine failed for https://harpers.org/tag/avocado/: No archived snapshots found
+2025-09-14T23:16:01.112802 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/avocado/. Attempting Google Search fallback...
+2025-09-14T23:16:01.113023 INFO: Google Search fallback: searching for 'avocado'
+2025-09-14T23:16:01.145471 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:16:01.153908 INFO: Attempting direct fetch for https://harpers.org/tag/avocado/
+2025-09-14T23:16:01.465891 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:01.510130 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:01.510249 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:01.510292 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:01.710477 ERROR: Reader mode fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:16:01.714684 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:01.986991 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:01.987098 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:01.987123 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:02.215719 ERROR: Refresh stop fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:16:02.220200 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:02.548540 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:02.548690 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:02.548720 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/avocado/
+2025-09-14T23:16:07.610913 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:16:07.611024 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:07.611050 INFO: Attempting archive.today for https://harpers.org/tag/avocado/
+2025-09-14T23:16:09.628752 INFO: No existing archive found, creating new archive for https://harpers.org/tag/avocado/
+2025-09-14T23:16:10.511032 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:16:10.511576 INFO: Attempting archive.is for https://harpers.org/tag/avocado/
+2025-09-14T23:16:13.218205 INFO: Attempting archive.li for https://harpers.org/tag/avocado/
+2025-09-14T23:16:15.732777 INFO: Attempting archive.fo for https://harpers.org/tag/avocado/
+2025-09-14T23:16:18.436664 INFO: Attempting archive.ph for https://harpers.org/tag/avocado/
+2025-09-14T23:16:21.641343 INFO: Attempting Googlebot spoof for https://harpers.org/tag/avocado/
+2025-09-14T23:16:21.759276 ERROR: Googlebot spoof failed for https://harpers.org/tag/avocado/: 403 Client Error: Forbidden for url: https://harpers.org/tag/avocado/
+2025-09-14T23:16:21.762753 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:16:22.016348 INFO: Found Wayback snapshot from 20240719155658: http://web.archive.org/web/20240719155658/https://harpers.org/tag/avocado/
+2025-09-14T23:16:22.152172 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:22.152283 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:22.152310 INFO: Attempting Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:16:22.282046 ERROR: Wayback Machine failed for https://harpers.org/tag/avocado/: No archived snapshots found
+2025-09-14T23:16:22.285011 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/avocado/. Attempting Google Search fallback...
+2025-09-14T23:16:22.285129 INFO: Google Search fallback: searching for 'avocado'
+2025-09-14T23:16:22.354804 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:16:22.368237 INFO: Attempting direct fetch for https://harpers.org/tag/avocado/
+2025-09-14T23:16:22.695487 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:22.732645 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:22.732771 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:22.732813 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:23.123938 ERROR: Reader mode fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:16:23.125965 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:23.374547 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:23.374712 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:23.374740 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:23.838464 ERROR: Refresh stop fetch failed for https://harpers.org/tag/avocado/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:16:23.840567 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/avocado/
+2025-09-14T23:16:24.125945 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:24.126063 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:24.126090 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/avocado/
+2025-09-14T23:16:27.010778 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:16:27.010885 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:27.010914 INFO: Attempting archive.today for https://harpers.org/tag/avocado/
+2025-09-14T23:16:28.924201 INFO: No existing archive found, creating new archive for https://harpers.org/tag/avocado/
+2025-09-14T23:16:29.804965 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:16:29.805802 INFO: Attempting archive.is for https://harpers.org/tag/avocado/
+2025-09-14T23:16:33.226888 INFO: Attempting archive.li for https://harpers.org/tag/avocado/
+2025-09-14T23:16:36.892131 INFO: Attempting archive.fo for https://harpers.org/tag/avocado/
+2025-09-14T23:16:39.544159 INFO: Attempting archive.ph for https://harpers.org/tag/avocado/
+2025-09-14T23:16:41.796743 INFO: Attempting Googlebot spoof for https://harpers.org/tag/avocado/
+2025-09-14T23:16:41.899034 ERROR: Googlebot spoof failed for https://harpers.org/tag/avocado/: 403 Client Error: Forbidden for url: https://harpers.org/tag/avocado/
+2025-09-14T23:16:41.900742 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:16:42.204425 INFO: Found Wayback snapshot from 20240719155658: http://web.archive.org/web/20240719155658/https://harpers.org/tag/avocado/
+2025-09-14T23:16:42.325037 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-14T23:16:42.325175 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:16:42.325201 INFO: Attempting Wayback Machine for https://harpers.org/tag/avocado/
+2025-09-14T23:16:42.454342 ERROR: Wayback Machine failed for https://harpers.org/tag/avocado/: No archived snapshots found
+2025-09-14T23:16:42.456116 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/avocado/. Attempting Google Search fallback...
+2025-09-14T23:16:42.456313 INFO: Google Search fallback: searching for 'avocado'
+2025-09-14T23:16:42.488116 INFO: Google Search fallback did not find alternative URL

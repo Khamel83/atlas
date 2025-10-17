@@ -1,0 +1,149 @@
+2025-09-15T08:25:02.641246 INFO: Attempting direct fetch for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:03.174722 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:03.364777 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:03.364903 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:03.364941 INFO: Attempting Reader Mode strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:03.664907 ERROR: Reader mode fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:25:03.666643 INFO: Attempting JS Disabled strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:04.115251 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:04.115359 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:04.115387 INFO: Attempting Refresh Stop strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:04.517482 ERROR: Refresh stop fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:25:04.519497 INFO: Attempting Inspect Element strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:05.182660 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:05.182771 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:05.182799 INFO: Attempting removepaywalls.com bypass for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:09.140524 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:25:09.140642 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:09.140672 INFO: Attempting archive.today for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:12.791352 INFO: No existing archive found, creating new archive for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:13.716730 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:25:13.717353 INFO: Attempting archive.is for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:16.371641 INFO: Attempting archive.li for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:18.933298 INFO: Attempting archive.fo for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:22.683423 INFO: Attempting archive.ph for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:25.005839 INFO: Attempting Googlebot spoof for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:25.256375 INFO: Content is very short (142 words). Likely a teaser.
+2025-09-15T08:25:25.256497 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:25.256527 INFO: Attempting Enhanced Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:26.059833 INFO: Found Wayback snapshot from 20250205040539: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:28.902772 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:28.902875 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:28.902907 INFO: Attempting Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:29.012487 INFO: Found Wayback snapshot: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:29.268126 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:29.268229 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:29.268262 ERROR: All fetch strategies failed or returned low-quality content for https://pubmed.ncbi.nlm.nih.gov/10576533/. Attempting Google Search fallback...
+2025-09-15T08:25:29.268328 INFO: Google Search fallback: searching for 'article pubmed.ncbi.nlm.nih.gov'
+2025-09-15T08:25:29.301440 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:25:29.310275 INFO: Attempting direct fetch for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:29.780069 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:30.122919 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:30.123031 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:30.123070 INFO: Attempting Reader Mode strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:30.304083 ERROR: Reader mode fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:25:30.305943 INFO: Attempting JS Disabled strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:30.945564 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:30.945721 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:30.945751 INFO: Attempting Refresh Stop strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:31.327370 ERROR: Refresh stop fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:25:31.329435 INFO: Attempting Inspect Element strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:31.902013 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:31.902128 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:31.902156 INFO: Attempting removepaywalls.com bypass for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:36.492019 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:25:36.492137 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:36.492166 INFO: Attempting archive.today for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:38.586365 INFO: No existing archive found, creating new archive for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:39.440612 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:25:39.441391 INFO: Attempting archive.is for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:42.053954 INFO: Attempting archive.li for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:44.963444 INFO: Attempting archive.fo for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:48.198907 INFO: Attempting archive.ph for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:50.669762 INFO: Attempting Googlebot spoof for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:50.868089 INFO: Content is very short (142 words). Likely a teaser.
+2025-09-15T08:25:50.868200 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:50.868229 INFO: Attempting Enhanced Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:50.980818 INFO: Found Wayback snapshot from 20250205040539: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:51.206767 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:51.206888 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:51.206918 INFO: Attempting Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:51.344398 INFO: Found Wayback snapshot: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:51.344542 ERROR: Wayback Machine failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: [Errno 32] Broken pipe
+2025-09-15T08:25:51.346542 ERROR: All fetch strategies failed or returned low-quality content for https://pubmed.ncbi.nlm.nih.gov/10576533/. Attempting Google Search fallback...
+2025-09-15T08:25:51.346878 INFO: Google Search fallback: searching for 'article pubmed.ncbi.nlm.nih.gov'
+2025-09-15T08:25:51.378438 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:25:51.387214 INFO: Attempting direct fetch for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:51.899203 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:52.083655 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:52.083782 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:52.083824 INFO: Attempting Reader Mode strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:52.276143 ERROR: Reader mode fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:25:52.278699 INFO: Attempting JS Disabled strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:52.776479 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:52.776616 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:52.776647 INFO: Attempting Refresh Stop strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:53.114127 ERROR: Refresh stop fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:25:53.115692 INFO: Attempting Inspect Element strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:53.948812 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:25:53.948930 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:53.948962 INFO: Attempting removepaywalls.com bypass for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:57.604421 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:25:57.604527 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:25:57.604554 INFO: Attempting archive.today for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:25:59.327981 INFO: No existing archive found, creating new archive for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:00.190048 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:26:00.190863 INFO: Attempting archive.is for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:02.826139 INFO: Attempting archive.li for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:04.943962 INFO: Attempting archive.fo for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:08.760090 INFO: Attempting archive.ph for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:11.794517 INFO: Attempting Googlebot spoof for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:11.984679 INFO: Content is very short (142 words). Likely a teaser.
+2025-09-15T08:26:11.984803 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:11.984837 INFO: Attempting Enhanced Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:12.133175 INFO: Found Wayback snapshot from 20250205040539: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:12.356410 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:12.356526 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:12.356552 INFO: Attempting Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:12.485120 INFO: Found Wayback snapshot: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:12.708784 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:12.708902 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:12.708952 ERROR: All fetch strategies failed or returned low-quality content for https://pubmed.ncbi.nlm.nih.gov/10576533/. Attempting Google Search fallback...
+2025-09-15T08:26:12.709020 INFO: Google Search fallback: searching for 'article pubmed.ncbi.nlm.nih.gov'
+2025-09-15T08:26:12.741035 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:26:12.748394 INFO: Attempting direct fetch for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:13.239836 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:13.420188 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:13.420301 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:13.420344 INFO: Attempting Reader Mode strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:13.598531 ERROR: Reader mode fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:26:13.599863 INFO: Attempting JS Disabled strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:14.030556 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:14.030680 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:14.030711 INFO: Attempting Refresh Stop strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:14.363039 ERROR: Refresh stop fetch failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:26:14.364633 INFO: Attempting Inspect Element strategy for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:14.986733 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:14.986843 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:14.986870 INFO: Attempting removepaywalls.com bypass for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:18.608665 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:26:18.608781 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:18.608807 INFO: Attempting archive.today for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:21.232752 INFO: No existing archive found, creating new archive for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:22.129058 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:26:22.129534 INFO: Attempting archive.is for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:24.733846 INFO: Attempting archive.li for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:27.418860 INFO: Attempting archive.fo for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:30.417481 INFO: Attempting archive.ph for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:33.543699 INFO: Attempting Googlebot spoof for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:33.730321 INFO: Content is very short (142 words). Likely a teaser.
+2025-09-15T08:26:33.730438 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:33.730464 INFO: Attempting Enhanced Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:33.844201 INFO: Found Wayback snapshot from 20250205040539: http://web.archive.org/web/20250205040539/https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:34.052562 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T08:26:34.052706 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:34.052736 INFO: Attempting Wayback Machine for https://pubmed.ncbi.nlm.nih.gov/10576533/
+2025-09-15T08:26:34.052794 ERROR: Wayback Machine failed for https://pubmed.ncbi.nlm.nih.gov/10576533/: [Errno 32] Broken pipe
+2025-09-15T08:26:34.052830 ERROR: All fetch strategies failed or returned low-quality content for https://pubmed.ncbi.nlm.nih.gov/10576533/. Attempting Google Search fallback...
+2025-09-15T08:26:34.052906 INFO: Google Search fallback: searching for 'article pubmed.ncbi.nlm.nih.gov'
+2025-09-15T08:26:34.083991 INFO: Google Search fallback did not find alternative URL

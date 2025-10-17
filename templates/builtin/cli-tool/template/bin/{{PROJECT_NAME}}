@@ -1,0 +1,35 @@
+#!/usr/bin/env {{#if_eq LANGUAGE 'bash'}}bash{{/if_eq}}{{#if_eq LANGUAGE 'python'}}python3{{/if_eq}}
+{{#if_eq LANGUAGE 'bash'}}
+set -euo pipefail
+
+VERSION="1.0.0"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+show_help() {
+  cat << 'EOF'
+{{PROJECT_NAME}} v$VERSION
+
+Usage: {{PROJECT_NAME}} [COMMAND] [OPTIONS]
+
+Commands:
+  help        Show this help
+  version     Show version
+
+Options:
+  --verbose   Show detailed output
+  --help, -h  Show help
+EOF
+}
+
+main() {
+  local command="${1:-help}"
+  
+  case "$command" in
+    help|--help|-h) show_help ;;
+    version|--version|-v) echo "{{PROJECT_NAME}} v$VERSION" ;;
+    *) echo "Unknown command: $command"; exit 1 ;;
+  esac
+}
+
+main "$@"
+{{/if_eq}}

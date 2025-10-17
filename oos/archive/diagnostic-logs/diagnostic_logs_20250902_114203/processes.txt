@@ -1,0 +1,18 @@
+=== Running Processes ===
+node_ex+  278997  0.0  0.1 1241772 15368 ?       Ssl  Aug20  14:53 /usr/local/bin/node_exporter
+ubuntu    694211  0.0  0.0   7584  3104 ?        Ss   Aug30   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756545602139-w60hje.sh && eval 'python3 search_server.py' \< /dev/null && pwd -P >| /tmp/claude-7877-cwd
+ubuntu    694233  0.0  0.4 168280 56944 ?        Sl   Aug30   4:10 python3 search_server.py
+ubuntu    829920  0.0  0.0   7584  3168 ?        Ss   Aug31   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756701666166-cw6hyv.sh && eval 'kill 829795 && sleep 2 && source venv/bin/activate && python web/app.py' \< /dev/null && pwd -P >| /tmp/claude-a119-cwd
+ubuntu    829945  0.1  0.6 172852 81400 ?        Sl   Aug31   2:44 python web/app.py
+root     1138267  0.0  0.2 109040 29236 ?        Ssl  Sep01   0:30 python -m uvicorn src.server.main:socket_app --host 0.0.0.0 --port 8181 --reload
+root     1138346  0.1  0.6 173144 85428 ?        Ssl  Sep01   1:28 python -m src.mcp_server.mcp_server
+root     1138393  0.0  0.0  15044 11036 ?        S    Sep01   0:00 /usr/local/bin/python -c from multiprocessing.resource_tracker import main;main(4)
+root     1138394  0.1  1.7 568368 217252 ?       Sl   Sep01   1:47 /usr/local/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=5, pipe_handle=7) --multiprocessing-fork
+root     1138431  0.0  0.5 793984 70384 ?        Sl   Sep01   0:00 /root/.local/lib/python3.11/site-packages/playwright/driver/node /root/.local/lib/python3.11/site-packages/playwright/driver/package/cli.js run-driver
+root     1139028  0.0  0.6 4526352 80608 ?       Sl   Sep01   0:15 node /root/.npm/_npx/aab42732f01924e5/node_modules/.bin/serve -s /app-dist -l 5173
+ubuntu   1533988 16.0  2.2 32679064 277224 pts/0 Sl+  11:41   0:20 claude
+ubuntu   1534319  0.0  0.0   7584  3024 ?        Ss   11:42   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756838466519-p41a3e.sh && eval 'chmod +x bin/diagnose.sh && ./bin/diagnose.sh --auto --verbose' \< /dev/null && pwd -P >| /tmp/claude-0707-cwd
+ubuntu   1534717  0.1  0.1  28492 18504 ?        Ss   11:42   0:00 python3 /home/ubuntu/dev/atlas/maintenance/service_health_check.py
+ubuntu   1534732  0.3  0.1 101176 19420 ?        Ssl  11:42   0:00 /home/ubuntu/dev/atlas/venv/bin/python atlas_service_manager.py start --daemon
+ubuntu   1534735  0.2  0.1 245560 16304 ?        Ssl  11:42   0:00 /home/ubuntu/dev/atlas/venv/bin/python3 scripts/atlas_scheduler.py --start
+ubuntu   1534774  0.2  0.1  27420 18660 ?        Ss   11:42   0:00 /home/ubuntu/dev/atlas/venv/bin/python3 helpers/process_watchdog.py --daemon --interval 3

@@ -1,0 +1,124 @@
+2025-09-15T06:07:04.960802 INFO: Attempting direct fetch for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.196114 ERROR: Direct fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.197630 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.281718 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.283211 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.366237 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.367788 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.458244 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: cannot use a string pattern on a bytes-like object
+2025-09-15T06:07:05.459751 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.545903 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:05.547401 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:09.942731 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:07:09.942840 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:07:09.942867 INFO: Attempting archive.today for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:13.398889 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:14.293852 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:07:14.294293 INFO: Attempting archive.is for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:16.712047 INFO: Attempting archive.li for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:19.786176 INFO: Attempting archive.fo for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:22.639614 INFO: Attempting archive.ph for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:26.592008 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:26.674034 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:07:26.675579 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:14.527783 INFO: Found Wayback snapshot from 20150124003147: http://web.archive.org/web/20150124003147/http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.092511 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T06:08:19.092661 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:08:19.092692 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.212264 ERROR: Wayback Machine failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: No archived snapshots found
+2025-09-15T06:08:19.214735 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306. Attempting Google Search fallback...
+2025-09-15T06:08:19.214858 INFO: Google Search fallback: searching for 'holman jenkins secular stagnation and the cheap burger 1422055306'
+2025-09-15T06:08:19.247657 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:08:19.254945 INFO: Attempting direct fetch for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.402762 ERROR: Direct fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.404928 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.493146 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.495308 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.578849 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.580979 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.581928 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: [Errno 32] Broken pipe
+2025-09-15T06:08:19.581997 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.668145 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:19.670228 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:22.483489 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:08:22.483628 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:08:22.483659 INFO: Attempting archive.today for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:25.326662 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:26.237944 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:08:26.238143 INFO: Attempting archive.is for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:28.637757 INFO: Attempting archive.li for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:31.242681 INFO: Attempting archive.fo for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:33.814384 INFO: Attempting archive.ph for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:37.541496 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:37.622929 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:37.624662 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.038580 INFO: Found Wayback snapshot from 20150124003147: http://web.archive.org/web/20150124003147/http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.123741 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T06:08:39.123849 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:08:39.123877 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.245113 ERROR: Wayback Machine failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: No archived snapshots found
+2025-09-15T06:08:39.246839 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306. Attempting Google Search fallback...
+2025-09-15T06:08:39.246996 INFO: Google Search fallback: searching for 'holman jenkins secular stagnation and the cheap burger 1422055306'
+2025-09-15T06:08:39.279538 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:08:39.287013 INFO: Attempting direct fetch for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.372525 ERROR: Direct fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.374199 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.461054 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.463100 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.547091 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.549714 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.641544 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: cannot use a string pattern on a bytes-like object
+2025-09-15T06:08:39.643374 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.728312 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:39.730283 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:43.974219 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:08:43.974329 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:08:43.974355 INFO: Attempting archive.today for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:46.930866 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:47.821843 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:08:47.822290 INFO: Attempting archive.is for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:51.036266 INFO: Attempting archive.li for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:54.531237 INFO: Attempting archive.fo for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:56.501881 INFO: Attempting archive.ph for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:59.592026 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:59.677099 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:08:59.678669 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.273254 INFO: Found Wayback snapshot from 20150124003147: http://web.archive.org/web/20150124003147/http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.273421 INFO: Timeframe 20100101 failed: [Errno 32] Broken pipe
+2025-09-15T06:09:01.273457 ERROR: Enhanced Wayback Machine failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: No archived snapshots found in any timeframe
+2025-09-15T06:09:01.274909 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.415447 ERROR: Wayback Machine failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: No archived snapshots found
+2025-09-15T06:09:01.417069 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306. Attempting Google Search fallback...
+2025-09-15T06:09:01.417505 INFO: Google Search fallback: searching for 'holman jenkins secular stagnation and the cheap burger 1422055306'
+2025-09-15T06:09:01.449735 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:09:01.459541 INFO: Attempting direct fetch for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.545423 ERROR: Direct fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.547442 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.632331 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.636698 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.746830 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.750026 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.853862 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: cannot use a string pattern on a bytes-like object
+2025-09-15T06:09:01.857492 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.967250 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:01.969180 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:05.534139 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:09:05.534239 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:09:05.534265 INFO: Attempting archive.today for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:09.401312 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:10.304802 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:09:10.305222 INFO: Attempting archive.is for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:12.523455 INFO: Attempting archive.li for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:15.960845 INFO: Attempting archive.fo for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:19.809042 INFO: Attempting archive.ph for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:22.451985 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:22.595159 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:22.596690 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:25.106392 INFO: Found Wayback snapshot from 20150124003147: http://web.archive.org/web/20150124003147/http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:25.199190 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T06:09:25.199299 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:09:25.199324 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306
+2025-09-15T06:09:25.342191 ERROR: Wayback Machine failed for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306: No archived snapshots found
+2025-09-15T06:09:25.344680 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/holman-jenkins-secular-stagnation-and-the-cheap-burger-1422055306. Attempting Google Search fallback...
+2025-09-15T06:09:25.344793 INFO: Google Search fallback: searching for 'holman jenkins secular stagnation and the cheap burger 1422055306'
+2025-09-15T06:09:25.377406 INFO: Google Search fallback did not find alternative URL

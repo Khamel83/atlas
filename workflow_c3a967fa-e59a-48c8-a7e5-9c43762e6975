@@ -1,0 +1,132 @@
+2025-09-14T21:49:58.280287 INFO: Attempting direct fetch for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:50:28.522142 ERROR: Direct fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-14T21:50:28.522262 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:50:48.649971 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:50:48.650105 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:50:48.790045 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/favicon.ico: Document is empty
+2025-09-14T21:50:48.791399 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:50:48.926780 ERROR: Refresh stop fetch failed for https://www.washingtonpost.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-14T21:50:48.928219 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:09.045802 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:51:09.045936 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:11.785168 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:51:11.785263 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:51:11.785292 INFO: Attempting archive.today for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:16.088960 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:16.983109 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:51:16.983550 INFO: Attempting archive.is for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:19.885278 INFO: Attempting archive.li for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:22.164728 INFO: Attempting archive.fo for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:25.314893 INFO: Attempting archive.ph for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:27.560283 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:42.681982 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-14T21:51:42.682116 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:43.685636 INFO: Found Wayback snapshot from 20250915002653: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:44.891627 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:51:44.891729 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:51:44.891758 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:45.010893 INFO: Found Wayback snapshot: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:51:47.256760 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:51:47.256863 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:51:47.256897 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/favicon.ico. Attempting Google Search fallback...
+2025-09-14T21:51:47.257002 INFO: Google Search fallback: searching for 'favicon.ico'
+2025-09-14T21:51:47.324492 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:51:47.352902 INFO: Attempting direct fetch for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:52:17.490664 ERROR: Direct fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-14T21:52:17.490808 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:52:37.650334 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:52:37.650913 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:52:37.787969 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/favicon.ico: Document is empty
+2025-09-14T21:52:37.789927 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:52:38.007364 ERROR: Refresh stop fetch failed for https://www.washingtonpost.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-14T21:52:38.011387 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:52:58.100496 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:52:58.100688 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:03.021779 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:53:03.021878 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:53:03.021905 INFO: Attempting archive.today for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:08.671959 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:09.547673 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:53:09.548313 INFO: Attempting archive.is for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:13.043992 INFO: Attempting archive.li for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:15.689529 INFO: Attempting archive.fo for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:18.675393 INFO: Attempting archive.ph for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:21.747469 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:36.871365 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-14T21:53:36.871489 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:37.328756 INFO: Found Wayback snapshot from 20250915002653: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:38.684235 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:53:38.684359 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:53:38.684389 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:38.818266 INFO: Found Wayback snapshot: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:53:42.438748 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:53:42.438846 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:53:42.438880 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/favicon.ico. Attempting Google Search fallback...
+2025-09-14T21:53:42.438949 INFO: Google Search fallback: searching for 'favicon.ico'
+2025-09-14T21:53:42.504452 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:53:42.517224 INFO: Attempting direct fetch for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:12.640034 ERROR: Direct fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-14T21:54:12.640150 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:32.720116 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:54:32.720253 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:32.940176 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/favicon.ico: Document is empty
+2025-09-14T21:54:32.942174 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:33.083353 ERROR: Refresh stop fetch failed for https://www.washingtonpost.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-14T21:54:33.085362 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:53.212948 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:54:53.213084 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:56.581700 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:54:56.581814 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:54:56.581841 INFO: Attempting archive.today for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:54:59.534965 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:00.410993 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:55:00.411700 INFO: Attempting archive.is for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:03.967912 INFO: Attempting archive.li for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:07.614084 INFO: Attempting archive.fo for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:11.100807 INFO: Attempting archive.ph for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:13.226354 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:28.348944 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-14T21:55:28.349073 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:28.466967 INFO: Found Wayback snapshot from 20250915002653: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:30.829292 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:55:30.829389 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:55:30.829416 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:30.949679 INFO: Found Wayback snapshot: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:55:31.862758 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:55:31.862859 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:55:31.862935 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/favicon.ico. Attempting Google Search fallback...
+2025-09-14T21:55:31.863006 INFO: Google Search fallback: searching for 'favicon.ico'
+2025-09-14T21:55:31.894381 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:55:31.902659 INFO: Attempting direct fetch for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:01.985059 ERROR: Direct fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-14T21:56:01.985192 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:22.083947 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:56:22.084074 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:22.294475 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/favicon.ico: Document is empty
+2025-09-14T21:56:22.295889 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:22.455369 ERROR: Refresh stop fetch failed for https://www.washingtonpost.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-14T21:56:22.457351 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:42.598133 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:56:42.598266 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:46.082157 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:56:46.082264 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:56:46.082292 INFO: Attempting archive.today for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:49.959838 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:50.870688 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:56:50.871345 INFO: Attempting archive.is for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:53.671143 INFO: Attempting archive.li for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:56.133503 INFO: Attempting archive.fo for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:56:58.718333 INFO: Attempting archive.ph for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:57:01.277933 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:57:16.401117 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/favicon.ico: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-14T21:57:16.403035 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:57:17.865523 INFO: Found Wayback snapshot from 20250915002653: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:57:19.157566 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:57:19.157999 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:19.158044 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:57:19.293436 INFO: Found Wayback snapshot: http://web.archive.org/web/20250915002653/https://www.washingtonpost.com/favicon.ico
+2025-09-14T21:57:20.312156 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T21:57:20.312254 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:20.312295 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/favicon.ico. Attempting Google Search fallback...
+2025-09-14T21:57:20.312353 INFO: Google Search fallback: searching for 'favicon.ico'
+2025-09-14T21:57:20.344185 INFO: Google Search fallback did not find alternative URL

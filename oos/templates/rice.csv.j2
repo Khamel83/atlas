@@ -1,0 +1,4 @@
+Initiative,Description,Reach,Impact,Confidence,Effort,RICE Score,Normalized Score
+{% for score in scores %}
+"{{ score.initiative }}","{{ score.description }}",{{ score.reach }},{{ score.impact }},{{ score.confidence }},{{ score.effort }},{{ score.rice_score }},{{ score.normalized_score }}
+{% endfor %}

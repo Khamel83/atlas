@@ -1,0 +1,96 @@
+2025-09-14T21:11:51.288223 INFO: Attempting direct fetch for https://www.latimes.com/food
+2025-09-14T21:11:51.492517 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:11:51.646308 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:11:51.646439 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:11:51.646476 INFO: Attempting Reader Mode strategy for https://www.latimes.com/food
+2025-09-14T21:11:51.699519 ERROR: Reader mode fetch failed for https://www.latimes.com/food: cannot use a string pattern on a bytes-like object
+2025-09-14T21:11:51.700956 INFO: Attempting JS Disabled strategy for https://www.latimes.com/food
+2025-09-14T21:11:52.108069 INFO: Attempting Refresh Stop strategy for https://www.latimes.com/food
+2025-09-14T21:11:52.157479 ERROR: Refresh stop fetch failed for https://www.latimes.com/food: cannot use a string pattern on a bytes-like object
+2025-09-14T21:11:52.158988 INFO: Attempting Inspect Element strategy for https://www.latimes.com/food
+2025-09-14T21:11:53.079449 INFO: Attempting removepaywalls.com bypass for https://www.latimes.com/food
+2025-09-14T21:11:55.322685 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:11:55.322802 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:11:55.322831 INFO: Attempting archive.today for https://www.latimes.com/food
+2025-09-14T21:11:58.440991 INFO: No existing archive found, creating new archive for https://www.latimes.com/food
+2025-09-14T21:11:59.322808 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:11:59.323247 INFO: Attempting archive.is for https://www.latimes.com/food
+2025-09-14T21:12:01.926348 INFO: Attempting archive.li for https://www.latimes.com/food
+2025-09-14T21:12:04.571012 INFO: Attempting archive.fo for https://www.latimes.com/food
+2025-09-14T21:12:07.918799 INFO: Attempting archive.ph for https://www.latimes.com/food
+2025-09-14T21:12:09.932332 INFO: Attempting Googlebot spoof for https://www.latimes.com/food
+2025-09-14T21:12:10.137818 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:10.137924 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:10.137949 INFO: Attempting Enhanced Wayback Machine for https://www.latimes.com/food
+2025-09-14T21:12:16.767757 INFO: Found Wayback snapshot from 20231201231617: http://web.archive.org/web/20231201231617/https://www.latimes.com/food
+2025-09-14T21:12:23.588666 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:23.588792 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:23.588821 INFO: Attempting Wayback Machine for https://www.latimes.com/food
+2025-09-14T21:12:23.854786 ERROR: Wayback Machine failed for https://www.latimes.com/food: No archived snapshots found
+2025-09-14T21:12:23.856258 ERROR: All fetch strategies failed or returned low-quality content for https://www.latimes.com/food. Attempting Google Search fallback...
+2025-09-14T21:12:23.856414 INFO: Google Search fallback: searching for 'food'
+2025-09-14T21:12:23.891501 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:12:23.899188 INFO: Attempting direct fetch for https://www.latimes.com/food
+2025-09-14T21:12:24.030493 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:24.345807 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:24.345935 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:24.345975 INFO: Attempting Reader Mode strategy for https://www.latimes.com/food
+2025-09-14T21:12:24.396787 ERROR: Reader mode fetch failed for https://www.latimes.com/food: cannot use a string pattern on a bytes-like object
+2025-09-14T21:12:24.398766 INFO: Attempting JS Disabled strategy for https://www.latimes.com/food
+2025-09-14T21:12:24.823709 INFO: Attempting Refresh Stop strategy for https://www.latimes.com/food
+2025-09-14T21:12:24.878457 ERROR: Refresh stop fetch failed for https://www.latimes.com/food: cannot use a string pattern on a bytes-like object
+2025-09-14T21:12:24.884826 INFO: Attempting Inspect Element strategy for https://www.latimes.com/food
+2025-09-14T21:12:25.610059 INFO: Attempting removepaywalls.com bypass for https://www.latimes.com/food
+2025-09-14T21:12:28.867907 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:12:28.868028 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:28.868055 INFO: Attempting archive.today for https://www.latimes.com/food
+2025-09-14T21:12:32.088719 INFO: No existing archive found, creating new archive for https://www.latimes.com/food
+2025-09-14T21:12:33.002482 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:12:33.002895 INFO: Attempting archive.is for https://www.latimes.com/food
+2025-09-14T21:12:36.107879 INFO: Attempting archive.li for https://www.latimes.com/food
+2025-09-14T21:12:39.958659 INFO: Attempting archive.fo for https://www.latimes.com/food
+2025-09-14T21:12:42.054390 INFO: Attempting archive.ph for https://www.latimes.com/food
+2025-09-14T21:12:45.209396 INFO: Attempting Googlebot spoof for https://www.latimes.com/food
+2025-09-14T21:12:45.351257 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:45.351382 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:45.351408 INFO: Attempting Enhanced Wayback Machine for https://www.latimes.com/food
+2025-09-14T21:12:45.591891 INFO: Found Wayback snapshot from 20231201231617: http://web.archive.org/web/20231201231617/https://www.latimes.com/food
+2025-09-14T21:12:45.761107 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:45.761274 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:45.761305 INFO: Attempting Wayback Machine for https://www.latimes.com/food
+2025-09-14T21:12:45.874578 ERROR: Wayback Machine failed for https://www.latimes.com/food: No archived snapshots found
+2025-09-14T21:12:45.875999 ERROR: All fetch strategies failed or returned low-quality content for https://www.latimes.com/food. Attempting Google Search fallback...
+2025-09-14T21:12:45.876115 INFO: Google Search fallback: searching for 'food'
+2025-09-14T21:12:45.908512 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:12:45.916777 INFO: Attempting direct fetch for https://www.latimes.com/food
+2025-09-14T21:12:46.206428 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:46.364381 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:12:46.364508 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:46.364547 INFO: Attempting Reader Mode strategy for https://www.latimes.com/food
+2025-09-14T21:12:46.415946 ERROR: Reader mode fetch failed for https://www.latimes.com/food: cannot use a string pattern on a bytes-like object
+2025-09-14T21:12:46.417476 INFO: Attempting JS Disabled strategy for https://www.latimes.com/food
+2025-09-14T21:12:46.854566 INFO: Attempting Refresh Stop strategy for https://www.latimes.com/food
+2025-09-14T21:12:46.916681 ERROR: Refresh stop fetch failed for https://www.latimes.com/food: cannot use a string pattern on a bytes-like object
+2025-09-14T21:12:46.918254 INFO: Attempting Inspect Element strategy for https://www.latimes.com/food
+2025-09-14T21:12:47.668201 INFO: Attempting removepaywalls.com bypass for https://www.latimes.com/food
+2025-09-14T21:12:49.843668 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:12:49.843778 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:12:49.843807 INFO: Attempting archive.today for https://www.latimes.com/food
+2025-09-14T21:12:53.362214 INFO: No existing archive found, creating new archive for https://www.latimes.com/food
+2025-09-14T21:12:54.273235 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:12:54.273636 INFO: Attempting archive.is for https://www.latimes.com/food
+2025-09-14T21:12:57.020148 INFO: Attempting archive.li for https://www.latimes.com/food
+2025-09-14T21:13:00.489106 INFO: Attempting archive.fo for https://www.latimes.com/food
+2025-09-14T21:13:03.654537 INFO: Attempting archive.ph for https://www.latimes.com/food
+2025-09-14T21:13:07.359252 INFO: Attempting Googlebot spoof for https://www.latimes.com/food
+2025-09-14T21:13:07.728549 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:13:07.728718 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:07.728750 INFO: Attempting Enhanced Wayback Machine for https://www.latimes.com/food
+2025-09-14T21:13:07.997670 INFO: Found Wayback snapshot from 20231201231617: http://web.archive.org/web/20231201231617/https://www.latimes.com/food
+2025-09-14T21:13:08.183843 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-14T21:13:08.183974 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:08.184004 INFO: Attempting Wayback Machine for https://www.latimes.com/food
+2025-09-14T21:13:08.301508 ERROR: Wayback Machine failed for https://www.latimes.com/food: No archived snapshots found
+2025-09-14T21:13:08.303516 ERROR: All fetch strategies failed or returned low-quality content for https://www.latimes.com/food. Attempting Google Search fallback...
+2025-09-14T21:13:08.303778 INFO: Google Search fallback: searching for 'food'
+2025-09-14T21:13:08.363208 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+set -eu
+fail=0
+need() { command -v "$1" >/dev/null 2>&1 || {
+	printf 'missing: %s\n' "$1"
+	fail=1
+}; }
+
+# Required everywhere
+for c in sh awk sed grep find xargs; do need "$c"; done
+
+# Lint tools (advisory)
+command -v shellcheck >/dev/null 2>&1 || printf 'hint: install shellcheck\n'
+command -v shfmt >/dev/null 2>&1 || printf 'hint: install shfmt\n'
+
+# GNU gnubin hints for macOS
+if [ "$(uname -s 2>/dev/null)" = "Darwin" ]; then
+	command -v gsed >/dev/null 2>&1 || printf 'hint: brew install gnu-sed (and front-load gnubin in PATH)\n'
+	command -v gawk >/dev/null 2>&1 || printf 'hint: brew install gawk\n'
+	command -v gfind >/dev/null 2>&1 || printf 'hint: brew install findutils\n'
+	command -v ggrep >/dev/null 2>&1 || printf 'hint: brew install grep\n'
+fi
+
+[ "$fail" -eq 0 ] || {
+	printf 'Fix missing tools and re-run.\n'
+	exit 1
+}
+printf 'OK: POSIX shell environment looks good.\n'

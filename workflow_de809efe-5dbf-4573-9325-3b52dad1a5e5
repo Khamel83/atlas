@@ -1,0 +1,148 @@
+2025-09-14T22:14:43.197672 INFO: Attempting direct fetch for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:43.369074 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:14:43.376664 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:14:43.376764 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:14:43.376806 INFO: Attempting Reader Mode strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:43.631967 ERROR: Reader mode fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:14:43.633880 INFO: Attempting JS Disabled strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:43.856379 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:14:43.856491 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:14:43.856518 INFO: Attempting Refresh Stop strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:44.045710 ERROR: Refresh stop fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:14:44.047938 INFO: Attempting Inspect Element strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:44.265735 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:14:44.265836 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:14:44.265864 INFO: Attempting removepaywalls.com bypass for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:46.688831 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:14:46.688943 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:14:46.688974 INFO: Attempting archive.today for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:59.056863 INFO: No existing archive found, creating new archive for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:14:59.933331 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:14:59.933758 INFO: Attempting archive.is for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:06.259999 INFO: Attempting archive.li for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:09.626942 INFO: Attempting archive.fo for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:13.290492 INFO: Attempting archive.ph for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:15.964310 INFO: Attempting Googlebot spoof for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:16.095376 ERROR: Googlebot spoof failed for https://x.com/elonmusk/status/1958852874236305793: 403 Client Error: Forbidden for url: https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:16.097011 INFO: Attempting Enhanced Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:16.937980 INFO: Found Wayback snapshot from 20250825205011: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:18.119204 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:15:18.119307 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:18.119334 INFO: Attempting Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:18.243329 INFO: Found Wayback snapshot: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:18.326458 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:15:18.326574 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:18.326679 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/elonmusk/status/1958852874236305793. Attempting Google Search fallback...
+2025-09-14T22:15:18.326771 INFO: Google Search fallback: searching for 'status'
+2025-09-14T22:15:18.360081 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:15:18.369632 INFO: Attempting direct fetch for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:18.616115 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:15:18.624075 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:15:18.624183 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:18.624221 INFO: Attempting Reader Mode strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:18.853978 ERROR: Reader mode fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:15:18.855528 INFO: Attempting JS Disabled strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:19.057259 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:15:19.057370 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:19.057397 INFO: Attempting Refresh Stop strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:19.241021 ERROR: Refresh stop fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:15:19.242644 INFO: Attempting Inspect Element strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:19.476862 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:15:19.476980 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:19.477008 INFO: Attempting removepaywalls.com bypass for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:22.680342 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:15:22.680456 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:22.680481 INFO: Attempting archive.today for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:25.966745 INFO: No existing archive found, creating new archive for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:26.888128 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:15:26.888563 INFO: Attempting archive.is for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:29.832560 INFO: Attempting archive.li for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:33.520137 INFO: Attempting archive.fo for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:40.381271 INFO: Attempting archive.ph for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.470208 INFO: Attempting Googlebot spoof for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.578632 ERROR: Googlebot spoof failed for https://x.com/elonmusk/status/1958852874236305793: 403 Client Error: Forbidden for url: https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.582498 INFO: Attempting Enhanced Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.698852 INFO: Found Wayback snapshot from 20250825205011: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.781217 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:15:42.781319 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:42.781345 INFO: Attempting Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.899884 INFO: Found Wayback snapshot: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:42.976402 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:15:42.976504 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:42.976541 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/elonmusk/status/1958852874236305793. Attempting Google Search fallback...
+2025-09-14T22:15:42.976705 INFO: Google Search fallback: searching for 'status'
+2025-09-14T22:15:43.033976 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:15:43.044350 INFO: Attempting direct fetch for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:43.240825 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:15:43.248898 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:15:43.249004 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:43.249043 INFO: Attempting Reader Mode strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:43.472517 ERROR: Reader mode fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:15:43.476659 INFO: Attempting JS Disabled strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:43.731400 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:15:43.731521 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:43.731551 INFO: Attempting Refresh Stop strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:43.986648 ERROR: Refresh stop fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:15:43.991485 INFO: Attempting Inspect Element strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:44.229420 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:15:44.229537 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:44.229567 INFO: Attempting removepaywalls.com bypass for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:47.745228 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:15:47.745348 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:15:47.745375 INFO: Attempting archive.today for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:50.988706 INFO: No existing archive found, creating new archive for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:51.897538 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:15:51.898091 INFO: Attempting archive.is for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:54.273282 INFO: Attempting archive.li for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:15:56.858396 INFO: Attempting archive.fo for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:00.264895 INFO: Attempting archive.ph for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.050629 INFO: Attempting Googlebot spoof for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.141523 ERROR: Googlebot spoof failed for https://x.com/elonmusk/status/1958852874236305793: 403 Client Error: Forbidden for url: https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.143054 INFO: Attempting Enhanced Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.279783 INFO: Found Wayback snapshot from 20250825205011: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.353196 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:16:03.353304 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:03.353347 INFO: Attempting Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.511294 INFO: Found Wayback snapshot: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.583999 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:16:03.584108 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:03.584140 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/elonmusk/status/1958852874236305793. Attempting Google Search fallback...
+2025-09-14T22:16:03.584198 INFO: Google Search fallback: searching for 'status'
+2025-09-14T22:16:03.617660 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:16:03.627180 INFO: Attempting direct fetch for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:03.862289 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:16:03.870902 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:16:03.871016 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:03.871057 INFO: Attempting Reader Mode strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:04.132219 ERROR: Reader mode fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:16:04.133660 INFO: Attempting JS Disabled strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:04.342184 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:16:04.342291 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:04.342317 INFO: Attempting Refresh Stop strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:04.546166 ERROR: Refresh stop fetch failed for https://x.com/elonmusk/status/1958852874236305793: cannot use a string pattern on a bytes-like object
+2025-09-14T22:16:04.547762 INFO: Attempting Inspect Element strategy for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:04.760937 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T22:16:04.761050 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:04.761076 INFO: Attempting removepaywalls.com bypass for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:09.836371 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:16:09.836483 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:09.836509 INFO: Attempting archive.today for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:17.433169 INFO: No existing archive found, creating new archive for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:18.317665 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:16:18.318090 INFO: Attempting archive.is for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:20.504439 INFO: Attempting archive.li for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:24.644827 INFO: Attempting archive.fo for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:28.084191 INFO: Attempting archive.ph for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.020496 INFO: Attempting Googlebot spoof for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.113834 ERROR: Googlebot spoof failed for https://x.com/elonmusk/status/1958852874236305793: 403 Client Error: Forbidden for url: https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.115393 INFO: Attempting Enhanced Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.245084 INFO: Found Wayback snapshot from 20250825205011: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.321101 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:16:30.321206 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:30.321234 INFO: Attempting Wayback Machine for https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.480038 INFO: Found Wayback snapshot: http://web.archive.org/web/20250825205011/https://x.com/elonmusk/status/1958852874236305793
+2025-09-14T22:16:30.554115 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T22:16:30.554301 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:16:30.554336 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/elonmusk/status/1958852874236305793. Attempting Google Search fallback...
+2025-09-14T22:16:30.554399 INFO: Google Search fallback: searching for 'status'
+2025-09-14T22:16:30.593950 INFO: Google Search fallback did not find alternative URL

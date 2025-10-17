@@ -1,0 +1,148 @@
+2025-09-14T22:41:49.776398 INFO: Attempting direct fetch for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:41:51.193261 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:41:51.364168 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:41:51.364266 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:41:51.364540 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:41:51.684304 ERROR: Reader mode fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:41:51.687311 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:41:54.022328 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:41:54.022433 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:41:54.022463 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:41:55.501652 ERROR: Refresh stop fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:41:55.507035 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:41:57.065781 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:41:57.066076 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:41:57.066122 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:01.688347 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T22:42:01.688449 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:01.688476 INFO: Attempting archive.today for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:06.266547 INFO: No existing archive found, creating new archive for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:07.184195 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:42:07.184365 INFO: Attempting archive.is for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:09.931848 INFO: Attempting archive.li for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:12.675145 INFO: Attempting archive.fo for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:15.267080 INFO: Attempting archive.ph for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:17.404842 INFO: Attempting Googlebot spoof for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:17.576777 ERROR: Googlebot spoof failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:17.580306 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:18.263357 INFO: Found Wayback snapshot from 20250911012750: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:19.507919 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:19.508029 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:19.508060 INFO: Attempting Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:19.640897 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:20.487337 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:20.487439 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:20.487474 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html. Attempting Google Search fallback...
+2025-09-14T22:42:20.487749 INFO: Google Search fallback: searching for 'youtube streaming dominance media strategy.html'
+2025-09-14T22:42:20.528915 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:42:20.589314 INFO: Attempting direct fetch for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:20.884919 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:21.037444 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:21.037541 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:21.037646 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:21.388461 ERROR: Reader mode fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:42:21.391077 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:23.364740 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:23.364858 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:23.364885 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:25.265399 ERROR: Refresh stop fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:42:25.281172 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:27.871284 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:27.871390 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:27.871416 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:31.363840 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T22:42:31.363987 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:31.364015 INFO: Attempting archive.today for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:36.928108 INFO: No existing archive found, creating new archive for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:37.833521 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:42:37.833918 INFO: Attempting archive.is for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:39.739398 INFO: Attempting archive.li for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:43.083038 INFO: Attempting archive.fo for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:45.360034 INFO: Attempting archive.ph for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:47.725575 INFO: Attempting Googlebot spoof for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:47.803766 ERROR: Googlebot spoof failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:47.805068 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:47.918273 INFO: Found Wayback snapshot from 20250911012750: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:48.687902 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:48.688023 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:48.688050 INFO: Attempting Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:48.802854 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:49.888856 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:49.888969 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:49.889002 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html. Attempting Google Search fallback...
+2025-09-14T22:42:49.889067 INFO: Google Search fallback: searching for 'youtube streaming dominance media strategy.html'
+2025-09-14T22:42:49.924005 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:42:49.932967 INFO: Attempting direct fetch for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:50.074152 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:50.123548 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:50.123713 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:50.123750 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:50.243012 ERROR: Reader mode fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:42:50.245405 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:51.785062 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:51.785179 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:51.785206 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:52.836486 ERROR: Refresh stop fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:42:52.839297 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:54.330685 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:42:54.330904 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:54.330939 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:42:58.464654 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T22:42:58.464763 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:42:58.464790 INFO: Attempting archive.today for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:06.673097 INFO: No existing archive found, creating new archive for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:07.554713 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:43:07.555097 INFO: Attempting archive.is for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:10.256370 INFO: Attempting archive.li for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:13.591906 INFO: Attempting archive.fo for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:16.253377 INFO: Attempting archive.ph for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:19.077392 INFO: Attempting Googlebot spoof for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:19.166922 ERROR: Googlebot spoof failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:19.168129 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:19.285456 INFO: Found Wayback snapshot from 20250911012750: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:20.462462 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:20.462580 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:20.462635 INFO: Attempting Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:20.580846 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:21.246265 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:21.246389 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:21.246425 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html. Attempting Google Search fallback...
+2025-09-14T22:43:21.246494 INFO: Google Search fallback: searching for 'youtube streaming dominance media strategy.html'
+2025-09-14T22:43:21.279474 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:43:21.287794 INFO: Attempting direct fetch for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:21.451936 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:21.500702 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:21.500814 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:21.500856 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:21.770328 ERROR: Reader mode fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:43:21.772718 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:23.182843 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:23.182938 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:23.182966 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:24.267282 ERROR: Refresh stop fetch failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:43:24.270435 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:25.805403 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:25.805519 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:25.805546 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:29.673099 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T22:43:29.673219 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:29.673246 INFO: Attempting archive.today for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:33.582254 INFO: No existing archive found, creating new archive for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:34.488536 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:43:34.488975 INFO: Attempting archive.is for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:37.766434 INFO: Attempting archive.li for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:41.523985 INFO: Attempting archive.fo for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:45.323769 INFO: Attempting archive.ph for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:47.568174 INFO: Attempting Googlebot spoof for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:47.654939 ERROR: Googlebot spoof failed for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:47.656412 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:47.772160 INFO: Found Wayback snapshot from 20250911012750: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:48.591802 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:48.591919 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:48.591947 INFO: Attempting Wayback Machine for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:48.732535 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911012750/https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html
+2025-09-14T22:43:49.700699 INFO: Paywall phrase 'premium content' detected.
+2025-09-14T22:43:49.700823 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:43:49.700859 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/2024/06/26/youtube-streaming-dominance-media-strategy.html. Attempting Google Search fallback...
+2025-09-14T22:43:49.700930 INFO: Google Search fallback: searching for 'youtube streaming dominance media strategy.html'
+2025-09-14T22:43:49.740009 INFO: Google Search fallback did not find alternative URL

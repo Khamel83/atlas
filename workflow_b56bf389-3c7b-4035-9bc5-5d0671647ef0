@@ -1,0 +1,150 @@
+2025-09-15T00:09:39.873081 INFO: Attempting direct fetch for https://substack.com/@sullydish
+2025-09-15T00:09:40.290779 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:09:40.333259 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:09:40.333358 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:40.333395 INFO: Attempting Reader Mode strategy for https://substack.com/@sullydish
+2025-09-15T00:09:40.466421 ERROR: Reader mode fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:09:40.471022 INFO: Attempting JS Disabled strategy for https://substack.com/@sullydish
+2025-09-15T00:09:40.680540 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:09:40.680669 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:40.680696 INFO: Attempting Refresh Stop strategy for https://substack.com/@sullydish
+2025-09-15T00:09:40.786991 ERROR: Refresh stop fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:09:40.789392 INFO: Attempting Inspect Element strategy for https://substack.com/@sullydish
+2025-09-15T00:09:40.982461 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:09:40.982567 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:40.982613 INFO: Attempting removepaywalls.com bypass for https://substack.com/@sullydish
+2025-09-15T00:09:44.182829 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:09:44.182941 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:44.182970 INFO: Attempting archive.today for https://substack.com/@sullydish
+2025-09-15T00:09:48.662268 INFO: No existing archive found, creating new archive for https://substack.com/@sullydish
+2025-09-15T00:09:49.516128 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:09:49.516544 INFO: Attempting archive.is for https://substack.com/@sullydish
+2025-09-15T00:09:51.758113 INFO: Attempting archive.li for https://substack.com/@sullydish
+2025-09-15T00:09:53.813566 INFO: Attempting archive.fo for https://substack.com/@sullydish
+2025-09-15T00:09:56.856971 INFO: Attempting archive.ph for https://substack.com/@sullydish
+2025-09-15T00:09:59.213327 INFO: Attempting Googlebot spoof for https://substack.com/@sullydish
+2025-09-15T00:09:59.340826 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:09:59.340934 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:59.340963 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:10:00.591007 INFO: Found Wayback snapshot from 20250826164745: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:10:01.485909 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:01.486029 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:01.486056 INFO: Attempting Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:10:01.601268 INFO: Found Wayback snapshot: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:10:01.722085 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:01.722203 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:01.722238 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@sullydish. Attempting Google Search fallback...
+2025-09-15T00:10:01.722303 INFO: Google Search fallback: searching for '@sullydish'
+2025-09-15T00:10:01.754746 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:10:01.762285 INFO: Attempting direct fetch for https://substack.com/@sullydish
+2025-09-15T00:10:02.217627 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:02.245974 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:02.246071 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:02.246112 INFO: Attempting Reader Mode strategy for https://substack.com/@sullydish
+2025-09-15T00:10:02.362982 ERROR: Reader mode fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:10:02.365690 INFO: Attempting JS Disabled strategy for https://substack.com/@sullydish
+2025-09-15T00:10:02.557913 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:02.558015 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:02.558041 INFO: Attempting Refresh Stop strategy for https://substack.com/@sullydish
+2025-09-15T00:10:02.674133 ERROR: Refresh stop fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:10:02.676320 INFO: Attempting Inspect Element strategy for https://substack.com/@sullydish
+2025-09-15T00:10:02.925323 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:02.925440 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:02.925466 INFO: Attempting removepaywalls.com bypass for https://substack.com/@sullydish
+2025-09-15T00:10:05.767345 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:10:05.767461 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:05.767489 INFO: Attempting archive.today for https://substack.com/@sullydish
+2025-09-15T00:10:08.880893 INFO: No existing archive found, creating new archive for https://substack.com/@sullydish
+2025-09-15T00:10:09.786509 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:10:09.786952 INFO: Attempting archive.is for https://substack.com/@sullydish
+2025-09-15T00:10:12.694876 INFO: Attempting archive.li for https://substack.com/@sullydish
+2025-09-15T00:10:14.752218 INFO: Attempting archive.fo for https://substack.com/@sullydish
+2025-09-15T00:10:17.545110 INFO: Attempting archive.ph for https://substack.com/@sullydish
+2025-09-15T00:10:19.958092 INFO: Attempting Googlebot spoof for https://substack.com/@sullydish
+2025-09-15T00:10:20.090462 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:20.090572 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:20.090626 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:10:20.222938 INFO: Found Wayback snapshot from 20250826164745: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:10:20.346687 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:20.346799 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:20.346827 INFO: Attempting Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:10:20.484053 INFO: Found Wayback snapshot: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:10:20.612311 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:20.612429 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:20.612465 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@sullydish. Attempting Google Search fallback...
+2025-09-15T00:10:20.620116 INFO: Attempting direct fetch for https://substack.com/@sullydish
+2025-09-15T00:10:20.764127 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:20.792838 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:20.792961 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:20.793003 INFO: Attempting Reader Mode strategy for https://substack.com/@sullydish
+2025-09-15T00:10:20.909624 ERROR: Reader mode fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:10:20.912147 INFO: Attempting JS Disabled strategy for https://substack.com/@sullydish
+2025-09-15T00:10:21.061277 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:21.061388 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:21.061414 INFO: Attempting Refresh Stop strategy for https://substack.com/@sullydish
+2025-09-15T00:10:21.190102 ERROR: Refresh stop fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:10:21.192167 INFO: Attempting Inspect Element strategy for https://substack.com/@sullydish
+2025-09-15T00:10:21.393733 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:21.393831 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:21.393855 INFO: Attempting removepaywalls.com bypass for https://substack.com/@sullydish
+2025-09-15T00:10:25.635524 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:10:25.635652 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:25.635685 INFO: Attempting archive.today for https://substack.com/@sullydish
+2025-09-15T00:10:28.674853 INFO: No existing archive found, creating new archive for https://substack.com/@sullydish
+2025-09-15T00:10:29.557909 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:10:29.558300 INFO: Attempting archive.is for https://substack.com/@sullydish
+2025-09-15T00:10:31.486130 INFO: Attempting archive.li for https://substack.com/@sullydish
+2025-09-15T00:10:33.552624 INFO: Attempting archive.fo for https://substack.com/@sullydish
+2025-09-15T00:10:36.760105 INFO: Attempting archive.ph for https://substack.com/@sullydish
+2025-09-15T00:10:38.929765 INFO: Attempting Googlebot spoof for https://substack.com/@sullydish
+2025-09-15T00:10:39.065280 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:39.065392 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:39.065420 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:10:39.217101 INFO: Found Wayback snapshot from 20250826164745: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:10:39.353734 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:39.353844 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:39.353872 INFO: Attempting Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:10:39.475511 INFO: Found Wayback snapshot: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:10:39.611015 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:39.611125 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:39.611158 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@sullydish. Attempting Google Search fallback...
+2025-09-15T00:10:39.611220 INFO: Google Search fallback: searching for '@sullydish'
+2025-09-15T00:10:39.643298 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:10:39.651304 INFO: Attempting direct fetch for https://substack.com/@sullydish
+2025-09-15T00:10:39.761768 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:39.789030 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:39.789157 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:39.789197 INFO: Attempting Reader Mode strategy for https://substack.com/@sullydish
+2025-09-15T00:10:39.914520 ERROR: Reader mode fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:10:39.916848 INFO: Attempting JS Disabled strategy for https://substack.com/@sullydish
+2025-09-15T00:10:40.080604 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:40.080711 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:40.080735 INFO: Attempting Refresh Stop strategy for https://substack.com/@sullydish
+2025-09-15T00:10:40.190428 ERROR: Refresh stop fetch failed for https://substack.com/@sullydish: cannot use a string pattern on a bytes-like object
+2025-09-15T00:10:40.192659 INFO: Attempting Inspect Element strategy for https://substack.com/@sullydish
+2025-09-15T00:10:40.397060 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:10:40.397165 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:40.397191 INFO: Attempting removepaywalls.com bypass for https://substack.com/@sullydish
+2025-09-15T00:10:43.787026 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:10:43.787139 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:10:43.787165 INFO: Attempting archive.today for https://substack.com/@sullydish
+2025-09-15T00:10:47.239928 INFO: No existing archive found, creating new archive for https://substack.com/@sullydish
+2025-09-15T00:10:48.157729 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:10:48.158124 INFO: Attempting archive.is for https://substack.com/@sullydish
+2025-09-15T00:10:50.178963 INFO: Attempting archive.li for https://substack.com/@sullydish
+2025-09-15T00:10:54.002500 INFO: Attempting archive.fo for https://substack.com/@sullydish
+2025-09-15T00:10:57.241926 INFO: Attempting archive.ph for https://substack.com/@sullydish
+2025-09-15T00:10:59.968114 INFO: Attempting Googlebot spoof for https://substack.com/@sullydish
+2025-09-15T00:11:00.112911 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:11:00.113019 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:11:00.113051 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:11:00.236942 INFO: Found Wayback snapshot from 20250826164745: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:11:00.366265 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:11:00.366383 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:11:00.366412 INFO: Attempting Wayback Machine for https://substack.com/@sullydish
+2025-09-15T00:11:00.479634 INFO: Found Wayback snapshot: http://web.archive.org/web/20250826164745/https://substack.com/@sullydish?
+2025-09-15T00:11:00.610420 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T00:11:00.610531 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:11:00.610564 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@sullydish. Attempting Google Search fallback...
+2025-09-15T00:11:00.610649 INFO: Google Search fallback: searching for '@sullydish'
+2025-09-15T00:11:00.643254 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,149 @@
+2025-09-15T13:10:26.095722 INFO: Attempting direct fetch for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:26.391614 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:26.612526 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:26.612679 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:26.612724 INFO: Attempting Reader Mode strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:26.711470 ERROR: Reader mode fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:10:26.713488 INFO: Attempting JS Disabled strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:26.915406 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:26.915502 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:26.915531 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:27.060513 ERROR: Refresh stop fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:10:27.062183 INFO: Attempting Inspect Element strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:27.421861 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:27.421974 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:27.422001 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:30.379229 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:10:30.379321 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:30.379352 INFO: Attempting archive.today for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:33.402124 INFO: No existing archive found, creating new archive for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:34.288621 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:10:34.289149 INFO: Attempting archive.is for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:36.704329 INFO: Attempting archive.li for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:40.313281 INFO: Attempting archive.fo for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:44.184303 INFO: Attempting archive.ph for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:46.425935 INFO: Attempting Googlebot spoof for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:46.741030 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:46.741139 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:46.741171 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:47.394019 INFO: Found Wayback snapshot from 20250728011048: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:48.972495 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:48.972634 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:48.972664 INFO: Attempting Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:49.185041 INFO: Found Wayback snapshot: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:49.465814 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:49.465931 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:49.465965 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/podcasts/equity/. Attempting Google Search fallback...
+2025-09-15T13:10:49.466032 INFO: Google Search fallback: searching for 'equity'
+2025-09-15T13:10:49.497227 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:10:49.504391 INFO: Attempting direct fetch for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:49.991494 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:50.217937 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:50.218054 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:50.218094 INFO: Attempting Reader Mode strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:50.298281 ERROR: Reader mode fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:10:50.300228 INFO: Attempting JS Disabled strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:50.560418 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:50.560554 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:50.560580 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:50.705972 ERROR: Refresh stop fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:10:50.707644 INFO: Attempting Inspect Element strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:51.083092 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:10:51.083201 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:51.083231 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:56.094515 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:10:56.094647 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:10:56.094676 INFO: Attempting archive.today for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:58.341890 INFO: No existing archive found, creating new archive for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:10:59.202479 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:10:59.203041 INFO: Attempting archive.is for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:01.344712 INFO: Attempting archive.li for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:04.959674 INFO: Attempting archive.fo for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:08.363186 INFO: Attempting archive.ph for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:11.679999 INFO: Attempting Googlebot spoof for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:12.006136 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:12.006250 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:12.006277 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:12.126015 INFO: Found Wayback snapshot from 20250728011048: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:12.405168 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:12.405270 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:12.405303 INFO: Attempting Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:12.405361 ERROR: Wayback Machine failed for https://techcrunch.com/podcasts/equity/: [Errno 32] Broken pipe
+2025-09-15T13:11:12.405399 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/podcasts/equity/. Attempting Google Search fallback...
+2025-09-15T13:11:12.405463 INFO: Google Search fallback: searching for 'equity'
+2025-09-15T13:11:12.463529 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:11:12.473326 INFO: Attempting direct fetch for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:12.806562 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:13.230555 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:13.232904 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:13.232980 INFO: Attempting Reader Mode strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:13.340780 ERROR: Reader mode fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:11:13.343658 INFO: Attempting JS Disabled strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:13.599990 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:13.600087 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:13.600114 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:13.768218 ERROR: Refresh stop fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:11:13.772115 INFO: Attempting Inspect Element strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:14.208013 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:14.208118 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:14.208144 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:16.656317 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:11:16.656468 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:16.656500 INFO: Attempting archive.today for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:18.330984 INFO: No existing archive found, creating new archive for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:19.247993 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:11:19.251127 INFO: Attempting archive.is for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:21.909296 INFO: Attempting archive.li for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:23.984454 INFO: Attempting archive.fo for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:26.069976 INFO: Attempting archive.ph for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:28.125415 INFO: Attempting Googlebot spoof for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:28.461844 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:28.461956 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:28.461981 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:28.581800 INFO: Found Wayback snapshot from 20250728011048: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:28.855511 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:28.855653 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:28.855684 INFO: Attempting Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:28.970538 INFO: Found Wayback snapshot: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:29.241563 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:29.241703 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:29.241740 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/podcasts/equity/. Attempting Google Search fallback...
+2025-09-15T13:11:29.241807 INFO: Google Search fallback: searching for 'equity'
+2025-09-15T13:11:29.275641 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:11:29.283235 INFO: Attempting direct fetch for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:29.533444 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:29.885093 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:29.885207 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:29.885248 INFO: Attempting Reader Mode strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:30.031625 ERROR: Reader mode fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:11:30.034346 INFO: Attempting JS Disabled strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:30.302103 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:30.302214 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:30.302240 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:30.391715 ERROR: Refresh stop fetch failed for https://techcrunch.com/podcasts/equity/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:11:30.394619 INFO: Attempting Inspect Element strategy for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:30.781644 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:30.781750 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:30.781778 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:33.797787 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:11:33.797887 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:33.797917 INFO: Attempting archive.today for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:36.661198 INFO: No existing archive found, creating new archive for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:37.552029 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:11:37.553038 INFO: Attempting archive.is for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:40.883646 INFO: Attempting archive.li for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:43.770745 INFO: Attempting archive.fo for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:46.969757 INFO: Attempting archive.ph for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:50.065114 INFO: Attempting Googlebot spoof for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:50.342069 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:50.342193 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:50.342221 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:50.473462 INFO: Found Wayback snapshot from 20250728011048: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:50.745004 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T13:11:50.745125 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:11:50.745151 INFO: Attempting Wayback Machine for https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:50.891695 INFO: Found Wayback snapshot: http://web.archive.org/web/20250728011048/https://techcrunch.com/podcasts/equity/
+2025-09-15T13:11:50.891845 ERROR: Wayback Machine failed for https://techcrunch.com/podcasts/equity/: [Errno 32] Broken pipe
+2025-09-15T13:11:50.893716 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/podcasts/equity/. Attempting Google Search fallback...
+2025-09-15T13:11:50.893876 INFO: Google Search fallback: searching for 'equity'
+2025-09-15T13:11:50.925635 INFO: Google Search fallback did not find alternative URL

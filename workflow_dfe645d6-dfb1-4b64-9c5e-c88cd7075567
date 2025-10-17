@@ -1,0 +1,25 @@
+2025-09-15T01:13:21.086704 INFO: Attempting direct fetch for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:21.444044 ERROR: Direct fetch failed for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:21.445217 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:22.103391 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html: cannot use a string pattern on a bytes-like object
+2025-09-15T01:13:22.105842 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:22.226062 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:22.229711 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:22.355703 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html: cannot use a string pattern on a bytes-like object
+2025-09-15T01:13:22.357397 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:22.484090 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:22.485815 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:25.292434 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:13:25.292551 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:13:25.292578 INFO: Attempting archive.today for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:29.091351 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:30.002950 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:13:30.003349 INFO: Attempting archive.is for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:32.303146 INFO: Attempting archive.li for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:36.171585 INFO: Attempting archive.fo for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:38.868231 INFO: Attempting archive.ph for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:42.677176 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:42.832498 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:42.833726 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:43.340744 INFO: Found Wayback snapshot from 20250905085419: http://web.archive.org/web/20250905085419/https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html
+2025-09-15T01:13:44.781431 INFO: Successfully fetched https://www.nytimes.com/2022/01/27/opinion/sway-kara-swisher-bob-iger.html using wayback_machine_enhanced

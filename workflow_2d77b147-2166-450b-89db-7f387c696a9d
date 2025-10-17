@@ -1,0 +1,102 @@
+2025-09-15T04:32:58.929972 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:32:59.291955 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:32:59.292138 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:32:59.940858 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:32:59.942484 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:00.004459 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:00.004677 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:00.066387 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:33:00.066556 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:00.126027 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:00.126210 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:03.623638 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:33:03.623736 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:33:03.623765 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:07.427529 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:08.299552 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:33:08.300243 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:11.523609 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:15.291790 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:19.113930 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:21.471544 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:21.555904 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:21.556102 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:47.203181 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T04:33:47.204829 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:47.357392 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: No archived snapshots found
+2025-09-15T04:33:47.359279 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T04:33:47.360058 INFO: Google Search fallback: searching for '24helmets.html'
+2025-09-15T04:33:47.393681 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:33:47.401935 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:47.467697 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:47.467885 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:48.070383 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:33:48.072014 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:48.132542 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:48.132788 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:48.190385 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:33:48.190569 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:48.246931 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:48.247130 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:51.727114 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:33:51.727229 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:33:51.727257 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:55.304391 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:56.176325 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:33:56.177944 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:33:59.347168 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:02.832187 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:05.407615 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:08.242168 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:08.348436 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:08.355969 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:08.414800 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:08.414983 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:09.131473 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:34:09.133439 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:09.196697 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:09.196887 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:09.255324 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:34:09.255495 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:09.312166 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:09.312364 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:14.230227 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:34:14.230325 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:34:14.230354 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:16.126690 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:17.031344 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:34:17.031970 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:20.423721 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:22.586497 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:25.638808 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:28.095564 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:28.163802 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:28.164003 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.413491 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T04:34:29.414827 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.527725 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: No archived snapshots found
+2025-09-15T04:34:29.529344 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T04:34:29.529978 INFO: Google Search fallback: searching for '24helmets.html'
+2025-09-15T04:34:29.561756 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:34:29.569570 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.629044 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.629245 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.879763 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:34:29.882055 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.941312 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:29.941506 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:30.001274 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:34:30.001460 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:30.058826 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:30.059021 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:32.660256 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:34:32.660352 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:34:32.660381 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:36.115148 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:36.993029 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:34:36.993694 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:40.158923 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:43.915517 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:46.578771 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:49.444478 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print
+2025-09-15T04:34:49.503793 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/24/sports/football/24helmets.html?pagewanted=print

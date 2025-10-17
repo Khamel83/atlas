@@ -1,0 +1,96 @@
+2025-09-15T05:09:43.305426 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.526044 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.528097 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.614899 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.616478 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.706293 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.707929 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.791856 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: cannot use a string pattern on a bytes-like object
+2025-09-15T05:09:43.793647 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.887820 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:43.889506 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:48.087862 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T05:09:48.087981 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:09:48.088008 INFO: Attempting archive.today for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:51.396082 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:52.299326 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:09:52.299795 INFO: Attempting archive.is for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:56.006227 INFO: Attempting archive.li for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:09:58.060328 INFO: Attempting archive.fo for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:01.189667 INFO: Attempting archive.ph for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:04.718636 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:04.800564 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:04.802168 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:12.304978 INFO: Found Wayback snapshot from 20241218062509: http://web.archive.org/web/20241218062509/https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.476411 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T05:10:13.476551 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:10:13.476578 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.587536 ERROR: Wayback Machine failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: No archived snapshots found
+2025-09-15T05:10:13.589224 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at. Attempting Google Search fallback...
+2025-09-15T05:10:13.589399 INFO: Google Search fallback: searching for 'the facebook files 11631713039'
+2025-09-15T05:10:13.620845 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:10:13.628036 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.708496 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.709760 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.790567 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.791904 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.873125 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.874361 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:13.957222 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: cannot use a string pattern on a bytes-like object
+2025-09-15T05:10:13.958454 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:14.039444 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:14.040708 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.404739 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T05:10:16.404841 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:10:16.404871 INFO: Attempting archive.today for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.413265 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.499642 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.501015 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.653421 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.654787 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.745660 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.746952 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.866296 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: cannot use a string pattern on a bytes-like object
+2025-09-15T05:10:16.867610 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.948508 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:16.949875 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:21.242219 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T05:10:21.242327 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:10:21.242356 INFO: Attempting archive.today for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:23.604701 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:24.510485 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:10:24.510924 INFO: Attempting archive.is for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:26.932660 INFO: Attempting archive.li for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:30.825376 INFO: Attempting archive.fo for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:33.789813 INFO: Attempting archive.ph for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:36.505233 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:36.591849 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:36.593457 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:36.858992 INFO: Found Wayback snapshot from 20241218062509: http://web.archive.org/web/20241218062509/https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.012170 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T05:10:37.012319 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:10:37.012349 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.134019 ERROR: Wayback Machine failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: No archived snapshots found
+2025-09-15T05:10:37.135545 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at. Attempting Google Search fallback...
+2025-09-15T05:10:37.135800 INFO: Google Search fallback: searching for 'the facebook files 11631713039'
+2025-09-15T05:10:37.167674 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:10:37.178050 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.260302 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.261513 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.343629 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.344860 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.426740 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.428037 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.511564 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: cannot use a string pattern on a bytes-like object
+2025-09-15T05:10:37.512859 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.594436 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:37.595744 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:41.030018 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T05:10:41.030133 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:10:41.030161 INFO: Attempting archive.today for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:43.403102 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:44.310738 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:10:44.311154 INFO: Attempting archive.is for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:46.575291 INFO: Attempting archive.li for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:49.455225 INFO: Attempting archive.fo for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at
+2025-09-15T05:10:53.303367 INFO: Attempting archive.ph for https://www.wsj.com/articles/the-facebook-files-11631713039?ref=wheresyoured.at

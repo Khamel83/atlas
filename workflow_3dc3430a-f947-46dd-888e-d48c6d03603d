@@ -1,0 +1,108 @@
+2025-09-15T08:09:13.779359 INFO: Attempting direct fetch for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:13.779619 ERROR: Direct fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: [Errno 32] Broken pipe
+2025-09-15T08:09:13.779679 INFO: Attempting Reader Mode strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:15.100299 ERROR: Reader mode fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:09:15.102636 INFO: Attempting JS Disabled strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:16.642367 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:09:16.642475 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:16.642501 INFO: Attempting Refresh Stop strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:18.007873 ERROR: Refresh stop fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:09:18.009747 INFO: Attempting Inspect Element strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:18.797626 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:09:18.797734 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:18.797761 INFO: Attempting removepaywalls.com bypass for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:22.968352 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:09:22.968450 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:22.968477 INFO: Attempting archive.today for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:26.241353 INFO: No existing archive found, creating new archive for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:27.154305 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:09:27.154720 INFO: Attempting archive.is for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:29.801446 INFO: Attempting archive.li for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:32.197767 INFO: Attempting archive.fo for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:35.625866 INFO: Attempting archive.ph for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:38.299849 INFO: Attempting Googlebot spoof for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:38.716406 ERROR: Googlebot spoof failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-15T08:09:38.718091 INFO: Attempting Enhanced Wayback Machine for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:45.009278 INFO: Found Wayback snapshot from 20150117105509: http://web.archive.org/web/20150117105509/http://www.businessweek.com:80/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:47.221917 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T08:09:47.222063 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:47.222091 INFO: Attempting Wayback Machine for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:47.348874 ERROR: Wayback Machine failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: No archived snapshots found
+2025-09-15T08:09:47.350431 ERROR: All fetch strategies failed or returned low-quality content for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old. Attempting Google Search fallback...
+2025-09-15T08:09:47.350572 INFO: Google Search fallback: searching for 'burger kings ceo daniel schwartz is 33 years old'
+2025-09-15T08:09:47.382044 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:09:47.389321 INFO: Attempting direct fetch for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:48.010926 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:09:48.259054 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:09:48.259170 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:48.259212 INFO: Attempting Reader Mode strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:49.387441 ERROR: Reader mode fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:09:49.389060 INFO: Attempting JS Disabled strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:50.014215 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:09:50.014316 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:50.014343 INFO: Attempting Refresh Stop strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:51.176323 ERROR: Refresh stop fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:09:51.177921 INFO: Attempting Inspect Element strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:52.082716 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:09:52.082825 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:52.082854 INFO: Attempting removepaywalls.com bypass for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:55.139015 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:09:55.139119 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:55.139147 INFO: Attempting archive.today for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:58.644302 INFO: No existing archive found, creating new archive for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:09:59.517221 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:09:59.517738 INFO: Attempting archive.is for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:03.081581 INFO: Attempting archive.li for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:06.085308 INFO: Attempting archive.fo for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:09.725525 INFO: Attempting archive.ph for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:09.738160 INFO: Attempting direct fetch for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:10.131379 ERROR: Direct fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-15T08:10:10.132898 INFO: Attempting Reader Mode strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:10.628780 ERROR: Reader mode fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:10:10.630886 INFO: Attempting JS Disabled strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:11.882354 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:10:11.882459 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:10:11.882485 INFO: Attempting Refresh Stop strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:12.269575 ERROR: Refresh stop fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:10:12.271639 INFO: Attempting Inspect Element strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:12.658468 ERROR: Inspect element fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-15T08:10:12.659965 INFO: Attempting removepaywalls.com bypass for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:16.486029 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:10:16.486139 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:10:16.486166 INFO: Attempting archive.today for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:19.814184 INFO: No existing archive found, creating new archive for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:20.748906 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:10:20.749322 INFO: Attempting archive.is for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:24.447211 INFO: Attempting archive.li for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:27.117025 INFO: Attempting archive.fo for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:29.086297 INFO: Attempting archive.ph for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:31.300326 INFO: Attempting Googlebot spoof for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:31.737514 ERROR: Googlebot spoof failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-15T08:10:31.738809 INFO: Attempting Enhanced Wayback Machine for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:32.030734 INFO: Found Wayback snapshot from 20150117105509: http://web.archive.org/web/20150117105509/http://www.businessweek.com:80/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:32.136449 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T08:10:32.136569 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:10:32.136620 INFO: Attempting Wayback Machine for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:32.497472 ERROR: Wayback Machine failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: No archived snapshots found
+2025-09-15T08:10:32.499810 ERROR: All fetch strategies failed or returned low-quality content for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old. Attempting Google Search fallback...
+2025-09-15T08:10:32.499923 INFO: Google Search fallback: searching for 'burger kings ceo daniel schwartz is 33 years old'
+2025-09-15T08:10:32.532160 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:10:32.539870 INFO: Attempting direct fetch for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:32.916724 ERROR: Direct fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-15T08:10:32.917942 INFO: Attempting Reader Mode strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:33.391620 ERROR: Reader mode fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:10:33.393376 INFO: Attempting JS Disabled strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:34.820628 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T08:10:34.820726 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:10:34.820753 INFO: Attempting Refresh Stop strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:35.244444 ERROR: Refresh stop fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: cannot use a string pattern on a bytes-like object
+2025-09-15T08:10:35.247065 INFO: Attempting Inspect Element strategy for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:35.670476 ERROR: Inspect element fetch failed for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-15T08:10:35.673126 INFO: Attempting removepaywalls.com bypass for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:40.450900 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:10:40.451013 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:10:40.451039 INFO: Attempting archive.today for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:43.682462 INFO: No existing archive found, creating new archive for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:44.636523 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:10:44.636954 INFO: Attempting archive.is for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old
+2025-09-15T08:10:47.535119 INFO: Attempting archive.li for http://www.businessweek.com/articles/2014-07-24/burger-kings-ceo-daniel-schwartz-is-33-years-old

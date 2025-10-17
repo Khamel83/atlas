@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atlas Scheduled Jobs</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+        th { background: #f0f0f0; }
+        form.inline { display: inline; }
+        .actions { white-space: nowrap; }
+        .msg { background: #e0ffe0; color: #205020; padding: 0.5em 1em; border-radius: 4px; margin-bottom: 1em; }
+        .error { background: #ffe0e0; color: #802020; padding: 0.5em 1em; border-radius: 4px; margin-bottom: 1em; }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-bottom: 1rem;">
+        <a href="/" style="text-decoration: none; color: #667eea; font-size: 0.9rem;">← Back to Atlas Dashboard</a>
+    </div>
+    <h1>Atlas Scheduled Jobs</h1>
+
+    {% if msg %}
+        <div class="msg">{{ msg }}</div>
+    {% endif %}
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <h2>Add New Job</h2>
+    <form method="post" action="/jobs/add">
+        <label>Job Name: <input type="text" name="name" required></label>
+        <label>Cron String: <input type="text" name="cron" placeholder="* * * * *" required></label>
+        <button type="submit">Add Job</button>
+    </form>
+
+    <h2>Current Jobs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Next Run</th>
+                <th>Trigger</th>
+                <th>Function</th>
+                <th>Args</th>
+                <th>Kwargs</th>
+                <th>Enabled</th>
+                <th>Last Status</th>
+                <th>Last Run Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for job in jobs %}
+            <tr>
+                <td>{{ job.id }}</td>
+                <td>{{ job.name }}</td>
+                <td>{{ job.next_run_time }}</td>
+                <td>{{ job.trigger }}</td>
+                <td>{{ job.func }}</td>
+                <td>{{ job.args }}</td>
+                <td>{{ job.kwargs }}</td>
+                <td>{{ 'Yes' if job.enabled else 'No' }}</td>
+                <td>{{ job.last_status }}</td>
+                <td>{{ job.last_time }}</td>
+                <td class="actions">
+                    <a href="/jobs/{{ job.id }}/edit">Edit</a>
+                    <form class="inline" method="post" action="/jobs/{{ job.id }}/trigger">
+                        <button type="submit">Trigger</button>
+                    </form>
+                    <a href="/jobs/{{ job.id }}/logs">Logs</a>
+                    {% if job.enabled %}
+                        <form class="inline" method="post" action="/jobs/{{ job.id }}/disable">
+                            <button type="submit">Disable</button>
+                        </form>
+                    {% else %}
+                        <form class="inline" method="post" action="/jobs/{{ job.id }}/enable">
+                            <button type="submit">Enable</button>
+                        </form>
+                    {% endif %}
+                    <form class="inline" method="post" action="/jobs/{{ job.id }}/delete" onsubmit="return confirm('Delete this job?');">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        {% else %}
+            <tr><td colspan="9">No jobs scheduled.</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

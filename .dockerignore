@@ -1,0 +1,95 @@
+# Git and version control
+.git
+.gitignore
+.gitattributes
+
+# Development files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.log
+logs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+atlas_venv/
+.venv
+
+# Development tools
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Output and data directories (mount as volumes instead)
+output/
+evaluation/
+retries/
+exports/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Documentation build
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Agent OS specs (development only)
+.agent-os/
+
+# Large data files
+*.csv
+*.json.gz
+*.db-journal
+
+# Test files
+test_*.py
+*_test.py
+
+# Scripts that shouldn't be in container
+scripts/deploy_*.sh
+scripts/setup_*.sh
+
+# Local config overrides
+config/config.local.json

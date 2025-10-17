@@ -1,0 +1,29 @@
+2025-09-15T18:53:55.527981 INFO: Attempting direct fetch for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:53:56.248803 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T18:53:56.349661 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T18:53:56.349778 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:53:56.349821 INFO: Attempting Reader Mode strategy for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:53:56.693265 ERROR: Reader mode fetch failed for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag: cannot use a string pattern on a bytes-like object
+2025-09-15T18:53:56.696307 INFO: Attempting JS Disabled strategy for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:53:57.292929 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T18:53:57.293038 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:53:57.293067 INFO: Attempting Refresh Stop strategy for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:00.339720 INFO: Attempting Inspect Element strategy for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:01.030736 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T18:54:01.030850 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:54:01.030881 INFO: Attempting removepaywalls.com bypass for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:06.010781 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T18:54:06.010890 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:54:06.010915 INFO: Attempting archive.today for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:10.117925 INFO: No existing archive found, creating new archive for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:11.009684 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T18:54:11.010416 INFO: Attempting archive.is for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:14.482358 INFO: Attempting archive.li for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:17.455788 INFO: Attempting archive.fo for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:20.402090 INFO: Attempting archive.ph for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:23.654697 INFO: Attempting Googlebot spoof for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:24.326118 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T18:54:24.326245 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:54:24.326280 INFO: Attempting Enhanced Wayback Machine for https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:54.101510 INFO: Found Wayback snapshot from 20200224152615: http://web.archive.org/web/20200224152615/https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag
+2025-09-15T18:54:54.847886 INFO: Successfully fetched https://hbr.org/2020/02/the-mystery-of-the-2000-ikea-shopping-bag using wayback_machine_enhanced

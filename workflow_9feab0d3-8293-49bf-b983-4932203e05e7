@@ -1,0 +1,24 @@
+2025-09-15T08:22:48.056938 INFO: Attempting direct fetch for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:23:18.134771 ERROR: Direct fetch failed for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates: HTTPConnectionPool(host='www.playboy.com', port=80): Read timed out. (read timeout=30)
+2025-09-15T08:23:18.134892 INFO: Attempting Reader Mode strategy for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:23:38.163316 ERROR: Reader mode fetch failed for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates: HTTPConnectionPool(host='www.playboy.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T08:23:38.163433 INFO: Attempting JS Disabled strategy for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:23:58.192808 ERROR: JS disabled fetch failed for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates: HTTPConnectionPool(host='www.playboy.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T08:23:58.192938 INFO: Attempting Refresh Stop strategy for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:01.208800 INFO: Attempting Inspect Element strategy for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:21.237964 ERROR: Inspect element fetch failed for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates: HTTPConnectionPool(host='www.playboy.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T08:24:21.238090 INFO: Attempting removepaywalls.com bypass for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:24.405081 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:24:24.405185 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:24:24.405216 INFO: Attempting archive.today for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:27.458216 INFO: No existing archive found, creating new archive for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:28.390072 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:24:28.390546 INFO: Attempting archive.is for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:31.089036 INFO: Attempting archive.li for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:34.829478 INFO: Attempting archive.fo for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:38.082696 INFO: Attempting archive.ph for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:40.571973 INFO: Attempting Googlebot spoof for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:55.602470 ERROR: Googlebot spoof failed for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates: HTTPConnectionPool(host='www.playboy.com', port=80): Read timed out. (read timeout=15)
+2025-09-15T08:24:55.602633 INFO: Attempting Enhanced Wayback Machine for http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:24:56.331360 INFO: Found Wayback snapshot from 20180407192553: http://web.archive.org/web/20180407192553/http://www.playboy.com:80/articles/playboy-interview-ta-nehisi-coates
+2025-09-15T08:25:00.115720 INFO: Successfully fetched http://www.playboy.com/articles/playboy-interview-ta-nehisi-coates using wayback_machine_enhanced

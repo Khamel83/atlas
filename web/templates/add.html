@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Atlas - Add Content{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <h2>Add New Content</h2>
+        <p>Add content to your Atlas filing cabinet. You can add URLs, text, or RSS feeds.</p>
+
+        {% if prefilled_url %}
+        <div class="alert alert-info">
+            <strong>URL Detected:</strong> The form below is pre-filled with the URL you provided. Click "Add Content" to save it to Atlas.
+        </div>
+        {% endif %}
+
+        <form id="content-form">
+            <div class="form-group">
+                <label for="content">Content *</label>
+                <textarea id="content" name="content" class="form-control" placeholder="Enter URL, text content, or RSS feed URL..." required>{% if prefilled_url %}{{ prefilled_url }}{% endif %}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Title (Optional)</label>
+                <input type="text" id="title" name="title" class="form-control" placeholder="Enter title or leave blank for auto-generation" value="{% if prefilled_title %}{{ prefilled_title }}{% endif %}">
+            </div>
+
+            <div class="form-group">
+                <label for="source">Source (Optional)</label>
+                <input type="text" id="source" name="source" class="form-control" placeholder="e.g., Web, RSS, Manual" value="{% if prefilled_source %}{{ prefilled_source }}{% endif %}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Content</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Tips</h2>
+        <ul style="margin-left: 1.5rem;">
+            <li><strong>URLs:</strong> Enter web page URLs to extract and store content</li>
+            <li><strong>Text:</strong> Paste text content directly for storage and analysis</li>
+            <li><strong>RSS:</strong> Add RSS feed URLs to automatically fetch new articles</li>
+            <li><strong>Batch:</strong> Add multiple items by separating them with newlines</li>
+        </ul>
+    </div>
+{% endblock %}

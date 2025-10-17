@@ -1,0 +1,35 @@
+{
+  "version": "2025.1.0",
+  "source": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters",
+  "last_updated": "2025-03-01",
+  "update_frequency": "weekly",
+  "legal_review": {
+    "last_reviewed": "2025-02-28",
+    "reviewer": "legal-team@example.com"
+  },
+  "patterns": {
+    "dom_selectors": [
+      ".paywall",
+      ".gateway-content",
+      "[class*='subscribe']",
+      "[class*='metered']"
+    ],
+    "url_patterns": [
+      "paywall=true",
+      "metered",
+      "subscribe",
+      "premium"
+    ],
+    "content_phrases": [
+      "subscribe to continue reading",
+      "you've reached your article limit",
+      "this content is for subscribers only"
+    ]
+  },
+  "high_risk_domains": {
+    "nytimes.com": {"risk": "high", "jurisdiction": "us"},
+    "wsj.com": {"risk": "high", "jurisdiction": "us"},
+    "bloomberg.com": {"risk": "high", "jurisdiction": "us"},
+    "ft.com": {"risk": "medium", "jurisdiction": "uk"}
+  }
+} 

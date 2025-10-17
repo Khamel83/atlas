@@ -1,0 +1,27 @@
+2025-09-15T10:47:26.647973 INFO: Attempting direct fetch for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.046468 ERROR: Direct fetch failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.054515 INFO: Attempting direct fetch for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.112279 ERROR: Direct fetch failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.112480 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.374566 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:47:27.376583 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.440024 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.440230 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.498785 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:47:27.498975 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.555930 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:27.556123 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:29.826898 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:47:29.827013 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:47:29.827042 INFO: Attempting archive.today for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:31.823060 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:32.695508 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:47:32.696089 INFO: Attempting archive.is for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:36.126923 INFO: Attempting archive.li for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:39.254534 INFO: Attempting archive.fo for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:41.745858 INFO: Attempting archive.ph for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:44.309376 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:44.394726 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:44.394923 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0
+2025-09-15T10:47:47.768738 INFO: Found Wayback snapshot from 20130221003845: http://web.archive.org/web/20130221003845/http://www.nytimes.com:80/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp
+2025-09-15T10:47:49.369352 INFO: Successfully fetched http://www.nytimes.com/2013/02/17/magazine/connie-britton-is-a-late-bloomer.html?hp&pagewanted=print&_r=0 using wayback_machine_enhanced

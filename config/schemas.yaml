@@ -1,0 +1,595 @@
+# Atlas Configuration Schemas
+# Defines validation rules for all configuration parameters
+
+# === Core System Configuration ===
+ATLAS_ENVIRONMENT:
+  type: str
+  required: false
+  default: "development"
+  allowed_values: ["development", "staging", "production", "testing"]
+  description: "Deployment environment"
+
+ATLAS_DATABASE_PATH:
+  type: str
+  required: true
+  description: "Path to SQLite database file"
+
+ATLAS_LOG_LEVEL:
+  type: str
+  required: false
+  default: "INFO"
+  allowed_values: ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
+  description: "Logging level"
+
+ATLAS_DATA_DIRECTORY:
+  type: str
+  required: false
+  default: "data"
+  description: "Data directory path"
+
+# === API Configuration ===
+API_HOST:
+  type: str
+  required: false
+  default: "localhost"
+  description: "API server host"
+
+API_PORT:
+  type: int
+  required: false
+  default: 7444
+  min_value: 1024
+  max_value: 65535
+  description: "API server port"
+
+API_DEBUG:
+  type: bool
+  required: false
+  default: false
+  description: "Enable API debug mode"
+
+API_WORKERS:
+  type: int
+  required: false
+  default: 1
+  min_value: 1
+  max_value: 10
+  description: "Number of API worker processes"
+
+# === Database Configuration ===
+DATABASE_MAX_CONNECTIONS:
+  type: int
+  required: false
+  default: 10
+  min_value: 1
+  max_value: 100
+  description: "Maximum database connections"
+
+DATABASE_CONNECTION_TIMEOUT:
+  type: int
+  required: false
+  default: 30
+  min_value: 5
+  max_value: 300
+  description: "Database connection timeout in seconds"
+
+DATABASE_WAL_MODE:
+  type: bool
+  required: false
+  default: true
+  description: "Enable SQLite WAL mode"
+
+DATABASE_BACKUP_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable automatic database backups"
+
+DATABASE_BACKUP_INTERVAL:
+  type: str
+  required: false
+  default: "24h"
+  regex_pattern: "^\\d+[hms]$"
+  description: "Database backup interval (e.g., 24h, 30m, 3600s)"
+
+# === AI/LLM Configuration ===
+DEFAULT_LLM_PROVIDER:
+  type: str
+  required: false
+  default: "openrouter"
+  allowed_values: ["openrouter", "deepseek", "openai", "anthropic", "ollama"]
+  description: "Default AI provider"
+
+DEFAULT_MODEL:
+  type: str
+  required: false
+  default: "google/gemini-2.5-flash-lite"
+  description: "Default AI model"
+
+OPENROUTER_API_KEY:
+  type: str
+  required: false
+  description: "OpenRouter API key (sensitive)"
+
+DEEPSEEK_API_KEY:
+  type: str
+  required: false
+  description: "DeepSeek API key (sensitive)"
+
+LLM_MODEL_PREMIUM:
+  type: str
+  required: false
+  default: "google/gemini-2.0-flash-lite-001"
+  description: "Premium AI model for complex tasks"
+
+LLM_MODEL_BUDGET:
+  type: str
+  required: false
+  default: "mistralai/mistral-7b-instruct"
+  description: "Budget AI model for cost optimization"
+
+LLM_MODEL_FALLBACK:
+  type: str
+  required: false
+  default: "google/gemini-2.0-flash-lite-001"
+  description: "Fallback AI model"
+
+# === YouTube Integration ===
+YOUTUBE_API_KEY:
+  type: str
+  required: false
+  description: "YouTube API key (sensitive)"
+
+YOUTUBE_ENABLED:
+  type: bool
+  required: false
+  default: false
+  description: "Enable YouTube integration"
+
+YOUTUBE_PROCESSING_INTERVAL:
+  type: int
+  required: false
+  default: 300
+  min_value: 60
+  max_value: 3600
+  description: "YouTube processing interval in seconds"
+
+YOUTUBE_MAX_CONCURRENT:
+  type: int
+  required: false
+  default: 2
+  min_value: 1
+  max_value: 10
+  description: "Maximum concurrent YouTube processing tasks"
+
+# === Performance Configuration ===
+MAX_CONCURRENT_ARTICLES:
+  type: int
+  required: false
+  default: 5
+  min_value: 1
+  max_value: 20
+  description: "Maximum concurrent article processing"
+
+MAX_CONCURRENT_PODCASTS:
+  type: int
+  required: false
+  default: 2
+  min_value: 1
+  max_value: 10
+  description: "Maximum concurrent podcast processing"
+
+MAX_CONCURRENT_YOUTUBE:
+  type: int
+  required: false
+  default: 2
+  min_value: 1
+  max_value: 10
+  description: "Maximum concurrent YouTube processing"
+
+ARTICLE_TIMEOUT:
+  type: int
+  required: false
+  default: 300
+  min_value: 30
+  max_value: 1800
+  description: "Article processing timeout in seconds"
+
+PODCAST_DOWNLOAD_TIMEOUT:
+  type: int
+  required: false
+  default: 600
+  min_value: 60
+  max_value: 3600
+  description: "Podcast download timeout in seconds"
+
+PROCESSING_TIMEOUT:
+  type: int
+  required: false
+  default: 600
+  min_value: 60
+  max_value: 3600
+  description: "General processing timeout in seconds"
+
+# === Backup Configuration ===
+BACKUP_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable backup system"
+
+BACKUP_SCHEDULE:
+  type: str
+  required: false
+  default: "daily"
+  allowed_values: ["hourly", "daily", "weekly"]
+  description: "Backup schedule frequency"
+
+BACKUP_RETENTION_DAYS:
+  type: int
+  required: false
+  default: 30
+  min_value: 1
+  max_value: 365
+  description: "Backup retention period in days"
+
+BACKUP_REMOTE_ENABLED:
+  type: bool
+  required: false
+  default: false
+  description: "Enable remote backup storage"
+
+BACKUP_REMOTE_HOST:
+  type: str
+  required: false
+  description: "Remote backup server host"
+
+BACKUP_REMOTE_USER:
+  type: str
+  required: false
+  description: "Remote backup username"
+
+BACKUP_REMOTE_PATH:
+  type: str
+  required: false
+  default: "/backups/atlas"
+  description: "Remote backup path"
+
+# === Email Integration ===
+EMAIL_ENABLED:
+  type: bool
+  required: false
+  default: false
+  description: "Enable email integration"
+
+EMAIL_IMAP_HOST:
+  type: str
+  required: false
+  default: "imap.gmail.com"
+  description: "IMAP server host"
+
+EMAIL_IMAP_PORT:
+  type: int
+  required: false
+  default: 993
+  min_value: 1
+  max_value: 65535
+  description: "IMAP server port"
+
+EMAIL_USERNAME:
+  type: str
+  required: false
+  description: "Email username"
+
+EMAIL_PASSWORD:
+  type: str
+  required: false
+  description: "Email password/app password (sensitive)"
+
+EMAIL_FOLDER:
+  type: str
+  required: false
+  default: "Atlas"
+  description: "Email folder to monitor"
+
+# === Security Configuration ===
+ATLAS_ENCRYPTION_KEY:
+  type: str
+  required: false
+  description: "Master encryption key (sensitive)"
+
+JWT_SECRET_KEY:
+  type: str
+  required: false
+  description: "JWT secret key (sensitive)"
+
+SESSION_SECRET:
+  type: str
+  required: false
+  description: "Session secret (sensitive)"
+
+CORS_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable CORS"
+
+CORS_ORIGINS:
+  type: str
+  required: false
+  default: "*"
+  description: "CORS allowed origins (comma-separated)"
+
+RATE_LIMIT_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable API rate limiting"
+
+RATE_LIMIT_REQUESTS_PER_MINUTE:
+  type: int
+  required: false
+  default: 60
+  min_value: 1
+  max_value: 1000
+  description: "Rate limit requests per minute"
+
+# === Monitoring and Observability ===
+MONITORING_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable monitoring system"
+
+MONITORING_PORT:
+  type: int
+  required: false
+  default: 8081
+  min_value: 1024
+  max_value: 65535
+  description: "Monitoring dashboard port"
+
+METRICS_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable metrics collection"
+
+PROMETHEUS_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable Prometheus metrics export"
+
+ALERTING_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable alerting system"
+
+# === Cache Configuration ===
+CACHE_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable caching system"
+
+CACHE_MAX_SIZE:
+  type: int
+  required: false
+  default: 1000
+  min_value: 100
+  max_value: 10000
+  description: "Maximum cache size"
+
+CACHE_TTL_SECONDS:
+  type: int
+  required: false
+  default: 3600
+  min_value: 60
+  max_value: 86400
+  description: "Cache TTL in seconds"
+
+# === Queue Configuration ===
+QUEUE_MAX_PENDING:
+  type: int
+  required: false
+  default: 1000
+  min_value: 100
+  max_value: 10000
+  description: "Maximum pending queue items"
+
+QUEUE_PROCESSING_TIMEOUT:
+  type: int
+  required: false
+  default: 300
+  min_value: 30
+  max_value: 1800
+  description: "Queue processing timeout in seconds"
+
+QUEUE_RETRY_ATTEMPTS:
+  type: int
+  required: false
+  default: 3
+  min_value: 0
+  max_value: 10
+  description: "Queue retry attempts"
+
+QUEUE_RETRY_DELAY:
+  type: int
+  required: false
+  default: 60
+  min_value: 1
+  max_value: 300
+  description: "Queue retry delay in seconds"
+
+# === Storage Configuration ===
+STORAGE_MAX_DISK_USAGE_PERCENT:
+  type: int
+  required: false
+  default: 80
+  min_value: 50
+  max_value: 95
+  description: "Maximum disk usage percentage"
+
+STORAGE_CLEANUP_ENABLED:
+  type: bool
+  required: false
+  default: true
+  description: "Enable automatic storage cleanup"
+
+STORAGE_CLEANUP_THRESHOLD_DAYS:
+  type: int
+  required: false
+  default: 30
+  min_value: 1
+  max_value: 365
+  description: "Storage cleanup threshold in days"
+
+# === Feature Flags ===
+FEATURE_TRANSCRIPTION:
+  type: bool
+  required: false
+  default: false
+  description: "Enable transcription feature"
+
+FEATURE_CATEGORIZATION:
+  type: bool
+  required: false
+  default: true
+  description: "Enable content categorization"
+
+FEATURE_SEARCH:
+  type: bool
+  required: false
+  default: true
+  description: "Enable search functionality"
+
+FEATURE_ANALYTICS:
+  type: bool
+  required: false
+  default: true
+  description: "Enable analytics dashboard"
+
+FEATURE_DASHBOARD:
+  type: bool
+  required: false
+  default: true
+  description: "Enable web dashboard"
+
+# === External Service Integration ===
+FIRECRAWL_API_KEY:
+  type: str
+  required: false
+  description: "Firecrawl API key (sensitive)"
+
+NYT_USERNAME:
+  type: str
+  required: false
+  description: "New York Times username"
+
+NYT_PASSWORD:
+  type: str
+  required: false
+  description: "New York Times password (sensitive)"
+
+WSJ_USERNAME:
+  type: str
+  required: false
+  description: "Wall Street Journal username"
+
+WSJ_PASSWORD:
+  type: str
+  required: false
+  description: "Wall Street Journal password (sensitive)"
+
+INSTAPAPER_LOGIN:
+  type: str
+  required: false
+  description: "Instapaper login"
+
+INSTAPAPER_PASSWORD:
+  type: str
+  required: false
+  description: "Instapaper password (sensitive)"
+
+# === Archive Strategies ===
+ARCHIVE_STRATEGIES:
+  type: str
+  required: false
+  default: "direct,paywall_auth,enhanced_wayback,12ft,archive_today,googlebot,playwright,standard_wayback"
+  description: "Comma-separated list of archive strategies"
+
+USE_12FT_IO_FALLBACK:
+  type: bool
+  required: false
+  default: false
+  description: "Enable 12ft.io fallback"
+
+USE_PLAYWRIGHT_FOR_NYT:
+  type: bool
+  required: false
+  default: false
+  description: "Use Playwright for NYT articles"
+
+# === Whisper/Transcription Configuration ===
+WHISPER_MODEL:
+  type: str
+  required: false
+  default: "base"
+  allowed_values: ["tiny", "base", "small", "medium", "large"]
+  description: "Whisper model size"
+
+TRANSCRIBE_ENABLED:
+  type: bool
+  required: false
+  default: false
+  description: "Enable transcription"
+
+TRANSCRIBE_BACKEND:
+  type: str
+  required: false
+  default: "local"
+  allowed_values: ["local", "api", "huggingface"]
+  description: "Transcription backend"
+
+# === Mac Mini Integration ===
+MAC_MINI_ENABLED:
+  type: bool
+  required: false
+  default: false
+  description: "Enable Mac Mini integration"
+
+MAC_MINI_SSH_HOST:
+  type: str
+  required: false
+  description: "Mac Mini SSH host"
+
+MAC_MINI_QUEUE_DIR:
+  type: str
+  required: false
+  default: "~/atlas_worker/queue"
+  description: "Mac Mini queue directory"
+
+MAC_MINI_WHISPER_MODEL:
+  type: str
+  required: false
+  default: "base"
+  allowed_values: ["tiny", "base", "small", "medium", "large"]
+  description: "Mac Mini Whisper model"
+
+MAC_MINI_TIMEOUT:
+  type: int
+  required: false
+  default: 300
+  min_value: 30
+  max_value: 1800
+  description: "Mac Mini timeout in seconds"
+
+MAC_MINI_MAX_CONCURRENT_TASKS:
+  type: int
+  required: false
+  default: 3
+  min_value: 1
+  max_value: 10
+  description: "Mac Mini max concurrent tasks"

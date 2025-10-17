@@ -1,0 +1,53 @@
+{
+  "github_api": {
+    "base_url": "https://api.github.com",
+    "rate_limit": {
+      "requests_per_hour": 5000,
+      "requests_per_minute": 100
+    }
+  },
+  "analysis_patterns": {
+    "file_extensions": {
+      "python": [".py", ".pyx"],
+      "javascript": [".js", ".jsx", ".ts", ".tsx"],
+      "go": [".go"],
+      "rust": [".rs"],
+      "java": [".java"],
+      "c_cpp": [".c", ".cpp", ".h", ".hpp"]
+    },
+    "architecture_patterns": {
+      "mvc": ["controllers", "models", "views"],
+      "microservices": ["services", "api", "gateway"],
+      "monorepo": ["packages", "apps", "libs"],
+      "serverless": ["functions", "handlers", "lambda"]
+    },
+    "workflow_patterns": {
+      "ci_cd": ["github_actions", "jenkins", "circleci", "gitlab_ci"],
+      "testing": ["pytest", "jest", "mocha", "junit"],
+      "deployment": ["docker", "kubernetes", "terraform", "ansible"],
+      "linting": ["eslint", "pylint", "golangci-lint", "prettier"]
+    }
+  },
+  "output_formats": {
+    "json": {
+      "pretty": true,
+      "include_metadata": true,
+      "include_raw_content": false
+    },
+    "markdown": {
+      "include_examples": true,
+      "include_statistics": true
+    }
+  },
+  "exclusion_patterns": [
+    "node_modules",
+    ".git",
+    "venv",
+    "__pycache__",
+    "target",
+    "dist",
+    "build",
+    ".coverage",
+    ".pytest_cache"
+  ]
+}

@@ -1,0 +1,133 @@
+2025-09-15T02:07:25.222868 INFO: Attempting direct fetch for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:26.057535 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:26.251085 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:26.251202 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:26.251242 INFO: Attempting Reader Mode strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:26.530910 ERROR: Reader mode fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:07:26.533551 INFO: Attempting JS Disabled strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:26.935247 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:26.935351 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:26.935378 INFO: Attempting Refresh Stop strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:27.065443 ERROR: Refresh stop fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:07:27.068229 INFO: Attempting Inspect Element strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:27.429327 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:27.429427 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:27.429454 INFO: Attempting removepaywalls.com bypass for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:30.032369 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:07:30.032491 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:30.032518 INFO: Attempting archive.today for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:32.340972 INFO: No existing archive found, creating new archive for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:33.255569 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:07:33.256367 INFO: Attempting archive.is for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:35.783703 INFO: Attempting archive.li for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:39.307793 INFO: Attempting archive.fo for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:42.265522 INFO: Attempting archive.ph for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:44.941859 INFO: Attempting Googlebot spoof for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:45.659864 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T02:07:45.659980 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:45.660006 INFO: Attempting Enhanced Wayback Machine for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:46.084028 INFO: Found Wayback snapshot from 20110915102251: http://web.archive.org/web/20110915102251/http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:47.004487 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:07:47.004634 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:47.004666 INFO: Attempting Wayback Machine for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:47.004753 ERROR: Wayback Machine failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: [Errno 32] Broken pipe
+2025-09-15T02:07:47.004794 ERROR: All fetch strategies failed or returned low-quality content for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html. Attempting Google Search fallback...
+2025-09-15T02:07:47.004865 INFO: Google Search fallback: searching for '201132771814130985.html'
+2025-09-15T02:07:47.036979 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:07:47.045857 INFO: Attempting direct fetch for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:47.563778 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:47.756778 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:47.756932 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:47.756978 INFO: Attempting Reader Mode strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:47.934970 ERROR: Reader mode fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:07:47.937302 INFO: Attempting JS Disabled strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:48.317064 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:48.317153 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:48.317181 INFO: Attempting Refresh Stop strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:48.450833 ERROR: Refresh stop fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:07:48.453873 INFO: Attempting Inspect Element strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:48.943070 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:07:48.943174 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:48.943201 INFO: Attempting removepaywalls.com bypass for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:54.089659 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:07:54.089774 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:07:54.089802 INFO: Attempting archive.today for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:56.140611 INFO: No existing archive found, creating new archive for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:57.013393 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:07:57.015413 INFO: Attempting archive.is for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:07:59.331733 INFO: Attempting archive.li for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:01.737813 INFO: Attempting archive.fo for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:03.905550 INFO: Attempting archive.ph for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:07.681819 INFO: Attempting Googlebot spoof for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:08.254075 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T02:08:08.254194 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:08.254231 INFO: Attempting Enhanced Wayback Machine for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:08.393160 INFO: Found Wayback snapshot from 20110915102251: http://web.archive.org/web/20110915102251/http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:08.504799 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:08:08.504923 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:08.504949 INFO: Attempting Wayback Machine for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:08.617945 INFO: Found Wayback snapshot: http://web.archive.org/web/20110915102251/http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:08.730529 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:08:08.730718 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:08.730757 ERROR: All fetch strategies failed or returned low-quality content for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html. Attempting Google Search fallback...
+2025-09-15T02:08:08.730826 INFO: Google Search fallback: searching for '201132771814130985.html'
+2025-09-15T02:08:08.762498 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:08:08.769774 INFO: Attempting direct fetch for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:09.255325 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:09.452957 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:09.453070 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:09.453109 INFO: Attempting Reader Mode strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:09.701185 ERROR: Reader mode fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:08:09.703768 INFO: Attempting JS Disabled strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:10.007664 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:10.007768 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:10.007796 INFO: Attempting Refresh Stop strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:10.234155 ERROR: Refresh stop fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:08:10.236830 INFO: Attempting Inspect Element strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:10.726323 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:10.726429 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:10.726457 INFO: Attempting removepaywalls.com bypass for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:15.305889 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:08:15.306003 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:15.306030 INFO: Attempting archive.today for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:18.119265 INFO: No existing archive found, creating new archive for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:19.019069 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:08:19.019959 INFO: Attempting archive.is for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:19.029291 INFO: Attempting direct fetch for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:19.317302 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:19.508385 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:19.508500 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:19.508539 INFO: Attempting Reader Mode strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:19.756227 ERROR: Reader mode fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:08:19.758895 INFO: Attempting JS Disabled strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:20.050179 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:20.050284 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:20.050310 INFO: Attempting Refresh Stop strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:20.286434 ERROR: Refresh stop fetch failed for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:08:20.289199 INFO: Attempting Inspect Element strategy for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:20.697670 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T02:08:20.697776 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:20.697803 INFO: Attempting removepaywalls.com bypass for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:24.514395 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:08:24.514517 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:24.514545 INFO: Attempting archive.today for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:26.727841 INFO: No existing archive found, creating new archive for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:27.614198 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:08:27.615217 INFO: Attempting archive.is for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:30.619327 INFO: Attempting archive.li for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:34.012524 INFO: Attempting archive.fo for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:36.344864 INFO: Attempting archive.ph for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:39.170085 INFO: Attempting Googlebot spoof for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:39.785053 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T02:08:39.785171 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:39.785199 INFO: Attempting Enhanced Wayback Machine for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:39.896861 INFO: Found Wayback snapshot from 20110915102251: http://web.archive.org/web/20110915102251/http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:40.005318 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:08:40.005448 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:40.005493 INFO: Attempting Wayback Machine for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:40.141519 INFO: Found Wayback snapshot: http://web.archive.org/web/20110915102251/http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html
+2025-09-15T02:08:40.355432 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:08:40.355559 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:40.355612 ERROR: All fetch strategies failed or returned low-quality content for http://english.aljazeera.net/indepth/opinion/2011/03/201132771814130985.html. Attempting Google Search fallback...
+2025-09-15T02:08:40.355688 INFO: Google Search fallback: searching for '201132771814130985.html'
+2025-09-15T02:08:40.387697 INFO: Google Search fallback did not find alternative URL

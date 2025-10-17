@@ -1,0 +1,50 @@
+2025-09-15T10:30:33.750163 INFO: Attempting direct fetch for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:33.875306 ERROR: Direct fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:33.876818 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:34.450813 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: cannot use a string pattern on a bytes-like object
+2025-09-15T10:30:34.452568 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:34.526197 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:34.527643 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:34.602546 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: cannot use a string pattern on a bytes-like object
+2025-09-15T10:30:34.603949 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:34.676737 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:34.678208 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:39.397563 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:30:39.397694 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:39.397724 INFO: Attempting archive.today for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:42.188044 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:43.087887 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:30:43.088298 INFO: Attempting archive.is for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:45.388336 INFO: Attempting archive.li for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:47.467210 INFO: Attempting archive.fo for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:49.753899 INFO: Attempting archive.ph for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:52.012402 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:52.085434 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:52.086670 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:52.597137 INFO: Found Wayback snapshot from 20250911222207: http://web.archive.org/web/20250911222207/https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:54.364622 INFO: Successfully fetched https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html using wayback_machine_enhanced
+2025-09-15T10:30:54.372076 INFO: Attempting direct fetch for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:54.464331 ERROR: Direct fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:54.465797 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:54.999515 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: cannot use a string pattern on a bytes-like object
+2025-09-15T10:30:55.001345 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:55.077668 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:55.079093 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:55.154900 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: cannot use a string pattern on a bytes-like object
+2025-09-15T10:30:55.156270 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:55.230111 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:55.232187 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:30:59.312986 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:30:59.313092 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:59.313121 INFO: Attempting archive.today for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:03.370645 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:04.266012 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:31:04.266511 INFO: Attempting archive.is for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:06.422182 INFO: Attempting archive.li for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:10.285859 INFO: Attempting archive.fo for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:12.476530 INFO: Attempting archive.ph for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:15.753677 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:15.827664 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:15.829074 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:15.981972 INFO: Found Wayback snapshot from 20250911222207: http://web.archive.org/web/20250911222207/https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html
+2025-09-15T10:31:16.239801 INFO: Successfully fetched https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html using wayback_machine_enhanced

@@ -1,0 +1,151 @@
+2025-09-15T07:25:21.231001 INFO: Attempting direct fetch for https://maven.com/lenny
+2025-09-15T07:25:21.538473 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:21.649107 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:21.649273 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:21.649313 INFO: Attempting Reader Mode strategy for https://maven.com/lenny
+2025-09-15T07:25:21.810077 ERROR: Reader mode fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:25:21.811833 INFO: Attempting JS Disabled strategy for https://maven.com/lenny
+2025-09-15T07:25:22.066351 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:22.066454 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:22.066484 INFO: Attempting Refresh Stop strategy for https://maven.com/lenny
+2025-09-15T07:25:22.205469 ERROR: Refresh stop fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:25:22.207285 INFO: Attempting Inspect Element strategy for https://maven.com/lenny
+2025-09-15T07:25:22.500862 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:22.500960 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:22.500986 INFO: Attempting removepaywalls.com bypass for https://maven.com/lenny
+2025-09-15T07:25:25.057306 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:25:25.057420 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:25.057446 INFO: Attempting archive.today for https://maven.com/lenny
+2025-09-15T07:25:28.307408 INFO: No existing archive found, creating new archive for https://maven.com/lenny
+2025-09-15T07:25:29.201995 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:25:29.202574 INFO: Attempting archive.is for https://maven.com/lenny
+2025-09-15T07:25:31.743964 INFO: Attempting archive.li for https://maven.com/lenny
+2025-09-15T07:25:34.407661 INFO: Attempting archive.fo for https://maven.com/lenny
+2025-09-15T07:25:38.252127 INFO: Attempting archive.ph for https://maven.com/lenny
+2025-09-15T07:25:40.595502 INFO: Attempting Googlebot spoof for https://maven.com/lenny
+2025-09-15T07:25:41.136144 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:41.136243 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:41.136276 INFO: Attempting Enhanced Wayback Machine for https://maven.com/lenny
+2025-09-15T07:25:41.916307 INFO: Found Wayback snapshot from 20250806151451: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:25:44.416048 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:44.416158 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:44.416192 INFO: Attempting Wayback Machine for https://maven.com/lenny
+2025-09-15T07:25:44.534058 INFO: Found Wayback snapshot: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:25:44.716945 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:44.717051 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:44.717127 ERROR: All fetch strategies failed or returned low-quality content for https://maven.com/lenny. Attempting Google Search fallback...
+2025-09-15T07:25:44.717193 INFO: Google Search fallback: searching for 'lenny'
+2025-09-15T07:25:44.748885 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:25:44.756253 INFO: Attempting direct fetch for https://maven.com/lenny
+2025-09-15T07:25:44.998585 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:45.202530 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:45.202696 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:45.202766 INFO: Attempting Reader Mode strategy for https://maven.com/lenny
+2025-09-15T07:25:45.349717 ERROR: Reader mode fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:25:45.352106 INFO: Attempting JS Disabled strategy for https://maven.com/lenny
+2025-09-15T07:25:45.584322 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:45.584431 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:45.584458 INFO: Attempting Refresh Stop strategy for https://maven.com/lenny
+2025-09-15T07:25:45.717195 ERROR: Refresh stop fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:25:45.719475 INFO: Attempting Inspect Element strategy for https://maven.com/lenny
+2025-09-15T07:25:46.002610 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:25:46.002723 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:46.002750 INFO: Attempting removepaywalls.com bypass for https://maven.com/lenny
+2025-09-15T07:25:49.353173 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:25:49.353295 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:25:49.353321 INFO: Attempting archive.today for https://maven.com/lenny
+2025-09-15T07:25:51.622922 INFO: No existing archive found, creating new archive for https://maven.com/lenny
+2025-09-15T07:25:52.534844 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:25:52.539419 INFO: Attempting archive.is for https://maven.com/lenny
+2025-09-15T07:25:54.595311 INFO: Attempting archive.li for https://maven.com/lenny
+2025-09-15T07:25:57.231012 INFO: Attempting archive.fo for https://maven.com/lenny
+2025-09-15T07:26:00.001202 INFO: Attempting archive.ph for https://maven.com/lenny
+2025-09-15T07:26:02.487043 INFO: Attempting Googlebot spoof for https://maven.com/lenny
+2025-09-15T07:26:02.821066 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:02.821164 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:02.821191 INFO: Attempting Enhanced Wayback Machine for https://maven.com/lenny
+2025-09-15T07:26:02.949329 INFO: Found Wayback snapshot from 20250806151451: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:26:03.143461 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:03.143579 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:03.143643 INFO: Attempting Wayback Machine for https://maven.com/lenny
+2025-09-15T07:26:03.264209 INFO: Found Wayback snapshot: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:26:03.466375 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:03.466492 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:03.466526 ERROR: All fetch strategies failed or returned low-quality content for https://maven.com/lenny. Attempting Google Search fallback...
+2025-09-15T07:26:03.466621 INFO: Google Search fallback: searching for 'lenny'
+2025-09-15T07:26:03.499373 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:26:03.507536 INFO: Attempting direct fetch for https://maven.com/lenny
+2025-09-15T07:26:03.747846 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:03.862304 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:03.862417 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:03.862457 INFO: Attempting Reader Mode strategy for https://maven.com/lenny
+2025-09-15T07:26:04.025995 ERROR: Reader mode fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:26:04.028431 INFO: Attempting JS Disabled strategy for https://maven.com/lenny
+2025-09-15T07:26:04.265855 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:04.265966 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:04.265992 INFO: Attempting Refresh Stop strategy for https://maven.com/lenny
+2025-09-15T07:26:04.404766 ERROR: Refresh stop fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:26:04.407204 INFO: Attempting Inspect Element strategy for https://maven.com/lenny
+2025-09-15T07:26:04.699540 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:04.699670 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:04.699697 INFO: Attempting removepaywalls.com bypass for https://maven.com/lenny
+2025-09-15T07:26:07.161554 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:26:07.161673 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:07.161704 INFO: Attempting archive.today for https://maven.com/lenny
+2025-09-15T07:26:10.628822 INFO: No existing archive found, creating new archive for https://maven.com/lenny
+2025-09-15T07:26:11.522540 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:26:11.523446 INFO: Attempting archive.is for https://maven.com/lenny
+2025-09-15T07:26:13.681216 INFO: Attempting archive.li for https://maven.com/lenny
+2025-09-15T07:26:16.822395 INFO: Attempting archive.fo for https://maven.com/lenny
+2025-09-15T07:26:20.066025 INFO: Attempting archive.ph for https://maven.com/lenny
+2025-09-15T07:26:23.055577 INFO: Attempting Googlebot spoof for https://maven.com/lenny
+2025-09-15T07:26:23.408839 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:23.409006 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:23.409037 INFO: Attempting Enhanced Wayback Machine for https://maven.com/lenny
+2025-09-15T07:26:23.548171 INFO: Found Wayback snapshot from 20250806151451: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:26:23.772452 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:23.772546 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:23.772573 INFO: Attempting Wayback Machine for https://maven.com/lenny
+2025-09-15T07:26:23.897324 INFO: Found Wayback snapshot: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:26:24.078798 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:24.078913 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:24.078956 ERROR: All fetch strategies failed or returned low-quality content for https://maven.com/lenny. Attempting Google Search fallback...
+2025-09-15T07:26:24.079020 INFO: Google Search fallback: searching for 'lenny'
+2025-09-15T07:26:24.111957 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:26:24.119759 INFO: Attempting direct fetch for https://maven.com/lenny
+2025-09-15T07:26:24.362919 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:24.471704 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:24.471812 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:24.471859 INFO: Attempting Reader Mode strategy for https://maven.com/lenny
+2025-09-15T07:26:24.622148 ERROR: Reader mode fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:26:24.624818 INFO: Attempting JS Disabled strategy for https://maven.com/lenny
+2025-09-15T07:26:24.625311 ERROR: JS disabled fetch failed for https://maven.com/lenny: [Errno 32] Broken pipe
+2025-09-15T07:26:24.625385 INFO: Attempting Refresh Stop strategy for https://maven.com/lenny
+2025-09-15T07:26:24.765379 ERROR: Refresh stop fetch failed for https://maven.com/lenny: cannot use a string pattern on a bytes-like object
+2025-09-15T07:26:24.767779 INFO: Attempting Inspect Element strategy for https://maven.com/lenny
+2025-09-15T07:26:25.062829 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:25.062943 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:25.062974 INFO: Attempting removepaywalls.com bypass for https://maven.com/lenny
+2025-09-15T07:26:27.772213 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:26:27.772305 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:27.772331 INFO: Attempting archive.today for https://maven.com/lenny
+2025-09-15T07:26:30.962418 INFO: No existing archive found, creating new archive for https://maven.com/lenny
+2025-09-15T07:26:31.904048 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:26:31.905133 INFO: Attempting archive.is for https://maven.com/lenny
+2025-09-15T07:26:34.839035 INFO: Attempting archive.li for https://maven.com/lenny
+2025-09-15T07:26:38.383665 INFO: Attempting archive.fo for https://maven.com/lenny
+2025-09-15T07:26:42.205888 INFO: Attempting archive.ph for https://maven.com/lenny
+2025-09-15T07:26:45.534989 INFO: Attempting Googlebot spoof for https://maven.com/lenny
+2025-09-15T07:26:45.902849 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:45.902970 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:45.903005 INFO: Attempting Enhanced Wayback Machine for https://maven.com/lenny
+2025-09-15T07:26:46.019580 INFO: Found Wayback snapshot from 20250806151451: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:26:46.219573 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:46.219712 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:46.219747 INFO: Attempting Wayback Machine for https://maven.com/lenny
+2025-09-15T07:26:46.345420 INFO: Found Wayback snapshot: http://web.archive.org/web/20250806151451/https://maven.com/lenny
+2025-09-15T07:26:46.649193 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T07:26:46.649311 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:26:46.649344 ERROR: All fetch strategies failed or returned low-quality content for https://maven.com/lenny. Attempting Google Search fallback...
+2025-09-15T07:26:46.649419 INFO: Google Search fallback: searching for 'lenny'
+2025-09-15T07:26:46.683091 INFO: Google Search fallback did not find alternative URL

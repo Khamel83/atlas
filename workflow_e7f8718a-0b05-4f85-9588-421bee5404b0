@@ -1,0 +1,148 @@
+2025-09-14T22:52:06.639449 INFO: Attempting direct fetch for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:06.943234 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:07.024632 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:07.024753 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:07.024816 INFO: Attempting Reader Mode strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:07.130643 ERROR: Reader mode fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:52:07.132546 INFO: Attempting JS Disabled strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:07.289005 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:52:07.289108 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:07.289135 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:07.412958 ERROR: Refresh stop fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:52:07.414908 INFO: Attempting Inspect Element strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:07.649678 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:52:07.649787 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:07.649816 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:09.966472 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:52:09.966601 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:09.966630 INFO: Attempting archive.today for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:13.189852 INFO: No existing archive found, creating new archive for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:14.065256 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:52:14.065879 INFO: Attempting archive.is for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:17.019093 INFO: Attempting archive.li for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:19.566616 INFO: Attempting archive.fo for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:22.671938 INFO: Attempting archive.ph for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:24.652496 INFO: Attempting Googlebot spoof for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:24.736006 ERROR: Googlebot spoof failed for https://www.thenation.com/content/q-a/: 403 Client Error: Forbidden for url: https://www.thenation.com/content/q-a/
+2025-09-14T22:52:24.737641 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:25.224024 INFO: Found Wayback snapshot from 20250908072205: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:52:25.788305 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:25.788443 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:25.788469 INFO: Attempting Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:25.912720 INFO: Found Wayback snapshot: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:52:26.082634 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:26.082749 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:26.082803 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/content/q-a/. Attempting Google Search fallback...
+2025-09-14T22:52:26.082867 INFO: Google Search fallback: searching for 'q a'
+2025-09-14T22:52:26.142041 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:52:26.156226 INFO: Attempting direct fetch for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:26.347826 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:26.448474 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:26.448573 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:26.448673 INFO: Attempting Reader Mode strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:26.574160 ERROR: Reader mode fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:52:26.575746 INFO: Attempting JS Disabled strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:26.903962 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:52:26.904057 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:26.904145 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:27.014918 ERROR: Refresh stop fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:52:27.016943 INFO: Attempting Inspect Element strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:27.259831 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:52:27.259934 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:27.259961 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:29.934162 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:52:29.934279 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:29.934305 INFO: Attempting archive.today for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:33.630583 INFO: No existing archive found, creating new archive for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:34.490071 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:52:34.490560 INFO: Attempting archive.is for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:37.769981 INFO: Attempting archive.li for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:41.390396 INFO: Attempting archive.fo for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:45.145364 INFO: Attempting archive.ph for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:47.769353 INFO: Attempting Googlebot spoof for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:47.864539 ERROR: Googlebot spoof failed for https://www.thenation.com/content/q-a/: 403 Client Error: Forbidden for url: https://www.thenation.com/content/q-a/
+2025-09-14T22:52:47.866114 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:47.997127 INFO: Found Wayback snapshot from 20250908072205: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:52:48.155898 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:48.156040 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:48.156068 INFO: Attempting Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:48.268887 INFO: Found Wayback snapshot: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:52:48.430564 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:48.430701 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:48.430750 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/content/q-a/. Attempting Google Search fallback...
+2025-09-14T22:52:48.430825 INFO: Google Search fallback: searching for 'q a'
+2025-09-14T22:52:48.463265 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:52:48.471804 INFO: Attempting direct fetch for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:48.645190 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:48.725997 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:52:48.726119 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:48.726174 INFO: Attempting Reader Mode strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:48.833688 ERROR: Reader mode fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:52:48.835375 INFO: Attempting JS Disabled strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:48.995348 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:52:48.995459 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:48.995488 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:49.091489 ERROR: Refresh stop fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:52:49.093067 INFO: Attempting Inspect Element strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:49.326774 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:52:49.326884 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:49.326910 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:51.937705 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:52:51.937822 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:52:51.937900 INFO: Attempting archive.today for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:56.038623 INFO: No existing archive found, creating new archive for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:56.912536 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:52:56.913058 INFO: Attempting archive.is for https://www.thenation.com/content/q-a/
+2025-09-14T22:52:59.271686 INFO: Attempting archive.li for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:02.410895 INFO: Attempting archive.fo for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:04.795056 INFO: Attempting archive.ph for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:07.796586 INFO: Attempting Googlebot spoof for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:07.888515 ERROR: Googlebot spoof failed for https://www.thenation.com/content/q-a/: 403 Client Error: Forbidden for url: https://www.thenation.com/content/q-a/
+2025-09-14T22:53:07.889975 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:08.009261 INFO: Found Wayback snapshot from 20250908072205: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:53:08.167796 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:53:08.167931 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:08.167959 INFO: Attempting Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:08.285168 INFO: Found Wayback snapshot: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:53:08.436986 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:53:08.437108 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:08.437158 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/content/q-a/. Attempting Google Search fallback...
+2025-09-14T22:53:08.437243 INFO: Google Search fallback: searching for 'q a'
+2025-09-14T22:53:08.468531 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:53:08.479697 INFO: Attempting direct fetch for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:08.644031 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:53:08.722690 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:53:08.722810 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:08.722851 INFO: Attempting Reader Mode strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:08.830852 ERROR: Reader mode fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:53:08.832304 INFO: Attempting JS Disabled strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:09.012145 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:53:09.012255 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:09.012282 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:09.122437 ERROR: Refresh stop fetch failed for https://www.thenation.com/content/q-a/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:53:09.123887 INFO: Attempting Inspect Element strategy for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:09.354648 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T22:53:09.354755 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:09.354782 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:14.391347 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:53:14.391458 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:14.391486 INFO: Attempting archive.today for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:18.497065 INFO: No existing archive found, creating new archive for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:19.377667 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:53:19.378070 INFO: Attempting archive.is for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:21.959277 INFO: Attempting archive.li for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:24.757687 INFO: Attempting archive.fo for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:27.466919 INFO: Attempting archive.ph for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:29.674057 INFO: Attempting Googlebot spoof for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:29.761495 ERROR: Googlebot spoof failed for https://www.thenation.com/content/q-a/: 403 Client Error: Forbidden for url: https://www.thenation.com/content/q-a/
+2025-09-14T22:53:29.763291 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:29.880923 INFO: Found Wayback snapshot from 20250908072205: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:53:30.029378 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:53:30.029506 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:30.029532 INFO: Attempting Wayback Machine for https://www.thenation.com/content/q-a/
+2025-09-14T22:53:30.171689 INFO: Found Wayback snapshot: http://web.archive.org/web/20250908072205/https://www.thenation.com/content/q-a/
+2025-09-14T22:53:30.452391 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:53:30.452519 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:30.452569 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/content/q-a/. Attempting Google Search fallback...
+2025-09-14T22:53:30.452676 INFO: Google Search fallback: searching for 'q a'
+2025-09-14T22:53:30.485625 INFO: Google Search fallback did not find alternative URL

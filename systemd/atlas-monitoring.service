@@ -1,0 +1,45 @@
+[Unit]
+Description=Atlas Monitoring Dashboard Service
+Documentation=https://github.com/your-org/atlas
+After=network.target atlas-api.service
+Requires=atlas-api.service
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+Restart=always
+RestartSec=10
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=/home/ubuntu/dev/atlas/data/atlas.db
+ExecStart=/usr/bin/python3 -m helpers.monitoring_dashboard_service
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Security settings
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/home/ubuntu/dev/atlas
+ProtectHome=true
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+RestrictNamespaces=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RemoveIPC=true
+PrivateDevices=true
+ProtectHostname=true
+
+# Resource limits
+LimitNOFILE=65536
+MemoryMax=512M
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target

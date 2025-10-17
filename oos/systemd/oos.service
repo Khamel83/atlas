@@ -1,0 +1,56 @@
+[Unit]
+Description=OOS (Organized Operational Setup) Service
+Documentation=https://github.com/anthropics/oos
+After=network.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/python3 /opt/oos/oos_service_manager.py
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=30
+
+# Watchdog configuration
+WatchdogSec=30
+NotifyAccess=main
+
+# Resource limits
+MemoryMax=2G
+CPUQuota=200%
+LimitNOFILE=2048
+LimitNPROC=100
+LimitCORE=0
+
+# Security hardening
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/opt/oos/data /tmp
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+RemoveIPC=yes
+RestrictNamespaces=yes
+
+# User and group
+User=oos
+Group=oos
+WorkingDirectory=/opt/oos
+
+# Environment
+Environment=PYTHONPATH=/opt/oos
+Environment=OOS_CONFIG_PATH=/opt/oos/data/oos_config.json
+Environment=OOS_LOG_LEVEL=INFO
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=oos
+
+[Install]
+WantedBy=multi-user.target

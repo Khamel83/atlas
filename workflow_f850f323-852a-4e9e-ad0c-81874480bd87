@@ -1,0 +1,138 @@
+2025-09-15T03:03:05.042249 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:05.339241 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:05.535352 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:05.535456 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:05.535505 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:05.661520 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:03:05.663798 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:05.906001 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:03:05.906115 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:05.906143 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:06.033266 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:03:06.035880 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:06.412361 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:03:06.412466 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:06.412493 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:11.352697 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:03:11.352848 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:11.352880 INFO: Attempting archive.today for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:15.362274 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:16.217080 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:03:16.217382 INFO: Attempting archive.is for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:18.334328 INFO: Attempting archive.li for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:21.180995 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:24.491037 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:27.023767 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:27.338900 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:27.339014 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:27.339043 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:28.273024 INFO: Found Wayback snapshot from 20250912090338: http://web.archive.org/web/20250912090338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:28.273163 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T03:03:32.381058 INFO: Found Wayback snapshot from 20240513222338: http://web.archive.org/web/20240513222338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:33.932437 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-15T03:03:33.932554 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:33.932581 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:34.046303 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912090338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:35.625571 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T03:03:35.625720 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:35.625756 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/sports-business/. Attempting Google Search fallback...
+2025-09-15T03:03:35.625832 INFO: Google Search fallback: searching for 'sports business'
+2025-09-15T03:03:35.658815 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:03:35.666781 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:36.035184 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:36.235780 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:36.235899 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:36.235952 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:36.413321 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:03:36.415609 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:36.706771 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:03:36.706879 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:36.706907 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:36.875971 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:03:36.878614 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:37.313663 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:03:37.313779 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:37.313808 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:40.580071 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:03:40.580184 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:40.580216 INFO: Attempting archive.today for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:45.112868 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:45.997655 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:03:45.998062 INFO: Attempting archive.is for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:48.030664 INFO: Attempting archive.li for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:50.419390 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:52.464751 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:54.365659 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:54.726146 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:54.726263 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:54.726297 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:54.852271 INFO: Found Wayback snapshot from 20250912090338: http://web.archive.org/web/20250912090338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:55.104169 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T03:03:55.104286 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:55.104341 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:55.217981 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912090338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:55.467762 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T03:03:55.467881 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:55.467916 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/sports-business/. Attempting Google Search fallback...
+2025-09-15T03:03:55.467981 INFO: Google Search fallback: searching for 'sports business'
+2025-09-15T03:03:55.500546 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:03:55.508042 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:55.845140 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:56.035772 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:03:56.035893 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:56.035937 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:56.211923 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:03:56.214497 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:56.636034 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:03:56.636141 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:56.636168 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:56.810571 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:03:56.813516 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:03:57.255574 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:03:57.255707 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:03:57.255734 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:01.983290 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:04:01.983442 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:01.983471 INFO: Attempting archive.today for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:06.234847 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:07.141691 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:04:07.142184 INFO: Attempting archive.is for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:10.708752 INFO: Attempting archive.li for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:10.723354 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:11.127705 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:04:11.327271 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:04:11.327372 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:11.327420 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:11.516137 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:04:11.520566 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:11.830737 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:04:11.830847 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:11.830876 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:12.005348 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/sports-business/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:04:12.008252 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:12.435007 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T03:04:12.435118 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:12.435148 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:16.631853 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:04:16.631961 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:16.631989 INFO: Attempting archive.today for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:19.395804 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:20.270383 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:04:20.270801 INFO: Attempting archive.is for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:23.105605 INFO: Attempting archive.li for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:26.705322 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:28.959354 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:32.511860 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:32.875946 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T03:04:32.876061 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:32.876094 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:33.019874 INFO: Found Wayback snapshot from 20250912090338: http://web.archive.org/web/20250912090338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:33.269019 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T03:04:33.269138 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:33.269175 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:33.377233 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912090338/https://www.nytimes.com/athletic/sports-business/
+2025-09-15T03:04:33.633754 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T03:04:33.633869 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:04:33.633908 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/sports-business/. Attempting Google Search fallback...
+2025-09-15T03:04:33.633973 INFO: Google Search fallback: searching for 'sports business'
+2025-09-15T03:04:33.666739 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,118 @@
+2025-09-15T07:04:43.310263 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:45.375095 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:04:45.622103 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:04:45.622218 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:04:45.622264 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:45.755201 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:04:45.757476 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:46.039953 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:04:46.040060 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:04:46.040088 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:46.169221 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:04:46.172050 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:46.643245 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:04:46.643341 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:04:46.643368 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:50.891298 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:04:50.891412 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:04:50.891439 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:54.558413 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:55.443859 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:04:55.444259 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:04:58.430853 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:01.971705 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:04.786050 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:07.222456 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:07.568503 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:07.568650 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:07.568682 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:13.432264 INFO: Found Wayback snapshot from 20240514181910: http://web.archive.org/web/20240514181910/https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:15.239513 INFO: Content is very short (40 words). Likely a teaser.
+2025-09-15T07:05:15.239667 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:15.239700 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:15.384226 ERROR: Wayback Machine failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: No archived snapshots found
+2025-09-15T07:05:15.386826 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/. Attempting Google Search fallback...
+2025-09-15T07:05:15.387283 INFO: Google Search fallback: searching for 'ohio state buckeyes college football'
+2025-09-15T07:05:15.419513 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:05:15.427349 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:15.790538 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:16.172944 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:16.173067 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:16.173116 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:16.316904 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:05:16.319133 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:16.606675 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:05:16.606777 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:16.606804 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:16.745904 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:05:16.748424 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:17.220299 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:05:17.220410 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:17.220439 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:19.531904 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:05:19.532024 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:19.532055 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:23.207304 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:24.094171 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:05:24.094651 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:27.298063 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:31.167480 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:31.178942 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:31.584518 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:31.843848 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:31.843956 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:31.844005 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:32.002487 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:05:32.005149 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:32.381253 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:05:32.381357 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:32.381384 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:32.575193 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:05:32.580325 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:33.061448 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:05:33.061571 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:33.061625 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:35.962285 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:05:35.962395 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:35.962423 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:40.357980 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:41.237556 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:05:41.238005 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:44.526746 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:47.052148 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:50.753034 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:52.893302 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:53.583775 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:53.583892 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:53.583920 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:53.891913 INFO: Found Wayback snapshot from 20240514181910: http://web.archive.org/web/20240514181910/https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:54.246083 INFO: Content is very short (40 words). Likely a teaser.
+2025-09-15T07:05:54.246245 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:54.246285 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:54.428468 ERROR: Wayback Machine failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: No archived snapshots found
+2025-09-15T07:05:54.432180 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/. Attempting Google Search fallback...
+2025-09-15T07:05:54.434638 INFO: Google Search fallback: searching for 'ohio state buckeyes college football'
+2025-09-15T07:05:54.484785 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:05:54.493777 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:54.913002 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:55.165033 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T07:05:55.165196 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:55.165247 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:55.361782 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:05:55.364109 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:55.706544 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:05:55.706677 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:55.706707 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:55.884194 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:05:55.886930 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:05:56.406612 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-15T07:05:56.406720 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:05:56.406748 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:06:01.092847 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:06:01.092962 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:01.092989 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:06:04.891290 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:06:05.797658 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:06:05.798124 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:06:09.050531 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/
+2025-09-15T07:06:12.418188 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ohio-state-buckeyes-college-football/

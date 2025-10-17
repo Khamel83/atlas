@@ -1,0 +1,32 @@
+2025-09-15T10:18:44.676384 INFO: Attempting direct fetch for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:45.099401 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T10:18:45.500135 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T10:18:45.500252 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:18:45.500293 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:45.582025 ERROR: Reader mode fetch failed for https://techcrunch.com/category/media-entertainment/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:18:45.584625 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:45.809170 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T10:18:45.809280 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:18:45.809308 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:45.955858 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/media-entertainment/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:18:45.958107 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:46.403224 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T10:18:46.403378 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:18:46.403406 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:49.490743 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:18:49.490866 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:18:49.490893 INFO: Attempting archive.today for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:54.084181 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:54.981126 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:18:54.981689 INFO: Attempting archive.is for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:18:58.095529 INFO: Attempting archive.li for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:00.958974 INFO: Attempting archive.fo for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:04.520516 INFO: Attempting archive.ph for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:06.612541 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:07.739612 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-15T10:19:07.739736 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:19:07.739764 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:08.192865 INFO: Found Wayback snapshot from 20250826193719: http://web.archive.org/web/20250826193719/https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:08.193003 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T10:19:08.743189 INFO: Found Wayback snapshot from 20231201233153: http://web.archive.org/web/20231201233153/https://techcrunch.com/category/media-entertainment/
+2025-09-15T10:19:11.503117 INFO: Successfully fetched https://techcrunch.com/category/media-entertainment/ using wayback_machine_enhanced

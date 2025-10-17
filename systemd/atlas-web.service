@@ -1,0 +1,44 @@
+[Unit]
+Description=Atlas Web UI (Flask Application)
+After=network-online.target atlas-api.service
+Wants=network-online.target
+Requires=atlas-api.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+Environment=FLASK_ENV=production
+
+# Load environment variables
+ExecStartPre=/bin/bash -c 'source .env && export $(cat .env | grep -v ^# | xargs)'
+ExecStart=/home/ubuntu/dev/atlas/venv/bin/python web/app.py
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-web
+
+# Resource limits for web UI
+MemoryMax=512M
+CPUQuota=150%
+TasksMax=100
+
+# Graceful shutdown
+RestartKillSignal=SIGTERM
+KillMode=mixed
+TimeoutStopSec=30
+KillSignal=SIGTERM
+
+# Health monitoring
+WatchdogSec=60
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

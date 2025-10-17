@@ -1,0 +1,93 @@
+2025-09-14T20:10:32.135748 INFO: Attempting direct fetch for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.604325 ERROR: Direct fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.605607 INFO: Attempting Reader Mode strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.657299 ERROR: Reader mode fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.658635 INFO: Attempting JS Disabled strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.713667 ERROR: JS disabled fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.715034 INFO: Attempting Refresh Stop strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.779096 ERROR: Refresh stop fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: cannot use a string pattern on a bytes-like object
+2025-09-14T20:10:32.780535 INFO: Attempting Inspect Element strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.843081 ERROR: Inspect element fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:32.844437 INFO: Attempting removepaywalls.com bypass for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:35.237905 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:10:35.238019 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:10:35.238048 INFO: Attempting archive.today for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:38.881034 INFO: No existing archive found, creating new archive for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:39.771401 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:10:39.771786 INFO: Attempting archive.is for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:42.090503 INFO: Attempting archive.li for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:44.750245 INFO: Attempting archive.fo for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:47.150148 INFO: Attempting archive.ph for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:49.761293 INFO: Attempting Googlebot spoof for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:49.813258 ERROR: Googlebot spoof failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:49.814567 INFO: Attempting Enhanced Wayback Machine for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:56.531635 INFO: Found Wayback snapshot from 20231201133126: http://web.archive.org/web/20231201133126/https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:57.614487 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:10:57.614620 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:10:57.614652 INFO: Attempting Wayback Machine for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:57.758055 ERROR: Wayback Machine failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: No archived snapshots found
+2025-09-14T20:10:57.759628 ERROR: All fetch strategies failed or returned low-quality content for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm. Attempting Google Search fallback...
+2025-09-14T20:10:57.759827 INFO: Google Search fallback: searching for 'index.htm'
+2025-09-14T20:10:57.791417 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:10:57.799325 INFO: Attempting direct fetch for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:57.923347 ERROR: Direct fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:57.924618 INFO: Attempting Reader Mode strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:57.976399 ERROR: Reader mode fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:57.977575 INFO: Attempting JS Disabled strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:58.029728 ERROR: JS disabled fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:58.030993 INFO: Attempting Refresh Stop strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:58.095812 ERROR: Refresh stop fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: cannot use a string pattern on a bytes-like object
+2025-09-14T20:10:58.097304 INFO: Attempting Inspect Element strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:58.151080 ERROR: Inspect element fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:10:58.152383 INFO: Attempting removepaywalls.com bypass for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:01.120863 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:11:01.120965 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:11:01.120993 INFO: Attempting archive.today for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:04.476668 INFO: No existing archive found, creating new archive for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:05.345415 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:11:05.345896 INFO: Attempting archive.is for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:08.521274 INFO: Attempting archive.li for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:11.708376 INFO: Attempting archive.fo for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:14.168650 INFO: Attempting archive.ph for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.083788 INFO: Attempting Googlebot spoof for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.137043 ERROR: Googlebot spoof failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.138432 INFO: Attempting Enhanced Wayback Machine for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.368782 INFO: Found Wayback snapshot from 20231201133126: http://web.archive.org/web/20231201133126/https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.625087 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:11:17.625198 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:11:17.625227 INFO: Attempting Wayback Machine for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.750417 ERROR: Wayback Machine failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: No archived snapshots found
+2025-09-14T20:11:17.751968 ERROR: All fetch strategies failed or returned low-quality content for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm. Attempting Google Search fallback...
+2025-09-14T20:11:17.752096 INFO: Google Search fallback: searching for 'index.htm'
+2025-09-14T20:11:17.784886 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:11:17.793327 INFO: Attempting direct fetch for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.852993 ERROR: Direct fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.854292 INFO: Attempting Reader Mode strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.910288 ERROR: Reader mode fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.911566 INFO: Attempting JS Disabled strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.965421 ERROR: JS disabled fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:17.966635 INFO: Attempting Refresh Stop strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:18.034273 ERROR: Refresh stop fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: cannot use a string pattern on a bytes-like object
+2025-09-14T20:11:18.035659 INFO: Attempting Inspect Element strategy for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:18.095170 ERROR: Inspect element fetch failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:18.096527 INFO: Attempting removepaywalls.com bypass for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:20.270727 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:11:20.270838 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:11:20.270867 INFO: Attempting archive.today for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:24.879190 INFO: No existing archive found, creating new archive for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:25.773907 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:11:25.774320 INFO: Attempting archive.is for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:28.582233 INFO: Attempting archive.li for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:32.077800 INFO: Attempting archive.fo for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:34.321196 INFO: Attempting archive.ph for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:36.525295 INFO: Attempting Googlebot spoof for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:36.583625 ERROR: Googlebot spoof failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: 404 Client Error: Not Found for url: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:36.584876 INFO: Attempting Enhanced Wayback Machine for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:36.825503 INFO: Found Wayback snapshot from 20231201133126: http://web.archive.org/web/20231201133126/https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:37.201705 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:11:37.201813 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:11:37.201859 INFO: Attempting Wayback Machine for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm
+2025-09-14T20:11:37.308560 ERROR: Wayback Machine failed for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm: No archived snapshots found
+2025-09-14T20:11:37.310531 ERROR: All fetch strategies failed or returned low-quality content for https://www.cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/tobacco_related_mortality/index.htm. Attempting Google Search fallback...
+2025-09-14T20:11:37.310772 INFO: Google Search fallback: searching for 'index.htm'
+2025-09-14T20:11:37.344345 INFO: Google Search fallback did not find alternative URL

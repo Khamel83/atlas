@@ -1,0 +1,25 @@
+2025-09-15T15:03:06.264350 INFO: Attempting direct fetch for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.500091 ERROR: Direct fetch failed for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300: 403 Client Error: Forbidden for url: https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.501892 INFO: Attempting Reader Mode strategy for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.582635 ERROR: Reader mode fetch failed for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300: 403 Client Error: Forbidden for url: https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.584324 INFO: Attempting JS Disabled strategy for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.660067 ERROR: JS disabled fetch failed for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300: 403 Client Error: Forbidden for url: https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.661769 INFO: Attempting Refresh Stop strategy for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.840559 ERROR: Refresh stop fetch failed for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300: cannot use a string pattern on a bytes-like object
+2025-09-15T15:03:06.842201 INFO: Attempting Inspect Element strategy for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.915307 ERROR: Inspect element fetch failed for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300: 403 Client Error: Forbidden for url: https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:06.916999 INFO: Attempting removepaywalls.com bypass for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:10.311749 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:03:10.311858 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:03:10.311887 INFO: Attempting archive.today for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:13.284868 INFO: No existing archive found, creating new archive for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:14.198898 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:03:14.199634 INFO: Attempting archive.is for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:16.230136 INFO: Attempting archive.li for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:18.566890 INFO: Attempting archive.fo for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:21.657990 INFO: Attempting archive.ph for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:24.950091 INFO: Attempting Googlebot spoof for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:25.032370 ERROR: Googlebot spoof failed for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300: 403 Client Error: Forbidden for url: https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:25.034304 INFO: Attempting Enhanced Wayback Machine for https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300
+2025-09-15T15:03:28.139421 INFO: Found Wayback snapshot from 20230604212925: http://web.archive.org/web/20230604212925/https://www.opensecrets.org/industries/contrib.php?cycle=2020
+2025-09-15T15:03:30.131862 INFO: Successfully fetched https://www.opensecrets.org/industries/contrib.php?cycle=2020&ind=T2300 using wayback_machine_enhanced

@@ -1,0 +1,122 @@
+2025-09-15T06:45:38.847181 INFO: Attempting direct fetch for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:39.344065 ERROR: Direct fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:39.345259 INFO: Attempting Reader Mode strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:39.345635 ERROR: Reader mode fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: [Errno 32] Broken pipe
+2025-09-15T06:45:39.345680 INFO: Attempting JS Disabled strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:39.760539 ERROR: JS disabled fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:39.761726 INFO: Attempting Refresh Stop strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:40.163922 ERROR: Refresh stop fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: cannot use a string pattern on a bytes-like object
+2025-09-15T06:45:40.165105 INFO: Attempting Inspect Element strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:40.596027 ERROR: Inspect element fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:40.597244 INFO: Attempting removepaywalls.com bypass for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:43.485979 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:45:43.486085 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:45:43.486111 INFO: Attempting archive.today for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:46.656189 INFO: No existing archive found, creating new archive for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:47.579214 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:45:47.581738 INFO: Attempting archive.is for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:49.950234 INFO: Attempting archive.li for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:52.995243 INFO: Attempting archive.fo for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:45:56.208709 INFO: Attempting archive.ph for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:00.086110 INFO: Attempting Googlebot spoof for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:00.485571 ERROR: Googlebot spoof failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:00.486807 INFO: Attempting Enhanced Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:16.390375 INFO: Found Wayback snapshot from 20160907070128: http://web.archive.org/web/20160907070128/http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:18.860218 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:46:18.860350 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:46:18.860382 INFO: Attempting Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:18.973646 ERROR: Wayback Machine failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: No archived snapshots found
+2025-09-15T06:46:18.975829 ERROR: All fetch strategies failed or returned low-quality content for http://jama.jamanetwork.com/article.aspx?articleid=1871695. Attempting Google Search fallback...
+2025-09-15T06:46:18.975972 INFO: Google Search fallback: searching for 'article.aspx'
+2025-09-15T06:46:19.008490 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:46:19.015365 INFO: Attempting direct fetch for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:19.423961 ERROR: Direct fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:19.425286 INFO: Attempting Reader Mode strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:19.842183 ERROR: Reader mode fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:19.843965 INFO: Attempting JS Disabled strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:20.258104 ERROR: JS disabled fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:20.259446 INFO: Attempting Refresh Stop strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:20.671317 ERROR: Refresh stop fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: cannot use a string pattern on a bytes-like object
+2025-09-15T06:46:20.672692 INFO: Attempting Inspect Element strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:21.076718 ERROR: Inspect element fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:21.077999 INFO: Attempting removepaywalls.com bypass for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:25.179860 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:46:25.179961 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:46:25.179988 INFO: Attempting archive.today for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:29.544500 INFO: No existing archive found, creating new archive for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:30.398283 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:46:30.398780 INFO: Attempting archive.is for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:33.484257 INFO: Attempting archive.li for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:35.357420 INFO: Attempting archive.fo for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:39.129978 INFO: Attempting archive.ph for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:42.023136 INFO: Attempting Googlebot spoof for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:42.443964 ERROR: Googlebot spoof failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:42.445271 INFO: Attempting Enhanced Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:42.981660 INFO: Found Wayback snapshot from 20160907070128: http://web.archive.org/web/20160907070128/http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:43.229339 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:46:43.229445 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:46:43.229472 INFO: Attempting Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:43.363239 ERROR: Wayback Machine failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: No archived snapshots found
+2025-09-15T06:46:43.365244 ERROR: All fetch strategies failed or returned low-quality content for http://jama.jamanetwork.com/article.aspx?articleid=1871695. Attempting Google Search fallback...
+2025-09-15T06:46:43.365366 INFO: Google Search fallback: searching for 'article.aspx'
+2025-09-15T06:46:43.398343 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:46:43.406280 INFO: Attempting direct fetch for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:43.406413 ERROR: Direct fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: [Errno 32] Broken pipe
+2025-09-15T06:46:43.406453 INFO: Attempting Reader Mode strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:43.816397 ERROR: Reader mode fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:43.817788 INFO: Attempting JS Disabled strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:44.235006 ERROR: JS disabled fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:44.237925 INFO: Attempting Refresh Stop strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:44.645873 ERROR: Refresh stop fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: cannot use a string pattern on a bytes-like object
+2025-09-15T06:46:44.647288 INFO: Attempting Inspect Element strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:45.053105 ERROR: Inspect element fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:45.054331 INFO: Attempting removepaywalls.com bypass for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:49.254865 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:46:49.254985 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:46:49.255016 INFO: Attempting archive.today for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:53.180100 INFO: No existing archive found, creating new archive for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:54.053871 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:46:54.054462 INFO: Attempting archive.is for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:46:57.479652 INFO: Attempting archive.li for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:01.266906 INFO: Attempting archive.fo for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:04.061069 INFO: Attempting archive.ph for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:06.146838 INFO: Attempting Googlebot spoof for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:06.576531 ERROR: Googlebot spoof failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:06.578101 INFO: Attempting Enhanced Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:07.163959 INFO: Found Wayback snapshot from 20160907070128: http://web.archive.org/web/20160907070128/http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:07.414131 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:47:07.414241 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:47:07.414284 INFO: Attempting Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:07.577925 ERROR: Wayback Machine failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: No archived snapshots found
+2025-09-15T06:47:07.580825 ERROR: All fetch strategies failed or returned low-quality content for http://jama.jamanetwork.com/article.aspx?articleid=1871695. Attempting Google Search fallback...
+2025-09-15T06:47:07.581008 INFO: Google Search fallback: searching for 'article.aspx'
+2025-09-15T06:47:07.614891 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:47:07.623566 INFO: Attempting direct fetch for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:08.033361 ERROR: Direct fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:08.034579 INFO: Attempting Reader Mode strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:08.467693 ERROR: Reader mode fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:08.469099 INFO: Attempting JS Disabled strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:08.887297 ERROR: JS disabled fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:08.888728 INFO: Attempting Refresh Stop strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:09.294129 ERROR: Refresh stop fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: cannot use a string pattern on a bytes-like object
+2025-09-15T06:47:09.295337 INFO: Attempting Inspect Element strategy for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:09.709402 ERROR: Inspect element fetch failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:09.710801 INFO: Attempting removepaywalls.com bypass for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:13.654460 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:47:13.654576 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:47:13.654636 INFO: Attempting archive.today for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:16.492911 INFO: No existing archive found, creating new archive for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:17.361982 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:47:17.362394 INFO: Attempting archive.is for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:19.995321 INFO: Attempting archive.li for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:23.592364 INFO: Attempting archive.fo for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:27.122492 INFO: Attempting archive.ph for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:29.095716 INFO: Attempting Googlebot spoof for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:29.510584 ERROR: Googlebot spoof failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: 403 Client Error: Forbidden for url: https://jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:29.511919 INFO: Attempting Enhanced Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:29.988177 INFO: Found Wayback snapshot from 20160907070128: http://web.archive.org/web/20160907070128/http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:30.217454 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:47:30.217569 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:47:30.217623 INFO: Attempting Wayback Machine for http://jama.jamanetwork.com/article.aspx?articleid=1871695
+2025-09-15T06:47:30.361122 ERROR: Wayback Machine failed for http://jama.jamanetwork.com/article.aspx?articleid=1871695: No archived snapshots found
+2025-09-15T06:47:30.362797 ERROR: All fetch strategies failed or returned low-quality content for http://jama.jamanetwork.com/article.aspx?articleid=1871695. Attempting Google Search fallback...

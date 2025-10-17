@@ -1,0 +1,54 @@
+{
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getcurrentlocation",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.create_note",
+      "WFWorkflowActionParameters": {
+        "phrase": "Capture evening thought",
+        "parameters": {
+          "type": "evening_reflection"
+        }
+      }
+    }
+  ],
+  "WFWorkflowIcon": {
+    "WFWorkflowIconGlyphNumber": 59845,
+    "WFWorkflowIconStartColor": 2071128575
+  },
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFIMessageAttachmentContentItem",
+    "WFMediaContentItem",
+    "WFNumberContentItem",
+    "WFPhoneNumberContentItem",
+    "WFPhotoMediaContentItem",
+    "WFReminderContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowTypes": [
+    "WatchKit",
+    "ActionExtension"
+  ],
+  "WFWorkflowClientVersion": "1040.24",
+  "WFWorkflowClientRelease": "2.1",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowMinimumClientRelease": "2.0",
+  "WFWorkflowName": "Context: capture_evening_thought",
+  "WFWorkflowDescription": "Context-aware shortcut: capture_evening_thought"
+}

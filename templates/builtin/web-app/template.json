@@ -1,0 +1,36 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "Modern web application with React/Vue frontend and Node.js backend",
+  "category": "web",
+  "tags": ["react", "nodejs", "fullstack"],
+  "variables": {
+    "PROJECT_NAME": {
+      "description": "Project name",
+      "type": "string",
+      "required": true
+    },
+    "FRONTEND_FRAMEWORK": {
+      "description": "Frontend framework",
+      "type": "choice",
+      "options": ["react", "vue", "svelte"],
+      "default": "react"
+    },
+    "BACKEND_TYPE": {
+      "description": "Backend type",
+      "type": "choice", 
+      "options": ["express", "fastify", "koa"],
+      "default": "express"
+    },
+    "DATABASE": {
+      "description": "Database type",
+      "type": "choice",
+      "options": ["postgresql", "mongodb", "sqlite"],
+      "default": "postgresql"
+    }
+  },
+  "hooks": {
+    "pre_create": ["validate_node_version"],
+    "post_create": ["install_dependencies", "setup_database"]
+  }
+}

@@ -1,0 +1,25 @@
+2025-09-14T20:51:15.414216 INFO: Attempting direct fetch for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:15.523736 ERROR: Direct fetch failed for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:15.524907 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:15.774401 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:51:15.775852 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:15.857969 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:15.859153 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:15.936432 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:51:15.937522 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:16.013018 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:16.014191 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:20.359211 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:51:20.359321 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:51:20.359349 INFO: Attempting archive.today for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:23.725944 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:24.611251 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:51:24.611749 INFO: Attempting archive.is for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:28.460108 INFO: Attempting archive.li for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:30.834530 INFO: Attempting archive.fo for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:34.528457 INFO: Attempting archive.ph for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:38.366310 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:38.466533 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:38.467808 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:44.319227 INFO: Found Wayback snapshot from 20240117054419: http://web.archive.org/web/20240117054419/https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html
+2025-09-14T20:51:48.046121 INFO: Successfully fetched https://www.nytimes.com/2022/01/18/magazine/ai-technology-poker.html using wayback_machine_enhanced

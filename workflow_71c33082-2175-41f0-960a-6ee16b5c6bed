@@ -1,0 +1,137 @@
+2025-09-15T03:34:46.155568 INFO: Attempting direct fetch for http://www.eonline.com/
+2025-09-15T03:34:46.610888 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:34:46.661893 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:34:46.661996 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:34:46.662032 INFO: Attempting Reader Mode strategy for http://www.eonline.com/
+2025-09-15T03:34:46.734747 ERROR: Reader mode fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:34:46.736679 INFO: Attempting JS Disabled strategy for http://www.eonline.com/
+2025-09-15T03:34:46.866553 INFO: Attempting Refresh Stop strategy for http://www.eonline.com/
+2025-09-15T03:34:46.955038 ERROR: Refresh stop fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:34:46.956886 INFO: Attempting Inspect Element strategy for http://www.eonline.com/
+2025-09-15T03:34:47.090755 INFO: Attempting removepaywalls.com bypass for http://www.eonline.com/
+2025-09-15T03:34:50.020118 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:34:50.020227 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:34:50.020255 INFO: Attempting archive.today for http://www.eonline.com/
+2025-09-15T03:34:53.783149 INFO: No existing archive found, creating new archive for http://www.eonline.com/
+2025-09-15T03:34:54.635968 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:34:54.636328 INFO: Attempting archive.is for http://www.eonline.com/
+2025-09-15T03:34:56.608826 INFO: Attempting archive.li for http://www.eonline.com/
+2025-09-15T03:34:58.806979 INFO: Attempting archive.fo for http://www.eonline.com/
+2025-09-15T03:35:02.334197 INFO: Attempting archive.ph for http://www.eonline.com/
+2025-09-15T03:35:05.986927 INFO: Attempting Googlebot spoof for http://www.eonline.com/
+2025-09-15T03:35:06.110701 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:06.110825 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:06.110853 INFO: Attempting Enhanced Wayback Machine for http://www.eonline.com/
+2025-09-15T03:35:06.651394 INFO: Found Wayback snapshot from 20250914233446: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:35:12.129883 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:12.129994 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:12.130020 INFO: Attempting Wayback Machine for http://www.eonline.com/
+2025-09-15T03:35:12.252463 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:35:12.413484 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:12.413622 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:12.413661 ERROR: All fetch strategies failed or returned low-quality content for http://www.eonline.com/. Attempting Google Search fallback...
+2025-09-15T03:35:12.413723 INFO: Google Search fallback: searching for 'article www.eonline.com'
+2025-09-15T03:35:12.445345 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:35:12.453004 INFO: Attempting direct fetch for http://www.eonline.com/
+2025-09-15T03:35:12.594239 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:12.651866 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:12.651974 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:12.652012 INFO: Attempting Reader Mode strategy for http://www.eonline.com/
+2025-09-15T03:35:12.724642 ERROR: Reader mode fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:35:12.727127 INFO: Attempting JS Disabled strategy for http://www.eonline.com/
+2025-09-15T03:35:12.863139 INFO: Attempting Refresh Stop strategy for http://www.eonline.com/
+2025-09-15T03:35:12.864043 ERROR: Refresh stop fetch failed for http://www.eonline.com/: [Errno 32] Broken pipe
+2025-09-15T03:35:12.864108 INFO: Attempting Inspect Element strategy for http://www.eonline.com/
+2025-09-15T03:35:13.029805 INFO: Attempting removepaywalls.com bypass for http://www.eonline.com/
+2025-09-15T03:35:15.345998 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:35:15.346111 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:15.346138 INFO: Attempting archive.today for http://www.eonline.com/
+2025-09-15T03:35:18.168712 INFO: No existing archive found, creating new archive for http://www.eonline.com/
+2025-09-15T03:35:19.059982 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:35:19.060359 INFO: Attempting archive.is for http://www.eonline.com/
+2025-09-15T03:35:22.012036 INFO: Attempting archive.li for http://www.eonline.com/
+2025-09-15T03:35:24.115564 INFO: Attempting archive.fo for http://www.eonline.com/
+2025-09-15T03:35:27.513941 INFO: Attempting archive.ph for http://www.eonline.com/
+2025-09-15T03:35:29.819551 INFO: Attempting Googlebot spoof for http://www.eonline.com/
+2025-09-15T03:35:29.964213 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:29.964326 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:29.964352 INFO: Attempting Enhanced Wayback Machine for http://www.eonline.com/
+2025-09-15T03:35:30.087012 INFO: Found Wayback snapshot from 20250914233446: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:35:30.280309 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:30.280411 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:30.280436 INFO: Attempting Wayback Machine for http://www.eonline.com/
+2025-09-15T03:35:30.485056 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:35:30.643902 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:30.644015 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:30.644048 ERROR: All fetch strategies failed or returned low-quality content for http://www.eonline.com/. Attempting Google Search fallback...
+2025-09-15T03:35:30.644109 INFO: Google Search fallback: searching for 'article www.eonline.com'
+2025-09-15T03:35:30.675840 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:35:30.683792 INFO: Attempting direct fetch for http://www.eonline.com/
+2025-09-15T03:35:30.804467 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:30.855896 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:30.856013 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:30.856050 INFO: Attempting Reader Mode strategy for http://www.eonline.com/
+2025-09-15T03:35:30.927239 ERROR: Reader mode fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:35:30.929216 INFO: Attempting JS Disabled strategy for http://www.eonline.com/
+2025-09-15T03:35:31.131807 INFO: Attempting Refresh Stop strategy for http://www.eonline.com/
+2025-09-15T03:35:31.222883 ERROR: Refresh stop fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:35:31.224784 INFO: Attempting Inspect Element strategy for http://www.eonline.com/
+2025-09-15T03:35:31.362940 INFO: Attempting removepaywalls.com bypass for http://www.eonline.com/
+2025-09-15T03:35:36.293429 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:35:36.293544 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:36.293602 INFO: Attempting archive.today for http://www.eonline.com/
+2025-09-15T03:35:40.012495 INFO: No existing archive found, creating new archive for http://www.eonline.com/
+2025-09-15T03:35:40.907888 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:35:40.908267 INFO: Attempting archive.is for http://www.eonline.com/
+2025-09-15T03:35:44.229232 INFO: Attempting archive.li for http://www.eonline.com/
+2025-09-15T03:35:46.348135 INFO: Attempting archive.fo for http://www.eonline.com/
+2025-09-15T03:35:49.644518 INFO: Attempting archive.ph for http://www.eonline.com/
+2025-09-15T03:35:51.587822 INFO: Attempting Googlebot spoof for http://www.eonline.com/
+2025-09-15T03:35:51.966357 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:51.966477 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:51.966504 INFO: Attempting Enhanced Wayback Machine for http://www.eonline.com/
+2025-09-15T03:35:52.084187 INFO: Found Wayback snapshot from 20250914233446: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:35:52.257059 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:52.257175 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:52.257202 INFO: Attempting Wayback Machine for http://www.eonline.com/
+2025-09-15T03:35:52.385981 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:35:52.549899 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:52.550011 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:52.550044 ERROR: All fetch strategies failed or returned low-quality content for http://www.eonline.com/. Attempting Google Search fallback...
+2025-09-15T03:35:52.550107 INFO: Google Search fallback: searching for 'article www.eonline.com'
+2025-09-15T03:35:52.582712 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:35:52.590713 INFO: Attempting direct fetch for http://www.eonline.com/
+2025-09-15T03:35:52.712700 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:52.765373 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:35:52.765485 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:52.765524 INFO: Attempting Reader Mode strategy for http://www.eonline.com/
+2025-09-15T03:35:52.835983 ERROR: Reader mode fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:35:52.838473 INFO: Attempting JS Disabled strategy for http://www.eonline.com/
+2025-09-15T03:35:52.985568 INFO: Attempting Refresh Stop strategy for http://www.eonline.com/
+2025-09-15T03:35:53.075005 ERROR: Refresh stop fetch failed for http://www.eonline.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T03:35:53.077672 INFO: Attempting Inspect Element strategy for http://www.eonline.com/
+2025-09-15T03:35:53.207418 INFO: Attempting removepaywalls.com bypass for http://www.eonline.com/
+2025-09-15T03:35:56.601977 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:35:56.602091 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:35:56.602117 INFO: Attempting archive.today for http://www.eonline.com/
+2025-09-15T03:35:59.808257 INFO: No existing archive found, creating new archive for http://www.eonline.com/
+2025-09-15T03:36:00.713334 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:36:00.713852 INFO: Attempting archive.is for http://www.eonline.com/
+2025-09-15T03:36:03.617570 INFO: Attempting archive.li for http://www.eonline.com/
+2025-09-15T03:36:06.069730 INFO: Attempting archive.fo for http://www.eonline.com/
+2025-09-15T03:36:08.375802 INFO: Attempting archive.ph for http://www.eonline.com/
+2025-09-15T03:36:11.672104 INFO: Attempting Googlebot spoof for http://www.eonline.com/
+2025-09-15T03:36:11.805665 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:36:11.806111 INFO: Content is very short (73 words). Likely a teaser.
+2025-09-15T03:36:11.806163 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:36:11.806189 INFO: Attempting Enhanced Wayback Machine for http://www.eonline.com/
+2025-09-15T03:36:11.959702 INFO: Found Wayback snapshot from 20250914233446: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:36:12.134788 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:36:12.134950 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:36:12.134978 INFO: Attempting Wayback Machine for http://www.eonline.com/
+2025-09-15T03:36:12.294514 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914233446/https://www.eonline.com/
+2025-09-15T03:36:12.450638 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T03:36:12.450753 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:36:12.450787 ERROR: All fetch strategies failed or returned low-quality content for http://www.eonline.com/. Attempting Google Search fallback...
+2025-09-15T03:36:12.450848 INFO: Google Search fallback: searching for 'article www.eonline.com'
+2025-09-15T03:36:12.483938 INFO: Google Search fallback did not find alternative URL

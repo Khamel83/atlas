@@ -1,0 +1,71 @@
+2025-09-15T04:34:49.559833 INFO: Attempting direct fetch for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:50.289126 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:34:50.354966 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:34:50.355081 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:34:50.355122 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:50.455749 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/amanda-mull/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:34:50.457940 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:50.600128 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:34:50.600235 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:34:50.600261 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:50.703826 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/amanda-mull/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:34:50.706731 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:50.896682 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:34:50.896782 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:34:50.896808 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:53.649983 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:34:53.650079 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:34:53.650179 INFO: Attempting archive.today for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:56.948178 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:57.840306 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:34:57.840712 INFO: Attempting archive.is for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:34:59.890870 INFO: Attempting archive.li for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:03.052304 INFO: Attempting archive.fo for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:06.613224 INFO: Attempting archive.ph for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:10.207538 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:10.370792 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/amanda-mull/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:10.372330 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:10.873455 INFO: Found Wayback snapshot from 20250909114929: http://web.archive.org/web/20250909114929/https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:11.807479 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:11.807619 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:11.807651 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:12.092004 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909114929/https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:12.231832 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:12.232195 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:12.232241 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/amanda-mull/. Attempting Google Search fallback...
+2025-09-15T04:35:12.232325 INFO: Google Search fallback: searching for 'amanda mull'
+2025-09-15T04:35:12.267706 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:35:12.277770 INFO: Attempting direct fetch for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:12.437390 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:12.509896 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:12.510017 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:12.510056 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:12.608699 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/amanda-mull/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:35:12.611207 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:12.752176 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:12.752282 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:12.752310 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:12.862504 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/amanda-mull/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:35:12.864986 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:13.076231 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:13.076339 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:13.076367 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:17.815270 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:35:17.815378 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:17.815404 INFO: Attempting archive.today for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:21.350895 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:22.213131 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:35:22.213561 INFO: Attempting archive.is for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:25.528016 INFO: Attempting archive.li for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:27.978970 INFO: Attempting archive.fo for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:30.672569 INFO: Attempting archive.ph for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.078668 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.253985 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/amanda-mull/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.255433 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.399468 INFO: Found Wayback snapshot from 20250909114929: http://web.archive.org/web/20250909114929/https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.531331 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:33.531446 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:33.531473 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.655330 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909114929/https://www.theatlantic.com/author/amanda-mull/
+2025-09-15T04:35:33.800883 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T04:35:33.801113 INFO: Successfully fetched https://www.theatlantic.com/author/amanda-mull/ using 12ft

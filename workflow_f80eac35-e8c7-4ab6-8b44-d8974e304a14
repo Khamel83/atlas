@@ -1,0 +1,25 @@
+2025-09-15T14:02:49.946309 INFO: Attempting direct fetch for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.007844 ERROR: Direct fetch failed for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.008033 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.788007 ERROR: Reader mode fetch failed for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:02:50.790115 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.852055 ERROR: JS disabled fetch failed for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.852252 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.912384 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:02:50.912634 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.971094 ERROR: Inspect element fetch failed for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:50.971286 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:55.486938 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:02:55.487054 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:02:55.487083 INFO: Attempting archive.today for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:02:59.811812 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:00.717067 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:03:00.717458 INFO: Attempting archive.is for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:03.649379 INFO: Attempting archive.li for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:05.870283 INFO: Attempting archive.fo for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:09.373049 INFO: Attempting archive.ph for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:12.654294 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:12.761391 ERROR: Googlebot spoof failed for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:12.761633 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:13.360732 INFO: Found Wayback snapshot from 20241125040139: http://web.archive.org/web/20241125040139/https://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html
+2025-09-15T14:03:14.922859 INFO: Successfully fetched http://www.nytimes.com/2014/05/25/magazine/can-the-nervous-system-be-hacked.html using wayback_machine_enhanced

@@ -1,0 +1,37 @@
+2025-09-15T03:27:40.421420 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:40.501554 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:40.501762 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:41.014081 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:27:41.015557 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:41.074388 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:41.074574 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:41.131805 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:27:41.131978 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:41.191095 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:41.191267 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:43.848811 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:27:43.864899 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:43.922393 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:43.922562 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:44.171090 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:27:44.172853 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:44.233392 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:44.233582 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:44.290773 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:27:44.290955 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:44.347976 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:44.348171 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:46.647244 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:27:46.647371 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:27:46.647398 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:49.406328 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:50.296104 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:27:50.296505 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:52.997003 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:56.781455 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:27:59.900336 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:28:02.952097 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:28:03.044106 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:28:03.044288 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T03:28:03.559083 INFO: Found Wayback snapshot from 20240719180733: http://web.archive.org/web/20240719180733/https://www.nytimes.com/2010/09/28/health/28real.html?_r=1
+2025-09-15T03:28:04.658618 INFO: Successfully fetched http://www.nytimes.com/2010/09/28/health/28real.html?_r=1&ref=homepage&src=me&pagewanted=print using wayback_machine_enhanced

@@ -1,0 +1,124 @@
+2025-09-14T22:29:55.973898 INFO: Attempting direct fetch for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.210090 ERROR: Direct fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.211329 INFO: Attempting Reader Mode strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.316199 ERROR: Reader mode fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.317444 INFO: Attempting JS Disabled strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.419867 ERROR: JS disabled fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.421158 INFO: Attempting Refresh Stop strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.508982 ERROR: Refresh stop fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: cannot use a string pattern on a bytes-like object
+2025-09-14T22:29:56.512478 INFO: Attempting Inspect Element strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.618886 ERROR: Inspect element fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:29:56.620187 INFO: Attempting removepaywalls.com bypass for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:00.766618 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:30:00.766734 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:30:00.766761 INFO: Attempting archive.today for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:04.164405 INFO: No existing archive found, creating new archive for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:05.113004 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:30:05.114321 INFO: Attempting archive.is for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:07.931373 INFO: Attempting archive.li for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:10.663832 INFO: Attempting archive.fo for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:14.387656 INFO: Attempting archive.ph for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:16.790163 INFO: Attempting Googlebot spoof for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:16.887045 ERROR: Googlebot spoof failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:16.889031 INFO: Attempting Enhanced Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:27.773195 INFO: Found Wayback snapshot from 20240904072201: http://web.archive.org/web/20240904072201/https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:28.635119 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:30:28.635251 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:30:28.635279 INFO: Attempting Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:28.768154 ERROR: Wayback Machine failed for https://dl.acm.org/doi/10.1145/3613904.3642919: No archived snapshots found
+2025-09-14T22:30:28.772048 ERROR: All fetch strategies failed or returned low-quality content for https://dl.acm.org/doi/10.1145/3613904.3642919. Attempting Google Search fallback...
+2025-09-14T22:30:28.772373 INFO: Google Search fallback: searching for '3613904.3642919'
+2025-09-14T22:30:28.862407 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:30:28.881171 INFO: Attempting direct fetch for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.013146 ERROR: Direct fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.018943 INFO: Attempting Reader Mode strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.122239 ERROR: Reader mode fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.125128 INFO: Attempting JS Disabled strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.234700 ERROR: JS disabled fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.240521 INFO: Attempting Refresh Stop strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.360670 ERROR: Refresh stop fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: cannot use a string pattern on a bytes-like object
+2025-09-14T22:30:29.362396 INFO: Attempting Inspect Element strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.496902 ERROR: Inspect element fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:29.499683 INFO: Attempting removepaywalls.com bypass for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:34.631392 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:30:34.631495 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:30:34.631522 INFO: Attempting archive.today for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:36.711931 INFO: No existing archive found, creating new archive for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:37.588814 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:30:37.589488 INFO: Attempting archive.is for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:41.463731 INFO: Attempting archive.li for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:43.718260 INFO: Attempting archive.fo for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:46.950937 INFO: Attempting archive.ph for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.006738 INFO: Attempting Googlebot spoof for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.093066 ERROR: Googlebot spoof failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.094736 INFO: Attempting Enhanced Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.476312 INFO: Found Wayback snapshot from 20240904072201: http://web.archive.org/web/20240904072201/https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.650408 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:30:49.650538 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:30:49.650638 INFO: Attempting Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.835995 ERROR: Wayback Machine failed for https://dl.acm.org/doi/10.1145/3613904.3642919: No archived snapshots found
+2025-09-14T22:30:49.837942 ERROR: All fetch strategies failed or returned low-quality content for https://dl.acm.org/doi/10.1145/3613904.3642919. Attempting Google Search fallback...
+2025-09-14T22:30:49.838198 INFO: Google Search fallback: searching for '3613904.3642919'
+2025-09-14T22:30:49.876252 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:30:49.889048 INFO: Attempting direct fetch for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.972680 ERROR: Direct fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:49.973778 INFO: Attempting Reader Mode strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.064179 ERROR: Reader mode fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.065325 INFO: Attempting JS Disabled strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.158096 ERROR: JS disabled fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.159286 INFO: Attempting Refresh Stop strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.252413 ERROR: Refresh stop fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: cannot use a string pattern on a bytes-like object
+2025-09-14T22:30:50.253753 INFO: Attempting Inspect Element strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.349977 ERROR: Inspect element fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:50.351196 INFO: Attempting removepaywalls.com bypass for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:54.761031 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:30:54.761145 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:30:54.761171 INFO: Attempting archive.today for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:57.290349 INFO: No existing archive found, creating new archive for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:30:58.208114 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:30:58.211675 INFO: Attempting archive.is for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:00.675487 INFO: Attempting archive.li for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:03.161750 INFO: Attempting archive.fo for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:06.909836 INFO: Attempting archive.ph for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:09.895331 INFO: Attempting Googlebot spoof for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:09.993838 ERROR: Googlebot spoof failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:09.995416 INFO: Attempting Enhanced Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:10.355738 INFO: Found Wayback snapshot from 20240904072201: http://web.archive.org/web/20240904072201/https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:10.544623 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:31:10.544763 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:10.544789 INFO: Attempting Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:10.661427 ERROR: Wayback Machine failed for https://dl.acm.org/doi/10.1145/3613904.3642919: No archived snapshots found
+2025-09-14T22:31:10.663473 ERROR: All fetch strategies failed or returned low-quality content for https://dl.acm.org/doi/10.1145/3613904.3642919. Attempting Google Search fallback...
+2025-09-14T22:31:10.663699 INFO: Google Search fallback: searching for '3613904.3642919'
+2025-09-14T22:31:10.730554 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:31:10.742744 INFO: Attempting direct fetch for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:10.871111 ERROR: Direct fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:10.874689 INFO: Attempting Reader Mode strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.002329 ERROR: Reader mode fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.005793 INFO: Attempting JS Disabled strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.178238 ERROR: JS disabled fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.188882 INFO: Attempting Refresh Stop strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.422434 ERROR: Refresh stop fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: cannot use a string pattern on a bytes-like object
+2025-09-14T22:31:11.445189 INFO: Attempting Inspect Element strategy for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.602357 ERROR: Inspect element fetch failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:11.610840 INFO: Attempting removepaywalls.com bypass for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:15.378665 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:31:15.378786 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:15.378812 INFO: Attempting archive.today for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:18.918849 INFO: No existing archive found, creating new archive for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:19.813269 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:31:19.813839 INFO: Attempting archive.is for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:22.056254 INFO: Attempting archive.li for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:25.435565 INFO: Attempting archive.fo for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:28.227752 INFO: Attempting archive.ph for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:38.197913 INFO: Attempting Googlebot spoof for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:38.295777 ERROR: Googlebot spoof failed for https://dl.acm.org/doi/10.1145/3613904.3642919: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:38.297215 INFO: Attempting Enhanced Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:38.648731 INFO: Found Wayback snapshot from 20240904072201: http://web.archive.org/web/20240904072201/https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:38.952596 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T22:31:38.952723 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:38.952749 INFO: Attempting Wayback Machine for https://dl.acm.org/doi/10.1145/3613904.3642919
+2025-09-14T22:31:39.067995 ERROR: Wayback Machine failed for https://dl.acm.org/doi/10.1145/3613904.3642919: No archived snapshots found
+2025-09-14T22:31:39.070410 ERROR: All fetch strategies failed or returned low-quality content for https://dl.acm.org/doi/10.1145/3613904.3642919. Attempting Google Search fallback...
+2025-09-14T22:31:39.070563 INFO: Google Search fallback: searching for '3613904.3642919'
+2025-09-14T22:31:39.103503 INFO: Google Search fallback did not find alternative URL

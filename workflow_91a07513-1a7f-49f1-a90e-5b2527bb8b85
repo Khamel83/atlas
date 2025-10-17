@@ -1,0 +1,107 @@
+2025-09-15T12:20:25.194239 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:25.493471 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:25.493695 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:26.164276 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:20:26.165894 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:26.227052 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:26.227234 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:26.286025 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:20:26.286210 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:26.344523 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:26.344773 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:30.387443 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:20:30.387555 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:20:30.387585 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:33.452638 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:34.365130 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:20:34.365765 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:36.739152 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:40.539045 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:42.800541 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:46.422932 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:46.529372 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:20:46.529573 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:11.637821 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T12:21:11.639150 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:11.639626 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T12:21:11.639748 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T12:21:11.639830 INFO: Google Search fallback: searching for '30charity.html'
+2025-09-15T12:21:11.671884 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:21:11.678675 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:11.761261 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:11.761428 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:12.435806 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:21:12.437507 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:12.500154 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:12.500347 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:12.559905 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:21:12.560072 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:12.618556 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:12.618765 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:17.445829 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:21:17.445946 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:21:17.445976 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:19.901442 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:20.802656 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:21:20.803084 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:22.799562 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:26.226310 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:28.957860 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:31.396961 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:31.481039 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:31.481239 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:32.886394 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T12:21:32.887806 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.064076 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: No archived snapshots found
+2025-09-15T12:21:33.065783 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T12:21:33.066332 INFO: Google Search fallback: searching for '30charity.html'
+2025-09-15T12:21:33.098558 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:21:33.106988 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.167030 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.167214 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.804326 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:21:33.805989 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.869803 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.870000 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.931227 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:21:33.931408 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.989781 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:33.989965 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:36.520632 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:21:36.520738 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:21:36.520767 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:38.759700 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:39.699069 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:21:39.699573 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:42.079222 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:44.434992 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:46.485881 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:46.496316 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:46.566235 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:46.566428 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:47.325577 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:21:47.327521 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:47.402231 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:47.402440 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:47.466323 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T12:21:47.466510 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:47.527578 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:47.527828 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:52.407066 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:21:52.407184 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:21:52.407213 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:54.378157 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:55.235916 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:21:55.236459 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:21:57.624722 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:01.559746 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:04.178856 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:06.588512 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:06.665317 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:06.665526 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:08.682584 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T12:22:08.684092 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print
+2025-09-15T12:22:08.827945 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print: No archived snapshots found
+2025-09-15T12:22:08.829577 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T12:22:08.830099 INFO: Google Search fallback: searching for '30charity.html'
+2025-09-15T12:22:08.862087 INFO: Google Search fallback did not find alternative URL

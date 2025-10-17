@@ -1,0 +1,25 @@
+2025-09-15T04:23:50.179898 INFO: Attempting direct fetch for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.392779 ERROR: Direct fetch failed for https://www.science.org/content/article/how-big-average-penis: 403 Client Error: Forbidden for url: https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.393935 INFO: Attempting Reader Mode strategy for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.487009 ERROR: Reader mode fetch failed for https://www.science.org/content/article/how-big-average-penis: 403 Client Error: Forbidden for url: https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.488168 INFO: Attempting JS Disabled strategy for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.488529 ERROR: JS disabled fetch failed for https://www.science.org/content/article/how-big-average-penis: [Errno 32] Broken pipe
+2025-09-15T04:23:50.488572 INFO: Attempting Refresh Stop strategy for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.574500 ERROR: Refresh stop fetch failed for https://www.science.org/content/article/how-big-average-penis: cannot use a string pattern on a bytes-like object
+2025-09-15T04:23:50.575635 INFO: Attempting Inspect Element strategy for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.664925 ERROR: Inspect element fetch failed for https://www.science.org/content/article/how-big-average-penis: 403 Client Error: Forbidden for url: https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:50.666134 INFO: Attempting removepaywalls.com bypass for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:53.374832 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:23:53.374937 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:23:53.374963 INFO: Attempting archive.today for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:58.071490 INFO: No existing archive found, creating new archive for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:23:58.929236 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:23:58.929835 INFO: Attempting archive.is for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:02.772530 INFO: Attempting archive.li for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:05.817700 INFO: Attempting archive.fo for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:08.356550 INFO: Attempting archive.ph for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:10.515849 INFO: Attempting Googlebot spoof for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:10.601129 ERROR: Googlebot spoof failed for https://www.science.org/content/article/how-big-average-penis: 403 Client Error: Forbidden for url: https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:10.602437 INFO: Attempting Enhanced Wayback Machine for https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:17.203553 INFO: Found Wayback snapshot from 20231122193637: http://web.archive.org/web/20231122193637/https://www.science.org/content/article/how-big-average-penis
+2025-09-15T04:24:18.321913 INFO: Successfully fetched https://www.science.org/content/article/how-big-average-penis using wayback_machine_enhanced

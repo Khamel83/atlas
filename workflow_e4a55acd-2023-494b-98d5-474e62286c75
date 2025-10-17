@@ -1,0 +1,25 @@
+2025-09-15T05:16:03.358845 INFO: Attempting direct fetch for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:03.508512 ERROR: Direct fetch failed for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:03.509692 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:04.226773 ERROR: Reader mode fetch failed for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:16:04.228700 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:04.345016 ERROR: JS disabled fetch failed for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:04.346219 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:04.466786 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:16:04.468093 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:04.589083 ERROR: Inspect element fetch failed for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:04.590347 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:09.667955 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:16:09.668053 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:16:09.668080 INFO: Attempting archive.today for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:13.349783 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:14.252848 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:16:14.253424 INFO: Attempting archive.is for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:16.303351 INFO: Attempting archive.li for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:18.737354 INFO: Attempting archive.fo for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:21.492705 INFO: Attempting archive.ph for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:24.572653 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:24.687370 ERROR: Googlebot spoof failed for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:24.688814 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:27.636909 INFO: Found Wayback snapshot from 20250607135138: http://web.archive.org/web/20250607135138/https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html
+2025-09-15T05:16:31.325970 INFO: Successfully fetched https://www.nytimes.com/2020/10/14/magazine/quarantine-mustache.html using wayback_machine_enhanced

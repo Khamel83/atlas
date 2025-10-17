@@ -1,0 +1,29 @@
+{
+  "name": "Screenshot to Atlas",
+  "description": "Take a screenshot, OCR it, and save to your Atlas system",
+  "actions": [
+    {
+      "type": "takeScreenshot",
+      "output": "screenshot"
+    },
+    {
+      "type": "ocrImage",
+      "input": "screenshot",
+      "output": "ocrText"
+    },
+    {
+      "type": "httpRequest",
+      "method": "POST",
+      "url": "http://localhost:8000/api/v1/content/save",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "Screenshot from ${currentDate}",
+        "content": "${ocrText}",
+        "source": "screenshot",
+        "timestamp": "${currentTimestamp}"
+      }
+    }
+  ]
+}

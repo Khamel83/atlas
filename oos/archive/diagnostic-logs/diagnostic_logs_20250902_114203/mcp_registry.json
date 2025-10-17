@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "archon":     { "transport": "http", "url": "https://archon.khamel.com:8051/mcp" },
+    "context7":   { "transport": "http", "url": "https://context7.liam.sh/mcp", "headers": { "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}" } },
+    "filesystem": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/ubuntu"] },
+    "github":     { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-github"], "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}" } },
+    "sequential": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"] }
+  }
+}

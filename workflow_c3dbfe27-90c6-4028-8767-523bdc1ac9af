@@ -1,0 +1,99 @@
+2025-09-14T20:23:06.337857 INFO: Attempting direct fetch for https://socialblade.com/
+2025-09-14T20:23:06.518993 ERROR: Direct fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:06.520089 INFO: Attempting Reader Mode strategy for https://socialblade.com/
+2025-09-14T20:23:06.625619 ERROR: Reader mode fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:06.626753 INFO: Attempting JS Disabled strategy for https://socialblade.com/
+2025-09-14T20:23:06.737427 ERROR: JS disabled fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:06.738717 INFO: Attempting Refresh Stop strategy for https://socialblade.com/
+2025-09-14T20:23:06.830382 ERROR: Refresh stop fetch failed for https://socialblade.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:23:06.831549 INFO: Attempting Inspect Element strategy for https://socialblade.com/
+2025-09-14T20:23:06.917089 ERROR: Inspect element fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:06.918210 INFO: Attempting removepaywalls.com bypass for https://socialblade.com/
+2025-09-14T20:23:09.283396 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:23:09.283908 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:09.283958 INFO: Attempting archive.today for https://socialblade.com/
+2025-09-14T20:23:12.723999 INFO: No existing archive found, creating new archive for https://socialblade.com/
+2025-09-14T20:23:13.602868 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:23:13.603330 INFO: Attempting archive.is for https://socialblade.com/
+2025-09-14T20:23:16.413371 INFO: Attempting archive.li for https://socialblade.com/
+2025-09-14T20:23:19.680014 INFO: Attempting archive.fo for https://socialblade.com/
+2025-09-14T20:23:22.797492 INFO: Attempting archive.ph for https://socialblade.com/
+2025-09-14T20:23:24.820701 INFO: Attempting Googlebot spoof for https://socialblade.com/
+2025-09-14T20:23:24.923798 ERROR: Googlebot spoof failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:24.925138 INFO: Attempting Enhanced Wayback Machine for https://socialblade.com/
+2025-09-14T20:23:25.409206 INFO: Found Wayback snapshot from 20250914095304: http://web.archive.org/web/20250914095304/https://socialblade.com/
+2025-09-14T20:23:26.589211 INFO: Paywall phrase 'create a free account' detected.
+2025-09-14T20:23:26.589407 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:26.589439 INFO: Attempting Wayback Machine for https://socialblade.com/
+2025-09-14T20:23:26.742005 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914095304/https://socialblade.com/
+2025-09-14T20:23:26.818819 INFO: Paywall phrase 'create a free account' detected.
+2025-09-14T20:23:26.818929 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:26.818960 ERROR: All fetch strategies failed or returned low-quality content for https://socialblade.com/. Attempting Google Search fallback...
+2025-09-14T20:23:26.819024 INFO: Google Search fallback: searching for 'article socialblade.com'
+2025-09-14T20:23:26.852808 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:23:26.860513 INFO: Attempting direct fetch for https://socialblade.com/
+2025-09-14T20:23:26.952735 ERROR: Direct fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:26.953849 INFO: Attempting Reader Mode strategy for https://socialblade.com/
+2025-09-14T20:23:27.058956 ERROR: Reader mode fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:27.060154 INFO: Attempting JS Disabled strategy for https://socialblade.com/
+2025-09-14T20:23:27.155065 ERROR: JS disabled fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:27.156194 INFO: Attempting Refresh Stop strategy for https://socialblade.com/
+2025-09-14T20:23:27.245715 ERROR: Refresh stop fetch failed for https://socialblade.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:23:27.246907 INFO: Attempting Inspect Element strategy for https://socialblade.com/
+2025-09-14T20:23:27.357632 ERROR: Inspect element fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:27.358879 INFO: Attempting removepaywalls.com bypass for https://socialblade.com/
+2025-09-14T20:23:30.900896 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:23:30.901001 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:30.901027 INFO: Attempting archive.today for https://socialblade.com/
+2025-09-14T20:23:34.959084 INFO: No existing archive found, creating new archive for https://socialblade.com/
+2025-09-14T20:23:35.846913 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:23:35.847358 INFO: Attempting archive.is for https://socialblade.com/
+2025-09-14T20:23:39.302008 INFO: Attempting archive.li for https://socialblade.com/
+2025-09-14T20:23:42.225582 INFO: Attempting archive.fo for https://socialblade.com/
+2025-09-14T20:23:45.972156 INFO: Attempting archive.ph for https://socialblade.com/
+2025-09-14T20:23:48.362812 INFO: Attempting Googlebot spoof for https://socialblade.com/
+2025-09-14T20:23:48.458388 ERROR: Googlebot spoof failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:48.459666 INFO: Attempting Enhanced Wayback Machine for https://socialblade.com/
+2025-09-14T20:23:48.577400 INFO: Found Wayback snapshot from 20250914095304: http://web.archive.org/web/20250914095304/https://socialblade.com/
+2025-09-14T20:23:48.656666 INFO: Paywall phrase 'create a free account' detected.
+2025-09-14T20:23:48.656782 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:48.656810 INFO: Attempting Wayback Machine for https://socialblade.com/
+2025-09-14T20:23:48.766999 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914095304/https://socialblade.com/
+2025-09-14T20:23:48.844142 INFO: Paywall phrase 'create a free account' detected.
+2025-09-14T20:23:48.844259 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:48.844292 ERROR: All fetch strategies failed or returned low-quality content for https://socialblade.com/. Attempting Google Search fallback...
+2025-09-14T20:23:48.844360 INFO: Google Search fallback: searching for 'article socialblade.com'
+2025-09-14T20:23:48.882918 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:23:48.893286 INFO: Attempting direct fetch for https://socialblade.com/
+2025-09-14T20:23:48.984407 ERROR: Direct fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:48.985552 INFO: Attempting Reader Mode strategy for https://socialblade.com/
+2025-09-14T20:23:49.081646 ERROR: Reader mode fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:49.082876 INFO: Attempting JS Disabled strategy for https://socialblade.com/
+2025-09-14T20:23:49.188201 ERROR: JS disabled fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:49.189388 INFO: Attempting Refresh Stop strategy for https://socialblade.com/
+2025-09-14T20:23:49.327297 ERROR: Refresh stop fetch failed for https://socialblade.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:23:49.328458 INFO: Attempting Inspect Element strategy for https://socialblade.com/
+2025-09-14T20:23:49.420438 ERROR: Inspect element fetch failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:23:49.421644 INFO: Attempting removepaywalls.com bypass for https://socialblade.com/
+2025-09-14T20:23:51.853613 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:23:51.853730 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:23:51.853757 INFO: Attempting archive.today for https://socialblade.com/
+2025-09-14T20:23:54.653759 INFO: No existing archive found, creating new archive for https://socialblade.com/
+2025-09-14T20:23:55.559195 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:23:55.559653 INFO: Attempting archive.is for https://socialblade.com/
+2025-09-14T20:23:58.375181 INFO: Attempting archive.li for https://socialblade.com/
+2025-09-14T20:24:01.756415 INFO: Attempting archive.fo for https://socialblade.com/
+2025-09-14T20:24:04.237651 INFO: Attempting archive.ph for https://socialblade.com/
+2025-09-14T20:24:06.200887 INFO: Attempting Googlebot spoof for https://socialblade.com/
+2025-09-14T20:24:06.300350 ERROR: Googlebot spoof failed for https://socialblade.com/: 403 Client Error: Forbidden for url: https://socialblade.com/
+2025-09-14T20:24:06.301575 INFO: Attempting Enhanced Wayback Machine for https://socialblade.com/
+2025-09-14T20:24:06.477259 INFO: Found Wayback snapshot from 20250914095304: http://web.archive.org/web/20250914095304/https://socialblade.com/
+2025-09-14T20:24:06.549878 INFO: Paywall phrase 'create a free account' detected.
+2025-09-14T20:24:06.549986 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:06.550012 INFO: Attempting Wayback Machine for https://socialblade.com/
+2025-09-14T20:24:06.671307 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914095304/https://socialblade.com/
+2025-09-14T20:24:06.743115 INFO: Paywall phrase 'create a free account' detected.
+2025-09-14T20:24:06.743221 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:06.743252 ERROR: All fetch strategies failed or returned low-quality content for https://socialblade.com/. Attempting Google Search fallback...
+2025-09-14T20:24:06.743315 INFO: Google Search fallback: searching for 'article socialblade.com'
+2025-09-14T20:24:06.776414 INFO: Google Search fallback did not find alternative URL

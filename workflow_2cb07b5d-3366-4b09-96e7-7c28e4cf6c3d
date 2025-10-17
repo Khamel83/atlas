@@ -1,0 +1,27 @@
+2025-09-15T09:16:24.812928 INFO: Attempting direct fetch for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:25.228320 INFO: Content is very short (118 words). Likely a teaser.
+2025-09-15T09:16:25.267545 INFO: Content is very short (118 words). Likely a teaser.
+2025-09-15T09:16:25.267668 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:16:25.267708 INFO: Attempting Reader Mode strategy for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:25.620067 ERROR: Reader mode fetch failed for http://flowingdata.com/2014/10/03/big-chicken/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:16:25.625415 INFO: Attempting JS Disabled strategy for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:26.016301 INFO: Content is very short (118 words). Likely a teaser.
+2025-09-15T09:16:26.016415 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:16:26.016443 INFO: Attempting Refresh Stop strategy for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:26.382069 ERROR: Refresh stop fetch failed for http://flowingdata.com/2014/10/03/big-chicken/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:16:26.384371 INFO: Attempting Inspect Element strategy for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:26.764070 INFO: Content is very short (118 words). Likely a teaser.
+2025-09-15T09:16:26.764178 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:16:26.764205 INFO: Attempting removepaywalls.com bypass for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:29.616112 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:16:29.616221 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:16:29.616246 INFO: Attempting archive.today for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:31.482469 INFO: No existing archive found, creating new archive for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:32.388783 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:16:32.389902 INFO: Attempting archive.is for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:36.031303 INFO: Attempting archive.li for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:39.896203 INFO: Attempting archive.fo for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:43.732314 INFO: Attempting archive.ph for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:47.291225 INFO: Attempting Googlebot spoof for http://flowingdata.com/2014/10/03/big-chicken/
+2025-09-15T09:16:47.642220 INFO: Content is very short (118 words). Likely a teaser.
+2025-09-15T09:16:47.642427 INFO: Successfully fetched http://flowingdata.com/2014/10/03/big-chicken/ using googlebot_spoof

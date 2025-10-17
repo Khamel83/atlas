@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Personal Analytics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+        }
+        
+        .card-icon {
+            font-size: 1.8rem;
+            color: #3498db;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+        
+        .metric {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3498db;
+            margin: 10px 0;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        .chart-container {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .chart-placeholder {
+            text-align: center;
+            color: #7f8c8d;
+        }
+        
+        .chart-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+        
+        .reports-section {
+            margin-top: 40px;
+        }
+        
+        .report-item {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .report-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .report-content {
+            line-height: 1.8;
+        }
+        
+        .report-content ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        
+        .report-content li {
+            margin-bottom: 10px;
+        }
+        
+        .trending-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .topic-tag {
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Atlas Analytics Dashboard</h1>
+            <p class="subtitle">Personal insights into your content processing and consumption</p>
+        </header>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">System Health</h2>
+                    <div class="card-icon">🖥️</div>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric">
+                        <div class="metric-label">CPU Usage</div>
+                        <div class="metric-value">42%</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Memory</div>
+                        <div class="metric-value">65%</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Disk</div>
+                        <div class="metric-value">78%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Content Processing</h2>
+                    <div class="card-icon">📄</div>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric">
+                        <div class="metric-label">Articles</div>
+                        <div class="metric-value">1,250</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Podcasts</div>
+                        <div class="metric-value">87</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Videos</div>
+                        <div class="metric-value">210</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">User Engagement</h2>
+                    <div class="card-icon">👥</div>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric">
+                        <div class="metric-label">Daily Time</div>
+                        <div class="metric-value">2.5h</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Weekly</div>
+                        <div class="metric-value">12h</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Completion</div>
+                        <div class="metric-value">87%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Content Processing Trends</h2>
+                    <div class="card-icon">📈</div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-placeholder">
+                        <div>📊 Line Chart</div>
+                        <p>Content processing trends over time</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">System Health</h2>
+                    <div class="card-icon">⚙️</div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-placeholder">
+                        <div>📊 Bar Chart</div>
+                        <p>System resource utilization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="reports-section">
+            <div class="report-item">
+                <h2 class="report-title">Weekly Summary Report</h2>
+                <div class="report-content">
+                    <p><strong>Period:</strong> May 1 - May 7, 2023</p>
+                    <p><strong>Total Content Processed:</strong> 1,250 items</p>
+                    <p><strong>Success Rate:</strong> 98.5%</p>
+                    
+                    <p><strong>Trending Topics:</strong></p>
+                    <div class="trending-topics">
+                        <span class="topic-tag">AI</span>
+                        <span class="topic-tag">Machine Learning</span>
+                        <span class="topic-tag">Python</span>
+                        <span class="topic-tag">Data Science</span>
+                    </div>
+                    
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li>Increase article processing frequency during peak hours</li>
+                        <li>Explore more content on trending topics</li>
+                        <li>Review failed items for improvements</li>
+                        <li>Consider expanding podcast sources</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="report-item">
+                <h2 class="report-title">Performance Trends</h2>
+                <div class="report-content">
+                    <p><strong>Processing Speed:</strong> +12% improvement</p>
+                    <p><strong>Success Rate Trend:</strong> +0.3% improvement</p>
+                    <p><strong>Resource Utilization:</strong> Stable</p>
+                    <p><strong>Next Actions:</strong> Continue monitoring for optimization opportunities</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Atlas Personal Analytics Dashboard • Updated just now</p>
+        </footer>
+    </div>
+    
+    <script>
+        // In a real implementation, this would fetch data from the backend
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Dashboard loaded');
+            
+            // Simulate data updates
+            setInterval(function() {
+                // In a real implementation, this would fetch fresh data
+                console.log('Refreshing dashboard data...');
+            }, 30000); // Refresh every 30 seconds
+        });
+    </script>
+</body>
+</html>

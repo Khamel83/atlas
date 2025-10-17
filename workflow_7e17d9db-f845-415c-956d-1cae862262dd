@@ -1,0 +1,30 @@
+2025-09-15T03:17:02.189472 INFO: Attempting direct fetch for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:03.139205 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T03:17:03.189391 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T03:17:03.189498 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:17:03.189538 INFO: Attempting Reader Mode strategy for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:03.518302 ERROR: Reader mode fetch failed for http://www.lettersofnote.com/2012/01/to-my-old-master.html: cannot use a string pattern on a bytes-like object
+2025-09-15T03:17:03.520244 INFO: Attempting JS Disabled strategy for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:03.520388 ERROR: JS disabled fetch failed for http://www.lettersofnote.com/2012/01/to-my-old-master.html: [Errno 32] Broken pipe
+2025-09-15T03:17:03.520440 INFO: Attempting Refresh Stop strategy for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:03.791898 ERROR: Refresh stop fetch failed for http://www.lettersofnote.com/2012/01/to-my-old-master.html: cannot use a string pattern on a bytes-like object
+2025-09-15T03:17:03.793511 INFO: Attempting Inspect Element strategy for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:04.121445 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:17:04.121541 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:17:04.121571 INFO: Attempting removepaywalls.com bypass for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:06.955466 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:17:06.955580 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:17:06.955623 INFO: Attempting archive.today for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:22.923211 INFO: No existing archive found, creating new archive for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:23.777359 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:17:23.777758 INFO: Attempting archive.is for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:26.927943 INFO: Attempting archive.li for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:44.775910 ERROR: archive.li failed for http://www.lettersofnote.com/2012/01/to-my-old-master.html: HTTPSConnectionPool(host='archive.li', port=443): Max retries exceeded with url: /newest/http://www.lettersofnote.com/2012/01/to-my-old-master.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1ec50570>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-09-15T03:17:44.776008 INFO: Attempting archive.fo for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:46.717313 INFO: Attempting archive.ph for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:49.892865 INFO: Attempting Googlebot spoof for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:17:50.344054 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T03:17:50.344180 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:17:50.344208 INFO: Attempting Enhanced Wayback Machine for http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:18:02.883023 INFO: Found Wayback snapshot from 20200304041245: http://web.archive.org/web/20200304041245/http://www.lettersofnote.com/2012/01/to-my-old-master.html
+2025-09-15T03:18:05.124066 INFO: Successfully fetched http://www.lettersofnote.com/2012/01/to-my-old-master.html using wayback_machine_enhanced

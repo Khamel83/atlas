@@ -1,0 +1,116 @@
+2025-09-15T02:24:06.055062 INFO: Attempting direct fetch for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:06.795888 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:06.862407 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:06.862525 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:06.862565 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:07.016943 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:07.026119 INFO: Attempting direct fetch for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:07.179220 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:07.247895 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:07.248009 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:07.248049 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:07.340119 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:07.342030 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:07.479083 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:07.479186 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:07.479213 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:07.576442 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:07.578476 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:07.750999 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:07.751110 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:07.751137 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:12.313233 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:24:12.313344 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:12.313370 INFO: Attempting archive.today for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:14.477107 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:15.356946 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:24:15.357497 INFO: Attempting archive.is for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:18.553175 INFO: Attempting archive.li for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:21.482957 INFO: Attempting archive.fo for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:23.614885 INFO: Attempting archive.ph for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:25.785981 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:25.994657 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/benjamin-mazer/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:25.996451 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:27.414418 INFO: Found Wayback snapshot from 20250731215345: http://web.archive.org/web/20250731215345/https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.074782 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:28.074950 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:28.074981 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.223524 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731215345/https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.359309 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:28.359426 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:28.359459 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/benjamin-mazer/. Attempting Google Search fallback...
+2025-09-15T02:24:28.359535 INFO: Google Search fallback: searching for 'benjamin mazer'
+2025-09-15T02:24:28.392058 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:24:28.399433 INFO: Attempting direct fetch for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.558489 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:28.626895 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:28.627010 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:28.627048 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.722648 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:28.725061 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.861532 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:28.861671 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:28.861700 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:28.970901 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:28.973286 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:29.146491 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:29.146635 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:29.146668 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:33.441153 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:24:33.441266 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:33.441292 INFO: Attempting archive.today for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:36.161803 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:37.041650 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:24:37.042488 INFO: Attempting archive.is for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:39.142725 INFO: Attempting archive.li for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:41.464111 INFO: Attempting archive.fo for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:43.498471 INFO: Attempting archive.ph for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:46.498497 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:46.659055 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/benjamin-mazer/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:46.661263 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:46.786039 INFO: Found Wayback snapshot from 20250731215345: http://web.archive.org/web/20250731215345/https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:46.928294 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:46.928416 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:46.928442 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.047828 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731215345/https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.047981 ERROR: Wayback Machine failed for https://www.theatlantic.com/author/benjamin-mazer/: [Errno 32] Broken pipe
+2025-09-15T02:24:47.050433 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/benjamin-mazer/. Attempting Google Search fallback...
+2025-09-15T02:24:47.050693 INFO: Google Search fallback: searching for 'benjamin mazer'
+2025-09-15T02:24:47.083697 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:24:47.091308 INFO: Attempting direct fetch for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.234656 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:47.302883 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:47.303007 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:47.303047 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.451280 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:47.453803 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.595481 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:47.595585 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:47.595635 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.707000 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/benjamin-mazer/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:24:47.709343 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:47.888639 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:24:47.888739 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:47.888766 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:52.615910 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:24:52.616018 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:24:52.616048 INFO: Attempting archive.today for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:55.829902 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:56.704642 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:24:56.705323 INFO: Attempting archive.is for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:24:59.391626 INFO: Attempting archive.li for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:01.834288 INFO: Attempting archive.fo for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:04.312693 INFO: Attempting archive.ph for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.198133 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.365965 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/benjamin-mazer/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.368155 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.480108 INFO: Found Wayback snapshot from 20250731215345: http://web.archive.org/web/20250731215345/https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.605942 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:25:08.606061 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:25:08.606087 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.760533 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731215345/https://www.theatlantic.com/author/benjamin-mazer/
+2025-09-15T02:25:08.900060 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T02:25:08.900186 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:25:08.900219 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/benjamin-mazer/. Attempting Google Search fallback...
+2025-09-15T02:25:08.900287 INFO: Google Search fallback: searching for 'benjamin mazer'
+2025-09-15T02:25:08.933513 INFO: Google Search fallback did not find alternative URL

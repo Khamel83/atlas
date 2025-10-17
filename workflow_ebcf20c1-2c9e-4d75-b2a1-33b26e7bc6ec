@@ -1,0 +1,89 @@
+2025-09-15T09:14:50.996988 INFO: Attempting direct fetch for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:51.391087 ERROR: Direct fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:14:51.394550 INFO: Attempting Reader Mode strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:51.631636 ERROR: Reader mode fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:14:51.634382 INFO: Attempting JS Disabled strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:51.910515 ERROR: JS disabled fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:14:51.913062 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:52.253884 ERROR: Refresh stop fetch failed for https://doi.org/10.1111/1467-8624.00278: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:52.256379 INFO: Attempting Inspect Element strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:52.512093 ERROR: Inspect element fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:14:52.514664 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:54.896518 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:14:54.896652 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:54.896683 INFO: Attempting archive.today for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:58.023201 INFO: No existing archive found, creating new archive for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:14:58.901840 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:14:58.902407 INFO: Attempting archive.is for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:01.277885 INFO: Attempting archive.li for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:03.597346 INFO: Attempting archive.fo for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:06.986697 INFO: Attempting archive.ph for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:10.699833 INFO: Attempting Googlebot spoof for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:10.988780 ERROR: Googlebot spoof failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:10.991740 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:35.811415 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1111/1467-8624.00278: No archived snapshots found in any timeframe
+2025-09-15T09:15:35.813015 INFO: Attempting Wayback Machine for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:36.030728 ERROR: Wayback Machine failed for https://doi.org/10.1111/1467-8624.00278: No archived snapshots found
+2025-09-15T09:15:36.033414 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1111/1467-8624.00278. Attempting Google Search fallback...
+2025-09-15T09:15:36.034010 INFO: Google Search fallback: searching for '1467 8624.00278'
+2025-09-15T09:15:36.086010 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:15:36.095449 INFO: Attempting direct fetch for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:36.390133 ERROR: Direct fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:36.393459 INFO: Attempting Reader Mode strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:36.630871 ERROR: Reader mode fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:36.633670 INFO: Attempting JS Disabled strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:36.883003 ERROR: JS disabled fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:36.896527 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:37.238130 ERROR: Refresh stop fetch failed for https://doi.org/10.1111/1467-8624.00278: cannot use a string pattern on a bytes-like object
+2025-09-15T09:15:37.246575 INFO: Attempting Inspect Element strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:37.512106 ERROR: Inspect element fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:37.515793 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:41.783264 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:15:41.783374 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:15:41.783402 INFO: Attempting archive.today for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:44.428826 INFO: No existing archive found, creating new archive for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:45.324769 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:15:45.325337 INFO: Attempting archive.is for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:47.672337 INFO: Attempting archive.li for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:49.688460 INFO: Attempting archive.fo for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:53.413080 INFO: Attempting archive.ph for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:56.273507 INFO: Attempting Googlebot spoof for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:56.514077 ERROR: Googlebot spoof failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:56.516700 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:58.205332 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1111/1467-8624.00278: No archived snapshots found in any timeframe
+2025-09-15T09:15:58.206820 INFO: Attempting Wayback Machine for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:58.384446 ERROR: Wayback Machine failed for https://doi.org/10.1111/1467-8624.00278: No archived snapshots found
+2025-09-15T09:15:58.386341 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1111/1467-8624.00278. Attempting Google Search fallback...
+2025-09-15T09:15:58.386858 INFO: Google Search fallback: searching for '1467 8624.00278'
+2025-09-15T09:15:58.418852 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:15:58.426206 INFO: Attempting direct fetch for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:58.646830 ERROR: Direct fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:58.657763 INFO: Attempting direct fetch for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:58.878687 ERROR: Direct fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:58.881166 INFO: Attempting Reader Mode strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:59.144416 ERROR: Reader mode fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:59.146988 INFO: Attempting JS Disabled strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:59.358464 ERROR: JS disabled fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:59.360986 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:59.610085 ERROR: Refresh stop fetch failed for https://doi.org/10.1111/1467-8624.00278: cannot use a string pattern on a bytes-like object
+2025-09-15T09:15:59.612728 INFO: Attempting Inspect Element strategy for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:15:59.878000 ERROR: Inspect element fetch failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:15:59.880579 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:03.339113 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:16:03.339225 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:16:03.339254 INFO: Attempting archive.today for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:06.861196 INFO: No existing archive found, creating new archive for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:07.729183 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:16:07.729757 INFO: Attempting archive.is for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:09.840659 INFO: Attempting archive.li for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:13.329833 INFO: Attempting archive.fo for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:16.707372 INFO: Attempting archive.ph for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:18.778348 INFO: Attempting Googlebot spoof for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:19.023964 ERROR: Googlebot spoof failed for https://doi.org/10.1111/1467-8624.00278: 403 Client Error: Forbidden for url: https://srcd.onlinelibrary.wiley.com/doi/10.1111/1467-8624.00278
+2025-09-15T09:16:19.026741 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:20.975074 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1111/1467-8624.00278: No archived snapshots found in any timeframe
+2025-09-15T09:16:20.976456 INFO: Attempting Wayback Machine for https://doi.org/10.1111/1467-8624.00278
+2025-09-15T09:16:21.262039 ERROR: Wayback Machine failed for https://doi.org/10.1111/1467-8624.00278: No archived snapshots found
+2025-09-15T09:16:21.263816 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1111/1467-8624.00278. Attempting Google Search fallback...
+2025-09-15T09:16:21.264346 INFO: Google Search fallback: searching for '1467 8624.00278'
+2025-09-15T09:16:21.296382 INFO: Google Search fallback did not find alternative URL

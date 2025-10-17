@@ -1,0 +1,127 @@
+2025-09-15T07:06:12.469353 INFO: Attempting direct fetch for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:12.814286 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:12.875881 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:12.875990 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:12.876031 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:13.000118 ERROR: Reader mode fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:06:13.002796 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:13.241380 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:13.241499 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:13.241528 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:13.315228 ERROR: Refresh stop fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:06:13.317703 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:13.676132 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T07:06:13.676243 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:13.676270 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:16.340657 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:06:16.340767 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:16.340793 INFO: Attempting archive.today for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:19.238877 INFO: No existing archive found, creating new archive for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:20.091904 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:06:20.092523 INFO: Attempting archive.is for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:23.279965 INFO: Attempting archive.li for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:26.869985 INFO: Attempting archive.fo for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:29.995403 INFO: Attempting archive.ph for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:32.668853 INFO: Attempting Googlebot spoof for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:32.962227 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:32.962355 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:32.962384 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:43.900880 INFO: Found Wayback snapshot from 20230228183531: http://web.archive.org/web/20230228183531/https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:47.354856 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:47.354980 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:47.355007 INFO: Attempting Wayback Machine for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:47.466773 ERROR: Wayback Machine failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: No archived snapshots found
+2025-09-15T07:06:47.469417 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt. Attempting Google Search fallback...
+2025-09-15T07:06:47.469858 INFO: Google Search fallback: searching for 'the wager david grann book excerpt'
+2025-09-15T07:06:47.503025 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:06:47.510398 INFO: Attempting direct fetch for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:47.604886 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:47.670938 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:47.671056 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:47.671093 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:47.726422 ERROR: Reader mode fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:06:47.729028 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:47.897774 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:06:47.897879 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:47.897904 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:47.948750 ERROR: Refresh stop fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:06:47.950987 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:48.188793 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T07:06:48.188945 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:48.188974 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:52.118810 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:06:52.118898 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:06:52.118930 INFO: Attempting archive.today for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:55.172171 INFO: No existing archive found, creating new archive for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:56.058130 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:06:56.058538 INFO: Attempting archive.is for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:06:59.464716 INFO: Attempting archive.li for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:02.002319 INFO: Attempting archive.fo for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:04.725083 INFO: Attempting archive.ph for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:06.805943 INFO: Attempting Googlebot spoof for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:06.937453 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:06.937576 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:06.937619 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:06.937713 ERROR: Enhanced Wayback Machine failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: [Errno 32] Broken pipe
+2025-09-15T07:07:06.937749 INFO: Attempting Wayback Machine for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:07.060697 ERROR: Wayback Machine failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: No archived snapshots found
+2025-09-15T07:07:07.062716 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt. Attempting Google Search fallback...
+2025-09-15T07:07:07.063311 INFO: Google Search fallback: searching for 'the wager david grann book excerpt'
+2025-09-15T07:07:07.096019 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:07:07.103919 INFO: Attempting direct fetch for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:07.197597 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:07.265256 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:07.265389 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:07.265429 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:07.319131 ERROR: Reader mode fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:07:07.322101 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:07.490185 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:07.490288 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:07.490312 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:07.539786 ERROR: Refresh stop fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:07:07.542159 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:07.786497 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T07:07:07.786633 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:07.786663 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:11.627939 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:07:11.628047 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:11.628074 INFO: Attempting archive.today for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:15.530299 INFO: No existing archive found, creating new archive for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:16.438327 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:07:16.438784 INFO: Attempting archive.is for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:18.889499 INFO: Attempting archive.li for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:20.797207 INFO: Attempting archive.fo for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:24.255051 INFO: Attempting archive.ph for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:26.535378 INFO: Attempting Googlebot spoof for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:26.725988 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:26.726113 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:26.726141 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.087434 INFO: Found Wayback snapshot from 20230228183531: http://web.archive.org/web/20230228183531/https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.287562 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:27.287696 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:27.287722 INFO: Attempting Wayback Machine for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.413235 ERROR: Wayback Machine failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: No archived snapshots found
+2025-09-15T07:07:27.415829 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt. Attempting Google Search fallback...
+2025-09-15T07:07:27.416311 INFO: Google Search fallback: searching for 'the wager david grann book excerpt'
+2025-09-15T07:07:27.448557 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:07:27.455569 INFO: Attempting direct fetch for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.551702 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:27.719951 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:27.720077 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:27.720117 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.774990 ERROR: Reader mode fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:07:27.777516 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.944378 INFO: Paywall element '.paywall' detected.
+2025-09-15T07:07:27.944492 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:27.944517 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:27.993841 ERROR: Refresh stop fetch failed for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt: cannot use a string pattern on a bytes-like object
+2025-09-15T07:07:27.996020 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:28.261486 INFO: Content is very short (117 words). Likely a teaser.
+2025-09-15T07:07:28.261665 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:28.261701 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:31.421144 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:07:31.421257 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:07:31.421287 INFO: Attempting archive.today for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:34.650726 INFO: No existing archive found, creating new archive for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt
+2025-09-15T07:07:35.544579 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:07:35.545081 INFO: Attempting archive.is for https://www.newyorker.com/books/page-turner/the-wager-david-grann-book-excerpt

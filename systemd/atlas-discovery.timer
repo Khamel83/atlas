@@ -1,0 +1,11 @@
+[Unit]
+Description=Atlas Transcript Discovery Timer
+Requires=atlas-discovery.service
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=15min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

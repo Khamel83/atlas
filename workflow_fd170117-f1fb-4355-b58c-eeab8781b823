@@ -1,0 +1,118 @@
+2025-09-15T13:13:59.253685 INFO: Attempting direct fetch for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:13:59.949117 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:00.140321 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:00.140434 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:00.140478 INFO: Attempting Reader Mode strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:00.481842 ERROR: Reader mode fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:00.483689 INFO: Attempting JS Disabled strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:01.187304 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:01.187431 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:01.187457 INFO: Attempting Refresh Stop strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:01.785664 ERROR: Refresh stop fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:01.788264 INFO: Attempting Inspect Element strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:02.880769 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:02.880891 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:02.880920 INFO: Attempting removepaywalls.com bypass for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:07.954050 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:14:07.954163 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:07.954191 INFO: Attempting archive.today for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:10.014088 INFO: No existing archive found, creating new archive for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:10.904927 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:14:10.905965 INFO: Attempting archive.is for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:14.400291 INFO: Attempting archive.li for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:16.675358 INFO: Attempting archive.fo for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:19.731023 INFO: Attempting archive.ph for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:22.315079 INFO: Attempting Googlebot spoof for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:23.099267 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:23.099447 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:23.099510 INFO: Attempting Enhanced Wayback Machine for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:24.068455 INFO: Found Wayback snapshot from 20250120230004: http://web.archive.org/web/20250120230004/https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:26.729091 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:26.729215 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:26.729248 INFO: Attempting Wayback Machine for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:27.030172 INFO: Found Wayback snapshot: http://web.archive.org/web/20250120230004/https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:27.325956 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:27.326075 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:27.326135 ERROR: All fetch strategies failed or returned low-quality content for https://www.flickr.com/photos/37922399@N05/8725994441. Attempting Google Search fallback...
+2025-09-15T13:14:27.326202 INFO: Google Search fallback: searching for '37922399@N05'
+2025-09-15T13:14:27.358662 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:14:27.368736 INFO: Attempting direct fetch for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:27.896677 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:28.094677 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:28.094805 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:28.094850 INFO: Attempting Reader Mode strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:28.552062 ERROR: Reader mode fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:28.563690 INFO: Attempting direct fetch for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:29.117467 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:29.321782 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:29.321907 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:29.321949 INFO: Attempting Reader Mode strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:29.677307 ERROR: Reader mode fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:29.679579 INFO: Attempting JS Disabled strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:30.371861 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:30.372025 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:30.372065 INFO: Attempting Refresh Stop strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:30.764827 ERROR: Refresh stop fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:30.767397 INFO: Attempting Inspect Element strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:31.413135 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:31.413260 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:31.413290 INFO: Attempting removepaywalls.com bypass for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:36.205132 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:14:36.205241 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:36.205271 INFO: Attempting archive.today for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:38.409231 INFO: No existing archive found, creating new archive for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:39.293390 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:14:39.294284 INFO: Attempting archive.is for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:42.328169 INFO: Attempting archive.li for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:45.715083 INFO: Attempting archive.fo for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:47.933789 INFO: Attempting archive.ph for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:50.758170 INFO: Attempting Googlebot spoof for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:51.354221 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:51.354340 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:51.354392 INFO: Attempting Enhanced Wayback Machine for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:51.586368 INFO: Found Wayback snapshot from 20250120230004: http://web.archive.org/web/20250120230004/https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:51.872827 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:51.872928 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:51.872961 INFO: Attempting Wayback Machine for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:51.993094 INFO: Found Wayback snapshot: http://web.archive.org/web/20250120230004/https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:52.288968 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:52.289082 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:52.289121 ERROR: All fetch strategies failed or returned low-quality content for https://www.flickr.com/photos/37922399@N05/8725994441. Attempting Google Search fallback...
+2025-09-15T13:14:52.289191 INFO: Google Search fallback: searching for '37922399@N05'
+2025-09-15T13:14:52.321542 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:14:52.329111 INFO: Attempting direct fetch for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:52.892450 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:53.084175 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:53.084289 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:53.084332 INFO: Attempting Reader Mode strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:53.452313 ERROR: Reader mode fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:53.454673 INFO: Attempting JS Disabled strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:53.997131 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:53.997245 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:53.997273 INFO: Attempting Refresh Stop strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:54.379695 ERROR: Refresh stop fetch failed for https://www.flickr.com/photos/37922399@N05/8725994441: cannot use a string pattern on a bytes-like object
+2025-09-15T13:14:54.384260 INFO: Attempting Inspect Element strategy for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:55.103250 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:14:55.103371 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:55.103397 INFO: Attempting removepaywalls.com bypass for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:14:57.886836 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:14:57.886926 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:14:57.886954 INFO: Attempting archive.today for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:01.202465 INFO: No existing archive found, creating new archive for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:02.118851 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:15:02.119829 INFO: Attempting archive.is for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:04.370427 INFO: Attempting archive.li for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:07.472184 INFO: Attempting archive.fo for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:10.704033 INFO: Attempting archive.ph for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:13.429938 INFO: Attempting Googlebot spoof for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:14.147530 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:15:14.147658 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:15:14.147691 INFO: Attempting Enhanced Wayback Machine for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:14.275548 INFO: Found Wayback snapshot from 20250120230004: http://web.archive.org/web/20250120230004/https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:14.564094 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:15:14.564220 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:15:14.564253 INFO: Attempting Wayback Machine for https://www.flickr.com/photos/37922399@N05/8725994441
+2025-09-15T13:15:14.564318 ERROR: Wayback Machine failed for https://www.flickr.com/photos/37922399@N05/8725994441: [Errno 32] Broken pipe
+2025-09-15T13:15:14.564386 ERROR: All fetch strategies failed or returned low-quality content for https://www.flickr.com/photos/37922399@N05/8725994441. Attempting Google Search fallback...
+2025-09-15T13:15:14.564455 INFO: Google Search fallback: searching for '37922399@N05'
+2025-09-15T13:15:14.596986 INFO: Google Search fallback did not find alternative URL

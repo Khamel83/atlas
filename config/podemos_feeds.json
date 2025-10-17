@@ -1,0 +1,88 @@
+{
+  "feeds": {
+    "acquired": {
+      "display_name": "Acquired (Ad-Free)",
+      "description": "Deep dives on company building stories, without ads",
+      "category": "Business",
+      "priority": "high",
+      "enabled": true,
+      "settings": {
+        "max_episodes": 1000,
+        "auto_update": true,
+        "quality": "high"
+      }
+    },
+    "stratechery": {
+      "display_name": "Stratechery (Ad-Free)", 
+      "description": "Analysis of business and technology strategy, clean",
+      "category": "Business",
+      "priority": "high",
+      "enabled": true,
+      "settings": {
+        "max_episodes": 500,
+        "auto_update": true,
+        "quality": "medium"
+      }
+    },
+    "99pi": {
+      "display_name": "99% Invisible (Ad-Free)",
+      "description": "Design and architecture stories without interruptions",
+      "category": "Design", 
+      "priority": "medium",
+      "enabled": true,
+      "settings": {
+        "max_episodes": 100,
+        "auto_update": true,
+        "quality": "high"
+      }
+    },
+    "huberman": {
+      "display_name": "Huberman Lab (Ad-Free)",
+      "description": "Science-based health protocols, no ads",
+      "category": "Health",
+      "priority": "high",
+      "enabled": true,
+      "settings": {
+        "max_episodes": 200,
+        "auto_update": true,
+        "quality": "high"
+      }
+    },
+    "hard_fork": {
+      "display_name": "Hard Fork (Ad-Free)",
+      "description": "Tech news and analysis, clean version",
+      "category": "Technology",
+      "priority": "medium", 
+      "enabled": true,
+      "settings": {
+        "max_episodes": 100,
+        "auto_update": true,
+        "quality": "medium"
+      }
+    }
+  },
+  "server_config": {
+    "base_url": "https://podemos.your-domain.com",
+    "auth_required": true,
+    "rate_limiting": {
+      "requests_per_minute": 60,
+      "requests_per_hour": 1000
+    },
+    "cache_settings": {
+      "feed_cache_minutes": 30,
+      "episode_cache_hours": 24
+    },
+    "ssl": {
+      "enabled": true,
+      "auto_renew": true,
+      "provider": "letsencrypt"
+    }
+  },
+  "deployment": {
+    "platform": "oracle_oci",
+    "region": "us-ashburn-1",
+    "auto_scaling": false,
+    "backup_enabled": true,
+    "monitoring_enabled": true
+  }
+}

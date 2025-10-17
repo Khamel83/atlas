@@ -1,0 +1,25 @@
+2025-09-14T23:06:21.302806 INFO: Attempting direct fetch for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.512876 ERROR: Direct fetch failed for https://academic.oup.com/ije/article/51/4/1291/6564484: 403 Client Error: Forbidden for url: https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.514469 INFO: Attempting Reader Mode strategy for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.603755 ERROR: Reader mode fetch failed for https://academic.oup.com/ije/article/51/4/1291/6564484: 403 Client Error: Forbidden for url: https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.605175 INFO: Attempting JS Disabled strategy for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.688799 ERROR: JS disabled fetch failed for https://academic.oup.com/ije/article/51/4/1291/6564484: 403 Client Error: Forbidden for url: https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.690250 INFO: Attempting Refresh Stop strategy for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.782037 ERROR: Refresh stop fetch failed for https://academic.oup.com/ije/article/51/4/1291/6564484: cannot use a string pattern on a bytes-like object
+2025-09-14T23:06:21.783465 INFO: Attempting Inspect Element strategy for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.863322 ERROR: Inspect element fetch failed for https://academic.oup.com/ije/article/51/4/1291/6564484: 403 Client Error: Forbidden for url: https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:21.864801 INFO: Attempting removepaywalls.com bypass for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:24.448825 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:06:24.448934 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:06:24.448963 INFO: Attempting archive.today for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:28.482750 INFO: No existing archive found, creating new archive for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:29.391312 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:06:29.391966 INFO: Attempting archive.is for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:31.524867 INFO: Attempting archive.li for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:33.655818 INFO: Attempting archive.fo for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:36.530475 INFO: Attempting archive.ph for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:39.933926 INFO: Attempting Googlebot spoof for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:40.051122 ERROR: Googlebot spoof failed for https://academic.oup.com/ije/article/51/4/1291/6564484: 403 Client Error: Forbidden for url: https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:40.052605 INFO: Attempting Enhanced Wayback Machine for https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:45.170105 INFO: Found Wayback snapshot from 20250819143343: http://web.archive.org/web/20250819143343/https://academic.oup.com/ije/article/51/4/1291/6564484
+2025-09-14T23:06:47.093279 INFO: Successfully fetched https://academic.oup.com/ije/article/51/4/1291/6564484 using wayback_machine_enhanced

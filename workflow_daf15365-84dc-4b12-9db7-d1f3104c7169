@@ -1,0 +1,95 @@
+2025-09-15T08:45:35.605807 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:35.971521 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:35.974191 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:36.161052 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:36.162844 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:36.345914 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:36.347715 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:36.511746 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: cannot use a string pattern on a bytes-like object
+2025-09-15T08:45:36.513477 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:36.676118 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:36.677902 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:39.583320 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T08:45:39.583434 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:45:39.583461 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:42.386174 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:43.302063 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:45:43.303163 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:46.512287 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:48.917415 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:51.874410 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:54.178787 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:54.375559 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:54.388062 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:54.559162 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:54.562132 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:54.721284 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:54.723583 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:54.890139 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:54.892395 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:55.058863 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: cannot use a string pattern on a bytes-like object
+2025-09-15T08:45:55.060386 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:55.218426 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:45:55.219986 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:45:58.573582 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T08:45:58.573708 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:45:58.573735 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:01.032451 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:01.913140 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:46:01.914121 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:04.263414 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:07.638277 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:09.713280 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:12.412271 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:12.621453 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:12.624694 INFO: Attempting Enhanced Wayback Machine for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:42.103804 ERROR: Enhanced Wayback Machine failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: No archived snapshots found in any timeframe
+2025-09-15T08:46:42.105205 INFO: Attempting Wayback Machine for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:42.217716 ERROR: Wayback Machine failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: No archived snapshots found
+2025-09-15T08:46:42.219258 ERROR: All fetch strategies failed or returned low-quality content for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us. Attempting Google Search fallback...
+2025-09-15T08:46:42.219778 INFO: Google Search fallback: searching for 'SB10001424052748703609004575355072271264394.html'
+2025-09-15T08:46:42.251668 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:46:42.259313 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:42.508221 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:42.509702 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:42.679678 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:42.681976 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:42.847526 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:42.849181 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:43.020181 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: cannot use a string pattern on a bytes-like object
+2025-09-15T08:46:43.021660 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:43.196969 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:43.198418 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:46.178059 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T08:46:46.178172 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:46:46.178201 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:48.332756 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:48.343568 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:48.505410 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:48.507078 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:48.687174 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:48.688727 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:48.852740 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:48.854205 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:49.012212 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: cannot use a string pattern on a bytes-like object
+2025-09-15T08:46:49.013872 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:49.194507 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:46:49.196019 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:53.253823 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T08:46:53.253943 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:46:53.253971 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:56.055127 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:46:56.958020 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:46:56.959010 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:00.531651 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:02.693227 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:04.890450 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:07.534921 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:07.698963 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424052748703609004575355072271264394
+2025-09-15T08:47:07.700565 INFO: Attempting Enhanced Wayback Machine for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:09.142264 ERROR: Enhanced Wayback Machine failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: No archived snapshots found in any timeframe
+2025-09-15T08:47:09.143795 INFO: Attempting Wayback Machine for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us
+2025-09-15T08:47:09.257987 ERROR: Wayback Machine failed for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us: No archived snapshots found
+2025-09-15T08:47:09.259625 ERROR: All fetch strategies failed or returned low-quality content for http://online.wsj.com/article/SB10001424052748703609004575355072271264394.html?mod=rss_whats_news_us. Attempting Google Search fallback...
+2025-09-15T08:47:09.260099 INFO: Google Search fallback: searching for 'SB10001424052748703609004575355072271264394.html'
+2025-09-15T08:47:09.292236 INFO: Google Search fallback did not find alternative URL

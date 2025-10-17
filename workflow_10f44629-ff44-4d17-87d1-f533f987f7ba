@@ -1,0 +1,116 @@
+2025-09-15T11:45:56.840129 INFO: Attempting direct fetch for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:45:58.135166 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:45:58.288290 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:45:58.288401 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:45:58.288439 INFO: Attempting Reader Mode strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:45:59.175995 ERROR: Reader mode fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:45:59.179972 INFO: Attempting JS Disabled strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:45:59.523047 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:45:59.523150 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:45:59.523175 INFO: Attempting Refresh Stop strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:00.402270 ERROR: Refresh stop fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:00.405955 INFO: Attempting Inspect Element strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:00.847730 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:00.847841 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:00.847868 INFO: Attempting removepaywalls.com bypass for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:05.921445 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:46:05.921561 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:05.921620 INFO: Attempting archive.today for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:08.432631 INFO: No existing archive found, creating new archive for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:09.306504 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:46:09.307297 INFO: Attempting archive.is for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:12.503303 INFO: Attempting archive.li for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:15.907401 INFO: Attempting archive.fo for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:19.231794 INFO: Attempting archive.ph for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:21.578604 INFO: Attempting Googlebot spoof for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:21.894696 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:21.894811 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:21.894837 INFO: Attempting Enhanced Wayback Machine for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:22.713137 INFO: Found Wayback snapshot from 20250803113817: http://web.archive.org/web/20250803113817/https://theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700/
+2025-09-15T11:46:24.700355 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:24.700491 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:24.700519 INFO: Attempting Wayback Machine for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:24.811380 INFO: Found Wayback snapshot: http://web.archive.org/web/20250803113817/https://theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700/
+2025-09-15T11:46:25.030923 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:25.031040 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:25.031076 ERROR: All fetch strategies failed or returned low-quality content for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700. Attempting Google Search fallback...
+2025-09-15T11:46:25.031139 INFO: Google Search fallback: searching for 'anonymous philanthropist donates 200 human kidneys to h 1819594700'
+2025-09-15T11:46:25.063689 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:46:25.073873 INFO: Attempting direct fetch for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:25.342637 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:25.491815 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:25.491932 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:25.491972 INFO: Attempting Reader Mode strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:26.165717 ERROR: Reader mode fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:26.169246 INFO: Attempting JS Disabled strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:26.442305 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:26.442411 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:26.442438 INFO: Attempting Refresh Stop strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:26.591990 ERROR: Refresh stop fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:26.595407 INFO: Attempting Inspect Element strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:27.155037 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:27.155156 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:27.155182 INFO: Attempting removepaywalls.com bypass for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:32.207728 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:46:32.207846 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:32.207873 INFO: Attempting archive.today for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:32.215183 INFO: Attempting direct fetch for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:32.528954 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:32.688451 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:32.688551 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:32.688656 INFO: Attempting Reader Mode strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:33.180186 ERROR: Reader mode fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:33.188171 INFO: Attempting JS Disabled strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:33.471998 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:33.472105 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:33.472132 INFO: Attempting Refresh Stop strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:33.659946 ERROR: Refresh stop fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:33.664317 INFO: Attempting Inspect Element strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:34.053298 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:34.053407 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:34.053432 INFO: Attempting removepaywalls.com bypass for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:38.493517 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:46:38.493637 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:38.493670 INFO: Attempting archive.today for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:41.564573 INFO: No existing archive found, creating new archive for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:42.453131 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:46:42.453984 INFO: Attempting archive.is for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:45.410644 INFO: Attempting archive.li for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:48.846289 INFO: Attempting archive.fo for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:52.235870 INFO: Attempting archive.ph for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:55.121316 INFO: Attempting Googlebot spoof for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:55.451958 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:55.452081 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:55.452107 INFO: Attempting Enhanced Wayback Machine for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:55.609357 INFO: Found Wayback snapshot from 20250803113817: http://web.archive.org/web/20250803113817/https://theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700/
+2025-09-15T11:46:55.838197 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:55.838311 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:55.838337 INFO: Attempting Wayback Machine for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:55.967988 INFO: Found Wayback snapshot: http://web.archive.org/web/20250803113817/https://theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700/
+2025-09-15T11:46:56.180469 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:56.180585 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:56.180641 ERROR: All fetch strategies failed or returned low-quality content for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700. Attempting Google Search fallback...
+2025-09-15T11:46:56.180711 INFO: Google Search fallback: searching for 'anonymous philanthropist donates 200 human kidneys to h 1819594700'
+2025-09-15T11:46:56.212643 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:46:56.220692 INFO: Attempting direct fetch for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:56.489670 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:56.641453 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:56.641569 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:56.641640 INFO: Attempting Reader Mode strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:56.866456 ERROR: Reader mode fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:56.870750 INFO: Attempting JS Disabled strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:57.220064 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:57.220156 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:57.220181 INFO: Attempting Refresh Stop strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:57.418723 ERROR: Refresh stop fetch failed for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700: cannot use a string pattern on a bytes-like object
+2025-09-15T11:46:57.422711 INFO: Attempting Inspect Element strategy for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:46:57.770169 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T11:46:57.770283 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:46:57.770309 INFO: Attempting removepaywalls.com bypass for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:47:01.039850 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:47:01.039956 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:47:01.039985 INFO: Attempting archive.today for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:47:02.894745 INFO: No existing archive found, creating new archive for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:47:03.813880 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:47:03.814509 INFO: Attempting archive.is for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700
+2025-09-15T11:47:07.336878 INFO: Attempting archive.li for https://www.theonion.com/anonymous-philanthropist-donates-200-human-kidneys-to-h-1819594700

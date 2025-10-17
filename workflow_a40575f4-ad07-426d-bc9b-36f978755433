@@ -1,0 +1,35 @@
+2025-09-15T13:43:50.280969 INFO: Attempting direct fetch for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:43:51.437741 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:43:51.752479 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:43:51.752605 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:43:51.752649 INFO: Attempting Reader Mode strategy for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:43:52.427177 ERROR: Reader mode fetch failed for https://github.com/OpenNMT/OpenNMT-py/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:43:52.428909 INFO: Attempting JS Disabled strategy for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:43:52.910572 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:43:52.910698 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:43:52.910724 INFO: Attempting Refresh Stop strategy for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:43:53.202351 ERROR: Refresh stop fetch failed for https://github.com/OpenNMT/OpenNMT-py/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:43:53.203995 INFO: Attempting Inspect Element strategy for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:43:53.957724 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:43:53.957832 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:43:53.957859 INFO: Attempting removepaywalls.com bypass for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:43:58.746626 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:43:58.746741 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:43:58.746767 INFO: Attempting archive.today for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:02.398398 INFO: No existing archive found, creating new archive for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:03.260853 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:44:03.261373 INFO: Attempting archive.is for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:06.251907 INFO: Attempting archive.li for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:09.225534 INFO: Attempting archive.fo for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:11.919880 INFO: Attempting archive.ph for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:14.366369 INFO: Attempting Googlebot spoof for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:15.502798 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:44:15.502906 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:44:15.502932 INFO: Attempting Enhanced Wayback Machine for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:16.156099 INFO: Found Wayback snapshot from 20250902100546: http://web.archive.org/web/20250902100546/https://github.com/opennmt/opennmt-py
+2025-09-15T13:44:17.857943 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:44:17.858067 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:44:17.858092 INFO: Attempting Wayback Machine for https://github.com/OpenNMT/OpenNMT-py/
+2025-09-15T13:44:17.978885 INFO: Found Wayback snapshot: http://web.archive.org/web/20250902100546/https://github.com/opennmt/opennmt-py
+2025-09-15T13:44:18.340538 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T13:44:18.340959 INFO: Successfully fetched https://github.com/OpenNMT/OpenNMT-py/ using 12ft

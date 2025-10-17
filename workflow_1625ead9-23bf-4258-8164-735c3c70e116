@@ -1,0 +1,27 @@
+2025-09-15T01:51:26.243373 INFO: Attempting direct fetch for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:26.477867 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T01:51:26.508021 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T01:51:26.508135 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:26.508176 INFO: Attempting Reader Mode strategy for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:26.674765 ERROR: Reader mode fetch failed for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson: cannot use a string pattern on a bytes-like object
+2025-09-15T01:51:26.677103 INFO: Attempting JS Disabled strategy for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:26.847101 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T01:51:26.847211 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:26.847238 INFO: Attempting Refresh Stop strategy for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:27.014383 ERROR: Refresh stop fetch failed for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson: cannot use a string pattern on a bytes-like object
+2025-09-15T01:51:27.016667 INFO: Attempting Inspect Element strategy for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:27.213936 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T01:51:27.214047 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:27.214075 INFO: Attempting removepaywalls.com bypass for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:31.630652 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:51:31.630770 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:31.630798 INFO: Attempting archive.today for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:46.482045 INFO: No existing archive found, creating new archive for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:47.373355 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:51:47.374134 INFO: Attempting archive.is for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:50.874074 INFO: Attempting archive.li for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:52.871999 INFO: Attempting archive.fo for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:55.724340 INFO: Attempting archive.ph for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:57.726707 INFO: Attempting Googlebot spoof for http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson
+2025-09-15T01:51:57.946170 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T01:51:57.946365 INFO: Successfully fetched http://kottke.org/14/11/beautiful-portraits-of-animals-by-photographer-brad-wilson using googlebot_spoof

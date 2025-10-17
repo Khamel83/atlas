@@ -1,0 +1,27 @@
+2025-09-15T10:09:31.631044 INFO: Attempting direct fetch for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.141675 ERROR: Direct fetch failed for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme: 404 Client Error: Not Found for url: https://newrepublic.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.144053 INFO: Attempting Reader Mode strategy for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.421265 ERROR: Reader mode fetch failed for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme: 404 Client Error: Not Found for url: https://newrepublic.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.423687 INFO: Attempting JS Disabled strategy for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.655718 ERROR: JS disabled fetch failed for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme: 404 Client Error: Not Found for url: https://newrepublic.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.658145 INFO: Attempting Refresh Stop strategy for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.803999 ERROR: Refresh stop fetch failed for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme: cannot use a string pattern on a bytes-like object
+2025-09-15T10:09:32.806531 INFO: Attempting Inspect Element strategy for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.940644 ERROR: Inspect element fetch failed for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme: 404 Client Error: Not Found for url: https://newrepublic.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:32.942929 INFO: Attempting removepaywalls.com bypass for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:36.935169 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:09:36.935277 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:09:36.935305 INFO: Attempting archive.today for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:39.555242 INFO: No existing archive found, creating new archive for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:40.457307 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:09:40.458209 INFO: Attempting archive.is for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:44.068562 INFO: Attempting archive.li for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:47.168533 INFO: Attempting archive.fo for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:49.921954 INFO: Attempting archive.ph for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:51.889328 INFO: Attempting Googlebot spoof for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:51.948730 ERROR: Googlebot spoof failed for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme: 403 Client Error: Forbidden for url: http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:09:51.949176 INFO: Attempting Enhanced Wayback Machine for http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:10:08.096493 INFO: Found Wayback snapshot from 20130126225956: http://web.archive.org/web/20130126225956/http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:10:08.096676 INFO: Timeframe 20210101 failed: [Errno 32] Broken pipe
+2025-09-15T10:10:08.840848 INFO: Found Wayback snapshot from 20130126225956: http://web.archive.org/web/20130126225956/http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme
+2025-09-15T10:10:10.762485 INFO: Successfully fetched http://www.tnr.com/print/article/politics/magazine/96713/petters-ponzi-scheme using wayback_machine_enhanced

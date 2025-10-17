@@ -1,0 +1,87 @@
+2025-09-14T20:49:58.102113 INFO: Attempting direct fetch for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.308284 ERROR: Direct fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.309442 INFO: Attempting Reader Mode strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.454267 ERROR: Reader mode fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.456533 INFO: Attempting JS Disabled strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.586631 ERROR: JS disabled fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.587905 INFO: Attempting Refresh Stop strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.712656 ERROR: Refresh stop fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: cannot use a string pattern on a bytes-like object
+2025-09-14T20:49:58.717017 INFO: Attempting Inspect Element strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.863076 ERROR: Inspect element fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:49:58.866359 INFO: Attempting removepaywalls.com bypass for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:03.684088 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:50:03.684738 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:50:03.684771 INFO: Attempting archive.today for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:06.947306 INFO: No existing archive found, creating new archive for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:07.865367 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:50:07.865913 INFO: Attempting archive.is for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:11.379044 INFO: Attempting archive.li for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:14.230730 INFO: Attempting archive.fo for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:17.173039 INFO: Attempting archive.ph for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:20.436891 INFO: Attempting Googlebot spoof for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:20.549859 ERROR: Googlebot spoof failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:20.551386 INFO: Attempting Enhanced Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:31.786555 ERROR: Enhanced Wayback Machine failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: No archived snapshots found in any timeframe
+2025-09-14T20:50:31.788380 INFO: Attempting Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:31.911764 ERROR: Wayback Machine failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: No archived snapshots found
+2025-09-14T20:50:31.913523 ERROR: All fetch strategies failed or returned low-quality content for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full. Attempting Google Search fallback...
+2025-09-14T20:50:31.914126 INFO: Google Search fallback: searching for 'full'
+2025-09-14T20:50:31.988719 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:50:32.001733 INFO: Attempting direct fetch for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.112322 ERROR: Direct fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.113402 INFO: Attempting Reader Mode strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.218688 ERROR: Reader mode fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.219837 INFO: Attempting JS Disabled strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.322495 ERROR: JS disabled fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.323667 INFO: Attempting Refresh Stop strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.447088 ERROR: Refresh stop fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: cannot use a string pattern on a bytes-like object
+2025-09-14T20:50:32.448253 INFO: Attempting Inspect Element strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.546138 ERROR: Inspect element fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:32.547342 INFO: Attempting removepaywalls.com bypass for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:34.836001 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:50:34.836260 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:50:34.836304 INFO: Attempting archive.today for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:38.143269 INFO: No existing archive found, creating new archive for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:39.048971 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:50:39.049497 INFO: Attempting archive.is for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:42.631773 INFO: Attempting archive.li for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:46.175873 INFO: Attempting archive.fo for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:48.419307 INFO: Attempting archive.ph for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:51.704931 INFO: Attempting Googlebot spoof for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:51.814965 ERROR: Googlebot spoof failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:51.816534 INFO: Attempting Enhanced Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.217711 ERROR: Enhanced Wayback Machine failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: No archived snapshots found in any timeframe
+2025-09-14T20:50:53.219076 INFO: Attempting Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.416997 ERROR: Wayback Machine failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: No archived snapshots found
+2025-09-14T20:50:53.418562 ERROR: All fetch strategies failed or returned low-quality content for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full. Attempting Google Search fallback...
+2025-09-14T20:50:53.419187 INFO: Google Search fallback: searching for 'full'
+2025-09-14T20:50:53.452386 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:50:53.460650 INFO: Attempting direct fetch for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.561521 ERROR: Direct fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.562647 INFO: Attempting Reader Mode strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.665949 ERROR: Reader mode fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.667120 INFO: Attempting JS Disabled strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.774240 ERROR: JS disabled fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.775412 INFO: Attempting Refresh Stop strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:53.887599 ERROR: Refresh stop fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: cannot use a string pattern on a bytes-like object
+2025-09-14T20:50:53.888752 INFO: Attempting Inspect Element strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:54.000492 ERROR: Inspect element fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:54.001670 INFO: Attempting removepaywalls.com bypass for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:57.102026 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:50:57.102153 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:50:57.102181 INFO: Attempting archive.today for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:50:59.858934 INFO: No existing archive found, creating new archive for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:00.766397 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:51:00.766868 INFO: Attempting archive.is for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:04.369528 INFO: Attempting archive.li for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:08.179541 INFO: Attempting archive.fo for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:10.634946 INFO: Attempting archive.ph for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:13.790010 INFO: Attempting Googlebot spoof for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:13.908535 ERROR: Googlebot spoof failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:13.910392 INFO: Attempting Enhanced Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:15.220758 ERROR: Enhanced Wayback Machine failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: No archived snapshots found in any timeframe
+2025-09-14T20:51:15.222257 INFO: Attempting Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full
+2025-09-14T20:51:15.351929 ERROR: Wayback Machine failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full: No archived snapshots found
+2025-09-14T20:51:15.353523 ERROR: All fetch strategies failed or returned low-quality content for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008367.pub4/full. Attempting Google Search fallback...
+2025-09-14T20:51:15.354062 INFO: Google Search fallback: searching for 'full'
+2025-09-14T20:51:15.387031 INFO: Google Search fallback did not find alternative URL

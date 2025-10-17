@@ -1,0 +1,133 @@
+2025-09-15T06:53:42.593099 INFO: Attempting direct fetch for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:43.215414 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:53:43.381540 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:53:43.381653 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:53:43.381695 INFO: Attempting Reader Mode strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:43.787768 ERROR: Reader mode fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:53:43.789949 INFO: Attempting JS Disabled strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:44.259226 INFO: Attempting Refresh Stop strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:44.646771 ERROR: Refresh stop fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:53:44.648369 INFO: Attempting Inspect Element strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:45.286367 INFO: Attempting removepaywalls.com bypass for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:47.468501 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:53:47.468632 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:53:47.468661 INFO: Attempting archive.today for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:49.749393 INFO: No existing archive found, creating new archive for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:50.605630 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:53:50.606141 INFO: Attempting archive.is for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:52.859245 INFO: Attempting archive.li for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:54.846314 INFO: Attempting archive.fo for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:53:57.281770 INFO: Attempting archive.ph for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:00.827319 INFO: Attempting Googlebot spoof for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:01.373747 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:01.373855 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:01.373887 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:01.373939 ERROR: Enhanced Wayback Machine failed for https://nymag.com/magazine/toc/2023-07-03.html: [Errno 32] Broken pipe
+2025-09-15T06:54:01.373971 INFO: Attempting Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:02.570441 INFO: Found Wayback snapshot: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:06.725514 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:06.725654 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:06.725689 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/magazine/toc/2023-07-03.html. Attempting Google Search fallback...
+2025-09-15T06:54:06.725753 INFO: Google Search fallback: searching for '2023 07 03.html'
+2025-09-15T06:54:06.756908 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:54:06.763997 INFO: Attempting direct fetch for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:07.231428 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:07.500181 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:07.500290 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:07.500328 INFO: Attempting Reader Mode strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:07.907170 ERROR: Reader mode fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:54:07.909462 INFO: Attempting JS Disabled strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:08.541284 INFO: Attempting Refresh Stop strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:08.961797 ERROR: Refresh stop fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:54:08.963847 INFO: Attempting Inspect Element strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:10.016799 INFO: Attempting removepaywalls.com bypass for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:12.561505 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:54:12.561644 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:12.561675 INFO: Attempting archive.today for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:15.977690 INFO: No existing archive found, creating new archive for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:16.859949 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:54:16.860652 INFO: Attempting archive.is for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:20.409412 INFO: Attempting archive.li for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:23.276223 INFO: Attempting archive.fo for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:25.396372 INFO: Attempting archive.ph for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:27.967217 INFO: Attempting Googlebot spoof for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:28.457754 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:28.457867 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:28.457893 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:28.596912 INFO: Found Wayback snapshot from 20250426150931: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:28.907806 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:28.907925 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:28.907952 INFO: Attempting Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:29.022708 INFO: Found Wayback snapshot: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:29.326695 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:29.326813 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:29.326847 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/magazine/toc/2023-07-03.html. Attempting Google Search fallback...
+2025-09-15T06:54:29.326912 INFO: Google Search fallback: searching for '2023 07 03.html'
+2025-09-15T06:54:29.358086 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:54:29.365482 INFO: Attempting direct fetch for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:30.217204 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:30.375017 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:30.375134 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:30.375179 INFO: Attempting Reader Mode strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:30.753584 ERROR: Reader mode fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:54:30.755322 INFO: Attempting JS Disabled strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:31.216883 INFO: Attempting Refresh Stop strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:31.578344 ERROR: Refresh stop fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:54:31.579851 INFO: Attempting Inspect Element strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:32.307822 INFO: Attempting removepaywalls.com bypass for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:35.163400 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:54:35.163520 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:35.163547 INFO: Attempting archive.today for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:37.055163 INFO: No existing archive found, creating new archive for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:37.913165 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:54:37.913677 INFO: Attempting archive.is for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:41.352069 INFO: Attempting archive.li for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:43.828745 INFO: Attempting archive.fo for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:47.654049 INFO: Attempting archive.ph for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:51.561479 INFO: Attempting Googlebot spoof for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:52.023679 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:52.023807 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:52.023836 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:52.162436 INFO: Found Wayback snapshot from 20250426150931: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:52.433063 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:52.433189 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:52.433262 INFO: Attempting Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:52.603533 INFO: Found Wayback snapshot: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:52.603722 ERROR: Wayback Machine failed for https://nymag.com/magazine/toc/2023-07-03.html: [Errno 32] Broken pipe
+2025-09-15T06:54:52.605227 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/magazine/toc/2023-07-03.html. Attempting Google Search fallback...
+2025-09-15T06:54:52.605376 INFO: Google Search fallback: searching for '2023 07 03.html'
+2025-09-15T06:54:52.636670 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:54:52.644041 INFO: Attempting direct fetch for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:53.293502 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:53.456166 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:54:53.456290 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:53.456330 INFO: Attempting Reader Mode strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:53.910554 ERROR: Reader mode fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:54:53.912650 INFO: Attempting JS Disabled strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:54.757511 INFO: Attempting Refresh Stop strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:55.337915 ERROR: Refresh stop fetch failed for https://nymag.com/magazine/toc/2023-07-03.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:54:55.340008 INFO: Attempting Inspect Element strategy for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:55.833364 INFO: Attempting removepaywalls.com bypass for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:54:59.868223 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:54:59.868327 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:54:59.868357 INFO: Attempting archive.today for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:02.867170 INFO: No existing archive found, creating new archive for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:03.722406 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:55:03.723138 INFO: Attempting archive.is for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:06.661988 INFO: Attempting archive.li for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:10.035583 INFO: Attempting archive.fo for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:12.446742 INFO: Attempting archive.ph for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:15.532561 INFO: Attempting Googlebot spoof for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:16.258946 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:55:16.259055 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:55:16.259083 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:16.397697 INFO: Found Wayback snapshot from 20250426150931: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:16.691038 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:55:16.691155 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:55:16.691181 INFO: Attempting Wayback Machine for https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:16.808983 INFO: Found Wayback snapshot: http://web.archive.org/web/20250426150931/https://nymag.com/magazine/toc/2023-07-03.html
+2025-09-15T06:55:17.183084 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:55:17.183199 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:55:17.183231 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/magazine/toc/2023-07-03.html. Attempting Google Search fallback...
+2025-09-15T06:55:17.183299 INFO: Google Search fallback: searching for '2023 07 03.html'
+2025-09-15T06:55:17.214738 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,24 @@
+2025-09-15T00:58:32.945375 INFO: Attempting direct fetch for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T00:59:03.113519 ERROR: Direct fetch failed for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T00:59:03.113698 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T00:59:23.199710 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T00:59:23.199847 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T00:59:43.282860 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T00:59:43.282968 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T00:59:46.352188 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:06.427361 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T01:00:06.427493 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:10.951760 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T01:00:10.951875 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:00:10.951902 INFO: Attempting archive.today for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:15.663773 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:16.545094 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:00:16.545453 INFO: Attempting archive.is for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:19.351165 INFO: Attempting archive.li for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:22.176584 INFO: Attempting archive.fo for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:24.797195 INFO: Attempting archive.ph for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:28.586032 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:43.718928 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T01:00:43.719059 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:55.295900 INFO: Found Wayback snapshot from 20211224203820: http://web.archive.org/web/20211224203820/https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/
+2025-09-15T01:00:56.415561 INFO: Successfully fetched https://www.washingtonpost.com/outlook/2020/08/06/health-insurance-canada-lie/ using wayback_machine_enhanced

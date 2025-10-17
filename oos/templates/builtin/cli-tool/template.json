@@ -1,0 +1,25 @@
+{
+  "name": "cli-tool",
+  "version": "1.0.0", 
+  "description": "Command-line tool with argument parsing and subcommands",
+  "category": "cli",
+  "tags": ["cli", "bash", "python"],
+  "variables": {
+    "PROJECT_NAME": {
+      "description": "CLI tool name",
+      "type": "string",
+      "required": true
+    },
+    "LANGUAGE": {
+      "description": "Implementation language",
+      "type": "choice",
+      "options": ["bash", "python", "go", "rust"],
+      "default": "bash"
+    },
+    "AUTHOR_NAME": {
+      "description": "Author name",
+      "type": "string",
+      "default": "{{GIT_USER_NAME}}"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+2025-09-14T21:27:09.206117 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:09.314903 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:09.315100 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:09.946918 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:27:09.949001 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:10.013048 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:10.013232 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:10.075025 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:27:10.075197 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:10.134137 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:10.134321 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:14.477040 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:27:14.477171 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:27:14.477283 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:17.233469 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:18.122146 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:27:18.122890 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:20.375031 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:22.289156 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:25.282459 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:28.713086 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:28.800019 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:28.800268 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:40.308434 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:27:40.309835 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:40.416573 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:27:40.418401 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:27:40.419160 INFO: Google Search fallback: searching for '09Hickenlooper t.html'
+2025-09-14T21:27:40.451864 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:27:40.461153 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:40.519548 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:40.519773 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:41.179445 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:27:41.181044 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:41.246820 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:41.247007 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:41.311284 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:27:41.311462 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:41.374061 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:41.374294 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:46.000091 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:27:46.000208 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:27:46.000237 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:48.764554 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:49.654364 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:27:49.654623 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:53.072118 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:56.706684 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:27:58.882274 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:01.387243 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:01.463930 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:01.464131 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:02.809677 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:28:02.812368 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:02.936654 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:28:02.938757 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:28:02.939565 INFO: Google Search fallback: searching for '09Hickenlooper t.html'
+2025-09-14T21:28:03.003843 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:28:03.018403 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.083109 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.083289 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.693280 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:28:03.695036 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.760042 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.760228 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.829137 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:28:03.829316 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.888699 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:03.888882 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:08.316644 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:28:08.316749 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:28:08.316777 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:10.857043 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:11.771117 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:28:11.771553 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:15.635555 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:18.740770 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:21.485934 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:24.056634 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:24.134882 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:24.135078 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:25.623982 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:28:25.626764 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:25.806185 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:28:25.808452 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:28:25.809236 INFO: Google Search fallback: searching for '09Hickenlooper t.html'
+2025-09-14T21:28:25.869377 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:28:25.881518 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:25.913320 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:25.913496 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:26.473565 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:28:26.476468 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:26.512258 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:26.512453 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:26.559688 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:28:26.559946 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:26.591124 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:26.591309 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:29.896709 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:28:29.896824 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:28:29.896854 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:32.075183 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:32.934565 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:28:32.935010 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:36.490072 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:39.561077 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:42.411674 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:45.788107 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:45.842382 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:45.842576 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:47.244869 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:28:47.246824 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print
+2025-09-14T21:28:47.366275 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:28:47.368320 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/magazine/09Hickenlooper-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:28:47.368922 INFO: Google Search fallback: searching for '09Hickenlooper t.html'
+2025-09-14T21:28:47.401803 INFO: Google Search fallback did not find alternative URL

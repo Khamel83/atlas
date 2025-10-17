@@ -1,0 +1,4 @@
+Initiative,Description,Impact,Effort,Quadrant,Priority Score
+{% for item in matrix %}
+"{{ item.initiative }}","{{ item.description }}",{{ item.impact }},{{ item.effort }},"{{ item.quadrant }}",{{ item.priority_score }}
+{% endfor %}

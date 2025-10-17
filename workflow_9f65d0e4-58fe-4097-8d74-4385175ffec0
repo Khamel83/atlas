@@ -1,0 +1,25 @@
+2025-09-15T08:43:22.902346 INFO: Attempting direct fetch for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:22.984918 ERROR: Direct fetch failed for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:22.985090 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:23.910131 ERROR: Reader mode fetch failed for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html: cannot use a string pattern on a bytes-like object
+2025-09-15T08:43:23.911649 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:23.974117 ERROR: JS disabled fetch failed for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:23.974298 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:24.036124 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html: cannot use a string pattern on a bytes-like object
+2025-09-15T08:43:24.036298 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:24.095124 ERROR: Inspect element fetch failed for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:24.095344 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:26.769220 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:43:26.769321 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:43:26.769349 INFO: Attempting archive.today for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:30.586356 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:31.473120 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:43:31.473487 INFO: Attempting archive.is for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:34.437333 INFO: Attempting archive.li for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:36.958322 INFO: Attempting archive.fo for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:39.998249 INFO: Attempting archive.ph for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:43.549648 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:43.663889 ERROR: Googlebot spoof failed for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:43.664094 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:43.983680 INFO: Found Wayback snapshot from 20250320185647: http://web.archive.org/web/20250320185647/https://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html
+2025-09-15T08:43:47.010745 INFO: Successfully fetched http://www.nytimes.com/2014/05/18/opinion/sunday/always-hungry-heres-why.html using wayback_machine_enhanced

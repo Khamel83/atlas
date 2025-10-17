@@ -1,0 +1,151 @@
+2025-09-15T12:25:47.696944 INFO: Attempting direct fetch for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:48.049252 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:25:48.072759 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:25:48.072875 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:48.072915 INFO: Attempting Reader Mode strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:48.188883 ERROR: Reader mode fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:48.191253 INFO: Attempting JS Disabled strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:48.324584 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:25:48.324740 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:48.324764 INFO: Attempting Refresh Stop strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:48.478897 ERROR: Refresh stop fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:48.481381 INFO: Attempting Inspect Element strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:48.668474 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:25:48.668581 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:48.668631 INFO: Attempting removepaywalls.com bypass for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:51.648077 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:25:51.648191 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:51.648219 INFO: Attempting archive.today for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:53.460544 INFO: No existing archive found, creating new archive for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:54.341464 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:25:54.342406 INFO: Attempting archive.is for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:57.684699 INFO: Attempting archive.li for https://substack.com/@johnpsmith326219
+2025-09-15T12:25:59.616289 INFO: Attempting archive.fo for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:01.710244 INFO: Attempting archive.ph for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:05.683999 INFO: Attempting Googlebot spoof for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:05.798433 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:05.798523 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:05.798553 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:06.505037 INFO: Found Wayback snapshot from 20250828204244: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:26:07.383701 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:07.383813 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:07.383837 INFO: Attempting Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:07.613343 INFO: Found Wayback snapshot: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:26:07.694406 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:07.694514 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:07.694544 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@johnpsmith326219. Attempting Google Search fallback...
+2025-09-15T12:26:07.694627 INFO: Google Search fallback: searching for '@johnpsmith326219'
+2025-09-15T12:26:07.727523 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:26:07.727704 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T12:26:07.734966 INFO: Attempting direct fetch for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:07.859990 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:07.881462 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:07.881575 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:07.881639 INFO: Attempting Reader Mode strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:07.987491 ERROR: Reader mode fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:26:07.990070 INFO: Attempting JS Disabled strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:08.138447 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:26:08.138561 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:08.138626 INFO: Attempting Refresh Stop strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:08.261575 ERROR: Refresh stop fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:26:08.264162 INFO: Attempting Inspect Element strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:08.454010 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:26:08.454117 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:08.454143 INFO: Attempting removepaywalls.com bypass for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:12.061498 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:26:12.061628 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:12.061659 INFO: Attempting archive.today for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:14.326509 INFO: No existing archive found, creating new archive for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:15.187612 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:26:15.188488 INFO: Attempting archive.is for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:17.290368 INFO: Attempting archive.li for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:20.369275 INFO: Attempting archive.fo for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:22.797541 INFO: Attempting archive.ph for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:26.634276 INFO: Attempting Googlebot spoof for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:26.761298 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:26.761415 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:26.761442 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:26.894259 INFO: Found Wayback snapshot from 20250828204244: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:26:26.972647 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:26.972758 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:26.972789 INFO: Attempting Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:27.104730 INFO: Found Wayback snapshot: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:26:27.191556 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:27.191688 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:27.191720 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@johnpsmith326219. Attempting Google Search fallback...
+2025-09-15T12:26:27.191801 INFO: Google Search fallback: searching for '@johnpsmith326219'
+2025-09-15T12:26:27.224245 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:26:27.231410 INFO: Attempting direct fetch for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:27.549642 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:27.569783 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:27.569881 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:27.569921 INFO: Attempting Reader Mode strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:27.701090 ERROR: Reader mode fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:26:27.705731 INFO: Attempting JS Disabled strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:27.854284 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:26:27.854388 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:27.854415 INFO: Attempting Refresh Stop strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:27.965459 ERROR: Refresh stop fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:26:27.967959 INFO: Attempting Inspect Element strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:28.150666 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:26:28.150767 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:28.150794 INFO: Attempting removepaywalls.com bypass for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:31.848824 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:26:31.848939 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:31.848966 INFO: Attempting archive.today for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:33.928024 INFO: No existing archive found, creating new archive for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:34.834377 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:26:34.835348 INFO: Attempting archive.is for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:38.261629 INFO: Attempting archive.li for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:41.773560 INFO: Attempting archive.fo for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:44.143914 INFO: Attempting archive.ph for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.161401 INFO: Attempting Googlebot spoof for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.314370 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:47.314474 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:47.314500 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.458853 INFO: Found Wayback snapshot from 20250828204244: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.541440 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:47.541554 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:47.541584 INFO: Attempting Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.742471 INFO: Found Wayback snapshot: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.851724 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:47.851817 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:47.851864 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@johnpsmith326219. Attempting Google Search fallback...
+2025-09-15T12:26:47.862370 INFO: Attempting direct fetch for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:47.993853 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:48.035569 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:26:48.035719 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:48.035761 INFO: Attempting Reader Mode strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:48.154712 ERROR: Reader mode fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:26:48.157177 INFO: Attempting JS Disabled strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:48.310651 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:26:48.310757 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:48.310784 INFO: Attempting Refresh Stop strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:48.428845 ERROR: Refresh stop fetch failed for https://substack.com/@johnpsmith326219: cannot use a string pattern on a bytes-like object
+2025-09-15T12:26:48.431450 INFO: Attempting Inspect Element strategy for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:48.659509 INFO: Content is very short (5 words). Likely a teaser.
+2025-09-15T12:26:48.659651 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:48.659681 INFO: Attempting removepaywalls.com bypass for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:52.438120 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:26:52.438230 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:26:52.438261 INFO: Attempting archive.today for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:55.902847 INFO: No existing archive found, creating new archive for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:56.813551 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:26:56.814526 INFO: Attempting archive.is for https://substack.com/@johnpsmith326219
+2025-09-15T12:26:59.432884 INFO: Attempting archive.li for https://substack.com/@johnpsmith326219
+2025-09-15T12:27:02.763766 INFO: Attempting archive.fo for https://substack.com/@johnpsmith326219
+2025-09-15T12:27:05.504614 INFO: Attempting archive.ph for https://substack.com/@johnpsmith326219
+2025-09-15T12:27:07.681051 INFO: Attempting Googlebot spoof for https://substack.com/@johnpsmith326219
+2025-09-15T12:27:07.793656 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:27:07.793767 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:27:07.793797 INFO: Attempting Enhanced Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:27:07.934954 INFO: Found Wayback snapshot from 20250828204244: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:27:08.022478 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:27:08.022603 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:27:08.022638 INFO: Attempting Wayback Machine for https://substack.com/@johnpsmith326219
+2025-09-15T12:27:08.172702 INFO: Found Wayback snapshot: http://web.archive.org/web/20250828204244/https://substack.com/@johnpsmith326219
+2025-09-15T12:27:08.257053 INFO: Paywall phrase 'this site requires javascript' detected.
+2025-09-15T12:27:08.257172 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:27:08.257207 ERROR: All fetch strategies failed or returned low-quality content for https://substack.com/@johnpsmith326219. Attempting Google Search fallback...
+2025-09-15T12:27:08.257294 INFO: Google Search fallback: searching for '@johnpsmith326219'
+2025-09-15T12:27:08.290952 INFO: Google Search fallback did not find alternative URL

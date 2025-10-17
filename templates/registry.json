@@ -1,0 +1,192 @@
+{
+  "version": "1.0.0",
+  "templates": {
+    "web-app": {
+      "path": "/home/ubuntu/dev/oos/templates/builtin/web-app",
+      "config": {
+        "name": "web-app",
+        "version": "1.0.0",
+        "description": "Modern web application with React/Vue frontend and Node.js backend",
+        "category": "web",
+        "tags": [
+          "react",
+          "nodejs",
+          "fullstack"
+        ],
+        "variables": {
+          "PROJECT_NAME": {
+            "description": "Project name",
+            "type": "string",
+            "required": true
+          },
+          "FRONTEND_FRAMEWORK": {
+            "description": "Frontend framework",
+            "type": "choice",
+            "options": [
+              "react",
+              "vue",
+              "svelte"
+            ],
+            "default": "react"
+          },
+          "BACKEND_TYPE": {
+            "description": "Backend type",
+            "type": "choice",
+            "options": [
+              "express",
+              "fastify",
+              "koa"
+            ],
+            "default": "express"
+          },
+          "DATABASE": {
+            "description": "Database type",
+            "type": "choice",
+            "options": [
+              "postgresql",
+              "mongodb",
+              "sqlite"
+            ],
+            "default": "postgresql"
+          }
+        },
+        "hooks": {
+          "pre_create": [
+            "validate_node_version"
+          ],
+          "post_create": [
+            "install_dependencies",
+            "setup_database"
+          ]
+        }
+      },
+      "type": "builtin"
+    },
+    "library": {
+      "path": "/home/ubuntu/dev/oos/templates/builtin/library",
+      "config": {
+        "name": "library",
+        "version": "1.0.0",
+        "description": "Reusable library with comprehensive testing and documentation",
+        "category": "library",
+        "tags": [
+          "library",
+          "npm",
+          "package"
+        ],
+        "variables": {
+          "PROJECT_NAME": {
+            "description": "Library name",
+            "type": "string",
+            "required": true
+          },
+          "LANGUAGE": {
+            "description": "Programming language",
+            "type": "choice",
+            "options": [
+              "javascript",
+              "typescript",
+              "python",
+              "go"
+            ],
+            "default": "typescript"
+          }
+        }
+      },
+      "type": "builtin"
+    },
+    "api-service": {
+      "path": "/home/ubuntu/dev/oos/templates/builtin/api-service",
+      "config": {
+        "name": "api-service",
+        "version": "1.0.0",
+        "description": "RESTful API service with authentication and database integration",
+        "category": "backend",
+        "tags": [
+          "api",
+          "rest",
+          "microservice"
+        ],
+        "variables": {
+          "PROJECT_NAME": {
+            "description": "API service name",
+            "type": "string",
+            "required": true
+          },
+          "API_FRAMEWORK": {
+            "description": "API framework",
+            "type": "choice",
+            "options": [
+              "express",
+              "fastapi",
+              "gin",
+              "actix-web"
+            ],
+            "default": "express"
+          },
+          "AUTH_METHOD": {
+            "description": "Authentication method",
+            "type": "choice",
+            "options": [
+              "jwt",
+              "oauth2",
+              "api-key"
+            ],
+            "default": "jwt"
+          },
+          "DATABASE": {
+            "description": "Database type",
+            "type": "choice",
+            "options": [
+              "postgresql",
+              "mongodb",
+              "redis"
+            ],
+            "default": "postgresql"
+          }
+        }
+      },
+      "type": "builtin"
+    },
+    "cli-tool": {
+      "path": "/home/ubuntu/dev/oos/templates/builtin/cli-tool",
+      "config": {
+        "name": "cli-tool",
+        "version": "1.0.0",
+        "description": "Command-line tool with argument parsing and subcommands",
+        "category": "cli",
+        "tags": [
+          "cli",
+          "bash",
+          "python"
+        ],
+        "variables": {
+          "PROJECT_NAME": {
+            "description": "CLI tool name",
+            "type": "string",
+            "required": true
+          },
+          "LANGUAGE": {
+            "description": "Implementation language",
+            "type": "choice",
+            "options": [
+              "bash",
+              "python",
+              "go",
+              "rust"
+            ],
+            "default": "bash"
+          },
+          "AUTHOR_NAME": {
+            "description": "Author name",
+            "type": "string",
+            "default": "{{GIT_USER_NAME}}"
+          }
+        }
+      },
+      "type": "builtin"
+    }
+  },
+  "sources": [],
+  "last_updated": "2025-09-02T12:27:43.354800"
+}

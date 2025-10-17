@@ -1,0 +1,27 @@
+2025-09-15T15:20:37.621415 INFO: Attempting direct fetch for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:37.997769 ERROR: Direct fetch failed for http://www.alexkotlowitz.com/03_02.html: 404 Client Error: Not Found for url: https://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.010173 INFO: Attempting direct fetch for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.242754 ERROR: Direct fetch failed for http://www.alexkotlowitz.com/03_02.html: 404 Client Error: Not Found for url: https://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.244445 INFO: Attempting Reader Mode strategy for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.433341 ERROR: Reader mode fetch failed for http://www.alexkotlowitz.com/03_02.html: 404 Client Error: Not Found for url: https://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.434882 INFO: Attempting JS Disabled strategy for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.629340 ERROR: JS disabled fetch failed for http://www.alexkotlowitz.com/03_02.html: 404 Client Error: Not Found for url: https://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.631125 INFO: Attempting Refresh Stop strategy for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:38.837117 ERROR: Refresh stop fetch failed for http://www.alexkotlowitz.com/03_02.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:20:38.838724 INFO: Attempting Inspect Element strategy for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:39.054976 ERROR: Inspect element fetch failed for http://www.alexkotlowitz.com/03_02.html: 404 Client Error: Not Found for url: https://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:39.057791 INFO: Attempting removepaywalls.com bypass for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:43.601728 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:20:43.601844 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:20:43.601871 INFO: Attempting archive.today for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:47.861748 INFO: No existing archive found, creating new archive for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:49.080389 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:20:49.081038 INFO: Attempting archive.is for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:51.877878 INFO: Attempting archive.li for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:54.992027 INFO: Attempting archive.fo for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:20:58.522066 INFO: Attempting archive.ph for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:21:01.215330 INFO: Attempting Googlebot spoof for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:21:01.287244 ERROR: Googlebot spoof failed for http://www.alexkotlowitz.com/03_02.html: 403 Client Error: Forbidden for url: http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:21:01.287414 INFO: Attempting Enhanced Wayback Machine for http://www.alexkotlowitz.com/03_02.html
+2025-09-15T15:21:20.721367 INFO: Found Wayback snapshot from 20130208150843: http://web.archive.org/web/20130208150843/http://www.alexkotlowitz.com:80/03_02.html
+2025-09-15T15:21:21.803780 INFO: Successfully fetched http://www.alexkotlowitz.com/03_02.html using wayback_machine_enhanced

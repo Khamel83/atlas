@@ -1,0 +1,30 @@
+2025-09-15T02:50:45.234815 INFO: Attempting direct fetch for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:45.932770 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T02:50:45.997068 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T02:50:45.997179 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:50:45.997222 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:46.096647 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/ian-bogost/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:50:46.098348 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:46.288198 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T02:50:46.288310 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:50:46.288337 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:46.392049 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/ian-bogost/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:50:46.393704 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:46.570551 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T02:50:46.570708 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:50:46.570740 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:50.345629 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:50:50.345740 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:50:50.345767 INFO: Attempting archive.today for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:54.150831 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:55.092282 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:50:55.092680 INFO: Attempting archive.is for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:50:57.036917 INFO: Attempting archive.li for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:00.317262 INFO: Attempting archive.fo for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:02.892656 INFO: Attempting archive.ph for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:06.392147 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:06.607557 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/ian-bogost/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:06.609519 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:07.320102 INFO: Found Wayback snapshot from 20250904192311: http://web.archive.org/web/20250904192311/https://www.theatlantic.com/author/ian-bogost/
+2025-09-15T02:51:09.569034 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T02:51:09.569264 INFO: Successfully fetched https://www.theatlantic.com/author/ian-bogost/ using wayback_machine_enhanced

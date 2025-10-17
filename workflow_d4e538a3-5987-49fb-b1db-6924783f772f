@@ -1,0 +1,25 @@
+2025-09-14T20:31:47.901200 INFO: Attempting direct fetch for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:48.492857 ERROR: Direct fetch failed for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-14T20:31:48.494489 INFO: Attempting Reader Mode strategy for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:49.549089 ERROR: Reader mode fetch failed for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm: cannot use a string pattern on a bytes-like object
+2025-09-14T20:31:49.551156 INFO: Attempting JS Disabled strategy for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:49.933268 ERROR: JS disabled fetch failed for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-14T20:31:49.934579 INFO: Attempting Refresh Stop strategy for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:50.329030 ERROR: Refresh stop fetch failed for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm: cannot use a string pattern on a bytes-like object
+2025-09-14T20:31:50.330520 INFO: Attempting Inspect Element strategy for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:50.717461 ERROR: Inspect element fetch failed for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-14T20:31:50.718998 INFO: Attempting removepaywalls.com bypass for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:53.605888 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:31:53.605991 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:31:53.606020 INFO: Attempting archive.today for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:56.334265 INFO: No existing archive found, creating new archive for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:57.220636 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:31:57.221001 INFO: Attempting archive.is for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:31:59.900439 INFO: Attempting archive.li for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:32:02.165773 INFO: Attempting archive.fo for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:32:04.493505 INFO: Attempting archive.ph for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:32:08.057949 INFO: Attempting Googlebot spoof for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:32:08.451927 ERROR: Googlebot spoof failed for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm: 403 Client Error: Forbidden for url: https://www.bloomberg.com/businessweek
+2025-09-14T20:32:08.453112 INFO: Attempting Enhanced Wayback Machine for http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:32:08.909129 INFO: Found Wayback snapshot from 20120513131056: http://web.archive.org/web/20120513131056/http://www.businessweek.com:80/print/magazine/content/11_08/b4216060281516.htm
+2025-09-14T20:32:09.464100 INFO: Successfully fetched http://www.businessweek.com/print/magazine/content/11_08/b4216060281516.htm using wayback_machine_enhanced

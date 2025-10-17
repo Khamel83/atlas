@@ -1,0 +1,144 @@
+2025-09-14T21:25:30.195129 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:33.008157 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:25:33.074337 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:25:33.074459 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:25:33.074738 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:33.217983 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:25:33.219822 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:33.401703 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:25:33.401810 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:25:33.401836 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:33.452702 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:25:33.454468 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:33.702846 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-14T21:25:33.702953 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:25:33.702980 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:37.384610 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:25:37.384770 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:25:37.384803 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:42.904629 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:43.809627 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:25:43.810025 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:46.606784 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:49.208583 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:51.897897 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:55.328007 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:25:55.532018 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:25:55.532115 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:25:55.532142 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:01.482452 INFO: Found Wayback snapshot from 20240319075447: http://web.archive.org/web/20240319075447/https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:02.289361 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:02.289485 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:02.289511 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:02.399576 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: No archived snapshots found
+2025-09-14T21:26:02.401529 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house. Attempting Google Search fallback...
+2025-09-14T21:26:02.401825 INFO: Google Search fallback: searching for 'wood sorrel house'
+2025-09-14T21:26:02.554514 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:26:02.564664 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:02.657180 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:02.723123 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:02.723241 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:02.723281 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:02.778934 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:26:02.780480 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:02.936405 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:02.936512 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:02.936539 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:02.984879 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:26:02.986397 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:03.293891 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-14T21:26:03.293994 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:03.294022 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:06.517483 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:26:06.517613 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:06.517642 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:09.765887 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:10.634905 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:26:10.635133 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:13.203415 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:16.067200 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:19.667799 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:22.258290 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:22.381103 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:22.381234 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:22.381265 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:22.633134 INFO: Found Wayback snapshot from 20240319075447: http://web.archive.org/web/20240319075447/https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:22.800509 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:22.800657 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:22.800687 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:22.920820 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: No archived snapshots found
+2025-09-14T21:26:22.923108 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house. Attempting Google Search fallback...
+2025-09-14T21:26:22.923236 INFO: Google Search fallback: searching for 'wood sorrel house'
+2025-09-14T21:26:22.955846 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:26:22.964004 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:23.061474 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:23.126788 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:23.126905 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:23.126947 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:23.183346 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:26:23.185619 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:23.360676 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:23.360788 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:23.360815 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:23.419354 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:26:23.421759 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:23.667735 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-14T21:26:23.667850 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:23.667876 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:26.436705 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:26:26.436806 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:26.436832 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:29.822676 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:30.712278 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:26:30.712701 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:34.332024 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:37.362041 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:40.768401 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:43.856620 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:44.091958 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:44.092070 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:44.092098 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:44.333235 INFO: Found Wayback snapshot from 20240319075447: http://web.archive.org/web/20240319075447/https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:44.510142 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:44.510262 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:44.510287 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:44.709405 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: No archived snapshots found
+2025-09-14T21:26:44.713098 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house. Attempting Google Search fallback...
+2025-09-14T21:26:44.713535 INFO: Google Search fallback: searching for 'wood sorrel house'
+2025-09-14T21:26:44.756036 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:26:44.768628 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:44.869139 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:44.934131 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:44.934252 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:44.934292 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:44.993631 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:26:44.996062 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:45.157128 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:26:45.157241 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:45.157266 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:45.210584 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: cannot use a string pattern on a bytes-like object
+2025-09-14T21:26:45.213066 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:45.466757 INFO: Content is very short (29 words). Likely a teaser.
+2025-09-14T21:26:45.466873 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:45.466902 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:50.091764 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:26:50.091879 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:26:50.091905 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:54.533363 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:55.390503 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:26:55.390889 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:26:57.666764 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:01.146176 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:05.247495 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:08.314561 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:08.431671 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:27:08.431793 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:27:08.431894 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:08.722782 INFO: Found Wayback snapshot from 20240319075447: http://web.archive.org/web/20240319075447/https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:09.003808 INFO: Paywall element '.paywall' detected.
+2025-09-14T21:27:09.003927 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:27:09.003953 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house
+2025-09-14T21:27:09.115147 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house: No archived snapshots found
+2025-09-14T21:27:09.117379 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2022/03/21/wood-sorrel-house. Attempting Google Search fallback...
+2025-09-14T21:27:09.117518 INFO: Google Search fallback: searching for 'wood sorrel house'
+2025-09-14T21:27:09.150115 INFO: Google Search fallback did not find alternative URL

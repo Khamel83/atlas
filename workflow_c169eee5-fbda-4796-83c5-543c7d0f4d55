@@ -1,0 +1,149 @@
+2025-09-15T10:44:46.395168 INFO: Attempting direct fetch for https://nycworker.coop/home/
+2025-09-15T10:44:49.182021 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:44:49.234209 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:44:49.234325 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:44:49.234367 INFO: Attempting Reader Mode strategy for https://nycworker.coop/home/
+2025-09-15T10:44:51.822687 ERROR: Reader mode fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:44:51.824749 INFO: Attempting JS Disabled strategy for https://nycworker.coop/home/
+2025-09-15T10:44:54.721470 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:44:54.721576 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:44:54.721623 INFO: Attempting Refresh Stop strategy for https://nycworker.coop/home/
+2025-09-15T10:44:57.407886 ERROR: Refresh stop fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:44:57.409951 INFO: Attempting Inspect Element strategy for https://nycworker.coop/home/
+2025-09-15T10:45:00.331827 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:00.331937 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:00.331964 INFO: Attempting removepaywalls.com bypass for https://nycworker.coop/home/
+2025-09-15T10:45:04.373500 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:45:04.373646 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:04.373679 INFO: Attempting archive.today for https://nycworker.coop/home/
+2025-09-15T10:45:08.538538 INFO: No existing archive found, creating new archive for https://nycworker.coop/home/
+2025-09-15T10:45:09.411250 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:45:09.411745 INFO: Attempting archive.is for https://nycworker.coop/home/
+2025-09-15T10:45:12.729675 INFO: Attempting archive.li for https://nycworker.coop/home/
+2025-09-15T10:45:15.231058 INFO: Attempting archive.fo for https://nycworker.coop/home/
+2025-09-15T10:45:17.709301 INFO: Attempting archive.ph for https://nycworker.coop/home/
+2025-09-15T10:45:21.150241 INFO: Attempting Googlebot spoof for https://nycworker.coop/home/
+2025-09-15T10:45:23.876441 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:23.876559 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:23.876611 INFO: Attempting Enhanced Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:45:24.597254 INFO: Found Wayback snapshot from 20230522054457: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:45:29.952861 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:29.952981 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:29.953007 INFO: Attempting Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:45:30.087016 INFO: Found Wayback snapshot: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:45:30.213903 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:30.214020 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:30.214054 ERROR: All fetch strategies failed or returned low-quality content for https://nycworker.coop/home/. Attempting Google Search fallback...
+2025-09-15T10:45:30.214117 INFO: Google Search fallback: searching for 'home'
+2025-09-15T10:45:30.246089 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:45:30.253690 INFO: Attempting direct fetch for https://nycworker.coop/home/
+2025-09-15T10:45:32.731174 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:32.781523 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:32.781646 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:32.781687 INFO: Attempting Reader Mode strategy for https://nycworker.coop/home/
+2025-09-15T10:45:35.494391 ERROR: Reader mode fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:45:35.496401 INFO: Attempting JS Disabled strategy for https://nycworker.coop/home/
+2025-09-15T10:45:38.313340 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:38.313449 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:38.313475 INFO: Attempting Refresh Stop strategy for https://nycworker.coop/home/
+2025-09-15T10:45:40.923153 ERROR: Refresh stop fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:45:40.925497 INFO: Attempting Inspect Element strategy for https://nycworker.coop/home/
+2025-09-15T10:45:43.692915 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:45:43.693085 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:43.693117 INFO: Attempting removepaywalls.com bypass for https://nycworker.coop/home/
+2025-09-15T10:45:46.153171 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:45:46.153288 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:45:46.153317 INFO: Attempting archive.today for https://nycworker.coop/home/
+2025-09-15T10:45:50.808888 INFO: No existing archive found, creating new archive for https://nycworker.coop/home/
+2025-09-15T10:45:51.664813 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:45:51.665258 INFO: Attempting archive.is for https://nycworker.coop/home/
+2025-09-15T10:45:54.422399 INFO: Attempting archive.li for https://nycworker.coop/home/
+2025-09-15T10:45:56.551526 INFO: Attempting archive.fo for https://nycworker.coop/home/
+2025-09-15T10:45:59.816934 INFO: Attempting archive.ph for https://nycworker.coop/home/
+2025-09-15T10:46:03.619533 INFO: Attempting Googlebot spoof for https://nycworker.coop/home/
+2025-09-15T10:46:06.198298 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:06.198414 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:06.198441 INFO: Attempting Enhanced Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:46:06.442883 INFO: Found Wayback snapshot from 20230522054457: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:46:06.565093 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:06.565211 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:06.565236 INFO: Attempting Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:46:06.701005 INFO: Found Wayback snapshot: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:46:06.822970 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:06.823083 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:06.830950 INFO: Attempting direct fetch for https://nycworker.coop/home/
+2025-09-15T10:46:09.695186 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:09.747507 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:09.747677 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:09.747723 INFO: Attempting Reader Mode strategy for https://nycworker.coop/home/
+2025-09-15T10:46:12.555655 ERROR: Reader mode fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:46:12.557674 INFO: Attempting JS Disabled strategy for https://nycworker.coop/home/
+2025-09-15T10:46:15.469102 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:15.469210 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:15.469238 INFO: Attempting Refresh Stop strategy for https://nycworker.coop/home/
+2025-09-15T10:46:17.825749 ERROR: Refresh stop fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:46:17.828009 INFO: Attempting Inspect Element strategy for https://nycworker.coop/home/
+2025-09-15T10:46:20.617583 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:20.617719 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:20.617746 INFO: Attempting removepaywalls.com bypass for https://nycworker.coop/home/
+2025-09-15T10:46:23.424306 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:46:23.424422 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:23.424449 INFO: Attempting archive.today for https://nycworker.coop/home/
+2025-09-15T10:46:27.827712 INFO: No existing archive found, creating new archive for https://nycworker.coop/home/
+2025-09-15T10:46:28.680774 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:46:28.681283 INFO: Attempting archive.is for https://nycworker.coop/home/
+2025-09-15T10:46:32.548903 INFO: Attempting archive.li for https://nycworker.coop/home/
+2025-09-15T10:46:36.270273 INFO: Attempting archive.fo for https://nycworker.coop/home/
+2025-09-15T10:46:39.690494 INFO: Attempting archive.ph for https://nycworker.coop/home/
+2025-09-15T10:46:42.963093 INFO: Attempting Googlebot spoof for https://nycworker.coop/home/
+2025-09-15T10:46:45.392305 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:45.392410 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:45.392439 INFO: Attempting Enhanced Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:46:45.561182 INFO: Found Wayback snapshot from 20230522054457: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:46:45.696394 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:45.696491 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:45.696518 INFO: Attempting Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:46:45.854469 INFO: Found Wayback snapshot: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:46:46.003666 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:46.003772 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:46.003806 ERROR: All fetch strategies failed or returned low-quality content for https://nycworker.coop/home/. Attempting Google Search fallback...
+2025-09-15T10:46:46.003872 INFO: Google Search fallback: searching for 'home'
+2025-09-15T10:46:46.052981 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:46:46.063195 INFO: Attempting direct fetch for https://nycworker.coop/home/
+2025-09-15T10:46:48.729160 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:48.876523 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:48.876665 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:48.876708 INFO: Attempting Reader Mode strategy for https://nycworker.coop/home/
+2025-09-15T10:46:51.445302 ERROR: Reader mode fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:46:51.448225 INFO: Attempting JS Disabled strategy for https://nycworker.coop/home/
+2025-09-15T10:46:54.376509 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:46:54.376659 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:46:54.376690 INFO: Attempting Refresh Stop strategy for https://nycworker.coop/home/
+2025-09-15T10:46:57.221429 ERROR: Refresh stop fetch failed for https://nycworker.coop/home/: cannot use a string pattern on a bytes-like object
+2025-09-15T10:46:57.224359 INFO: Attempting Inspect Element strategy for https://nycworker.coop/home/
+2025-09-15T10:47:00.220655 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:47:00.220757 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:47:00.220784 INFO: Attempting removepaywalls.com bypass for https://nycworker.coop/home/
+2025-09-15T10:47:04.488690 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:47:04.488813 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:47:04.488842 INFO: Attempting archive.today for https://nycworker.coop/home/
+2025-09-15T10:47:09.059823 INFO: No existing archive found, creating new archive for https://nycworker.coop/home/
+2025-09-15T10:47:09.925956 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:47:09.926631 INFO: Attempting archive.is for https://nycworker.coop/home/
+2025-09-15T10:47:13.291464 INFO: Attempting archive.li for https://nycworker.coop/home/
+2025-09-15T10:47:16.905270 INFO: Attempting archive.fo for https://nycworker.coop/home/
+2025-09-15T10:47:19.442684 INFO: Attempting archive.ph for https://nycworker.coop/home/
+2025-09-15T10:47:22.514313 INFO: Attempting Googlebot spoof for https://nycworker.coop/home/
+2025-09-15T10:47:25.852481 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:47:25.852624 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:47:25.852657 INFO: Attempting Enhanced Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:47:26.088900 INFO: Found Wayback snapshot from 20230522054457: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:47:26.224760 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:47:26.224921 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:47:26.224949 INFO: Attempting Wayback Machine for https://nycworker.coop/home/
+2025-09-15T10:47:26.416065 INFO: Found Wayback snapshot: http://web.archive.org/web/20230522054457/https://nycworker.coop/home/
+2025-09-15T10:47:26.558300 INFO: Content is very short (44 words). Likely a teaser.
+2025-09-15T10:47:26.558420 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:47:26.558454 ERROR: All fetch strategies failed or returned low-quality content for https://nycworker.coop/home/. Attempting Google Search fallback...
+2025-09-15T10:47:26.558519 INFO: Google Search fallback: searching for 'home'
+2025-09-15T10:47:26.590147 INFO: Google Search fallback did not find alternative URL

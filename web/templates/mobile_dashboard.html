@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas - Cognitive AI</title>
+    <style>
+        /* CSS Variables for theming */
+        :root {
+            --bg-primary: #f5f7fa;
+            --bg-secondary: white;
+            --bg-header: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --text-primary: #333;
+            --text-secondary: #718096;
+            --text-muted: #4a5568;
+            --border-color: #e2e8f0;
+            --shadow: 0 2px 10px rgba(0,0,0,0.08);
+            --card-bg: #f8fafc;
+            --nav-bg: white;
+            --nav-border: #e1e8ed;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a202c;
+            --bg-secondary: #2d3748;
+            --bg-header: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            --text-primary: #f7fafc;
+            --text-secondary: #cbd5e0;
+            --text-muted: #a0aec0;
+            --border-color: #4a5568;
+            --shadow: 0 2px 10px rgba(0,0,0,0.3);
+            --card-bg: #374151;
+            --nav-bg: #2d3748;
+            --nav-border: #4a5568;
+        }
+
+        /* Mobile-first responsive design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-header);
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: rotate(180deg);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Search and filters */
+        .search-filters {
+            margin-top: 1rem;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-input::placeholder {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-select {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 0.9rem;
+            min-width: 100px;
+        }
+
+        .filter-select option {
+            background: #667eea;
+            color: white;
+        }
+
+        .search-btn {
+            padding: 0.75rem 1.5rem;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Navigation tabs */
+        .nav-tabs {
+            display: flex;
+            overflow-x: auto;
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--nav-border);
+            -webkit-overflow-scrolling: touch;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .nav-tab {
+            flex: 0 0 auto;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: var(--text-secondary);
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-tab.active,
+        .nav-tab:hover {
+            color: #667eea;
+            border-bottom-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        /* Content sections */
+        .content {
+            padding: 1rem;
+            max-width: 100%;
+        }
+
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-title::before {
+            content: "";
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        /* Cards for content items */
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            transition: all 0.2s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .content-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .content-meta {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .content-snippet {
+            margin-top: 0.75rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Content management buttons */
+        .content-actions {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-description {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-description p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+
+        .actionable-card {
+            border-left: 4px solid #667eea;
+        }
+
+        .content-actions {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 0.4rem 0.8rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .action-btn.primary {
+            background: #48bb78;
+            color: white;
+        }
+
+        .action-btn.secondary {
+            background: #667eea;
+            color: white;
+        }
+
+        .delete-btn {
+            background: #ef4444;
+            color: white;
+        }
+
+        .delete-btn:hover {
+            background: #dc2626;
+        }
+
+        .tag-btn {
+            background: #10b981;
+            color: white;
+        }
+
+        .tag-btn:hover {
+            background: #059669;
+        }
+
+        .archive-btn {
+            background: #6b7280;
+            color: white;
+        }
+
+        .archive-btn:hover {
+            background: #4b5563;
+        }
+
+        /* Content type badges */
+        .content-type-badge {
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .type-article {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .type-podcast {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .type-unknown {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            resize: vertical;
+            min-height: 120px;
+            font-family: inherit;
+        }
+
+        .form-textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Question list */
+        .question-list {
+            list-style: none;
+        }
+
+        .question-item {
+            background: linear-gradient(135deg, #f0f4ff, #e6f3ff);
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #2d3748;
+        }
+
+        /* Tags and sources */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .source-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            background: #f7fafc;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+
+        .source-name {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .source-count {
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* Welcome section */
+        .welcome-section {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .welcome-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-text {
+            color: #718096;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .feature-card:hover {
+            border-color: #667eea;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-name {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-desc {
+            font-size: 0.875rem;
+            color: #718096;
+            line-height: 1.4;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #718096;
+        }
+
+        .empty-state-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .content {
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 2rem;
+            }
+
+            .btn {
+                width: auto;
+                display: inline-block;
+            }
+        }
+
+        /* Loading states */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div style="text-align: center; margin-bottom: 0.5rem;">
+            <a href="/" style="text-decoration: none; color: rgba(255,255,255,0.8); font-size: 0.85rem;">← Atlas Dashboard</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+            <span id="theme-icon">🌙</span>
+        </button>
+        <h1>🧠 Atlas AI</h1>
+        <div class="search-filters">
+            <div class="filter-row">
+                <select class="filter-select" id="dateFilter">
+                    <option value="">All Time</option>
+                    <option value="today" {{ 'selected' if date_filter == 'today' else '' }}>Today</option>
+                    <option value="week" {{ 'selected' if date_filter == 'week' else '' }}>This Week</option>
+                    <option value="month" {{ 'selected' if date_filter == 'month' else '' }}>This Month</option>
+                    <option value="year" {{ 'selected' if date_filter == 'year' else '' }}>This Year</option>
+                </select>
+                <select class="filter-select" id="typeFilter">
+                    <option value="">All Types</option>
+                    <option value="article" {{ 'selected' if type_filter == 'article' else '' }}>Articles</option>
+                    <option value="podcast" {{ 'selected' if type_filter == 'podcast' else '' }}>Podcasts</option>
+                    <option value="email" {{ 'selected' if type_filter == 'email' else '' }}>Emails</option>
+                    <option value="document" {{ 'selected' if type_filter == 'document' else '' }}>Documents</option>
+                </select>
+                <select class="filter-select" id="sourceFilter">
+                    <option value="">All Sources</option>
+                    <option value="web" {{ 'selected' if source_filter == 'web' else '' }}>Web</option>
+                    <option value="mobile" {{ 'selected' if source_filter == 'mobile' else '' }}>Mobile</option>
+                    <option value="import" {{ 'selected' if source_filter == 'import' else '' }}>Import</option>
+                </select>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search your knowledge..." id="searchInput">
+                <button class="search-btn" onclick="performSearch()">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-tabs">
+        <a href="/mobile?feature=home" class="nav-tab {{ 'active' if not feature or feature == 'home' else '' }}">🏠 Home</a>
+        <a href="/mobile?feature=proactive" class="nav-tab {{ 'active' if feature == 'proactive' else '' }}">🔄 Proactive</a>
+        <a href="/mobile?feature=temporal" class="nav-tab {{ 'active' if feature == 'temporal' else '' }}">⏰ Temporal</a>
+        <a href="/mobile?feature=socratic" class="nav-tab {{ 'active' if feature == 'socratic' else '' }}">❓ Socratic</a>
+        <a href="/mobile?feature=recall" class="nav-tab {{ 'active' if feature == 'recall' else '' }}">🧠 Recall</a>
+        <a href="/mobile?feature=patterns" class="nav-tab {{ 'active' if feature == 'patterns' else '' }}">🔍 Patterns</a>
+        <a href="/mobile?feature=browse" class="nav-tab {{ 'active' if feature == 'browse' else '' }}">📚 Browse</a>
+    </nav>
+
+    <main class="content">
+        {% if feature == 'proactive' %}
+        <section class="section">
+            <h2 class="section-title">🔄 Proactive Content Surfacer</h2>
+            <div class="feature-description">
+                <p>Find content you might have forgotten about based on your reading patterns</p>
+            </div>
+            {% if data and data.forgotten and data.forgotten|length > 0 %}
+                {% for item in data.forgotten %}
+                <div class="content-card actionable-card">
+                    <div class="content-title">{{ item.title }}</div>
+                    <div class="content-meta">
+                        <span>📅 Last seen: {{ item.updated_at }}</span>
+                    </div>
+                    <div class="content-actions">
+                        <a href="/content/{{ item.id }}" class="action-btn primary">📖 Read</a>
+                        <button class="action-btn primary" onclick="markAsReviewed('{{ item.title }}')">✅ Reviewed</button>
+                        <button class="action-btn secondary" onclick="snoozeContent('{{ item.title }}', 7)">⏰ Remind in 7 days</button>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <div class="empty-state-icon">🔍</div>
+                    <p>No forgotten content to surface right now. Your knowledge is fresh!</p>
+                </div>
+            {% endif %}
+        </section>
+
+        {% elif feature == 'temporal' %}
+        <section class="section">
+            <h2 class="section-title">⏰ Temporal Relationships</h2>
+            {% if data and data.relationships %}
+                {% for rel in data.relationships %}
+                <div class="content-card">
+                    <div class="content-title">{{ rel.from }} → {{ rel.to }}</div>
+                    <div class="content-meta">
+                        <span>📅 {{ rel.days }} days apart</span>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <div class="empty-state-icon">⏰</div>
+                    <p>No temporal patterns detected yet. Keep adding content!</p>
+                </div>
+            {% endif %}
+        </section>
+
+        {% elif feature == 'socratic' %}
+        <section class="section">
+            <h2 class="section-title">❓ Socratic Question Generator</h2>
+            <form method="post" action="/mobile?feature=socratic">
+                <div class="form-group">
+                    <textarea name="content" class="form-textarea" placeholder="Paste content here to generate thoughtful questions..."></textarea>
+                </div>
+                <button type="submit" class="btn">Generate Questions</button>
+            </form>
+            {% if data and data.questions %}
+            <div style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem; color: #2d3748;">Generated Questions:</h3>
+                <ul class="question-list">
+                {% for q in data.questions %}
+                    <li class="question-item">{{ q }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </section>
+
+        {% elif feature == 'recall' %}
+        <section class="section">
+            <h2 class="section-title">🧠 Active Recall</h2>
+            {% if data and data.due_for_review %}
+                {% for item in data.due_for_review %}
+                <div class="content-card">
+                    <div class="content-title">{{ item.title }}</div>
+                    <div class="content-meta">
+                        <span>📅 Last reviewed: {{ item.last_reviewed }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <div class="empty-state-icon">🧠</div>
+                    <p>No items due for review. Your memory is up to date!</p>
+                </div>
+            {% endif %}
+        </section>
+
+        {% elif feature == 'patterns' %}
+        <section class="section">
+            <h2 class="section-title">🔍 Pattern Detection</h2>
+            <div style="display: grid; gap: 2rem;">
+                {% if data and data.top_tags %}
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: #2d3748;">📊 Content Types</h3>
+                    <div class="tag-cloud">
+                        {% for tag, count in data.top_tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if data and data.top_sources %}
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: #2d3748;">🌐 Top Sources</h3>
+                    {% for source, count in data.top_sources %}
+                    <div class="source-item">
+                        <span class="source-name">{{ source }}</span>
+                        <span class="source-count">{{ count }} items</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if data and data.day_patterns %}
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: #2d3748;">📅 Reading Patterns</h3>
+                    {% for day, count in data.day_patterns %}
+                    <div class="source-item">
+                        <span class="source-name">{{ day }}</span>
+                        <span class="source-count">{{ count }} items</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            
+            {% if not data or (not data.top_tags and not data.top_sources) %}
+            <div class="empty-state">
+                <div class="empty-state-icon">🔍</div>
+                <p>No patterns detected yet. Add more content to see insights!</p>
+            </div>
+            {% endif %}
+        </section>
+
+        {% elif feature == 'browse' %}
+        <section class="section">
+            <h2 class="section-title">📚 Browse Content</h2>
+            {% if recent_content %}
+                {% for item in recent_content %}
+                <div class="content-card" id="content-{{ loop.index0 }}">
+                    <div class="content-title">{{ item.title or 'Untitled' }}</div>
+                    <div class="content-meta">
+                        <span>📅 {{ item.created_at }}</span>
+                        {% set content_type = item.content_type or 'unknown' %}
+                        <span class="content-type-badge type-{{ content_type }}">{{ content_type }}</span>
+                    </div>
+                    {% if item.content %}
+                    <div class="content-snippet">
+                        {{ item.content[:200] }}{% if item.content|length > 200 %}...{% endif %}
+                    </div>
+                    {% endif %}
+                    <div class="content-actions">
+                        <a href="/content/{{ item.id }}" class="action-btn primary">📖 Read</a>
+                        <button class="action-btn delete-btn" onclick="deleteContent({{ item.id if item.id else loop.index0 }})">
+                            🗑️ Delete
+                        </button>
+                        <button class="action-btn tag-btn" onclick="tagContent({{ item.id if item.id else loop.index0 }})">
+                            🏷️ Tag
+                        </button>
+                        <button class="action-btn archive-btn" onclick="archiveContent({{ item.id if item.id else loop.index0 }})">
+                            📦 Archive
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <div class="empty-state-icon">📚</div>
+                    <p>No content to browse yet. Start adding articles and content!</p>
+                </div>
+            {% endif %}
+        </section>
+
+        {% else %}
+        <!-- Home/Welcome section -->
+        <section class="section welcome-section">
+            <h2 class="welcome-title">Welcome to Atlas AI</h2>
+            <p class="welcome-text">
+                Your personal cognitive amplification system. Explore AI-powered insights across your knowledge base.
+            </p>
+            
+            <div class="feature-grid">
+                <a href="/mobile?feature=proactive" class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <div class="feature-name">Proactive Surfacer</div>
+                    <div class="feature-desc">Surfaces forgotten relevant content</div>
+                </a>
+                
+                <a href="/mobile?feature=temporal" class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <div class="feature-name">Temporal Analysis</div>
+                    <div class="feature-desc">Discover patterns over time</div>
+                </a>
+                
+                <a href="/mobile?feature=socratic" class="feature-card">
+                    <div class="feature-icon">❓</div>
+                    <div class="feature-name">Socratic Questions</div>
+                    <div class="feature-desc">Generate thought-provoking questions</div>
+                </a>
+                
+                <a href="/mobile?feature=recall" class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <div class="feature-name">Active Recall</div>
+                    <div class="feature-desc">Spaced repetition for memory</div>
+                </a>
+                
+                <a href="/mobile?feature=patterns" class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <div class="feature-name">Pattern Detection</div>
+                    <div class="feature-desc">Find themes and connections</div>
+                </a>
+                
+                <a href="/mobile?feature=browse" class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <div class="feature-name">Browse Content</div>
+                    <div class="feature-desc">Explore your knowledge base</div>
+                </a>
+            </div>
+        </section>
+        {% endif %}
+    </main>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            const dateFilter = document.getElementById('dateFilter').value;
+            const typeFilter = document.getElementById('typeFilter').value;
+            const sourceFilter = document.getElementById('sourceFilter').value;
+            
+            let url = '/mobile?feature=browse';
+            const params = new URLSearchParams();
+            
+            if (query.trim()) params.append('search', query);
+            if (dateFilter) params.append('date_filter', dateFilter);
+            if (typeFilter) params.append('type_filter', typeFilter);
+            if (sourceFilter) params.append('source_filter', sourceFilter);
+            
+            if (params.toString()) {
+                url += '&' + params.toString();
+            }
+            
+            window.location.href = url;
+        }
+
+        // Allow enter key in search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                // Add loading state
+                const loading = document.createElement('span');
+                loading.className = 'loading';
+                loading.style.marginLeft = '0.5rem';
+                this.appendChild(loading);
+            });
+        });
+
+        // Content management functions
+        async function deleteContent(contentId) {
+            if (!confirm('Are you sure you want to delete this content? This cannot be undone.')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/mobile/content/${contentId}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    // Remove the content card from view
+                    const contentCard = document.getElementById(`content-${contentId}`);
+                    if (contentCard) {
+                        contentCard.style.opacity = '0.5';
+                        contentCard.style.transform = 'translateX(-100%)';
+                        setTimeout(() => contentCard.remove(), 300);
+                    }
+                    showMessage('Content deleted successfully', 'success');
+                } else {
+                    showMessage('Failed to delete content', 'error');
+                }
+            } catch (error) {
+                console.error('Delete error:', error);
+                showMessage('Error deleting content', 'error');
+            }
+        }
+
+        async function tagContent(contentId) {
+            const tags = prompt('Enter tags (comma separated):');
+            if (!tags) return;
+
+            try {
+                const response = await fetch(`/mobile/content/${contentId}/tags`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ tags: tags.split(',').map(t => t.trim()) })
+                });
+
+                if (response.ok) {
+                    showMessage('Tags added successfully', 'success');
+                } else {
+                    showMessage('Failed to add tags', 'error');
+                }
+            } catch (error) {
+                console.error('Tag error:', error);
+                showMessage('Error adding tags', 'error');
+            }
+        }
+
+        async function archiveContent(contentId) {
+            if (!confirm('Archive this content? It will be hidden from normal browsing.')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/mobile/content/${contentId}/archive`, {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    const contentCard = document.getElementById(`content-${contentId}`);
+                    if (contentCard) {
+                        contentCard.style.opacity = '0.5';
+                        contentCard.innerHTML += '<div style="position:absolute;top:1rem;right:1rem;background:#6b7280;color:white;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.75rem;">ARCHIVED</div>';
+                    }
+                    showMessage('Content archived', 'success');
+                } else {
+                    showMessage('Failed to archive content', 'error');
+                }
+            } catch (error) {
+                console.error('Archive error:', error);
+                showMessage('Error archiving content', 'error');
+            }
+        }
+
+        // Cognitive feature functions
+        async function markAsReviewed(title) {
+            try {
+                showMessage('Marked as reviewed! Content will resurface later.', 'success');
+                // In real implementation, would update backend
+                const button = event.target;
+                button.style.opacity = '0.5';
+                button.textContent = '✅ Reviewed';
+                button.disabled = true;
+            } catch (error) {
+                showMessage('Error marking as reviewed', 'error');
+            }
+        }
+
+        async function snoozeContent(title, days) {
+            try {
+                showMessage(`Snoozed for ${days} days`, 'success');
+                // In real implementation, would update backend with snooze date
+                const button = event.target;
+                button.style.opacity = '0.5';
+                button.textContent = `⏰ Snoozed (${days}d)`;
+                button.disabled = true;
+            } catch (error) {
+                showMessage('Error snoozing content', 'error');
+            }
+        }
+
+        function showMessage(text, type) {
+            const message = document.createElement('div');
+            message.textContent = text;
+            message.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                color: white;
+                font-weight: 600;
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+                ${type === 'success' ? 'background: #10b981;' : 'background: #ef4444;'}
+            `;
+            
+            document.body.appendChild(message);
+            setTimeout(() => message.remove(), 3000);
+        }
+
+        // Dark mode functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('atlas-theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('atlas-theme', 'dark');
+            }
+        }
+
+        // Initialize theme on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('atlas-theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Check for system preference if no saved theme
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.body.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+            } else {
+                themeIcon.textContent = '🌙';
+            }
+        });
+    </script>
+
+    <!-- Navigation Links -->
+    <div style="margin: 2rem 1rem; padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <h3 style="margin-bottom: 1rem; color: #333; font-size: 1.2rem;">🧭 Atlas Dashboards</h3>
+        <div style="display: grid; gap: 0.75rem;">
+            <a href="/dashboard" style="display: block; padding: 0.75rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 500;">
+                📊 Analytics Dashboard
+            </a>
+            <a href="/content" style="display: block; padding: 0.75rem; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 500;">
+                📚 Content Browser
+            </a>
+            <a href="/search" style="display: block; padding: 0.75rem; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 500;">
+                🔍 Advanced Search
+            </a>
+            <a href="/ask/html" style="display: block; padding: 0.75rem; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 500;">
+                🧠 AI Cognitive Features
+            </a>
+            <a href="/shortcuts" style="display: block; padding: 0.75rem; background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%); color: #333; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 500;">
+                📱 iOS Shortcuts
+            </a>
+            <a href="/bookmarklet" style="display: block; padding: 0.75rem; background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 500;">
+                🔖 Browser Bookmarklet
+            </a>
+        </div>
+        <div style="margin-top: 1rem; text-align: center; color: #666; font-size: 0.9rem;">
+            All dashboards accessible from atlas.khamel.com
+        </div>
+    </div>
+</body>
+</html>

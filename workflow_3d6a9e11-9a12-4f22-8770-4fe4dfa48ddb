@@ -1,0 +1,106 @@
+2025-09-15T02:55:56.516457 INFO: Attempting direct fetch for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:55:57.587822 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:55:57.753389 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:55:57.753488 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:55:57.753532 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:55:58.354208 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/the-weeknd/)”: cannot use a string pattern on a bytes-like object
+2025-09-15T02:55:58.357380 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:55:59.563128 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T02:55:59.563241 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:55:59.563270 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:55:59.706942 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/the-weeknd/)”: cannot use a string pattern on a bytes-like object
+2025-09-15T02:55:59.708641 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:01.093257 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T02:56:01.093363 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:01.093391 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:04.015437 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:56:04.015538 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:04.015564 INFO: Attempting archive.today for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:07.323267 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:08.215105 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:56:08.215675 INFO: Attempting archive.is for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:10.880249 INFO: Attempting archive.li for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:12.822585 INFO: Attempting archive.fo for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:16.442253 INFO: Attempting archive.ph for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:18.739755 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:19.015431 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:19.015535 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:19.015566 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:35.956687 ERROR: Enhanced Wayback Machine failed for https://www.rollingstone.com/t/the-weeknd/)”: No archived snapshots found in any timeframe
+2025-09-15T02:56:35.958499 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:36.160788 ERROR: Wayback Machine failed for https://www.rollingstone.com/t/the-weeknd/)”: No archived snapshots found
+2025-09-15T02:56:36.163421 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/the-weeknd/)”. Attempting Google Search fallback...
+2025-09-15T02:56:36.163989 INFO: Google Search fallback: searching for ')”'
+2025-09-15T02:56:36.216408 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:56:36.228285 INFO: Attempting direct fetch for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:36.610671 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:36.774150 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:36.774250 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:36.774292 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:36.968354 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/the-weeknd/)”: cannot use a string pattern on a bytes-like object
+2025-09-15T02:56:36.970350 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:37.193798 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T02:56:37.193946 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:37.193974 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:37.335980 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/the-weeknd/)”: cannot use a string pattern on a bytes-like object
+2025-09-15T02:56:37.337333 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:37.975431 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T02:56:37.975532 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:37.975562 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:41.933990 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:56:41.934082 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:41.934110 INFO: Attempting archive.today for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:45.134581 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:46.035059 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:56:46.035786 INFO: Attempting archive.is for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:50.208310 INFO: Attempting archive.li for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:52.586020 INFO: Attempting archive.fo for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:54.743405 INFO: Attempting archive.ph for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:56.974536 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:57.299350 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:57.299474 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:57.299500 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:58.697099 ERROR: Enhanced Wayback Machine failed for https://www.rollingstone.com/t/the-weeknd/)”: No archived snapshots found in any timeframe
+2025-09-15T02:56:58.698939 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:58.814663 ERROR: Wayback Machine failed for https://www.rollingstone.com/t/the-weeknd/)”: No archived snapshots found
+2025-09-15T02:56:58.818378 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/the-weeknd/)”. Attempting Google Search fallback...
+2025-09-15T02:56:58.819079 INFO: Google Search fallback: searching for ')”'
+2025-09-15T02:56:58.893905 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:56:58.903946 INFO: Attempting direct fetch for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:59.137372 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:59.290571 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:59.290691 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:59.299073 INFO: Attempting direct fetch for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:59.518909 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:59.675004 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:56:59.675116 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:56:59.675158 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:56:59.872471 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/the-weeknd/)”: cannot use a string pattern on a bytes-like object
+2025-09-15T02:56:59.874115 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:00.097579 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T02:57:00.097706 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:57:00.097733 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:00.251425 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/the-weeknd/)”: cannot use a string pattern on a bytes-like object
+2025-09-15T02:57:00.252873 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:00.796404 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T02:57:00.796514 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:57:00.796543 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:03.848832 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:57:03.848945 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:57:03.848971 INFO: Attempting archive.today for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:06.750910 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:07.615001 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:57:07.615519 INFO: Attempting archive.is for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:11.055115 INFO: Attempting archive.li for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:14.482768 INFO: Attempting archive.fo for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:18.283360 INFO: Attempting archive.ph for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:20.495574 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:20.818209 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:57:20.818328 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:57:20.818362 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:22.153010 ERROR: Enhanced Wayback Machine failed for https://www.rollingstone.com/t/the-weeknd/)”: No archived snapshots found in any timeframe
+2025-09-15T02:57:22.154879 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/the-weeknd/)”
+2025-09-15T02:57:22.260057 ERROR: Wayback Machine failed for https://www.rollingstone.com/t/the-weeknd/)”: No archived snapshots found
+2025-09-15T02:57:22.261804 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/the-weeknd/)”. Attempting Google Search fallback...
+2025-09-15T02:57:22.262333 INFO: Google Search fallback: searching for ')”'
+2025-09-15T02:57:22.294441 INFO: Google Search fallback did not find alternative URL

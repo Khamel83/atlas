@@ -1,0 +1,172 @@
+# Ignore data and output directories
+/data/
+/output/
+/logs/
+/test_logs/
+
+# Test and coverage reports
+htmlcov/
+.coverage
+coverage.xml
+.pytest_cache/
+.tox/
+# Ignore any collateral, parsed, raw, transcripts, and videos
+**/collateral/
+**/parsed/
+**/raw/
+**/transcripts/
+**/videos/
+# Ignore mp3, md, json, txt files in output and data
+output/**/*.mp3
+output/**/*.md
+output/**/*.json
+output/**/*.txt
+data/**/*.mp3
+data/**/*.md
+data/**/*.json
+data/**/*.txt
+# Ignore retries and other runtime artifacts
+retries.json
+retries/
+evaluation/
+test_output/
+# Development artifacts
+memray-logs/
+development/archives/
+*.tmp
+*.temp
+meilisearch
+atlas_test_report_*.json
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+env/
+ENV/
+.git/hooks/
+.env
+!.env.template
+.env
+!.env.template
+
+# Secrets - NEVER commit these
+.env.local
+.env.production
+secrets/
+*secret*
+*password*
+*credential*
+*api_key*
+*sk-or-*
+*fc-*
+
+# Input files and processed content - NEVER COMMIT THESE
+inputs/processed_html/
+inputs/*.html
+inputs/*.txt
+inputs/*.csv
+
+# Processed HTML files - NEVER COMMIT
+**/processed_html/**/*.html
+*.tar.gz
+*.backup
+logs/*.log*
+
+# Database files - too large for GitHub
+*.db
+atlas.db
+database/
+backups/*.db
+backups/atlas_*.db
+backups/search_*.db
+backups/*.bak
+atlas_backup_*.db
+atlas.db
+.env
+uvicorn.log
+reprocess_*.log
+*.log
+
+# CRITICAL: Never commit API keys
+*.env
+.env.*
+**/sk-or-v1-*
+**/*api*key*
+**/*secret*
+**/*token*
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh
+
+# OOS (Open Operating System) - copied from OOS repo
+modules/
+compositions/
+bin/oos-*.sh
+bin/dev-gate.sh
+bin/claude-*.sh

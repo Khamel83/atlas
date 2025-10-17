@@ -1,0 +1,90 @@
+2025-09-15T12:01:18.165010 INFO: Attempting direct fetch for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.196622 ERROR: Direct fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.196813 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.877769 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:18.879831 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.910495 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.910712 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.940069 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:18.940247 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.969451 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:18.969665 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:23.248966 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:01:23.249066 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:01:23.249096 INFO: Attempting archive.today for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:27.072332 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:27.980048 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:01:27.980996 INFO: Attempting archive.is for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:30.465382 INFO: Attempting archive.li for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:33.410366 INFO: Attempting archive.fo for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:36.242918 INFO: Attempting archive.ph for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:38.464883 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:38.520489 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:38.520746 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:44.452864 INFO: Found Wayback snapshot from 20240625102345: http://web.archive.org/web/20240625102345/https://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all
+2025-09-15T12:01:47.286312 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T12:01:47.286438 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:01:47.286464 INFO: Attempting Wayback Machine for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:47.607745 ERROR: Wayback Machine failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: No archived snapshots found
+2025-09-15T12:01:47.610338 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0. Attempting Google Search fallback...
+2025-09-15T12:01:47.610450 INFO: Google Search fallback: searching for 'at google a place to work and play.html'
+2025-09-15T12:01:47.643063 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:01:47.650612 INFO: Attempting direct fetch for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:47.681733 ERROR: Direct fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:47.681909 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:48.272655 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:48.275289 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:48.307560 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:48.307811 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:48.336318 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:48.336496 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:48.364692 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:48.364877 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:50.709780 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:01:50.709890 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:01:50.709919 INFO: Attempting archive.today for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:50.717626 INFO: Attempting direct fetch for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:50.746297 ERROR: Direct fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:50.746484 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:51.202996 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:51.205469 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:51.237207 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:51.237402 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:51.267265 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:51.267436 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:51.298469 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:51.298689 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:54.409908 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:01:54.410010 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:01:54.410038 INFO: Attempting archive.today for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:57.409957 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:01:58.280524 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:01:58.282335 INFO: Attempting archive.is for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:01.635268 INFO: Attempting archive.li for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:03.722977 INFO: Attempting archive.fo for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:05.899760 INFO: Attempting archive.ph for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:08.478647 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:08.518762 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:08.518973 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:09.571938 INFO: Found Wayback snapshot from 20240625102345: http://web.archive.org/web/20240625102345/https://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all
+2025-09-15T12:02:09.682824 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T12:02:09.682948 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:02:09.682974 INFO: Attempting Wayback Machine for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.025318 ERROR: Wayback Machine failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: No archived snapshots found
+2025-09-15T12:02:11.027897 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0. Attempting Google Search fallback...
+2025-09-15T12:02:11.028019 INFO: Google Search fallback: searching for 'at google a place to work and play.html'
+2025-09-15T12:02:11.061150 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:02:11.069012 INFO: Attempting direct fetch for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.097076 ERROR: Direct fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.097278 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.342492 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:02:11.344156 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.377911 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.378102 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.408405 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-15T12:02:11.408576 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.441430 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:11.442682 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0
+2025-09-15T12:02:15.303104 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:02:15.303218 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:02:15.303250 INFO: Attempting archive.today for http://www.nytimes.com/2013/03/16/business/at-google-a-place-to-work-and-play.html?pagewanted=all&_r=0

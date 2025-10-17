@@ -1,0 +1,60 @@
+2025-09-15T10:38:10.311805 INFO: Attempting direct fetch for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.497459 ERROR: Direct fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.498655 INFO: Attempting Reader Mode strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.606496 ERROR: Reader mode fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.607761 INFO: Attempting JS Disabled strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.709975 ERROR: JS disabled fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.711185 INFO: Attempting Refresh Stop strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:10.802473 ERROR: Refresh stop fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: cannot use a string pattern on a bytes-like object
+2025-09-15T10:38:10.803650 INFO: Attempting Inspect Element strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:11.020311 ERROR: Inspect element fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:11.021562 INFO: Attempting removepaywalls.com bypass for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:14.313284 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:38:14.313411 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:38:14.313468 INFO: Attempting archive.today for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:16.947121 INFO: No existing archive found, creating new archive for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:17.810343 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:38:17.812938 INFO: Attempting archive.is for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:20.557582 INFO: Attempting archive.li for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:23.120739 INFO: Attempting archive.fo for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:26.255010 INFO: Attempting archive.ph for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:29.347040 INFO: Attempting Googlebot spoof for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:29.731720 ERROR: Googlebot spoof failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:29.733216 INFO: Attempting Enhanced Wayback Machine for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:30.082145 INFO: Found Wayback snapshot from 20250618225055: http://web.archive.org/web/20250618225055/https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:32.601839 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T10:38:32.601957 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:38:32.601982 INFO: Attempting Wayback Machine for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:32.755959 INFO: Found Wayback snapshot: http://web.archive.org/web/20250618225055/https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.259446 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T10:38:33.259578 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:38:33.259641 ERROR: All fetch strategies failed or returned low-quality content for https://journals.sagepub.com/doi/10.1177/00220345870660060101. Attempting Google Search fallback...
+2025-09-15T10:38:33.259711 INFO: Google Search fallback: searching for '10.1177'
+2025-09-15T10:38:33.290992 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:38:33.298311 INFO: Attempting direct fetch for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.397766 ERROR: Direct fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.398922 INFO: Attempting Reader Mode strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.488684 ERROR: Reader mode fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.489784 INFO: Attempting JS Disabled strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.800557 ERROR: JS disabled fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.801748 INFO: Attempting Refresh Stop strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.897628 ERROR: Refresh stop fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: cannot use a string pattern on a bytes-like object
+2025-09-15T10:38:33.898755 INFO: Attempting Inspect Element strategy for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.986991 ERROR: Inspect element fetch failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:33.988200 INFO: Attempting removepaywalls.com bypass for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:38.327733 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:38:38.327851 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:38:38.327877 INFO: Attempting archive.today for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:40.178249 INFO: No existing archive found, creating new archive for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:41.058359 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:38:41.058775 INFO: Attempting archive.is for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:44.036342 INFO: Attempting archive.li for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:47.214967 INFO: Attempting archive.fo for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:49.917988 INFO: Attempting archive.ph for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:53.358463 INFO: Attempting Googlebot spoof for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:53.463628 ERROR: Googlebot spoof failed for https://journals.sagepub.com/doi/10.1177/00220345870660060101: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:53.465055 INFO: Attempting Enhanced Wayback Machine for https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:53.623425 INFO: Found Wayback snapshot from 20250618225055: http://web.archive.org/web/20250618225055/https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:53.623650 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T10:38:54.786566 INFO: Found Wayback snapshot from 20240410040914: http://web.archive.org/web/20240410040914/https://journals.sagepub.com/doi/10.1177/00220345870660060101
+2025-09-15T10:38:56.656992 INFO: Successfully fetched https://journals.sagepub.com/doi/10.1177/00220345870660060101 using wayback_machine_enhanced

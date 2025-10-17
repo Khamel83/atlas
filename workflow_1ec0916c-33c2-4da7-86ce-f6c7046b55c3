@@ -1,0 +1,25 @@
+2025-09-15T14:49:55.090635 INFO: Attempting direct fetch for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:55.172730 ERROR: Direct fetch failed for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:55.172950 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:55.977743 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:49:55.980187 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:55.980774 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all: [Errno 32] Broken pipe
+2025-09-15T14:49:55.980939 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:56.010733 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:49:56.010931 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:56.040388 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:56.040575 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:49:59.955535 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:49:59.955659 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:49:59.955691 INFO: Attempting archive.today for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:02.600343 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:03.512613 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:50:03.513514 INFO: Attempting archive.is for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:07.114927 INFO: Attempting archive.li for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:09.783296 INFO: Attempting archive.fo for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:12.011743 INFO: Attempting archive.ph for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:15.334053 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:15.378905 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:15.379121 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:21.478192 INFO: Found Wayback snapshot from 20140712235836: http://web.archive.org/web/20140712235836/http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all
+2025-09-15T14:50:22.997185 INFO: Successfully fetched http://www.nytimes.com/2013/08/25/realestate/how-fights-over-fixtures-can-derail-a-closing.html?pagewanted=all using wayback_machine_enhanced

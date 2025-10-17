@@ -1,0 +1,6 @@
+2025-09-14T22:13:44.194998 INFO: Attempting direct fetch for http://www.washingtonpost.com/sf/investigative/2013/09/09/suspicious-bidding/
+2025-09-14T22:14:14.275731 ERROR: Direct fetch failed for http://www.washingtonpost.com/sf/investigative/2013/09/09/suspicious-bidding/: HTTPConnectionPool(host='www.washingtonpost.com', port=80): Read timed out. (read timeout=30)
+2025-09-14T22:14:14.275850 INFO: Attempting Reader Mode strategy for http://www.washingtonpost.com/sf/investigative/2013/09/09/suspicious-bidding/
+2025-09-14T22:14:34.321710 ERROR: Reader mode fetch failed for http://www.washingtonpost.com/sf/investigative/2013/09/09/suspicious-bidding/: HTTPConnectionPool(host='www.washingtonpost.com', port=80): Read timed out. (read timeout=20)
+2025-09-14T22:14:34.321835 INFO: Attempting JS Disabled strategy for http://www.washingtonpost.com/sf/investigative/2013/09/09/suspicious-bidding/
+2025-09-14T22:14:34.554355 INFO: Successfully fetched http://www.washingtonpost.com/sf/investigative/2013/09/09/suspicious-bidding/ using js_disabled

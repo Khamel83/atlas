@@ -1,0 +1,142 @@
+2025-09-15T02:15:06.017695 INFO: Attempting direct fetch for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:06.736148 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:06.813494 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:06.813634 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:06.813679 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:06.908870 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:15:06.911220 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:07.058129 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:07.058236 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:07.058265 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:07.215870 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:15:07.218263 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:07.412236 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:07.412345 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:07.412373 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:11.847725 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:15:11.847839 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:11.847866 INFO: Attempting archive.today for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:16.212831 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:17.089763 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:15:17.090213 INFO: Attempting archive.is for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:20.752698 INFO: Attempting archive.li for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:24.272206 INFO: Attempting archive.fo for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:27.696887 INFO: Attempting archive.ph for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:30.523376 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:30.704440 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/roge-karma/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:30.707265 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:31.123552 INFO: Found Wayback snapshot from 20250912213927: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.008222 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:32.008342 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:32.008368 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.115785 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.252243 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:32.252370 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:32.252403 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/roge-karma/. Attempting Google Search fallback...
+2025-09-15T02:15:32.252484 INFO: Google Search fallback: searching for 'roge karma'
+2025-09-15T02:15:32.285916 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:15:32.294381 INFO: Attempting direct fetch for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.451744 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:32.534180 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:32.534300 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:32.534340 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.621029 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:15:32.624740 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.780313 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:32.780409 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:32.780435 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:32.892384 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:15:32.894638 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:33.092327 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:33.092419 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:33.092446 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:37.182229 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:15:37.182341 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:37.182365 INFO: Attempting archive.today for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:41.588289 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:42.474084 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:15:42.474526 INFO: Attempting archive.is for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:45.268612 INFO: Attempting archive.li for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:48.498604 INFO: Attempting archive.fo for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:52.331744 INFO: Attempting archive.ph for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:55.733143 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:55.870148 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/roge-karma/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:55.871747 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.008946 INFO: Found Wayback snapshot from 20250912213927: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.134828 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:56.134947 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:56.134973 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.270221 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.402565 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:56.402696 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:56.409952 INFO: Attempting direct fetch for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.560206 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:56.630905 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:56.631018 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:56.631058 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.728550 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:15:56.731014 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.871942 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:56.872050 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:56.872077 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:56.981554 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:15:56.983994 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:15:57.178155 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:15:57.178255 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:15:57.178282 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:00.851972 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:16:00.852089 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:00.852115 INFO: Attempting archive.today for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:05.171876 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:06.046804 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:16:06.047261 INFO: Attempting archive.is for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:08.974804 INFO: Attempting archive.li for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:10.999425 INFO: Attempting archive.fo for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:13.953768 INFO: Attempting archive.ph for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:16.941213 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.081541 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/roge-karma/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.083252 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.200318 INFO: Found Wayback snapshot from 20250912213927: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.337013 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:17.337119 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:17.337145 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.455088 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.582023 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:17.582137 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:17.582170 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/roge-karma/. Attempting Google Search fallback...
+2025-09-15T02:16:17.582252 INFO: Google Search fallback: searching for 'roge karma'
+2025-09-15T02:16:17.613384 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:16:17.621810 INFO: Attempting direct fetch for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:17.781644 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:17.923088 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:17.923263 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:17.923306 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:18.022923 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:16:18.025374 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:18.156265 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:18.156370 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:18.156396 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:18.258122 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/roge-karma/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:16:18.260213 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:18.445714 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:18.445805 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:18.445831 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:21.162188 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:16:21.162316 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:21.162342 INFO: Attempting archive.today for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:23.986160 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:24.887134 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:16:24.887643 INFO: Attempting archive.is for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:28.617333 INFO: Attempting archive.li for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:30.541294 INFO: Attempting archive.fo for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:33.538999 INFO: Attempting archive.ph for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:35.882638 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:36.142564 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/roge-karma/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:36.144241 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:36.266136 INFO: Found Wayback snapshot from 20250912213927: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:36.399036 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:36.399147 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:16:36.399213 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:36.505525 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912213927/https://www.theatlantic.com/author/roge-karma/
+2025-09-15T02:16:36.645104 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T02:16:36.645244 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...

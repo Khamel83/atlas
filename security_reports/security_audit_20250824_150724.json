@@ -1,0 +1,186 @@
+{
+  "timestamp": "2025-08-24T15:07:16.357945",
+  "vulnerabilities": [],
+  "warnings": [],
+  "recommendations": [
+    {
+      "category": "File Permissions",
+      "recommendation": "Set restrictive permissions on .env files (chmod 600)",
+      "priority": "HIGH"
+    },
+    {
+      "category": "Database Security",
+      "recommendation": "Enable database encryption (SQLCipher or PostgreSQL TDE)",
+      "priority": "MEDIUM"
+    },
+    {
+      "category": "API Security",
+      "recommendation": "Implement authentication for sensitive endpoints",
+      "priority": "HIGH"
+    },
+    {
+      "category": "Network Security",
+      "recommendation": "Use reverse proxy (nginx) instead of direct API exposure",
+      "priority": "MEDIUM"
+    },
+    {
+      "category": "Monitoring",
+      "recommendation": "Enable security event logging and monitoring",
+      "priority": "MEDIUM"
+    },
+    {
+      "category": "Updates",
+      "recommendation": "Implement automated security updates",
+      "priority": "HIGH"
+    },
+    {
+      "category": "Backup Security",
+      "recommendation": "Encrypt backups and store securely",
+      "priority": "MEDIUM"
+    },
+    {
+      "category": "SSL/TLS",
+      "recommendation": "Enforce HTTPS with strong cipher suites",
+      "priority": "HIGH"
+    }
+  ],
+  "compliance_checks": {
+    "OWASP_Top_10": {
+      "A01_Broken_Access_Control": "FAIL",
+      "A02_Cryptographic_Failures": "FAIL",
+      "A03_Injection": "PARTIAL",
+      "A04_Insecure_Design": "PARTIAL",
+      "A05_Security_Misconfiguration": "FAIL",
+      "A06_Vulnerable_Components": "UNKNOWN",
+      "A07_Authentication_Failures": "PARTIAL",
+      "A08_Software_Integrity_Failures": "PARTIAL",
+      "A09_Logging_Failures": "PARTIAL",
+      "A10_SSRF": "PARTIAL"
+    },
+    "Data_Protection": {
+      "Encryption_at_Rest": "PARTIAL",
+      "Encryption_in_Transit": "PARTIAL",
+      "Access_Controls": "PARTIAL",
+      "Data_Minimization": "PASS",
+      "Audit_Logging": "PARTIAL"
+    }
+  },
+  "file_permissions": {
+    ".env": {
+      "permissions": "664",
+      "mode": "-rw-rw-r--",
+      "owner": 1001,
+      "group": 1001
+    },
+    ".env.production": {
+      "permissions": "664",
+      "mode": "-rw-rw-r--",
+      "owner": 1001,
+      "group": 1001
+    },
+    ".env.development": {
+      "permissions": "664",
+      "mode": "-rw-rw-r--",
+      "owner": 1001,
+      "group": 1001
+    },
+    "atlas.db": {
+      "permissions": "664",
+      "mode": "-rw-rw-r--",
+      "owner": 1001,
+      "group": 1001
+    },
+    "config/": {
+      "permissions": "775",
+      "mode": "drwxrwxr-x",
+      "owner": 1001,
+      "group": 1001
+    },
+    "scripts/": {
+      "permissions": "775",
+      "mode": "drwxrwxr-x",
+      "owner": 1001,
+      "group": 1001
+    },
+    "helpers/": {
+      "permissions": "775",
+      "mode": "drwxrwxr-x",
+      "owner": 1001,
+      "group": 1001
+    },
+    "api/": {
+      "permissions": "775",
+      "mode": "drwxrwxr-x",
+      "owner": 1001,
+      "group": 1001
+    },
+    "requirements.txt": {
+      "permissions": "664",
+      "mode": "-rw-rw-r--",
+      "owner": 1001,
+      "group": 1001
+    }
+  },
+  "configuration_issues": [
+    {
+      "file": ".env",
+      "issue": "Missing SECRET_KEY configuration",
+      "severity": "HIGH"
+    },
+    {
+      "file": ".env.production",
+      "issue": "Missing SECRET_KEY configuration",
+      "severity": "HIGH"
+    },
+    {
+      "file": ".env.development",
+      "issue": "Missing SECRET_KEY configuration",
+      "severity": "HIGH"
+    }
+  ],
+  "network_security": {
+    "open_ports": [
+      "8000 (Atlas API)",
+      "5432 (PostgreSQL)",
+      "6379 (Redis)",
+      "6379 (Redis)"
+    ]
+  },
+  "database_security": {
+    "issues": [
+      {
+        "issue": "SQLite database not encrypted",
+        "severity": "MEDIUM",
+        "recommendation": "Consider using SQLCipher for encryption"
+      }
+    ],
+    "info": {
+      "tables": 5,
+      "encrypted": false
+    }
+  },
+  "api_security": {
+    "issues": [
+      {
+        "file": "api/main.py",
+        "issue": "CORS allows all origins (*)",
+        "severity": "HIGH",
+        "recommendation": "Restrict CORS to specific domains"
+      },
+      {
+        "file": "api/main.py",
+        "issue": "API endpoints without authentication dependencies",
+        "severity": "MEDIUM",
+        "recommendation": "Add authentication to sensitive endpoints"
+      },
+      {
+        "file": "api/main.py",
+        "issue": "Limited input validation detected",
+        "severity": "MEDIUM",
+        "recommendation": "Add comprehensive input validation"
+      }
+    ]
+  },
+  "security_score": 5,
+  "security_grade": "F"
+}

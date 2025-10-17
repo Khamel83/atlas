@@ -1,0 +1,25 @@
+2025-09-15T09:34:13.350797 INFO: Attempting direct fetch for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:13.436507 ERROR: Direct fetch failed for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:13.436721 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:14.040437 ERROR: Reader mode fetch failed for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html: cannot use a string pattern on a bytes-like object
+2025-09-15T09:34:14.042078 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:14.104668 ERROR: JS disabled fetch failed for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:14.104875 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:14.164553 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html: cannot use a string pattern on a bytes-like object
+2025-09-15T09:34:14.164766 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:14.222340 ERROR: Inspect element fetch failed for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:14.222526 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:16.779012 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:34:16.779127 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:34:16.779156 INFO: Attempting archive.today for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:21.415274 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:22.286923 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:34:22.287367 INFO: Attempting archive.is for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:25.780641 INFO: Attempting archive.li for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:28.928967 INFO: Attempting archive.fo for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:31.287769 INFO: Attempting archive.ph for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:33.828896 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:33.906171 ERROR: Googlebot spoof failed for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:33.906360 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:34.740905 INFO: Found Wayback snapshot from 20250814220938: http://web.archive.org/web/20250814220938/https://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html
+2025-09-15T09:34:35.984027 INFO: Successfully fetched http://www.nytimes.com/2015/03/31/upshot/red-meat-is-not-the-enemy.html using wayback_machine_enhanced

@@ -1,0 +1,152 @@
+2025-09-14T21:28:47.451208 INFO: Attempting direct fetch for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:47.984250 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:28:47.991718 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:28:47.991829 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:28:47.991864 INFO: Attempting Reader Mode strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:48.679877 ERROR: Reader mode fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:28:48.682311 INFO: Attempting JS Disabled strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:49.207489 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:28:49.207685 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:28:49.207717 INFO: Attempting Refresh Stop strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:49.726680 ERROR: Refresh stop fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:28:49.731091 INFO: Attempting Inspect Element strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:50.263190 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:28:50.263302 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:28:50.263327 INFO: Attempting removepaywalls.com bypass for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:54.452572 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:28:54.452691 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:28:54.452721 INFO: Attempting archive.today for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:59.078844 INFO: No existing archive found, creating new archive for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:28:59.972011 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:28:59.972476 INFO: Attempting archive.is for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:02.211338 INFO: Attempting archive.li for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:05.827488 INFO: Attempting archive.fo for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:08.294239 INFO: Attempting archive.ph for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:12.067219 INFO: Attempting Googlebot spoof for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:13.280172 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T21:29:13.280300 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:13.280327 INFO: Attempting Enhanced Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:13.635256 INFO: Found Wayback snapshot from 20160901021341: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:29:14.334413 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:29:14.334526 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:14.334568 INFO: Attempting Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:14.459880 INFO: Found Wayback snapshot: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:29:14.603504 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:29:14.603624 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:14.603664 ERROR: All fetch strategies failed or returned low-quality content for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO. Attempting Google Search fallback...
+2025-09-14T21:29:14.603731 INFO: Google Search fallback: searching for '93a47a62 daf0 11e1 8074 00144feab49a.html'
+2025-09-14T21:29:14.653886 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:29:14.666094 INFO: Attempting direct fetch for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:15.364256 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:15.373062 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:15.373156 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:15.373188 INFO: Attempting Reader Mode strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:16.014555 ERROR: Reader mode fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:29:16.017002 INFO: Attempting JS Disabled strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:16.507810 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:16.507915 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:16.507940 INFO: Attempting Refresh Stop strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:16.991864 ERROR: Refresh stop fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:29:16.993783 INFO: Attempting Inspect Element strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:17.529209 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:17.529305 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:17.529330 INFO: Attempting removepaywalls.com bypass for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:21.014508 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:29:21.014642 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:21.014672 INFO: Attempting archive.today for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:24.212139 INFO: No existing archive found, creating new archive for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:25.089237 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:29:25.089767 INFO: Attempting archive.is for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:28.665246 INFO: Attempting archive.li for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:32.135064 INFO: Attempting archive.fo for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:34.360347 INFO: Attempting archive.ph for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:37.979490 INFO: Attempting Googlebot spoof for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:38.662403 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T21:29:38.662517 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:38.662544 INFO: Attempting Enhanced Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:38.805012 INFO: Found Wayback snapshot from 20160901021341: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:29:38.965029 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:29:38.965127 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:38.965155 INFO: Attempting Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:39.106550 INFO: Found Wayback snapshot: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:29:39.285978 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:29:39.286084 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:39.286121 ERROR: All fetch strategies failed or returned low-quality content for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO. Attempting Google Search fallback...
+2025-09-14T21:29:39.286186 INFO: Google Search fallback: searching for '93a47a62 daf0 11e1 8074 00144feab49a.html'
+2025-09-14T21:29:39.347185 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:29:39.359397 INFO: Attempting direct fetch for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:39.841146 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:39.846533 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:39.846645 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:39.846681 INFO: Attempting Reader Mode strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:40.484696 ERROR: Reader mode fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:29:40.486960 INFO: Attempting JS Disabled strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:40.995709 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:40.995812 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:40.995837 INFO: Attempting Refresh Stop strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:41.507534 ERROR: Refresh stop fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:29:41.509390 INFO: Attempting Inspect Element strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:42.049219 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:29:42.049325 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:42.049352 INFO: Attempting removepaywalls.com bypass for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:44.576883 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:29:44.576994 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:29:44.577034 INFO: Attempting archive.today for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:48.635547 INFO: No existing archive found, creating new archive for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:49.512841 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:29:49.513294 INFO: Attempting archive.is for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:52.871053 INFO: Attempting archive.li for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:55.338136 INFO: Attempting archive.fo for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:29:57.727837 INFO: Attempting archive.ph for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:00.867045 INFO: Attempting Googlebot spoof for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:01.801558 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T21:30:01.801706 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:01.801737 INFO: Attempting Enhanced Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:01.929079 INFO: Found Wayback snapshot from 20160901021341: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:30:02.080999 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:30:02.081110 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:02.081140 INFO: Attempting Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:02.198740 INFO: Found Wayback snapshot: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:30:02.349990 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:30:02.350110 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:02.350146 ERROR: All fetch strategies failed or returned low-quality content for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO. Attempting Google Search fallback...
+2025-09-14T21:30:02.350210 INFO: Google Search fallback: searching for '93a47a62 daf0 11e1 8074 00144feab49a.html'
+2025-09-14T21:30:02.382324 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:30:02.396238 INFO: Attempting direct fetch for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:02.880000 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:30:02.885343 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:30:02.885430 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:02.885463 INFO: Attempting Reader Mode strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:03.542151 ERROR: Reader mode fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:30:03.544641 INFO: Attempting JS Disabled strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:04.066838 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:30:04.066933 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:04.066960 INFO: Attempting Refresh Stop strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:04.587673 ERROR: Refresh stop fetch failed for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO: cannot use a string pattern on a bytes-like object
+2025-09-14T21:30:04.591315 INFO: Attempting Inspect Element strategy for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:05.103762 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:30:05.103876 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:05.103902 INFO: Attempting removepaywalls.com bypass for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:08.792075 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:30:08.792184 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:08.792210 INFO: Attempting archive.today for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:13.506800 INFO: No existing archive found, creating new archive for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:14.406236 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:30:14.406646 INFO: Attempting archive.is for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:18.104749 INFO: Attempting archive.li for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:21.513309 INFO: Attempting archive.fo for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:25.301368 INFO: Attempting archive.ph for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:28.248727 INFO: Attempting Googlebot spoof for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:29.194970 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T21:30:29.195094 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:29.195122 INFO: Attempting Enhanced Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:29.308257 INFO: Found Wayback snapshot from 20160901021341: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:30:29.450235 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:30:29.450357 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:29.450386 INFO: Attempting Wayback Machine for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO
+2025-09-14T21:30:29.683976 INFO: Found Wayback snapshot: http://web.archive.org/web/20160901021341/http://www.ft.com:80/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html
+2025-09-14T21:30:29.818668 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-14T21:30:29.818820 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:30:29.818858 ERROR: All fetch strategies failed or returned low-quality content for http://www.ft.com/cms/s/2/93a47a62-daf0-11e1-8074-00144feab49a.html#axzz24EbMGxQO. Attempting Google Search fallback...
+2025-09-14T21:30:29.818922 INFO: Google Search fallback: searching for '93a47a62 daf0 11e1 8074 00144feab49a.html'
+2025-09-14T21:30:29.873884 INFO: Google Search fallback did not find alternative URL

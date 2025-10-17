@@ -1,0 +1,90 @@
+{
+  "timestamp": 1756330190.7834964,
+  "elapsed_seconds": 3.3931143283843994,
+  "overall_score": 93.75,
+  "component_scores": {
+    "database": 25.0,
+    "content": 25,
+    "api": 18.75,
+    "filesystem": 25.0
+  },
+  "detailed_results": {
+    "databases": {
+      "main": {
+        "status": "available",
+        "tables": 12
+      },
+      "search": {
+        "status": "available",
+        "tables": 6
+      },
+      "processed": {
+        "status": "available",
+        "tables": 2
+      }
+    },
+    "content": {
+      "total_items": 117915,
+      "content_types": 4,
+      "top_types": {
+        "article": 104227,
+        "email": 12969,
+        "podcast": 716,
+        "podcast_transcript": 3
+      }
+    },
+    "api_endpoints": {
+      "/api/v1/health": {
+        "status": "responding",
+        "code": 200
+      },
+      "/api/v1/content/": {
+        "status": "error",
+        "code": 500
+      },
+      "/api/v1/search/": {
+        "status": "responding",
+        "code": 422
+      },
+      "/api/v1/dashboard/": {
+        "status": "responding",
+        "code": 200
+      }
+    },
+    "processes": {
+      "process_count": 5,
+      "processes": [
+        "ubuntu    306310  0.0  0.2  45764 35248 ?        S    Aug26   0:04 /home/ubuntu/dev/atlas/venv/bin/python3 /home/ubuntu/dev/atlas/atlas_service_manager.py start --daemon",
+        "ubuntu    468592  0.0  0.1  21644 13264 ?        S    12:12   0:06 atlas_venv/bin/python3 scripts/atlas_scheduler.py --start",
+        "ubuntu    478377  0.0  0.0   7584  2200 ?        S    14:23   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756305237044-k3xlw7.sh && eval 'source atlas_venv/bin/activate && python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --log-level info &' \\< /dev/null && pwd -P >| /tmp/claude-54ce-cwd",
+        "ubuntu    478379  0.9  1.4 363416 177756 ?       Sl   14:23   0:03 python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --log-level info",
+        "ubuntu    479163  0.0  0.0   7584  3224 ?        Ss   14:29   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756305237044-k3xlw7.sh && eval 'source atlas_venv/bin/activate && python quick_validation_test.py' \\< /dev/null && pwd -P >| /tmp/claude-4322-cwd"
+      ]
+    },
+    "filesystem": {
+      "data/": {
+        "status": "exists",
+        "files": 27
+      },
+      "output/": {
+        "status": "exists",
+        "files": 138
+      },
+      "helpers/": {
+        "status": "exists",
+        "files": 107
+      },
+      "api/": {
+        "status": "exists",
+        "files": 5
+      },
+      "atlas_venv/": {
+        "status": "exists",
+        "files": 1
+      },
+      "disk_space": {
+        "free_gb": 22
+      }
+    }
+  }
+}

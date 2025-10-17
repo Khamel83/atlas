@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+"""Universal OOS command - works in any project"""
+import sys
+import os
+from pathlib import Path
+
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent / 'src'))
+
+def main():
+    if len(sys.argv) < 2:
+        print("🚀 OOS - Open Operating System")
+        print("Usage:")
+        print("  ./oos search \"query\"    - Search the web")
+        print("  ./oos help              - Show help")
+        print("")
+        print("Slash commands (in Claude Code):")
+        print("  /smart-commit           - Generate commit messages")
+        print("  /optimize               - Optimize context")
+        print("  /help-me                - Get help")
+        return
+
+    command = sys.argv[1]
+
+    if command == "search":
+        if len(sys.argv) < 3:
+            print("Usage: ./oos search \"your query\"")
+            return
+
+        query = " ".join(sys.argv[2:])
+        run_search(query)
+
+    elif command == "help":
+        show_help()
+
+    else:
+        print(f"Unknown command: {command}")
+        print("Try: ./oos help")
+
+def run_search(query):
+    try:
+        import asyncio
+        from free_search_alternatives import search_free
+
+        async def search():
+            print(f"🔍 Searching for: {query}")
+            results = await search_free(query, max_results=5)
+
+            if results:
+                print(f"✅ Found {len(results)} results\n")
+                for i, result in enumerate(results, 1):
+                    print(f"{i}. {result.title}")
+                    print(f"   [{result.source}] {result.snippet[:100]}...")
+                    if result.url:
+                        print(f"   🔗 {result.url}")
+                    print()
+            else:
+                print("❌ No results found")
+
+        asyncio.run(search())
+
+    except ImportError:
+        print("❌ Search functionality requires Python modules")
+        print("Run the installer again to add Python support")
+
+def show_help():
+    print("🚀 OOS - Open Operating System")
+    print("")
+    print("Commands:")
+    print("  search \"query\"    - Search the web (free + Perplexity Pro)")
+    print("  help              - Show this help")
+    print("")
+    print("Slash Commands (in Claude Code):")
+    print("  /smart-commit     - Generate intelligent commit messages")
+    print("  /optimize         - Optimize context for token efficiency")
+    print("  /auto-fix         - Fix code consistency issues")
+    print("  /help-me          - Smart context engineering help")
+    print("  /clarify          - Clarify vague requests")
+    print("  /workflow         - Start structured workflows")
+    print("")
+    print("Configuration:")
+    print("  Edit .env file to add API keys")
+    print("  Perplexity Pro gives you $5/month free credits")
+
+if __name__ == "__main__":
+    main()

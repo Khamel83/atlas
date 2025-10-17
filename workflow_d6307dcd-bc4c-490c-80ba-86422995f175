@@ -1,0 +1,125 @@
+2025-09-15T05:31:35.105291 INFO: Attempting direct fetch for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:35.571118 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:31:35.675672 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:31:35.675779 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:35.675829 INFO: Attempting Reader Mode strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:35.926490 ERROR: Reader mode fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:31:35.929393 INFO: Attempting JS Disabled strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:36.379071 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:31:36.379193 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:36.379221 INFO: Attempting Refresh Stop strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:36.521100 ERROR: Refresh stop fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:31:36.524700 INFO: Attempting Inspect Element strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:36.794120 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:31:36.794215 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:36.794242 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:41.396848 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:31:41.396964 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:41.396991 INFO: Attempting archive.today for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:41.404775 INFO: Attempting direct fetch for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:41.681768 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:31:41.772039 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:31:41.772162 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:41.772199 INFO: Attempting Reader Mode strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:41.963726 ERROR: Reader mode fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:31:41.965726 INFO: Attempting JS Disabled strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:42.214484 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:31:42.214620 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:42.214655 INFO: Attempting Refresh Stop strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:42.320573 ERROR: Refresh stop fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:31:42.322495 INFO: Attempting Inspect Element strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:42.647246 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:31:42.647356 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:42.647381 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:45.123272 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:31:45.123383 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:31:45.123413 INFO: Attempting archive.today for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:48.538827 INFO: No existing archive found, creating new archive for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:49.400472 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:31:49.400978 INFO: Attempting archive.is for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:51.282685 INFO: Attempting archive.li for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:53.291470 INFO: Attempting archive.fo for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:55.658702 INFO: Attempting archive.ph for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:58.900978 INFO: Attempting Googlebot spoof for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:59.373914 ERROR: Googlebot spoof failed for https://www.propublica.org/people/kirsten-berg: 403 Client Error: Forbidden for url: https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:31:59.375352 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:00.060114 INFO: Found Wayback snapshot from 20250910234501: http://web.archive.org/web/20250910234501/https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:04.054363 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:04.054492 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:04.054531 INFO: Attempting Wayback Machine for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:04.208423 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910234501/https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:04.364259 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:04.364388 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:04.364431 ERROR: All fetch strategies failed or returned low-quality content for https://www.propublica.org/people/kirsten-berg. Attempting Google Search fallback...
+2025-09-15T05:32:04.364499 INFO: Google Search fallback: searching for 'kirsten berg'
+2025-09-15T05:32:04.396398 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:32:04.404328 INFO: Attempting direct fetch for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:04.567043 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:04.657319 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:04.657449 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:04.657497 INFO: Attempting Reader Mode strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:04.851661 ERROR: Reader mode fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:32:04.853345 INFO: Attempting JS Disabled strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:05.004195 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:32:05.004308 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:05.004335 INFO: Attempting Refresh Stop strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:05.115110 ERROR: Refresh stop fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:32:05.116726 INFO: Attempting Inspect Element strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:05.433185 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:32:05.433299 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:05.433326 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:10.466997 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:32:10.467130 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:10.467158 INFO: Attempting archive.today for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:13.217885 INFO: No existing archive found, creating new archive for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:14.106034 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:32:14.106488 INFO: Attempting archive.is for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:16.694676 INFO: Attempting archive.li for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:19.302745 INFO: Attempting archive.fo for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:21.482864 INFO: Attempting archive.ph for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:24.776002 INFO: Attempting Googlebot spoof for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:25.293698 ERROR: Googlebot spoof failed for https://www.propublica.org/people/kirsten-berg: 403 Client Error: Forbidden for url: https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:25.295095 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:25.406581 INFO: Found Wayback snapshot from 20250910234501: http://web.archive.org/web/20250910234501/https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:25.568941 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:25.569061 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:25.569095 INFO: Attempting Wayback Machine for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:25.698064 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910234501/https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:25.982503 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:25.990367 INFO: Attempting direct fetch for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:26.151673 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:26.246692 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:26.246812 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:26.246852 INFO: Attempting Reader Mode strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:26.334854 ERROR: Reader mode fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:32:26.336948 INFO: Attempting JS Disabled strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:26.489758 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:32:26.489870 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:26.489900 INFO: Attempting Refresh Stop strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:26.597577 ERROR: Refresh stop fetch failed for https://www.propublica.org/people/kirsten-berg: cannot use a string pattern on a bytes-like object
+2025-09-15T05:32:26.599652 INFO: Attempting Inspect Element strategy for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:26.919249 INFO: Content is very short (53 words). Likely a teaser.
+2025-09-15T05:32:26.919347 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:26.919374 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:29.164374 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:32:29.164493 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:29.164524 INFO: Attempting archive.today for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:32.862259 INFO: No existing archive found, creating new archive for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:33.781297 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:32:33.781792 INFO: Attempting archive.is for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:37.221513 INFO: Attempting archive.li for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:40.206514 INFO: Attempting archive.fo for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:42.428785 INFO: Attempting archive.ph for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:44.881787 INFO: Attempting Googlebot spoof for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:45.168641 ERROR: Googlebot spoof failed for https://www.propublica.org/people/kirsten-berg: 403 Client Error: Forbidden for url: https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:45.170178 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:45.310343 INFO: Found Wayback snapshot from 20250910234501: http://web.archive.org/web/20250910234501/https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:45.464848 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:45.464972 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:45.465010 INFO: Attempting Wayback Machine for https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:45.621448 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910234501/https://www.propublica.org/people/kirsten-berg
+2025-09-15T05:32:45.791549 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:32:45.791710 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:32:45.791754 ERROR: All fetch strategies failed or returned low-quality content for https://www.propublica.org/people/kirsten-berg. Attempting Google Search fallback...
+2025-09-15T05:32:45.791824 INFO: Google Search fallback: searching for 'kirsten berg'
+2025-09-15T05:32:45.823988 INFO: Google Search fallback did not find alternative URL

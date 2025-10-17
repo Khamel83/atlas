@@ -1,0 +1,41 @@
+# Atlas Database Configuration
+# Unified database settings for the simplified Atlas system
+
+# Database file settings
+database:
+  path: "/home/ubuntu/dev/atlas/data/atlas.db"
+  backup_path: "backups/atlas.db.bak"
+  max_size_mb: 1000
+
+# Connection pooling
+connection_pool:
+  max_connections: 10
+  min_connections: 2
+  timeout_seconds: 30
+  health_check_interval: 300
+
+# Caching settings
+cache:
+  enabled: true
+  max_size: 1000
+  ttl_seconds: 3600
+
+# Performance settings
+performance:
+  wal_mode: true
+  foreign_keys: true
+  synchronous: "NORMAL"
+  temp_store: "MEMORY"
+  mmap_size: 268435456  # 256MB
+
+# Migration settings
+migration:
+  auto_backup: true
+  backup_retention_days: 30
+  batch_size: 1000
+
+# Health monitoring
+health:
+  check_interval: 60
+  slow_query_threshold: 1000  # milliseconds
+  max_connections_warning: 15

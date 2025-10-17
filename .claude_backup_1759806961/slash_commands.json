@@ -1,0 +1,34 @@
+{
+  "commands": [
+    {
+      "name": "modules",
+      "description": "🧩 Unix Philosophy: run/compose focused modules (security, python, git)",
+      "script": "bin/oos-module-runner.sh"
+    },
+    {
+      "name": "dev-setup",
+      "description": "🚀 Complete development environment validation (security + python + git)",
+      "script": "compositions/full-dev-setup.sh"
+    },
+    {
+      "name": "pre-commit",
+      "description": "🔍 Pre-commit validation: security scan + lint + tests + AI commit message",
+      "script": "compositions/pre-commit.sh"
+    },
+    {
+      "name": "create-project",
+      "description": "🏗️ Create new project from template (python-project, node-project, etc)",
+      "script": "bin/oos-template-manager.sh"
+    },
+    {
+      "name": "update-oos",
+      "description": "🌐 Update OOS subfolder operating system from GitHub - RESTART Claude Code after this!",
+      "script": "bin/oos-update-from-github.sh"
+    },
+    {
+      "name": "start-coding",
+      "description": "🚀 Complete development session setup",
+      "script": "bin/claude-start-coding.sh"
+    }
+  ]
+}

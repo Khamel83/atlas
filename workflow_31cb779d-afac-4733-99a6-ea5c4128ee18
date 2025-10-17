@@ -1,0 +1,109 @@
+2025-09-15T00:01:24.639002 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:24.803703 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:24.804924 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:24.884383 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:24.885698 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:24.977803 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:24.979075 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:25.066365 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: cannot use a string pattern on a bytes-like object
+2025-09-15T00:01:25.067649 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:25.153646 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:25.155454 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:30.103453 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T00:01:30.103576 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:01:30.103632 INFO: Attempting archive.today for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:33.890000 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:34.798876 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:01:34.799265 INFO: Attempting archive.is for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:37.651374 INFO: Attempting archive.li for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:41.059823 INFO: Attempting archive.fo for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:43.888795 INFO: Attempting archive.ph for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:46.264703 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:46.346339 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:46.347772 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:46.991193 INFO: Found Wayback snapshot from 20250109074139: http://web.archive.org/web/20250109074139/https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.205721 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:01:48.205887 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:01:48.205924 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.333352 INFO: Found Wayback snapshot: http://web.archive.org/web/20250109074139/https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.657782 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:01:48.657948 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:01:48.657983 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466. Attempting Google Search fallback...
+2025-09-15T00:01:48.658067 INFO: Google Search fallback: searching for 'the tax law just one month old is roaring through u s companies 1516899466'
+2025-09-15T00:01:48.658125 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T00:01:48.665941 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.745797 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.747659 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.826781 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.828531 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.909348 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.911287 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:48.995351 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: cannot use a string pattern on a bytes-like object
+2025-09-15T00:01:48.997097 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:49.078017 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:49.079897 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:52.995847 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T00:01:52.995964 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:01:52.995990 INFO: Attempting archive.today for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:56.923483 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:01:57.778564 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:01:57.779039 INFO: Attempting archive.is for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:00.218649 INFO: Attempting archive.li for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:02.771182 INFO: Attempting archive.fo for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:05.333364 INFO: Attempting archive.ph for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:08.453991 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:08.558821 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:08.560205 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:08.709225 INFO: Found Wayback snapshot from 20250109074139: http://web.archive.org/web/20250109074139/https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:08.931259 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:02:08.931356 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:02:08.931383 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.072397 INFO: Found Wayback snapshot: http://web.archive.org/web/20250109074139/https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.273299 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:02:10.273417 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:02:10.273448 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466. Attempting Google Search fallback...
+2025-09-15T00:02:10.273516 INFO: Google Search fallback: searching for 'the tax law just one month old is roaring through u s companies 1516899466'
+2025-09-15T00:02:10.305549 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:02:10.313274 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.392024 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.393227 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.472155 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.473385 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.554259 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.555513 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.637146 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: cannot use a string pattern on a bytes-like object
+2025-09-15T00:02:10.638543 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.722148 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.733007 INFO: Attempting direct fetch for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.812919 ERROR: Direct fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.814405 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.895550 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.897198 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.977661 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:10.979127 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:11.066835 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: cannot use a string pattern on a bytes-like object
+2025-09-15T00:02:11.068260 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:11.178149 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:11.181181 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:14.832887 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T00:02:14.832990 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:02:14.833019 INFO: Attempting archive.today for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:19.792878 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:20.678637 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:02:20.679038 INFO: Attempting archive.is for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:23.253108 INFO: Attempting archive.li for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:27.106538 INFO: Attempting archive.fo for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:30.583750 INFO: Attempting archive.ph for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:32.873067 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:33.016901 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:33.018482 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:33.182766 INFO: Found Wayback snapshot from 20250109074139: http://web.archive.org/web/20250109074139/https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:33.433709 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:02:33.433875 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:02:33.433902 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:33.570579 INFO: Found Wayback snapshot: http://web.archive.org/web/20250109074139/https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466
+2025-09-15T00:02:33.798711 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:02:33.798810 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:02:33.798994 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/the-tax-law-just-one-month-old-is-roaring-through-u-s-companies-1516899466. Attempting Google Search fallback...
+2025-09-15T00:02:33.799073 INFO: Google Search fallback: searching for 'the tax law just one month old is roaring through u s companies 1516899466'
+2025-09-15T00:02:33.831481 INFO: Google Search fallback did not find alternative URL

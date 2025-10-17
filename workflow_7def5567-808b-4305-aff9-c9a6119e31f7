@@ -1,0 +1,110 @@
+2025-09-15T12:19:11.221652 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:12.629572 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:12.751377 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:12.751485 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:12.751525 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:12.848798 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:19:12.850577 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:13.022275 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:13.022510 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/business/: [Errno 32] Broken pipe
+2025-09-15T12:19:13.022558 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:13.345499 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:17.676197 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:19:17.676313 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:17.676340 INFO: Attempting archive.today for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:22.423372 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:23.324748 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:19:23.325126 INFO: Attempting archive.is for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:26.763663 INFO: Attempting archive.li for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:30.168707 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:33.125537 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:35.887440 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:36.063947 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/general/business/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:36.065611 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:36.472195 INFO: Found Wayback snapshot from 20250817163800: http://web.archive.org/web/20250817163800/https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:37.822455 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:37.822576 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:37.822669 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:37.948022 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817163800/https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:38.134853 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:38.134971 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:38.135005 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/general/business/. Attempting Google Search fallback...
+2025-09-15T12:19:38.135069 INFO: Google Search fallback: searching for 'business'
+2025-09-15T12:19:38.166736 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:19:38.173909 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:38.501515 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:38.633074 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:38.633190 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:38.633228 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:38.737582 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:19:38.740215 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:38.919729 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:39.057979 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:19:39.060480 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:39.316840 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:44.397813 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:19:44.397936 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:44.397963 INFO: Attempting archive.today for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:47.614125 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:48.504254 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:19:48.504798 INFO: Attempting archive.is for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:51.069892 INFO: Attempting archive.li for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:53.379226 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:56.161619 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:58.950133 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:59.136384 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/general/business/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:59.138256 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:59.260739 INFO: Found Wayback snapshot from 20250817163800: http://web.archive.org/web/20250817163800/https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:59.457300 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:59.457417 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:59.457443 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:59.603497 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817163800/https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:19:59.797910 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:19:59.798030 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:19:59.798067 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/general/business/. Attempting Google Search fallback...
+2025-09-15T12:19:59.798132 INFO: Google Search fallback: searching for 'business'
+2025-09-15T12:19:59.831138 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:19:59.837872 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:00.053517 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:20:00.198487 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:20:00.198717 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:20:00.198790 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:00.316671 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:20:00.319354 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:00.544930 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:00.711616 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:20:00.714249 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:01.029474 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:01.040500 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:01.271459 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:20:01.402222 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:20:01.402345 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:20:01.402381 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:01.536210 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:20:01.539194 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:01.745387 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:01.892804 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/business/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:20:01.895295 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:02.179674 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:06.188774 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:20:06.188886 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:20:06.188918 INFO: Attempting archive.today for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:10.254623 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:11.158962 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:20:11.159407 INFO: Attempting archive.is for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:14.220155 INFO: Attempting archive.li for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:16.994752 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:20.229899 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:22.335976 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:22.528633 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/general/business/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:22.530230 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:22.653542 INFO: Found Wayback snapshot from 20250817163800: http://web.archive.org/web/20250817163800/https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:22.847396 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:20:22.847519 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:20:22.847560 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:23.001700 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817163800/https://www.theatlantic.com/tag/general/business/
+2025-09-15T12:20:23.190583 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T12:20:23.190741 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:20:23.190775 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/general/business/. Attempting Google Search fallback...
+2025-09-15T12:20:23.190843 INFO: Google Search fallback: searching for 'business'
+2025-09-15T12:20:23.224205 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,32 @@
+{
+  "name": "api-service",
+  "version": "1.0.0",
+  "description": "RESTful API service with authentication and database integration",
+  "category": "backend",
+  "tags": ["api", "rest", "microservice"],
+  "variables": {
+    "PROJECT_NAME": {
+      "description": "API service name",
+      "type": "string",
+      "required": true
+    },
+    "API_FRAMEWORK": {
+      "description": "API framework",
+      "type": "choice",
+      "options": ["express", "fastapi", "gin", "actix-web"],
+      "default": "express"
+    },
+    "AUTH_METHOD": {
+      "description": "Authentication method",
+      "type": "choice",
+      "options": ["jwt", "oauth2", "api-key"],
+      "default": "jwt"
+    },
+    "DATABASE": {
+      "description": "Database type",
+      "type": "choice",
+      "options": ["postgresql", "mongodb", "redis"],
+      "default": "postgresql"
+    }
+  }
+}

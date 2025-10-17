@@ -1,0 +1,20 @@
+[Unit]
+Description=Atlas Manager - Automated Podcast Transcript System
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+ExecStart=/usr/bin/python3 atlas_manager.py
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+# Environment variables
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

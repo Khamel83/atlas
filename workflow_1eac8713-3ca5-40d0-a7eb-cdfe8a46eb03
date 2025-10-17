@@ -1,0 +1,25 @@
+2025-09-14T20:31:21.647264 INFO: Attempting direct fetch for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:21.911359 ERROR: Direct fetch failed for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:21.911546 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:22.729529 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-14T20:31:22.731443 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:22.795449 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:22.795665 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:22.856946 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0: cannot use a string pattern on a bytes-like object
+2025-09-14T20:31:22.857121 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:22.926071 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:22.926247 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:27.545360 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:31:27.545462 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:31:27.545492 INFO: Attempting archive.today for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:30.411219 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:31.299701 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:31:31.299868 INFO: Attempting archive.is for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:34.295076 INFO: Attempting archive.li for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:37.269302 INFO: Attempting archive.fo for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:40.787569 INFO: Attempting archive.ph for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:43.229199 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:43.299359 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:43.299575 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0
+2025-09-14T20:31:43.977855 INFO: Found Wayback snapshot from 20250616132740: http://web.archive.org/web/20250616132740/https://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all
+2025-09-14T20:31:44.660370 INFO: Successfully fetched http://www.nytimes.com/2013/03/31/magazine/is-giving-the-secret-to-getting-ahead.html?pagewanted=all&_r=0 using wayback_machine_enhanced

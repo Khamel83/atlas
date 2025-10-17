@@ -1,0 +1,323 @@
+{
+  "project": {
+    "id": "ATLAS_REBUILD_20251016",
+    "name": "Atlas Rebuild - Critical System Recovery",
+    "description": "Complete rebuild of Atlas content ingestion system to fix process death spiral and implement reliable processing",
+    "status": "active",
+    "priority": "critical",
+    "created_at": "2025-10-16T15:00:00Z",
+    "estimated_duration": "14 days",
+    "success_criteria": [
+      "Process runs continuously without SIGTERM death spiral",
+      "Content processing rate > 600 items/hour",
+      "Queue efficiency > 95% (eliminate file:// pollution)",
+      "Duplicate prevention 100% accurate",
+      "System maintains 25,831 existing content records"
+    ]
+  },
+  "phases": [
+    {
+      "id": "phase_0",
+      "name": "Archive Old Code & Clean Start",
+      "duration": "2 hours",
+      "description": "Backup existing database and code, disable all competing services",
+      "status": "in_progress",
+      "tasks": ["phase_0_1", "phase_0_2", "phase_0_3"]
+    },
+    {
+      "id": "phase_1",
+      "name": "Critical Queue Cleanup",
+      "duration": "1 day",
+      "description": "Eliminate 37% queue pollution from file:// URLs",
+      "status": "pending",
+      "tasks": ["phase_1_1", "phase_1_2", "phase_1_3"]
+    },
+    {
+      "id": "phase_2",
+      "name": "Core Engine Rebuild",
+      "duration": "3 days",
+      "description": "Simplified processing engine with single entry point",
+      "status": "pending",
+      "tasks": ["phase_2_1", "phase_2_2", "phase_2_3", "phase_2_4"]
+    },
+    {
+      "id": "phase_3",
+      "name": "Validation & Testing",
+      "duration": "2 days",
+      "description": "Ensure system processes content reliably",
+      "status": "pending",
+      "tasks": ["phase_3_1", "phase_3_2", "phase_3_3"]
+    },
+    {
+      "id": "phase_4",
+      "name": "Essential Monitoring",
+      "duration": "2 days",
+      "description": "Basic monitoring without complexity",
+      "status": "pending",
+      "tasks": ["phase_4_1", "phase_4_2", "phase_4_3"]
+    },
+    {
+      "id": "phase_5",
+      "name": "Deployment & Hardening",
+      "duration": "1 day",
+      "description": "Production-ready deployment",
+      "status": "pending",
+      "tasks": ["phase_5_1", "phase_5_2", "phase_5_3"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "phase_0_1",
+      "title": "Create comprehensive backup of database and working code",
+      "description": "Backup data/atlas.db (25,831 records) and essential Python files before making changes",
+      "status": "pending",
+      "priority": "critical",
+      "estimated_hours": 0.5,
+      "phase": "phase_0",
+      "dependencies": []
+    },
+    {
+      "id": "phase_0_2",
+      "title": "Disable all SystemD services and stop competing processes",
+      "description": "Stop all atlas-* services, disable auto-restart, kill existing processes",
+      "status": "pending",
+      "priority": "critical",
+      "estimated_hours": 0.5,
+      "phase": "phase_0",
+      "dependencies": ["phase_0_1"]
+    },
+    {
+      "id": "phase_0_3",
+      "title": "Identify and eliminate SIGTERM source causing process death spiral",
+      "description": "Debug what's sending SIGTERM every 30 seconds to kill Atlas processes",
+      "status": "pending",
+      "priority": "critical",
+      "estimated_hours": 1,
+      "phase": "phase_0",
+      "dependencies": ["phase_0_2"]
+    },
+    {
+      "id": "phase_1_1",
+      "title": "Implement URL classification service to identify file:// vs HTTP URLs",
+      "description": "Create URL classifier to identify processable HTTP URLs vs file:// URLs that cause 37% queue pollution",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 4,
+      "phase": "phase_1",
+      "dependencies": ["phase_0_3"]
+    },
+    {
+      "id": "phase_1_2",
+      "title": "Create dead letter queue and move 19,589 file:// URLs out of processing queue",
+      "description": "Move non-processable file:// URLs to dead letter queue to eliminate queue pollution",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 3,
+      "phase": "phase_1",
+      "dependencies": ["phase_1_1"]
+    },
+    {
+      "id": "phase_1_3",
+      "title": "Implement basic deduplication with content ID generation from URL hash",
+      "description": "Generate deterministic content IDs from URL hashes to prevent duplicate processing",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 5,
+      "phase": "phase_1",
+      "dependencies": ["phase_1_2"]
+    },
+    {
+      "id": "phase_2_1",
+      "title": "Create simplified atlas_simple.py single entry point script",
+      "description": "Replace complex multi-process system with simple single-file entry point",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 8,
+      "phase": "phase_2",
+      "dependencies": ["phase_1_3"]
+    },
+    {
+      "id": "phase_2_2",
+      "title": "Extract and refactor content extraction logic from universal_url_processor.py",
+      "description": "Refactor existing content extraction into clean, testable module",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 6,
+      "phase": "phase_2",
+      "dependencies": ["phase_2_1"]
+    },
+    {
+      "id": "phase_2_3",
+      "title": "Implement error classification and retry with exponential backoff",
+      "description": "Add intelligent error handling and retry logic to handle transient failures",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 8,
+      "phase": "phase_2",
+      "dependencies": ["phase_2_2"]
+    },
+    {
+      "id": "phase_2_4",
+      "title": "Add basic priority queue management and backpressure handling",
+      "description": "Implement priority-based processing and resource management",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 6,
+      "phase": "phase_2",
+      "dependencies": ["phase_2_3"]
+    },
+    {
+      "id": "phase_3_1",
+      "title": "Test end-to-end content processing with RSS feeds",
+      "description": "Verify system can discover RSS feeds and process content end-to-end",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 4,
+      "phase": "phase_3",
+      "dependencies": ["phase_2_4"]
+    },
+    {
+      "id": "phase_3_2",
+      "title": "Validate duplicate prevention works with various URL patterns",
+      "description": "Test deduplication with different URL formats and tracking parameters",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 3,
+      "phase": "phase_3",
+      "dependencies": ["phase_3_1"]
+    },
+    {
+      "id": "phase_3_3",
+      "title": "Stress test with high-volume content ingestion",
+      "description": "Test system performance with large batches of content",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 5,
+      "phase": "phase_3",
+      "dependencies": ["phase_3_2"]
+    },
+    {
+      "id": "phase_4_1",
+      "title": "Implement basic metrics collection (processing rate, success rate)",
+      "description": "Add simple metrics tracking without complex monitoring infrastructure",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 4,
+      "phase": "phase_4",
+      "dependencies": ["phase_3_3"]
+    },
+    {
+      "id": "phase_4_2",
+      "title": "Create simple alerting for critical failures only",
+      "description": "Minimal alerting for critical system failures without noise",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 4,
+      "phase": "phase_4",
+      "dependencies": ["phase_4_1"]
+    },
+    {
+      "id": "phase_4_3",
+      "title": "Add basic health check endpoint for status monitoring",
+      "description": "Simple HTTP endpoint to check system health and processing status",
+      "status": "pending",
+      "priority": "low",
+      "estimated_hours": 4,
+      "phase": "phase_4",
+      "dependencies": ["phase_4_2"]
+    },
+    {
+      "id": "phase_5_1",
+      "title": "Create simple startup scripts and basic configuration management",
+      "description": "Reliable startup scripts and configuration without systemd complexity",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 3,
+      "phase": "phase_5",
+      "dependencies": ["phase_4_3"]
+    },
+    {
+      "id": "phase_5_2",
+      "title": "Document deployment procedures and recovery steps",
+      "description": "Clear documentation for deploying and recovering the system",
+      "status": "pending",
+      "priority": "medium",
+      "estimated_hours": 3,
+      "phase": "phase_5",
+      "dependencies": ["phase_5_1"]
+    },
+    {
+      "id": "phase_5_3",
+      "title": "Final integration testing and performance validation",
+      "description": "Complete end-to-end testing to ensure system meets all requirements",
+      "status": "pending",
+      "priority": "high",
+      "estimated_hours": 2,
+      "phase": "phase_5",
+      "dependencies": ["phase_5_2"]
+    }
+  ],
+  "milestones": [
+    {
+      "id": "milestone_1",
+      "name": "System Stabilized",
+      "description": "Process death spiral eliminated, system runs continuously",
+      "due_date": "2025-10-16T17:00:00Z",
+      "criteria": ["No SIGTERM signals for 1 hour", "Single process runs stable"],
+      "status": "pending"
+    },
+    {
+      "id": "milestone_2",
+      "name": "Queue Cleaned",
+      "description": "37% queue pollution eliminated, processing efficiency restored",
+      "due_date": "2025-10-17T17:00:00Z",
+      "criteria": ["0% file:// URLs in processing queue", "Efficiency > 95%"],
+      "status": "pending"
+    },
+    {
+      "id": "milestone_3",
+      "name": "Content Processing Restored",
+      "description": "System successfully processing new content again",
+      "due_date": "2025-10-20T17:00:00Z",
+      "criteria": ["Processing rate > 600 items/hour", "New content appearing in database"],
+      "status": "pending"
+    },
+    {
+      "id": "milestone_4",
+      "name": "Production Ready",
+      "description": "System fully validated and ready for production deployment",
+      "due_date": "2025-10-22T17:00:00Z",
+      "criteria": ["All tests passing", "Documentation complete", "Performance validated"],
+      "status": "pending"
+    }
+  ],
+  "risks": [
+    {
+      "id": "risk_1",
+      "title": "Data Loss During Migration",
+      "probability": "low",
+      "impact": "critical",
+      "mitigation": "Complete backup before any changes, test migration on copy"
+    },
+    {
+      "id": "risk_2",
+      "title": "SIGTERM Source Remains Unknown",
+      "probability": "medium",
+      "impact": "high",
+      "mitigation": "Systematic debugging with strace and process monitoring"
+    },
+    {
+      "id": "risk_3",
+      "title": "Performance Degradation",
+      "probability": "low",
+      "impact": "medium",
+      "mitigation": "Benchmark current performance, test each change"
+    }
+  ],
+  "metadata": {
+    "created_by": "claude_code",
+    "project_type": "system_rebuild",
+    "based_on": ["rebuild_100225.md", "ATLAS_V2_RELIABILITY_IMPLEMENTATION_ROADMAP.md"],
+    "critical_assets": ["data/atlas.db (25,831 records)", "universal_url_processor.py", "RSS feed configs"]
+  }
+}

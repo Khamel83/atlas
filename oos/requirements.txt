@@ -1,0 +1,36 @@
+# OOS Core Requirements
+# The main OOS functionality (run.py, bootstrap) only uses Python standard library
+# No external Python packages required for core functionality
+
+# MCP Server Dependencies
+mcp>=1.0.0
+
+# Test Dependencies
+pytest>=8.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+PyGithub>=1.58.0
+scikit-learn>=1.0.0
+PyYAML>=6.0
+
+# Development Dependencies
+black>=23.0.0
+ruff>=0.1.0
+
+# Optional: Dashboard functionality (if using dashboard/)
+# flask>=2.0.0
+# requests>=2.25.0
+
+# System Requirements (installed via package manager):
+# - git (for repository management)
+# - curl (for downloading)
+# - rsync (for file operations)
+# - python3 (>= 3.7)
+
+# Optional System Requirements:
+# - op (1Password CLI - for secure environment management)
+# - gh (GitHub CLI - for GitHub integration)
+# - node/npm (for JavaScript projects)
+
+# Note: The core OOS system works with just Python 3 standard library
+# All other tools are optional and checked at runtime

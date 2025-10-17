@@ -1,0 +1,108 @@
+2025-09-14T20:41:16.490920 INFO: Attempting direct fetch for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:18.782899 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:18.963835 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:18.963955 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:18.963999 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:19.138479 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/george-floyd: cannot use a string pattern on a bytes-like object
+2025-09-14T20:41:19.140757 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:19.365802 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:19.365913 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:19.365939 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:19.438392 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/george-floyd: cannot use a string pattern on a bytes-like object
+2025-09-14T20:41:19.440668 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:19.680763 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:19.680874 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:19.680901 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:24.593026 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:41:24.593136 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:24.593164 INFO: Attempting archive.today for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:28.339227 INFO: No existing archive found, creating new archive for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:29.223277 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:41:29.223707 INFO: Attempting archive.is for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:31.169424 INFO: Attempting archive.li for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:34.910684 INFO: Attempting archive.fo for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:38.698644 INFO: Attempting archive.ph for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:40.899911 INFO: Attempting Googlebot spoof for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:41.254416 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:41.254516 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:41.254546 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:47.007972 INFO: Found Wayback snapshot from 20231129032233: http://web.archive.org/web/20231129032233/https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:51.067720 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:51.067845 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:51.067876 INFO: Attempting Wayback Machine for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:51.198489 ERROR: Wayback Machine failed for https://www.newyorker.com/tag/george-floyd: No archived snapshots found
+2025-09-14T20:41:51.200807 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/tag/george-floyd. Attempting Google Search fallback...
+2025-09-14T20:41:51.200928 INFO: Google Search fallback: searching for 'george floyd'
+2025-09-14T20:41:51.234676 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:41:51.243709 INFO: Attempting direct fetch for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:51.444675 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:51.612926 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:51.613036 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:51.613075 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:51.686879 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/george-floyd: cannot use a string pattern on a bytes-like object
+2025-09-14T20:41:51.689135 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:51.845360 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:51.845465 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:51.845491 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:51.904645 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/george-floyd: cannot use a string pattern on a bytes-like object
+2025-09-14T20:41:51.907931 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:52.144562 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:41:52.144698 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:52.144728 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:55.501550 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:41:55.501685 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:41:55.501714 INFO: Attempting archive.today for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:41:59.838159 INFO: No existing archive found, creating new archive for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:00.744191 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:42:00.744579 INFO: Attempting archive.is for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:03.659286 INFO: Attempting archive.li for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:06.150567 INFO: Attempting archive.fo for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:09.463624 INFO: Attempting archive.ph for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:12.561162 INFO: Attempting Googlebot spoof for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:12.859846 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:12.859939 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:12.859967 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:13.129444 INFO: Found Wayback snapshot from 20231129032233: http://web.archive.org/web/20231129032233/https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:13.392226 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:13.392342 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:13.392369 INFO: Attempting Wayback Machine for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:13.509061 ERROR: Wayback Machine failed for https://www.newyorker.com/tag/george-floyd: No archived snapshots found
+2025-09-14T20:42:13.511516 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/tag/george-floyd. Attempting Google Search fallback...
+2025-09-14T20:42:13.511932 INFO: Google Search fallback: searching for 'george floyd'
+2025-09-14T20:42:13.545288 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:42:13.553327 INFO: Attempting direct fetch for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:13.749150 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:13.919399 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:13.919520 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:13.919561 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:13.974817 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/george-floyd: cannot use a string pattern on a bytes-like object
+2025-09-14T20:42:13.977418 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:14.254834 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:14.254943 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:14.254968 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:14.320334 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/george-floyd: cannot use a string pattern on a bytes-like object
+2025-09-14T20:42:14.322406 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:14.587086 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:14.587197 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:14.587225 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:18.183163 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:42:18.183292 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:18.183326 INFO: Attempting archive.today for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:21.323690 INFO: No existing archive found, creating new archive for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:22.235824 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:42:22.236426 INFO: Attempting archive.is for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:24.979169 INFO: Attempting archive.li for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:28.539980 INFO: Attempting archive.fo for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:32.096058 INFO: Attempting archive.ph for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:35.595300 INFO: Attempting Googlebot spoof for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:35.894289 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:35.894403 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:35.894428 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:36.133138 INFO: Found Wayback snapshot from 20231129032233: http://web.archive.org/web/20231129032233/https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:36.409170 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-14T20:42:36.409303 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:36.409334 INFO: Attempting Wayback Machine for https://www.newyorker.com/tag/george-floyd
+2025-09-14T20:42:36.530758 ERROR: Wayback Machine failed for https://www.newyorker.com/tag/george-floyd: No archived snapshots found
+2025-09-14T20:42:36.533010 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/tag/george-floyd. Attempting Google Search fallback...
+2025-09-14T20:42:36.533125 INFO: Google Search fallback: searching for 'george floyd'
+2025-09-14T20:42:36.566107 INFO: Google Search fallback did not find alternative URL

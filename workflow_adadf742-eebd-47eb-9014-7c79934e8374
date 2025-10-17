@@ -1,0 +1,103 @@
+2025-09-15T09:16:47.732117 INFO: Attempting direct fetch for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:47.939710 ERROR: Direct fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:47.941139 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.017860 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.019342 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.102273 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.103680 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.187969 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: cannot use a string pattern on a bytes-like object
+2025-09-15T09:16:48.189534 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.269667 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:48.271692 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:51.984485 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:16:51.984626 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:16:51.984657 INFO: Attempting archive.today for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:54.894536 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:55.754484 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:16:55.754989 INFO: Attempting archive.is for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:16:58.799250 INFO: Attempting archive.li for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:00.906190 INFO: Attempting archive.fo for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:03.200347 INFO: Attempting archive.ph for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:06.360261 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:06.441953 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:06.443512 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:12.182976 INFO: Found Wayback snapshot from 20220527074411: http://web.archive.org/web/20220527074411/https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:13.533891 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T09:17:13.534043 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:17:13.534094 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:13.964535 ERROR: Wayback Machine failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: No archived snapshots found
+2025-09-15T09:17:13.967283 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240. Attempting Google Search fallback...
+2025-09-15T09:17:13.967419 INFO: Google Search fallback: searching for 'for amazon now comes the hard part 1497827240'
+2025-09-15T09:17:14.000248 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:17:14.008225 INFO: Attempting direct fetch for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.091268 ERROR: Direct fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.093401 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.177112 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.179059 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.260648 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.262634 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.346120 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: cannot use a string pattern on a bytes-like object
+2025-09-15T09:17:14.348024 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.430863 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:14.432842 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:17.178260 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:17:17.178372 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:17:17.178398 INFO: Attempting archive.today for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:19.921410 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:20.825526 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:17:20.826064 INFO: Attempting archive.is for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:24.008733 INFO: Attempting archive.li for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:26.315723 INFO: Attempting archive.fo for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.116273 INFO: Attempting archive.ph for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.126068 INFO: Attempting direct fetch for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.206889 ERROR: Direct fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.208247 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.285705 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.287127 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.367352 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.368782 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.450955 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: cannot use a string pattern on a bytes-like object
+2025-09-15T09:17:29.452338 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.529804 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:29.531244 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:31.990146 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:17:31.990253 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:17:31.990283 INFO: Attempting archive.today for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:34.705136 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:35.613865 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:17:35.614399 INFO: Attempting archive.is for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:37.758471 INFO: Attempting archive.li for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:41.576649 INFO: Attempting archive.fo for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:45.441618 INFO: Attempting archive.ph for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.014320 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.148819 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.150336 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.458775 INFO: Found Wayback snapshot from 20220527074411: http://web.archive.org/web/20220527074411/https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.647419 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T09:17:49.647542 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:17:49.647569 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.782340 ERROR: Wayback Machine failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: No archived snapshots found
+2025-09-15T09:17:49.783936 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240. Attempting Google Search fallback...
+2025-09-15T09:17:49.784047 INFO: Google Search fallback: searching for 'for amazon now comes the hard part 1497827240'
+2025-09-15T09:17:49.815377 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:17:49.823899 INFO: Attempting direct fetch for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.905103 ERROR: Direct fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.906484 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.987650 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:49.989012 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:50.065223 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:50.066616 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:50.160577 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: cannot use a string pattern on a bytes-like object
+2025-09-15T09:17:50.161990 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:50.242392 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:50.243791 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:55.180657 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:17:55.180775 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:17:55.180801 INFO: Attempting archive.today for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:58.776168 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:17:59.684654 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:17:59.685097 INFO: Attempting archive.is for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:18:03.512102 INFO: Attempting archive.li for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:18:05.519811 INFO: Attempting archive.fo for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:18:07.461299 INFO: Attempting archive.ph for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240
+2025-09-15T09:18:10.353323 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/for-amazon-now-comes-the-hard-part-1497827240

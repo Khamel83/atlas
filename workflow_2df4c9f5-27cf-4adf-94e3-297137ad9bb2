@@ -1,0 +1,30 @@
+2025-09-15T08:31:20.038223 INFO: Attempting direct fetch for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:20.442074 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:31:20.545419 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:31:20.545518 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:31:20.545557 INFO: Attempting Reader Mode strategy for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:20.694025 ERROR: Reader mode fetch failed for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken: cannot use a string pattern on a bytes-like object
+2025-09-15T08:31:20.697266 INFO: Attempting JS Disabled strategy for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:20.945801 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-15T08:31:20.945911 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:31:20.945939 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:21.122892 ERROR: Refresh stop fetch failed for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken: cannot use a string pattern on a bytes-like object
+2025-09-15T08:31:21.125916 INFO: Attempting Inspect Element strategy for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:21.471154 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-15T08:31:21.471280 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:31:21.471308 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:25.146725 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:31:25.146838 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:31:25.146865 INFO: Attempting archive.today for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:28.532642 INFO: No existing archive found, creating new archive for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:29.409276 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:31:29.410005 INFO: Attempting archive.is for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:32.229661 INFO: Attempting archive.li for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:36.082078 INFO: Attempting archive.fo for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:39.522555 INFO: Attempting archive.ph for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:42.221269 INFO: Attempting Googlebot spoof for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:42.483203 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:31:42.483314 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:31:42.483350 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:42.951385 INFO: Found Wayback snapshot from 20180306192701: http://web.archive.org/web/20180306192701/https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken
+2025-09-15T08:31:44.531896 INFO: Successfully fetched https://food52.com/blog/21251-how-to-make-better-sheet-pan-chicken using wayback_machine_enhanced

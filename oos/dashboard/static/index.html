@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOS Management Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpSIVBTuIOGSoThZERRw1CkWoEGqFVh1MLv2CJg1Jiouj4Fpw8GOx6uDirKuDqyAIfoA4OTopukiJ/0sKLWI8OO7Hu3uPu3eAUC8zzWqbADTdNlOJuJjJrop9rwgiABH6MSgzy5iTpCS08XWPHz5fRXmW97k/R4+asxjgE4mjzDBt4g3i6U3b4LxPHGZFWSU+Jx416YLEj1xXXH7jXHBY4JlhM52aJw4Ti4UOVjqYFU2NeIo4omY65QsZl1XOW5y1cpU178m/MJTTVpZxnWYYCSxiCVKIkFFFCWXYiNGqk2IhRfsxD/+Q4xfJJZOrBEaOBVSgQnL84H/wu1szPzHhJoXjQOeLx/kYBfp2gUbNcb6PHadxAvifgSu97a9UAzOfpNfbWvgIGNgGLq7bmrwHXO4AQ0+6ZEiO5KcpFAvA+xl9UxYYugVCa25vzX2cPgBp6ip1AxwcAqMFyl73eHd3e2//nmn19wOgFnKoHCpamwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+kEAAgiBNLo4gAAAAJlUElSAAAAAgAAAABWamgAAAABJUlEQVRo3mNkYGBg+A8F////B4pBDAZkNoozMCBgQGdDLUKdBhUHMGYgoNzQyJCEh8B2KTIQqgMZdgwMSOwfCrYDAyMZNNCAhoJZoJP9+ODAQP8bAMEODbNFE5GiAAAAAElFTkSuQmCC">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">⚙️</span>
+                    OOS Management Dashboard
+                </h1>
+                <div class="header-actions">
+                    <div class="status-indicator" id="connection-status">
+                        <span class="status-dot status-connecting"></span>
+                        <span class="status-text">Connecting...</span>
+                    </div>
+                    <button class="btn btn-icon" id="refresh-btn" title="Refresh">
+                        <span>🔄</span>
+                    </button>
+                    <div class="user-menu">
+                        <button class="btn btn-user" id="user-btn">
+                            <span>👤 Admin</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="nav-section">
+                <h3>Monitoring</h3>
+                <a href="#dashboard" class="nav-link active" data-section="dashboard">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#status" class="nav-link" data-section="status">
+                    <span class="nav-icon">💓</span>
+                    System Status
+                </a>
+                <a href="#logs" class="nav-link" data-section="logs">
+                    <span class="nav-icon">📝</span>
+                    Logs
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Management</h3>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <span class="nav-icon">📁</span>
+                    Projects
+                </a>
+                <a href="#environment" class="nav-link" data-section="environment">
+                    <span class="nav-icon">🔧</span>
+                    Environment
+                </a>
+                <a href="#keys" class="nav-link" data-section="keys">
+                    <span class="nav-icon">🔑</span>
+                    API Keys
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Tools</h3>
+                <a href="#diagnostics" class="nav-link" data-section="diagnostics">
+                    <span class="nav-icon">🔍</span>
+                    Diagnostics
+                </a>
+                <a href="#backup" class="nav-link" data-section="backup">
+                    <span class="nav-icon">💾</span>
+                    Backup/Restore
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Section -->
+            <section id="section-dashboard" class="content-section active">
+                <div class="section-header">
+                    <h2>System Overview</h2>
+                    <p>Real-time monitoring of OOS components and services</p>
+                </div>
+
+                <!-- System Health Cards -->
+                <div class="cards-grid">
+                    <div class="card health-card">
+                        <div class="card-header">
+                            <h3>System Health</h3>
+                            <div class="health-score" id="health-score">--</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="health-details" id="health-details">
+                                Loading system status...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Services Status</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="services-list" id="services-list">
+                                Loading services...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>System Resources</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="system-info" id="system-info">
+                                Loading system information...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" id="run-diagnostics">
+                                    <span>🔍</span> Run Diagnostics
+                                </button>
+                                <button class="btn btn-secondary" id="health-check">
+                                    <span>💓</span> Health Check
+                                </button>
+                                <button class="btn btn-secondary" id="refresh-keys">
+                                    <span>🔑</span> Refresh Keys
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="activity-list" id="recent-activity">
+                            <div class="activity-item">
+                                <span class="activity-time">Just now</span>
+                                <span class="activity-message">Dashboard initialized</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- System Status Section -->
+            <section id="section-status" class="content-section">
+                <div class="section-header">
+                    <h2>System Status</h2>
+                    <p>Detailed status of all OOS components</p>
+                </div>
+                
+                <div class="status-grid" id="detailed-status">
+                    Loading detailed status...
+                </div>
+            </section>
+
+            <!-- Logs Section -->
+            <section id="section-logs" class="content-section">
+                <div class="section-header">
+                    <h2>System Logs</h2>
+                    <p>View and search through system logs</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Log Viewer</h3>
+                        <div class="log-controls">
+                            <select id="log-type">
+                                <option value="diagnostic">Diagnostic Logs</option>
+                                <option value="health">Health Monitor</option>
+                                <option value="alerts">Alerts</option>
+                            </select>
+                            <input type="text" id="log-search" placeholder="Search logs...">
+                            <button class="btn btn-secondary" id="refresh-logs">Refresh</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="log-viewer" id="log-viewer">
+                            <div class="log-loading">Loading logs...</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="section-projects" class="content-section">
+                <div class="section-header">
+                    <h2>Project Management</h2>
+                    <p>Manage your development projects</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Projects</h3>
+                        <button class="btn btn-primary" id="create-project">
+                            <span>➕</span> New Project
+                        </button>
+                    </div>
+                    <div class="card-content">
+                        <div class="projects-list" id="projects-list">
+                            Loading projects...
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Environment Section -->
+            <section id="section-environment" class="content-section">
+                <div class="section-header">
+                    <h2>Environment Configuration</h2>
+                    <p>Manage environment variables and configuration</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Environment Variables</h3>
+                        <div class="env-controls">
+                            <button class="btn btn-secondary" id="backup-env">Backup</button>
+                            <button class="btn btn-primary" id="save-env" disabled>Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="env-editor" id="env-editor">
+                            Loading environment configuration...
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diagnostics Section -->
+            <section id="section-diagnostics" class="content-section">
+                <div class="section-header">
+                    <h2>System Diagnostics</h2>
+                    <p>Run diagnostic tests and troubleshoot issues</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Diagnostic Tests</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="diagnostic-options">
+                                <div class="option-group">
+                                    <label>
+                                        <input type="checkbox" id="test-dependencies" checked>
+                                        System Dependencies
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="test-environment" checked>
+                                        Environment Configuration
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="test-network" checked>
+                                        Network Connectivity
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="test-apis" checked>
+                                        API Keys & Services
+                                    </label>
+                                </div>
+                                <div class="diagnostic-actions">
+                                    <button class="btn btn-primary" id="run-selected-tests">
+                                        <span>🔍</span> Run Selected Tests
+                                    </button>
+                                    <button class="btn btn-secondary" id="run-all-tests">
+                                        <span>🔄</span> Run All Tests
+                                    </button>
+                                    <label>
+                                        <input type="checkbox" id="auto-fix">
+                                        Auto-fix issues
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Test Results</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="diagnostic-results" id="diagnostic-results">
+                                Select tests and click "Run" to see results
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-overlay">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Modal Title</h3>
+                    <button class="modal-close" id="modal-close">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    Modal content goes here
+                </div>
+                <div class="modal-footer" id="modal-footer">
+                    <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
+                    <button class="btn btn-primary" id="modal-confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

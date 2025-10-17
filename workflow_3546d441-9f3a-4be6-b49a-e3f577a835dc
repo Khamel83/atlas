@@ -1,0 +1,87 @@
+2025-09-14T20:11:38.846422 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:38.978371 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:38.978552 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:39.608845 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:11:39.610494 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:39.677563 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:39.677781 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:39.761001 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:11:39.761182 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:39.820510 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:39.820730 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:44.512138 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:11:44.512252 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:11:44.512281 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:48.126894 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:48.978745 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:11:48.979154 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:52.515407 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:55.278060 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:11:58.037446 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:01.233800 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:01.338684 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:01.338943 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:26.643892 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T20:12:26.645184 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:26.754083 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T20:12:26.755494 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T20:12:26.756328 INFO: Google Search fallback: searching for '13FOB WWLN t.html'
+2025-09-14T20:12:26.790399 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:12:26.798424 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:26.858198 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:26.858375 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:27.445220 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:12:27.446740 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:27.510139 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:27.510329 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:27.573063 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:12:27.573251 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:27.632577 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:27.632825 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:32.043368 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:12:32.043470 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:12:32.043499 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:35.583069 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:36.475083 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:12:36.475444 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:39.185984 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:41.591430 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:45.197484 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:48.933053 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:49.032060 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:49.032260 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:50.334509 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T20:12:50.337059 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:50.476730 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T20:12:50.478294 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T20:12:50.478802 INFO: Google Search fallback: searching for '13FOB WWLN t.html'
+2025-09-14T20:12:50.557897 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:12:50.579840 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:50.650821 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:50.650978 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:51.417475 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:12:51.418959 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:51.482879 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:51.483059 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:51.546915 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:12:51.547112 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:51.609464 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:51.609712 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:53.974454 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:12:53.974560 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:12:53.974615 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:56.013634 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:56.900405 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:12:56.900849 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:12:59.117464 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:02.195568 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:05.406121 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:08.157847 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:08.250959 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:08.251154 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:09.511021 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T20:13:09.512535 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print
+2025-09-14T20:13:09.639022 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T20:13:09.640625 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/13/magazine/13FOB-WWLN-t.html?_r=1&partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T20:13:09.641119 INFO: Google Search fallback: searching for '13FOB WWLN t.html'
+2025-09-14T20:13:09.674305 INFO: Google Search fallback did not find alternative URL

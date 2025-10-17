@@ -1,0 +1,114 @@
+2025-09-14T20:59:02.619101 INFO: Attempting direct fetch for https://www.reelshort.com/
+2025-09-14T20:59:04.301070 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:04.857045 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:04.857155 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:04.857192 INFO: Attempting Reader Mode strategy for https://www.reelshort.com/
+2025-09-14T20:59:06.561864 ERROR: Reader mode fetch failed for https://www.reelshort.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:59:06.564686 INFO: Attempting JS Disabled strategy for https://www.reelshort.com/
+2025-09-14T20:59:08.736382 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:08.736484 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:08.736510 INFO: Attempting Refresh Stop strategy for https://www.reelshort.com/
+2025-09-14T20:59:09.576781 ERROR: Refresh stop fetch failed for https://www.reelshort.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:59:09.581412 INFO: Attempting Inspect Element strategy for https://www.reelshort.com/
+2025-09-14T20:59:12.281684 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:12.281799 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:12.281827 INFO: Attempting removepaywalls.com bypass for https://www.reelshort.com/
+2025-09-14T20:59:14.568293 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:59:14.568401 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:14.568428 INFO: Attempting archive.today for https://www.reelshort.com/
+2025-09-14T20:59:17.861112 INFO: No existing archive found, creating new archive for https://www.reelshort.com/
+2025-09-14T20:59:18.743085 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:59:18.743522 INFO: Attempting archive.is for https://www.reelshort.com/
+2025-09-14T20:59:21.078532 INFO: Attempting archive.li for https://www.reelshort.com/
+2025-09-14T20:59:23.174115 INFO: Attempting archive.fo for https://www.reelshort.com/
+2025-09-14T20:59:26.197350 INFO: Attempting archive.ph for https://www.reelshort.com/
+2025-09-14T20:59:29.332946 INFO: Attempting Googlebot spoof for https://www.reelshort.com/
+2025-09-14T20:59:31.250127 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:31.250259 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:31.250286 INFO: Attempting Enhanced Wayback Machine for https://www.reelshort.com/
+2025-09-14T20:59:31.764562 INFO: Found Wayback snapshot from 20250827014118: http://web.archive.org/web/20250827014118/https://www.reelshort.com/
+2025-09-14T20:59:33.914308 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:33.914422 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:33.914451 INFO: Attempting Wayback Machine for https://www.reelshort.com/
+2025-09-14T20:59:34.068091 INFO: Found Wayback snapshot: http://web.archive.org/web/20250827014118/https://www.reelshort.com/
+2025-09-14T20:59:34.714511 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:34.714652 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:34.714689 ERROR: All fetch strategies failed or returned low-quality content for https://www.reelshort.com/. Attempting Google Search fallback...
+2025-09-14T20:59:34.714765 INFO: Google Search fallback: searching for 'article www.reelshort.com'
+2025-09-14T20:59:34.748041 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:59:34.757143 INFO: Attempting direct fetch for https://www.reelshort.com/
+2025-09-14T20:59:35.914841 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:36.356815 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:36.356930 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:36.356970 INFO: Attempting Reader Mode strategy for https://www.reelshort.com/
+2025-09-14T20:59:37.013787 ERROR: Reader mode fetch failed for https://www.reelshort.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:59:37.016083 INFO: Attempting JS Disabled strategy for https://www.reelshort.com/
+2025-09-14T20:59:37.947189 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:37.947302 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:37.947329 INFO: Attempting Refresh Stop strategy for https://www.reelshort.com/
+2025-09-14T20:59:38.561105 ERROR: Refresh stop fetch failed for https://www.reelshort.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:59:38.563446 INFO: Attempting Inspect Element strategy for https://www.reelshort.com/
+2025-09-14T20:59:40.526757 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T20:59:40.526858 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:40.526888 INFO: Attempting removepaywalls.com bypass for https://www.reelshort.com/
+2025-09-14T20:59:43.697654 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:59:43.697776 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:59:43.697803 INFO: Attempting archive.today for https://www.reelshort.com/
+2025-09-14T20:59:48.338918 INFO: No existing archive found, creating new archive for https://www.reelshort.com/
+2025-09-14T20:59:49.226391 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:59:49.226813 INFO: Attempting archive.is for https://www.reelshort.com/
+2025-09-14T20:59:53.056152 INFO: Attempting archive.li for https://www.reelshort.com/
+2025-09-14T20:59:56.152220 INFO: Attempting archive.fo for https://www.reelshort.com/
+2025-09-14T20:59:59.173233 INFO: Attempting archive.ph for https://www.reelshort.com/
+2025-09-14T21:00:01.944012 INFO: Attempting Googlebot spoof for https://www.reelshort.com/
+2025-09-14T21:00:04.052549 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:04.052717 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:04.052749 INFO: Attempting Enhanced Wayback Machine for https://www.reelshort.com/
+2025-09-14T21:00:04.303931 INFO: Found Wayback snapshot from 20250827014118: http://web.archive.org/web/20250827014118/https://www.reelshort.com/
+2025-09-14T21:00:04.843483 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:04.843629 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:04.843663 INFO: Attempting Wayback Machine for https://www.reelshort.com/
+2025-09-14T21:00:04.971960 INFO: Found Wayback snapshot: http://web.archive.org/web/20250827014118/https://www.reelshort.com/
+2025-09-14T21:00:05.491303 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:05.491410 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:05.491447 ERROR: All fetch strategies failed or returned low-quality content for https://www.reelshort.com/. Attempting Google Search fallback...
+2025-09-14T21:00:05.491508 INFO: Google Search fallback: searching for 'article www.reelshort.com'
+2025-09-14T21:00:05.523369 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:00:05.533105 INFO: Attempting direct fetch for https://www.reelshort.com/
+2025-09-14T21:00:07.870325 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:08.306010 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:08.306124 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:08.306181 INFO: Attempting Reader Mode strategy for https://www.reelshort.com/
+2025-09-14T21:00:08.945710 ERROR: Reader mode fetch failed for https://www.reelshort.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:00:08.949182 INFO: Attempting JS Disabled strategy for https://www.reelshort.com/
+2025-09-14T21:00:10.107113 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:10.107217 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:10.107249 INFO: Attempting Refresh Stop strategy for https://www.reelshort.com/
+2025-09-14T21:00:11.033160 ERROR: Refresh stop fetch failed for https://www.reelshort.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:00:11.035427 INFO: Attempting Inspect Element strategy for https://www.reelshort.com/
+2025-09-14T21:00:13.008331 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:13.008449 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:13.008477 INFO: Attempting removepaywalls.com bypass for https://www.reelshort.com/
+2025-09-14T21:00:17.754611 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:00:17.754709 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:17.754739 INFO: Attempting archive.today for https://www.reelshort.com/
+2025-09-14T21:00:21.141656 INFO: No existing archive found, creating new archive for https://www.reelshort.com/
+2025-09-14T21:00:22.005413 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:00:22.007941 INFO: Attempting archive.is for https://www.reelshort.com/
+2025-09-14T21:00:25.318620 INFO: Attempting archive.li for https://www.reelshort.com/
+2025-09-14T21:00:28.128263 INFO: Attempting archive.fo for https://www.reelshort.com/
+2025-09-14T21:00:31.646209 INFO: Attempting archive.ph for https://www.reelshort.com/
+2025-09-14T21:00:35.411580 INFO: Attempting Googlebot spoof for https://www.reelshort.com/
+2025-09-14T21:00:37.311208 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:37.311330 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:37.311361 INFO: Attempting Enhanced Wayback Machine for https://www.reelshort.com/
+2025-09-14T21:00:37.430035 INFO: Found Wayback snapshot from 20250827014118: http://web.archive.org/web/20250827014118/https://www.reelshort.com/
+2025-09-14T21:00:38.112259 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:38.112374 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:38.112404 INFO: Attempting Wayback Machine for https://www.reelshort.com/
+2025-09-14T21:00:38.228312 INFO: Found Wayback snapshot: http://web.archive.org/web/20250827014118/https://www.reelshort.com/
+2025-09-14T21:00:38.751904 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-14T21:00:38.752019 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:38.752054 ERROR: All fetch strategies failed or returned low-quality content for https://www.reelshort.com/. Attempting Google Search fallback...
+2025-09-14T21:00:38.752115 INFO: Google Search fallback: searching for 'article www.reelshort.com'
+2025-09-14T21:00:38.785129 INFO: Google Search fallback did not find alternative URL

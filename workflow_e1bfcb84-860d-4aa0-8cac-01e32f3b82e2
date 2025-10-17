@@ -1,0 +1,98 @@
+2025-09-15T08:16:50.810324 INFO: Attempting direct fetch for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:16:51.506205 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:16:51.562357 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:16:51.562486 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:16:51.562534 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:16:51.742147 ERROR: Reader mode fetch failed for https://www.nytimes.com/by/george-gurley: cannot use a string pattern on a bytes-like object
+2025-09-15T08:16:51.743834 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:16:51.967341 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:16:52.478311 ERROR: Refresh stop fetch failed for https://www.nytimes.com/by/george-gurley: cannot use a string pattern on a bytes-like object
+2025-09-15T08:16:52.480140 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:16:52.773357 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:16:57.437369 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:16:57.437482 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:16:57.437507 INFO: Attempting archive.today for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:00.726796 INFO: No existing archive found, creating new archive for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:01.643491 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:17:01.644061 INFO: Attempting archive.is for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:03.740749 INFO: Attempting archive.li for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:07.271089 INFO: Attempting archive.fo for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:09.855772 INFO: Attempting archive.ph for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:12.590426 INFO: Attempting Googlebot spoof for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:12.878873 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:12.878973 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:12.879003 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:12.879055 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com/by/george-gurley: [Errno 32] Broken pipe
+2025-09-15T08:17:12.879088 INFO: Attempting Wayback Machine for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:18.039434 ERROR: Wayback Machine failed for https://www.nytimes.com/by/george-gurley: No archived snapshots found
+2025-09-15T08:17:18.040929 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/by/george-gurley. Attempting Google Search fallback...
+2025-09-15T08:17:18.041429 INFO: Google Search fallback: searching for 'george gurley'
+2025-09-15T08:17:18.073113 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:17:18.080272 INFO: Attempting direct fetch for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:18.309237 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:18.372776 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:18.372883 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:18.372926 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:18.550911 ERROR: Reader mode fetch failed for https://www.nytimes.com/by/george-gurley: cannot use a string pattern on a bytes-like object
+2025-09-15T08:17:18.552569 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:18.766284 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:18.936032 ERROR: Refresh stop fetch failed for https://www.nytimes.com/by/george-gurley: cannot use a string pattern on a bytes-like object
+2025-09-15T08:17:18.937923 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:19.180020 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:22.253487 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:17:22.253610 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:22.253638 INFO: Attempting archive.today for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:25.845720 INFO: No existing archive found, creating new archive for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:26.728105 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:17:26.728644 INFO: Attempting archive.is for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:30.613037 INFO: Attempting archive.li for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:33.612517 INFO: Attempting archive.fo for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:35.854452 INFO: Attempting archive.ph for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:39.081277 INFO: Attempting Googlebot spoof for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:39.413471 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:39.413579 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:39.413629 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:40.065562 INFO: Found Wayback snapshot from 20231115100311: http://web.archive.org/web/20231115100311/https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:44.740362 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:44.740487 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:44.740515 INFO: Attempting Wayback Machine for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:44.883530 ERROR: Wayback Machine failed for https://www.nytimes.com/by/george-gurley: No archived snapshots found
+2025-09-15T08:17:44.885934 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/by/george-gurley. Attempting Google Search fallback...
+2025-09-15T08:17:44.886050 INFO: Google Search fallback: searching for 'george gurley'
+2025-09-15T08:17:44.918771 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:17:44.926188 INFO: Attempting direct fetch for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:45.157381 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:45.219126 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:17:45.219238 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:45.219280 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:45.412177 ERROR: Reader mode fetch failed for https://www.nytimes.com/by/george-gurley: cannot use a string pattern on a bytes-like object
+2025-09-15T08:17:45.414631 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:45.636641 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:45.809612 ERROR: Refresh stop fetch failed for https://www.nytimes.com/by/george-gurley: cannot use a string pattern on a bytes-like object
+2025-09-15T08:17:45.812286 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:46.053826 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:50.724200 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:17:50.724331 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:17:50.724357 INFO: Attempting archive.today for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:52.430836 INFO: No existing archive found, creating new archive for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:53.310291 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:17:53.311361 INFO: Attempting archive.is for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:56.384164 INFO: Attempting archive.li for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:17:59.948275 INFO: Attempting archive.fo for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:03.439843 INFO: Attempting archive.ph for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:06.979459 INFO: Attempting Googlebot spoof for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:07.268348 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:18:07.268461 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:18:07.268488 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:07.527378 INFO: Found Wayback snapshot from 20231115100311: http://web.archive.org/web/20231115100311/https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:07.689814 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:18:07.689934 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:18:07.689983 INFO: Attempting Wayback Machine for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:07.833905 ERROR: Wayback Machine failed for https://www.nytimes.com/by/george-gurley: No archived snapshots found
+2025-09-15T08:18:07.836680 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/by/george-gurley. Attempting Google Search fallback...
+2025-09-15T08:18:07.836826 INFO: Google Search fallback: searching for 'george gurley'
+2025-09-15T08:18:07.871174 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:18:07.878566 INFO: Attempting direct fetch for https://www.nytimes.com/by/george-gurley
+2025-09-15T08:18:08.116228 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:18:08.171542 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:18:08.171677 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...

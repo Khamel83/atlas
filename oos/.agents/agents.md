@@ -1,0 +1,2 @@
+- Use Archon + MCPs for context/tasks; keep diffs small; log decisions in dev.md
+- Never print secrets; reference by name; short, test-first plans

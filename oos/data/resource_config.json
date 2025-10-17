@@ -1,0 +1,28 @@
+{
+  "worker_scaling": {
+    "min_workers": 1,
+    "max_workers": 5,
+    "queue_depth_threshold": 100,
+    "scale_up_delay": 30,
+    "scale_down_delay": 300
+  },
+  "memory": {
+    "pressure_threshold": 80.0,
+    "critical_threshold": 95.0,
+    "gc_interval": 60
+  },
+  "disk": {
+    "cleanup_threshold": 80.0,
+    "critical_threshold": 95.0,
+    "cleanup_paths": [
+      "data/temp/",
+      "data/logs/",
+      "archive/old-files/"
+    ]
+  },
+  "cpu": {
+    "throttle_threshold": 4.0,
+    "throttle_duration": 300,
+    "check_interval": 60
+  }
+}

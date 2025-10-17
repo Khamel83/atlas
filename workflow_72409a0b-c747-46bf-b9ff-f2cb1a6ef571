@@ -1,0 +1,152 @@
+2025-09-14T23:02:55.999235 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:02:56.970218 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:02:57.076145 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:02:57.076259 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:57.076298 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:02:57.756980 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:02:57.758547 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:02:58.114226 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:02:58.114332 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:58.114361 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:02:58.649652 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:02:58.651236 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:02:59.294029 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:02:59.294138 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:59.294168 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:04.301103 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:03:04.301221 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:04.301247 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:07.430357 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:08.307245 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:03:08.308156 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:11.304056 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:14.006232 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:17.273809 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:20.413835 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:20.584759 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:20.584885 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:20.584974 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:20.950245 INFO: Found Wayback snapshot from 20250622215251: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:21.722081 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:21.722208 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:21.722236 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:21.850718 INFO: Found Wayback snapshot: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:22.012868 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:22.012985 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:22.013019 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/streaming/. Attempting Google Search fallback...
+2025-09-14T23:03:22.013101 INFO: Google Search fallback: searching for 'streaming'
+2025-09-14T23:03:22.045888 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:03:22.055120 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:22.280804 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:22.373956 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:22.374076 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:22.374117 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:22.957729 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:03:22.959170 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:23.183999 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:03:23.184103 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:23.184132 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:23.260543 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:03:23.262143 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:23.919833 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:03:23.919938 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:23.919964 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:26.583600 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:03:26.583710 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:26.583739 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:29.134702 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:30.021413 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:03:30.022252 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:33.252818 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:35.976193 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:38.338953 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:41.792912 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:41.962146 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:41.962266 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:41.962295 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:42.122641 INFO: Found Wayback snapshot from 20250622215251: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:42.304159 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:42.304279 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:42.304307 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:42.430758 INFO: Found Wayback snapshot: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:42.610957 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:42.611091 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:42.611128 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/streaming/. Attempting Google Search fallback...
+2025-09-14T23:03:42.611197 INFO: Google Search fallback: searching for 'streaming'
+2025-09-14T23:03:42.679430 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:03:42.688696 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:42.907411 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:43.000093 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:03:43.000210 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:43.000248 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:43.174557 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:03:43.176067 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:43.402986 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:03:43.403093 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:43.403119 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:43.541210 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:03:43.543019 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:44.275332 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:03:44.275420 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:44.275447 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:46.693935 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:03:46.694048 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:03:46.694077 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:50.141155 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:51.058665 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:03:51.059246 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:53.075336 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:03:56.532109 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:00.167062 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:03.711148 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:03.936725 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:03.936845 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:03.936871 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:04.059047 INFO: Found Wayback snapshot from 20250622215251: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:04.215968 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:04.216098 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:04.216124 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:04.337735 INFO: Found Wayback snapshot: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:04.497049 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:04.497176 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:04.497211 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/streaming/. Attempting Google Search fallback...
+2025-09-14T23:04:04.497276 INFO: Google Search fallback: searching for 'streaming'
+2025-09-14T23:04:04.529426 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:04:04.538454 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:04.679656 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:04.773172 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:04.773287 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:04.773327 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:04.946409 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:04:04.947902 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:05.259641 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:04:05.259747 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:05.259775 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:05.337688 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/streaming/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:04:05.339186 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:05.995448 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-14T23:04:05.995556 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:05.995584 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:09.831402 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:04:09.831524 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:09.831556 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:12.491107 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:13.373505 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:04:13.374381 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:16.603239 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:19.771908 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:23.334894 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:26.344312 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:26.582798 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:26.582930 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:26.582959 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:26.711044 INFO: Found Wayback snapshot from 20250622215251: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:26.874867 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:26.875005 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:26.875033 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:26.986349 INFO: Found Wayback snapshot: http://web.archive.org/web/20250622215251/https://www.hollywoodreporter.com/t/streaming/
+2025-09-14T23:04:27.140554 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-14T23:04:27.140698 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:27.140733 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/streaming/. Attempting Google Search fallback...
+2025-09-14T23:04:27.140802 INFO: Google Search fallback: searching for 'streaming'
+2025-09-14T23:04:27.172542 INFO: Google Search fallback did not find alternative URL

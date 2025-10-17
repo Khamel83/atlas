@@ -1,0 +1,25 @@
+2025-09-15T02:53:19.452080 INFO: Attempting direct fetch for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:19.731638 ERROR: Direct fetch failed for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:19.733613 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:20.282956 ERROR: Reader mode fetch failed for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:53:20.285222 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:20.400020 ERROR: JS disabled fetch failed for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:20.401767 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:20.518555 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:53:20.520275 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:20.640667 ERROR: Inspect element fetch failed for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:20.642528 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:23.990957 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:53:23.991067 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:53:23.991093 INFO: Attempting archive.today for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:27.291100 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:28.202671 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:53:28.203051 INFO: Attempting archive.is for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:31.227135 INFO: Attempting archive.li for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:33.479125 INFO: Attempting archive.fo for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:36.395943 INFO: Attempting archive.ph for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:38.516054 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:38.641394 ERROR: Googlebot spoof failed for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:38.642747 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:53:55.248233 INFO: Found Wayback snapshot from 20210323091252: http://web.archive.org/web/20210323091252/https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html
+2025-09-15T02:54:00.987837 INFO: Successfully fetched https://www.nytimes.com/2021/03/23/style/all-gas-no-brakes.html using wayback_machine_enhanced

@@ -1,0 +1,125 @@
+2025-09-15T05:22:36.632070 INFO: Attempting direct fetch for https://techcrunch.com/category/space/
+2025-09-15T05:22:36.996241 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:37.221175 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:37.221292 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:37.221335 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:37.305752 ERROR: Reader mode fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:22:37.307502 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:37.520491 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:37.520620 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:37.520655 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:37.607264 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:22:37.616036 INFO: Attempting direct fetch for https://techcrunch.com/category/space/
+2025-09-15T05:22:38.109228 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:38.341513 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:38.341649 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:38.341691 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:38.421853 ERROR: Reader mode fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:22:38.423908 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:38.693265 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:38.693358 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:38.693536 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:38.878527 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:22:38.880454 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/space/
+2025-09-15T05:22:39.281290 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:39.281385 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:39.281410 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/space/
+2025-09-15T05:22:42.309493 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:22:42.309628 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:42.309662 INFO: Attempting archive.today for https://techcrunch.com/category/space/
+2025-09-15T05:22:46.004626 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/space/
+2025-09-15T05:22:46.911023 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:22:46.911621 INFO: Attempting archive.is for https://techcrunch.com/category/space/
+2025-09-15T05:22:49.615477 INFO: Attempting archive.li for https://techcrunch.com/category/space/
+2025-09-15T05:22:52.587368 INFO: Attempting archive.fo for https://techcrunch.com/category/space/
+2025-09-15T05:22:55.468350 INFO: Attempting archive.ph for https://techcrunch.com/category/space/
+2025-09-15T05:22:58.074478 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/space/
+2025-09-15T05:22:58.405744 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:22:58.405857 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:58.405901 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/space/
+2025-09-15T05:22:58.851892 INFO: Found Wayback snapshot from 20250906053117: http://web.archive.org/web/20250906053117/https://techcrunch.com/category/space/
+2025-09-15T05:23:00.362929 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:00.363047 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:00.363074 INFO: Attempting Wayback Machine for https://techcrunch.com/category/space/
+2025-09-15T05:23:00.492826 INFO: Found Wayback snapshot: http://web.archive.org/web/20250906053117/https://techcrunch.com/category/space/
+2025-09-15T05:23:00.768776 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:00.768884 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:00.768917 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/space/. Attempting Google Search fallback...
+2025-09-15T05:23:00.768984 INFO: Google Search fallback: searching for 'space'
+2025-09-15T05:23:00.800146 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:23:00.807894 INFO: Attempting direct fetch for https://techcrunch.com/category/space/
+2025-09-15T05:23:01.067104 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:01.448052 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:01.448155 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:01.448196 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:01.597219 ERROR: Reader mode fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:23:01.601790 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:01.868019 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:01.868126 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:01.868152 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:02.030832 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:23:02.035143 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:02.472498 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:02.472632 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:02.472661 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/space/
+2025-09-15T05:23:05.957450 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:23:05.957561 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:05.957613 INFO: Attempting archive.today for https://techcrunch.com/category/space/
+2025-09-15T05:23:08.363278 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/space/
+2025-09-15T05:23:09.237247 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:23:09.238052 INFO: Attempting archive.is for https://techcrunch.com/category/space/
+2025-09-15T05:23:12.014896 INFO: Attempting archive.li for https://techcrunch.com/category/space/
+2025-09-15T05:23:14.692191 INFO: Attempting archive.fo for https://techcrunch.com/category/space/
+2025-09-15T05:23:16.791983 INFO: Attempting archive.ph for https://techcrunch.com/category/space/
+2025-09-15T05:23:20.306734 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/space/
+2025-09-15T05:23:20.691032 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:20.691159 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:20.691207 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/space/
+2025-09-15T05:23:20.844693 INFO: Found Wayback snapshot from 20250906053117: http://web.archive.org/web/20250906053117/https://techcrunch.com/category/space/
+2025-09-15T05:23:21.139821 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:21.139948 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:21.139981 INFO: Attempting Wayback Machine for https://techcrunch.com/category/space/
+2025-09-15T05:23:21.257087 INFO: Found Wayback snapshot: http://web.archive.org/web/20250906053117/https://techcrunch.com/category/space/
+2025-09-15T05:23:21.540071 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:21.540195 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:21.540228 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/space/. Attempting Google Search fallback...
+2025-09-15T05:23:21.540299 INFO: Google Search fallback: searching for 'space'
+2025-09-15T05:23:21.540359 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T05:23:21.548804 INFO: Attempting direct fetch for https://techcrunch.com/category/space/
+2025-09-15T05:23:21.905119 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:22.124004 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:22.124116 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:22.124160 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:22.267415 ERROR: Reader mode fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:23:22.269041 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:22.478901 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:22.479012 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:22.479182 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:22.628819 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/space/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:23:22.630210 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/space/
+2025-09-15T05:23:23.138456 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:23.138568 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:23.138617 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/space/
+2025-09-15T05:23:27.548752 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:23:27.548874 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:27.548900 INFO: Attempting archive.today for https://techcrunch.com/category/space/
+2025-09-15T05:23:30.288370 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/space/
+2025-09-15T05:23:31.169245 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:23:31.169690 INFO: Attempting archive.is for https://techcrunch.com/category/space/
+2025-09-15T05:23:33.570412 INFO: Attempting archive.li for https://techcrunch.com/category/space/
+2025-09-15T05:23:35.619115 INFO: Attempting archive.fo for https://techcrunch.com/category/space/
+2025-09-15T05:23:38.138358 INFO: Attempting archive.ph for https://techcrunch.com/category/space/
+2025-09-15T05:23:40.119211 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/space/
+2025-09-15T05:23:40.395624 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:40.395750 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:40.395777 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/space/
+2025-09-15T05:23:40.573693 INFO: Found Wayback snapshot from 20250906053117: http://web.archive.org/web/20250906053117/https://techcrunch.com/category/space/
+2025-09-15T05:23:40.879365 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:40.879460 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:40.879486 INFO: Attempting Wayback Machine for https://techcrunch.com/category/space/
+2025-09-15T05:23:41.167329 INFO: Found Wayback snapshot: http://web.archive.org/web/20250906053117/https://techcrunch.com/category/space/
+2025-09-15T05:23:41.448374 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T05:23:41.448495 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:23:41.448527 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/space/. Attempting Google Search fallback...
+2025-09-15T05:23:41.448620 INFO: Google Search fallback: searching for 'space'
+2025-09-15T05:23:41.480288 INFO: Google Search fallback did not find alternative URL

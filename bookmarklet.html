@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atlas Bookmarklet - 1-Click Send to Atlas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .bookmarklet { background: #007cba; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-size: 18px; display: inline-block; margin: 20px 0; }
+        .bookmarklet:hover { background: #005a8b; }
+        pre { background: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 15px; border-radius: 4px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>📎 Atlas Bookmarklet - 1-Click Send to Atlas</h1>
+
+    <p><strong>This gives you 1-click sending from ANY device, ANY browser, ANY app with a browser.</strong></p>
+
+    <h2>🚀 Step 1: Add This Bookmark</h2>
+    <p>Drag this button to your bookmarks bar, or right-click and "Bookmark This Link":</p>
+
+    <a href="javascript:(function(){var url=window.location.href;var title=document.title;fetch('https://atlas.khamel.com/email-webhook',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:url,title:title,body:'Sent from bookmarklet on '+window.location.hostname})}).then(r=>r.json()).then(d=>{alert('✅ Sent to Atlas: '+url);}).catch(e=>{alert('❌ Error: '+e);});})();" class="bookmarklet">📎 Send to Atlas</a>
+
+    <h2>📱 Step 2: Use From Any Device</h2>
+    <ul>
+        <li><strong>Desktop:</strong> Click the bookmark in your bookmarks bar</li>
+        <li><strong>Phone:</strong> Open bookmarks, tap "Send to Atlas"</li>
+        <li><strong>Any browser:</strong> Works in Chrome, Safari, Firefox, Edge</li>
+        <li><strong>Any website:</strong> Click once, URL gets sent to Atlas</li>
+    </ul>
+
+    <h2>🧪 Step 3: Test It</h2>
+    <p>Click the bookmarklet above to test it on this page. You should see a success message.</p>
+
+    <div class="success">
+        <strong>✅ This is your complete 1-click solution!</strong><br>
+        No apps to install, no accounts to create, works everywhere.
+    </div>
+
+    <h2>📋 Alternative: Manual Bookmark Creation</h2>
+    <p>If dragging doesn't work, create a new bookmark manually with this JavaScript code:</p>
+
+    <pre>javascript:(function(){
+var url=window.location.href;
+var title=document.title;
+fetch('https://atlas.khamel.com/email-webhook',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+        url:url,
+        title:title,
+        body:'Sent from bookmarklet on '+window.location.hostname
+    })
+}).then(r=>r.json()).then(d=>{
+    alert('✅ Sent to Atlas: '+url);
+}).catch(e=>{
+    alert('❌ Error: '+e);
+});
+})();</pre>
+
+    <h2>🎯 How It Works</h2>
+    <ol>
+        <li>You're reading an article on any website</li>
+        <li>Click "Send to Atlas" bookmark</li>
+        <li>JavaScript grabs the URL and title</li>
+        <li>Sends it to Atlas via HTTPS</li>
+        <li>Shows confirmation message</li>
+    </ol>
+
+    <p><strong>This works from literally any device with a browser - no apps, no email setup, no complex configuration.</strong></p>
+
+    <hr>
+    <p><small>Access this page at: <code>https://atlas.khamel.com/bookmarklet</code></small></p>
+</body>
+</html>

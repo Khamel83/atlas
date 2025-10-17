@@ -1,0 +1,506 @@
+{
+  "Political Gabfest_https://feeds.megaphone.fm/slatespoliticalgabfest": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "The NPR Politics Podcast_https://feeds.npr.org/510310/podcast.xml": {
+    "network": "NPR",
+    "config": {
+      "domains": [
+        "npr.org",
+        "thisamericanlife.org"
+      ],
+      "selectors": [
+        ".transcript",
+        ".storytext",
+        ".story-text"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true
+  },
+  "Today, Explained_https://feeds.megaphone.fm/VMP5705694065": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "\"The Cognitive Revolution\" | AI Builders, Researchers, and Live Player Analysis_https://feeds.megaphone.fm/RINTP3108857801": {
+    "network": "Generic",
+    "sample_links": [
+      "https://www.cognitiverevolution.ai",
+      "https://www.cognitiverevolution.ai",
+      "https://www.cognitiverevolution.ai"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "ACQ2 by Acquired_https://feeds.transistor.fm/acq2": {
+    "network": "Generic",
+    "sample_links": [
+      "https://share.transistor.fm/s/e521cd8f",
+      "https://share.transistor.fm/s/e3bcf1ac",
+      "https://share.transistor.fm/s/13575ea8"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Accidental Tech Podcast_https://cdn.atp.fm/rss/public?wtvryzdm": {
+    "network": "Generic",
+    "sample_links": [
+      "https://atp.fm/655",
+      "https://atp.fm/654",
+      "https://atp.fm/653"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Acquired_https://feeds.transistor.fm/acquired": {
+    "network": "Acquired",
+    "config": {
+      "domains": [
+        "acquired.fm",
+        "share.transistor.fm"
+      ],
+      "selectors": [
+        ".entry-content",
+        ".post-content",
+        ".show-notes",
+        ".episode-content"
+      ],
+      "min_length": 2000
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Against the Rules with Michael Lewis_https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/f4e26994-3ddb-4ec7-b855-ae32006cd5de/ea4fae0c-3282-4cfd-b315-ae32006cd5ec/podcast.rss": {
+    "network": "Generic",
+    "sample_links": [
+      "https://omny.fm/shows/against-the-rules-with-michael-lewis/sen-richard-blumenthal-on-the-safe-bet-act",
+      "https://omny.fm/shows/against-the-rules-with-michael-lewis/dr-laurie-santos-on-group-psychology-the-teen-brai",
+      "https://omny.fm/shows/against-the-rules-with-michael-lewis/natasha-sch-ll-on-the-antisocial-lure-of-gambling"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Decoder with Nilay Patel_https://feeds.megaphone.fm/recodedecode": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "Greatest Of All Talk (Stratechery Plus Edition)_https://goat.passport.online/feed/podcast/6EynvegSpNaDpnt4DJsHzD": {
+    "network": "Generic",
+    "sample_links": [
+      "https://goat.passport.online/member/episode/kawhi-leonard-and-a-tree-planting-fiasco-a-preseason-nuggets-symposium-rebels-vs-the-empire?access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImdvYXQucGFzc3BvcnQub25saW5lIiwidHlwIjoiSldUIn0.eyJhdWQiOiJnb2F0LnBhc3Nwb3J0Lm9ubGluZSIsImF6cCI6IlJFVWs0b0w1RkZOdVFzSmZWSzFrWUYiLCJlbnQiOnsidXJpIjpbImh0dHBzOi8vZ29hdC5wYXNzcG9ydC5vbmxpbmUvbWVtYmVyL2VwaXNvZGUva2F3aGktbGVvbmFyZC1hbmQtYS10cmVlLXBsYW50aW5nLWZpYXNjby1hLXByZXNlYXNvbi1udWdnZXRzLXN5bXBvc2l1bS1yZWJlbHMtdnMtdGhlLWVtcGlyZSJdfSwiZXhwIjoxNzU5ODUwMzAzLCJpYXQiOjE3NTcyNTgzMDMsImlzcyI6Imh0dHBzOi8vYXBwLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIHBvZGNhc3QgcnNzIiwic3ViIjoiYzBlZGQ0YzItZTI3My00N2IxLWFjYmUtNTBhZTlmMTM4NTE4IiwidXNlIjoiYWNjZXNzIn0.GyrsnmS1eiM-jRKdXVAriSHp4xKnaEyXZUkh36ntoMNaoBvsvZ6gP5DbEYKMC4ARu-0qx9rJ9mhiFsmBPqJuMFpr0R_vG4LuDfhopu7s6ay1BHqMP7AvVlSTuVTrjlCAA24C4xpSdLGDRGYn-JZ95jFHf1DxoRlHQhnSHTY2m2r9spPCLRHOlrJahhX_IzkGcIYC2IpexMhvLjV_BDiAN1Fp6B6jhjiF5g6_JtJU84o6GXHjF_iutVpkd7pESxPjfETR6QQOSxpbOf_rYOKRLW97AYB9VeLQ7HnLfPOE0dc4xJTAuqY3fhWf4n2iCTDSP85ZhIKxamjUMBOSBYxigA",
+      "https://goat.passport.online/member/episode/summer-top-fives-lost-nba-cities-flyover-states-american-airport-eponyms?access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImdvYXQucGFzc3BvcnQub25saW5lIiwidHlwIjoiSldUIn0.eyJhdWQiOiJnb2F0LnBhc3Nwb3J0Lm9ubGluZSIsImF6cCI6IlJFVWs0b0w1RkZOdVFzSmZWSzFrWUYiLCJlbnQiOnsidXJpIjpbImh0dHBzOi8vZ29hdC5wYXNzcG9ydC5vbmxpbmUvbWVtYmVyL2VwaXNvZGUvc3VtbWVyLXRvcC1maXZlcy1sb3N0LW5iYS1jaXRpZXMtZmx5b3Zlci1zdGF0ZXMtYW1lcmljYW4tYWlycG9ydC1lcG9ueW1zIl19LCJleHAiOjE3NTk4NTAzMDMsImlhdCI6MTc1NzI1ODMwMywiaXNzIjoiaHR0cHM6Ly9hcHAucGFzc3BvcnQub25saW5lL29hdXRoIiwic2NvcGUiOiJmZWVkOnJlYWQgYXJ0aWNsZTpyZWFkIGFzc2V0OnJlYWQgY2F0ZWdvcnk6cmVhZCBlbnRpdGxlbWVudHMgcG9kY2FzdCByc3MiLCJzdWIiOiJjMGVkZDRjMi1lMjczLTQ3YjEtYWNiZS01MGFlOWYxMzg1MTgiLCJ1c2UiOiJhY2Nlc3MifQ.MsiroWNQoHPjyoiA4gya8gU-c1HNrXewhFY64R3X-rOnZVtu-XGK8WxBQX1_GpeRqkGwBMq82pdl4lr8VA2b5ly6DTIiUO-WrzD-PpyqnDzs4GwfbQhL9OVphP2fFPa1aqTgViYmXt61tv6bvaPQw8nVFdVBj7EklYMKRTgAI8honWOJq3oo9nmig3g91cWuqQnTns3oRIAFNA9ar6JGmyABoiZVJuTlvPAxcIufXsAQKCjswuJYYPwqrhskUybiu5CLKmISrUYH71bHbKWOHJCgDhbgB79p74BOCa7cPUCHBW4lr6cpoP_ZSz505fvA90nm8GcqbKecb72KqbcRqg",
+      "https://goat.passport.online/member/episode/summer-top-fives-role-players-and-undomesticated-animals?access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImdvYXQucGFzc3BvcnQub25saW5lIiwidHlwIjoiSldUIn0.eyJhdWQiOiJnb2F0LnBhc3Nwb3J0Lm9ubGluZSIsImF6cCI6IlJFVWs0b0w1RkZOdVFzSmZWSzFrWUYiLCJlbnQiOnsidXJpIjpbImh0dHBzOi8vZ29hdC5wYXNzcG9ydC5vbmxpbmUvbWVtYmVyL2VwaXNvZGUvc3VtbWVyLXRvcC1maXZlcy1yb2xlLXBsYXllcnMtYW5kLXVuZG9tZXN0aWNhdGVkLWFuaW1hbHMiXX0sImV4cCI6MTc1OTg1MDMwMywiaWF0IjoxNzU3MjU4MzAzLCJpc3MiOiJodHRwczovL2FwcC5wYXNzcG9ydC5vbmxpbmUvb2F1dGgiLCJzY29wZSI6ImZlZWQ6cmVhZCBhcnRpY2xlOnJlYWQgYXNzZXQ6cmVhZCBjYXRlZ29yeTpyZWFkIGVudGl0bGVtZW50cyBwb2RjYXN0IHJzcyIsInN1YiI6ImMwZWRkNGMyLWUyNzMtNDdiMS1hY2JlLTUwYWU5ZjEzODUxOCIsInVzZSI6ImFjY2VzcyJ9.WrPH87abmshqhFJKl_Cc5HMDUiUSw17sznyvsAvTLS58nGTHHNz2vKxSA-Vd-3mrTDyCgvoYQiCsjVUJtnj2UKEjjVMYZESyAvCoC6A4fOYuD00c1xr-5ONM1ezwq7MgT1Ql5fxROI3DDvWG8Gk6KAgJdbgLw3SglDtRma6gp7y0YZ5x2V1BEypk-FOD-iG3ydxcOJBeA8OEuWN13F34PL2mFgI3hTAta77eODJjUGlsjVTsESu05V5Y_aY1j8NtXu3cpCPxlZWw56VeRWIZk-cgsiUzn2U_K-UuKIQHwzQarvyznPG162McGHHKab6FUxP3EXaUrJ8bv0RyHrborQ"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Plain English with Derek Thompson_https://feeds.megaphone.fm/plain-english": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "Practical AI_https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm": {
+    "network": "Generic",
+    "sample_links": [
+      "https://share.transistor.fm/s/522b45c8",
+      "https://share.transistor.fm/s/f9da825c",
+      "https://share.transistor.fm/s/05d1bf50"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Sharp Tech with Ben Thompson_https://sharptech.fm/feed/podcast/MMs7xScDXhCnUAesQqB2Xa": {
+    "network": "Generic",
+    "sample_links": [
+      "https://sharptech.fm/member/episode/google-and-apple-avert-disaster-more-on-kpop-demon-hunters-and-hollywood-mail-on-microsoft-adobe-and-asml?access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6InNoYXJwdGVjaC5mbSIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJzaGFycHRlY2guZm0iLCJhenAiOiI0czZReVoxcmlUNXo5aHlyWTdNYXNkIiwiZW50Ijp7InVyaSI6WyJodHRwczovL3NoYXJwdGVjaC5mbS9tZW1iZXIvZXBpc29kZS9nb29nbGUtYW5kLWFwcGxlLWF2ZXJ0LWRpc2FzdGVyLW1vcmUtb24ta3BvcC1kZW1vbi1odW50ZXJzLWFuZC1ob2xseXdvb2QtbWFpbC1vbi1taWNyb3NvZnQtYWRvYmUtYW5kLWFzbWwiXX0sImV4cCI6MTc1OTg1MDMxMCwiaWF0IjoxNzU3MjU4MzEwLCJpc3MiOiJodHRwczovL2FwcC5wYXNzcG9ydC5vbmxpbmUvb2F1dGgiLCJzY29wZSI6ImZlZWQ6cmVhZCBhcnRpY2xlOnJlYWQgYXNzZXQ6cmVhZCBjYXRlZ29yeTpyZWFkIGVudGl0bGVtZW50cyBwb2RjYXN0IHJzcyIsInN1YiI6ImMwZWRkNGMyLWUyNzMtNDdiMS1hY2JlLTUwYWU5ZjEzODUxOCIsInVzZSI6ImFjY2VzcyJ9.ZYXKplIYaVjUlAMPI1FoJequ3ZIYzGKMdbIvl-1V9Heajt7oIF5Q56FjlWNNYeCt-95RvIcJJncLThVrgrC05MauwotXyHX7kORzwO2NUWf39-jU2tbqd23gCQOQXfbAQWRmrqesgdKeh4XuJaOq3CD1hSV9cjVetQY32cWRxiT5RXL5_0Y6H0lSJgGxYLNTsG2Pye4rYJIbYz-Ktfsn2j4Ycg4zMShsgmDWgFrYMUEK47jQLe-OoZjWEBsWmwLJNTFe3TakQO77Vn70rGS4G5-1Z_Grdmfk37MJrJvj3weXgVLowrPqWiK6fa1PTedcewnbqzSHARIMsnZdArPukg",
+      "https://sharptech.fm/member/episode/why-nvidia-wants-to-sell-chips-to-china-answering-intel-objections-k-pop-demon-hunters-conquers-the-world?access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6InNoYXJwdGVjaC5mbSIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJzaGFycHRlY2guZm0iLCJhenAiOiI0czZReVoxcmlUNXo5aHlyWTdNYXNkIiwiZW50Ijp7InVyaSI6WyJodHRwczovL3NoYXJwdGVjaC5mbS9tZW1iZXIvZXBpc29kZS93aHktbnZpZGlhLXdhbnRzLXRvLXNlbGwtY2hpcHMtdG8tY2hpbmEtYW5zd2VyaW5nLWludGVsLW9iamVjdGlvbnMtay1wb3AtZGVtb24taHVudGVycy1jb25xdWVycy10aGUtd29ybGQiXX0sImV4cCI6MTc1OTg1MDMxMCwiaWF0IjoxNzU3MjU4MzEwLCJpc3MiOiJodHRwczovL2FwcC5wYXNzcG9ydC5vbmxpbmUvb2F1dGgiLCJzY29wZSI6ImZlZWQ6cmVhZCBhcnRpY2xlOnJlYWQgYXNzZXQ6cmVhZCBjYXRlZ29yeTpyZWFkIGVudGl0bGVtZW50cyBwb2RjYXN0IHJzcyIsInN1YiI6ImMwZWRkNGMyLWUyNzMtNDdiMS1hY2JlLTUwYWU5ZjEzODUxOCIsInVzZSI6ImFjY2VzcyJ9.L7mDXTXAW8_VHtSXm1ocQNc7n1UKdArnkmTbVwPe5KOh1vH7Ko6EXPSxT-nHpOeQSRyDWc2lGlcZh6GJnONmDxQgYa9fsU0g8xIevCLnjbct8iWI1pNijYeRYWAI4M0VU4rKunPCBOtgQNEIFsvbKOSTNOclsylgmA5Lf1STRcH_ajC7sjgoay2LluXKSt92Yg8x6vmeq7tIBNbChVojme9HnXg2kKRSWfyZ7B_UXqfidHRhB0PQdb0bS-zQ5rXsRqvvB-s9indJnrnxUWhfpuaiBvt1-GNYSsiyUBTHdcn110DoVGOnAb4-e_OW4F-6GN1HaTJLSZH1YplNWhGj0Q",
+      "https://sharptech.fm/member/episode/facebook-is-dead-long-live-meta-does-open-ai-need-to-log-off-questions-on-bubbles-blackberry-and-bell-labs?access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6InNoYXJwdGVjaC5mbSIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJzaGFycHRlY2guZm0iLCJhenAiOiI0czZReVoxcmlUNXo5aHlyWTdNYXNkIiwiZW50Ijp7InVyaSI6WyJodHRwczovL3NoYXJwdGVjaC5mbS9tZW1iZXIvZXBpc29kZS9mYWNlYm9vay1pcy1kZWFkLWxvbmctbGl2ZS1tZXRhLWRvZXMtb3Blbi1haS1uZWVkLXRvLWxvZy1vZmYtcXVlc3Rpb25zLW9uLWJ1YmJsZXMtYmxhY2tiZXJyeS1hbmQtYmVsbC1sYWJzIl19LCJleHAiOjE3NTk4NTAzMTAsImlhdCI6MTc1NzI1ODMxMCwiaXNzIjoiaHR0cHM6Ly9hcHAucGFzc3BvcnQub25saW5lL29hdXRoIiwic2NvcGUiOiJmZWVkOnJlYWQgYXJ0aWNsZTpyZWFkIGFzc2V0OnJlYWQgY2F0ZWdvcnk6cmVhZCBlbnRpdGxlbWVudHMgcG9kY2FzdCByc3MiLCJzdWIiOiJjMGVkZDRjMi1lMjczLTQ3YjEtYWNiZS01MGFlOWYxMzg1MTgiLCJ1c2UiOiJhY2Nlc3MifQ.g2uWFhAZRPnz9J4teOouoTft0jJ5Hh-2r2f4uC3oQ-yJwdBuf5QaSlN8sw4DTm56xA3wQO1k8ap-tY5XlaqWE3L74yJFHbyj-9bV75FzNy42GcqTSNw3uYLbqmoCOC6DDp39XYdQU4Y-Ax8Y5_tm3ydmvLhXZZzg4dXr80UZ0hkcWrv0XWahtu6DqHL-krHVqWoRA2mE3b59ogr8ZQUw3AhytyC519V4hmegk_7qmULJb1A9zbyBtsRc8d6Gh65-OAsRrCfIrte-V44_-5FJI48N2L3w78ZhX7eJL0ACLvRUD9p4oameXmObtDtDfEYLgEqGdAoaRZcXCt9wIa8i0Q"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Stratechery_https://rss.stratechery.passport.online/feed/podcast/MMs7xScDXhCnUAesQqB2Xa": {
+    "network": "Stratechery",
+    "config": {
+      "domains": [
+        "stratechery.com"
+      ],
+      "selectors": [
+        ".entry-content",
+        ".post-content",
+        "article"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "The Trojan Horse Affair_https://feeds.simplecast.com/B9KgArY4": {
+    "network": "Generic",
+    "sample_links": [
+      "https://trojan-horse.simplecast.com/episodes/trailer-question-everything-hp0RbVdV",
+      "https://trojan-horse.simplecast.com/episodes/an-appointment-in-perth-BrSju_dE",
+      "https://trojan-horse.simplecast.com/episodes/the-detail-of-the-deputies-YO7rnSiP"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "The Vergecast_https://feeds.megaphone.fm/vergecast": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "Planet Money_https://feeds.npr.org/510289/podcast.xml": {
+    "network": "NPR",
+    "config": {
+      "domains": [
+        "npr.org",
+        "thisamericanlife.org"
+      ],
+      "selectors": [
+        ".transcript",
+        ".storytext",
+        ".story-text"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true
+  },
+  "Slate Money_https://feeds.megaphone.fm/slatemoney": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "The Indicator from Planet Money_https://feeds.npr.org/510325/podcast.xml": {
+    "network": "NPR",
+    "config": {
+      "domains": [
+        "npr.org",
+        "thisamericanlife.org"
+      ],
+      "selectors": [
+        ".transcript",
+        ".storytext",
+        ".story-text"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true
+  },
+  "Slate Culture_https://feeds.megaphone.fm/slatesculturegabfest": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "The Prestige TV Podcast_https://feeds.megaphone.fm/tvconcierge": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "The Rewatchables_https://feeds.megaphone.fm/the-rewatchables": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "99% Invisible_https://feeds.simplecast.com/BqbsxVfO": {
+    "network": "Generic",
+    "sample_links": [
+      "https://99percentinvisible.org/?p=46178",
+      "https://99percentinvisible.org/?p=46421",
+      "https://99percentinvisible.org/?p=46376"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Radiolab_https://feeds.simplecast.com/EmVW7VGp": {
+    "network": "Generic",
+    "sample_links": [
+      "https://www.wnycstudios.org/podcasts/radiolab/projects/podcasts",
+      "https://www.wnycstudios.org/podcasts/radiolab/projects/podcasts",
+      "https://www.wnycstudios.org/podcasts/radiolab/projects/podcasts"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Recipe Club_https://feeds.megaphone.fm/dave-chang-recipe-club": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "Ringer Food_https://feeds.megaphone.fm/house-of-carbs": {
+    "network": "Generic",
+    "patterns": [
+      "transcripts.megaphone.fm",
+      "megaphone.fm/transcripts",
+      "megaphone.fm/episodes/transcript",
+      "megaphone.fm/podcast/transcript"
+    ],
+    "discovered": false,
+    "needs_testing": true
+  },
+  "The Recipe with Kenji and Deb_https://rss.pdrl.fm/cd4580/feed.therecipepodcast.com/": {
+    "network": "Generic",
+    "sample_links": [
+      "https://play.prx.org/listen?ge=prx_4944_52862fe5-6cec-45c9-bbe0-303bc9f319b4&uf=https%3A%2F%2Ffeed.therecipepodcast.com%2F",
+      "https://play.prx.org/listen?ge=prx_4944_7fdf0552-ffd1-4632-a1f4-f7bcbdef8312&uf=https%3A%2F%2Ffeed.therecipepodcast.com%2F",
+      "https://play.prx.org/listen?ge=prx_4944_5d553bb1-aca0-4d49-989f-e9e438d460cf&uf=https%3A%2F%2Ffeed.therecipepodcast.com%2F"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Conversations with Tyler_https://cowenconvos.libsyn.com/rss": {
+    "network": "Generic",
+    "sample_links": [
+      "https://cowenconvos.libsyn.com/seamus-murphy",
+      "https://cowenconvos.libsyn.com/david-brooks",
+      "https://cowenconvos.libsyn.com/nate-silver-0"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "EconTalk_https://feeds.simplecast.com/wgl4xEgL": {
+    "network": "Generic",
+    "sample_links": [
+      "https://www.econtalk.org/humans-are-overrated-with-christine-webb/",
+      "https://www.econtalk.org/hemingway-love-and-war-with-david-wyatt/",
+      "https://www.econtalk.org/tim-ferriss-on-tim-ferriss-and-much-much-more/"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Hard Fork_https://feeds.simplecast.com/l2i9YnTd": {
+    "network": "NYTimes",
+    "sample_links": [
+      "https://www.nytimes.com/column/hard-fork",
+      "https://www.nytimes.com/column/hard-fork",
+      "https://www.nytimes.com/column/hard-fork"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Lex Fridman Podcast_https://lexfridman.com/feed/podcast/": {
+    "network": "Generic",
+    "sample_links": [
+      "https://lexfridman.com/dave-hone/?utm_source=rss&utm_medium=rss&utm_campaign=dave-hone",
+      "https://lexfridman.com/dave-plummer/?utm_source=rss&utm_medium=rss&utm_campaign=dave-plummer",
+      "https://lexfridman.com/scott-horton/?utm_source=rss&utm_medium=rss&utm_campaign=scott-horton"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "The Ezra Klein Show_https://feeds.simplecast.com/82FI35Px": {
+    "network": "NYTimes",
+    "sample_links": [
+      "https://nytimes.com/2025/09/07/opinion/trump-senate-democrats-shutdown-schumer.html",
+      "https://www.nytimes.com/2025/09/02/opinion/ezra-klein-podcast-kate-shaw.html",
+      "https://www.nytimes.com/2025/08/27/opinion/ezra-klein-podcast-radley-balko.html"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "The Journal._https://video-api.wsj.com/podcast/rss/wsj/the-journal": {
+    "network": "WSJ",
+    "config": {
+      "domains": [
+        "wsj.com"
+      ],
+      "selectors": [
+        ".article-body",
+        ".wsj-article-body"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true
+  },
+  "The Knowledge Project with Shane Parrish_https://feeds.megaphone.fm/FSMI7575968096": {
+    "network": "Generic",
+    "sample_links": [
+      "https://fs.blog/knowledge-project-podcast/outliers-john-bragg",
+      "https://fs.blog/knowledge-project-podcast/outliers-sol-price/"
+    ],
+    "discovered": true,
+    "source": "RSS"
+  },
+  "This American Life_https://www.thisamericanlife.org/podcast/rss.xml": {
+    "network": "NPR",
+    "config": {
+      "domains": [
+        "npr.org",
+        "thisamericanlife.org"
+      ],
+      "selectors": [
+        ".transcript",
+        ".storytext",
+        ".story-text"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true
+  },
+  "On the Media_https://www.wnycstudios.org/podcasts/otm/rss.xml": {
+    "network": "NPR/WNYC",
+    "config": {
+      "domains": [
+        "wnycstudios.org",
+        "wnyc.org"
+      ],
+      "selectors": [
+        ".transcript",
+        ".storytext",
+        ".story-text",
+        ".entry-content"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "The Indicator from Planet Money_https://feeds.npr.org/510289/podcast.xml": {
+    "network": "NPR",
+    "config": {
+      "domains": [
+        "npr.org"
+      ],
+      "selectors": [
+        ".transcript",
+        ".storytext",
+        ".story-text",
+        ".entry-content"
+      ],
+      "min_length": 1000
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Conversations with Tyler_https://feeds.megaphone.fm/conversationswithtyler": {
+    "network": "Mercatus",
+    "config": {
+      "domains": [
+        "conversationswithtyler.com",
+        "mercatus.org"
+      ],
+      "selectors": [
+        ".entry-content",
+        ".post-content",
+        ".content",
+        "article"
+      ],
+      "min_length": 1500
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "All the Hacks with Chris Hutchins_https://feeds.megaphone.fm/allthehacks": {
+    "network": "Generic",
+    "config": {
+      "domains": [
+        "allthehacks.com"
+      ],
+      "selectors": [
+        ".entry-content",
+        ".post-content",
+        ".show-notes",
+        ".episode-content"
+      ],
+      "min_length": 1500
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "Hard Fork_https://feeds.simplecast.com/tOjNXecQ": {
+    "network": "NYT",
+    "config": {
+      "domains": [
+        "nytimes.com"
+      ],
+      "selectors": [
+        ".entry-content",
+        ".post-content",
+        ".story-content"
+      ],
+      "min_length": 1500
+    },
+    "discovered": true,
+    "source": "RSS"
+  },
+  "The Ezra Klein Show_https://feeds.simplecast.com/4nMmTXz1": {
+    "network": "NYT",
+    "config": {
+      "domains": [
+        "nytimes.com"
+      ],
+      "selectors": [
+        ".entry-content",
+        ".post-content",
+        ".story-content"
+      ],
+      "min_length": 2000
+    },
+    "discovered": true,
+    "source": "RSS"
+  }
+}

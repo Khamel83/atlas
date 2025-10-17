@@ -1,0 +1,27 @@
+2025-09-15T13:31:10.504965 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:10.712147 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:10.713327 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:10.840838 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:10.842067 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:10.944101 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:10.945486 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:11.041418 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x: cannot use a string pattern on a bytes-like object
+2025-09-15T13:31:11.042714 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:11.146303 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:11.149913 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:15.264296 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:31:15.264412 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:31:15.264440 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:18.193698 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:19.073410 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:31:19.073846 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:21.885753 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:23.840534 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:27.099963 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:30.726205 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:30.831019 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:30.832352 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:44.577790 INFO: Found Wayback snapshot from 20220204165620: http://web.archive.org/web/20220204165620/https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:44.578053 INFO: Timeframe 20220101 failed: [Errno 32] Broken pipe
+2025-09-15T13:31:45.190308 INFO: Found Wayback snapshot from 20211116225649: http://web.archive.org/web/20211116225649/https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x
+2025-09-15T13:31:46.347826 INFO: Successfully fetched https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-1346.2006.00028.x using wayback_machine_enhanced

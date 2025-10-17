@@ -1,0 +1,101 @@
+2025-09-15T09:03:41.588609 INFO: Attempting direct fetch for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:03:54.975374 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:03:55.041382 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:03:55.041505 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:55.041547 INFO: Attempting Reader Mode strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:03:55.161982 ERROR: Reader mode fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:03:55.164140 INFO: Attempting JS Disabled strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:03.818407 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:04:03.818510 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:04:03.818541 INFO: Attempting Refresh Stop strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:03.985489 ERROR: Refresh stop fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:04:03.988739 INFO: Attempting Inspect Element strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:04.432713 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:04:04.432834 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:04:04.432862 INFO: Attempting removepaywalls.com bypass for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:08.416395 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:04:08.416512 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:04:08.416540 INFO: Attempting archive.today for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:10.191283 INFO: No existing archive found, creating new archive for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:11.048553 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:04:11.049284 INFO: Attempting archive.is for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:13.279176 INFO: Attempting archive.li for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:15.844746 INFO: Attempting archive.fo for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:18.550511 INFO: Attempting archive.ph for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:22.076202 INFO: Attempting Googlebot spoof for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:04:28.863284 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:04:28.863442 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:04:28.863476 INFO: Attempting Enhanced Wayback Machine for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:06.337221 ERROR: Enhanced Wayback Machine failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: No archived snapshots found in any timeframe
+2025-09-15T09:05:06.340677 INFO: Attempting Wayback Machine for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:06.531692 ERROR: Wayback Machine failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: No archived snapshots found
+2025-09-15T09:05:06.535235 ERROR: All fetch strategies failed or returned low-quality content for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true. Attempting Google Search fallback...
+2025-09-15T09:05:06.536112 INFO: Google Search fallback: searching for 'social video is eating the world'
+2025-09-15T09:05:06.593485 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:05:06.604145 INFO: Attempting direct fetch for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:06.817350 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:06.919139 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:06.919254 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:06.919298 INFO: Attempting Reader Mode strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:07.071182 ERROR: Reader mode fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:07.075320 INFO: Attempting JS Disabled strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:07.353971 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:07.354073 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:07.354102 INFO: Attempting Refresh Stop strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:07.486890 ERROR: Refresh stop fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:07.489185 INFO: Attempting Inspect Element strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:15.157775 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:15.157908 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:15.165482 INFO: Attempting direct fetch for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:15.307008 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:15.377511 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:15.377649 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:15.377694 INFO: Attempting Reader Mode strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:15.494446 ERROR: Reader mode fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:15.497114 INFO: Attempting JS Disabled strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:15.747024 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:15.747146 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:15.747175 INFO: Attempting Refresh Stop strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:15.955539 ERROR: Refresh stop fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:15.958460 INFO: Attempting Inspect Element strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:16.388149 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:16.388255 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:16.388282 INFO: Attempting removepaywalls.com bypass for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:18.978342 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:05:18.978457 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:18.978484 INFO: Attempting archive.today for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:21.245847 INFO: No existing archive found, creating new archive for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:22.134129 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:05:22.135182 INFO: Attempting archive.is for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:24.974840 INFO: Attempting archive.li for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:27.795998 INFO: Attempting archive.fo for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:29.859210 INFO: Attempting archive.ph for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:33.406442 INFO: Attempting Googlebot spoof for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:39.158087 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:39.158215 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:39.158243 INFO: Attempting Enhanced Wayback Machine for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:40.420867 ERROR: Enhanced Wayback Machine failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: No archived snapshots found in any timeframe
+2025-09-15T09:05:40.422495 INFO: Attempting Wayback Machine for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:40.553095 ERROR: Wayback Machine failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: No archived snapshots found
+2025-09-15T09:05:40.555239 ERROR: All fetch strategies failed or returned low-quality content for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true. Attempting Google Search fallback...
+2025-09-15T09:05:40.556285 INFO: Google Search fallback: searching for 'social video is eating the world'
+2025-09-15T09:05:40.588836 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:05:40.597011 INFO: Attempting direct fetch for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:40.864729 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:40.934290 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:40.934415 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:40.934460 INFO: Attempting Reader Mode strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:41.048739 ERROR: Reader mode fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:41.051393 INFO: Attempting JS Disabled strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:41.304925 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:41.305040 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:41.305069 INFO: Attempting Refresh Stop strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:41.515002 ERROR: Refresh stop fetch failed for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:41.517489 INFO: Attempting Inspect Element strategy for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:41.925774 INFO: Paywall phrase 'premium content' detected.
+2025-09-15T09:05:41.925888 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:41.925918 INFO: Attempting removepaywalls.com bypass for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:46.193354 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:05:46.193476 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:46.193501 INFO: Attempting archive.today for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true
+2025-09-15T09:05:48.250802 INFO: No existing archive found, creating new archive for https://dougshapiro.substack.com/p/social-video-is-eating-the-world?_cio_id=f6c60617da42abd12a&r=zqmh&triedRedirect=true

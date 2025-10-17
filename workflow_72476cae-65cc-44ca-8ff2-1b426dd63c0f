@@ -1,0 +1,114 @@
+2025-09-14T20:17:49.661906 INFO: Attempting direct fetch for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:50.158936 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:17:50.263834 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:17:50.263948 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:17:50.263988 INFO: Attempting Reader Mode strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:50.507244 ERROR: Reader mode fetch failed for https://www.gocomics.com/calvinandhobbes/2019/11/17: cannot use a string pattern on a bytes-like object
+2025-09-14T20:17:50.509358 INFO: Attempting JS Disabled strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:50.890659 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:17:50.890769 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:17:50.890794 INFO: Attempting Refresh Stop strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:51.103883 ERROR: Refresh stop fetch failed for https://www.gocomics.com/calvinandhobbes/2019/11/17: cannot use a string pattern on a bytes-like object
+2025-09-14T20:17:51.105813 INFO: Attempting Inspect Element strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:51.585042 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:17:51.585238 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:17:51.585266 INFO: Attempting removepaywalls.com bypass for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:56.356260 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:17:56.356374 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:17:56.356413 INFO: Attempting archive.today for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:17:59.732743 INFO: No existing archive found, creating new archive for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:00.629770 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:18:00.630476 INFO: Attempting archive.is for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:03.822712 INFO: Attempting archive.li for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:06.581787 INFO: Attempting archive.fo for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:09.258303 INFO: Attempting archive.ph for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:11.418043 INFO: Attempting Googlebot spoof for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:12.111742 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:12.111837 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:12.111862 INFO: Attempting Enhanced Wayback Machine for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:12.660735 INFO: Found Wayback snapshot from 20221013001628: http://web.archive.org/web/20221013001628/https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:13.539758 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:18:13.539874 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:13.539901 INFO: Attempting Wayback Machine for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:13.647061 INFO: Found Wayback snapshot: http://web.archive.org/web/20221013001628/https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:13.736083 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:18:13.736194 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:13.736275 ERROR: All fetch strategies failed or returned low-quality content for https://www.gocomics.com/calvinandhobbes/2019/11/17. Attempting Google Search fallback...
+2025-09-14T20:18:13.736368 INFO: Google Search fallback: searching for 'calvinandhobbes'
+2025-09-14T20:18:13.769186 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:18:13.784137 INFO: Attempting direct fetch for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:14.178388 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:14.284651 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:14.284763 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:14.284806 INFO: Attempting Reader Mode strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:14.588129 ERROR: Reader mode fetch failed for https://www.gocomics.com/calvinandhobbes/2019/11/17: cannot use a string pattern on a bytes-like object
+2025-09-14T20:18:14.590575 INFO: Attempting JS Disabled strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:14.944761 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:14.944867 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:14.944895 INFO: Attempting Refresh Stop strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:15.168376 ERROR: Refresh stop fetch failed for https://www.gocomics.com/calvinandhobbes/2019/11/17: cannot use a string pattern on a bytes-like object
+2025-09-14T20:18:15.170391 INFO: Attempting Inspect Element strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:15.627414 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:15.627520 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:15.627548 INFO: Attempting removepaywalls.com bypass for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:19.196181 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:18:19.196303 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:19.196332 INFO: Attempting archive.today for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:21.748469 INFO: No existing archive found, creating new archive for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:22.614109 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:18:22.615022 INFO: Attempting archive.is for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:25.802118 INFO: Attempting archive.li for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:28.534759 INFO: Attempting archive.fo for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:31.961864 INFO: Attempting archive.ph for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:34.516795 INFO: Attempting Googlebot spoof for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:35.014674 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:35.014785 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:35.014813 INFO: Attempting Enhanced Wayback Machine for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:35.132376 INFO: Found Wayback snapshot from 20221013001628: http://web.archive.org/web/20221013001628/https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:35.222042 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:18:35.222161 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:35.222188 INFO: Attempting Wayback Machine for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:35.354327 INFO: Found Wayback snapshot: http://web.archive.org/web/20221013001628/https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:35.439131 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:18:35.439240 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:35.439272 ERROR: All fetch strategies failed or returned low-quality content for https://www.gocomics.com/calvinandhobbes/2019/11/17. Attempting Google Search fallback...
+2025-09-14T20:18:35.439338 INFO: Google Search fallback: searching for 'calvinandhobbes'
+2025-09-14T20:18:35.471772 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:18:35.479372 INFO: Attempting direct fetch for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:35.976257 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:36.102197 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:36.102313 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:36.102353 INFO: Attempting Reader Mode strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:36.375758 ERROR: Reader mode fetch failed for https://www.gocomics.com/calvinandhobbes/2019/11/17: cannot use a string pattern on a bytes-like object
+2025-09-14T20:18:36.378032 INFO: Attempting JS Disabled strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:36.790432 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:36.790540 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:36.790567 INFO: Attempting Refresh Stop strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:37.030564 ERROR: Refresh stop fetch failed for https://www.gocomics.com/calvinandhobbes/2019/11/17: cannot use a string pattern on a bytes-like object
+2025-09-14T20:18:37.033850 INFO: Attempting Inspect Element strategy for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:37.454314 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:37.454427 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:37.454453 INFO: Attempting removepaywalls.com bypass for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:41.561554 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:18:41.561693 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:41.561722 INFO: Attempting archive.today for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:44.762215 INFO: No existing archive found, creating new archive for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:45.670063 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:18:45.670877 INFO: Attempting archive.is for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:47.642493 INFO: Attempting archive.li for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:50.400929 INFO: Attempting archive.fo for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:53.711505 INFO: Attempting archive.ph for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:56.235450 INFO: Attempting Googlebot spoof for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:56.618565 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-14T20:18:56.618687 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:56.618714 INFO: Attempting Enhanced Wayback Machine for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:56.739545 INFO: Found Wayback snapshot from 20221013001628: http://web.archive.org/web/20221013001628/https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:56.851224 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:18:56.851403 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:56.851434 INFO: Attempting Wayback Machine for https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:56.967106 INFO: Found Wayback snapshot: http://web.archive.org/web/20221013001628/https://www.gocomics.com/calvinandhobbes/2019/11/17
+2025-09-14T20:18:57.057073 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:18:57.057190 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:57.057225 ERROR: All fetch strategies failed or returned low-quality content for https://www.gocomics.com/calvinandhobbes/2019/11/17. Attempting Google Search fallback...
+2025-09-14T20:18:57.057292 INFO: Google Search fallback: searching for 'calvinandhobbes'
+2025-09-14T20:18:57.091210 INFO: Google Search fallback did not find alternative URL

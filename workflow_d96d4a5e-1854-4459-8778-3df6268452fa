@@ -1,0 +1,25 @@
+2025-09-15T06:13:38.044027 INFO: Attempting direct fetch for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:38.424437 ERROR: Direct fetch failed for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:38.425553 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:39.115302 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:13:39.116786 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:39.235907 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:39.237902 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:39.354293 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:13:39.356264 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:39.474287 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:39.476310 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:44.338968 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:13:44.339131 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:13:44.339161 INFO: Attempting archive.today for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:48.002508 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:48.891179 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:13:48.891625 INFO: Attempting archive.is for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:52.030074 INFO: Attempting archive.li for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:54.298430 INFO: Attempting archive.fo for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:56.729333 INFO: Attempting archive.ph for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:59.259402 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:59.383975 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:13:59.385221 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:14:00.105718 INFO: Found Wayback snapshot from 20250911071542: http://web.archive.org/web/20250911071542/https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html
+2025-09-15T06:14:01.253331 INFO: Successfully fetched https://www.nytimes.com/2022/01/18/dining/best-restaurants-suburbs.html using wayback_machine_enhanced

@@ -1,0 +1,39 @@
+# Repository Analysis & Pattern Extraction Engine Dependencies
+
+# GitHub API client
+PyGithub>=1.59.0
+
+# HTTP requests
+requests>=2.31.0
+
+# AST parsing (built-in for Python, but additional tools)
+ast-tools>=0.1.1
+
+# JSON handling and validation
+jsonschema>=4.19.0
+
+# Data analysis and pattern matching
+pandas>=2.1.0
+numpy>=1.24.0
+
+# File system operations
+pathlib2>=2.3.7
+
+# Configuration management
+pyyaml>=6.0.1
+
+# Logging and debugging
+rich>=13.6.0
+
+# Optional: Advanced code analysis
+tree-sitter>=0.20.0
+tree-sitter-languages>=1.7.0
+
+# Optional: Machine learning for pattern detection
+scikit-learn>=1.3.0
+
+# Development dependencies (optional)
+pytest>=7.4.0
+black>=23.7.0
+flake8>=6.0.0
+mypy>=1.5.0

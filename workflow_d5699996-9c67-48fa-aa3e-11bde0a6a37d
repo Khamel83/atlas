@@ -1,0 +1,26 @@
+2025-09-14T21:57:22.773017 INFO: Attempting direct fetch for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:23.355654 INFO: Content is very short (126 words). Likely a teaser.
+2025-09-14T21:57:23.563173 INFO: Content is very short (126 words). Likely a teaser.
+2025-09-14T21:57:23.563282 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:23.563322 INFO: Attempting Reader Mode strategy for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:23.727117 ERROR: Reader mode fetch failed for https://pubmed.ncbi.nlm.nih.gov/9542392/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:57:23.729014 INFO: Attempting JS Disabled strategy for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:24.929364 INFO: Content is very short (126 words). Likely a teaser.
+2025-09-14T21:57:24.929462 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:24.929489 INFO: Attempting Refresh Stop strategy for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:25.414994 ERROR: Refresh stop fetch failed for https://pubmed.ncbi.nlm.nih.gov/9542392/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:57:25.417572 INFO: Attempting Inspect Element strategy for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:26.052189 INFO: Content is very short (126 words). Likely a teaser.
+2025-09-14T21:57:26.052297 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:26.052324 INFO: Attempting removepaywalls.com bypass for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:30.162732 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:57:30.162838 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:30.162866 INFO: Attempting archive.today for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:33.576093 INFO: No existing archive found, creating new archive for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:34.452167 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:57:34.453209 INFO: Attempting archive.is for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:37.730277 INFO: Attempting archive.li for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:41.277929 INFO: Attempting archive.fo for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:44.585061 INFO: Attempting archive.ph for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:47.224267 INFO: Attempting Googlebot spoof for https://pubmed.ncbi.nlm.nih.gov/9542392/
+2025-09-14T21:57:47.437903 INFO: Successfully fetched https://pubmed.ncbi.nlm.nih.gov/9542392/ using googlebot_spoof

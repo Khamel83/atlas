@@ -1,0 +1,81 @@
+# Atlas Ingestion Reliability Configuration
+# Production-grade reliability settings for ingestion system
+
+# Rate Limiting Configuration
+rate_limiting:
+  initial_rate: 100  # requests per minute
+  burst_size: 50    # burst capacity
+  min_rate: 10      # minimum rate during degradation
+  max_rate: 1000    # maximum rate during health
+
+# Predictive Scaling Configuration
+predictive_scaling:
+  history_window: 100    # number of data points to consider
+  prediction_window: 5    # minutes ahead to predict
+  scaling_threshold: 0.2 # threshold for scaling decisions
+  min_workers: 1         # minimum worker count
+  max_workers: 20        # maximum worker count
+
+# Circuit Breaker Configuration
+circuit_breaker:
+  failure_threshold: 10    # failures to trigger circuit breaker
+  timeout_seconds: 300     # seconds to wait before retrying
+  half_open_max_requests: 5  # requests to try in half-open state
+
+# Retry Configuration
+retry:
+  max_attempts: 3          # maximum retry attempts
+  base_delay: 1.0          # base delay for exponential backoff
+  max_delay: 300.0         # maximum delay between retries
+  jitter_factor: 0.1       # jitter factor to prevent thundering herd
+  retry_budget: 1000      # global retry budget per hour
+
+# Dead Letter Queue Configuration
+dead_letter_queue:
+  max_retry_attempts: 5    # maximum attempts before dead letter
+  retry_delay_base: 60     # base delay for dead letter retry (seconds)
+  max_age_hours: 168       # maximum age for dead letter tasks (1 week)
+  cleanup_interval: 3600   # cleanup interval in seconds (1 hour)
+
+# Health Check Configuration
+health_check:
+  interval_seconds: 30     # health check interval
+  timeout_seconds: 10      # health check timeout
+  critical_threshold: 75   # percentage for critical status
+  unhealthy_threshold: 50  # percentage for unhealthy status
+  degraded_threshold: 25   # percentage for degraded status
+
+# Monitoring Configuration
+monitoring:
+  metrics_interval: 60     # metrics collection interval (seconds)
+  log_level: INFO         # logging level
+  enable_tracing: true    # enable distributed tracing
+  tracing_sample_rate: 0.1 # tracing sample rate
+
+# Resource Management
+resource_management:
+  memory_threshold: 80     # memory usage threshold (%)
+  cpu_threshold: 80       # CPU usage threshold (%)
+  disk_threshold: 85      # disk usage threshold (%)
+  emergency_cleanup: true # enable emergency cleanup
+
+# Queue Management
+queue_management:
+  max_queue_size: 10000   # maximum queue size
+  processing_timeout: 300 # processing timeout (seconds)
+  batch_size: 10         # batch processing size
+  priority_levels: 3     # number of priority levels
+
+# Alerting Configuration
+alerting:
+  enable_alerts: true     # enable alerting
+  alert_cooldown: 300     # alert cooldown period (seconds)
+  alert_channels:         # alert channels
+    - email
+    - webhook
+    - log
+  severity_levels:        # severity levels
+    - INFO
+    - WARNING
+    - ERROR
+    - CRITICAL

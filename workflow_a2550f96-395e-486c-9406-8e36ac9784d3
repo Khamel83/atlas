@@ -1,0 +1,25 @@
+2025-09-14T20:39:53.195157 INFO: Attempting direct fetch for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:53.369516 ERROR: Direct fetch failed for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:53.369886 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:54.046255 ERROR: Reader mode fetch failed for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:39:54.047713 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:54.112350 ERROR: JS disabled fetch failed for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:54.112538 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:54.172658 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:39:54.172828 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:54.232075 ERROR: Inspect element fetch failed for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:54.232261 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:39:57.858241 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:39:57.858346 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:57.858373 INFO: Attempting archive.today for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:02.178194 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:03.041827 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:40:03.042435 INFO: Attempting archive.is for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:05.331852 INFO: Attempting archive.li for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:08.015773 INFO: Attempting archive.fo for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:11.515273 INFO: Attempting archive.ph for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:13.887092 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:13.948982 ERROR: Googlebot spoof failed for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:13.949176 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:14.941083 INFO: Found Wayback snapshot from 20250812061832: http://web.archive.org/web/20250812061832/https://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html
+2025-09-14T20:40:15.807927 INFO: Successfully fetched http://www.nytimes.com/2016/09/23/us/isis-al-qaeda-recruits-anwar-al-awlaki.html using wayback_machine_enhanced

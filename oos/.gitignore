@@ -1,0 +1,29 @@
+# secrets
+.env
+.env.*
+!.env.template
+
+# local
+.env.export
+.DS_Store
+*.log
+
+# tool state
+/.mcp/
+.venv/
+
+# python
+__pycache__/
+*.pyc
+oos-env/
+
+# testing
+.pytest_cache/
+
+# generated files
+CODE_MANIFEST.md
+
+# bootstrap monitoring files (contain sensitive data)
+.bootstrap_history.log
+.bootstrap_stats.txt
+.bootstrap_feedback.log

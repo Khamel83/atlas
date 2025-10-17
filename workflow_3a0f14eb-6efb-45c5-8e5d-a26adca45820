@@ -1,0 +1,133 @@
+2025-09-15T10:28:39.156385 INFO: Attempting direct fetch for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:39.363322 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:28:39.370879 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:28:39.370986 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:28:39.371061 INFO: Attempting Reader Mode strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:39.608192 ERROR: Reader mode fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:28:39.609627 INFO: Attempting JS Disabled strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:39.958267 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:28:39.958376 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:28:39.958402 INFO: Attempting Refresh Stop strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:40.170374 ERROR: Refresh stop fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:28:40.172112 INFO: Attempting Inspect Element strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:40.495514 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:28:40.495630 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:28:40.495662 INFO: Attempting removepaywalls.com bypass for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:43.969708 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:28:43.969816 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:28:43.969842 INFO: Attempting archive.today for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:47.806114 INFO: No existing archive found, creating new archive for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:48.699802 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:28:48.700180 INFO: Attempting archive.is for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:52.450852 INFO: Attempting archive.li for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:54.712409 INFO: Attempting archive.fo for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:28:57.832987 INFO: Attempting archive.ph for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:00.271432 INFO: Attempting Googlebot spoof for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:00.366830 ERROR: Googlebot spoof failed for https://x.com/balajis/status/1897542165750014079: 403 Client Error: Forbidden for url: https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:00.368117 INFO: Attempting Enhanced Wayback Machine for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:18.901407 INFO: Found Wayback snapshot from 20250428051635: http://web.archive.org/web/20250428051635/https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:18.901553 INFO: Timeframe 20210101 failed: [Errno 32] Broken pipe
+2025-09-15T10:29:24.809166 INFO: Found Wayback snapshot from 20250428051635: http://web.archive.org/web/20250428051635/https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:26.288394 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:29:26.288505 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:26.288532 INFO: Attempting Wayback Machine for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:26.419428 ERROR: Wayback Machine failed for https://x.com/balajis/status/1897542165750014079: No archived snapshots found
+2025-09-15T10:29:26.421301 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/balajis/status/1897542165750014079. Attempting Google Search fallback...
+2025-09-15T10:29:26.421448 INFO: Google Search fallback: searching for 'status'
+2025-09-15T10:29:26.453246 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:29:26.461174 INFO: Attempting direct fetch for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:26.723283 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:29:26.733008 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:29:26.733102 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:26.733139 INFO: Attempting Reader Mode strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:26.993208 ERROR: Reader mode fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:29:26.994734 INFO: Attempting JS Disabled strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:27.315043 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:29:27.315141 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:27.315166 INFO: Attempting Refresh Stop strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:27.503151 ERROR: Refresh stop fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:29:27.504919 INFO: Attempting Inspect Element strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:27.731101 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:29:27.731205 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:27.731231 INFO: Attempting removepaywalls.com bypass for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:31.042403 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:29:31.042509 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:31.042535 INFO: Attempting archive.today for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:34.181926 INFO: No existing archive found, creating new archive for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:35.064372 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:29:35.064751 INFO: Attempting archive.is for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:38.111833 INFO: Attempting archive.li for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:41.723368 INFO: Attempting archive.fo for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:43.632710 INFO: Attempting archive.ph for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:45.620184 INFO: Attempting Googlebot spoof for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:45.712629 ERROR: Googlebot spoof failed for https://x.com/balajis/status/1897542165750014079: 403 Client Error: Forbidden for url: https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:45.713981 INFO: Attempting Enhanced Wayback Machine for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:46.361753 INFO: Found Wayback snapshot from 20250428051635: http://web.archive.org/web/20250428051635/https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:46.482237 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:29:46.482344 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:46.482371 INFO: Attempting Wayback Machine for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:46.598101 ERROR: Wayback Machine failed for https://x.com/balajis/status/1897542165750014079: No archived snapshots found
+2025-09-15T10:29:46.600088 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/balajis/status/1897542165750014079. Attempting Google Search fallback...
+2025-09-15T10:29:46.600338 INFO: Google Search fallback: searching for 'status'
+2025-09-15T10:29:46.631925 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:29:46.640505 INFO: Attempting direct fetch for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:46.833244 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:29:46.840912 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:29:46.841007 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:46.841046 INFO: Attempting Reader Mode strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:47.222242 ERROR: Reader mode fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:29:47.223984 INFO: Attempting JS Disabled strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:47.461436 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:29:47.461545 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:47.461572 INFO: Attempting Refresh Stop strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:47.664797 ERROR: Refresh stop fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:29:47.666666 INFO: Attempting Inspect Element strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:47.929815 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:29:47.929924 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:47.929951 INFO: Attempting removepaywalls.com bypass for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:51.480999 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:29:51.481111 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:29:51.481138 INFO: Attempting archive.today for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:54.971724 INFO: No existing archive found, creating new archive for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:55.842850 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:29:55.843274 INFO: Attempting archive.is for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:29:58.600897 INFO: Attempting archive.li for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:00.815325 INFO: Attempting archive.fo for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:03.629744 INFO: Attempting archive.ph for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:06.599044 INFO: Attempting Googlebot spoof for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:06.799137 ERROR: Googlebot spoof failed for https://x.com/balajis/status/1897542165750014079: 403 Client Error: Forbidden for url: https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:06.810328 INFO: Attempting direct fetch for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:07.023252 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:30:07.031220 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:30:07.031308 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:07.031345 INFO: Attempting Reader Mode strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:07.401414 ERROR: Reader mode fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:30:07.403489 INFO: Attempting JS Disabled strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:07.794616 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:30:07.794704 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:07.794730 INFO: Attempting Refresh Stop strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:08.270772 ERROR: Refresh stop fetch failed for https://x.com/balajis/status/1897542165750014079: cannot use a string pattern on a bytes-like object
+2025-09-15T10:30:08.273258 INFO: Attempting Inspect Element strategy for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:08.589308 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T10:30:08.589425 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:08.589451 INFO: Attempting removepaywalls.com bypass for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:12.541691 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:30:12.541805 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:12.541833 INFO: Attempting archive.today for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:15.879958 INFO: No existing archive found, creating new archive for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:16.761087 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:30:16.761720 INFO: Attempting archive.is for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:20.195120 INFO: Attempting archive.li for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:24.605894 INFO: Attempting archive.fo for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:28.017394 INFO: Attempting archive.ph for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:30.574276 INFO: Attempting Googlebot spoof for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:30.764485 ERROR: Googlebot spoof failed for https://x.com/balajis/status/1897542165750014079: 403 Client Error: Forbidden for url: https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:30.766364 INFO: Attempting Enhanced Wayback Machine for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:32.784250 INFO: Found Wayback snapshot from 20250428051635: http://web.archive.org/web/20250428051635/https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:32.882865 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T10:30:32.882978 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:30:32.883003 INFO: Attempting Wayback Machine for https://x.com/balajis/status/1897542165750014079
+2025-09-15T10:30:33.039851 ERROR: Wayback Machine failed for https://x.com/balajis/status/1897542165750014079: No archived snapshots found
+2025-09-15T10:30:33.042433 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/balajis/status/1897542165750014079. Attempting Google Search fallback...
+2025-09-15T10:30:33.042555 INFO: Google Search fallback: searching for 'status'
+2025-09-15T10:30:33.076875 INFO: Google Search fallback did not find alternative URL

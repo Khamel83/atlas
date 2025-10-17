@@ -1,0 +1,11 @@
+[Unit]
+Description=Hourly Sheets export
+Requires=export-to-sheets.service
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

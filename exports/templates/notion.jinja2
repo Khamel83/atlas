@@ -1,0 +1,38 @@
+# {{ content.title or 'Untitled' }}
+
+**Type**: {{ content.content_type or 'Unknown' }}
+**Podcast**: {{ content.podcast_title or 'N/A' }}
+**Created**: {{ content.created_at or 'Unknown' }}
+**Source**: {{ content.source_url or 'N/A' }}
+
+{% if content.summary %}
+## Summary
+{{ content.summary }}
+{% endif %}
+
+{% if segments %}
+## Key Points
+
+{% for segment in segments %}
+{% if segment.speaker and segment.transcript_segment and segment.transcript_segment | length > 50 %}
+### {{ segment.speaker }}
+{{ segment.transcript_segment }}
+
+{% if segment.topic_cluster %}**Topic**: {{ segment.topic_cluster }}{% endif %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if content.content and content.content != content.summary %}
+## Full Content
+{{ content.content }}
+{% endif %}
+
+---
+
+**Speakers**: {% for speaker in (content.speakers or []) %}{{ speaker }}{% if not loop.last %}, {% endif %}{% endfor %}
+
+**Topics**: {% for topic in (content.topics or []) %}{{ topic }}{% if not loop.last %}, {% endif %}{% endfor %}
+
+**Export Date**: {{ export_date }}

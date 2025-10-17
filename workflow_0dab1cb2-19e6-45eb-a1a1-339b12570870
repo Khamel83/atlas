@@ -1,0 +1,65 @@
+2025-09-15T08:33:00.202690 INFO: Attempting direct fetch for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:01.203586 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:01.437862 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:01.437962 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:01.438020 INFO: Attempting Reader Mode strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:01.438645 ERROR: Reader mode fetch failed for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen: [Errno 32] Broken pipe
+2025-09-15T08:33:01.439425 INFO: Attempting JS Disabled strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:01.718284 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:01.718393 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:01.718419 INFO: Attempting Refresh Stop strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:01.948114 ERROR: Refresh stop fetch failed for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen: cannot use a string pattern on a bytes-like object
+2025-09-15T08:33:01.950848 INFO: Attempting Inspect Element strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:02.310992 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:02.311094 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:02.311121 INFO: Attempting removepaywalls.com bypass for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:05.940071 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:33:05.940178 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:05.940208 INFO: Attempting archive.today for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:08.912764 INFO: No existing archive found, creating new archive for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:09.816790 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:33:09.817211 INFO: Attempting archive.is for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:11.852131 INFO: Attempting archive.li for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:13.991653 INFO: Attempting archive.fo for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:17.532225 INFO: Attempting archive.ph for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:20.343875 INFO: Attempting Googlebot spoof for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:20.643447 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:20.643568 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:20.643617 INFO: Attempting Enhanced Wayback Machine for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:23.425462 INFO: Found Wayback snapshot from 20241207091019: http://web.archive.org/web/20241207091019/https://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:37.504057 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:37.504208 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:37.504243 INFO: Attempting Wayback Machine for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:37.636518 INFO: Found Wayback snapshot: http://web.archive.org/web/20241207091019/https://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:37.769445 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:37.769559 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:37.769613 ERROR: All fetch strategies failed or returned low-quality content for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen. Attempting Google Search fallback...
+2025-09-15T08:33:37.769686 INFO: Google Search fallback: searching for 'this kanye west sam smith mashup is a must listen'
+2025-09-15T08:33:37.803214 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:33:37.811205 INFO: Attempting direct fetch for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:38.149371 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:38.337329 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:38.337442 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:38.337487 INFO: Attempting Reader Mode strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:38.499272 ERROR: Reader mode fetch failed for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen: cannot use a string pattern on a bytes-like object
+2025-09-15T08:33:38.502525 INFO: Attempting JS Disabled strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:38.770937 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:38.771046 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:38.771074 INFO: Attempting Refresh Stop strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:38.921877 ERROR: Refresh stop fetch failed for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen: cannot use a string pattern on a bytes-like object
+2025-09-15T08:33:38.924874 INFO: Attempting Inspect Element strategy for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:39.294060 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:33:39.294177 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:39.294203 INFO: Attempting removepaywalls.com bypass for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:43.042812 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:33:43.042930 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:33:43.042955 INFO: Attempting archive.today for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:46.886807 INFO: No existing archive found, creating new archive for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:47.758628 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:33:47.759163 INFO: Attempting archive.is for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:50.457824 INFO: Attempting archive.li for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:54.107784 INFO: Attempting archive.fo for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:33:57.733728 INFO: Attempting archive.ph for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:34:01.424244 INFO: Attempting Googlebot spoof for http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen
+2025-09-15T08:34:01.896136 INFO: Content is very short (87 words). Likely a teaser.
+2025-09-15T08:34:01.896419 INFO: Successfully fetched http://www.theverge.com/2014/11/25/7283213/this-kanye-west-sam-smith-mashup-is-a-must-listen using googlebot_spoof

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "check_python",
+        "action": "python3 --version",
+        "description": "Verify Python installation",
+        "retries": 3,
+        "timeout": 30
+    },
+    {
+        "id": "check_git",
+        "action": "git --version",
+        "description": "Verify Git installation",
+        "retries": 3,
+        "timeout": 30
+    },
+    {
+        "id": "check_node",
+        "action": "node --version",
+        "description": "Verify Node.js installation",
+        "retries": 3,
+        "timeout": 30
+    },
+    {
+        "id": "network_check",
+        "action": "ping -c 1 8.8.8.8",
+        "description": "Check network connectivity",
+        "retries": 5,
+        "timeout": 60
+    },
+    {
+        "id": "system_health",
+        "action": "./bin/simple_diagnose.sh",
+        "description": "Run basic system diagnostics",
+        "retries": 2,
+        "timeout": 120
+    },
+    {
+        "id": "security_audit",
+        "action": "./bin/simple_security.sh",
+        "description": "Run security checks",
+        "retries": 2,
+        "timeout": 120
+    },
+    {
+        "id": "performance_check",
+        "action": "./bin/simple_performance.sh",
+        "description": "Check system performance",
+        "retries": 2,
+        "timeout": 120
+    },
+    {
+        "id": "slash_commands_check",
+        "action": "[ -f .claude/slash_commands.json ] && echo '✅ Slash commands found' || echo '❌ No slash commands'",
+        "description": "Verify Claude Code integration",
+        "retries": 1,
+        "timeout": 10
+    },
+    {
+        "id": "oos_structure_check",
+        "action": "[ -d src ] && [ -d bin ] && echo '✅ OOS structure intact' || echo '❌ OOS structure missing'",
+        "description": "Verify OOS directory structure",
+        "retries": 1,
+        "timeout": 10
+    },
+    {
+        "id": "integration_ready",
+        "action": "echo '🎯 OOS ready for integration' && echo 'Use: ./bin/integrate_to_parent.sh'",
+        "description": "Final integration readiness check",
+        "retries": 1,
+        "timeout": 10
+    }
+]

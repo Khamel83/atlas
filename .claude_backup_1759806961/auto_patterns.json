@@ -1,0 +1,57 @@
+{
+  "auto_detection_patterns": {
+    "repository_update": {
+      "triggers": [
+        "update oos",
+        "sync oos",
+        "get latest oos",
+        "update from github",
+        "pull latest changes",
+        "update our oos"
+      ],
+      "auto_response": {
+        "type": "smart_repository_update",
+        "script": "bin/archon_learning.sh smart-update oos",
+        "fallback": [
+          "cd oos && git pull origin master",
+          "./bin/integrate_to_parent.sh"
+        ],
+        "no_discovery_needed": true,
+        "auto_integrate": true
+      }
+    },
+    "consultant_missing": {
+      "triggers": [
+        "/consultant not found",
+        "consultant command missing",
+        "consultant not available"
+      ],
+      "auto_response": {
+        "type": "integration_fix",
+        "script": "oos/bin/integrate_to_parent.sh",
+        "explanation": "Running integration to make consultant available"
+      }
+    }
+  },
+  "efficiency_rules": {
+    "no_manual_discovery": "Use intelligent context detection instead of ls/cd exploration",
+    "auto_integration": "Always run integration scripts automatically after updates",
+    "single_verification": "One status check at end, not multiple throughout",
+    "smart_defaults": "Use learned patterns instead of asking user to clarify obvious requests"
+  },
+  "learned_patterns": {
+    "atlas_update_flow": {
+      "inefficient_commands": [
+        "git remote -v",
+        "ls -la | grep oos",
+        "cd oos && pwd && git status",
+        "git remote -v",
+        "ls -la"
+      ],
+      "efficient_replacement": [
+        "cd oos && git pull origin master && ./bin/integrate_to_parent.sh"
+      ],
+      "time_saved": "80% reduction in commands"
+    }
+  }
+}

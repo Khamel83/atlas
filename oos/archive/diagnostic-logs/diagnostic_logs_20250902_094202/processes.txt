@@ -1,0 +1,17 @@
+=== Running Processes ===
+node_ex+  278997  0.0  0.1 1241772 15648 ?       Ssl  Aug20  14:46 /usr/local/bin/node_exporter
+ubuntu    694211  0.0  0.0   7584  3104 ?        Ss   Aug30   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756545602139-w60hje.sh && eval 'python3 search_server.py' \< /dev/null && pwd -P >| /tmp/claude-7877-cwd
+ubuntu    694233  0.0  0.4 168280 56944 ?        Sl   Aug30   4:03 python3 search_server.py
+ubuntu    829920  0.0  0.0   7584  3168 ?        Ss   Aug31   0:00 /bin/bash -c -l source /home/ubuntu/.claude/shell-snapshots/snapshot-bash-1756701666166-cw6hyv.sh && eval 'kill 829795 && sleep 2 && source venv/bin/activate && python web/app.py' \< /dev/null && pwd -P >| /tmp/claude-a119-cwd
+ubuntu    829945  0.1  0.6 172852 81400 ?        Sl   Aug31   2:34 python web/app.py
+root     1138267  0.0  0.2 109040 29236 ?        Ssl  Sep01   0:26 python -m uvicorn src.server.main:socket_app --host 0.0.0.0 --port 8181 --reload
+root     1138346  0.1  0.6 172120 84660 ?        Ssl  Sep01   1:18 python -m src.mcp_server.mcp_server
+root     1138393  0.0  0.0  15044 11036 ?        S    Sep01   0:00 /usr/local/bin/python -c from multiprocessing.resource_tracker import main;main(4)
+root     1138394  0.1  1.7 568368 216996 ?       Sl   Sep01   1:36 /usr/local/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=5, pipe_handle=7) --multiprocessing-fork
+root     1138431  0.0  0.5 793984 70384 ?        Sl   Sep01   0:00 /root/.local/lib/python3.11/site-packages/playwright/driver/node /root/.local/lib/python3.11/site-packages/playwright/driver/package/cli.js run-driver
+root     1139028  0.0  0.6 4525060 79796 ?       Sl   Sep01   0:14 node /root/.npm/_npx/aab42732f01924e5/node_modules/.bin/serve -s /app-dist -l 5173
+ubuntu   1498678 21.7  2.3 22200200 286156 pts/0 Sl+  09:30   3:27 node /home/ubuntu/.nvm/versions/node/v22.18.0/bin/gemini
+ubuntu   1498753  0.0  0.4 746676 52632 pts/0    Sl+  09:30   0:00 node /home/ubuntu/.npm/_npx/de2bd410102f5eda/node_modules/.bin/mcp-server-sequential-thinking
+ubuntu   1498761  0.0  0.4 11237156 60416 pts/0  Sl+  09:30   0:00 node /home/ubuntu/.npm/_npx/3dfbf5a9eea4a1b3/node_modules/.bin/mcp-server-github
+ubuntu   1498789  0.0  0.4 913220 58348 pts/0    Sl+  09:30   0:00 node /home/ubuntu/.npm/_npx/a3241bba59c344f5/node_modules/.bin/mcp-server-filesystem /home/ubuntu
+ubuntu   1503392  0.1  0.3 120456 36788 ?        Sl   09:41   0:00 /home/ubuntu/dev/oos/.venv/bin/python3 /home/ubuntu/dev/oos/dashboard/api/server.py

@@ -1,0 +1,25 @@
+2025-09-15T05:03:10.911492 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.016525 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.016724 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.667248 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:03:11.671340 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.733729 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.733910 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.794473 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:03:11.794691 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.853349 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:11.853534 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:16.676265 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:03:16.676381 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:03:16.676409 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:19.120439 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:19.991115 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:03:19.992872 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:22.499349 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:26.032166 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:28.535863 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:31.813913 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:31.922369 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:31.922579 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print
+2025-09-15T05:03:32.388220 INFO: Found Wayback snapshot from 20230706214306: http://web.archive.org/web/20230706214306/https://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1
+2025-09-15T05:03:36.909275 INFO: Successfully fetched http://www.nytimes.com/2011/03/29/business/29shrink.html?_r=1&ref=homepage&src=me&pagewanted=print using wayback_machine_enhanced

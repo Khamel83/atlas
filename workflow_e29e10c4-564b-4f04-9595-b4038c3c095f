@@ -1,0 +1,25 @@
+2025-09-14T21:13:11.130737 INFO: Attempting direct fetch for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.302250 ERROR: Direct fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.303531 INFO: Attempting Reader Mode strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.410319 ERROR: Reader mode fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.411620 INFO: Attempting JS Disabled strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.511955 ERROR: JS disabled fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.513539 INFO: Attempting Refresh Stop strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.620805 ERROR: Refresh stop fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full: cannot use a string pattern on a bytes-like object
+2025-09-14T21:13:11.622110 INFO: Attempting Inspect Element strategy for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.723817 ERROR: Inspect element fetch failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:11.725134 INFO: Attempting removepaywalls.com bypass for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:15.329662 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:13:15.329772 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:15.329799 INFO: Attempting archive.today for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:18.757377 INFO: No existing archive found, creating new archive for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:19.646209 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:13:19.646984 INFO: Attempting archive.is for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:22.843986 INFO: Attempting archive.li for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:26.681878 INFO: Attempting archive.fo for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:29.855422 INFO: Attempting archive.ph for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:32.105310 INFO: Attempting Googlebot spoof for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:32.202817 ERROR: Googlebot spoof failed for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full: 403 Client Error: Forbidden for url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:32.204569 INFO: Attempting Enhanced Wayback Machine for https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:33.526295 INFO: Found Wayback snapshot from 20240317235912: http://web.archive.org/web/20240317235912/https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full
+2025-09-14T21:13:35.813502 INFO: Successfully fetched https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008676.pub2/full using wayback_machine_enhanced

@@ -1,0 +1,23 @@
+name: Shell portability
+on:
+  pull_request: {}
+  push:
+    branches: [ master, main ]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y shellcheck shfmt
+      - name: ShellCheck (POSIX)
+        run: |
+          set -e
+          mapfile -t files < <(git ls-files '*.sh')
+          [ "${#files[@]}" -eq 0 ] || shellcheck -s sh "${files[@]}"
+      - name: shfmt (POSIX mode)
+        run: shfmt -ln posix -d .
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash templates/sh/template.sh -n test || /bin/sh templates/sh/template.sh -n test

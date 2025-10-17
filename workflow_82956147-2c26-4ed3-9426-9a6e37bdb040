@@ -1,0 +1,94 @@
+2025-09-15T09:01:05.040856 INFO: Attempting direct fetch for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.303083 ERROR: Direct fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.304965 INFO: Attempting Reader Mode strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.410500 ERROR: Reader mode fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.412376 INFO: Attempting JS Disabled strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.504042 ERROR: JS disabled fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.505911 INFO: Attempting Refresh Stop strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.682014 ERROR: Refresh stop fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: cannot use a string pattern on a bytes-like object
+2025-09-15T09:01:05.683868 INFO: Attempting Inspect Element strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.795827 ERROR: Inspect element fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:05.797655 INFO: Attempting removepaywalls.com bypass for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:10.293117 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:01:10.293224 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:01:10.293251 INFO: Attempting archive.today for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:12.137383 INFO: No existing archive found, creating new archive for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:13.042608 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:01:13.043497 INFO: Attempting archive.is for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:14.982079 INFO: Attempting archive.li for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:16.931824 INFO: Attempting archive.fo for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:19.186140 INFO: Attempting archive.ph for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:22.495078 INFO: Attempting Googlebot spoof for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:22.583631 ERROR: Googlebot spoof failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:22.585545 INFO: Attempting Enhanced Wayback Machine for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:28.183551 INFO: Found Wayback snapshot from 20240205004258: http://web.archive.org/web/20240205004258/https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.154404 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:01:30.154532 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:01:30.154562 INFO: Attempting Wayback Machine for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.282665 ERROR: Wayback Machine failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: No archived snapshots found
+2025-09-15T09:01:30.285276 ERROR: All fetch strategies failed or returned low-quality content for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668. Attempting Google Search fallback...
+2025-09-15T09:01:30.285402 INFO: Google Search fallback: searching for 'new'
+2025-09-15T09:01:30.318180 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:01:30.325956 INFO: Attempting direct fetch for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.420103 ERROR: Direct fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.421425 INFO: Attempting Reader Mode strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.513103 ERROR: Reader mode fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.514470 INFO: Attempting JS Disabled strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.621129 ERROR: JS disabled fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.622482 INFO: Attempting Refresh Stop strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.711863 ERROR: Refresh stop fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: cannot use a string pattern on a bytes-like object
+2025-09-15T09:01:30.713157 INFO: Attempting Inspect Element strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.801776 ERROR: Inspect element fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:30.803140 INFO: Attempting removepaywalls.com bypass for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.556900 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:01:34.557000 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:01:34.564821 INFO: Attempting direct fetch for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.675774 ERROR: Direct fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.677505 INFO: Attempting Reader Mode strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.767034 ERROR: Reader mode fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.768795 INFO: Attempting JS Disabled strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.871463 ERROR: JS disabled fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.873214 INFO: Attempting Refresh Stop strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:34.967619 ERROR: Refresh stop fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: cannot use a string pattern on a bytes-like object
+2025-09-15T09:01:34.969247 INFO: Attempting Inspect Element strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:35.106202 ERROR: Inspect element fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:35.108002 INFO: Attempting removepaywalls.com bypass for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:39.849291 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:01:39.849384 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:01:39.849413 INFO: Attempting archive.today for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:43.075794 INFO: No existing archive found, creating new archive for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:43.955582 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:01:43.956350 INFO: Attempting archive.is for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:46.864653 INFO: Attempting archive.li for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:48.813779 INFO: Attempting archive.fo for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:50.845216 INFO: Attempting archive.ph for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.211636 INFO: Attempting Googlebot spoof for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.311702 ERROR: Googlebot spoof failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.313573 INFO: Attempting Enhanced Wayback Machine for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.565444 INFO: Found Wayback snapshot from 20240205004258: http://web.archive.org/web/20240205004258/https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.661264 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:01:54.661385 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:01:54.661413 INFO: Attempting Wayback Machine for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.777104 ERROR: Wayback Machine failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: No archived snapshots found
+2025-09-15T09:01:54.779419 ERROR: All fetch strategies failed or returned low-quality content for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668. Attempting Google Search fallback...
+2025-09-15T09:01:54.779537 INFO: Google Search fallback: searching for 'new'
+2025-09-15T09:01:54.812251 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:01:54.820093 INFO: Attempting direct fetch for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.928522 ERROR: Direct fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:54.929837 INFO: Attempting Reader Mode strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.028498 ERROR: Reader mode fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.029813 INFO: Attempting JS Disabled strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.127564 ERROR: JS disabled fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.128924 INFO: Attempting Refresh Stop strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.222084 ERROR: Refresh stop fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: cannot use a string pattern on a bytes-like object
+2025-09-15T09:01:55.223402 INFO: Attempting Inspect Element strategy for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.312075 ERROR: Inspect element fetch failed for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668: 403 Client Error: Forbidden for url: https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:55.313375 INFO: Attempting removepaywalls.com bypass for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:01:58.988388 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:01:58.988490 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:01:58.988516 INFO: Attempting archive.today for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:02:02.388937 INFO: No existing archive found, creating new archive for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:02:03.264456 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:02:03.265221 INFO: Attempting archive.is for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:02:06.228420 INFO: Attempting archive.li for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668
+2025-09-15T09:02:08.245162 INFO: Attempting archive.fo for https://helpcenter.washingtonpost.com/hc/en-us/requests/new?ticket_form_id=502668

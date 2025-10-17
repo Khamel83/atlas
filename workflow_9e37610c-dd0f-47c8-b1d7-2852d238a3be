@@ -1,0 +1,131 @@
+2025-09-15T10:55:37.116772 INFO: Attempting direct fetch for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:37.982910 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:55:38.315389 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:55:38.315496 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:55:38.315543 INFO: Attempting Reader Mode strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:38.701873 ERROR: Reader mode fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:55:38.704209 INFO: Attempting JS Disabled strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:39.281242 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:55:39.281351 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:55:39.281379 INFO: Attempting Refresh Stop strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:39.743740 ERROR: Refresh stop fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:55:39.745565 INFO: Attempting Inspect Element strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:40.808384 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:55:40.808505 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:55:40.808534 INFO: Attempting removepaywalls.com bypass for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:45.008174 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:55:45.008293 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:55:45.008320 INFO: Attempting archive.today for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:46.886513 INFO: No existing archive found, creating new archive for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:47.801841 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:55:47.802428 INFO: Attempting archive.is for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:50.390616 INFO: Attempting archive.li for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:53.690725 INFO: Attempting archive.fo for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:56.079547 INFO: Attempting archive.ph for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:59.189375 INFO: Attempting Googlebot spoof for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:55:59.979243 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:55:59.979347 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:55:59.979381 INFO: Attempting Enhanced Wayback Machine for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:00.455447 INFO: Found Wayback snapshot from 20250903072621: http://web.archive.org/web/20250903072621/https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:01.871569 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:01.871711 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:01.871747 INFO: Attempting Wayback Machine for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:02.014975 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903072621/https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:02.414411 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:02.414504 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:02.414537 ERROR: All fetch strategies failed or returned low-quality content for https://www.goodreads.com/quotes/tag/never-give-up. Attempting Google Search fallback...
+2025-09-15T10:56:02.414685 INFO: Google Search fallback: searching for 'never give up'
+2025-09-15T10:56:02.447722 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:56:02.456364 INFO: Attempting direct fetch for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:03.307978 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:03.549981 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:03.550090 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:03.550136 INFO: Attempting Reader Mode strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:03.916490 ERROR: Reader mode fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:03.918153 INFO: Attempting JS Disabled strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:04.444897 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:04.445011 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:04.445040 INFO: Attempting Refresh Stop strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:04.908261 ERROR: Refresh stop fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:04.909805 INFO: Attempting Inspect Element strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:05.880340 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:05.880445 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:05.880472 INFO: Attempting removepaywalls.com bypass for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:10.801626 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:56:10.801770 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:10.801801 INFO: Attempting archive.today for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:10.810032 INFO: Attempting direct fetch for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:11.794566 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:12.054353 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:12.054477 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:12.054553 INFO: Attempting Reader Mode strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:12.414675 ERROR: Reader mode fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:12.416325 INFO: Attempting JS Disabled strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:13.070248 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:13.070356 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:13.070383 INFO: Attempting Refresh Stop strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:13.542512 ERROR: Refresh stop fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:13.544085 INFO: Attempting Inspect Element strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:14.420695 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:14.420802 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:14.420834 INFO: Attempting removepaywalls.com bypass for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:16.906506 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:56:16.906645 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:16.906679 INFO: Attempting archive.today for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:18.887639 INFO: No existing archive found, creating new archive for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:19.774330 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:56:19.774795 INFO: Attempting archive.is for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:22.457227 INFO: Attempting archive.li for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:24.363576 INFO: Attempting archive.fo for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:26.967191 INFO: Attempting archive.ph for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:30.018441 INFO: Attempting Googlebot spoof for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:30.809132 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:30.809255 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:30.809291 INFO: Attempting Enhanced Wayback Machine for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:30.933528 INFO: Found Wayback snapshot from 20250903072621: http://web.archive.org/web/20250903072621/https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:31.388459 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:31.388569 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:31.388652 INFO: Attempting Wayback Machine for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:31.524009 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903072621/https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:31.831446 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:31.831573 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:31.831661 ERROR: All fetch strategies failed or returned low-quality content for https://www.goodreads.com/quotes/tag/never-give-up. Attempting Google Search fallback...
+2025-09-15T10:56:31.831734 INFO: Google Search fallback: searching for 'never give up'
+2025-09-15T10:56:31.865391 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:56:31.874083 INFO: Attempting direct fetch for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:32.742101 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:32.991999 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:32.992096 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:32.992145 INFO: Attempting Reader Mode strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:33.337286 ERROR: Reader mode fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:33.339009 INFO: Attempting JS Disabled strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:33.751421 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:33.751530 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:33.751557 INFO: Attempting Refresh Stop strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:34.232435 ERROR: Refresh stop fetch failed for https://www.goodreads.com/quotes/tag/never-give-up: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:34.234035 INFO: Attempting Inspect Element strategy for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:35.380378 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:35.380489 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:35.380517 INFO: Attempting removepaywalls.com bypass for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:39.897740 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:56:39.897852 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:39.897880 INFO: Attempting archive.today for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:42.294652 INFO: No existing archive found, creating new archive for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:43.216181 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:56:43.216570 INFO: Attempting archive.is for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:45.863060 INFO: Attempting archive.li for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:49.290481 INFO: Attempting archive.fo for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:51.695072 INFO: Attempting archive.ph for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:55.346237 INFO: Attempting Googlebot spoof for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:56.128336 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:56.128449 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:56.128487 INFO: Attempting Enhanced Wayback Machine for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:56.342959 INFO: Found Wayback snapshot from 20250903072621: http://web.archive.org/web/20250903072621/https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:56.628026 INFO: Content is very short (46 words). Likely a teaser.
+2025-09-15T10:56:56.628154 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:56:56.628193 INFO: Attempting Wayback Machine for https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:56.759631 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903072621/https://www.goodreads.com/quotes/tag/never-give-up
+2025-09-15T10:56:56.759789 ERROR: Wayback Machine failed for https://www.goodreads.com/quotes/tag/never-give-up: [Errno 32] Broken pipe
+2025-09-15T10:56:56.761321 ERROR: All fetch strategies failed or returned low-quality content for https://www.goodreads.com/quotes/tag/never-give-up. Attempting Google Search fallback...
+2025-09-15T10:56:56.761470 INFO: Google Search fallback: searching for 'never give up'
+2025-09-15T10:56:56.792845 INFO: Google Search fallback did not find alternative URL

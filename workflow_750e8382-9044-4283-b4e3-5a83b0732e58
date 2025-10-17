@@ -1,0 +1,112 @@
+2025-09-15T14:38:36.573154 INFO: Attempting direct fetch for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:36.802953 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:38:36.812769 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:38:36.812876 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:38:36.812917 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:36.984209 ERROR: Reader mode fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error: Not Found for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:38:36.985880 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:37.223997 ERROR: JS disabled fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error: Not Found for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:38:37.225449 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:37.489428 ERROR: Refresh stop fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: cannot use a string pattern on a bytes-like object
+2025-09-15T14:38:37.490920 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:37.649176 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:38:37.649280 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:38:37.649308 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:41.164371 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:38:41.164485 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:38:41.164514 INFO: Attempting archive.today for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:42.989062 INFO: No existing archive found, creating new archive for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:43.874557 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:38:43.875049 INFO: Attempting archive.is for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:47.688300 INFO: Attempting archive.li for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:51.384008 INFO: Attempting archive.fo for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:55.258885 INFO: Attempting archive.ph for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:57.977388 INFO: Attempting Googlebot spoof for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:38:58.129905 ERROR: Googlebot spoof failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:38:58.131509 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:16.619997 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: No archived snapshots found in any timeframe
+2025-09-15T14:39:16.621401 INFO: Attempting Wayback Machine for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:16.768067 ERROR: Wayback Machine failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: No archived snapshots found
+2025-09-15T14:39:16.769514 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”. Attempting Google Search fallback...
+2025-09-15T14:39:16.770097 INFO: Google Search fallback: searching for 'B011543KW4),”'
+2025-09-15T14:39:16.801536 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:39:16.809184 INFO: Attempting direct fetch for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:16.965998 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:16.975954 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:16.976047 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:16.976084 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:17.147682 ERROR: Reader mode fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error: Not Found for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:17.149326 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:17.384015 ERROR: JS disabled fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error: Not Found for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:17.385955 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:17.610205 ERROR: Refresh stop fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: cannot use a string pattern on a bytes-like object
+2025-09-15T14:39:17.611847 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:17.873864 ERROR: Inspect element fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error: Not Found for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:17.875562 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:21.749312 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:39:21.749425 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:21.749453 INFO: Attempting archive.today for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:25.557639 INFO: No existing archive found, creating new archive for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:26.456670 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:39:26.457250 INFO: Attempting archive.is for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:29.880759 INFO: Attempting archive.li for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:32.022097 INFO: Attempting archive.fo for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:35.012023 INFO: Attempting archive.ph for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:38.273045 INFO: Attempting Googlebot spoof for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:38.283993 INFO: Attempting direct fetch for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:38.545356 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:38.555845 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:38.555941 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:38.555977 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:38.744194 ERROR: Reader mode fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error:  for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:38.745841 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:39.003795 ERROR: JS disabled fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error:  for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:39.005323 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:39.254946 ERROR: Refresh stop fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: cannot use a string pattern on a bytes-like object
+2025-09-15T14:39:39.256950 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:39.437062 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:39.437170 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:39.437198 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:42.895725 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:39:42.895840 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:42.895866 INFO: Attempting archive.today for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:45.451342 INFO: No existing archive found, creating new archive for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:46.335848 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:39:46.336341 INFO: Attempting archive.is for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:48.715933 INFO: Attempting archive.li for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:51.040280 INFO: Attempting archive.fo for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:53.772993 INFO: Attempting archive.ph for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:55.786946 INFO: Attempting Googlebot spoof for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:55.941231 ERROR: Googlebot spoof failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 503 Server Error:  for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:55.942822 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:57.312199 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: No archived snapshots found in any timeframe
+2025-09-15T14:39:57.313778 INFO: Attempting Wayback Machine for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:57.446411 ERROR: Wayback Machine failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: No archived snapshots found
+2025-09-15T14:39:57.448045 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”. Attempting Google Search fallback...
+2025-09-15T14:39:57.448546 INFO: Google Search fallback: searching for 'B011543KW4),”'
+2025-09-15T14:39:57.480971 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:39:57.489578 INFO: Attempting direct fetch for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:57.654771 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:57.666629 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:57.666730 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:57.666769 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:57.874772 ERROR: Reader mode fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error:  for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:57.876305 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:58.119660 ERROR: JS disabled fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 404 Client Error:  for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D
+2025-09-15T14:39:58.121200 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:58.355915 ERROR: Refresh stop fetch failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: cannot use a string pattern on a bytes-like object
+2025-09-15T14:39:58.357384 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:39:58.526879 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T14:39:58.526990 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:39:58.527017 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:01.058505 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:40:01.058650 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:40:01.058683 INFO: Attempting archive.today for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:03.079033 INFO: No existing archive found, creating new archive for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:04.012010 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:40:04.012548 INFO: Attempting archive.is for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:07.146228 INFO: Attempting archive.li for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:09.882470 INFO: Attempting archive.fo for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:13.687889 INFO: Attempting archive.ph for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:15.746497 INFO: Attempting Googlebot spoof for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”
+2025-09-15T14:40:15.906276 ERROR: Googlebot spoof failed for https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),”: 503 Server Error:  for url: https://www.amazon.com/Matter-Size-Always-Wanted-Could-ebook/dp/B011543KW4),%E2%80%9D

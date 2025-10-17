@@ -1,0 +1,197 @@
+# Atlas Alerting Configuration
+# Comprehensive alerting system with multiple notification channels
+
+# Alert Definitions
+alerts:
+  - id: high_queue_depth
+    name: High Queue Depth
+    severity: warning
+    condition: "queue_depth > 500"
+    description: "Queue depth is above warning threshold"
+    metric_name: atlas_queue_pending_total
+    threshold: 500
+    operator: gt
+    duration: 300  # 5 minutes
+    cooldown: 900  # 15 minutes
+    enabled: true
+    channels: [log, webhook]
+
+  - id: critical_queue_depth
+    name: Critical Queue Depth
+    severity: critical
+    condition: "queue_depth > 1000"
+    description: "Queue depth is critically high - immediate attention required"
+    metric_name: atlas_queue_pending_total
+    threshold: 1000
+    operator: gt
+    duration: 60   # 1 minute
+    cooldown: 300  # 5 minutes
+    enabled: true
+    channels: [log, webhook, email]
+
+  - id: processing_stalled
+    name: Processing Stalled
+    severity: critical
+    condition: "transcription_rate == 0"
+    description: "Transcription processing has stalled for >20 minutes"
+    metric_name: atlas_transcription_rate
+    threshold: 0
+    operator: eq
+    duration: 1200  # 20 minutes
+    cooldown: 1800  # 30 minutes
+    enabled: true
+    channels: [log, webhook, email]
+
+  - id: high_memory_usage
+    name: High Memory Usage
+    severity: warning
+    condition: "memory_usage > 80"
+    description: "Memory usage is above 80%"
+    metric_name: atlas_memory_usage_bytes
+    threshold: 80  # percentage
+    operator: gt
+    duration: 300  # 5 minutes
+    cooldown: 1800  # 30 minutes
+    enabled: true
+    channels: [log]
+
+  - id: critical_memory_usage
+    name: Critical Memory Usage
+    severity: critical
+    condition: "memory_usage > 90"
+    description: "Memory usage is critically high - system may become unstable"
+    metric_name: atlas_memory_usage_bytes
+    threshold: 90  # percentage
+    operator: gt
+    duration: 120  # 2 minutes
+    cooldown: 600  # 10 minutes
+    enabled: true
+    channels: [log, webhook, email]
+
+  - id: high_disk_usage
+    name: High Disk Usage
+    severity: warning
+    condition: "disk_usage > 85"
+    description: "Disk usage is above 85%"
+    metric_name: atlas_disk_usage_percent
+    threshold: 85
+    operator: gt
+    duration: 300  # 5 minutes
+    cooldown: 3600  # 1 hour
+    enabled: true
+    channels: [log]
+
+  - id: critical_disk_usage
+    name: Critical Disk Usage
+    severity: critical
+    condition: "disk_usage > 95"
+    description: "Disk usage is critically high - system may run out of space"
+    metric_name: atlas_disk_usage_percent
+    threshold: 95
+    operator: gt
+    duration: 60   # 1 minute
+    cooldown: 1800  # 30 minutes
+    enabled: true
+    channels: [log, webhook, email]
+
+  - id: high_error_rate
+    name: High Error Rate
+    severity: warning
+    condition: "error_rate > 10"
+    description: "Error rate is above 10%"
+    metric_name: atlas_error_rate
+    threshold: 10  # percentage
+    operator: gt
+    duration: 300  # 5 minutes
+    cooldown: 900  # 15 minutes
+    enabled: true
+    channels: [log, webhook]
+
+  - id: circuit_breaker_open
+    name: Circuit Breaker Open
+    severity: warning
+    condition: "circuit_breaker_open == 1"
+    description: "Circuit breaker is open for one or more workers"
+    metric_name: atlas_circuit_breaker_open
+    threshold: 1
+    operator: eq
+    duration: 60   # 1 minute
+    cooldown: 300  # 5 minutes
+    enabled: true
+    channels: [log, webhook]
+
+  - id: database_connection_failed
+    name: Database Connection Failed
+    severity: critical
+    condition: "database_healthy == 0"
+    description: "Database health check failed"
+    metric_name: atlas_database_healthy
+    threshold: 0
+    operator: eq
+    duration: 60   # 1 minute
+    cooldown: 300  # 5 minutes
+    enabled: true
+    channels: [log, webhook, email]
+
+# Notification Channel Configuration
+notifications:
+  # Webhook Configuration
+  webhook:
+    url: ""  # Replace with your webhook URL
+    timeout: 30
+    retries: 3
+    headers:
+      Content-Type: "application/json"
+      User-Agent: "Atlas-Alerting/1.0"
+
+  # Email Configuration
+  email:
+    smtp_server: ""    # e.g., "smtp.gmail.com"
+    smtp_port: 587
+    username: ""       # Your email address
+    password: ""       # Your email password or app password
+    use_tls: true
+    recipients: []     # List of email addresses to notify
+    from_name: "Atlas Alerting System"
+
+  # Slack Configuration
+  slack:
+    webhook_url: ""   # Replace with your Slack webhook URL
+    channel: "#alerts"  # Optional: specify channel
+    username: "Atlas"
+    icon_emoji: ":warning:"
+
+# Alerting Service Configuration
+service:
+  check_interval: 30        # seconds between alert checks
+  max_concurrent_checks: 10  # maximum concurrent alert evaluations
+  alert_history_size: 1000   # number of alert events to keep in history
+  log_level: "INFO"         # logging level for alerting service
+
+# Alert Suppression Rules
+suppression_rules:
+  # Suppress alerts during maintenance windows
+  maintenance_windows:
+    - name: "scheduled-maintenance"
+      start_time: "2024-01-01T02:00:00Z"
+      end_time: "2024-01-01T04:00:00Z"
+      suppressed_alerts: ["high_queue_depth", "processing_stalled"]
+      reason: "Scheduled system maintenance"
+
+  # Suppress alerts based on patterns
+  pattern_suppression:
+    - pattern: ".*-test-.*"
+      reason: "Test environment alerts"
+      suppressed_severities: ["info"]
+
+# Alert Escalation Policies
+escalation_policies:
+  - name: "critical_escalation"
+    trigger_severity: "critical"
+    levels:
+      - delay: 300    # 5 minutes
+        channels: ["log", "webhook"]
+      - delay: 900    # 15 minutes
+        channels: ["log", "webhook", "email"]
+      - delay: 1800   # 30 minutes
+        channels: ["log", "webhook", "email", "slack"]

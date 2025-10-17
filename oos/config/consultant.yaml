@@ -1,0 +1,92 @@
+# OOS Consultant Configuration
+# Structured consulting flow configuration
+
+# Intake questions
+intake_questions:
+  goal:
+    text: "What's the primary goal or desired outcome? (How will we know it worked?)"
+    required: true
+    type: "text"
+
+  current_state:
+    text: "What's the current state? (Systems, constraints, key metrics)"
+    required: true
+    type: "text"
+
+  stakeholders:
+    text: "Who are the key stakeholders and what are their success criteria?"
+    required: true
+    type: "text"
+
+  constraints:
+    text: "What are the timebox, deadlines, or budget guardrails?"
+    required: false
+    type: "text"
+
+  risks:
+    text: "What are the known risks, unknowns, or blocked areas?"
+    required: false
+    type: "text"
+
+  assets:
+    text: "What assets can we reuse? (People, code, data, vendors, tools)"
+    required: false
+    type: "text"
+
+# Scoring weights
+scoring:
+  rice_weights:
+    reach_weight: 1.0
+    impact_weight: 1.0
+    confidence_weight: 1.0
+    effort_weight: 1.0
+
+  impact_effort_thresholds:
+    high_impact: 7.0
+    high_effort: 7.0
+    low_impact: 4.0
+    low_effort: 4.0
+
+# Output paths
+output:
+  base_path: "./consulting"
+  artifacts:
+    a3: "a3.md"
+    issue_tree: "issues.yaml"
+    ost: "ost.mmd"
+    impact_effort: "impact_effort.csv"
+    rice_scores: "rice.csv"
+    plan: "plan.md"
+    sources: "sources.json"
+    intake: "intake.json"
+    drafts: "drafts"
+
+# Portfolio selection
+portfolio:
+  max_quick_wins: 3
+  max_big_bets: 2
+  quick_win_criteria:
+    max_effort: 5
+    min_impact: 6
+  big_bet_criteria:
+    min_impact: 8
+    min_confidence: 7
+
+# External research
+external:
+  allow_web: false  # Set to true to enable external research
+  max_sources: 10
+  retrieval_k: 5
+
+# Planning
+planning:
+  time_horizons: ["30 days", "60 days", "90 days"]
+  default_horizon: "90 days"
+
+# Templates
+templates:
+  a3: "templates/a3.md.j2"
+  ost: "templates/ost.mmd.j2"
+  impact_effort: "templates/impact_effort.csv.j2"
+  rice: "templates/rice.csv.j2"
+  plan: "templates/plan.md.j2"

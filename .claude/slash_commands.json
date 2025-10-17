@@ -1,0 +1,69 @@
+{
+  "commands": [
+    {
+      "name": "modules",
+      "description": "🧩 Unix Philosophy: run/compose focused modules (security, python, git)",
+      "script": "bin/oos-module-runner.sh"
+    },
+    {
+      "name": "dev-setup",
+      "description": "🚀 Complete development environment validation (security + python + git)",
+      "script": "compositions/full-dev-setup.sh"
+    },
+    {
+      "name": "pre-commit",
+      "description": "🔍 Pre-commit validation: security scan + lint + tests + AI commit message",
+      "script": "compositions/pre-commit.sh"
+    },
+    {
+      "name": "create-project",
+      "description": "🏗️ Create new project from template (python-project, node-project, etc)",
+      "script": "bin/oos-template-manager.sh"
+    },
+    {
+      "name": "update-oos",
+      "description": "🌐 Update OOS subfolder operating system from GitHub - RESTART Claude Code after this!",
+      "script": "bin/oos-update-from-github.sh"
+    },
+    {
+      "name": "start-coding",
+      "description": "🚀 Complete development session setup",
+      "script": "bin/claude-start-coding.sh"
+    },
+    {
+      "name": "screenshot",
+      "description": "📸 Take screenshot and analyze with Claude",
+      "script": "bin/take-screenshot.sh"
+    },
+    {
+      "name": "provision",
+      "description": "🏗️ AI-powered infrastructure provisioning",
+      "script": "bin/provision-infrastructure.sh"
+    },
+    {
+      "name": "validate",
+      "description": "✅ Run comprehensive OOS validation",
+      "script": "bin/validate-oos"
+    },
+    {
+      "name": "ruat",
+      "description": "🧪 Run user acceptance testing (RUAT)",
+      "script": "bin/test-user-scenarios"
+    },
+    {
+      "name": "test-user-scenarios",
+      "description": "🧪 Run user acceptance testing (RUAT)",
+      "script": "bin/test-user-scenarios"
+    },
+    {
+      "name": "complete-workflow",
+      "description": "🚀 Run complete idea-to-completion workflow",
+      "script": "bin/complete-workflow.sh"
+    },
+    {
+      "name": "idea-to-done",
+      "description": "🎯 Complete project workflow A→B→C→D",
+      "script": "bin/complete-workflow.sh"
+    }
+  ]
+}

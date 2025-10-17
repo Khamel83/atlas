@@ -1,0 +1,148 @@
+2025-09-15T09:02:08.308038 INFO: Attempting direct fetch for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:09.552542 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:09.624198 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:09.624312 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:09.624355 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:09.747150 ERROR: Reader mode fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:02:09.751058 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:09.937798 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:09.937892 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:09.937923 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:10.026154 ERROR: Refresh stop fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:02:10.030658 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:10.236403 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:10.236513 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:10.236539 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:15.307814 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:02:15.307920 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:15.307950 INFO: Attempting archive.today for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:17.661900 INFO: No existing archive found, creating new archive for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:18.573845 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:02:18.574738 INFO: Attempting archive.is for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:21.170924 INFO: Attempting archive.li for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:23.592180 INFO: Attempting archive.fo for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:25.655188 INFO: Attempting archive.ph for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:28.290461 INFO: Attempting Googlebot spoof for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:28.500844 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:28.500946 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:28.500972 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:29.047236 INFO: Found Wayback snapshot from 20241213221001: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:31.837616 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:31.837729 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:31.837761 INFO: Attempting Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:31.945503 INFO: Found Wayback snapshot: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:32.100422 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:32.100535 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:32.100567 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/cartoon/a27088. Attempting Google Search fallback...
+2025-09-15T09:02:32.100666 INFO: Google Search fallback: searching for 'a27088'
+2025-09-15T09:02:32.133345 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:02:32.140787 INFO: Attempting direct fetch for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:32.247690 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:32.317135 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:32.317244 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:32.317285 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:32.403238 ERROR: Reader mode fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:02:32.405809 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:32.506259 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:32.506356 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:32.506385 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:32.558570 ERROR: Refresh stop fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:02:32.560876 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:32.704812 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:32.704919 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:32.704945 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:35.710047 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:02:35.710149 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:35.710179 INFO: Attempting archive.today for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:38.792913 INFO: No existing archive found, creating new archive for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:39.683928 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:02:39.684882 INFO: Attempting archive.is for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:42.129317 INFO: Attempting archive.li for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:45.463176 INFO: Attempting archive.fo for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:49.132842 INFO: Attempting archive.ph for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:52.594836 INFO: Attempting Googlebot spoof for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:52.805794 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:52.805913 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:52.805945 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:52.923659 INFO: Found Wayback snapshot from 20241213221001: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.092812 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:53.092928 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:53.092962 INFO: Attempting Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.222512 INFO: Found Wayback snapshot: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.392284 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:53.392373 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:53.392412 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/cartoon/a27088. Attempting Google Search fallback...
+2025-09-15T09:02:53.401339 INFO: Attempting direct fetch for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.512287 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:53.591817 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:53.591943 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:53.591988 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.644479 ERROR: Reader mode fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:02:53.647446 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.771746 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:53.771843 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:53.771876 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:53.865719 ERROR: Refresh stop fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:02:53.870683 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:54.032996 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:02:54.033098 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:54.033125 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:02:58.767242 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:02:58.767351 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:02:58.767432 INFO: Attempting archive.today for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:00.675968 INFO: No existing archive found, creating new archive for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:01.588304 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:03:01.591746 INFO: Attempting archive.is for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:04.352851 INFO: Attempting archive.li for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:07.404045 INFO: Attempting archive.fo for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:09.844500 INFO: Attempting archive.ph for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:12.923437 INFO: Attempting Googlebot spoof for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:13.118049 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:13.118150 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:13.118181 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:13.239324 INFO: Found Wayback snapshot from 20241213221001: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:13.397834 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:13.397949 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:13.397980 INFO: Attempting Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:13.652853 INFO: Found Wayback snapshot: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:13.805975 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:13.806098 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:13.806136 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/cartoon/a27088. Attempting Google Search fallback...
+2025-09-15T09:03:13.806200 INFO: Google Search fallback: searching for 'a27088'
+2025-09-15T09:03:13.839228 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:03:13.847092 INFO: Attempting direct fetch for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:13.959574 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:14.029694 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:14.029802 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:14.029847 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:14.081634 ERROR: Reader mode fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:03:14.084326 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:14.180792 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:14.180891 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:14.180922 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:14.231567 ERROR: Refresh stop fetch failed for https://www.newyorker.com/cartoon/a27088: cannot use a string pattern on a bytes-like object
+2025-09-15T09:03:14.234004 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:14.379667 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:14.379774 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:14.379805 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:19.376116 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:03:19.376227 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:19.376258 INFO: Attempting archive.today for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:22.028117 INFO: No existing archive found, creating new archive for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:22.917824 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:03:22.920243 INFO: Attempting archive.is for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:25.312281 INFO: Attempting archive.li for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:27.532462 INFO: Attempting archive.fo for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:31.378173 INFO: Attempting archive.ph for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:33.564293 INFO: Attempting Googlebot spoof for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:33.806406 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:33.806522 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:33.806557 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:33.965496 INFO: Found Wayback snapshot from 20241213221001: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:34.121990 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:34.122109 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:34.122141 INFO: Attempting Wayback Machine for https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:34.242432 INFO: Found Wayback snapshot: http://web.archive.org/web/20241213221001/https://www.newyorker.com/cartoon/a27088
+2025-09-15T09:03:34.402806 INFO: Content is very short (17 words). Likely a teaser.
+2025-09-15T09:03:34.402921 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:03:34.402954 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/cartoon/a27088. Attempting Google Search fallback...

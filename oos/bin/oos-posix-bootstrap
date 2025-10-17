@@ -1,0 +1,44 @@
+#!/usr/bin/env sh
+# shellcheck shell=sh
+set -eu
+
+OS="$(uname -s || true)"
+is_macos() { [ "$OS" = "Darwin" ]; }
+is_linux() { [ "$OS" = "Linux" ]; }
+
+log() { printf 'oos-posix-bootstrap: %s\n' "$*"; }
+
+if is_macos; then
+	if ! command -v brew >/dev/null 2>&1; then
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	fi
+	brew install coreutils findutils gnu-sed gawk gnu-tar grep shellcheck shfmt starship
+	ZRC="$HOME/.zshrc"
+	GNUPATHS="
+/opt/homebrew/opt/coreutils/libexec/gnubin
+/opt/homebrew/opt/findutils/libexec/gnubin
+/opt/homebrew/opt/gnu-sed/libexec/gnubin
+/opt/homebrew/opt/grep/libexec/gnubin
+/usr/local/opt/coreutils/libexec/gnubin
+/usr/local/opt/findutils/libexec/gnubin
+/usr/local/opt/gnu-sed/libexec/gnubin
+/usr/local/opt/grep/libexec/gnubin"
+	if ! grep -q '## OOS GNU gnubin' "$ZRC" 2>/dev/null; then
+		{
+			echo ''
+			echo '## OOS GNU gnubin (make macOS behave like Linux)'
+			echo "for p in $GNUPATHS; do [ -d \"\$p\" ] && PATH=\"\$p:\$PATH\"; done"
+			echo 'eval "$(starship init zsh)"'
+		} >>"$ZRC"
+	fi
+elif is_linux; then
+	sudo apt-get update -y
+	sudo apt-get install -y zsh shellcheck shfmt coreutils findutils sed gawk grep tar
+else
+	log "Unsupported OS: $OS"
+	exit 1
+fi
+
+mkdir -p "$HOME/.config/sh"
+cp -f "$(git rev-parse --show-toplevel)/scripts/posix/portable.sh" "$HOME/.config/sh/portable.sh" 2>/dev/null || true
+log "Done. Open a new terminal to pick up PATH changes."

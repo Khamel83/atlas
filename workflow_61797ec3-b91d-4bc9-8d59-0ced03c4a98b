@@ -1,0 +1,24 @@
+2025-09-14T21:01:04.449224 INFO: Attempting direct fetch for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:01:34.529025 ERROR: Direct fetch failed for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html: HTTPConnectionPool(host='voices.washingtonpost.com', port=80): Read timed out. (read timeout=30)
+2025-09-14T21:01:34.529134 INFO: Attempting Reader Mode strategy for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:01:54.563954 ERROR: Reader mode fetch failed for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html: HTTPConnectionPool(host='voices.washingtonpost.com', port=80): Read timed out. (read timeout=20)
+2025-09-14T21:01:54.564074 INFO: Attempting JS Disabled strategy for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:14.717110 ERROR: JS disabled fetch failed for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-14T21:02:14.717238 INFO: Attempting Refresh Stop strategy for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:17.797980 INFO: Attempting Inspect Element strategy for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:37.813676 ERROR: Inspect element fetch failed for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html: HTTPConnectionPool(host='voices.washingtonpost.com', port=80): Read timed out. (read timeout=20)
+2025-09-14T21:02:37.813811 INFO: Attempting removepaywalls.com bypass for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:41.732997 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:02:41.733107 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:02:41.733134 INFO: Attempting archive.today for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:43.792278 INFO: No existing archive found, creating new archive for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:44.695306 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:02:44.696081 INFO: Attempting archive.is for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:48.368306 INFO: Attempting archive.li for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:51.649414 INFO: Attempting archive.fo for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:55.447063 INFO: Attempting archive.ph for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:02:58.320276 INFO: Attempting Googlebot spoof for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:03:13.352109 ERROR: Googlebot spoof failed for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html: HTTPConnectionPool(host='voices.washingtonpost.com', port=80): Read timed out. (read timeout=15)
+2025-09-14T21:03:13.352227 INFO: Attempting Enhanced Wayback Machine for http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:03:13.876943 INFO: Found Wayback snapshot from 20220626231951: http://web.archive.org/web/20220626231951/http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html
+2025-09-14T21:03:14.470955 INFO: Successfully fetched http://voices.washingtonpost.com/44/2011/01/obama-in-tucson-full-text-of-p.html using wayback_machine_enhanced

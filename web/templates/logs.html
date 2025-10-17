@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Logs - {{ job_id }}</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        ul { background: #f9f9f9; padding: 1em; border-radius: 4px; }
+        li { margin-bottom: 0.5em; }
+    </style>
+</head>
+<body>
+    <h1>Logs for Job: {{ job_id }}</h1>
+    <ul>
+        {% for log in logs %}
+            <li>{{ log }}</li>
+        {% else %}
+            <li>No logs for this job yet.</li>
+        {% endfor %}
+    </ul>
+    <a href="/jobs/html">Back to Jobs</a>
+</body>
+</html> 

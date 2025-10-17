@@ -1,0 +1,33 @@
+[Unit]
+Description=Atlas Transcription Worker %i
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+Environment=WORKER_ID=%i
+ExecStartPre=/bin/bash -c 'source .env && export $(cat .env | grep -v ^# | xargs)'
+ExecStart=/home/ubuntu/dev/atlas/venv/bin/python scripts/fixed_transcript_worker.py --limit 5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-transcribe-%i
+
+# Resource limits
+MemoryMax=1G
+TasksMax=100
+
+# Restart policy
+RestartKillSignal=SIGINT
+KillMode=mixed
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

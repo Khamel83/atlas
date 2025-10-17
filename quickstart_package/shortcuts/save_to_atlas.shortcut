@@ -1,0 +1,23 @@
+{
+  "name": "Save to Atlas",
+  "description": "Save the current webpage to your Atlas system",
+  "actions": [
+    {
+      "type": "getWebPageContent",
+      "output": "webContent"
+    },
+    {
+      "type": "httpRequest",
+      "method": "POST",
+      "url": "http://localhost:8000/api/v1/content/save",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "${webContent.title}",
+        "url": "${webContent.url}",
+        "content": "${webContent.text}"
+      }
+    }
+  ]
+}

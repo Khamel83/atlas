@@ -1,0 +1,25 @@
+2025-09-15T00:46:37.315049 INFO: Attempting direct fetch for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:37.559472 ERROR: Direct fetch failed for http://www.fastcompany.com/node/1739777/print: 403 Client Error: Forbidden for url: https://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:37.560976 INFO: Attempting Reader Mode strategy for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:37.730649 ERROR: Reader mode fetch failed for http://www.fastcompany.com/node/1739777/print: 403 Client Error: Forbidden for url: https://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:37.732287 INFO: Attempting JS Disabled strategy for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:37.906947 ERROR: JS disabled fetch failed for http://www.fastcompany.com/node/1739777/print: 403 Client Error: Forbidden for url: https://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:37.908429 INFO: Attempting Refresh Stop strategy for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:38.081877 ERROR: Refresh stop fetch failed for http://www.fastcompany.com/node/1739777/print: cannot use a string pattern on a bytes-like object
+2025-09-15T00:46:38.083291 INFO: Attempting Inspect Element strategy for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:38.256095 ERROR: Inspect element fetch failed for http://www.fastcompany.com/node/1739777/print: 403 Client Error: Forbidden for url: https://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:38.257636 INFO: Attempting removepaywalls.com bypass for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:41.524607 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T00:46:41.524714 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:46:41.524741 INFO: Attempting archive.today for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:44.040631 INFO: No existing archive found, creating new archive for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:44.952155 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:46:44.953053 INFO: Attempting archive.is for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:48.774263 INFO: Attempting archive.li for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:52.317771 INFO: Attempting archive.fo for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:55.601118 INFO: Attempting archive.ph for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:57.989908 INFO: Attempting Googlebot spoof for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:58.183444 ERROR: Googlebot spoof failed for http://www.fastcompany.com/node/1739777/print: 403 Client Error: Forbidden for url: https://www.fastcompany.com/node/1739777/print
+2025-09-15T00:46:58.185434 INFO: Attempting Enhanced Wayback Machine for http://www.fastcompany.com/node/1739777/print
+2025-09-15T00:47:02.402947 INFO: Found Wayback snapshot from 20120118185355: http://web.archive.org/web/20120118185355/http://www.fastcompany.com:80/node/1739777/print
+2025-09-15T00:47:03.036807 INFO: Successfully fetched http://www.fastcompany.com/node/1739777/print using wayback_machine_enhanced

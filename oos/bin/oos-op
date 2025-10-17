@@ -1,0 +1,111 @@
+#!/usr/bin/env bash
+# OOS 1Password Helper
+# Simplifies 1Password CLI session management
+
+set -euo pipefail
+
+# Colors
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+show_help() {
+    echo "OOS 1Password Helper"
+    echo "Simplifies 1Password CLI session management"
+    echo ""
+    echo "Usage: oos-op [COMMAND]"
+    echo ""
+    echo "Commands:"
+    echo "  status    Show current authentication status"
+    echo "  signin    Sign in with 7-day session (default)"
+    echo "  signin-1d Sign in with 1-day session"
+    echo "  signin-30d Sign in with 30-day session"
+    echo "  whoami    Show current user"
+    echo "  setup     Setup service account token (permanent)"
+    echo "  help      Show this help"
+    echo ""
+    echo "Environment Variables:"
+    echo "  OP_SERVICE_ACCOUNT_TOKEN  Service account token for permanent access"
+    echo ""
+    echo "Examples:"
+    echo "  oos-op signin      # 7-day session"
+    echo "  oos-op signin-30d  # 30-day session"
+    echo "  oos-op setup       # Set up permanent service account"
+}
+
+check_status() {
+    if [[ -n "${OP_SERVICE_ACCOUNT_TOKEN:-}" ]]; then
+        echo -e "${GREEN}✓ Using service account token (permanent access)${NC}"
+        return 0
+    fi
+
+    if op whoami >/dev/null 2>&1; then
+        user=$(op whoami 2>/dev/null || echo "unknown")
+        echo -e "${GREEN}✓ Signed in as: ${user}${NC}"
+        return 0
+    else
+        echo -e "${RED}✗ Not signed in to 1Password${NC}"
+        return 1
+    fi
+}
+
+signin_with_duration() {
+    local duration=$1
+    echo -e "${BLUE}Signing in with ${duration} session...${NC}"
+
+    if eval "$(op signin --session=${duration})"; then
+        echo -e "${GREEN}✓ Successfully signed in with ${duration} session${NC}"
+        echo -e "${YELLOW}Tip: Add this to your shell profile for convenience:${NC}"
+        echo "  alias op-signin='op signin --session=7d'"
+    else
+        echo -e "${RED}✗ Failed to sign in${NC}"
+        return 1
+    fi
+}
+
+setup_service_account() {
+    echo -e "${YELLOW}Setting up service account token...${NC}"
+    echo ""
+    echo "1. Go to your 1Password account settings"
+    echo "2. Navigate to 'Integrations' → 'Service Accounts'"
+    echo "3. Create a new service account"
+    echo "4. Copy the token"
+    echo "5. Add to your shell profile:"
+    echo "   export OP_SERVICE_ACCOUNT_TOKEN='your-token-here'"
+    echo ""
+    echo "Service accounts provide permanent access without re-authentication."
+}
+
+case "${1:-help}" in
+    "status")
+        check_status
+        ;;
+    "signin")
+        signin_with_duration "7d"
+        ;;
+    "signin-1d")
+        signin_with_duration "1d"
+        ;;
+    "signin-30d")
+        signin_with_duration "30d"
+        ;;
+    "whoami")
+        if check_status; then
+            op whoami 2>/dev/null || echo "Service account"
+        fi
+        ;;
+    "setup")
+        setup_service_account
+        ;;
+    "help"|"-h"|"--help")
+        show_help
+        ;;
+    *)
+        echo -e "${RED}Unknown command: $1${NC}"
+        echo ""
+        show_help
+        exit 1
+        ;;
+esac

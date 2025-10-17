@@ -1,0 +1,108 @@
+2025-09-15T15:22:35.368569 INFO: Attempting direct fetch for https://12ft.io/proxy
+2025-09-15T15:22:35.532947 ERROR: Direct fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1f302e90>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:35.533056 INFO: Attempting Reader Mode strategy for https://12ft.io/proxy
+2025-09-15T15:22:35.599908 ERROR: Reader mode fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1ea7bc60>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:35.600015 INFO: Attempting JS Disabled strategy for https://12ft.io/proxy
+2025-09-15T15:22:35.672775 ERROR: JS disabled fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1fd26290>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:35.672887 INFO: Attempting Refresh Stop strategy for https://12ft.io/proxy
+2025-09-15T15:22:35.739713 ERROR: Refresh stop fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1f293830>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:35.739828 INFO: Attempting Inspect Element strategy for https://12ft.io/proxy
+2025-09-15T15:22:35.806481 ERROR: Inspect element fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x20c55050>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:35.806648 INFO: Attempting removepaywalls.com bypass for https://12ft.io/proxy
+2025-09-15T15:22:39.651775 ERROR: removepaywalls.com bypass failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1fa94530>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:39.651884 INFO: Attempting smry.ai bypass for https://12ft.io/proxy
+2025-09-15T15:22:43.515434 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:22:43.515542 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:22:43.515568 INFO: Attempting archive.today for https://12ft.io/proxy
+2025-09-15T15:22:47.706667 INFO: No existing archive found, creating new archive for https://12ft.io/proxy
+2025-09-15T15:22:48.583682 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:22:48.584178 INFO: Attempting archive.is for https://12ft.io/proxy
+2025-09-15T15:22:50.939752 INFO: Attempting archive.li for https://12ft.io/proxy
+2025-09-15T15:22:52.896523 INFO: Attempting archive.fo for https://12ft.io/proxy
+2025-09-15T15:22:56.232297 INFO: Attempting archive.ph for https://12ft.io/proxy
+2025-09-15T15:22:59.658176 INFO: Attempting Googlebot spoof for https://12ft.io/proxy
+2025-09-15T15:22:59.726754 ERROR: Googlebot spoof failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x203eea20>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:22:59.726874 INFO: Attempting Enhanced Wayback Machine for https://12ft.io/proxy
+2025-09-15T15:23:06.116400 INFO: Found Wayback snapshot from 20231201164529: http://web.archive.org/web/20231201164529/https://12ft.io/proxy
+2025-09-15T15:23:31.167074 INFO: Timeframe 20231201 failed: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=25)
+2025-09-15T15:23:42.353474 INFO: Found Wayback snapshot from 20210105215736: http://web.archive.org/web/20210105215736/https://12ft.io/proxy
+2025-09-15T15:23:44.528604 INFO: Suspicious title-to-content ratio: 0.19. Likely truncated.
+2025-09-15T15:23:44.528731 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:23:44.528757 INFO: Attempting Wayback Machine for https://12ft.io/proxy
+2025-09-15T15:23:44.678232 ERROR: Wayback Machine failed for https://12ft.io/proxy: No archived snapshots found
+2025-09-15T15:23:44.711500 ERROR: All fetch strategies failed or returned low-quality content for https://12ft.io/proxy. Attempting Google Search fallback...
+2025-09-15T15:23:44.714247 INFO: Google Search fallback: searching for 'proxy'
+2025-09-15T15:23:44.772272 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:23:44.790315 INFO: Attempting direct fetch for https://12ft.io/proxy
+2025-09-15T15:23:44.854342 ERROR: Direct fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x20753e60>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:44.854456 INFO: Attempting Reader Mode strategy for https://12ft.io/proxy
+2025-09-15T15:23:44.993181 ERROR: Reader mode fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e6944d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:44.994097 INFO: Attempting JS Disabled strategy for https://12ft.io/proxy
+2025-09-15T15:23:45.060977 ERROR: JS disabled fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e7b84c0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:45.061087 INFO: Attempting Refresh Stop strategy for https://12ft.io/proxy
+2025-09-15T15:23:45.135278 ERROR: Refresh stop fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1edf9370>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:45.135388 INFO: Attempting Inspect Element strategy for https://12ft.io/proxy
+2025-09-15T15:23:45.207833 ERROR: Inspect element fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2065e0c0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:45.207938 INFO: Attempting removepaywalls.com bypass for https://12ft.io/proxy
+2025-09-15T15:23:50.232102 ERROR: removepaywalls.com bypass failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x20978970>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:50.232208 INFO: Attempting smry.ai bypass for https://12ft.io/proxy
+2025-09-15T15:23:52.952645 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:23:52.952757 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:23:52.952783 INFO: Attempting archive.today for https://12ft.io/proxy
+2025-09-15T15:23:57.224942 INFO: No existing archive found, creating new archive for https://12ft.io/proxy
+2025-09-15T15:23:58.114973 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:23:58.126898 INFO: Attempting direct fetch for https://12ft.io/proxy
+2025-09-15T15:23:58.279924 ERROR: Direct fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x20a51a00>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:58.280125 INFO: Attempting Reader Mode strategy for https://12ft.io/proxy
+2025-09-15T15:23:58.350265 ERROR: Reader mode fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2168e110>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:58.350378 INFO: Attempting JS Disabled strategy for https://12ft.io/proxy
+2025-09-15T15:23:58.419943 ERROR: JS disabled fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1ebd2f70>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:58.420090 INFO: Attempting Refresh Stop strategy for https://12ft.io/proxy
+2025-09-15T15:23:58.485080 ERROR: Refresh stop fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1ec9ba10>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:58.485192 INFO: Attempting Inspect Element strategy for https://12ft.io/proxy
+2025-09-15T15:23:58.554787 ERROR: Inspect element fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1ec6c9c0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:23:58.554902 INFO: Attempting removepaywalls.com bypass for https://12ft.io/proxy
+2025-09-15T15:24:00.895546 ERROR: removepaywalls.com bypass failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1f1ef840>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:00.895691 INFO: Attempting smry.ai bypass for https://12ft.io/proxy
+2025-09-15T15:24:03.558807 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:24:03.558914 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:24:03.558940 INFO: Attempting archive.today for https://12ft.io/proxy
+2025-09-15T15:24:06.733356 INFO: No existing archive found, creating new archive for https://12ft.io/proxy
+2025-09-15T15:24:07.619851 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:24:07.620526 INFO: Attempting archive.is for https://12ft.io/proxy
+2025-09-15T15:24:11.461883 INFO: Attempting archive.li for https://12ft.io/proxy
+2025-09-15T15:24:14.161505 INFO: Attempting archive.fo for https://12ft.io/proxy
+2025-09-15T15:24:16.438121 INFO: Attempting archive.ph for https://12ft.io/proxy
+2025-09-15T15:24:18.682893 INFO: Attempting Googlebot spoof for https://12ft.io/proxy
+2025-09-15T15:24:18.750838 ERROR: Googlebot spoof failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e653dd0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:18.750952 INFO: Attempting Enhanced Wayback Machine for https://12ft.io/proxy
+2025-09-15T15:24:21.126779 INFO: Found Wayback snapshot from 20231201164529: http://web.archive.org/web/20231201164529/https://12ft.io/proxy
+2025-09-15T15:24:21.188812 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:24:21.188909 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:24:21.188933 INFO: Attempting Wayback Machine for https://12ft.io/proxy
+2025-09-15T15:24:21.365048 ERROR: Wayback Machine failed for https://12ft.io/proxy: No archived snapshots found
+2025-09-15T15:24:21.366635 ERROR: All fetch strategies failed or returned low-quality content for https://12ft.io/proxy. Attempting Google Search fallback...
+2025-09-15T15:24:21.367111 INFO: Google Search fallback: searching for 'proxy'
+2025-09-15T15:24:21.426517 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:24:21.438190 INFO: Attempting direct fetch for https://12ft.io/proxy
+2025-09-15T15:24:21.507856 ERROR: Direct fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e7bc9e0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:21.508045 INFO: Attempting Reader Mode strategy for https://12ft.io/proxy
+2025-09-15T15:24:21.573421 ERROR: Reader mode fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2065e0c0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:21.573535 INFO: Attempting JS Disabled strategy for https://12ft.io/proxy
+2025-09-15T15:24:21.643460 ERROR: JS disabled fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1f207860>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:21.643569 INFO: Attempting Refresh Stop strategy for https://12ft.io/proxy
+2025-09-15T15:24:21.710709 ERROR: Refresh stop fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e8a44a0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:21.710825 INFO: Attempting Inspect Element strategy for https://12ft.io/proxy
+2025-09-15T15:24:21.777115 ERROR: Inspect element fetch failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e456e50>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:21.777225 INFO: Attempting removepaywalls.com bypass for https://12ft.io/proxy
+2025-09-15T15:24:25.586539 ERROR: removepaywalls.com bypass failed for https://12ft.io/proxy: HTTPSConnectionPool(host='12ft.io', port=443): Max retries exceeded with url: /proxy (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e64eb20>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-09-15T15:24:25.586699 INFO: Attempting smry.ai bypass for https://12ft.io/proxy
+2025-09-15T15:24:30.604239 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:24:30.604353 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:24:30.604380 INFO: Attempting archive.today for https://12ft.io/proxy
+2025-09-15T15:24:33.860163 INFO: No existing archive found, creating new archive for https://12ft.io/proxy
+2025-09-15T15:24:34.774752 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:24:34.775213 INFO: Attempting archive.is for https://12ft.io/proxy
+2025-09-15T15:24:38.318992 INFO: Attempting archive.li for https://12ft.io/proxy
+2025-09-15T15:24:41.799551 INFO: Attempting archive.fo for https://12ft.io/proxy
+2025-09-15T15:24:44.722381 INFO: Attempting archive.ph for https://12ft.io/proxy

@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+"""
+OOS Daemon Launcher
+Launch and manage the OOS persistent assistant daemon
+"""
+
+import sys
+import asyncio
+import signal
+import json
+from pathlib import Path
+from typing import Dict, Any
+import argparse
+
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
+from oos_daemon import get_daemon, start_daemon, OOSDaemon
+from renderers import Colors
+
+class DaemonManager:
+    """Manage OOS daemon lifecycle"""
+
+    def __init__(self, config_dir: Path):
+        self.config_dir = config_dir
+        self.config_dir.mkdir(exist_ok=True)
+        self.pid_file = config_dir / 'daemon.pid'
+        self.daemon = None
+
+    def is_running(self) -> bool:
+        """Check if daemon is already running"""
+        if not self.pid_file.exists():
+            return False
+
+        try:
+            with open(self.pid_file, 'r') as f:
+                pid = int(f.read().strip())
+
+            # Check if process exists
+            import os
+            try:
+                os.kill(pid, 0)
+                return True
+            except OSError:
+                # Process doesn't exist, clean up pid file
+                self.pid_file.unlink()
+                return False
+        except (ValueError, FileNotFoundError):
+            return False
+
+    def write_pid(self):
+        """Write current process PID"""
+        import os
+        with open(self.pid_file, 'w') as f:
+            f.write(str(os.getpid()))
+
+    def remove_pid(self):
+        """Remove PID file"""
+        if self.pid_file.exists():
+            self.pid_file.unlink()
+
+    async def start(self, background: bool = False):
+        """Start the daemon"""
+        if self.is_running():
+            print(f"{Colors.YELLOW}⚠️  OOS daemon is already running{Colors.END}")
+            return False
+
+        print(f"{Colors.CYAN}{Colors.BOLD}")
+        print("╔══════════════════════════════════════════════════════════════╗")
+        print("║                                                              ║")
+        print("║   🚀 OOS Persistent Assistant                                ║")
+        print("║   Always-listening AI development partner                    ║")
+        print("║                                                              ║")
+        print("╚══════════════════════════════════════════════════════════════╝")
+        print(f"{Colors.END}")
+
+        if background:
+            print(f"{Colors.YELLOW}🔧 Background mode not yet implemented{Colors.END}")
+            print(f"{Colors.INFO}Running in foreground mode...{Colors.END}")
+
+        self.write_pid()
+
+        try:
+            await start_daemon(self.config_dir)
+        except KeyboardInterrupt:
+            print(f"\n{Colors.YELLOW}👋 OOS daemon stopped by user{Colors.END}")
+        except Exception as e:
+            print(f"\n{Colors.RED}💥 Daemon crashed: {e}{Colors.END}")
+            return False
+        finally:
+            self.remove_pid()
+
+        return True
+
+    def stop(self):
+        """Stop the daemon"""
+        if not self.is_running():
+            print(f"{Colors.YELLOW}⚠️  OOS daemon is not running{Colors.END}")
+            return False
+
+        try:
+            with open(self.pid_file, 'r') as f:
+                pid = int(f.read().strip())
+
+            import os
+            print(f"{Colors.YELLOW}🛑 Stopping OOS daemon (PID: {pid})...{Colors.END}")
+            os.kill(pid, signal.SIGTERM)
+
+            # Wait a bit for graceful shutdown
+            import time
+            time.sleep(2)
+
+            # Check if still running
+            if self.is_running():
+                print(f"{Colors.RED}⚠️  Daemon did not stop gracefully, forcing...{Colors.END}")
+                os.kill(pid, signal.SIGKILL)
+
+            self.remove_pid()
+            print(f"{Colors.GREEN}✅ OOS daemon stopped{Colors.END}")
+            return True
+
+        except (ValueError, FileNotFoundError, ProcessLookupError) as e:
+            print(f"{Colors.RED}❌ Error stopping daemon: {e}{Colors.END}")
+            self.remove_pid()
+            return False
+
+    def status(self):
+        """Show daemon status"""
+        if self.is_running():
+            try:
+                with open(self.pid_file, 'r') as f:
+                    pid = f.read().strip()
+
+                # Try to get status from daemon
+                daemon = get_daemon(self.config_dir)
+                if hasattr(daemon, 'get_status'):
+                    status = daemon.get_status()
+                    print(f"{Colors.GREEN}🟢 OOS daemon is running (PID: {pid}){Colors.END}")
+                    print(f"{Colors.CYAN}📊 Status:{Colors.END}")
+                    print(f"  • Uptime: {status.get('uptime', 'Unknown')}")
+                    print(f"  • Ideas processed: {status.get('ideas_processed', 0)}")
+                    print(f"  • Projects created: {status.get('projects_created', 0)}")
+                    print(f"  • Queue size: {status.get('queue_size', 0)}")
+                    print(f"  • Active tasks: {status.get('active_tasks', 0)}")
+                else:
+                    print(f"{Colors.GREEN}🟢 OOS daemon is running (PID: {pid}){Colors.END}")
+
+            except Exception as e:
+                print(f"{Colors.YELLOW}🟡 OOS daemon is running but status unavailable: {e}{Colors.END}")
+        else:
+            print(f"{Colors.RED}🔴 OOS daemon is not running{Colors.END}")
+
+    def add_idea(self, content: str):
+        """Add an idea to the daemon queue"""
+        if not self.is_running():
+            print(f"{Colors.RED}❌ OOS daemon is not running{Colors.END}")
+            print(f"{Colors.INFO}Start it with: oos-daemon start{Colors.END}")
+            return False
+
+        # Write idea to input file for daemon to pick up
+        input_file = self.config_dir / 'input.txt'
+        with open(input_file, 'w') as f:
+            f.write(content)
+
+        print(f"{Colors.GREEN}💡 Idea sent to OOS daemon: {content[:50]}...{Colors.END}")
+        return True
+
+def main():
+    """Main CLI entry point"""
+    parser = argparse.ArgumentParser(description="OOS Persistent Assistant Daemon")
+    parser.add_argument('command', choices=['start', 'stop', 'restart', 'status', 'idea'],
+                       help='Daemon command')
+    parser.add_argument('--background', '-d', action='store_true',
+                       help='Run daemon in background (detached)')
+    parser.add_argument('--config-dir', type=Path, default=Path.home() / '.oos',
+                       help='Configuration directory')
+    parser.add_argument('content', nargs='*',
+                       help='Idea content (for idea command)')
+
+    args = parser.parse_args()
+
+    manager = DaemonManager(args.config_dir)
+
+    if args.command == 'start':
+        asyncio.run(manager.start(background=args.background))
+
+    elif args.command == 'stop':
+        manager.stop()
+
+    elif args.command == 'restart':
+        manager.stop()
+        asyncio.run(manager.start(background=args.background))
+
+    elif args.command == 'status':
+        manager.status()
+
+    elif args.command == 'idea':
+        if not args.content:
+            print(f"{Colors.RED}❌ Please provide idea content{Colors.END}")
+            print(f"{Colors.INFO}Usage: oos-daemon idea 'Your idea here'{Colors.END}")
+            sys.exit(1)
+
+        content = ' '.join(args.content)
+        manager.add_idea(content)
+
+if __name__ == "__main__":
+    main()

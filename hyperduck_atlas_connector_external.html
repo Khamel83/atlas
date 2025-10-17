@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atlas v3 - Hyperduck Remote Ingestion</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Atlas v3 Remote Hyperduck Connector</h1>
+    <p><strong>Server:</strong> atlas.khamel.com:35555</p>
+    <p>This page receives JSON data from Hyperduck/Velja and automatically ingests URLs into Atlas v3.</p>
+
+    <div id="status"></div>
+
+    <script>
+        // Atlas v3 server details
+        const ATLAS_SERVER = 'http://atlas.khamel.com:35555';
+
+        // Check for URL parameter or JSON blob in hash
+        function processIngestion() {
+            const statusDiv = document.getElementById('status');
+
+            // Method 1: URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const url = urlParams.get('url');
+
+            if (url) {
+                ingestUrl(url);
+                return;
+            }
+
+            // Method 2: JSON data in hash (for blob data)
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                try {
+                    const data = JSON.parse(decodeURIComponent(hash));
+                    if (data.url) {
+                        ingestUrl(data.url);
+                        return;
+                    }
+                } catch (e) {
+                    console.error('Failed to parse JSON:', e);
+                }
+            }
+
+            // Method 3: Read from localStorage (for background processing)
+            const storedData = localStorage.getItem('atlas_ingest_url');
+            if (storedData) {
+                localStorage.removeItem('atlas_ingest_url');
+                ingestUrl(storedData);
+                return;
+            }
+
+            statusDiv.innerHTML = '<p style="color: orange;">⏳ Waiting for URL to ingest...</p>';
+        }
+
+        async function ingestUrl(url) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = '<p style="color: blue;">🔄 Connecting to Atlas v3...</p>';
+
+            try {
+                const response = await fetch(`${ATLAS_SERVER}/ingest?url=${encodeURIComponent(url)}`);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    statusDiv.innerHTML = `
+                        <p style="color: green;">✅ Successfully ingested!</p>
+                        <p><strong>URL:</strong> ${result.url}</p>
+                        <p><strong>Type:</strong> ${result.content_type}</p>
+                        <p><strong>ID:</strong> ${result.unique_id}</p>
+                        ${result.video_success ? `<p style="color: green;">📹 Video: ${result.video_info.title}</p>` : ''}
+                        <p><small>This window will close automatically in 3 seconds...</small></p>
+                    `;
+
+                    // Auto-close after successful ingestion
+                    setTimeout(() => {
+                        window.close();
+                    }, 3000);
+                } else {
+                    statusDiv.innerHTML = `<p style="color: red;">❌ Failed: ${result.message}</p>`;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `
+                    <p style="color: red;">❌ Connection Error</p>
+                    <p><strong>Details:</strong> ${error.message}</p>
+                    <p><strong>Server:</strong> ${ATLAS_SERVER}</p>
+                    <p>Please check your internet connection and that Atlas v3 is running.</p>
+                `;
+                console.error('Ingestion error:', error);
+            }
+        }
+
+        // Auto-process on page load
+        window.addEventListener('load', processIngestion);
+
+        // Listen for messages from parent windows (for background processing)
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.url) {
+                ingestUrl(event.data.url);
+            }
+        });
+
+        // Expose function for external calls
+        window.ingestUrl = ingestUrl;
+
+        // Add manual input for testing
+        function showManualInput() {
+            const url = prompt('Enter URL to ingest:');
+            if (url) {
+                ingestUrl(url);
+            }
+        }
+        window.showManualInput = showManualInput;
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #status {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .manual-test {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e7f3ff;
+            border-radius: 5px;
+        }
+        .manual-test button {
+            background-color: #007cba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .manual-test button:hover {
+            background-color: #005a87;
+        }
+    </style>
+
+    <div class="manual-test">
+        <h3>Manual Test</h3>
+        <button onclick="showManualInput()">🧪 Test URL Ingestion</button>
+        <p>Use this to test the connection to Atlas v3.</p>
+    </div>
+</body>
+</html>

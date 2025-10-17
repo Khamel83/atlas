@@ -1,0 +1,25 @@
+2025-09-15T05:08:43.941976 INFO: Attempting direct fetch for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:44.299780 ERROR: Direct fetch failed for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:44.301096 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:45.155717 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:08:45.158298 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:45.294116 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:45.295461 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:45.421479 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:08:45.422731 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:45.539426 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:45.540888 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:49.185225 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:08:49.185346 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:08:49.185376 INFO: Attempting archive.today for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:52.431139 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:53.339298 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:08:53.339982 INFO: Attempting archive.is for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:55.602261 INFO: Attempting archive.li for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:08:58.899008 INFO: Attempting archive.fo for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:09:02.651099 INFO: Attempting archive.ph for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:09:04.667970 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:09:04.832083 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:09:04.834050 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:09:05.284860 INFO: Found Wayback snapshot from 20250912064025: http://web.archive.org/web/20250912064025/https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html
+2025-09-15T05:09:06.528699 INFO: Successfully fetched https://www.nytimes.com/2023/04/12/opinion/covid-lab-leak-theory.html using wayback_machine_enhanced

@@ -1,0 +1,84 @@
+2025-09-15T08:38:53.568031 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:38:53.895688 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:38:53.897116 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:38:54.053066 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:38:54.054411 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:38:54.216985 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:38:54.218334 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:38:54.383006 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:54.384377 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:38:54.555038 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:38:54.556443 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:38:57.721994 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T08:38:57.722111 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:57.722141 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:01.365432 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:02.239951 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:39:02.240578 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:05.131520 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:07.125984 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:09.883540 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:12.770953 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:12.941384 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:12.943021 INFO: Attempting Enhanced Wayback Machine for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:13.510269 INFO: Found Wayback snapshot from 20130831072456: http://web.archive.org/web/20130831072456/http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories
+2025-09-15T08:39:15.681857 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T08:39:15.681989 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:39:15.682016 INFO: Attempting Wayback Machine for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:15.810040 INFO: Found Wayback snapshot: http://web.archive.org/web/20130831072456/http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories
+2025-09-15T08:39:15.944453 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T08:39:15.944605 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:39:15.944645 ERROR: All fetch strategies failed or returned low-quality content for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode. Attempting Google Search fallback...
+2025-09-15T08:39:15.944714 INFO: Google Search fallback: searching for 'SB10001424053111903927204576570880162670032.html'
+2025-09-15T08:39:15.976918 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:39:15.984525 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:16.436217 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:16.437720 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:18.020869 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:18.022736 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:18.187434 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:18.189345 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:18.357159 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: cannot use a string pattern on a bytes-like object
+2025-09-15T08:39:18.368503 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:18.544889 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:18.546719 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:18.713101 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:18.717104 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:18.898379 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:18.900316 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:19.112032 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: cannot use a string pattern on a bytes-like object
+2025-09-15T08:39:19.115852 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:19.277090 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:19.278859 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:22.809337 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T08:39:22.809449 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:39:22.809475 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:25.861559 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:26.753011 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:39:26.753712 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:30.325452 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:32.649522 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:35.843217 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:38.952729 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:39.113403 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:39.114991 INFO: Attempting Enhanced Wayback Machine for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:39.244841 INFO: Found Wayback snapshot from 20130831072456: http://web.archive.org/web/20130831072456/http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories
+2025-09-15T08:39:39.383308 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T08:39:39.383438 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:39:39.383464 INFO: Attempting Wayback Machine for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:39.516910 INFO: Found Wayback snapshot: http://web.archive.org/web/20130831072456/http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories
+2025-09-15T08:39:39.655747 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T08:39:39.655871 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:39:39.655906 ERROR: All fetch strategies failed or returned low-quality content for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode. Attempting Google Search fallback...
+2025-09-15T08:39:39.655974 INFO: Google Search fallback: searching for 'SB10001424053111903927204576570880162670032.html'
+2025-09-15T08:39:39.687240 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:39:39.694296 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:39.854467 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:39.855917 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:40.014233 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:40.015604 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:40.176654 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode
+2025-09-15T08:39:40.178017 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:40.339805 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: cannot use a string pattern on a bytes-like object
+2025-09-15T08:39:40.341400 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode
+2025-09-15T08:39:40.512816 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424053111903927204576570880162670032.html?mod=WSJ_hp_LEFTTopStories#printMode: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424053111903927204576570880162670032#printMode

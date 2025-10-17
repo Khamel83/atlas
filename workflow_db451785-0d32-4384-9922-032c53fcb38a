@@ -1,0 +1,144 @@
+2025-09-14T22:20:04.437173 INFO: Attempting direct fetch for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:05.135447 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:05.215024 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:05.215115 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:05.215155 INFO: Attempting Reader Mode strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:05.712459 ERROR: Reader mode fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:20:05.714162 INFO: Attempting JS Disabled strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:06.268741 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:06.268840 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:06.268869 INFO: Attempting Refresh Stop strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:06.822478 ERROR: Refresh stop fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:20:06.826494 INFO: Attempting Inspect Element strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:07.445114 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-14T22:20:07.445230 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:07.445258 INFO: Attempting removepaywalls.com bypass for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:12.217960 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:20:12.218078 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:12.218105 INFO: Attempting archive.today for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:14.670957 INFO: No existing archive found, creating new archive for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:15.591586 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:20:15.592404 INFO: Attempting archive.is for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:17.946289 INFO: Attempting archive.li for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:21.831251 INFO: Attempting archive.fo for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:24.057387 INFO: Attempting archive.ph for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:27.014742 INFO: Attempting Googlebot spoof for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:27.576099 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:27.576215 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:27.576243 INFO: Attempting Enhanced Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:43.583749 INFO: Found Wayback snapshot from 20201218112051: http://web.archive.org/web/20201218112051/https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:45.347265 INFO: Content is very short (108 words). Likely a teaser.
+2025-09-14T22:20:45.347435 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:45.347468 INFO: Attempting Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:45.461978 ERROR: Wayback Machine failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: No archived snapshots found
+2025-09-14T22:20:45.464097 ERROR: All fetch strategies failed or returned low-quality content for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html. Attempting Google Search fallback...
+2025-09-14T22:20:45.464356 INFO: Google Search fallback: searching for 'bo6682304.html'
+2025-09-14T22:20:45.501289 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:20:45.515136 INFO: Attempting direct fetch for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:46.126184 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:46.296926 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:46.297112 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:46.297192 INFO: Attempting Reader Mode strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:46.802287 ERROR: Reader mode fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:20:46.804283 INFO: Attempting JS Disabled strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:47.333285 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:20:47.333401 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:47.333428 INFO: Attempting Refresh Stop strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:47.880262 ERROR: Refresh stop fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:20:47.882223 INFO: Attempting Inspect Element strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:48.498286 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-14T22:20:48.498396 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:48.498422 INFO: Attempting removepaywalls.com bypass for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:51.681106 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:20:51.681219 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:20:51.681245 INFO: Attempting archive.today for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:53.436212 INFO: No existing archive found, creating new archive for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:55.016058 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:20:55.016882 INFO: Attempting archive.is for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:20:57.916918 INFO: Attempting archive.li for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:01.094824 INFO: Attempting archive.fo for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:03.038074 INFO: Attempting archive.ph for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:06.786241 INFO: Attempting Googlebot spoof for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:07.354029 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:07.354143 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:07.354173 INFO: Attempting Enhanced Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:07.802899 INFO: Found Wayback snapshot from 20201218112051: http://web.archive.org/web/20201218112051/https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:07.921972 INFO: Content is very short (108 words). Likely a teaser.
+2025-09-14T22:21:07.922081 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:07.922116 INFO: Attempting Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:08.034423 ERROR: Wayback Machine failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: No archived snapshots found
+2025-09-14T22:21:08.036445 ERROR: All fetch strategies failed or returned low-quality content for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html. Attempting Google Search fallback...
+2025-09-14T22:21:08.036551 INFO: Google Search fallback: searching for 'bo6682304.html'
+2025-09-14T22:21:08.068996 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:21:08.077309 INFO: Attempting direct fetch for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:08.692391 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:08.775285 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:08.775378 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:08.775419 INFO: Attempting Reader Mode strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:09.271516 ERROR: Reader mode fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:21:09.273402 INFO: Attempting JS Disabled strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:09.829522 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:09.829645 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:09.829677 INFO: Attempting Refresh Stop strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:10.349815 ERROR: Refresh stop fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:21:10.351553 INFO: Attempting Inspect Element strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:10.934791 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-14T22:21:10.934894 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:10.934924 INFO: Attempting removepaywalls.com bypass for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:14.388617 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:21:14.388728 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:14.388754 INFO: Attempting archive.today for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:16.883786 INFO: No existing archive found, creating new archive for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:17.793755 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:21:17.794342 INFO: Attempting archive.is for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:21.645992 INFO: Attempting archive.li for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:25.157339 INFO: Attempting archive.fo for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:27.416225 INFO: Attempting archive.ph for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:30.203111 INFO: Attempting Googlebot spoof for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:30.764798 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:30.764928 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:30.764976 INFO: Attempting Enhanced Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:31.326007 INFO: Found Wayback snapshot from 20201218112051: http://web.archive.org/web/20201218112051/https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:31.437425 INFO: Content is very short (108 words). Likely a teaser.
+2025-09-14T22:21:31.437538 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:31.437572 INFO: Attempting Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:31.557345 ERROR: Wayback Machine failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: No archived snapshots found
+2025-09-14T22:21:31.559241 ERROR: All fetch strategies failed or returned low-quality content for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html. Attempting Google Search fallback...
+2025-09-14T22:21:31.559424 INFO: Google Search fallback: searching for 'bo6682304.html'
+2025-09-14T22:21:31.591341 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:21:31.599218 INFO: Attempting direct fetch for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:32.195080 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:32.272736 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:32.272849 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:32.272887 INFO: Attempting Reader Mode strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:32.755404 ERROR: Reader mode fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:21:32.757007 INFO: Attempting JS Disabled strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:33.322424 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:33.322537 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:33.322566 INFO: Attempting Refresh Stop strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:33.847128 ERROR: Refresh stop fetch failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:21:33.848870 INFO: Attempting Inspect Element strategy for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:34.431265 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-14T22:21:34.431376 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:34.431404 INFO: Attempting removepaywalls.com bypass for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:39.106253 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:21:39.106366 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:39.106391 INFO: Attempting archive.today for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:40.902063 INFO: No existing archive found, creating new archive for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:41.813138 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:21:41.814642 INFO: Attempting archive.is for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:45.401064 INFO: Attempting archive.li for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:48.179626 INFO: Attempting archive.fo for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:50.661429 INFO: Attempting archive.ph for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:52.638552 INFO: Attempting Googlebot spoof for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:53.201000 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T22:21:53.201117 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:53.201146 INFO: Attempting Enhanced Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:53.685379 INFO: Found Wayback snapshot from 20201218112051: http://web.archive.org/web/20201218112051/https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:53.802791 INFO: Content is very short (108 words). Likely a teaser.
+2025-09-14T22:21:53.802910 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:21:53.802945 INFO: Attempting Wayback Machine for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html
+2025-09-14T22:21:53.921738 ERROR: Wayback Machine failed for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html: No archived snapshots found
+2025-09-14T22:21:53.923529 ERROR: All fetch strategies failed or returned low-quality content for https://press.uchicago.edu/ucp/books/book/chicago/B/bo6682304.html. Attempting Google Search fallback...
+2025-09-14T22:21:53.923765 INFO: Google Search fallback: searching for 'bo6682304.html'
+2025-09-14T22:21:53.987886 INFO: Google Search fallback did not find alternative URL

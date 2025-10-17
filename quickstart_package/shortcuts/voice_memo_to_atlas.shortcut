@@ -1,0 +1,28 @@
+{
+  "name": "Voice Memo to Atlas",
+  "description": "Record a voice memo and transcribe it to your Atlas system",
+  "actions": [
+    {
+      "type": "recordAudio",
+      "output": "audioRecording"
+    },
+    {
+      "type": "transcribeAudio",
+      "input": "audioRecording",
+      "output": "transcription"
+    },
+    {
+      "type": "httpRequest",
+      "method": "POST",
+      "url": "http://localhost:8000/api/v1/transcriptions/save",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "content": "${transcription}",
+        "source": "voice_memo",
+        "timestamp": "${currentTimestamp}"
+      }
+    }
+  ]
+}

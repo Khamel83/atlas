@@ -1,0 +1,132 @@
+2025-09-14T21:31:07.918538 INFO: Attempting direct fetch for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.199718 ERROR: Direct fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.202002 INFO: Attempting Reader Mode strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.311180 ERROR: Reader mode fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.313398 INFO: Attempting JS Disabled strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.438757 ERROR: JS disabled fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.440813 INFO: Attempting Refresh Stop strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.548088 ERROR: Refresh stop fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: cannot use a string pattern on a bytes-like object
+2025-09-14T21:31:08.550154 INFO: Attempting Inspect Element strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.737255 ERROR: Inspect element fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:08.739301 INFO: Attempting removepaywalls.com bypass for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:12.955643 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:12.955761 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:12.955786 INFO: Attempting archive.today for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:15.914989 INFO: No existing archive found, creating new archive for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:16.916989 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:31:16.919620 INFO: Attempting archive.is for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:19.171036 INFO: Attempting archive.li for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:22.848830 INFO: Attempting archive.fo for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:25.629528 INFO: Attempting archive.ph for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:28.221028 INFO: Attempting Googlebot spoof for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:28.329086 ERROR: Googlebot spoof failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:28.331133 INFO: Attempting Enhanced Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:28.898441 INFO: Found Wayback snapshot from 20240904160606: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:29.924377 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:29.924468 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:29.924501 INFO: Attempting Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:30.206720 INFO: Found Wayback snapshot: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:30.496461 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:30.496577 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:30.496937 ERROR: All fetch strategies failed or returned low-quality content for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987. Attempting Google Search fallback...
+2025-09-14T21:31:30.497027 INFO: Google Search fallback: searching for 'sam altman entrepreneur ceo openai california 2503293987'
+2025-09-14T21:31:30.535026 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:31:30.559187 INFO: Attempting direct fetch for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:30.770051 ERROR: Direct fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:30.774961 INFO: Attempting Reader Mode strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:30.926073 ERROR: Reader mode fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:30.927801 INFO: Attempting JS Disabled strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:31.084362 ERROR: JS disabled fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:31.098055 INFO: Attempting Refresh Stop strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:31.423629 ERROR: Refresh stop fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: cannot use a string pattern on a bytes-like object
+2025-09-14T21:31:31.436483 INFO: Attempting Inspect Element strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:31.666850 ERROR: Inspect element fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:31.674511 INFO: Attempting removepaywalls.com bypass for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:33.864960 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:33.865066 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:33.865095 INFO: Attempting archive.today for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:36.789415 INFO: No existing archive found, creating new archive for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:37.667006 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:31:37.668112 INFO: Attempting archive.is for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:41.467509 INFO: Attempting archive.li for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:44.027552 INFO: Attempting archive.fo for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:46.246040 INFO: Attempting archive.ph for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:49.485320 INFO: Attempting Googlebot spoof for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:49.591521 ERROR: Googlebot spoof failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:49.593451 INFO: Attempting Enhanced Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:49.728659 INFO: Found Wayback snapshot from 20240904160606: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:49.881559 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:49.881707 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:49.881736 INFO: Attempting Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.013388 INFO: Found Wayback snapshot: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.177129 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:50.179651 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:50.179747 ERROR: All fetch strategies failed or returned low-quality content for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987. Attempting Google Search fallback...
+2025-09-14T21:31:50.179819 INFO: Google Search fallback: searching for 'sam altman entrepreneur ceo openai california 2503293987'
+2025-09-14T21:31:50.237866 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:31:50.266410 INFO: Attempting direct fetch for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.401665 ERROR: Direct fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.403051 INFO: Attempting Reader Mode strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.501665 ERROR: Reader mode fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.503055 INFO: Attempting JS Disabled strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.611144 ERROR: JS disabled fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.612763 INFO: Attempting Refresh Stop strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.720375 ERROR: Refresh stop fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: cannot use a string pattern on a bytes-like object
+2025-09-14T21:31:50.723358 INFO: Attempting Inspect Element strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.825023 ERROR: Inspect element fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:50.826741 INFO: Attempting removepaywalls.com bypass for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:54.798971 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:31:54.799087 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:31:54.799114 INFO: Attempting archive.today for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:57.169251 INFO: No existing archive found, creating new archive for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:31:58.052153 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:31:58.052992 INFO: Attempting archive.is for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:00.178814 INFO: Attempting archive.li for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:02.880003 INFO: Attempting archive.fo for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:06.592308 INFO: Attempting archive.ph for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:08.661470 INFO: Attempting Googlebot spoof for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:08.844466 ERROR: Googlebot spoof failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:08.846399 INFO: Attempting Enhanced Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:08.966518 INFO: Found Wayback snapshot from 20240904160606: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.124445 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:32:09.124562 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:32:09.124630 INFO: Attempting Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.244335 INFO: Found Wayback snapshot: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.393069 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:32:09.393196 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:32:09.393230 ERROR: All fetch strategies failed or returned low-quality content for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987. Attempting Google Search fallback...
+2025-09-14T21:32:09.393300 INFO: Google Search fallback: searching for 'sam altman entrepreneur ceo openai california 2503293987'
+2025-09-14T21:32:09.426001 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:32:09.448425 INFO: Attempting direct fetch for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.628914 ERROR: Direct fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.630229 INFO: Attempting Reader Mode strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.813641 ERROR: Reader mode fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.814954 INFO: Attempting JS Disabled strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.924468 ERROR: JS disabled fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:09.925818 INFO: Attempting Refresh Stop strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:10.132607 ERROR: Refresh stop fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: cannot use a string pattern on a bytes-like object
+2025-09-14T21:32:10.134139 INFO: Attempting Inspect Element strategy for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:10.344151 ERROR: Inspect element fetch failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:10.346041 INFO: Attempting removepaywalls.com bypass for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:12.785157 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:32:12.785275 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:32:12.785301 INFO: Attempting archive.today for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:16.070398 INFO: No existing archive found, creating new archive for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:16.960527 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:32:16.961378 INFO: Attempting archive.is for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:19.577518 INFO: Attempting archive.li for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:22.981647 INFO: Attempting archive.fo for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:25.247130 INFO: Attempting archive.ph for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:27.745712 INFO: Attempting Googlebot spoof for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:27.849666 ERROR: Googlebot spoof failed for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987: 403 Client Error: HTTP Forbidden for url: https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:27.851508 INFO: Attempting Enhanced Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:27.976978 INFO: Found Wayback snapshot from 20240904160606: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:28.139671 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:32:28.139790 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:32:28.139820 INFO: Attempting Wayback Machine for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:28.262203 INFO: Found Wayback snapshot: http://web.archive.org/web/20240904160606/https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987
+2025-09-14T21:32:28.413883 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:32:28.414008 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:32:28.414041 ERROR: All fetch strategies failed or returned low-quality content for https://www.shutterstock.com/image-photo/sam-altman-entrepreneur-ceo-openai-california-2503293987. Attempting Google Search fallback...
+2025-09-14T21:32:28.414106 INFO: Google Search fallback: searching for 'sam altman entrepreneur ceo openai california 2503293987'
+2025-09-14T21:32:28.446758 INFO: Google Search fallback did not find alternative URL

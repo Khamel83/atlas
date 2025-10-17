@@ -1,0 +1,30 @@
+{
+  "service": {
+    "name": "oos",
+    "description": "Organized Operational Setup",
+    "watchdog_interval": 15,
+    "health_check_interval": 60,
+    "max_memory_mb": 2048,
+    "max_cpu_percent": 200
+  },
+  "components": {
+    "resource_manager": {
+      "enabled": true,
+      "check_interval": 60
+    },
+    "health_monitor": {
+      "enabled": true,
+      "check_interval": 30
+    },
+    "log_manager": {
+      "enabled": true,
+      "rotation_interval": 3600
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "data/oos_service.log",
+    "max_size_mb": 100,
+    "backup_count": 5
+  }
+}

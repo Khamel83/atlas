@@ -1,0 +1,88 @@
+2025-09-15T03:31:09.995830 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.262953 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.263149 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.782448 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:31:10.784118 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.826445 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.826679 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.868447 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:31:10.868645 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.906198 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:10.906383 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:14.886436 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:31:14.886550 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:31:14.886578 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:17.663155 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:18.536454 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:31:18.536636 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:21.225295 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:23.600407 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:25.981366 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:29.526677 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:29.588458 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:29.588703 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:44.513093 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:31:44.514393 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:44.632538 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T03:31:44.634030 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:31:44.634445 INFO: Google Search fallback: searching for 'mag 27science t.html'
+2025-09-15T03:31:44.666194 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:31:44.673345 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:44.702563 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:44.702814 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:45.261620 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:31:45.263410 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:45.293649 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:45.293842 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:45.334717 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:31:45.334903 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:45.362837 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:45.363018 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:49.677294 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:31:49.677449 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:31:49.677480 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.356987 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.366571 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.405970 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.406201 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.954116 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:31:51.955744 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.983876 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:51.984059 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:52.014320 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:31:52.014500 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:52.043742 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:52.043926 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:56.212027 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:31:56.212133 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:31:56.212160 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:31:59.824526 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:00.736517 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:32:00.737187 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:02.795044 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:06.272537 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:09.811526 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:13.024245 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:13.106845 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:13.107065 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:14.831780 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:32:14.833310 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:14.952884 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T03:32:14.954558 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:32:14.955150 INFO: Google Search fallback: searching for 'mag 27science t.html'
+2025-09-15T03:32:14.987312 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:32:14.995513 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.052151 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.052336 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.714176 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:32:15.715716 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.775783 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.775961 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.840974 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:32:15.841150 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.907828 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:15.908002 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:18.767336 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:32:18.767447 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:32:18.767475 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:32:20.449235 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27science-t.html?partner=rss&emc=rss&pagewanted=print

@@ -1,0 +1,31 @@
+{
+  "app": {
+    "name": "Atlas",
+    "version": "1.0.0",
+    "debug": false
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 5000
+  },
+  "web": {
+    "host": "0.0.0.0", 
+    "port": 8080,
+    "enabled": true
+  },
+  "processing": {
+    "max_workers": 4,
+    "timeout_seconds": 300,
+    "retry_attempts": 3
+  },
+  "storage": {
+    "data_dir": "/home/atlas/app/data",
+    "output_dir": "/home/atlas/app/output",
+    "logs_dir": "/home/atlas/app/logs"
+  },
+  "features": {
+    "monitoring_enabled": true,
+    "background_processing": true,
+    "auto_recovery": true
+  }
+}

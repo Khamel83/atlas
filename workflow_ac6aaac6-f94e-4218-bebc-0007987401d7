@@ -1,0 +1,99 @@
+2025-09-14T21:22:31.926786 INFO: Attempting direct fetch for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.004182 ERROR: Direct fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.004342 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.652035 ERROR: Reader mode fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:22:32.653453 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.704058 ERROR: JS disabled fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.704252 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.733941 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:22:32.734126 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.765404 ERROR: Inspect element fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:32.765618 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:36.557451 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:22:36.557564 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:22:36.557620 INFO: Attempting archive.today for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:39.434907 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:40.328683 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:22:40.329055 INFO: Attempting archive.is for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:42.851035 INFO: Attempting archive.li for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:44.949126 INFO: Attempting archive.fo for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:47.961538 INFO: Attempting archive.ph for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:51.652296 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:51.683299 ERROR: Googlebot spoof failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:51.683481 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:52.117164 INFO: Found Wayback snapshot from 20250416231114: http://web.archive.org/web/20250416231114/https://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:52.782622 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:22:52.782739 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:22:52.782781 INFO: Attempting Wayback Machine for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:52.904051 INFO: Found Wayback snapshot: http://web.archive.org/web/20250416231114/https://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.021268 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:22:53.021384 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:22:53.021416 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html. Attempting Google Search fallback...
+2025-09-14T21:22:53.021483 INFO: Google Search fallback: searching for 'eddie huang against the world.html'
+2025-09-14T21:22:53.054335 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:22:53.062992 INFO: Attempting direct fetch for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.094979 ERROR: Direct fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.095147 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.663738 ERROR: Reader mode fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:22:53.665202 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.713484 ERROR: JS disabled fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.713736 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.745808 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:22:53.745973 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.775880 ERROR: Inspect element fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:53.776050 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:22:57.777717 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:22:57.777826 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:22:57.777853 INFO: Attempting archive.today for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:01.823790 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:02.734734 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:23:02.735153 INFO: Attempting archive.is for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:05.297495 INFO: Attempting archive.li for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:08.937732 INFO: Attempting archive.fo for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:12.724789 INFO: Attempting archive.ph for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.414464 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.468140 ERROR: Googlebot spoof failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.468328 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.587483 INFO: Found Wayback snapshot from 20250416231114: http://web.archive.org/web/20250416231114/https://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.704431 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:23:15.704537 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:23:15.704563 INFO: Attempting Wayback Machine for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.855149 INFO: Found Wayback snapshot: http://web.archive.org/web/20250416231114/https://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:15.977623 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:23:15.977738 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:23:15.977769 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html. Attempting Google Search fallback...
+2025-09-14T21:23:15.977836 INFO: Google Search fallback: searching for 'eddie huang against the world.html'
+2025-09-14T21:23:16.009802 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:23:16.019233 INFO: Attempting direct fetch for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.049701 ERROR: Direct fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.049865 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.891128 ERROR: Reader mode fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:23:16.892654 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.928506 ERROR: JS disabled fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.928715 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.958010 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:23:16.958179 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.987160 ERROR: Inspect element fetch failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:16.987332 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:19.717331 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:23:19.717543 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:23:19.717579 INFO: Attempting archive.today for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:22.748640 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:23.642479 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:23:23.644332 INFO: Attempting archive.is for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:26.155993 INFO: Attempting archive.li for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:28.281780 INFO: Attempting archive.fo for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:32.068818 INFO: Attempting archive.ph for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:34.647706 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:34.753299 ERROR: Googlebot spoof failed for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:34.753523 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:34.866155 INFO: Found Wayback snapshot from 20250416231114: http://web.archive.org/web/20250416231114/https://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:34.989014 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:23:34.989129 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:23:34.989155 INFO: Attempting Wayback Machine for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:35.109857 INFO: Found Wayback snapshot: http://web.archive.org/web/20250416231114/https://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html
+2025-09-14T21:23:35.348848 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:23:35.348962 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:23:35.348993 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2015/02/08/magazine/eddie-huang-against-the-world.html. Attempting Google Search fallback...
+2025-09-14T21:23:35.349062 INFO: Google Search fallback: searching for 'eddie huang against the world.html'
+2025-09-14T21:23:35.382261 INFO: Google Search fallback did not find alternative URL

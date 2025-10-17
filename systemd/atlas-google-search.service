@@ -1,0 +1,43 @@
+[Unit]
+Description=Atlas Google Search Background Worker
+After=network-online.target atlas-api.service
+Wants=network-online.target
+Requires=atlas-api.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+
+# Load environment variables
+ExecStartPre=/bin/bash -c 'source .env && export $(cat .env | grep -v ^# | xargs)'
+ExecStart=/home/ubuntu/dev/atlas/venv/bin/python helpers/google_search_worker.py
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-google-search
+
+# Resource limits (Google Search worker needs less resources)
+MemoryMax=512M
+CPUQuota=100%
+TasksMax=50
+
+# Graceful shutdown handling
+RestartKillSignal=SIGTERM
+KillMode=mixed
+TimeoutStopSec=60
+KillSignal=SIGTERM
+
+# Health monitoring
+WatchdogSec=300
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

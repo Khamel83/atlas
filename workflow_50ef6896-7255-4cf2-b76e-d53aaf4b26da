@@ -1,0 +1,25 @@
+2025-09-15T05:22:12.463187 INFO: Attempting direct fetch for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:12.648737 ERROR: Direct fetch failed for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/: 403 Client Error: Forbidden for url: http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:12.648904 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:13.101783 ERROR: Reader mode fetch failed for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:22:13.104194 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:13.197201 ERROR: JS disabled fetch failed for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/: 403 Client Error: Forbidden for url: http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:13.197381 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:13.290501 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:22:13.290691 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:13.379084 ERROR: Inspect element fetch failed for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/: 403 Client Error: Forbidden for url: http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:13.379256 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:15.703213 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T05:22:15.703319 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:22:15.703345 INFO: Attempting archive.today for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:20.220335 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:21.095339 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:22:21.095931 INFO: Attempting archive.is for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:24.872934 INFO: Attempting archive.li for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:27.582060 INFO: Attempting archive.fo for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:30.880452 INFO: Attempting archive.ph for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:33.934522 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:34.039315 ERROR: Googlebot spoof failed for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/: 403 Client Error: Forbidden for url: http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:34.039504 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:34.601993 INFO: Found Wayback snapshot from 20250523135439: http://web.archive.org/web/20250523135439/https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+2025-09-15T05:22:36.497514 INFO: Successfully fetched http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/ using wayback_machine_enhanced

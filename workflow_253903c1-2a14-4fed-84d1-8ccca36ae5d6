@@ -1,0 +1,25 @@
+2025-09-14T22:53:30.553069 INFO: Attempting direct fetch for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:30.845512 ERROR: Direct fetch failed for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:30.847269 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:31.318392 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at: cannot use a string pattern on a bytes-like object
+2025-09-14T22:53:31.320537 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:31.401667 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:31.403407 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:31.494780 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at: cannot use a string pattern on a bytes-like object
+2025-09-14T22:53:31.496549 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:31.573671 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:31.575385 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:33.956998 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:53:33.957117 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:53:33.957146 INFO: Attempting archive.today for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:36.636010 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:37.517069 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:53:37.517507 INFO: Attempting archive.is for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:41.283040 INFO: Attempting archive.li for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:44.410107 INFO: Attempting archive.fo for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:47.551849 INFO: Attempting archive.ph for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:51.309561 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:51.408481 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:51.410850 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:56.951004 INFO: Found Wayback snapshot from 20240805225600: http://web.archive.org/web/20240805225600/https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at
+2025-09-14T22:53:57.834961 INFO: Successfully fetched https://www.nytimes.com/2023/03/17/business/wework-softbank-debt-deal.html?ref=wheresyoured.at using wayback_machine_enhanced

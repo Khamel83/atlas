@@ -1,0 +1,93 @@
+2025-09-15T01:43:27.679734 INFO: Attempting direct fetch for https://thegentleforce.me/login
+2025-09-15T01:43:28.326415 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:43:28.348896 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:43:28.348997 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:43:28.349033 INFO: Attempting Reader Mode strategy for https://thegentleforce.me/login
+2025-09-15T01:43:28.935736 ERROR: Reader mode fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:43:28.937537 INFO: Attempting JS Disabled strategy for https://thegentleforce.me/login
+2025-09-15T01:43:29.759983 INFO: Attempting Refresh Stop strategy for https://thegentleforce.me/login
+2025-09-15T01:43:30.201462 ERROR: Refresh stop fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:43:30.204532 INFO: Attempting Inspect Element strategy for https://thegentleforce.me/login
+2025-09-15T01:43:31.017300 INFO: Attempting removepaywalls.com bypass for https://thegentleforce.me/login
+2025-09-15T01:43:34.809328 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:43:34.809435 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:43:34.809460 INFO: Attempting archive.today for https://thegentleforce.me/login
+2025-09-15T01:43:38.108753 INFO: No existing archive found, creating new archive for https://thegentleforce.me/login
+2025-09-15T01:43:39.010705 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:43:39.011421 INFO: Attempting archive.is for https://thegentleforce.me/login
+2025-09-15T01:43:41.861980 INFO: Attempting archive.li for https://thegentleforce.me/login
+2025-09-15T01:43:44.482573 INFO: Attempting archive.fo for https://thegentleforce.me/login
+2025-09-15T01:43:44.492341 INFO: Attempting direct fetch for https://thegentleforce.me/login
+2025-09-15T01:43:45.085064 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:43:45.110185 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:43:45.110275 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:43:45.110310 INFO: Attempting Reader Mode strategy for https://thegentleforce.me/login
+2025-09-15T01:43:45.569814 ERROR: Reader mode fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:43:45.571644 INFO: Attempting JS Disabled strategy for https://thegentleforce.me/login
+2025-09-15T01:43:46.137661 INFO: Attempting Refresh Stop strategy for https://thegentleforce.me/login
+2025-09-15T01:43:46.553173 ERROR: Refresh stop fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:43:46.554970 INFO: Attempting Inspect Element strategy for https://thegentleforce.me/login
+2025-09-15T01:43:47.966136 INFO: Attempting removepaywalls.com bypass for https://thegentleforce.me/login
+2025-09-15T01:43:50.994385 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:43:50.994475 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:43:50.994503 INFO: Attempting archive.today for https://thegentleforce.me/login
+2025-09-15T01:43:53.642484 INFO: No existing archive found, creating new archive for https://thegentleforce.me/login
+2025-09-15T01:43:54.546011 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:43:54.546778 INFO: Attempting archive.is for https://thegentleforce.me/login
+2025-09-15T01:43:56.761677 INFO: Attempting archive.li for https://thegentleforce.me/login
+2025-09-15T01:43:59.842013 INFO: Attempting archive.fo for https://thegentleforce.me/login
+2025-09-15T01:44:02.563924 INFO: Attempting archive.ph for https://thegentleforce.me/login
+2025-09-15T01:44:05.292334 INFO: Attempting Googlebot spoof for https://thegentleforce.me/login
+2025-09-15T01:44:05.443663 ERROR: Googlebot spoof failed for https://thegentleforce.me/login: 403 Client Error: Forbidden for url: https://thegentleforce.me/login
+2025-09-15T01:44:05.445669 INFO: Attempting Enhanced Wayback Machine for https://thegentleforce.me/login
+2025-09-15T01:44:10.335915 INFO: Found Wayback snapshot from 20240809221501: http://web.archive.org/web/20240809221501/https://thegentleforce.me/login
+2025-09-15T01:44:11.870253 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T01:44:11.870365 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:44:11.870391 INFO: Attempting Wayback Machine for https://thegentleforce.me/login
+2025-09-15T01:44:11.996992 INFO: Found Wayback snapshot: http://web.archive.org/web/20240809221501/https://thegentleforce.me/login
+2025-09-15T01:44:32.009984 ERROR: Wayback Machine failed for https://thegentleforce.me/login: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /web/20240809221501/https://thegentleforce.me/login (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x20c23580>, 'Connection to web.archive.org timed out. (connect timeout=20)'))
+2025-09-15T01:44:32.010090 ERROR: All fetch strategies failed or returned low-quality content for https://thegentleforce.me/login. Attempting Google Search fallback...
+2025-09-15T01:44:32.010172 INFO: Google Search fallback: searching for 'login'
+2025-09-15T01:44:32.041362 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:44:32.049501 INFO: Attempting direct fetch for https://thegentleforce.me/login
+2025-09-15T01:44:32.819048 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:44:32.853788 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:44:32.853897 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:44:32.853935 INFO: Attempting Reader Mode strategy for https://thegentleforce.me/login
+2025-09-15T01:44:33.195745 ERROR: Reader mode fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:44:33.199146 INFO: Attempting JS Disabled strategy for https://thegentleforce.me/login
+2025-09-15T01:44:33.667756 INFO: Attempting Refresh Stop strategy for https://thegentleforce.me/login
+2025-09-15T01:44:34.029283 ERROR: Refresh stop fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:44:34.031173 INFO: Attempting Inspect Element strategy for https://thegentleforce.me/login
+2025-09-15T01:44:34.814198 INFO: Attempting removepaywalls.com bypass for https://thegentleforce.me/login
+2025-09-15T01:44:39.930527 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:44:39.930670 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:44:39.930701 INFO: Attempting archive.today for https://thegentleforce.me/login
+2025-09-15T01:44:43.092048 INFO: No existing archive found, creating new archive for https://thegentleforce.me/login
+2025-09-15T01:44:43.994850 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:44:43.995862 INFO: Attempting archive.is for https://thegentleforce.me/login
+2025-09-15T01:44:46.013299 INFO: Attempting archive.li for https://thegentleforce.me/login
+2025-09-15T01:44:49.573912 INFO: Attempting archive.fo for https://thegentleforce.me/login
+2025-09-15T01:44:52.616854 INFO: Attempting archive.ph for https://thegentleforce.me/login
+2025-09-15T01:44:55.722293 INFO: Attempting Googlebot spoof for https://thegentleforce.me/login
+2025-09-15T01:44:55.805523 ERROR: Googlebot spoof failed for https://thegentleforce.me/login: 403 Client Error: Forbidden for url: https://thegentleforce.me/login
+2025-09-15T01:44:55.807357 INFO: Attempting Enhanced Wayback Machine for https://thegentleforce.me/login
+2025-09-15T01:44:55.930454 INFO: Found Wayback snapshot from 20240809221501: http://web.archive.org/web/20240809221501/https://thegentleforce.me/login
+2025-09-15T01:44:56.018122 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T01:44:56.018226 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:44:56.018252 INFO: Attempting Wayback Machine for https://thegentleforce.me/login
+2025-09-15T01:44:56.174987 INFO: Found Wayback snapshot: http://web.archive.org/web/20240809221501/https://thegentleforce.me/login
+2025-09-15T01:44:56.268138 INFO: Content is very short (11 words). Likely a teaser.
+2025-09-15T01:44:56.268240 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:44:56.268271 ERROR: All fetch strategies failed or returned low-quality content for https://thegentleforce.me/login. Attempting Google Search fallback...
+2025-09-15T01:44:56.268334 INFO: Google Search fallback: searching for 'login'
+2025-09-15T01:44:56.300653 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:44:56.308314 INFO: Attempting direct fetch for https://thegentleforce.me/login
+2025-09-15T01:44:56.937379 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:44:56.959222 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:44:56.959331 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:44:56.959367 INFO: Attempting Reader Mode strategy for https://thegentleforce.me/login
+2025-09-15T01:44:57.408195 ERROR: Reader mode fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object
+2025-09-15T01:44:57.410132 INFO: Attempting JS Disabled strategy for https://thegentleforce.me/login
+2025-09-15T01:44:58.042976 INFO: Attempting Refresh Stop strategy for https://thegentleforce.me/login
+2025-09-15T01:44:58.480732 ERROR: Refresh stop fetch failed for https://thegentleforce.me/login: cannot use a string pattern on a bytes-like object

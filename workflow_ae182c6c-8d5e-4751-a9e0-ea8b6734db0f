@@ -1,0 +1,112 @@
+2025-09-15T00:08:20.389692 INFO: Attempting direct fetch for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:20.578875 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:20.580443 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:20.580507 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:20.580543 INFO: Attempting Reader Mode strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:21.373969 ERROR: Reader mode fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:08:21.374382 INFO: Attempting JS Disabled strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:21.467069 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:21.467160 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:21.467186 INFO: Attempting Refresh Stop strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:21.530804 ERROR: Refresh stop fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:08:21.531287 INFO: Attempting Inspect Element strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:21.597190 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:21.597282 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:21.597310 INFO: Attempting removepaywalls.com bypass for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:24.262553 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:08:24.262679 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:24.262709 INFO: Attempting archive.today for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:27.507991 INFO: No existing archive found, creating new archive for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:28.387876 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:08:28.388299 INFO: Attempting archive.is for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:31.757783 INFO: Attempting archive.li for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:35.450423 INFO: Attempting archive.fo for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:37.897800 INFO: Attempting archive.ph for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:39.945814 INFO: Attempting Googlebot spoof for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:40.256463 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T00:08:40.256569 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:40.256619 INFO: Attempting Enhanced Wayback Machine for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.047848 ERROR: Enhanced Wayback Machine failed for http://ritholtz.com/2016/01/weekend-reads-205/: No archived snapshots found in any timeframe
+2025-09-15T00:08:53.050938 INFO: Attempting Wayback Machine for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.214414 ERROR: Wayback Machine failed for http://ritholtz.com/2016/01/weekend-reads-205/: No archived snapshots found
+2025-09-15T00:08:53.217084 ERROR: All fetch strategies failed or returned low-quality content for http://ritholtz.com/2016/01/weekend-reads-205/. Attempting Google Search fallback...
+2025-09-15T00:08:53.217523 INFO: Google Search fallback: searching for 'weekend reads 205'
+2025-09-15T00:08:53.262793 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:08:53.292282 INFO: Attempting direct fetch for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.332679 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:53.336306 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:53.336375 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:53.336407 INFO: Attempting Reader Mode strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.695935 ERROR: Reader mode fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:08:53.696417 INFO: Attempting JS Disabled strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.696508 ERROR: JS disabled fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: [Errno 32] Broken pipe
+2025-09-15T00:08:53.696548 INFO: Attempting Refresh Stop strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.765363 ERROR: Refresh stop fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:08:53.765832 INFO: Attempting Inspect Element strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:53.871840 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:08:53.871948 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:53.871975 INFO: Attempting removepaywalls.com bypass for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:08:58.516368 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:08:58.516475 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:08:58.516502 INFO: Attempting archive.today for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:01.766828 INFO: No existing archive found, creating new archive for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:02.624706 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:09:02.625291 INFO: Attempting archive.is for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:04.886704 INFO: Attempting archive.li for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:07.116099 INFO: Attempting archive.fo for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:10.827227 INFO: Attempting archive.ph for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:14.333687 INFO: Attempting Googlebot spoof for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:15.291767 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T00:09:15.291890 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:15.291922 INFO: Attempting Enhanced Wayback Machine for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:17.509002 ERROR: Enhanced Wayback Machine failed for http://ritholtz.com/2016/01/weekend-reads-205/: No archived snapshots found in any timeframe
+2025-09-15T00:09:17.510465 INFO: Attempting Wayback Machine for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:17.637975 ERROR: Wayback Machine failed for http://ritholtz.com/2016/01/weekend-reads-205/: No archived snapshots found
+2025-09-15T00:09:17.639259 ERROR: All fetch strategies failed or returned low-quality content for http://ritholtz.com/2016/01/weekend-reads-205/. Attempting Google Search fallback...
+2025-09-15T00:09:17.639680 INFO: Google Search fallback: searching for 'weekend reads 205'
+2025-09-15T00:09:17.670857 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:09:17.678448 INFO: Attempting direct fetch for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:17.717209 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:17.718690 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:17.718750 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:17.718782 INFO: Attempting Reader Mode strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:17.955436 ERROR: Reader mode fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:09:17.955761 INFO: Attempting JS Disabled strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:18.017286 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:18.017381 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:18.017405 INFO: Attempting Refresh Stop strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:18.075323 ERROR: Refresh stop fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:09:18.075576 INFO: Attempting Inspect Element strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:18.170127 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:18.170225 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:18.170250 INFO: Attempting removepaywalls.com bypass for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:20.509226 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:09:20.509341 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:20.509368 INFO: Attempting archive.today for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:23.919818 INFO: No existing archive found, creating new archive for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:24.802038 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:09:24.802432 INFO: Attempting archive.is for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:28.422265 INFO: Attempting archive.li for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:31.089779 INFO: Attempting archive.fo for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:33.379608 INFO: Attempting archive.ph for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:35.988511 INFO: Attempting Googlebot spoof for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:36.326507 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T00:09:36.326648 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:36.326688 INFO: Attempting Enhanced Wayback Machine for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:38.256373 ERROR: Enhanced Wayback Machine failed for http://ritholtz.com/2016/01/weekend-reads-205/: No archived snapshots found in any timeframe
+2025-09-15T00:09:38.258375 INFO: Attempting Wayback Machine for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:38.379129 ERROR: Wayback Machine failed for http://ritholtz.com/2016/01/weekend-reads-205/: No archived snapshots found
+2025-09-15T00:09:38.381161 ERROR: All fetch strategies failed or returned low-quality content for http://ritholtz.com/2016/01/weekend-reads-205/. Attempting Google Search fallback...
+2025-09-15T00:09:38.381746 INFO: Google Search fallback: searching for 'weekend reads 205'
+2025-09-15T00:09:38.415537 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:09:38.424150 INFO: Attempting direct fetch for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:38.465901 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:38.470343 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:38.470421 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:38.470453 INFO: Attempting Reader Mode strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:38.651611 ERROR: Reader mode fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:09:38.652155 INFO: Attempting JS Disabled strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:38.716781 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T00:09:38.716903 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:09:38.716932 INFO: Attempting Refresh Stop strategy for http://ritholtz.com/2016/01/weekend-reads-205/
+2025-09-15T00:09:38.782584 ERROR: Refresh stop fetch failed for http://ritholtz.com/2016/01/weekend-reads-205/: cannot use a string pattern on a bytes-like object

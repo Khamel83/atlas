@@ -1,0 +1,138 @@
+2025-09-15T18:37:12.837254 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:13.003751 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:13.125465 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:13.125603 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:13.125652 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:13.188408 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:37:13.191118 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:13.480229 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:13.480346 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:13.480373 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:13.530279 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:37:13.532704 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:14.051169 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-15T18:37:14.051273 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:14.051300 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:18.132952 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T18:37:18.133080 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:18.133106 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:21.974811 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:22.886166 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T18:37:22.886887 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:24.794855 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:27.033770 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:30.725239 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:32.690865 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:32.969006 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:32.969137 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:32.969164 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:33.091153 INFO: Found Wayback snapshot from 20250811153857: http://web.archive.org/web/20250811153857/https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:33.359187 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:33.359314 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:33.368800 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:33.497412 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:33.621069 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:33.621184 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:33.621225 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:33.687631 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:37:33.690186 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:33.977144 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:33.977250 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:33.977277 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:34.027460 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:37:34.029684 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:34.482859 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-15T18:37:34.482972 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:34.482998 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:39.387180 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T18:37:39.387290 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:39.387316 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:42.181565 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:43.044686 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T18:37:43.045346 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:46.950896 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:50.535533 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:53.033050 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:54.945412 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:55.105502 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:55.105646 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:55.105676 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:55.234909 INFO: Found Wayback snapshot from 20250811153857: http://web.archive.org/web/20250811153857/https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:55.491953 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:55.492080 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:55.492107 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:55.622475 INFO: Found Wayback snapshot: http://web.archive.org/web/20250811153857/https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:55.965365 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:55.965491 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:55.965524 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/01/04/the-plague-year. Attempting Google Search fallback...
+2025-09-15T18:37:55.965609 INFO: Google Search fallback: searching for 'the plague year'
+2025-09-15T18:37:55.998177 INFO: Google Search fallback did not find alternative URL
+2025-09-15T18:37:56.005216 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:56.131338 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:56.250685 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:56.250803 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:56.250843 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:56.311805 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:37:56.314306 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:56.599301 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:37:56.599448 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:56.599480 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:56.649508 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:37:56.652690 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:57.136637 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-15T18:37:57.136743 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:57.136769 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:37:59.784581 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T18:37:59.784705 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:37:59.784732 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:04.094060 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:04.955224 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T18:38:04.955831 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:07.050462 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:10.829175 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:14.596076 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:16.882125 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:17.162177 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:17.162309 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:17.162338 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:17.285348 INFO: Found Wayback snapshot from 20250811153857: http://web.archive.org/web/20250811153857/https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:17.577319 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:17.577451 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:17.585071 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:17.717285 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:17.837630 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:17.837755 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:17.837812 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:17.902252 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:38:17.905285 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:18.198928 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:18.199037 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:18.199065 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:18.252850 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/01/04/the-plague-year: cannot use a string pattern on a bytes-like object
+2025-09-15T18:38:18.255162 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:18.748580 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-15T18:38:18.748713 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:18.748740 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:22.713178 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T18:38:22.713294 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:22.713321 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:26.845697 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:27.737174 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T18:38:27.737845 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:31.520454 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:33.678659 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:36.260452 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:38.750893 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:39.078713 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:39.078837 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:39.078869 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:39.198253 INFO: Found Wayback snapshot from 20250811153857: http://web.archive.org/web/20250811153857/https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:39.465905 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:39.466028 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:39.466054 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:39.594536 INFO: Found Wayback snapshot: http://web.archive.org/web/20250811153857/https://www.newyorker.com/magazine/2021/01/04/the-plague-year
+2025-09-15T18:38:39.835421 INFO: Paywall element '.paywall' detected.
+2025-09-15T18:38:39.835545 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T18:38:39.835581 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/01/04/the-plague-year. Attempting Google Search fallback...
+2025-09-15T18:38:39.835712 INFO: Google Search fallback: searching for 'the plague year'
+2025-09-15T18:38:39.870348 INFO: Google Search fallback did not find alternative URL

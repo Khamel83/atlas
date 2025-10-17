@@ -1,0 +1,252 @@
+{
+  "project": {
+    "title": "Atlas Production Reliability Closeout",
+    "description": "Transform Atlas into a reliable 24/7 ingest engine + API + web UI with systemd services, observability, and production-ready CI/CD",
+    "github_repo": "https://github.com/Khamel83/Atlas",
+    "features": {
+      "systemd_services": "planned",
+      "ingestion_reliability": "planned",
+      "observability": "planned",
+      "ci_enhancement": "planned",
+      "config_management": "planned",
+      "operations_tooling": "planned",
+      "documentation": "planned",
+      "reliability_tests": "planned"
+    }
+  },
+  "tasks": [
+    {
+      "title": "Implement systemd services for 24/7 operation",
+      "description": "Create and configure systemd services for API, worker, scheduler, and backup with health checks and restart policies",
+      "assignee": "AI IDE Agent",
+      "priority": 10,
+      "feature": "systemd_services",
+      "acceptance_criteria": [
+        "atlas-api.service runs on boot with Restart=always",
+        "atlas-worker.service processes queued items with backpressure",
+        "atlas-scheduler.timer triggers every 5 minutes with .service",
+        "atlas-backup.timer triggers daily with .service",
+        "All services have proper health endpoints and dependencies",
+        "Services survive reboots and network interruptions",
+        "Journalctl shows clean startup/shutdown sequences"
+      ],
+      "verification_commands": [
+        "sudo systemctl is-enabled atlas-api.service",
+        "sudo systemctl status atlas-api.service",
+        "sudo systemctl is-active atlas-worker.service",
+        "sudo systemctl list-timers atlas-*",
+        "curl -f http://localhost:7444/health || systemctl restart atlas-api",
+        "journalctl -u atlas-api -n 50 --no-pager"
+      ],
+      "sources": [
+        {
+          "url": "https://www.freedesktop.org/software/systemd/man/systemd.service.html",
+          "type": "documentation",
+          "relevance": "Official systemd service configuration reference"
+        }
+      ]
+    },
+    {
+      "title": "Implement reliable ingestion with idempotency",
+      "description": "Add durable queues, duplicate detection, backpressure, and graceful degradation to content processing pipeline",
+      "assignee": "AI IDE Agent",
+      "priority": 9,
+      "feature": "ingestion_reliability",
+      "acceptance_criteria": [
+        "SQLite database configured with WAL mode for concurrent access",
+        "Content deduplication using URL hashes and content signatures",
+        "Queue with exponential backoff and circuit breakers",
+        "Backpressure when queue exceeds 1000 items",
+        "Graceful degradation when external services fail",
+        "Atomic updates to prevent partial processing states"
+      ],
+      "verification_commands": [
+        "sqlite3 data/atlas.db 'PRAGMA journal_mode=WAL'",
+        "python3 -c \"from core.database import get_database; print('Queue size:', get_database().get_queue_size())\"",
+        "python3 -c \"from core.processor import get_processor; print('Health:', processor.health_check())\"",
+        "python3 test_reliability.py -v"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sqlite.org/wal.html",
+          "type": "documentation",
+          "relevance": "SQLite WAL mode for reliable concurrent access"
+        }
+      ]
+    },
+    {
+      "title": "Implement observability with structured logging",
+      "description": "Add JSON logging, metrics endpoint, health checks, and monitoring for all system components",
+      "assignee": "AI IDE Agent",
+      "priority": 8,
+      "feature": "observability",
+      "acceptance_criteria": [
+        "Structured JSON logging with request IDs and timestamps",
+        "/metrics endpoint with Prometheus-style metrics",
+        "/health endpoint for database and service health",
+        "/ready endpoint for Kubernetes readiness probes",
+        "Log rotation and retention policies",
+        "Error tracking with unique error IDs"
+      ],
+      "verification_commands": [
+        "curl -s http://localhost:7444/metrics | grep 'atlas_'",
+        "curl -s http://localhost:7444/health | jq .",
+        "curl -s http://localhost:7444/ready | jq .",
+        "tail -f logs/atlas.log | jq",
+        "journalctl -u atlas-api -f | grep 'ERROR'"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/prometheus/client_python",
+          "type": "documentation",
+          "relevance": "Prometheus metrics for Python applications"
+        }
+      ]
+    },
+    {
+      "title": "Fix and enhance CI for Python 3.9-3.12",
+      "description": "Update GitHub Actions workflow to test all Python versions, add fast smoke tests, and ensure reliability",
+      "assignee": "AI IDE Agent",
+      "priority": 8,
+      "feature": "ci_enhancement",
+      "acceptance_criteria": [
+        "CI runs on Python 3.9, 3.10, 3.11, and 3.12",
+        "Fast smoke import job runs in under 30 seconds",
+        "All existing tests pass across all versions",
+        "Systemd service integration tests in CI",
+        "Performance benchmarks for queue processing",
+        "Security scanning for dependencies"
+      ],
+      "verification_commands": [
+        "python3.9 -m pytest tests/ -v",
+        "python3.10 -m pytest tests/ -v",
+        "python3.11 -m pytest tests/ -v",
+        "python3.12 -m pytest tests/ -v",
+        "python3 -c \"import api; import core; import helpers; print('All modules import')\"",
+        "pytest tests/ --tb=short -x"
+      ],
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/actions/using-workflows",
+          "type": "documentation",
+          "relevance": "GitHub Actions workflow configuration"
+        }
+      ]
+    },
+    {
+      "title": "Implement centralized config and secrets management",
+      "description": "Create single source of truth for configuration via .env with validation, secrets handling, and environment-specific settings",
+      "assignee": "AI IDE Agent",
+      "priority": 7,
+      "feature": "config_management",
+      "acceptance_criteria": [
+        "Single .env file as source of truth for all configuration",
+        "Environment variable validation with defaults",
+        "Secrets handling for API keys and tokens",
+        "Development/staging/production environment support",
+        "Configuration validation at startup",
+        "Secure secrets management without committing to git"
+      ],
+      "verification_commands": [
+        "python3 -c \"from core.config import validate_config; validate_config()\"",
+        "ls -la .env*",
+        "python3 -c \"import os; print('Config loaded:', {k: v for k, v in os.environ.items() if k.startswith('ATLAS_')})\"",
+        "python3 -c \"from helpers.config import load_config; print('Config valid:', bool(load_config()))\""
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/theskumar/python-dotenv",
+          "type": "documentation",
+          "relevance": "Environment variable management for Python"
+        }
+      ]
+    },
+    {
+      "title": "Create operational tooling and deployment scripts",
+      "description": "Build Make targets, deployment scripts, and operational commands for easy system management",
+      "assignee": "AI IDE Agent",
+      "priority": 7,
+      "feature": "operations_tooling",
+      "acceptance_criteria": [
+        "Makefile with install, start, stop, restart, status, logs targets",
+        "Deployment script with idempotent operations",
+        "Database backup and restore procedures",
+        "Service health monitoring script",
+        "Performance profiling and debugging tools",
+        "One-command setup and teardown"
+      ],
+      "verification_commands": [
+        "make help",
+        "make status",
+        "make logs",
+        "make install",
+        "make deploy",
+        "./scripts/health_check.sh"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gnu.org/software/make/",
+          "type": "documentation",
+          "relevance": "GNU Make for operational automation"
+        }
+      ]
+    },
+    {
+      "title": "Update documentation for reliability and operations",
+      "description": "Create comprehensive operational documentation including QUICKSTART, OPERATIONS, and RELIABILITY_CHECKLIST guides",
+      "assignee": "AI IDE Agent",
+      "priority": 6,
+      "feature": "documentation",
+      "acceptance_criteria": [
+        "Updated QUICKSTART.md with systemd setup instructions",
+        "OPERATIONS.md with troubleshooting and maintenance procedures",
+        "RELIABILITY_CHECKLIST.md for production deployment validation",
+        "API documentation with examples and error handling",
+        "Mobile integration setup guide",
+        "Backup and disaster recovery procedures"
+      ],
+      "verification_commands": [
+        "grep -E '(systemd|service|monitoring)' QUICKSTART.md",
+        "wc -l OPERATIONS.md RELIABILITY_CHECKLIST.md",
+        "markdownlint --config .markdownlint.json *.md",
+        "python3 -m http.server 8000 & curl http://localhost:8000/README.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.markdownguide.org/basic-syntax/",
+          "type": "documentation",
+          "relevance": "Markdown formatting for documentation"
+        }
+      ]
+    },
+    {
+      "title": "Add comprehensive reliability and integration tests",
+      "description": "Create tests for systemd services, failure scenarios, performance under load, and end-to-end workflows",
+      "assignee": "AI IDE Agent",
+      "priority": 6,
+      "feature": "reliability_tests",
+      "acceptance_criteria": [
+        "Systemd service integration tests with start/stop/restart cycles",
+        "Failure injection tests for network and service outages",
+        "Performance tests with 1000+ concurrent content items",
+        "Database corruption recovery tests",
+        "Memory leak detection for long-running processes",
+        "End-to-end workflow tests from ingestion to retrieval"
+      ],
+      "verification_commands": [
+        "python3 -m pytest tests/test_reliability/ -v",
+        "python3 -m pytest tests/test_performance/ -v",
+        "python3 -m pytest tests/test_integration/ -v",
+        "python3 tests/test_load.py --iterations=1000",
+        "pytest tests/ --cov=. --cov-report=html"
+      ],
+      "sources": [
+        {
+          "url": "https://docs.pytest.org/",
+          "type": "documentation",
+          "relevance": "Pytest testing framework documentation"
+        }
+      ]
+    }
+  ]
+}

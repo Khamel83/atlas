@@ -1,0 +1,99 @@
+2025-09-15T04:03:28.879398 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:30.471534 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:03:30.594838 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:03:30.594941 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:30.594981 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:31.049152 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:03:31.051835 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:31.564019 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:03:31.564121 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:31.564148 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:32.152840 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:03:32.156262 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:32.879079 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:03:32.879190 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:32.879217 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:36.678798 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T04:03:36.678911 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:36.678940 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:39.945903 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:40.800916 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:03:40.801402 INFO: Attempting archive.is for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:43.875453 INFO: Attempting archive.li for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:47.621053 INFO: Attempting archive.fo for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:51.295302 INFO: Attempting archive.ph for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:53.819119 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:53.938656 ERROR: Googlebot spoof failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:53.938866 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:03:59.671713 INFO: Found Wayback snapshot from 20230527001421: http://web.archive.org/web/20230527001421/https://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:01.367258 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:04:01.367373 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:01.367401 INFO: Attempting Wayback Machine for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:01.479872 ERROR: Wayback Machine failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: No archived snapshots found
+2025-09-15T04:04:01.482308 ERROR: All fetch strategies failed or returned low-quality content for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing. Attempting Google Search fallback...
+2025-09-15T04:04:01.482710 INFO: Google Search fallback: searching for 'why an ex google coder makes twice as much freelancing'
+2025-09-15T04:04:01.515340 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:04:01.523109 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:01.880298 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:04:01.997428 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:04:01.997545 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:01.997608 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:02.288893 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:02.291389 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:02.874384 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:04:02.874491 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:02.874517 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:03.583916 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:03.586806 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:03.993326 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:04:03.993439 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:03.993468 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:06.720206 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T04:04:06.720317 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:06.720344 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:10.202099 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.100918 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:04:11.111026 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.221881 ERROR: Direct fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.222056 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.734774 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:11.736506 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.824912 ERROR: JS disabled fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.825143 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:11.920163 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:11.920326 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:12.038332 ERROR: Inspect element fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:12.038505 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:14.798940 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T04:04:14.799046 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:14.799073 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:18.315292 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:19.206331 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:04:19.206752 INFO: Attempting archive.is for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:22.606992 INFO: Attempting archive.li for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:25.633550 INFO: Attempting archive.fo for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:29.370291 INFO: Attempting archive.ph for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:31.541734 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:31.659135 ERROR: Googlebot spoof failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:31.659340 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:31.896993 INFO: Found Wayback snapshot from 20230527001421: http://web.archive.org/web/20230527001421/https://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:32.145702 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-15T04:04:32.145798 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:32.145828 INFO: Attempting Wayback Machine for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:32.510158 ERROR: Wayback Machine failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: No archived snapshots found
+2025-09-15T04:04:32.512472 ERROR: All fetch strategies failed or returned low-quality content for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing. Attempting Google Search fallback...
+2025-09-15T04:04:32.512892 INFO: Google Search fallback: searching for 'why an ex google coder makes twice as much freelancing'
+2025-09-15T04:04:32.545075 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:04:32.552695 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:32.643561 ERROR: Direct fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:32.643762 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:32.939292 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:32.940946 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:33.038211 ERROR: JS disabled fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:33.038408 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:33.127146 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:33.127305 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:33.214936 ERROR: Inspect element fetch failed for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:33.215117 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-01-19/why-an-ex-google-coder-makes-twice-as-much-freelancing
+2025-09-15T04:04:36.166129 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T04:04:36.166356 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...

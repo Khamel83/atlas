@@ -1,0 +1,30 @@
+2025-09-15T11:05:24.167623 INFO: Attempting direct fetch for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:25.097867 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T11:05:25.249786 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T11:05:25.249898 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:05:25.249947 INFO: Attempting Reader Mode strategy for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:25.866017 ERROR: Reader mode fetch failed for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html: cannot use a string pattern on a bytes-like object
+2025-09-15T11:05:25.868545 INFO: Attempting JS Disabled strategy for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:26.665551 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T11:05:26.665693 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:05:26.665728 INFO: Attempting Refresh Stop strategy for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:27.255573 ERROR: Refresh stop fetch failed for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html: cannot use a string pattern on a bytes-like object
+2025-09-15T11:05:27.258159 INFO: Attempting Inspect Element strategy for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:28.027457 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T11:05:28.027568 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:05:28.027632 INFO: Attempting removepaywalls.com bypass for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:33.122849 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:05:33.122959 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:05:33.122987 INFO: Attempting archive.today for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:35.513297 INFO: No existing archive found, creating new archive for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:36.374239 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:05:36.374984 INFO: Attempting archive.is for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:38.463428 INFO: Attempting archive.li for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:41.719192 INFO: Attempting archive.fo for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:44.005077 INFO: Attempting archive.ph for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:47.887660 INFO: Attempting Googlebot spoof for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:05:48.559324 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T11:05:48.559443 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:05:48.559477 INFO: Attempting Enhanced Wayback Machine for http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:06:11.599158 INFO: Found Wayback snapshot from 20190628065358: http://web.archive.org/web/20190628065358/https://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html
+2025-09-15T11:06:13.177402 INFO: Successfully fetched http://www.frugaltravelguy.com/2016/08/5-reasons-im-hoarding-american-express-membership-rewards-points.html using wayback_machine_enhanced

@@ -1,0 +1,99 @@
+2025-09-14T20:15:44.171337 INFO: Attempting direct fetch for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:44.513724 ERROR: Direct fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:15:44.514833 INFO: Attempting Reader Mode strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:44.668446 ERROR: Reader mode fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:44.669953 INFO: Attempting JS Disabled strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:44.965339 ERROR: JS disabled fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:15:44.966516 INFO: Attempting Refresh Stop strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:45.187461 ERROR: Refresh stop fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: cannot use a string pattern on a bytes-like object
+2025-09-14T20:15:45.188971 INFO: Attempting Inspect Element strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:45.439417 ERROR: Inspect element fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:15:45.440637 INFO: Attempting removepaywalls.com bypass for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:50.025079 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:15:50.025291 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:15:50.025336 INFO: Attempting archive.today for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:52.635914 INFO: No existing archive found, creating new archive for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:53.496388 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:15:53.496887 INFO: Attempting archive.is for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:55.499104 INFO: Attempting archive.li for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:15:59.130511 INFO: Attempting archive.fo for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:01.889317 INFO: Attempting archive.ph for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:04.812195 INFO: Attempting Googlebot spoof for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:05.058177 ERROR: Googlebot spoof failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:05.059937 INFO: Attempting Enhanced Wayback Machine for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:05.432257 INFO: Found Wayback snapshot from 20240228152644: http://web.archive.org/web/20240228152644/https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.026690 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:16:06.026803 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:06.026831 INFO: Attempting Wayback Machine for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.160019 INFO: Found Wayback snapshot: http://web.archive.org/web/20240228152644/https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.260659 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:16:06.260776 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:06.260809 ERROR: All fetch strategies failed or returned low-quality content for https://www.sciencedirect.com/science/article/pii/014067369190542W. Attempting Google Search fallback...
+2025-09-14T20:16:06.260877 INFO: Google Search fallback: searching for '014067369190542W'
+2025-09-14T20:16:06.295427 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:16:06.304473 INFO: Attempting direct fetch for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.487253 ERROR: Direct fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:16:06.488410 INFO: Attempting Reader Mode strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.652544 ERROR: Reader mode fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.653834 INFO: Attempting JS Disabled strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.843683 ERROR: JS disabled fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:16:06.844922 INFO: Attempting Refresh Stop strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:06.955678 ERROR: Refresh stop fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: cannot use a string pattern on a bytes-like object
+2025-09-14T20:16:06.957277 INFO: Attempting Inspect Element strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:07.113638 ERROR: Inspect element fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:16:07.114962 INFO: Attempting removepaywalls.com bypass for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:10.063423 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:16:10.063534 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:10.063561 INFO: Attempting archive.today for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:12.351823 INFO: No existing archive found, creating new archive for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:13.248993 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:16:13.249322 INFO: Attempting archive.is for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:15.330446 INFO: Attempting archive.li for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:17.774226 INFO: Attempting archive.fo for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:19.929507 INFO: Attempting archive.ph for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:22.213229 INFO: Attempting Googlebot spoof for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:22.483862 ERROR: Googlebot spoof failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:22.485378 INFO: Attempting Enhanced Wayback Machine for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:22.671269 INFO: Found Wayback snapshot from 20240228152644: http://web.archive.org/web/20240228152644/https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:22.783755 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:16:22.783850 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:22.783876 INFO: Attempting Wayback Machine for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:22.909250 INFO: Found Wayback snapshot: http://web.archive.org/web/20240228152644/https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:23.010552 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:16:23.010690 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:23.010722 ERROR: All fetch strategies failed or returned low-quality content for https://www.sciencedirect.com/science/article/pii/014067369190542W. Attempting Google Search fallback...
+2025-09-14T20:16:23.010790 INFO: Google Search fallback: searching for '014067369190542W'
+2025-09-14T20:16:23.049036 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:16:23.057162 INFO: Attempting direct fetch for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:23.247414 ERROR: Direct fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:16:23.248622 INFO: Attempting Reader Mode strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:23.444207 ERROR: Reader mode fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:23.445688 INFO: Attempting JS Disabled strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:23.742959 ERROR: JS disabled fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:16:23.744142 INFO: Attempting Refresh Stop strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:23.981322 ERROR: Refresh stop fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: cannot use a string pattern on a bytes-like object
+2025-09-14T20:16:23.982796 INFO: Attempting Inspect Element strategy for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:24.186432 ERROR: Inspect element fetch failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/unsupported_browser
+2025-09-14T20:16:24.187619 INFO: Attempting removepaywalls.com bypass for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:27.959389 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:16:27.959502 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:27.959529 INFO: Attempting archive.today for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:31.375841 INFO: No existing archive found, creating new archive for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:32.265014 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:16:32.265399 INFO: Attempting archive.is for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:34.511844 INFO: Attempting archive.li for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:36.936870 INFO: Attempting archive.fo for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:38.933359 INFO: Attempting archive.ph for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:42.276391 INFO: Attempting Googlebot spoof for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:42.477204 ERROR: Googlebot spoof failed for https://www.sciencedirect.com/science/article/pii/014067369190542W: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:42.478699 INFO: Attempting Enhanced Wayback Machine for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:42.586257 INFO: Found Wayback snapshot from 20240228152644: http://web.archive.org/web/20240228152644/https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:42.842900 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:16:42.843019 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:42.843046 INFO: Attempting Wayback Machine for https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:43.057548 INFO: Found Wayback snapshot: http://web.archive.org/web/20240228152644/https://www.sciencedirect.com/science/article/pii/014067369190542W
+2025-09-14T20:16:43.152696 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T20:16:43.152817 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:16:43.152850 ERROR: All fetch strategies failed or returned low-quality content for https://www.sciencedirect.com/science/article/pii/014067369190542W. Attempting Google Search fallback...
+2025-09-14T20:16:43.152938 INFO: Google Search fallback: searching for '014067369190542W'
+2025-09-14T20:16:43.194546 INFO: Google Search fallback did not find alternative URL

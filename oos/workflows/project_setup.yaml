@@ -1,0 +1,126 @@
+# Complete Project Setup Workflow
+# Sets up a new project with all necessary components
+
+id: project_setup
+name: Complete Project Setup
+description: Set up a new project with all necessary components including version control, CI/CD, and documentation
+version: "1.0"
+
+variables:
+  project_name: ""
+  language: "python"
+  include_docker: true
+  include_ci: true
+  include_docs: true
+  include_tests: true
+  git_init: true
+  license_type: "MIT"
+
+config:
+  timeout: 300  # 5 minutes
+  parallel_steps: true
+  fail_fast: true
+
+steps:
+  - id: setup_project
+    name: Initialize Project Structure
+    command: setup-${language}-project
+    parameters:
+      project_name: "${project_name}"
+      include_tests: ${include_tests}
+      include_docs: ${include_docs}
+    depends_on: []
+    condition: success
+    timeout: 60
+    description: "Create basic project structure with directories and initial files"
+
+  - id: git_init
+    name: Initialize Git Repository
+    command: git-init
+    parameters:
+      project_path: "${project_name}"
+      initial_commit: true
+      commit_message: "Initial project setup"
+    depends_on: ["setup_project"]
+    condition: success
+    timeout: 30
+    description: "Initialize Git repository with initial commit"
+
+  - id: setup_docker
+    name: Add Docker Support
+    command: setup-docker
+    parameters:
+      base_image: "${language == 'python' ? 'python:3.11-slim' : language == 'node' ? 'node:18-alpine' : 'ubuntu:22.04'}"
+      port: 8000
+      include_compose: true
+    depends_on: ["setup_project"]
+    condition: success
+    timeout: 45
+    parallel: true
+    description: "Add Docker containerization support"
+
+  - id: setup_ci
+    name: Set up CI/CD Pipeline
+    command: setup-github-actions
+    parameters:
+      workflow_name: "ci"
+      python_versions: ${language == 'python' ? ['3.9', '3.10', '3.11'] : []}
+      node_versions: ${language == 'node' ? ['16', '18', '20'] : []}
+      include_tests: ${include_tests}
+      deploy: false
+    depends_on: ["setup_project"]
+    condition: success
+    timeout: 45
+    parallel: true
+    description: "Set up GitHub Actions CI/CD pipeline"
+
+  - id: setup_documentation
+    name: Generate Documentation Structure
+    command: generate-docs
+    parameters:
+      project_name: "${project_name}"
+      language: "${language}"
+      include_api_docs: true
+      include_examples: true
+    depends_on: ["setup_project"]
+    condition: success
+    timeout: 30
+    parallel: true
+    description: "Create documentation structure and templates"
+
+  - id: add_license
+    name: Add License File
+    command: add-license
+    parameters:
+      license_type: "${license_type}"
+      project_name: "${project_name}"
+      year: "2024"
+    depends_on: ["git_init"]
+    condition: success
+    timeout: 15
+    description: "Add appropriate license file"
+
+  - id: create_readme
+    name: Create README
+    command: generate-readme
+    parameters:
+      project_name: "${project_name}"
+      description: "A ${language} project"
+      include_installation: true
+      include_usage: true
+      include_contributing: true
+    depends_on: ["setup_project", "setup_docker", "setup_ci"]
+    condition: success
+    timeout: 30
+    description: "Create comprehensive README file"
+
+  - id: final_commit
+    name: Commit All Changes
+    command: git-commit
+    parameters:
+      message: "Complete project setup with Docker, CI/CD, and documentation"
+      add_all: true
+    depends_on: ["setup_docker", "setup_ci", "setup_documentation", "add_license", "create_readme"]
+    condition: success
+    timeout: 20
+    description: "Final commit with all project components"

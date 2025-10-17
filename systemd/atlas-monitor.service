@@ -1,0 +1,39 @@
+[Unit]
+Description=Atlas System Monitoring Service
+Documentation=https://github.com/atlas-knowledge/atlas
+After=network.target atlas-ingest.service atlas-bot.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=atlas
+Group=atlas
+WorkingDirectory=/opt/atlas
+Environment=PYTHONPATH=/opt/atlas/src
+ExecStart=/opt/atlas/scripts/monitor.py --daemon --interval 60
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=120
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-monitor
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/atlas/data /opt/atlas/logs /opt/atlas/monitoring
+RemoveIPC=true
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Environment
+EnvironmentFile=-/opt/atlas/.env
+Environment=ATLAS_CONFIG=/opt/atlas/config/production.yaml
+Environment=ATLAS_LOG_LEVEL=INFO
+
+[Install]
+WantedBy=multi-user.target

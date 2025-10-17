@@ -1,0 +1,77 @@
+---
+title: "{{ content.title or 'Untitled' }}"
+type: "{{ content.content_type or 'content' }}"
+source: "{{ content.source_url or '' }}"
+podcast: "{{ content.podcast_title or '' }}"
+created: "{{ content.created_at or '' }}"
+speakers: {{ content.speakers | default([]) | tojson }}
+topics: {{ content.topics | default([]) | tojson }}
+tags:
+  - "{{ content.content_type or 'content' }}"
+  {% if content.podcast_title %}- "{{ content.podcast_title.replace(' ', '_') }}"{% endif %}
+  {% for speaker in (content.speakers or []) %}- "speaker/{{ speaker.replace(' ', '_') }}"
+  {% endfor %}
+export_date: "{{ export_date }}"
+---
+
+# {{ content.title or 'Untitled' }}
+
+{% if content.podcast_title %}
+**Podcast**: [[{{ content.podcast_title }}]]
+{% endif %}
+
+{% if content.source_url %}
+**Source**: [Original Link]({{ content.source_url }})
+{% endif %}
+
+{% if content.summary %}
+## Summary
+
+{{ content.summary }}
+{% endif %}
+
+{% if segments %}
+## Transcript
+
+{% for segment in segments %}
+{% if segment.speaker and segment.transcript_segment %}
+**[[{{ segment.speaker }}]]**: {{ segment.transcript_segment }}
+
+{% if segment.topic_cluster %}*Topic: #{{ segment.topic_cluster.replace(' ', '_') }}*
+
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if content.content and content.content != content.summary %}
+## Full Content
+
+{{ content.content }}
+{% endif %}
+
+---
+
+## Related Notes
+
+{% if content.podcast_title %}
+- [[{{ content.podcast_title }}]] - Main podcast page
+{% endif %}
+{% for speaker in (content.speakers or []) %}
+- [[{{ speaker }}]] - Speaker profile
+{% endfor %}
+{% for topic in (content.topics or []) %}
+- [[{{ topic }}]] - Topic cluster
+{% endfor %}
+
+## Metadata
+
+- **Content Type**: {{ content.content_type or 'Unknown' }}
+- **Created**: {{ content.created_at or 'Unknown' }}
+- **Processed**: {{ content.processed_at or 'Unknown' }}
+{% if segments %}- **Segments**: {{ segments | length }}{% endif %}
+{% if content.word_count %}- **Word Count**: {{ content.word_count }}{% endif %}
+
+---
+
+*Exported from Atlas on {{ export_date }}*

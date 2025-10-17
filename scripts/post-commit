@@ -1,0 +1,16 @@
+#!/bin/bash
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+echo "🔄 Pushing latest commit to origin/$BRANCH..."
+git push origin "$BRANCH"
+
+echo "🔍 Verifying commit on GitHub..."
+COMMIT=$(git rev-parse HEAD)
+REMOTE=$(git ls-remote origin | grep "$COMMIT")
+
+if [ -n "$REMOTE" ]; then
+  echo "✅ Verified: commit $COMMIT is live on GitHub"
+else
+  echo "❌ ERROR: commit not visible on GitHub"
+  exit 1
+fi

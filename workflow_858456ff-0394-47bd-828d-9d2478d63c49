@@ -1,0 +1,143 @@
+2025-09-15T06:14:35.954626 INFO: Attempting direct fetch for https://phoenix.new/
+2025-09-15T06:14:36.315605 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:14:36.336527 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:14:36.336646 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:14:36.336688 INFO: Attempting Reader Mode strategy for https://phoenix.new/
+2025-09-15T06:14:36.503642 ERROR: Reader mode fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:14:36.505424 INFO: Attempting JS Disabled strategy for https://phoenix.new/
+2025-09-15T06:14:36.747272 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:14:36.747378 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:14:36.747406 INFO: Attempting Refresh Stop strategy for https://phoenix.new/
+2025-09-15T06:14:36.964860 ERROR: Refresh stop fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:14:36.966453 INFO: Attempting Inspect Element strategy for https://phoenix.new/
+2025-09-15T06:14:37.209541 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:14:37.209656 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:14:37.209686 INFO: Attempting removepaywalls.com bypass for https://phoenix.new/
+2025-09-15T06:14:39.470299 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:14:39.470407 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:14:39.470434 INFO: Attempting archive.today for https://phoenix.new/
+2025-09-15T06:14:41.482513 INFO: No existing archive found, creating new archive for https://phoenix.new/
+2025-09-15T06:14:42.366275 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:14:42.366952 INFO: Attempting archive.is for https://phoenix.new/
+2025-09-15T06:14:46.218426 INFO: Attempting archive.li for https://phoenix.new/
+2025-09-15T06:14:49.683461 INFO: Attempting archive.fo for https://phoenix.new/
+2025-09-15T06:14:52.288191 INFO: Attempting archive.ph for https://phoenix.new/
+2025-09-15T06:14:55.612692 INFO: Attempting Googlebot spoof for https://phoenix.new/
+2025-09-15T06:14:55.762230 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:14:55.762348 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:14:55.762375 INFO: Attempting Enhanced Wayback Machine for https://phoenix.new/
+2025-09-15T06:15:26.235159 INFO: Found Wayback snapshot from 20250603185701: http://web.archive.org/web/20250603185701/https://phoenix.new/
+2025-09-15T06:15:30.436963 INFO: Content is very short (85 words). Likely a teaser.
+2025-09-15T06:15:30.437079 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:30.437107 INFO: Attempting Wayback Machine for https://phoenix.new/
+2025-09-15T06:15:30.563193 ERROR: Wayback Machine failed for https://phoenix.new/: No archived snapshots found
+2025-09-15T06:15:30.564833 ERROR: All fetch strategies failed or returned low-quality content for https://phoenix.new/. Attempting Google Search fallback...
+2025-09-15T06:15:30.565443 INFO: Google Search fallback: searching for 'article phoenix.new'
+2025-09-15T06:15:30.597089 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:15:30.604514 INFO: Attempting direct fetch for https://phoenix.new/
+2025-09-15T06:15:30.604653 ERROR: Direct fetch failed for https://phoenix.new/: [Errno 32] Broken pipe
+2025-09-15T06:15:30.604703 INFO: Attempting Reader Mode strategy for https://phoenix.new/
+2025-09-15T06:15:30.820142 ERROR: Reader mode fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:15:30.821373 INFO: Attempting JS Disabled strategy for https://phoenix.new/
+2025-09-15T06:15:30.995935 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:30.996038 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:30.996064 INFO: Attempting Refresh Stop strategy for https://phoenix.new/
+2025-09-15T06:15:31.224004 ERROR: Refresh stop fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:15:31.225604 INFO: Attempting Inspect Element strategy for https://phoenix.new/
+2025-09-15T06:15:31.494778 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:31.494882 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:31.494910 INFO: Attempting removepaywalls.com bypass for https://phoenix.new/
+2025-09-15T06:15:34.494880 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:15:34.494984 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:34.495012 INFO: Attempting archive.today for https://phoenix.new/
+2025-09-15T06:15:37.317076 INFO: No existing archive found, creating new archive for https://phoenix.new/
+2025-09-15T06:15:38.190731 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:15:38.191340 INFO: Attempting archive.is for https://phoenix.new/
+2025-09-15T06:15:40.338772 INFO: Attempting archive.li for https://phoenix.new/
+2025-09-15T06:15:43.453551 INFO: Attempting archive.fo for https://phoenix.new/
+2025-09-15T06:15:46.298702 INFO: Attempting archive.ph for https://phoenix.new/
+2025-09-15T06:15:49.813304 INFO: Attempting Googlebot spoof for https://phoenix.new/
+2025-09-15T06:15:50.048016 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:50.048115 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:50.048144 INFO: Attempting Enhanced Wayback Machine for https://phoenix.new/
+2025-09-15T06:15:50.916906 INFO: Found Wayback snapshot from 20250603185701: http://web.archive.org/web/20250603185701/https://phoenix.new/
+2025-09-15T06:15:51.001162 INFO: Content is very short (85 words). Likely a teaser.
+2025-09-15T06:15:51.001320 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:51.001348 INFO: Attempting Wayback Machine for https://phoenix.new/
+2025-09-15T06:15:51.204875 ERROR: Wayback Machine failed for https://phoenix.new/: No archived snapshots found
+2025-09-15T06:15:51.206752 ERROR: All fetch strategies failed or returned low-quality content for https://phoenix.new/. Attempting Google Search fallback...
+2025-09-15T06:15:51.207368 INFO: Google Search fallback: searching for 'article phoenix.new'
+2025-09-15T06:15:51.240920 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:15:51.249732 INFO: Attempting direct fetch for https://phoenix.new/
+2025-09-15T06:15:51.393575 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:51.417762 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:51.417873 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:51.417912 INFO: Attempting Reader Mode strategy for https://phoenix.new/
+2025-09-15T06:15:51.543667 ERROR: Reader mode fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:15:51.545527 INFO: Attempting JS Disabled strategy for https://phoenix.new/
+2025-09-15T06:15:51.795619 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:51.795723 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:51.795750 INFO: Attempting Refresh Stop strategy for https://phoenix.new/
+2025-09-15T06:15:52.010961 ERROR: Refresh stop fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:15:52.012622 INFO: Attempting Inspect Element strategy for https://phoenix.new/
+2025-09-15T06:15:52.153532 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:15:52.153672 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:52.153704 INFO: Attempting removepaywalls.com bypass for https://phoenix.new/
+2025-09-15T06:15:55.161221 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:15:55.161328 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:15:55.161356 INFO: Attempting archive.today for https://phoenix.new/
+2025-09-15T06:15:57.574047 INFO: No existing archive found, creating new archive for https://phoenix.new/
+2025-09-15T06:15:58.458454 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:15:58.459174 INFO: Attempting archive.is for https://phoenix.new/
+2025-09-15T06:16:01.087940 INFO: Attempting archive.li for https://phoenix.new/
+2025-09-15T06:16:03.994025 INFO: Attempting archive.fo for https://phoenix.new/
+2025-09-15T06:16:07.804577 INFO: Attempting archive.ph for https://phoenix.new/
+2025-09-15T06:16:11.058782 INFO: Attempting Googlebot spoof for https://phoenix.new/
+2025-09-15T06:16:11.303609 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:11.303717 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:11.303746 INFO: Attempting Enhanced Wayback Machine for https://phoenix.new/
+2025-09-15T06:16:12.390862 INFO: Found Wayback snapshot from 20250603185701: http://web.archive.org/web/20250603185701/https://phoenix.new/
+2025-09-15T06:16:12.479986 INFO: Content is very short (85 words). Likely a teaser.
+2025-09-15T06:16:12.480097 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:12.480125 INFO: Attempting Wayback Machine for https://phoenix.new/
+2025-09-15T06:16:12.655736 ERROR: Wayback Machine failed for https://phoenix.new/: No archived snapshots found
+2025-09-15T06:16:12.657453 ERROR: All fetch strategies failed or returned low-quality content for https://phoenix.new/. Attempting Google Search fallback...
+2025-09-15T06:16:12.658131 INFO: Google Search fallback: searching for 'article phoenix.new'
+2025-09-15T06:16:12.689938 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:16:12.697621 INFO: Attempting direct fetch for https://phoenix.new/
+2025-09-15T06:16:12.841248 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:12.862512 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:12.862641 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:12.862683 INFO: Attempting Reader Mode strategy for https://phoenix.new/
+2025-09-15T06:16:12.989898 ERROR: Reader mode fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:16:12.991613 INFO: Attempting JS Disabled strategy for https://phoenix.new/
+2025-09-15T06:16:13.131568 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:13.131685 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:13.131713 INFO: Attempting Refresh Stop strategy for https://phoenix.new/
+2025-09-15T06:16:13.349959 ERROR: Refresh stop fetch failed for https://phoenix.new/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:16:13.351656 INFO: Attempting Inspect Element strategy for https://phoenix.new/
+2025-09-15T06:16:13.502431 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:13.502648 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:13.502689 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:13.502714 INFO: Attempting removepaywalls.com bypass for https://phoenix.new/
+2025-09-15T06:16:18.464890 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:16:18.465015 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:18.465042 INFO: Attempting archive.today for https://phoenix.new/
+2025-09-15T06:16:20.767674 INFO: No existing archive found, creating new archive for https://phoenix.new/
+2025-09-15T06:16:21.655894 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:16:21.656527 INFO: Attempting archive.is for https://phoenix.new/
+2025-09-15T06:16:24.937523 INFO: Attempting archive.li for https://phoenix.new/
+2025-09-15T06:16:28.184225 INFO: Attempting archive.fo for https://phoenix.new/
+2025-09-15T06:16:30.647768 INFO: Attempting archive.ph for https://phoenix.new/
+2025-09-15T06:16:33.093544 INFO: Attempting Googlebot spoof for https://phoenix.new/
+2025-09-15T06:16:33.225717 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T06:16:33.225831 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:33.225858 INFO: Attempting Enhanced Wayback Machine for https://phoenix.new/
+2025-09-15T06:16:34.207988 INFO: Found Wayback snapshot from 20250603185701: http://web.archive.org/web/20250603185701/https://phoenix.new/
+2025-09-15T06:16:34.310351 INFO: Content is very short (85 words). Likely a teaser.
+2025-09-15T06:16:34.310500 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:34.310529 INFO: Attempting Wayback Machine for https://phoenix.new/
+2025-09-15T06:16:34.544892 ERROR: Wayback Machine failed for https://phoenix.new/: No archived snapshots found
+2025-09-15T06:16:34.546995 ERROR: All fetch strategies failed or returned low-quality content for https://phoenix.new/. Attempting Google Search fallback...
+2025-09-15T06:16:34.547797 INFO: Google Search fallback: searching for 'article phoenix.new'
+2025-09-15T06:16:34.581557 INFO: Google Search fallback did not find alternative URL

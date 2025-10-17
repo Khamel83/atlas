@@ -1,0 +1,29 @@
+2025-09-15T08:03:00.162540 INFO: Attempting direct fetch for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:01.086228 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:03:01.325404 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:03:01.325522 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:01.325564 INFO: Attempting Reader Mode strategy for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:02.247751 ERROR: Reader mode fetch failed for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:03:02.249260 INFO: Attempting JS Disabled strategy for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:06.258631 INFO: Content is very short (41 words). Likely a teaser.
+2025-09-15T08:03:06.258741 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:06.258769 INFO: Attempting Refresh Stop strategy for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:07.254869 ERROR: Refresh stop fetch failed for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:03:07.256425 INFO: Attempting Inspect Element strategy for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:07.256576 ERROR: Inspect element fetch failed for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/: [Errno 32] Broken pipe
+2025-09-15T08:03:07.256636 INFO: Attempting removepaywalls.com bypass for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:11.283153 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:03:11.283271 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:11.283298 INFO: Attempting archive.today for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:16.298548 INFO: No existing archive found, creating new archive for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:17.182908 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:03:17.183267 INFO: Attempting archive.is for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:19.387312 INFO: Attempting archive.li for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:21.759378 INFO: Attempting archive.fo for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:24.750768 INFO: Attempting archive.ph for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:26.974970 INFO: Attempting Googlebot spoof for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:27.426661 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:03:27.426786 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:27.426811 INFO: Attempting Enhanced Wayback Machine for https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:30.338271 INFO: Found Wayback snapshot from 20230317190202: http://web.archive.org/web/20230317190202/https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/
+2025-09-15T08:03:32.817005 INFO: Successfully fetched https://www.indiewire.com/2022/04/the-weeknd-amy-seimetz-the-idol-filmmakers-direct-tv-1234720464/ using wayback_machine_enhanced

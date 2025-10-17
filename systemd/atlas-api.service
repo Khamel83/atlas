@@ -1,0 +1,42 @@
+[Unit]
+Description=Atlas FastAPI Server
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+
+# Load environment variables
+ExecStartPre=/bin/bash -c 'source .env && export $(cat .env | grep -v ^# | xargs)'
+ExecStart=/home/ubuntu/dev/atlas/venv/bin/python api/main.py
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-api
+
+# Resource limits to prevent runaway processes
+MemoryMax=1G
+CPUQuota=200%
+TasksMax=100
+
+# Restart policy with graceful shutdown
+RestartKillSignal=SIGTERM
+KillMode=mixed
+TimeoutStopSec=30
+KillSignal=SIGTERM
+
+# Health check
+WatchdogSec=60
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

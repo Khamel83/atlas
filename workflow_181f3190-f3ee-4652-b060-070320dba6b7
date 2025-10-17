@@ -1,0 +1,74 @@
+2025-09-15T00:54:14.527399 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:18.449785 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:18.523667 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:18.523766 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:18.523802 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:18.729482 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:18.729813 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.002637 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:19.002721 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:19.002752 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.095750 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:19.096131 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.378064 INFO: Successfully fetched http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all using inspect_element
+2025-09-15T00:54:19.385271 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.491705 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:19.561612 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:19.561729 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:19.561765 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.648922 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:19.649320 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.844948 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:19.845148 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:19.845181 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.908140 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:19.908408 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:19.908482 ERROR: Inspect element fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: [Errno 32] Broken pipe
+2025-09-15T00:54:19.908516 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:22.871609 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:54:22.871716 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:22.871744 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:25.847905 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:26.745577 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:54:26.745959 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:29.426307 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:32.244978 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:35.489345 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:38.998388 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:39.161929 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:39.162044 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:39.162070 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:44.771274 INFO: Found Wayback snapshot from 20140706114222: http://web.archive.org/web/20140706114222/http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:45.622969 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T00:54:45.623085 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:45.623110 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:45.775452 ERROR: Wayback Machine failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: No archived snapshots found
+2025-09-15T00:54:45.781524 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all. Attempting Google Search fallback...
+2025-09-15T00:54:45.781771 INFO: Google Search fallback: searching for '110523fa fact mayer'
+2025-09-15T00:54:45.827352 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:54:45.837666 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:46.093392 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:46.165737 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:46.165861 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:46.165897 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:46.232287 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:46.232579 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:46.431681 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:46.431788 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:46.431820 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:46.499799 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:46.500088 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:46.791366 INFO: Successfully fetched http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all using inspect_element
+2025-09-15T00:54:46.798427 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:46.911196 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:46.982340 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:46.982455 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:46.982491 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:47.049258 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:47.049561 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:47.252847 INFO: Paywall element '.paywall' detected.
+2025-09-15T00:54:47.252953 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:54:47.252981 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:47.314469 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T00:54:47.314754 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all
+2025-09-15T00:54:47.602559 INFO: Successfully fetched http://www.newyorker.com/reporting/2011/05/23/110523fa_fact_mayer?currentPage=all using inspect_element

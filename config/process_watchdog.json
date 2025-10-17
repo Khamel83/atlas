@@ -1,0 +1,55 @@
+{
+  "podcast_fetcher": {
+    "name": "Podcast Transcript Fetcher",
+    "command_pattern": "modules\\.podcasts\\.cli.*fetch-transcripts",
+    "max_runtime_minutes": 30,
+    "max_cpu_percent": 80.0,
+    "max_memory_mb": 500,
+    "progress_indicators": [
+      "data/podcasts/atlas_podcasts.db:episodes:transcript_status=fetched"
+    ],
+    "restart_command": "python3 -m modules.podcasts.cli fetch-transcripts --all",
+    "restart_delay_minutes": 30,
+    "max_restarts": 999
+  },
+  "transcript_discovery": {
+    "name": "Enhanced Transcript Discovery",
+    "command_pattern": "enhanced_transcript_discovery\\.py",
+    "max_runtime_minutes": 20,
+    "max_cpu_percent": 70.0,
+    "max_memory_mb": 300,
+    "progress_indicators": [
+      "output:*.json:count"
+    ],
+    "restart_command": "python3 enhanced_transcript_discovery.py",
+    "restart_delay_minutes": 60,
+    "max_restarts": 999
+  },
+  "article_processing": {
+    "name": "Article Processing",
+    "command_pattern": "run\\.py.*--all",
+    "max_runtime_minutes": 15,
+    "max_cpu_percent": 60.0,
+    "max_memory_mb": 400,
+    "progress_indicators": [
+      "data/atlas.db:content:count",
+      "output:*.md:count"
+    ],
+    "restart_command": "python3 run.py --all",
+    "restart_delay_minutes": 20,
+    "max_restarts": 999
+  },
+  "search_indexing": {
+    "name": "Search Index Population",
+    "command_pattern": "populate_search_index\\.py",
+    "max_runtime_minutes": 20,
+    "max_cpu_percent": 50.0,
+    "max_memory_mb": 300,
+    "progress_indicators": [
+      "data/enhanced_search.db:search_index:count"
+    ],
+    "restart_command": "python3 populate_search_index.py",
+    "restart_delay_minutes": 30,
+    "max_restarts": 999
+  }
+}

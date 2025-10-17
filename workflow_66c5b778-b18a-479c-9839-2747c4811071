@@ -1,0 +1,132 @@
+2025-09-14T21:57:50.820964 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:51.042121 ERROR: Direct fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:51.042288 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:52.456095 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:57:52.457935 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:52.562830 ERROR: JS disabled fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:52.563016 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:52.658058 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:57:52.658226 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:52.747681 ERROR: Inspect element fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:52.747860 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:57:56.365315 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:57:56.365414 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:57:56.365441 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:00.296085 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:01.214202 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:58:01.214690 INFO: Attempting archive.is for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:04.170706 INFO: Attempting archive.li for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:06.105057 INFO: Attempting archive.fo for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:09.420851 INFO: Attempting archive.ph for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:11.724676 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:11.824999 ERROR: Googlebot spoof failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:11.825185 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:13.885472 INFO: Found Wayback snapshot from 20230526093340: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:14.582265 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:58:14.582371 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:58:14.582398 INFO: Attempting Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:14.709216 INFO: Found Wayback snapshot: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:14.941168 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:58:14.941270 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:58:14.941303 ERROR: All fetch strategies failed or returned low-quality content for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich. Attempting Google Search fallback...
+2025-09-14T21:58:14.941367 INFO: Google Search fallback: searching for 'why luck plays a big role in making you rich'
+2025-09-14T21:58:14.973455 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:58:14.986723 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.075964 ERROR: Direct fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.076184 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.598441 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:58:15.600043 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.693713 ERROR: JS disabled fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.693956 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.784786 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:58:15.784962 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.876459 ERROR: Inspect element fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:15.876660 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:20.688291 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:58:20.688399 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:58:20.688427 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:24.670708 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:25.576676 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:58:25.577071 INFO: Attempting archive.is for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:29.072491 INFO: Attempting archive.li for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:31.343656 INFO: Attempting archive.fo for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:34.574274 INFO: Attempting archive.ph for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:38.430447 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:38.521563 ERROR: Googlebot spoof failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:38.521776 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:38.679729 INFO: Found Wayback snapshot from 20230526093340: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:38.988005 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:58:38.988107 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:58:38.988135 INFO: Attempting Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:39.158172 INFO: Found Wayback snapshot: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:39.459086 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:58:39.459189 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:58:39.459223 ERROR: All fetch strategies failed or returned low-quality content for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich. Attempting Google Search fallback...
+2025-09-14T21:58:39.459287 INFO: Google Search fallback: searching for 'why luck plays a big role in making you rich'
+2025-09-14T21:58:39.538951 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:58:39.549571 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:39.641253 ERROR: Direct fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:39.641795 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:40.176537 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:58:40.178266 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:40.271157 ERROR: JS disabled fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:40.271367 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:40.364733 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:58:40.364901 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:40.455259 ERROR: Inspect element fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:40.455652 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:44.949347 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:58:44.949448 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:58:44.949475 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:48.105179 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:49.006736 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:58:49.007091 INFO: Attempting archive.is for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:51.324346 INFO: Attempting archive.li for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:54.683759 INFO: Attempting archive.fo for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:58:58.285445 INFO: Attempting archive.ph for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:00.263997 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:00.412680 ERROR: Googlebot spoof failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:00.412850 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:00.527465 INFO: Found Wayback snapshot from 20230526093340: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:00.764743 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:59:00.764860 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:59:00.764886 INFO: Attempting Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:00.884581 INFO: Found Wayback snapshot: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:01.126411 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:59:01.126531 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:59:01.126566 ERROR: All fetch strategies failed or returned low-quality content for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich. Attempting Google Search fallback...
+2025-09-14T21:59:01.126669 INFO: Google Search fallback: searching for 'why luck plays a big role in making you rich'
+2025-09-14T21:59:01.157715 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:59:01.166106 INFO: Attempting direct fetch for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:01.258513 ERROR: Direct fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:01.258714 INFO: Attempting Reader Mode strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:01.902549 ERROR: Reader mode fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:59:01.904239 INFO: Attempting JS Disabled strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:01.994120 ERROR: JS disabled fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:01.994291 INFO: Attempting Refresh Stop strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:02.087124 ERROR: Refresh stop fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: cannot use a string pattern on a bytes-like object
+2025-09-14T21:59:02.087283 INFO: Attempting Inspect Element strategy for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:02.180233 ERROR: Inspect element fetch failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:02.180404 INFO: Attempting removepaywalls.com bypass for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:06.805512 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:59:06.805680 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:59:06.805710 INFO: Attempting archive.today for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:11.321142 INFO: No existing archive found, creating new archive for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:12.203578 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:59:12.204042 INFO: Attempting archive.is for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:14.707165 INFO: Attempting archive.li for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:18.022667 INFO: Attempting archive.fo for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:20.043957 INFO: Attempting archive.ph for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:22.851324 INFO: Attempting Googlebot spoof for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:22.950363 ERROR: Googlebot spoof failed for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich: 403 Client Error: Forbidden for url: http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:22.950564 INFO: Attempting Enhanced Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:23.071516 INFO: Found Wayback snapshot from 20230526093340: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:23.330677 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:59:23.330793 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:59:23.330819 INFO: Attempting Wayback Machine for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:23.450031 INFO: Found Wayback snapshot: http://web.archive.org/web/20230526093340/https://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich
+2025-09-14T21:59:23.849914 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T21:59:23.850031 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:59:23.850064 ERROR: All fetch strategies failed or returned low-quality content for http://www.bloomberg.com/news/articles/2016-09-01/why-luck-plays-a-big-role-in-making-you-rich. Attempting Google Search fallback...
+2025-09-14T21:59:23.850130 INFO: Google Search fallback: searching for 'why luck plays a big role in making you rich'
+2025-09-14T21:59:23.882687 INFO: Google Search fallback did not find alternative URL

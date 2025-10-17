@@ -1,0 +1,25 @@
+2025-09-14T20:08:32.002569 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:32.168447 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:32.169727 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:33.287511 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:08:33.289091 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:33.357110 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:33.357282 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:33.429665 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:08:33.429857 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:33.490116 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:33.490281 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:37.911258 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:08:37.911369 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:08:37.911398 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:40.104335 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:41.011345 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:08:41.011801 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:44.833992 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:48.315285 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:50.833771 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:53.206882 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:53.303945 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:53.304129 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:55.726038 INFO: Found Wayback snapshot from 20111124130035: http://web.archive.org/web/20111124130035/http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print
+2025-09-14T20:08:56.418686 INFO: Successfully fetched http://www.nytimes.com/2011/02/06/business/06aging.html?pagewanted=print using wayback_machine_enhanced

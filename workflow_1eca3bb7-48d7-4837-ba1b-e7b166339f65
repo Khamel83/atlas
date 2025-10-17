@@ -1,0 +1,87 @@
+2025-09-15T12:58:06.503293 INFO: Attempting direct fetch for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:06.588343 ERROR: Direct fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:06.588535 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:07.176880 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:58:07.179709 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:07.251758 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:07.251942 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:07.316908 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:58:07.317090 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:07.378643 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:07.378828 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:11.271882 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:58:11.271988 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:58:11.272014 INFO: Attempting archive.today for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:13.426157 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:14.331865 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:58:14.332251 INFO: Attempting archive.is for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:17.853360 INFO: Attempting archive.li for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:21.383932 INFO: Attempting archive.fo for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:24.533719 INFO: Attempting archive.ph for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:27.645867 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:27.706449 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:27.706687 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:33.471084 INFO: Found Wayback snapshot from 20240618030036: http://web.archive.org/web/20240618030036/https://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:35.221960 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T12:58:35.222074 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:58:35.222099 INFO: Attempting Wayback Machine for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:35.386946 ERROR: Wayback Machine failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: No archived snapshots found
+2025-09-15T12:58:35.388635 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all. Attempting Google Search fallback...
+2025-09-15T12:58:35.388781 INFO: Google Search fallback: searching for 'fighting back against wretched wages.html'
+2025-09-15T12:58:35.419864 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:58:35.426994 INFO: Attempting direct fetch for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:35.486165 ERROR: Direct fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:35.486341 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:36.305956 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:58:36.307489 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:36.370371 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:36.370572 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:36.432512 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:58:36.432709 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:36.492471 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:36.492686 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:38.887180 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:58:38.897111 INFO: Attempting direct fetch for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:38.957268 ERROR: Direct fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:38.957446 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:39.616291 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:58:39.617832 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:39.680807 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:39.680994 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:39.743064 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:58:39.743226 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:39.805117 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:39.805290 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:42.449433 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:58:42.449525 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:58:42.449552 INFO: Attempting archive.today for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:45.607835 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:46.488303 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:58:46.488760 INFO: Attempting archive.is for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:50.339832 INFO: Attempting archive.li for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:52.394263 INFO: Attempting archive.fo for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:55.958715 INFO: Attempting archive.ph for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:58.697563 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:58.756898 ERROR: Googlebot spoof failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:58.757119 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:59.146897 INFO: Found Wayback snapshot from 20240618030036: http://web.archive.org/web/20240618030036/https://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:59.264056 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T12:58:59.264179 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:58:59.264205 INFO: Attempting Wayback Machine for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:59.427125 ERROR: Wayback Machine failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: No archived snapshots found
+2025-09-15T12:58:59.428806 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all. Attempting Google Search fallback...
+2025-09-15T12:58:59.428971 INFO: Google Search fallback: searching for 'fighting back against wretched wages.html'
+2025-09-15T12:58:59.473103 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:58:59.482162 INFO: Attempting direct fetch for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:59.541894 ERROR: Direct fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:58:59.542078 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:00.229763 ERROR: Reader mode fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:59:00.232340 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:00.295162 ERROR: JS disabled fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:00.295381 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:00.355235 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: cannot use a string pattern on a bytes-like object
+2025-09-15T12:59:00.355459 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:00.417435 ERROR: Inspect element fetch failed for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all: 403 Client Error: Forbidden for url: http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:00.417738 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2013/07/28/sunday-review/fighting-back-against-wretched-wages.html?pagewanted=all
+2025-09-15T12:59:03.691387 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:59:03.691504 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...

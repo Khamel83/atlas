@@ -1,0 +1,52 @@
+# Anki Card Template for {{ content.title or 'Untitled' }}
+
+## Q&A Cards from Transcript
+
+{% for segment in segments %}
+{% if segment.speaker and segment.transcript_segment %}
+{% set segment_text = segment.transcript_segment %}
+{% if '?' in segment_text and segment_text | length > 100 %}
+{% set parts = segment_text.split('?', 1) %}
+{% if parts | length == 2 %}
+
+**Card**: Q&A from {{ segment.speaker }}
+- **Front**: {{ parts[0].strip() }}?
+- **Back**: {{ parts[1].strip() }}
+- **Source**: {{ content.podcast_title or 'Unknown' }} - {{ content.title or 'Untitled' }}
+- **Speaker**: {{ segment.speaker }}
+- **Topic**: {{ segment.topic_cluster or 'General' }}
+- **Tags**: {{ content.content_type or 'transcript' }}, {{ segment.speaker.replace(' ', '_') }}, {{ (segment.topic_cluster or 'general').replace(' ', '_') }}
+
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if content.summary %}
+## Summary Card
+
+**Card**: Episode Summary
+- **Front**: What are the key points from: {{ content.title or 'this episode' }}?
+- **Back**: {{ content.summary }}
+- **Source**: {{ content.podcast_title or 'Unknown' }} - {{ content.title or 'Untitled' }}
+- **Speaker**: Summary
+- **Topic**: Overview
+- **Tags**: summary, {{ content.content_type or 'content' }}
+
+{% endif %}
+
+## Concept Cards
+
+{% for topic in (content.topics or []) %}
+**Card**: Topic Definition
+- **Front**: What is discussed about {{ topic }} in this episode?
+- **Back**: {% for segment in segments %}{% if segment.topic_cluster == topic %}{{ segment.transcript_segment[:200] }}...{% endif %}{% endfor %}
+- **Source**: {{ content.podcast_title or 'Unknown' }} - {{ content.title or 'Untitled' }}
+- **Speaker**: Multiple
+- **Topic**: {{ topic }}
+- **Tags**: concept, {{ topic.replace(' ', '_') }}, {{ content.content_type or 'content' }}
+
+{% endfor %}
+
+---
+*Generated from Atlas export on {{ export_date }}*

@@ -1,0 +1,36 @@
+[Unit]
+Description=Atlas Scheduler Service
+After=network.target atlas-api.service
+Requires=atlas-api.service
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+Environment=ATLAS_LOG_LEVEL=INFO
+
+ExecStart=/usr/bin/python3 scheduler.py
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-scheduler
+
+# Resource limits
+MemoryMax=256M
+CPUQuota=100%
+TasksMax=10
+LimitNOFILE=16384
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/home/ubuntu/dev/atlas/data /home/ubuntu/dev/atlas/logs
+
+# Timeout for scheduler operations
+TimeoutStopSec=120

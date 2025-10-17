@@ -1,0 +1,19 @@
+{
+  "commands": [
+    {
+      "name": "help-me",
+      "description": "Smart context engineering help - automatically optimizes your request and guides you through clarification",
+      "script": "bin/claude-help-me.sh"
+    },
+    {
+      "name": "test-ls",
+      "description": "Test command that just lists files",
+      "script": "bin/claude-help-me.sh"
+    },
+    {
+      "name": "optimize",
+      "description": "Optimize current context for token efficiency",
+      "script": "bin/claude-optimize.sh"
+    }
+  ]
+}

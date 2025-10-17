@@ -1,0 +1,116 @@
+2025-09-14T21:38:01.337877 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:01.426307 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:01.426487 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:02.068396 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:38:02.069934 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:02.134786 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:02.134971 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:02.193841 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:38:02.194022 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:02.252508 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:02.252739 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:06.107322 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:38:06.107437 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:38:06.107463 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:09.212577 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:10.125745 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:38:10.126140 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:13.810495 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:16.335742 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:18.379441 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:21.691782 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:21.739029 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:21.739236 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.183517 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:38:36.185152 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.304226 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:38:36.305807 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:38:36.306273 INFO: Google Search fallback: searching for 'dont blink the hazards of confidence.html'
+2025-09-14T21:38:36.352051 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:38:36.363968 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.421990 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.422207 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.699090 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:38:36.700711 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.734781 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.734972 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.765737 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:38:36.765931 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.797104 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:36.797290 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:41.343990 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:38:41.344104 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:38:41.344131 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:43.022572 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:43.880350 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:38:43.880799 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:47.070905 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:49.606174 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:51.782238 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:55.008527 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:55.040258 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:55.040449 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:56.350155 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:38:56.351557 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:56.481146 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:38:56.482739 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:38:56.483185 INFO: Google Search fallback: searching for 'dont blink the hazards of confidence.html'
+2025-09-14T21:38:56.533843 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:38:56.551255 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:56.591521 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:56.593747 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:57.185425 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:38:57.187202 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:57.222918 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:57.223110 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:57.259650 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:38:57.259860 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:57.306337 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:38:57.306527 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:00.162230 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:39:00.162731 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:39:00.162761 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:01.877047 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:02.787037 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:39:02.787483 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:05.002392 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:07.958729 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:10.722331 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:12.810606 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:12.850843 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:12.851028 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:15.257243 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:39:15.258509 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:15.382662 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:39:15.384069 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:39:15.384521 INFO: Google Search fallback: searching for 'dont blink the hazards of confidence.html'
+2025-09-14T21:39:15.417579 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:39:15.425369 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:15.454868 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:15.455050 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:16.056840 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:39:16.058700 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:16.093944 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:16.094132 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:16.136813 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:39:16.136998 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:16.167490 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:16.167716 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:21.240037 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:39:21.240159 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:39:21.240185 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:23.308821 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:24.230717 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:39:24.231173 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:27.797387 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:31.476473 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:34.533857 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:37.426632 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:37.467562 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:37.467818 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:38.832527 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T21:39:38.834033 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print
+2025-09-14T21:39:38.962127 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-14T21:39:38.963533 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T21:39:38.964014 INFO: Google Search fallback: searching for 'dont blink the hazards of confidence.html'
+2025-09-14T21:39:38.998079 INFO: Google Search fallback did not find alternative URL

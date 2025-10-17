@@ -1,0 +1,106 @@
+2025-09-15T02:20:23.153250 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.211229 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.211406 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.816447 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:20:23.818015 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.877672 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.877875 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.937312 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:20:23.937497 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.993824 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:23.994069 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:28.643142 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:20:28.643290 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:20:28.643325 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:31.532699 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:32.438318 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:20:32.439432 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:36.144847 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:38.923251 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:42.630231 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:44.683046 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:44.766546 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:44.766793 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:44.766907 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T02:20:44.766945 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:49.925194 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: No archived snapshots found
+2025-09-15T02:20:49.927344 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:20:49.928011 INFO: Google Search fallback: searching for '07brooks.html'
+2025-09-15T02:20:49.961053 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:20:49.968536 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.025476 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.025686 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.664240 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:20:50.666723 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.732943 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.733168 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.799346 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:20:50.799562 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.857583 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:50.857800 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:55.705181 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:20:55.705315 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:20:55.705348 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:57.816997 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:20:58.697340 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:20:58.698296 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:00.639956 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:03.482178 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:05.587953 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:08.908768 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:08.973977 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:08.974338 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:26.952390 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:21:26.953903 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.079024 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: No archived snapshots found
+2025-09-15T02:21:27.081144 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:21:27.082342 INFO: Google Search fallback: searching for '07brooks.html'
+2025-09-15T02:21:27.115751 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:21:27.123520 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.195711 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.195947 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.451928 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:21:27.454620 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.516022 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.516223 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.574871 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:21:27.575115 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.632767 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:27.632963 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:31.140524 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:21:31.140671 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:21:31.140706 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:33.733059 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:34.636112 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:21:34.637190 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:38.518920 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:41.712352 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:41.723473 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:41.780868 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:41.781102 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:42.290831 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:21:42.293325 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:42.357707 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:42.357906 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:42.417720 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:21:42.417930 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:42.474499 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:42.474730 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:46.423538 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:21:46.423670 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:21:46.423700 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:48.910550 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:49.786091 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:21:49.787005 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:52.444267 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:55.443965 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:21:57.648062 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:22:00.024510 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:22:00.131175 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:22:00.131382 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:22:01.441489 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:22:01.443189 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print
+2025-09-15T02:22:01.583815 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print: No archived snapshots found
+2025-09-15T02:22:01.585937 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/07/opinion/07brooks.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:22:01.586541 INFO: Google Search fallback: searching for '07brooks.html'
+2025-09-15T02:22:01.620181 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,234 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-09-28T11:53:30.318569",
+  "sources": [
+    {
+      "name": "direct",
+      "display_name": "Direct Fetch",
+      "description": "Direct HTTP requests to target URLs",
+      "source_type": "direct",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.DirectFetchStrategy",
+      "enabled": true,
+      "priority": 1000,
+      "requires_auth": false,
+      "success_rate": 0.95,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 15,
+      "rate_limit_delay": 1.0,
+      "health_check_url": "",
+      "auto_disable": true
+    },
+    {
+      "name": "paywall_bypass",
+      "display_name": "Paywall Bypass Services",
+      "description": "Multiple paywall bypass services (12ft.io alternatives)",
+      "source_type": "paywall_bypass",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        "subscribe",
+        "premium",
+        "sign in",
+        "create account"
+      ],
+      "strategy_class": "helpers.article_strategies.PaywallBypassStrategy",
+      "enabled": true,
+      "priority": 950,
+      "requires_auth": false,
+      "success_rate": 0.6,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 25,
+      "rate_limit_delay": 3.0,
+      "health_check_url": "",
+      "auto_disable": false
+    },
+    {
+      "name": "archive_today",
+      "display_name": "Archive Today",
+      "description": "Archive.today service for archived content",
+      "source_type": "archive",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.ArchiveTodayStrategy",
+      "enabled": true,
+      "priority": 800,
+      "requires_auth": false,
+      "success_rate": 0.7,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 20,
+      "rate_limit_delay": 2.0,
+      "health_check_url": "https://archive.today",
+      "auto_disable": true
+    },
+    {
+      "name": "wayback_enhanced",
+      "display_name": "Wayback Machine Enhanced",
+      "description": "Internet Archive with multiple timeframe support",
+      "source_type": "archive",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.EnhancedWaybackMachineStrategy",
+      "enabled": true,
+      "priority": 750,
+      "requires_auth": false,
+      "success_rate": 0.65,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 30,
+      "rate_limit_delay": 2.0,
+      "health_check_url": "https://archive.org",
+      "auto_disable": true
+    },
+    {
+      "name": "wayback",
+      "display_name": "Wayback Machine",
+      "description": "Basic Internet Archive access",
+      "source_type": "archive",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.WaybackMachineStrategy",
+      "enabled": true,
+      "priority": 700,
+      "requires_auth": false,
+      "success_rate": 0.5,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 25,
+      "rate_limit_delay": 2.0,
+      "health_check_url": "https://archive.org",
+      "auto_disable": true
+    },
+    {
+      "name": "googlebot",
+      "display_name": "Googlebot User-Agent",
+      "description": "Fetch using Googlebot user agent for paywall bypass",
+      "source_type": "proxy",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.GooglebotStrategy",
+      "enabled": true,
+      "priority": 600,
+      "requires_auth": false,
+      "success_rate": 0.55,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 20,
+      "rate_limit_delay": 1.5,
+      "health_check_url": "",
+      "auto_disable": true
+    },
+    {
+      "name": "twelvefoot",
+      "display_name": "12ft.io (Deprecated)",
+      "description": "12ft.io service - SHUT DOWN July 2025",
+      "source_type": "paywall_bypass",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.TwelveFtStrategy",
+      "enabled": false,
+      "priority": 500,
+      "requires_auth": false,
+      "success_rate": 0.0,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 20,
+      "rate_limit_delay": 2.0,
+      "health_check_url": "",
+      "auto_disable": false
+    },
+    {
+      "name": "playwright",
+      "display_name": "Playwright Browser",
+      "description": "Headless browser rendering for JavaScript-heavy sites",
+      "source_type": "direct",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.article_strategies.PlaywrightStrategy",
+      "enabled": true,
+      "priority": 400,
+      "requires_auth": false,
+      "success_rate": 0.75,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 45,
+      "rate_limit_delay": 5.0,
+      "health_check_url": "",
+      "auto_disable": true
+    },
+    {
+      "name": "firecrawl",
+      "display_name": "Firecrawl",
+      "description": "Premium web scraping and content extraction service",
+      "source_type": "proxy",
+      "url_patterns": [
+        ".*"
+      ],
+      "content_patterns": [
+        ".*"
+      ],
+      "strategy_class": "helpers.firecrawl_integration.FirecrawlStrategy",
+      "enabled": false,
+      "priority": 300,
+      "requires_auth": true,
+      "success_rate": 0.85,
+      "last_success": "",
+      "last_failure": "",
+      "failure_count": 0,
+      "max_failures": 10,
+      "timeout_seconds": 30,
+      "rate_limit_delay": 1.0,
+      "health_check_url": "",
+      "auto_disable": true
+    }
+  ]
+}

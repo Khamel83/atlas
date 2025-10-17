@@ -1,0 +1,106 @@
+2025-09-15T03:49:53.662402 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:53.974364 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:53.974543 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:54.541563 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:49:54.543166 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:54.602581 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:54.602782 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:54.661994 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:49:54.662162 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:54.720827 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:54.721015 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:49:58.347426 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:49:58.347539 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:49:58.347566 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:01.141574 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:02.043251 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:50:02.043856 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:04.302815 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:07.017396 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:10.790490 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:13.005991 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:13.064636 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:13.064840 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.200561 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:50:41.201981 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.335140 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: No archived snapshots found
+2025-09-15T03:50:41.336911 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:50:41.337484 INFO: Google Search fallback: searching for '25brooks.html'
+2025-09-15T03:50:41.369584 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:50:41.377163 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.464695 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.464878 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.723246 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:50:41.724802 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.784618 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.784807 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.843846 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:50:41.844015 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.900778 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:41.900955 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:46.595063 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:50:46.595172 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:50:46.595199 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:49.457450 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:50.338235 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:50:50.338662 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:53.255675 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:56.024197 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:50:58.571067 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:00.949169 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:01.038796 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:01.039000 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.265168 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:51:02.275109 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.332105 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.332307 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.580899 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:51:02.582655 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.642407 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.642633 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.700053 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:51:02.700237 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.760713 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:02.760913 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:05.815155 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:51:05.815271 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:51:05.815298 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:07.488861 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:08.380475 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:51:08.380955 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:11.204541 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:14.311082 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:17.567893 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:20.741216 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:20.824485 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:20.824763 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.192029 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:51:22.193585 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.322138 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: No archived snapshots found
+2025-09-15T03:51:22.323942 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:51:22.324478 INFO: Google Search fallback: searching for '25brooks.html'
+2025-09-15T03:51:22.357570 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:51:22.365347 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.425335 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.425530 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.683792 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:51:22.685760 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.747439 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.747809 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.805681 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:51:22.805893 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.864188 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:22.864385 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:25.260146 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:51:25.260258 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:51:25.260286 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:27.408811 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:28.319281 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:51:28.319828 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:31.335099 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:33.821858 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:36.706867 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:40.131845 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:40.189807 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:40.190007 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print
+2025-09-15T03:51:41.604722 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/25/opinion/25brooks.html?pagewanted=print: No archived snapshots found in any timeframe

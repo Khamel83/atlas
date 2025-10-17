@@ -1,0 +1,148 @@
+2025-09-14T23:04:27.224559 INFO: Attempting direct fetch for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:27.551314 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:04:27.646213 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:04:27.646331 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:27.646376 INFO: Attempting Reader Mode strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:27.757359 ERROR: Reader mode fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:04:27.758967 INFO: Attempting JS Disabled strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:27.970967 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:04:27.971080 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:27.971105 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:28.069552 ERROR: Refresh stop fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:04:28.071099 INFO: Attempting Inspect Element strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:28.356725 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:04:28.356834 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:28.356860 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:32.780085 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:04:32.780193 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:32.780307 INFO: Attempting archive.today for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:37.071401 INFO: No existing archive found, creating new archive for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:37.982765 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:04:37.983141 INFO: Attempting archive.is for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:41.537825 INFO: Attempting archive.li for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:44.388969 INFO: Attempting archive.fo for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:47.653807 INFO: Attempting archive.ph for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:49.646955 INFO: Attempting Googlebot spoof for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:49.735543 ERROR: Googlebot spoof failed for https://www.thenation.com/authors/jeet-heer/: 403 Client Error: Forbidden for url: https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:49.737107 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:50.215219 INFO: Found Wayback snapshot from 20250822132822: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:51.465419 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:04:51.465543 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:51.465568 INFO: Attempting Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:51.583526 INFO: Found Wayback snapshot: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:51.780316 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:04:51.780439 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:51.780474 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/authors/jeet-heer/. Attempting Google Search fallback...
+2025-09-14T23:04:51.780558 INFO: Google Search fallback: searching for 'jeet heer'
+2025-09-14T23:04:51.834676 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:04:51.845975 INFO: Attempting direct fetch for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:52.023078 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:04:52.249371 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:04:52.249491 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:52.249537 INFO: Attempting Reader Mode strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:52.365877 ERROR: Reader mode fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:04:52.368041 INFO: Attempting JS Disabled strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:52.568208 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:04:52.568314 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:52.568339 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:52.669058 ERROR: Refresh stop fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:04:52.673395 INFO: Attempting Inspect Element strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:52.994698 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:04:52.994792 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:52.994820 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:56.982963 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:04:56.983074 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:04:56.983104 INFO: Attempting archive.today for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:04:59.923011 INFO: No existing archive found, creating new archive for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:00.832358 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:05:00.832872 INFO: Attempting archive.is for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:04.301415 INFO: Attempting archive.li for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:06.772287 INFO: Attempting archive.fo for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:08.963640 INFO: Attempting archive.ph for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:11.064187 INFO: Attempting Googlebot spoof for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:11.198583 ERROR: Googlebot spoof failed for https://www.thenation.com/authors/jeet-heer/: 403 Client Error: Forbidden for url: https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:11.201074 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:11.344995 INFO: Found Wayback snapshot from 20250822132822: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:11.689994 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:11.690117 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:11.690154 INFO: Attempting Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:11.872544 INFO: Found Wayback snapshot: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:12.069357 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:12.069460 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:12.069516 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/authors/jeet-heer/. Attempting Google Search fallback...
+2025-09-14T23:05:12.069581 INFO: Google Search fallback: searching for 'jeet heer'
+2025-09-14T23:05:12.114306 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:05:12.124626 INFO: Attempting direct fetch for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:12.351952 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:12.448275 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:12.448388 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:12.448432 INFO: Attempting Reader Mode strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:12.559554 ERROR: Reader mode fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:05:12.563477 INFO: Attempting JS Disabled strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:12.767818 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:05:12.767923 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:12.767947 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:12.889762 ERROR: Refresh stop fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:05:12.895191 INFO: Attempting Inspect Element strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:13.223645 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:05:13.223796 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:13.223839 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:15.677905 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:05:15.678012 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:15.678041 INFO: Attempting archive.today for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:18.946236 INFO: No existing archive found, creating new archive for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:19.801823 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:05:19.802294 INFO: Attempting archive.is for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:22.103645 INFO: Attempting archive.li for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:25.787899 INFO: Attempting archive.fo for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:28.218836 INFO: Attempting archive.ph for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:31.768579 INFO: Attempting Googlebot spoof for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:31.869176 ERROR: Googlebot spoof failed for https://www.thenation.com/authors/jeet-heer/: 403 Client Error: Forbidden for url: https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:31.870674 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:32.156695 INFO: Found Wayback snapshot from 20250822132822: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:32.430447 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:32.430569 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:32.430617 INFO: Attempting Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:32.552907 INFO: Found Wayback snapshot: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:32.754335 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:32.754445 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:32.754478 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/authors/jeet-heer/. Attempting Google Search fallback...
+2025-09-14T23:05:32.754543 INFO: Google Search fallback: searching for 'jeet heer'
+2025-09-14T23:05:32.819357 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:05:32.838932 INFO: Attempting direct fetch for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:33.111713 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:33.241235 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:33.241339 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:33.241380 INFO: Attempting Reader Mode strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:33.390217 ERROR: Reader mode fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:05:33.391730 INFO: Attempting JS Disabled strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:33.766310 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:05:33.766403 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:33.766429 INFO: Attempting Refresh Stop strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:33.882139 ERROR: Refresh stop fetch failed for https://www.thenation.com/authors/jeet-heer/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:05:33.884388 INFO: Attempting Inspect Element strategy for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:34.275638 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-14T23:05:34.275826 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:34.275871 INFO: Attempting removepaywalls.com bypass for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:37.244015 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:05:37.244124 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:37.244154 INFO: Attempting archive.today for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:41.900981 INFO: No existing archive found, creating new archive for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:42.758231 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:05:42.758750 INFO: Attempting archive.is for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:46.433924 INFO: Attempting archive.li for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:48.495650 INFO: Attempting archive.fo for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:50.559182 INFO: Attempting archive.ph for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:53.474311 INFO: Attempting Googlebot spoof for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:53.564084 ERROR: Googlebot spoof failed for https://www.thenation.com/authors/jeet-heer/: 403 Client Error: Forbidden for url: https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:53.565771 INFO: Attempting Enhanced Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:53.689270 INFO: Found Wayback snapshot from 20250822132822: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:53.931119 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:53.931229 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:53.931256 INFO: Attempting Wayback Machine for https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:54.083090 INFO: Found Wayback snapshot: http://web.archive.org/web/20250822132822/https://www.thenation.com/authors/jeet-heer/
+2025-09-14T23:05:54.349458 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:05:54.349556 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:05:54.350681 ERROR: All fetch strategies failed or returned low-quality content for https://www.thenation.com/authors/jeet-heer/. Attempting Google Search fallback...
+2025-09-14T23:05:54.350794 INFO: Google Search fallback: searching for 'jeet heer'
+2025-09-14T23:05:54.400395 INFO: Google Search fallback did not find alternative URL

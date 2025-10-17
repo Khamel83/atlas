@@ -1,0 +1,130 @@
+# Smart Atlas Capture Shortcut
+# Enhanced content capture with automatic type detection
+
+Name: Smart Atlas Capture
+Icon: brain.head.profile.fill
+Color: Blue
+Description: Intelligent content capture with automatic type detection and contextual metadata
+
+## Actions Sequence:
+
+1. **Get Current Location**
+   - Action: Location → Get Current Location
+   - Privacy: Request location for contextual capture
+
+2. **Get Input Content** 
+   - Action: Scripting → Get Input
+   - Types: URL, Text, Clipboard Content
+   - Allow Multiple: No
+
+3. **Get Source App Info**
+   - Action: Device → Get Details of App
+   - App: Current App
+
+4. **Determine Content Type**
+   - Action: Scripting → If
+   - Condition: Input contains URL
+   - If True: Set Variable "content_type" = "url", Set Variable "content" = Input URL
+   - If False: Set Variable "content_type" = "text", Set Variable "content" = Input Text
+
+5. **Test Content Detection**
+   - Action: Web → Get Contents of URL
+   - URL: http://YOUR_ATLAS_SERVER:5000/api/capture/detect
+   - Method: POST
+   - Headers: Content-Type: application/json
+   - Request Body (JSON):
+     ```json
+     {
+       "content": "[content variable]",
+       "source_app": "[app_name variable]", 
+       "capture_context": "share_extension",
+       "source_device": "iPhone"
+     }
+     ```
+
+6. **Extract Detection Results**
+   - Action: Scripting → Get Value
+   - Get Value: detection.content_type from Contents of URL
+   - Store in: detected_type
+   
+   - Action: Scripting → Get Value  
+   - Get Value: detection.confidence from Contents of URL
+   - Store in: confidence
+
+7. **User Confirmation**
+   - Action: Scripting → Choose from Menu
+   - Prompt: "Detected: [detected_type] ([confidence]% confidence)\n\nProceed with capture?"
+   - Options:
+     - "Yes, capture it" → capture
+     - "Let me add notes first" → add_notes  
+     - "Cancel" → cancel
+
+8. **Handle User Choice**
+   - Action: Scripting → If
+   - Condition: Chosen Item equals "cancel"
+   - If True: Exit Shortcut
+
+9. **Optional Notes Input**
+   - Action: Scripting → If
+   - Condition: Chosen Item equals "add_notes"
+   - If True: 
+     - Action: Scripting → Ask for Input
+     - Input Type: Text
+     - Prompt: "Add notes for this content:"
+     - Allow Multiline: Yes
+     - Store in: user_notes
+   - If False: Set Variable "user_notes" = ""
+
+10. **Capture Content**
+    - Action: Web → Get Contents of URL
+    - URL: http://YOUR_ATLAS_SERVER:5000/api/capture
+    - Method: POST
+    - Headers: Content-Type: application/json
+    - Request Body (JSON):
+      ```json
+      {
+        "type": "[content_type variable]",
+        "content": "[content variable]",
+        "metadata": {
+          "notes": "[user_notes variable]",
+          "source": "smart_shortcut_v2",
+          "detected_type": "[detected_type variable]",
+          "detection_confidence": "[confidence variable]"
+        },
+        "source_device": "iPhone",
+        "location": {
+          "latitude": "[location_latitude]",
+          "longitude": "[location_longitude]", 
+          "accuracy": "[location_accuracy]",
+          "timestamp": "[location_timestamp]"
+        },
+        "source_app": "[app_name variable]",
+        "capture_context": "smart_capture"
+      }
+      ```
+
+11. **Extract Response**
+    - Action: Scripting → Get Value
+    - Get Value: capture_id from Contents of URL
+    
+    - Action: Scripting → Get Value
+    - Get Value: detection.detected_type from Contents of URL
+    
+    - Action: Scripting → Get Value
+    - Get Value: detection.priority from Contents of URL
+
+12. **Show Confirmation**
+    - Action: Scripting → Show Notification
+    - Title: "Atlas Smart Capture"
+    - Body: "Content captured as [detected_type]\nPriority: [priority]\nID: [capture_id]"
+
+## Setup Instructions:
+1. Replace YOUR_ATLAS_SERVER with your actual Atlas server URL
+2. Grant location permissions when prompted
+3. Test with a sample URL or text
+4. Add to Siri with phrase "Smart Atlas Capture"
+
+## Privacy Notes:
+- Location data is only collected with explicit permission
+- All data is sent to your personal Atlas server
+- No data is shared with third parties

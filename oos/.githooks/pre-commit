@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.sh$' || true)
+[ -z "$files" ] && exit 0
+command -v shellcheck >/dev/null 2>&1 && shellcheck -s sh $files
+command -v shfmt      >/dev/null 2>&1 && shfmt -ln posix -w $files && git add $files

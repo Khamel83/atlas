@@ -1,0 +1,21 @@
+[Unit]
+Description=Nightly SQLite backup
+After=network.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/oos/oos.env
+WorkingDirectory=/opt/oos
+ExecStart=/bin/bash -c "source /etc/oos/oos.env && /opt/oos/ops/scripts/backup_sqlite.sh"
+User=oos
+Group=oos
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/oos
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true

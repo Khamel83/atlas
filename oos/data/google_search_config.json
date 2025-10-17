@@ -1,0 +1,29 @@
+{
+  "api": {
+    "base_url": "https://www.googleapis.com/customsearch/v1",
+    "timeout": 30,
+    "max_retries": 3,
+    "backoff_factor": 2.0
+  },
+  "rate_limit": {
+    "max_requests_per_day": 0,
+    "burst_allowance": 0
+  },
+  "circuit_breaker": {
+    "failure_threshold": 5,
+    "recovery_timeout": 60,
+    "half_open_max_calls": 3
+  },
+  "cache": {
+    "max_size": 1000,
+    "ttl_seconds": 3600
+  },
+  "credentials": {
+    "api_key": "",
+    "search_engine_id": ""
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "data/google_search.log"
+  }
+}

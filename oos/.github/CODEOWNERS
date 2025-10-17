@@ -1,0 +1,28 @@
+# CODEOWNERS file for code review assignments
+# Global ownership - all files
+* @codeowners
+
+# Core infrastructure
+/bin/ @infrastructure
+/scripts/ @infrastructure
+/lib/ @backend
+/dashboard/ @frontend
+
+# Configuration and CI/CD
+/.github/ @devops
+/pyproject.toml @backend
+/requirements*.txt @backend
+/run.py @backend
+
+# Documentation
+/docs/ @documentation
+README.md @documentation
+CONTRIBUTING.md @documentation
+SECURITY.md @security
+
+# Tests
+/tests/ @quality-assurance
+
+# Templates and specs
+/templates/ @architecture
+/specs/ @architecture

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atlas v3 - Hyperduck Ingestion</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Atlas v3 Hyperduck Connector</h1>
+    <p>This page receives JSON data from Hyperduck/Velja and automatically ingests URLs into Atlas v3.</p>
+
+    <div id="status"></div>
+
+    <script>
+        // Check for URL parameter or JSON blob in hash
+        function processIngestion() {
+            const statusDiv = document.getElementById('status');
+
+            // Method 1: URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const url = urlParams.get('url');
+
+            if (url) {
+                ingestUrl(url);
+                return;
+            }
+
+            // Method 2: JSON data in hash (for blob data)
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                try {
+                    const data = JSON.parse(decodeURIComponent(hash));
+                    if (data.url) {
+                        ingestUrl(data.url);
+                        return;
+                    }
+                } catch (e) {
+                    console.error('Failed to parse JSON:', e);
+                }
+            }
+
+            // Method 3: Read from localStorage (for background processing)
+            const storedData = localStorage.getItem('atlas_ingest_url');
+            if (storedData) {
+                localStorage.removeItem('atlas_ingest_url');
+                ingestUrl(storedData);
+                return;
+            }
+
+            statusDiv.innerHTML = '<p style="color: orange;">Waiting for URL to ingest...</p>';
+        }
+
+        async function ingestUrl(url) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = '<p style="color: blue;">⏳ Ingesting URL...</p>';
+
+            try {
+                const response = await fetch(`http://localhost:35555/ingest?url=${encodeURIComponent(url)}`);
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    statusDiv.innerHTML = `
+                        <p style="color: green;">✅ Successfully ingested!</p>
+                        <p><strong>URL:</strong> ${result.url}</p>
+                        <p><strong>Type:</strong> ${result.content_type}</p>
+                        <p><strong>ID:</strong> ${result.unique_id}</p>
+                        ${result.video_success ? '<p style="color: green;">📹 Video info detected</p>' : ''}
+                        <p><small>This window will close automatically in 3 seconds...</small></p>
+                    `;
+
+                    // Auto-close after successful ingestion
+                    setTimeout(() => {
+                        window.close();
+                    }, 3000);
+                } else {
+                    statusDiv.innerHTML = `<p style="color: red;">❌ Failed: ${result.message}</p>`;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `<p style="color: red;">❌ Error: ${error.message}</p>`;
+                console.error('Ingestion error:', error);
+            }
+        }
+
+        // Auto-process on page load
+        window.addEventListener('load', processIngestion);
+
+        // Listen for messages from parent windows (for background processing)
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.url) {
+                ingestUrl(event.data.url);
+            }
+        });
+
+        // Expose function for external calls
+        window.ingestUrl = ingestUrl;
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #status {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</body>
+</html>

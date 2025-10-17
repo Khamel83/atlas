@@ -1,0 +1,221 @@
+# Podcast Processing Rules
+
+**MASTER TABLE - DO NOT FORGET AGAIN**
+
+| Category | Podcast Name | Count | Future | Transcript_Only | Exclude |
+|----------|--------------|-------|--------|-----------------|---------|
+| News & Politics | 16 Minutes News by a16z | 0 | 0 | 0 | 1 |
+| News & Politics | CryptoNews Podcast | 0 | 0 | 0 | 1 |
+| News & Politics | FRONTLINE: Film Audio Track \| PBS | 0 | 0 | 0 | 1 |
+| News & Politics | Political Gabfest | 4 | 1 | 1 | 0 |
+| News & Politics | The Daily Show: Ears Edition | 0 | 0 | 0 | 1 |
+| News & Politics | The NPR Politics Podcast | 2 | 1 | 1 | 0 |
+| News & Politics | The Powers That Be: Daily | 0 | 0 | 0 | 1 |
+| News & Politics | Today, Explained | 1 | 1 | 1 | 0 |
+| Tech & Business | "The Cognitive Revolution" \| AI Builders, Researchers, and Live Player Analysis | 1 | 1 | 1 | 0 |
+| Tech & Business | ACQ2 by Acquired | 1000 | 1 | 0 | 0 |
+| Tech & Business | Accidental Tech Podcast | 10 | 1 | 0 | 0 |
+| Tech & Business | Acquired | 1000 | 1 | 0 | 0 |
+| Tech & Business | Against the Rules with Michael Lewis | 100 | 1 | 1 | 0 |
+| Tech & Business | Big Technology Podcast | 0 | 0 | 0 | 1 |
+| Tech & Business | Business Wars | 0 | 0 | 0 | 1 |
+| Tech & Business | Decoder Ring | 0 | 0 | 0 | 1 |
+| Tech & Business | Decoder with Nilay Patel | 2 | 1 | 1 | 0 |
+| Tech & Business | Explain It to Me | 0 | 0 | 0 | 1 |
+| Tech & Business | Greatest Of All Talk (Stratechery Plus Edition) | 2 | 1 | 1 | 0 |
+| Tech & Business | Hidden Brain | 0 | 0 | 0 | 1 |
+| Tech & Business | Larry Wilmore: Black on the Air | 0 | 0 | 0 | 1 |
+| Tech & Business | Latent Space: The AI Engineer Podcast | 0 | 0 | 0 | 1 |
+| Tech & Business | Masters in Business | 0 | 0 | 0 | 1 |
+| Tech & Business | Plain English with Derek Thompson | 20 | 1 | 1 | 0 |
+| Tech & Business | Practical AI | 2 | 1 | 1 | 0 |
+| Tech & Business | Raising Health | 0 | 0 | 0 | 1 |
+| Tech & Business | SI Media With Jimmy Traina | 0 | 0 | 0 | 1 |
+| Tech & Business | Sharp Tech with Ben Thompson | 1000 | 1 | 1 | 0 |
+| Tech & Business | Stratechery | 1000 | 1 | 1 | 0 |
+| Tech & Business | The Trojan Horse Affair | 100 | 1 | 1 | 0 |
+| Tech & Business | The Vergecast | 5 | 1 | 1 | 0 |
+| Tech & Business | Wait Wait... Don't Tell Me! | 0 | 0 | 0 | 1 |
+| Sports | Bear Download — A Chicago Bears podcast | 0 | 0 | 0 | 1 |
+| Sports | Book of Basketball 2.0 | 0 | 0 | 0 | 1 |
+| Sports | CHGO Chicago Bears Podcast | 0 | 0 | 0 | 1 |
+| Sports | Fantasy Football Happy Hour with Matthew Berry | 0 | 0 | 0 | 1 |
+| Sports | Hoge & Jahns: a show about the Chicago Bears | 0 | 0 | 0 | 1 |
+| Sports | Hollinger & Duncan NBA Show - NBA Basketball Podcast | 0 | 0 | 0 | 1 |
+| Sports | The Athletic Football Show: A show about the NFL | 0 | 0 | 0 | 1 |
+| Sports | The Ringer NBA Show | 0 | 0 | 0 | 1 |
+| Sports | The Ringer NFL Show | 0 | 0 | 0 | 1 |
+| Finance & Economics | Death, Sex & Money | 0 | 0 | 0 | 1 |
+| Finance & Economics | Marketplace | 0 | 0 | 0 | 1 |
+| Finance & Economics | Marketplace | 0 | 0 | 0 | 1 |
+| Finance & Economics | Money Stuff: The Podcast | 0 | 0 | 0 | 1 |
+| Finance & Economics | Planet Money | 100 | 1 | 1 | 0 |
+| Finance & Economics | Slate Money | 5 | 1 | 1 | 0 |
+| Finance & Economics | The Indicator from Planet Money | 0 | 1 | 1 | 0 |
+| Culture & Entertainment | Filmspotting | 0 | 0 | 0 | 1 |
+| Culture & Entertainment | Pop Culture Happy Hour | 0 | 0 | 0 | 1 |
+| Culture & Entertainment | Slate Culture | 10 | 1 | 1 | 0 |
+| Culture & Entertainment | The Prestige TV Podcast | 10 | 1 | 1 | 0 |
+| Culture & Entertainment | The Rewatchables | 100 | 1 | 1 | 0 |
+| Science & Education | 99% Invisible | 10 | 1 | 0 | 0 |
+| Science & Education | Radiolab | 100 | 1 | 0 | 0 |
+| Food | Recipe Club | 5 | 1 | 1 | 0 |
+| Food | Ringer Food | 0 | 1 | 1 | 0 |
+| Food | The Recipe with Kenji and Deb | 100 | 1 | 1 | 0 |
+| Other | "Age of Miracles" | 0 | 0 | 0 | 1 |
+| Other | "Econ 102" with Noah Smith and Erik Torenberg | 0 | 0 | 0 | 1 |
+| Other | 50 Things That Made the Modern Economy | 0 | 0 | 0 | 1 |
+| Other | 80,000 Hours Podcast | 0 | 0 | 0 | 1 |
+| Other | All the Hacks with Chris Hutchins | 0 | 1 | 1 | 0 |
+| Other | All-In with Chamath, Jason, Sacks & Friedberg | 0 | 0 | 0 | 1 |
+| Other | Amicus With Dahlia Lithwick \| Law, justice, and the courts | 0 | 0 | 0 | 1 |
+| Other | Animal Spirits Podcast | 10 | 1 | 1 | 0 |
+| Other | Articles of Interest | 10 | 1 | 1 | 0 |
+| Other | Asianometry | 100 | 1 | 1 | 0 |
+| Other | Ask Me Another | 0 | 0 | 0 | 1 |
+| Other | BROKEN: Jeffrey Epstein | 0 | 0 | 0 | 1 |
+| Other | Babbage from The Economist | 0 | 0 | 0 | 1 |
+| Other | BackStory | 0 | 0 | 0 | 1 |
+| Other | Bad Bets | 10 | 1 | 1 | 0 |
+| Other | Benjamen Walker's Theory of Everything | 0 | 0 | 0 | 1 |
+| Other | Big Mood, Little Mood with Daniel M. Lavery | 0 | 0 | 0 | 1 |
+| Other | Bodega Boys | 2 | 1 | 0 | 0 |
+| Other | Chameleon: Dr. Miracle | 0 | 0 | 0 | 1 |
+| Other | Channels with Peter Kafka | 10 | 1 | 1 | 0 |
+| Other | Christopher Kimball's Milk Street Radio | 0 | 0 | 0 | 1 |
+| Other | Coin Bureau | 0 | 0 | 0 | 1 |
+| Other | CoinTalk™️ | 0 | 0 | 0 | 1 |
+| Other | Conversations with Tyler | 1000 | 1 | 1 | 0 |
+| Other | Cortex | 10 | 1 | 1 | 0 |
+| Other | Dear Hank & John | 0 | 0 | 0 | 1 |
+| Other | Dithering | 100 | 1 | 1 | 0 |
+| Other | Dwarkesh Podcast | 100 | 1 | 1 | 0 |
+| Other | EconTalk | 20 | 1 | 1 | 0 |
+| Other | Exponent | 10 | 1 | 1 | 0 |
+| Other | Freakonomics Radio | 0 | 0 | 0 | 1 |
+| Other | Future Perfect | 0 | 0 | 0 | 1 |
+| Other | Going Deep with Chad and JT | 0 | 0 | 0 | 1 |
+| Other | Greeking Out from National Geographic Kids | 100 | 1 | 0 | 0 |
+| Other | Hard Fork | 1000 | 1 | 1 | 0 |
+| Other | Heavyweight | 0 | 0 | 0 | 1 |
+| Other | Hyperfixed | 100 | 1 | 0 | 0 |
+| Other | Impolitic with John Heilemann | 0 | 0 | 0 | 1 |
+| Other | In the Making | 0 | 0 | 0 | 1 |
+| Other | Intelligence Squared | 0 | 0 | 0 | 1 |
+| Other | Invest Like the Best with Patrick O'Shaughnessy | 0 | 0 | 0 | 1 |
+| Other | Invisibilia | 0 | 0 | 0 | 1 |
+| Other | Joie de Vivek - A Sacramento Kings Podcast | 1000 | 1 | 0 | 0 |
+| Other | Land of the Giants | 100 | 1 | 1 | 0 |
+| Other | Lenny's Podcast: Product \| Career \| Growth | 0 | 1 | 1 | 0 |
+| Other | Lenny's Reads | 10 | 1 | 1 | 0 |
+| Other | Lex Fridman Podcast | 10 | 1 | 1 | 0 |
+| Other | Making Sense with Sam Harris | 0 | 0 | 0 | 1 |
+| Other | Million Bazillion | 0 | 0 | 0 | 1 |
+| Other | Mixed Signals from Semafor Media | 0 | 1 | 1 | 0 |
+| Other | My Year in Mensa | 0 | 0 | 0 | 1 |
+| Other | Nice White Parents | 0 | 1 | 1 | 0 |
+| Other | Normal Gossip | 0 | 0 | 0 | 1 |
+| Other | Not Investment Advice | 0 | 1 | 1 | 0 |
+| Other | Numbers and Narrative | 0 | 0 | 0 | 1 |
+| Other | Odd Lots | 10 | 1 | 1 | 0 |
+| Other | On the Media | 0 | 1 | 1 | 0 |
+| Other | On with Kara Swisher | 0 | 1 | 1 | 0 |
+| Other | Open to Debate | 0 | 0 | 0 | 1 |
+| Other | P1 with Matt and Tommy | 0 | 0 | 0 | 1 |
+| Other | PTI | 0 | 0 | 0 | 1 |
+| Other | People I (Mostly) Admire | 0 | 0 | 0 | 1 |
+| Other | Pivot | 0 | 1 | 1 | 0 |
+| Other | Please Clap | 0 | 1 | 1 | 0 |
+| Other | Revisionist History | 100 | 1 | 0 | 0 |
+| Other | Ringer Dish | 0 | 0 | 0 | 1 |
+| Other | S-Town | 0 | 0 | 0 | 1 |
+| Other | Scam Goddess | 0 | 0 | 0 | 1 |
+| Other | Scene on Radio | 0 | 0 | 0 | 1 |
+| Other | Scholars Strategy Network's No Jargon | 0 | 0 | 0 | 1 |
+| Other | Search Engine | 0 | 1 | 0 | 0 |
+| Other | Serial | 0 | 0 | 0 | 1 |
+| Other | Sharp China with Sinocism's Bill Bishop | 0 | 1 | 1 | 0 |
+| Other | Shell Game | 0 | 0 | 0 | 1 |
+| Other | Slow Burn | 0 | 0 | 0 | 1 |
+| Other | Song Exploder | 0 | 0 | 0 | 1 |
+| Other | Special Sauce with Ed Levine | 0 | 0 | 0 | 1 |
+| Other | Spellcaster: The Fall of Sam Bankman-Fried | 0 | 0 | 0 | 1 |
+| Other | Stavvy's World | 0 | 0 | 0 | 1 |
+| Other | The Adam Friedland Show Podcast | 0 | 0 | 0 | 1 |
+| Other | The Anthropocene Reviewed | 0 | 0 | 0 | 1 |
+| Other | The Axe Files with David Axelrod | 0 | 0 | 0 | 1 |
+| Other | The Ben & Marc Show | 0 | 0 | 0 | 1 |
+| Other | The Big Picture | 10 | 1 | 1 | 0 |
+| Other | The Bill Simmons Podcast | 10 | 1 | 1 | 0 |
+| Other | The Citizen Stewart Show | 0 | 0 | 0 | 1 |
+| Other | The Coldest Case In Laramie | 0 | 0 | 0 | 1 |
+| Other | The Ezra Klein Show | 100 | 1 | 1 | 0 |
+| Other | The Fifth Column | 0 | 0 | 0 | 1 |
+| Other | The Full Go with Jason Goff | 0 | 0 | 0 | 1 |
+| Other | The Gray Area with Sean Illing | 0 | 0 | 0 | 1 |
+| Other | The Intelligence from The Economist | 0 | 0 | 0 | 1 |
+| Other | The Journal. | 0 | 0 | 0 | 1 |
+| Other | The Kevin Rose Show | 0 | 0 | 0 | 1 |
+| Other | The Kevin Rose Show (private feed for substack@khamel.com) | 0 | 0 | 0 | 1 |
+| Other | The Knowledge Project with Shane Parrish | 100 | 1 | 1 | 0 |
+| Other | The Lawfare Podcast | 0 | 0 | 0 | 1 |
+| Other | The Layover | 10 | 1 | 0 | 0 |
+| Other | The Lead | 0 | 0 | 0 | 1 |
+| Other | The Mismatch | 0 | 0 | 0 | 1 |
+| Other | The Moth | 0 | 0 | 0 | 1 |
+| Other | The Press Box | 0 | 0 | 0 | 1 |
+| Other | The Prof G Pod with Scott Galloway | 0 | 1 | 1 | 0 |
+| Other | The Ringer F1 Show | 0 | 0 | 0 | 1 |
+| Other | The Ryen Russillo Podcast | 0 | 0 | 0 | 1 |
+| Other | The Severance Podcast with Ben Stiller & Adam Scott | 0 | 0 | 0 | 1 |
+| Other | The Sporkful | 0 | 0 | 0 | 1 |
+| Other | The Swyx Mixtape | 0 | 0 | 0 | 1 |
+| Other | The Tony Kornheiser Show | 0 | 1 | 0 | 0 |
+| Other | This American Life | 0 | 1 | 0 | 0 |
+| Other | This Is Uncomfortable | 0 | 0 | 0 | 1 |
+| Other | This Week in Virology | 0 | 0 | 0 | 1 |
+| Other | Throughline | 0 | 0 | 0 | 1 |
+| Other | Time To Say Goodbye | 0 | 0 | 0 | 1 |
+| Other | Top Four | 0 | 0 | 0 | 1 |
+| Other | Trial by Content | 0 | 0 | 0 | 1 |
+| Other | Uncanny Valley \| WIRED | 0 | 0 | 0 | 1 |
+| Other | Under the Radar | 0 | 0 | 0 | 1 |
+| Other | Upgrade | 0 | 0 | 0 | 1 |
+| Other | Useful Idiots with Katie Halper and Aaron Maté | 0 | 0 | 0 | 1 |
+| Other | Waveform: The MKBHD Podcast | 0 | 1 | 1 | 0 |
+| Other | Welcome to LA | 0 | 0 | 0 | 1 |
+| Other | Why Is This Happening? The Chris Hayes Podcast | 0 | 0 | 0 | 1 |
+| Other | Wisdom of Crowds | 0 | 0 | 0 | 1 |
+| Other | You Made It Weird with Pete Holmes | 0 | 0 | 0 | 1 |
+| Other | You're Wrong About | 0 | 0 | 0 | 1 |
+| Other | a16z Podcast | 0 | 0 | 0 | 1 |
+| Other | safe to eat | 0 | 1 | 0 | 0 |
+| Other | the memory palace | 0 | 0 | 0 | 1 |
+| Recommended High-Value | Acquired | 1000 | 1 | 0 | 0 |
+| Recommended High-Value | All-In with Chamath, Jason, Sacks & Friedberg | 0 | 0 | 0 | 1 |
+| Recommended High-Value | Conversations with Tyler | 100 | 1 | 1 | 0 |
+| Recommended High-Value | EconTalk | 10 | 1 | 1 | 0 |
+| Recommended High-Value | Hard Fork | 100 | 1 | 1 | 0 |
+| Recommended High-Value | Lex Fridman Podcast | 100 | 1 | 1 | 0 |
+| Recommended High-Value | Making Sense with Sam Harris | 0 | 0 | 0 | 1 |
+| Recommended High-Value | Planet Money | 0 | 1 | 1 | 0 |
+| Recommended High-Value | Radiolab | 0 | 1 | 0 | 0 |
+| Recommended High-Value | The Ezra Klein Show | 100 | 1 | 1 | 0 |
+| Recommended High-Value | The Journal. | 10 | 1 | 1 | 0 |
+| Recommended High-Value | The Knowledge Project with Shane Parrish | 100 | 1 | 1 | 0 |
+| Recommended High-Value | This American Life | 100 | 1 | 0 | 0 |
+
+## Column Definitions:
+- **Count**: Target number of episodes to process
+- **Future**: 1 = continue processing in future, 0 = stop processing
+- **Transcript_Only**: 1 = only get transcripts (no audio), 0 = get audio + transcripts
+- **Exclude**: 1 = completely exclude from processing, 0 = include
+
+## Key Rules:
+1. If Exclude=1, NEVER process this podcast
+2. If Transcript_Only=1, fetch transcripts but don't download audio
+3. If Transcript_Only=0, download audio AND get transcripts if available
+4. Count indicates how many episodes to target (0 = don't process more)
+5. Future=1 means continue processing new episodes going forward
+
+This is the DEFINITIVE rule set. Don't guess or assume - use this table.

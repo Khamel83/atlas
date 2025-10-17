@@ -1,0 +1,25 @@
+2025-09-15T03:37:15.601364 INFO: Attempting direct fetch for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:15.843478 ERROR: Direct fetch failed for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:15.845015 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:16.398620 ERROR: Reader mode fetch failed for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html: cannot use a string pattern on a bytes-like object
+2025-09-15T03:37:16.400546 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:16.519774 ERROR: JS disabled fetch failed for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:16.521328 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:16.642222 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html: cannot use a string pattern on a bytes-like object
+2025-09-15T03:37:16.643724 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:16.761561 ERROR: Inspect element fetch failed for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:16.764087 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:19.956251 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:37:19.956781 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:37:19.956914 INFO: Attempting archive.today for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:24.527144 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:25.394014 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:37:25.394469 INFO: Attempting archive.is for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:28.615376 INFO: Attempting archive.li for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:31.634147 INFO: Attempting archive.fo for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:35.483909 INFO: Attempting archive.ph for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:37.801671 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:37.941727 ERROR: Googlebot spoof failed for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:37.943057 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:38.426710 INFO: Found Wayback snapshot from 20250426094641: http://web.archive.org/web/20250426094641/https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html
+2025-09-15T03:37:39.746456 INFO: Successfully fetched https://www.nytimes.com/2021/12/24/style/marriage-heather-havrilesky-foreverland.html using wayback_machine_enhanced

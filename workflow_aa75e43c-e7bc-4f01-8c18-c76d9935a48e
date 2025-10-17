@@ -1,0 +1,25 @@
+2025-09-14T23:14:26.217544 INFO: Attempting direct fetch for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:26.395939 ERROR: Direct fetch failed for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:26.397829 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:26.963295 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html: cannot use a string pattern on a bytes-like object
+2025-09-14T23:14:26.965712 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:27.095553 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:27.097426 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:27.218154 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html: cannot use a string pattern on a bytes-like object
+2025-09-14T23:14:27.220066 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:27.336848 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:27.338807 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:29.777340 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:14:29.777436 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:14:29.777464 INFO: Attempting archive.today for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:32.664773 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:33.525548 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:14:33.525973 INFO: Attempting archive.is for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:36.143023 INFO: Attempting archive.li for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:38.929390 INFO: Attempting archive.fo for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:41.905218 INFO: Attempting archive.ph for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:44.700380 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:44.814462 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:44.815703 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:45.246382 INFO: Found Wayback snapshot from 20250503034743: http://web.archive.org/web/20250503034743/https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html
+2025-09-14T23:14:45.902464 INFO: Successfully fetched https://www.nytimes.com/2022/04/05/magazine/billionaire-books.html using wayback_machine_enhanced

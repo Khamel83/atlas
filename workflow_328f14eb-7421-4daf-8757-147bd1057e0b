@@ -1,0 +1,143 @@
+2025-09-15T11:22:14.652416 INFO: Attempting direct fetch for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:15.277292 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:15.590815 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:15.590933 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:15.590973 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:15.867172 ERROR: Reader mode fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:22:15.871929 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:17.268558 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:17.268695 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:17.268726 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:18.337031 ERROR: Refresh stop fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:22:18.339953 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:19.980854 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:19.980946 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:19.980973 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:24.682267 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:22:24.682383 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:24.682410 INFO: Attempting archive.today for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:28.891223 INFO: No existing archive found, creating new archive for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:29.750241 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:22:29.752737 INFO: Attempting archive.is for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:33.292549 INFO: Attempting archive.li for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:36.929663 INFO: Attempting archive.fo for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:40.825236 INFO: Attempting archive.ph for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:42.936615 INFO: Attempting Googlebot spoof for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:43.022484 ERROR: Googlebot spoof failed for https://www.cnbc.com/squawk-box-us/: 403 Client Error: Forbidden for url: https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:43.023775 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:45.409137 INFO: Found Wayback snapshot from 20250912142701: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:53.594940 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:53.595061 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:53.595088 INFO: Attempting Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:53.764993 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:54.335420 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:54.335536 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:54.344392 INFO: Attempting direct fetch for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:54.857288 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:55.168758 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:55.168865 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:55.168922 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:55.455333 ERROR: Reader mode fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:22:55.457825 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:57.030292 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:57.030403 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:57.030431 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:58.128052 ERROR: Refresh stop fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:22:58.130883 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:22:59.768959 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:22:59.769073 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:59.769103 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:04.630340 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:23:04.630446 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:04.630473 INFO: Attempting archive.today for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:09.065082 INFO: No existing archive found, creating new archive for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:09.939298 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:23:09.939798 INFO: Attempting archive.is for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:12.201216 INFO: Attempting archive.li for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:14.462191 INFO: Attempting archive.fo for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:16.806694 INFO: Attempting archive.ph for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:20.217365 INFO: Attempting Googlebot spoof for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:20.379087 ERROR: Googlebot spoof failed for https://www.cnbc.com/squawk-box-us/: 403 Client Error: Forbidden for url: https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:20.380498 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:20.516025 INFO: Found Wayback snapshot from 20250912142701: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:20.957533 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:20.957680 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:20.957716 INFO: Attempting Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:21.088852 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:21.520332 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:21.520449 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:21.520483 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/squawk-box-us/. Attempting Google Search fallback...
+2025-09-15T11:23:21.520556 INFO: Google Search fallback: searching for 'squawk box us'
+2025-09-15T11:23:21.552052 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:23:21.559564 INFO: Attempting direct fetch for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:22.055693 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:22.547103 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:22.547214 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:22.547256 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:22.948470 ERROR: Reader mode fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:23:22.951490 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:24.505143 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:24.505256 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:24.505283 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:25.562460 ERROR: Refresh stop fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:23:25.565945 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:27.041191 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:27.041304 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:27.041331 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:31.297855 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:23:31.297972 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:31.298000 INFO: Attempting archive.today for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:34.598089 INFO: No existing archive found, creating new archive for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:35.520096 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:23:35.520705 INFO: Attempting archive.is for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:39.253221 INFO: Attempting archive.li for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:43.015898 INFO: Attempting archive.fo for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:46.003801 INFO: Attempting archive.ph for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:48.587449 INFO: Attempting Googlebot spoof for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:48.678531 ERROR: Googlebot spoof failed for https://www.cnbc.com/squawk-box-us/: 403 Client Error: Forbidden for url: https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:48.679943 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:48.884926 INFO: Found Wayback snapshot from 20250912142701: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:49.317661 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:49.317782 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:49.317808 INFO: Attempting Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:49.440934 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:49.882203 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:49.882314 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:49.882346 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/squawk-box-us/. Attempting Google Search fallback...
+2025-09-15T11:23:49.882412 INFO: Google Search fallback: searching for 'squawk box us'
+2025-09-15T11:23:49.914672 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:23:49.922460 INFO: Attempting direct fetch for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:49.922634 ERROR: Direct fetch failed for https://www.cnbc.com/squawk-box-us/: [Errno 32] Broken pipe
+2025-09-15T11:23:49.922689 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:50.281152 ERROR: Reader mode fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:23:50.282720 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:51.893734 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:51.893848 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:51.893875 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:52.966968 ERROR: Refresh stop fetch failed for https://www.cnbc.com/squawk-box-us/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:23:52.969982 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:54.651920 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:23:54.652029 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:54.652056 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:23:57.625380 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:23:57.625492 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:23:57.625518 INFO: Attempting archive.today for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:01.336969 INFO: No existing archive found, creating new archive for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:02.192636 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:24:02.193071 INFO: Attempting archive.is for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:05.713051 INFO: Attempting archive.li for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:09.164038 INFO: Attempting archive.fo for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:11.735944 INFO: Attempting archive.ph for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:14.150221 INFO: Attempting Googlebot spoof for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:14.314862 ERROR: Googlebot spoof failed for https://www.cnbc.com/squawk-box-us/: 403 Client Error: Forbidden for url: https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:14.316945 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:14.441524 INFO: Found Wayback snapshot from 20250912142701: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:14.905196 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:24:14.905320 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:14.905355 INFO: Attempting Wayback Machine for https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:15.037740 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912142701/https://www.cnbc.com/squawk-box-us/
+2025-09-15T11:24:15.466754 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-15T11:24:15.466862 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:15.466896 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/squawk-box-us/. Attempting Google Search fallback...
+2025-09-15T11:24:15.466963 INFO: Google Search fallback: searching for 'squawk box us'
+2025-09-15T11:24:15.499484 INFO: Google Search fallback did not find alternative URL

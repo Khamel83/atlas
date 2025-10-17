@@ -1,0 +1,15 @@
+{
+  "schedule_time": "02:00",
+  "max_processing_time_minutes": 20,
+  "max_concurrent_episodes": 3,
+  "retry_attempts": 2,
+  "notification_webhooks": [],
+  "storage": {
+    "temp_dir": "/tmp/podemos_processing",
+    "output_dir": "./podemos_output"
+  },
+  "quality_settings": {
+    "transcription_model": "base",
+    "audio_quality": "high"
+  }
+}

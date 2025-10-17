@@ -1,0 +1,324 @@
+# Atlas Production Configuration Examples
+# Copy and modify these examples for your specific deployment
+
+# Basic Production Configuration
+basic_production:
+  vault:
+    root: "/opt/atlas/vault"
+
+  ingestion:
+    max_concurrent: 3
+    rate_limit: 60
+    timeout: 30
+    retry_attempts: 3
+    retry_delay: 5
+
+  database:
+    type: "sqlite"
+    path: "/opt/atlas/data/atlas.db"
+
+  logging:
+    level: "INFO"
+    format: "json"
+    file: "/opt/atlas/logs/atlas.log"
+    max_size: "100MB"
+    backup_count: 5
+
+# High-Performance Configuration
+high_performance:
+  vault:
+    root: "/opt/atlas/vault"
+
+  ingestion:
+    max_concurrent: 8
+    rate_limit: 120
+    timeout: 45
+    retry_attempts: 5
+    retry_delay: 10
+
+  database:
+    type: "sqlite"
+    path: "/opt/atlas/data/atlas.db"
+    journal_mode: "WAL"
+    synchronous: "NORMAL"
+    cache_size: 10000
+
+  logging:
+    level: "WARNING"
+    format: "json"
+    file: "/opt/atlas/logs/atlas.log"
+    max_size: "500MB"
+    backup_count: 10
+
+# Resource-Constrained Configuration
+resource_constrained:
+  vault:
+    root: "/opt/atlas/vault"
+
+  ingestion:
+    max_concurrent: 1
+    rate_limit: 30
+    timeout: 60
+    retry_attempts: 3
+    retry_delay: 15
+
+  database:
+    type: "sqlite"
+    path: "/opt/atlas/data/atlas.db"
+    journal_mode: "DELETE"
+    synchronous: "FULL"
+    cache_size: 1000
+
+  logging:
+    level: "ERROR"
+    format: "simple"
+    file: "/opt/atlas/logs/atlas.log"
+    max_size: "50MB"
+    backup_count: 3
+
+# Development Configuration
+development:
+  vault:
+    root: "./vault"
+
+  ingestion:
+    max_concurrent: 2
+    rate_limit: 10
+    timeout: 30
+    retry_attempts: 1
+    retry_delay: 5
+
+  database:
+    type: "sqlite"
+    path: "./data/atlas.db"
+
+  logging:
+    level: "DEBUG"
+    format: "detailed"
+    file: "./logs/atlas.log"
+    max_size: "10MB"
+    backup_count: 2
+
+# Gmail-Specific Configuration Examples
+gmail_configs:
+  # Personal Gmail Account
+  personal:
+    credentials_file: "/opt/atlas/config/gmail-personal-credentials.json"
+    token_file: "/opt/atlas/config/gmail-personal-token.json"
+    scopes:
+      - "https://www.googleapis.com/auth/gmail.readonly"
+      - "https://www.googleapis.com/auth/gmail.modify"
+    batch_size: 25
+    polling_interval: 300
+    filters:
+      - query: "is:unread"
+        label: "INBOX"
+      - query: "from:newsletter@example.com"
+        label: "NEWSLETTERS"
+
+  # Work Gmail Account
+  work:
+    credentials_file: "/opt/atlas/config/gmail-work-credentials.json"
+    token_file: "/opt/atlas/config/gmail-work-token.json"
+    scopes:
+      - "https://www.googleapis.com/auth/gmail.readonly"
+    batch_size: 50
+    polling_interval: 600
+    filters:
+      - query: "subject:project OR subject:meeting"
+        label: "WORK"
+
+# RSS Configuration Examples
+rss_configs:
+  # Podcast Feeds
+  podcasts:
+    user_agent: "Atlas/4.0 (Podcast Aggregator)"
+    timeout: 60
+    max_feeds: 500
+    update_interval: 3600
+    feed_list:
+      - url: "https://feeds.simplecast.com/your-podcast"
+        category: "technology"
+        update_frequency: 7200
+      - url: "https://rss.art19.com/another-podcast"
+        category: "business"
+        update_frequency: 14400
+
+  # News Feeds
+  news:
+    user_agent: "Atlas/4.0 (News Aggregator)"
+    timeout: 30
+    max_feeds: 200
+    update_interval: 1800
+    feed_list:
+      - url: "https://feeds.bbci.co.uk/news/rss.xml"
+        category: "world"
+        update_frequency: 900
+      - url: "https://rss.cnn.com/rss/edition.rss"
+        category: "us"
+        update_frequency: 900
+
+# YouTube Configuration Examples
+youtube_configs:
+  # Educational Channels
+  educational:
+    api_key: "${YOUTUBE_API_KEY}"
+    timeout: 45
+    max_concurrent: 3
+    video_quality: "medium"
+    channels:
+      - channel_id: "UCBJycsmduvYEL83R_U4JriQ"  # Example channel
+        category: "technology"
+        download_captions: true
+      - channel_id: "UCftukNRWCcCE1py6h1cSgRQ"  # Example channel
+        category: "science"
+        download_captions: true
+
+# Telegram Bot Configuration Examples
+telegram_configs:
+  # Personal Bot
+  personal_bot:
+    name: "atlas-personal"
+    token: "${ATLAS_PERSONAL_BOT_TOKEN}"
+    webhooks: false
+    allowed_users:
+      - "123456789"  # Your user ID
+    allowed_chats: []
+    max_inline_results: 5
+    log_level: "INFO"
+    admin_chat_id: "123456789"
+
+  # Team Bot
+  team_bot:
+    name: "atlas-team"
+    token: "${ATLAS_TEAM_BOT_TOKEN}"
+    webhooks: true
+    webhook_url: "https://your-domain.com/webhook"
+    webhook_port: 8443
+    allowed_users:
+      - "123456789"  # Admin
+      - "987654321"  # Team member 1
+    allowed_chats:
+      - "-1001234567890"  # Team group chat
+    max_inline_results: 10
+    log_level: "INFO"
+    admin_chat_id: "-1001234567890"
+
+# Monitoring Configuration Examples
+monitoring_configs:
+  # Basic Monitoring
+  basic:
+    enabled: true
+    metrics_path: "/opt/atlas/monitoring/metrics"
+    health_check_interval: 300
+    alerts:
+      - type: "disk_usage"
+        threshold: 80
+        action: "log"
+      - type: "service_down"
+        threshold: 1
+        action: "restart"
+
+  # Advanced Monitoring
+  advanced:
+    enabled: true
+    metrics_path: "/opt/atlas/monitoring/metrics"
+    health_check_interval: 60
+    retention_days: 90
+    alerts:
+      - type: "disk_usage"
+        threshold: 85
+        action: "email"
+        recipients: ["admin@example.com"]
+      - type: "service_down"
+        threshold: 1
+        action: "restart"
+        max_retries: 3
+      - type: "ingestion_failure_rate"
+        threshold: 0.1  # 10% failure rate
+        action: "email"
+        recipients: ["admin@example.com"]
+      - type: "database_error"
+        threshold: 1
+        action: "immediate_notification"
+        recipients: ["admin@example.com", "ops@example.com"]
+
+# Environment-Specific Configurations
+environments:
+  # Production
+  production:
+    logging:
+      level: "INFO"
+      format: "json"
+    ingestion:
+      max_concurrent: 5
+      rate_limit: 60
+    monitoring:
+      enabled: true
+      health_check_interval: 60
+    security:
+      require_authentication: true
+      audit_logging: true
+
+  # Staging
+  staging:
+    logging:
+      level: "DEBUG"
+      format: "detailed"
+    ingestion:
+      max_concurrent: 2
+      rate_limit: 30
+    monitoring:
+      enabled: true
+      health_check_interval: 120
+    security:
+      require_authentication: false
+      audit_logging: true
+
+  # Development
+  development:
+    logging:
+      level: "DEBUG"
+      format: "simple"
+      console: true
+    ingestion:
+      max_concurrent: 1
+      rate_limit: 10
+    monitoring:
+      enabled: false
+    security:
+      require_authentication: false
+      audit_logging: false
+
+# Backup Configuration Examples
+backup_configs:
+  # Daily Backups
+  daily:
+    enabled: true
+    schedule: "0 2 * * *"  # 2 AM daily
+    retention_days: 30
+    include_vault: true
+    include_logs: true
+    compression: true
+    destination: "/opt/atlas/backups"
+
+  # Weekly Backups
+  weekly:
+    enabled: true
+    schedule: "0 3 * * 0"  # 3 AM Sunday
+    retention_days: 90
+    include_vault: true
+    include_logs: false
+    compression: true
+    destination: "/opt/atlas/backups/weekly"
+
+  # Offsite Backups
+  offsite:
+    enabled: false
+    schedule: "0 4 1 * *"  # 4 AM on 1st of month
+    retention_days: 365
+    include_vault: true
+    include_logs: true
+    compression: true
+    encryption: true
+    destination: "s3://your-backup-bucket/atlas/"

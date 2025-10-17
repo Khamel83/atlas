@@ -1,0 +1,28 @@
+2025-09-14T21:24:22.265522 INFO: Attempting direct fetch for https://www.theworkingworld.org/us/
+2025-09-14T21:24:23.220855 INFO: Content is very short (90 words). Likely a teaser.
+2025-09-14T21:24:23.295665 INFO: Content is very short (90 words). Likely a teaser.
+2025-09-14T21:24:23.295759 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:24:23.295799 INFO: Attempting Reader Mode strategy for https://www.theworkingworld.org/us/
+2025-09-14T21:24:23.576102 ERROR: Reader mode fetch failed for https://www.theworkingworld.org/us/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:24:23.578393 INFO: Attempting JS Disabled strategy for https://www.theworkingworld.org/us/
+2025-09-14T21:24:23.939239 INFO: Content is very short (90 words). Likely a teaser.
+2025-09-14T21:24:23.939534 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:24:23.939577 INFO: Attempting Refresh Stop strategy for https://www.theworkingworld.org/us/
+2025-09-14T21:24:24.331498 ERROR: Refresh stop fetch failed for https://www.theworkingworld.org/us/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:24:24.334630 INFO: Attempting Inspect Element strategy for https://www.theworkingworld.org/us/
+2025-09-14T21:24:24.987634 INFO: Content is very short (90 words). Likely a teaser.
+2025-09-14T21:24:24.987730 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:24:24.987760 INFO: Attempting removepaywalls.com bypass for https://www.theworkingworld.org/us/
+2025-09-14T21:24:29.841852 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:24:29.842048 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:24:29.842098 INFO: Attempting archive.today for https://www.theworkingworld.org/us/
+2025-09-14T21:24:33.099195 INFO: No existing archive found, creating new archive for https://www.theworkingworld.org/us/
+2025-09-14T21:24:34.022655 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:24:34.023196 INFO: Attempting archive.is for https://www.theworkingworld.org/us/
+2025-09-14T21:24:36.854013 INFO: Attempting archive.li for https://www.theworkingworld.org/us/
+2025-09-14T21:24:39.902753 INFO: Attempting archive.fo for https://www.theworkingworld.org/us/
+2025-09-14T21:24:43.321203 INFO: Attempting archive.ph for https://www.theworkingworld.org/us/
+2025-09-14T21:24:45.665431 INFO: Attempting Googlebot spoof for https://www.theworkingworld.org/us/
+2025-09-14T21:24:46.245548 INFO: Content is very short (90 words). Likely a teaser.
+2025-09-14T21:24:46.245684 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:24:46.245711 INFO: Attempting Enhanced Wayback Machine for https://www.theworkingworld.org/us/

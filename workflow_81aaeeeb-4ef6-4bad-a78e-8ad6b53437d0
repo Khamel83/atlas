@@ -1,0 +1,116 @@
+2025-09-15T04:30:51.019790 INFO: Attempting direct fetch for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.204666 ERROR: Direct fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.206180 INFO: Attempting Reader Mode strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.297164 ERROR: Reader mode fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.298734 INFO: Attempting JS Disabled strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.384572 ERROR: JS disabled fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.386110 INFO: Attempting Refresh Stop strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.476629 ERROR: Refresh stop fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: cannot use a string pattern on a bytes-like object
+2025-09-15T04:30:51.478064 INFO: Attempting Inspect Element strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.558476 ERROR: Inspect element fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:51.559902 INFO: Attempting removepaywalls.com bypass for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:55.163220 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:30:55.163337 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:30:55.163366 INFO: Attempting archive.today for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:57.636677 INFO: No existing archive found, creating new archive for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:30:58.507235 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:30:58.507734 INFO: Attempting archive.is for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:01.421041 INFO: Attempting archive.li for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:04.707486 INFO: Attempting archive.fo for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:07.943345 INFO: Attempting archive.ph for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:10.107530 INFO: Attempting Googlebot spoof for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:10.201530 ERROR: Googlebot spoof failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:10.203046 INFO: Attempting Enhanced Wayback Machine for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:10.713071 INFO: Found Wayback snapshot from 20250722022339: http://web.archive.org/web/20250722022339/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:13.808686 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:31:13.808805 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:13.808832 INFO: Attempting Wayback Machine for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:13.957735 INFO: Found Wayback snapshot: http://web.archive.org/web/20250722022339/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.104848 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:31:14.104980 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:14.105015 ERROR: All fetch strategies failed or returned low-quality content for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686. Attempting Google Search fallback...
+2025-09-15T04:31:14.105081 INFO: Google Search fallback: searching for 'hlthaff.2019.00686'
+2025-09-15T04:31:14.136034 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:31:14.143713 INFO: Attempting direct fetch for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.227790 ERROR: Direct fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.228915 INFO: Attempting Reader Mode strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.307994 ERROR: Reader mode fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.309111 INFO: Attempting JS Disabled strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.396172 ERROR: JS disabled fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.397318 INFO: Attempting Refresh Stop strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.482420 ERROR: Refresh stop fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: cannot use a string pattern on a bytes-like object
+2025-09-15T04:31:14.483552 INFO: Attempting Inspect Element strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.563227 ERROR: Inspect element fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:14.564357 INFO: Attempting removepaywalls.com bypass for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:19.481712 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:31:19.481826 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:19.481853 INFO: Attempting archive.today for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:21.774653 INFO: No existing archive found, creating new archive for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:22.671027 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:31:22.671405 INFO: Attempting archive.is for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:25.955842 INFO: Attempting archive.li for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:28.922739 INFO: Attempting archive.fo for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:31.349246 INFO: Attempting archive.ph for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:33.251058 INFO: Attempting Googlebot spoof for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:33.342545 ERROR: Googlebot spoof failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:33.343771 INFO: Attempting Enhanced Wayback Machine for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:33.477326 INFO: Found Wayback snapshot from 20250722022339: http://web.archive.org/web/20250722022339/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:33.477481 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T04:31:34.066433 INFO: Found Wayback snapshot from 20240628070512: http://web.archive.org/web/20240628070512/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:34.802696 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:31:34.802802 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:34.802827 INFO: Attempting Wayback Machine for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:34.960584 INFO: Found Wayback snapshot: http://web.archive.org/web/20250722022339/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.241134 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:31:35.241260 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:35.241292 ERROR: All fetch strategies failed or returned low-quality content for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686. Attempting Google Search fallback...
+2025-09-15T04:31:35.241361 INFO: Google Search fallback: searching for 'hlthaff.2019.00686'
+2025-09-15T04:31:35.273430 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:31:35.281192 INFO: Attempting direct fetch for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.363278 ERROR: Direct fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.364559 INFO: Attempting Reader Mode strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.458024 ERROR: Reader mode fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.459248 INFO: Attempting JS Disabled strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.536888 ERROR: JS disabled fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.538146 INFO: Attempting Refresh Stop strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.629241 ERROR: Refresh stop fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: cannot use a string pattern on a bytes-like object
+2025-09-15T04:31:35.630447 INFO: Attempting Inspect Element strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.717298 ERROR: Inspect element fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:35.718583 INFO: Attempting removepaywalls.com bypass for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:38.750489 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:31:38.750606 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:38.750638 INFO: Attempting archive.today for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:41.062419 INFO: No existing archive found, creating new archive for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:41.937493 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:31:41.938299 INFO: Attempting archive.is for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:44.885348 INFO: Attempting archive.li for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:47.916540 INFO: Attempting archive.fo for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:51.492239 INFO: Attempting archive.ph for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:54.463074 INFO: Attempting Googlebot spoof for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:54.550031 ERROR: Googlebot spoof failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:54.551718 INFO: Attempting Enhanced Wayback Machine for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:54.693268 INFO: Found Wayback snapshot from 20250722022339: http://web.archive.org/web/20250722022339/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:54.843236 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:31:54.843356 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:54.843381 INFO: Attempting Wayback Machine for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:54.980056 INFO: Found Wayback snapshot: http://web.archive.org/web/20250722022339/https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.123273 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:31:55.123388 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:55.123420 ERROR: All fetch strategies failed or returned low-quality content for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686. Attempting Google Search fallback...
+2025-09-15T04:31:55.123487 INFO: Google Search fallback: searching for 'hlthaff.2019.00686'
+2025-09-15T04:31:55.155154 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:31:55.163285 INFO: Attempting direct fetch for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.255148 ERROR: Direct fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.256693 INFO: Attempting Reader Mode strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.342265 ERROR: Reader mode fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.343814 INFO: Attempting JS Disabled strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.426171 ERROR: JS disabled fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.427674 INFO: Attempting Refresh Stop strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.516886 ERROR: Refresh stop fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: cannot use a string pattern on a bytes-like object
+2025-09-15T04:31:55.518401 INFO: Attempting Inspect Element strategy for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.601844 ERROR: Inspect element fetch failed for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686: 403 Client Error: Forbidden for url: https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:55.603357 INFO: Attempting removepaywalls.com bypass for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:31:57.955160 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:31:57.955273 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:31:57.955300 INFO: Attempting archive.today for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686
+2025-09-15T04:32:01.271282 INFO: No existing archive found, creating new archive for https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00686

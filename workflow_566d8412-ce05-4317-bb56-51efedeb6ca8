@@ -1,0 +1,136 @@
+2025-09-15T07:20:40.490004 INFO: Attempting direct fetch for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:40.837337 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:20:41.143619 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:20:41.143760 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:20:41.143806 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:41.332112 ERROR: Reader mode fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:20:41.334558 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:41.515049 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:20:41.515159 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:20:41.515185 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:41.659914 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:20:41.662037 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:42.034873 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:20:42.034979 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:20:42.035007 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:46.380654 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:20:46.380773 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:20:46.380801 INFO: Attempting archive.today for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:50.450940 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:51.307247 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:20:51.307825 INFO: Attempting archive.is for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:53.646890 INFO: Attempting archive.li for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:56.028979 INFO: Attempting archive.fo for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:20:58.050781 INFO: Attempting archive.ph for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:00.167395 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:00.393219 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:00.393330 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:00.393365 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:03.170610 INFO: Found Wayback snapshot from 20250910112311: http://web.archive.org/web/20250910112311/https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:06.939634 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T07:21:06.939755 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:06.939783 INFO: Attempting Wayback Machine for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:07.086791 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910112311/https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:07.331323 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T07:21:07.331431 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:07.331468 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/zack-whittaker/. Attempting Google Search fallback...
+2025-09-15T07:21:07.331546 INFO: Google Search fallback: searching for 'zack whittaker'
+2025-09-15T07:21:07.377912 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:21:07.388166 INFO: Attempting direct fetch for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:07.734687 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:07.916431 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:07.916540 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:07.916582 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:08.075373 ERROR: Reader mode fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:21:08.078993 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:08.332547 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:08.334710 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:08.334755 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:08.451965 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:21:08.455574 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:09.048160 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:09.048279 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:09.048306 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:12.753439 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:21:12.753558 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:12.753584 INFO: Attempting archive.today for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:15.468291 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:16.684905 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:21:16.685530 INFO: Attempting archive.is for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:18.934451 INFO: Attempting archive.li for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:21.712127 INFO: Attempting archive.fo for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:24.325089 INFO: Attempting archive.ph for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:27.312817 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:27.321259 INFO: Attempting direct fetch for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:27.615647 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:27.789650 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:27.789766 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:27.789817 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:27.939969 ERROR: Reader mode fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:21:27.943105 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:28.158812 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:28.158909 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:28.158941 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:28.326386 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:21:28.328131 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:28.787094 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:28.787185 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:28.787212 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:33.696198 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:21:33.696313 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:33.696342 INFO: Attempting archive.today for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:36.693816 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:37.546054 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:21:37.546450 INFO: Attempting archive.is for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:41.009632 INFO: Attempting archive.li for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:43.541683 INFO: Attempting archive.fo for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:46.338926 INFO: Attempting archive.ph for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:49.435504 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:49.660576 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:49.660712 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:49.660751 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:49.838685 INFO: Found Wayback snapshot from 20250910112311: http://web.archive.org/web/20250910112311/https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:50.074491 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T07:21:50.074627 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:50.074658 INFO: Attempting Wayback Machine for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:50.224927 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910112311/https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:50.454452 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T07:21:50.454572 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:50.454630 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/zack-whittaker/. Attempting Google Search fallback...
+2025-09-15T07:21:50.454700 INFO: Google Search fallback: searching for 'zack whittaker'
+2025-09-15T07:21:50.485792 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:21:50.493749 INFO: Attempting direct fetch for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:50.737799 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:51.070264 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:51.070378 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:51.070420 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:51.153089 ERROR: Reader mode fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:21:51.155620 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:51.338985 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:51.339097 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:51.339138 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:51.431162 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/zack-whittaker/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:21:51.433715 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:51.841507 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:21:51.841667 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:51.841702 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:54.336216 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:21:54.336333 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:21:54.336363 INFO: Attempting archive.today for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:58.929500 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:21:59.786357 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:21:59.786908 INFO: Attempting archive.is for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:02.941076 INFO: Attempting archive.li for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:04.987811 INFO: Attempting archive.fo for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:06.931256 INFO: Attempting archive.ph for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:09.499917 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:09.750089 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-15T07:22:09.750189 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:22:09.750228 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:09.880157 INFO: Found Wayback snapshot from 20250910112311: http://web.archive.org/web/20250910112311/https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:10.144280 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T07:22:10.144386 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:22:10.144415 INFO: Attempting Wayback Machine for https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:10.281927 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910112311/https://techcrunch.com/author/zack-whittaker/
+2025-09-15T07:22:10.540965 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T07:22:10.541085 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...

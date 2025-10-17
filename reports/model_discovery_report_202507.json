@@ -1,0 +1,430 @@
+{
+  "report_date": "2025-07-13T09:58:35.933774",
+  "discovery_summary": {
+    "total_free_models": 60,
+    "new_free_models": 57,
+    "fast_models": 24,
+    "quality_models": 33,
+    "balanced_models": 3,
+    "provider_breakdown": {
+      "cognitivecomputations": 3,
+      "google": 8,
+      "tencent": 1,
+      "tngtech": 2,
+      "openrouter": 1,
+      "mistralai": 6,
+      "moonshotai": 2,
+      "deepseek": 8,
+      "sarvamai": 1,
+      "qwen": 11,
+      "microsoft": 1,
+      "thudm": 2,
+      "shisa-ai": 1,
+      "arliai": 1,
+      "agentica-org": 1,
+      "nvidia": 2,
+      "meta-llama": 6,
+      "featherless": 1,
+      "rekaai": 1,
+      "nousresearch": 1
+    }
+  },
+  "discovered_models": {
+    "free_models": [
+      "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "google/gemma-3n-e2b-it:free",
+      "tencent/hunyuan-a13b-instruct:free",
+      "tngtech/deepseek-r1t2-chimera:free",
+      "openrouter/cypher-alpha:free",
+      "mistralai/mistral-small-3.2-24b-instruct:free",
+      "moonshotai/kimi-dev-72b:free",
+      "deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "deepseek/deepseek-r1-0528:free",
+      "sarvamai/sarvam-m:free",
+      "mistralai/devstral-small-2505:free",
+      "google/gemma-3n-e4b-it:free",
+      "qwen/qwen3-4b:free",
+      "qwen/qwen3-30b-a3b:free",
+      "qwen/qwen3-8b:free",
+      "qwen/qwen3-14b:free",
+      "qwen/qwen3-32b:free",
+      "qwen/qwen3-235b-a22b:free",
+      "tngtech/deepseek-r1t-chimera:free",
+      "microsoft/mai-ds-r1:free",
+      "thudm/glm-z1-32b:free",
+      "thudm/glm-4-32b:free",
+      "shisa-ai/shisa-v2-llama3.3-70b:free",
+      "arliai/qwq-32b-arliai-rpr-v1:free",
+      "agentica-org/deepcoder-14b-preview:free",
+      "moonshotai/kimi-vl-a3b-thinking:free",
+      "nvidia/llama-3.3-nemotron-super-49b-v1:free",
+      "nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+      "meta-llama/llama-4-maverick:free",
+      "meta-llama/llama-4-scout:free",
+      "deepseek/deepseek-v3-base:free",
+      "google/gemini-2.5-pro-exp-03-25",
+      "qwen/qwen2.5-vl-32b-instruct:free",
+      "deepseek/deepseek-chat-v3-0324:free",
+      "featherless/qwerky-72b:free",
+      "mistralai/mistral-small-3.1-24b-instruct:free",
+      "google/gemma-3-4b-it:free",
+      "google/gemma-3-12b-it:free",
+      "rekaai/reka-flash-3:free",
+      "google/gemma-3-27b-it:free",
+      "qwen/qwq-32b:free",
+      "nousresearch/deephermes-3-llama-3-8b-preview:free",
+      "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+      "cognitivecomputations/dolphin3.0-mistral-24b:free",
+      "qwen/qwen2.5-vl-72b-instruct:free",
+      "mistralai/mistral-small-24b-instruct-2501:free",
+      "deepseek/deepseek-r1-distill-qwen-14b:free",
+      "deepseek/deepseek-r1-distill-llama-70b:free",
+      "deepseek/deepseek-r1:free",
+      "deepseek/deepseek-chat:free",
+      "google/gemini-2.0-flash-exp:free",
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "qwen/qwen-2.5-coder-32b-instruct:free",
+      "meta-llama/llama-3.2-3b-instruct:free",
+      "meta-llama/llama-3.2-11b-vision-instruct:free",
+      "qwen/qwen-2.5-72b-instruct:free",
+      "meta-llama/llama-3.1-405b-instruct:free",
+      "mistralai/mistral-nemo:free",
+      "google/gemma-2-9b-it:free",
+      "mistralai/mistral-7b-instruct:free"
+    ],
+    "new_free_models": [
+      "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "google/gemma-3n-e2b-it:free",
+      "tencent/hunyuan-a13b-instruct:free",
+      "tngtech/deepseek-r1t2-chimera:free",
+      "openrouter/cypher-alpha:free",
+      "mistralai/mistral-small-3.2-24b-instruct:free",
+      "moonshotai/kimi-dev-72b:free",
+      "deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "deepseek/deepseek-r1-0528:free",
+      "sarvamai/sarvam-m:free",
+      "mistralai/devstral-small-2505:free",
+      "google/gemma-3n-e4b-it:free",
+      "qwen/qwen3-4b:free",
+      "qwen/qwen3-30b-a3b:free",
+      "qwen/qwen3-8b:free",
+      "qwen/qwen3-14b:free",
+      "qwen/qwen3-32b:free",
+      "qwen/qwen3-235b-a22b:free",
+      "tngtech/deepseek-r1t-chimera:free",
+      "microsoft/mai-ds-r1:free",
+      "thudm/glm-z1-32b:free",
+      "thudm/glm-4-32b:free",
+      "shisa-ai/shisa-v2-llama3.3-70b:free",
+      "arliai/qwq-32b-arliai-rpr-v1:free",
+      "agentica-org/deepcoder-14b-preview:free",
+      "moonshotai/kimi-vl-a3b-thinking:free",
+      "nvidia/llama-3.3-nemotron-super-49b-v1:free",
+      "nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+      "meta-llama/llama-4-maverick:free",
+      "meta-llama/llama-4-scout:free",
+      "deepseek/deepseek-v3-base:free",
+      "google/gemini-2.5-pro-exp-03-25",
+      "qwen/qwen2.5-vl-32b-instruct:free",
+      "deepseek/deepseek-chat-v3-0324:free",
+      "featherless/qwerky-72b:free",
+      "mistralai/mistral-small-3.1-24b-instruct:free",
+      "google/gemma-3-4b-it:free",
+      "google/gemma-3-12b-it:free",
+      "rekaai/reka-flash-3:free",
+      "google/gemma-3-27b-it:free",
+      "qwen/qwq-32b:free",
+      "nousresearch/deephermes-3-llama-3-8b-preview:free",
+      "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+      "cognitivecomputations/dolphin3.0-mistral-24b:free",
+      "qwen/qwen2.5-vl-72b-instruct:free",
+      "mistralai/mistral-small-24b-instruct-2501:free",
+      "deepseek/deepseek-r1-distill-qwen-14b:free",
+      "deepseek/deepseek-r1-distill-llama-70b:free",
+      "deepseek/deepseek-chat:free",
+      "google/gemini-2.0-flash-exp:free",
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "qwen/qwen-2.5-coder-32b-instruct:free",
+      "meta-llama/llama-3.2-3b-instruct:free",
+      "meta-llama/llama-3.2-11b-vision-instruct:free",
+      "qwen/qwen-2.5-72b-instruct:free",
+      "meta-llama/llama-3.1-405b-instruct:free",
+      "mistralai/mistral-nemo:free"
+    ],
+    "fast_models": [
+      "google/gemma-3n-e2b-it:free",
+      "tngtech/deepseek-r1t2-chimera:free",
+      "mistralai/mistral-small-3.2-24b-instruct:free",
+      "mistralai/devstral-small-2505:free",
+      "google/gemma-3n-e4b-it:free",
+      "qwen/qwen3-4b:free",
+      "qwen/qwen3-30b-a3b:free",
+      "qwen/qwen3-8b:free",
+      "qwen/qwen3-14b:free",
+      "qwen/qwen3-32b:free",
+      "moonshotai/kimi-vl-a3b-thinking:free",
+      "nvidia/llama-3.3-nemotron-super-49b-v1:free",
+      "nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+      "google/gemini-2.5-pro-exp-03-25",
+      "qwen/qwen2.5-vl-32b-instruct:free",
+      "featherless/qwerky-72b:free",
+      "mistralai/mistral-small-3.1-24b-instruct:free",
+      "rekaai/reka-flash-3:free",
+      "google/gemma-3-27b-it:free",
+      "mistralai/mistral-small-24b-instruct-2501:free",
+      "deepseek/deepseek-r1-distill-llama-70b:free",
+      "google/gemini-2.0-flash-exp:free",
+      "google/gemma-2-9b-it:free",
+      "mistralai/mistral-7b-instruct:free"
+    ],
+    "quality_models": [
+      "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "tencent/hunyuan-a13b-instruct:free",
+      "openrouter/cypher-alpha:free",
+      "moonshotai/kimi-dev-72b:free",
+      "deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "deepseek/deepseek-r1-0528:free",
+      "sarvamai/sarvam-m:free",
+      "qwen/qwen3-235b-a22b:free",
+      "tngtech/deepseek-r1t-chimera:free",
+      "microsoft/mai-ds-r1:free",
+      "thudm/glm-z1-32b:free",
+      "thudm/glm-4-32b:free",
+      "shisa-ai/shisa-v2-llama3.3-70b:free",
+      "arliai/qwq-32b-arliai-rpr-v1:free",
+      "agentica-org/deepcoder-14b-preview:free",
+      "meta-llama/llama-4-maverick:free",
+      "meta-llama/llama-4-scout:free",
+      "deepseek/deepseek-v3-base:free",
+      "deepseek/deepseek-chat-v3-0324:free",
+      "google/gemma-3-4b-it:free",
+      "google/gemma-3-12b-it:free",
+      "qwen/qwq-32b:free",
+      "nousresearch/deephermes-3-llama-3-8b-preview:free",
+      "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+      "deepseek/deepseek-r1-distill-qwen-14b:free",
+      "deepseek/deepseek-r1:free",
+      "deepseek/deepseek-chat:free",
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "qwen/qwen-2.5-coder-32b-instruct:free",
+      "meta-llama/llama-3.2-3b-instruct:free",
+      "meta-llama/llama-3.2-11b-vision-instruct:free",
+      "meta-llama/llama-3.1-405b-instruct:free",
+      "mistralai/mistral-nemo:free"
+    ],
+    "balanced_models": [
+      "cognitivecomputations/dolphin3.0-mistral-24b:free",
+      "qwen/qwen2.5-vl-72b-instruct:free",
+      "qwen/qwen-2.5-72b-instruct:free"
+    ],
+    "provider_breakdown": {
+      "cognitivecomputations": [
+        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+        "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+        "cognitivecomputations/dolphin3.0-mistral-24b:free"
+      ],
+      "google": [
+        "google/gemma-3n-e2b-it:free",
+        "google/gemma-3n-e4b-it:free",
+        "google/gemini-2.5-pro-exp-03-25",
+        "google/gemma-3-4b-it:free",
+        "google/gemma-3-12b-it:free",
+        "google/gemma-3-27b-it:free",
+        "google/gemini-2.0-flash-exp:free",
+        "google/gemma-2-9b-it:free"
+      ],
+      "tencent": [
+        "tencent/hunyuan-a13b-instruct:free"
+      ],
+      "tngtech": [
+        "tngtech/deepseek-r1t2-chimera:free",
+        "tngtech/deepseek-r1t-chimera:free"
+      ],
+      "openrouter": [
+        "openrouter/cypher-alpha:free"
+      ],
+      "mistralai": [
+        "mistralai/mistral-small-3.2-24b-instruct:free",
+        "mistralai/devstral-small-2505:free",
+        "mistralai/mistral-small-3.1-24b-instruct:free",
+        "mistralai/mistral-small-24b-instruct-2501:free",
+        "mistralai/mistral-nemo:free",
+        "mistralai/mistral-7b-instruct:free"
+      ],
+      "moonshotai": [
+        "moonshotai/kimi-dev-72b:free",
+        "moonshotai/kimi-vl-a3b-thinking:free"
+      ],
+      "deepseek": [
+        "deepseek/deepseek-r1-0528-qwen3-8b:free",
+        "deepseek/deepseek-r1-0528:free",
+        "deepseek/deepseek-v3-base:free",
+        "deepseek/deepseek-chat-v3-0324:free",
+        "deepseek/deepseek-r1-distill-qwen-14b:free",
+        "deepseek/deepseek-r1-distill-llama-70b:free",
+        "deepseek/deepseek-r1:free",
+        "deepseek/deepseek-chat:free"
+      ],
+      "sarvamai": [
+        "sarvamai/sarvam-m:free"
+      ],
+      "qwen": [
+        "qwen/qwen3-4b:free",
+        "qwen/qwen3-30b-a3b:free",
+        "qwen/qwen3-8b:free",
+        "qwen/qwen3-14b:free",
+        "qwen/qwen3-32b:free",
+        "qwen/qwen3-235b-a22b:free",
+        "qwen/qwen2.5-vl-32b-instruct:free",
+        "qwen/qwq-32b:free",
+        "qwen/qwen2.5-vl-72b-instruct:free",
+        "qwen/qwen-2.5-coder-32b-instruct:free",
+        "qwen/qwen-2.5-72b-instruct:free"
+      ],
+      "microsoft": [
+        "microsoft/mai-ds-r1:free"
+      ],
+      "thudm": [
+        "thudm/glm-z1-32b:free",
+        "thudm/glm-4-32b:free"
+      ],
+      "shisa-ai": [
+        "shisa-ai/shisa-v2-llama3.3-70b:free"
+      ],
+      "arliai": [
+        "arliai/qwq-32b-arliai-rpr-v1:free"
+      ],
+      "agentica-org": [
+        "agentica-org/deepcoder-14b-preview:free"
+      ],
+      "nvidia": [
+        "nvidia/llama-3.3-nemotron-super-49b-v1:free",
+        "nvidia/llama-3.1-nemotron-ultra-253b-v1:free"
+      ],
+      "meta-llama": [
+        "meta-llama/llama-4-maverick:free",
+        "meta-llama/llama-4-scout:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "meta-llama/llama-3.2-3b-instruct:free",
+        "meta-llama/llama-3.2-11b-vision-instruct:free",
+        "meta-llama/llama-3.1-405b-instruct:free"
+      ],
+      "featherless": [
+        "featherless/qwerky-72b:free"
+      ],
+      "rekaai": [
+        "rekaai/reka-flash-3:free"
+      ],
+      "nousresearch": [
+        "nousresearch/deephermes-3-llama-3-8b-preview:free"
+      ]
+    }
+  },
+  "usage_analysis": {
+    "generated_at": "2025-07-13T09:58:35.933746",
+    "summary": {
+      "today": {
+        "requests": 9,
+        "tokens": 1000,
+        "cost": 0.005
+      },
+      "this_month": {
+        "requests": 9,
+        "tokens": 1000,
+        "cost": 0.005
+      },
+      "total_models": 5,
+      "active_models": 5
+    },
+    "model_details": {
+      "google/gemma-2-9b-it:free": {
+        "total_requests": 1,
+        "success_rate": 1.0,
+        "total_cost": 0.0,
+        "is_free": true,
+        "last_used": "2025-07-13T09:49:30.635734"
+      },
+      "mistralai/mistral-7b-instruct:free": {
+        "total_requests": 1,
+        "success_rate": 1.0,
+        "total_cost": 0.0,
+        "is_free": true,
+        "last_used": "2025-07-13T09:49:30.635920"
+      },
+      "google/gemini-2.0-flash-lite-001": {
+        "total_requests": 1,
+        "success_rate": 1.0,
+        "total_cost": 0.005,
+        "is_free": false,
+        "last_used": "2025-07-13T09:49:30.636025"
+      },
+      "deepseek/deepseek-r1:free": {
+        "total_requests": 1,
+        "success_rate": 0.0,
+        "total_cost": 0.0,
+        "is_free": true,
+        "last_used": "2025-07-13T09:49:30.636117"
+      },
+      "test-model:free": {
+        "total_requests": 5,
+        "success_rate": 1.0,
+        "total_cost": 0.0,
+        "is_free": true,
+        "last_used": "2025-07-13T09:49:30.636624"
+      }
+    },
+    "cost_analysis": {
+      "total_cost": 0.005,
+      "free_usage_percentage": 88.88888888888889,
+      "estimated_savings": 0.0044444444444444444
+    },
+    "recommendations": []
+  },
+  "recommendations": {
+    "new_models_to_try": [
+      "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "google/gemma-3n-e2b-it:free",
+      "tencent/hunyuan-a13b-instruct:free",
+      "tngtech/deepseek-r1t2-chimera:free",
+      "openrouter/cypher-alpha:free"
+    ],
+    "tier_updates": {
+      "budget": {
+        "suggested_models": [
+          "google/gemma-3n-e2b-it:free",
+          "tngtech/deepseek-r1t2-chimera:free",
+          "mistralai/mistral-small-3.2-24b-instruct:free"
+        ],
+        "reason": "New fast models available for budget tier"
+      },
+      "premium": {
+        "suggested_models": [
+          "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+          "tencent/hunyuan-a13b-instruct:free",
+          "openrouter/cypher-alpha:free"
+        ],
+        "reason": "New high-quality models available for premium tier"
+      }
+    },
+    "cost_optimization": {
+      "increase_free_usage": {
+        "current_percentage": 0,
+        "target_percentage": 85,
+        "suggested_models": [
+          "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+          "google/gemma-3n-e2b-it:free",
+          "tencent/hunyuan-a13b-instruct:free",
+          "tngtech/deepseek-r1t2-chimera:free",
+          "openrouter/cypher-alpha:free"
+        ]
+      }
+    },
+    "performance_improvements": {}
+  },
+  "next_steps": [
+    "Review new model recommendations",
+    "Test suggested models for your use case",
+    "Update tier configurations if needed",
+    "Monitor cost optimization opportunities"
+  ]
+}

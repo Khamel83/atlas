@@ -1,0 +1,95 @@
+2025-09-15T20:25:08.381131 INFO: Attempting direct fetch for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:08.383528 ERROR: Direct fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1f051b40>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:08.383630 INFO: Attempting Reader Mode strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:08.388936 ERROR: Reader mode fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1eecc500>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:08.389006 INFO: Attempting JS Disabled strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:08.390518 ERROR: JS disabled fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x20012eb0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:08.390580 INFO: Attempting Refresh Stop strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:08.391935 ERROR: Refresh stop fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1f197990>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:08.391997 INFO: Attempting Inspect Element strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:08.393413 ERROR: Inspect element fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x20655390>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:08.393475 INFO: Attempting removepaywalls.com bypass for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:11.242674 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:25:11.242864 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:25:11.242898 INFO: Attempting archive.today for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:12.940719 INFO: No existing archive found, creating new archive for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:13.801292 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T20:25:13.801937 INFO: Attempting archive.is for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:15.809193 INFO: Attempting archive.li for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:17.840129 INFO: Attempting archive.fo for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:19.846215 INFO: Attempting archive.ph for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:21.781069 INFO: Attempting Googlebot spoof for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:21.785548 ERROR: Googlebot spoof failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1f1c2ed0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:21.785673 INFO: Attempting Enhanced Wayback Machine for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.416151 ERROR: Enhanced Wayback Machine failed for https://test-source-discovery-1757973668.example.com: No archived snapshots found in any timeframe
+2025-09-15T20:25:36.417551 INFO: Attempting Wayback Machine for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.542331 ERROR: Wayback Machine failed for https://test-source-discovery-1757973668.example.com: No archived snapshots found
+2025-09-15T20:25:36.551955 INFO: Attempting direct fetch for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.553512 ERROR: Direct fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1f1e59a0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:36.553586 INFO: Attempting Reader Mode strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.554794 ERROR: Reader mode fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1e4ec870>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:36.554855 INFO: Attempting JS Disabled strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.556025 ERROR: JS disabled fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1e8faf30>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:36.556083 INFO: Attempting Refresh Stop strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.557452 ERROR: Refresh stop fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x2075de00>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:36.557514 INFO: Attempting Inspect Element strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:36.559623 ERROR: Inspect element fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1f0f51c0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:36.559687 INFO: Attempting removepaywalls.com bypass for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:39.965763 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:25:39.965878 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:25:39.965908 INFO: Attempting archive.today for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:43.281729 INFO: No existing archive found, creating new archive for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:44.187306 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T20:25:44.187829 INFO: Attempting archive.is for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:47.674750 INFO: Attempting archive.li for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:51.127771 INFO: Attempting archive.fo for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:54.517337 INFO: Attempting archive.ph for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:56.960379 INFO: Attempting Googlebot spoof for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:56.963480 ERROR: Googlebot spoof failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x203bc310>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:56.963568 INFO: Attempting Enhanced Wayback Machine for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.269492 ERROR: Enhanced Wayback Machine failed for https://test-source-discovery-1757973668.example.com: No archived snapshots found in any timeframe
+2025-09-15T20:25:58.270936 INFO: Attempting Wayback Machine for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.435543 ERROR: Wayback Machine failed for https://test-source-discovery-1757973668.example.com: No archived snapshots found
+2025-09-15T20:25:58.437120 ERROR: All fetch strategies failed or returned low-quality content for https://test-source-discovery-1757973668.example.com. Attempting Google Search fallback...
+2025-09-15T20:25:58.437574 INFO: Google Search fallback: searching for 'article test-source-discovery-1757973668.example.com'
+2025-09-15T20:25:58.469224 INFO: Google Search fallback did not find alternative URL
+2025-09-15T20:25:58.477232 INFO: Attempting direct fetch for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.481290 ERROR: Direct fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1edebe20>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.481363 INFO: Attempting Reader Mode strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.482615 ERROR: Reader mode fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1e4dd140>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.482679 INFO: Attempting JS Disabled strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.483773 ERROR: JS disabled fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x2041e550>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.483833 INFO: Attempting Refresh Stop strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.484907 ERROR: Refresh stop fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1f05ffd0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.484982 INFO: Attempting Inspect Element strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.486109 ERROR: Inspect element fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1e670ae0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.486171 INFO: Attempting removepaywalls.com bypass for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.493217 INFO: Attempting direct fetch for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.494630 ERROR: Direct fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x20c7bd40>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.494701 INFO: Attempting Reader Mode strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.496722 ERROR: Reader mode fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1e6e2ba0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.496782 INFO: Attempting JS Disabled strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.497855 ERROR: JS disabled fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x207be0e0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.497914 INFO: Attempting Refresh Stop strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.499181 ERROR: Refresh stop fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1fa4f4b0>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.499242 INFO: Attempting Inspect Element strategy for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:25:58.500288 ERROR: Inspect element fetch failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x20997940>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:25:58.500347 INFO: Attempting removepaywalls.com bypass for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:03.356385 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:26:03.357217 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:26:03.357271 INFO: Attempting archive.today for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:06.000541 INFO: No existing archive found, creating new archive for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:06.882275 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T20:26:06.883408 INFO: Attempting archive.is for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:10.446023 INFO: Attempting archive.li for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:14.170907 INFO: Attempting archive.fo for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:17.930549 INFO: Attempting archive.ph for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:20.410386 INFO: Attempting Googlebot spoof for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:20.413101 ERROR: Googlebot spoof failed for https://test-source-discovery-1757973668.example.com: HTTPSConnectionPool(host='test-source-discovery-1757973668.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1e661550>: Failed to resolve 'test-source-discovery-1757973668.example.com' ([Errno -2] Name or service not known)"))
+2025-09-15T20:26:20.413174 INFO: Attempting Enhanced Wayback Machine for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:21.832714 ERROR: Enhanced Wayback Machine failed for https://test-source-discovery-1757973668.example.com: No archived snapshots found in any timeframe
+2025-09-15T20:26:21.834225 INFO: Attempting Wayback Machine for https://test-source-discovery-1757973668.example.com
+2025-09-15T20:26:21.951808 ERROR: Wayback Machine failed for https://test-source-discovery-1757973668.example.com: No archived snapshots found
+2025-09-15T20:26:21.954145 ERROR: All fetch strategies failed or returned low-quality content for https://test-source-discovery-1757973668.example.com. Attempting Google Search fallback...
+2025-09-15T20:26:21.954928 INFO: Google Search fallback: searching for 'article test-source-discovery-1757973668.example.com'
+2025-09-15T20:26:21.988700 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,140 @@
+2025-09-15T09:22:47.315745 INFO: Attempting direct fetch for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:48.051110 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:22:48.136090 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:22:48.136212 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:22:48.136252 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:48.265066 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:22:48.266765 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:48.425009 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:22:48.425115 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:22:48.425142 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:48.559550 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:22:48.561333 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:48.815990 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:22:48.816096 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:22:48.816123 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:51.557235 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:22:51.557351 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:22:51.557378 INFO: Attempting archive.today for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:55.058726 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:55.944184 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:22:55.944607 INFO: Attempting archive.is for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:22:58.882584 INFO: Attempting archive.li for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:02.288406 INFO: Attempting archive.fo for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:04.778266 INFO: Attempting archive.ph for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:08.560306 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:08.943207 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/mark-leibovich/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:08.944661 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:09.486384 INFO: Found Wayback snapshot from 20250813014613: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:10.929969 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:10.930085 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:10.930112 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:11.324146 INFO: Found Wayback snapshot: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:11.480923 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:11.481039 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:11.481072 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/mark-leibovich/. Attempting Google Search fallback...
+2025-09-15T09:23:11.481154 INFO: Google Search fallback: searching for 'mark leibovich'
+2025-09-15T09:23:11.514047 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:23:11.521576 INFO: Attempting direct fetch for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:11.746367 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:11.834721 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:11.834836 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:11.834875 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:11.936939 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:23:11.939412 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:12.123472 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:12.123583 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:12.123652 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:12.244852 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:23:12.247334 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:12.471664 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:12.471776 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:12.471802 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:16.477906 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:23:16.478031 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:16.478060 INFO: Attempting archive.today for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:19.743099 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:20.653635 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:23:20.654145 INFO: Attempting archive.is for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:23.292681 INFO: Attempting archive.li for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:25.357510 INFO: Attempting archive.fo for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:27.415140 INFO: Attempting archive.ph for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:30.842171 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:31.066055 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/mark-leibovich/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:31.067641 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:31.222551 INFO: Found Wayback snapshot from 20250813014613: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:31.438128 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:31.438246 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:31.446573 INFO: Attempting direct fetch for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:31.667919 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:31.752025 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:31.752162 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:31.752201 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:31.859705 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:23:31.862572 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:32.076492 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:32.076601 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:32.076633 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:32.209352 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:23:32.211940 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:32.446577 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:32.446719 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:32.446747 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:34.932565 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:23:34.932689 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:34.932718 INFO: Attempting archive.today for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:38.722924 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:39.628132 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:23:39.628702 INFO: Attempting archive.is for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:42.401636 INFO: Attempting archive.li for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:45.503403 INFO: Attempting archive.fo for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:48.457218 INFO: Attempting archive.ph for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:52.236937 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:52.447178 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/mark-leibovich/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:52.450830 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:52.577243 INFO: Found Wayback snapshot from 20250813014613: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:52.727746 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:52.727859 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:52.727886 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:52.891276 INFO: Found Wayback snapshot: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:53.051157 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:53.051263 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:53.051296 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/mark-leibovich/. Attempting Google Search fallback...
+2025-09-15T09:23:53.051356 INFO: Google Search fallback: searching for 'mark leibovich'
+2025-09-15T09:23:53.084630 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:23:53.092200 INFO: Attempting direct fetch for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:53.281782 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:53.369625 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:53.369735 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:53.369775 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:53.476430 ERROR: Reader mode fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:23:53.479258 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:53.654491 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:53.654618 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:53.654649 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:53.786651 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/author/mark-leibovich/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:23:53.789324 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:53.999794 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:23:53.999902 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:53.999930 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:23:58.514916 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:23:58.515032 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:23:58.515058 INFO: Attempting archive.today for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:02.765499 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:03.639378 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:24:03.639866 INFO: Attempting archive.is for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:05.736624 INFO: Attempting archive.li for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:09.264560 INFO: Attempting archive.fo for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:12.888687 INFO: Attempting archive.ph for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:15.493407 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:15.772904 ERROR: Googlebot spoof failed for https://www.theatlantic.com/author/mark-leibovich/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:15.774475 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:15.902078 INFO: Found Wayback snapshot from 20250813014613: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:16.055794 INFO: Content is very short (8 words). Likely a teaser.
+2025-09-15T09:24:16.055907 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:24:16.055932 INFO: Attempting Wayback Machine for https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:16.173632 INFO: Found Wayback snapshot: http://web.archive.org/web/20250813014613/https://www.theatlantic.com/author/mark-leibovich/
+2025-09-15T09:24:16.173768 ERROR: Wayback Machine failed for https://www.theatlantic.com/author/mark-leibovich/: [Errno 32] Broken pipe
+2025-09-15T09:24:16.175755 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/author/mark-leibovich/. Attempting Google Search fallback...
+2025-09-15T09:24:16.175897 INFO: Google Search fallback: searching for 'mark leibovich'
+2025-09-15T09:24:16.208018 INFO: Google Search fallback did not find alternative URL

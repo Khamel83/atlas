@@ -1,0 +1,116 @@
+2025-09-14T23:46:58.232708 INFO: Attempting direct fetch for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:46:58.499150 ERROR: Direct fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:46:58.499382 INFO: Attempting Reader Mode strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:46:58.538302 ERROR: Reader mode fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:46:58.540907 INFO: Attempting JS Disabled strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:46:58.576921 ERROR: JS disabled fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:46:58.577128 INFO: Attempting Refresh Stop strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:46:58.622251 ERROR: Refresh stop fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: cannot use a string pattern on a bytes-like object
+2025-09-14T23:46:58.622495 INFO: Attempting Inspect Element strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:46:58.652856 ERROR: Inspect element fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:46:58.653201 INFO: Attempting removepaywalls.com bypass for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:03.078558 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:47:03.078686 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:47:03.078713 INFO: Attempting archive.today for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:06.668516 INFO: No existing archive found, creating new archive for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:07.653013 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:47:07.653647 INFO: Attempting archive.is for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:11.216095 INFO: Attempting archive.li for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:14.695877 INFO: Attempting archive.fo for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:18.569154 INFO: Attempting archive.ph for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:21.032041 INFO: Attempting Googlebot spoof for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:21.070716 ERROR: Googlebot spoof failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:47:21.070959 INFO: Attempting Enhanced Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.571228 ERROR: Enhanced Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found in any timeframe
+2025-09-14T23:47:41.572584 INFO: Attempting Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.697492 ERROR: Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found
+2025-09-14T23:47:41.699270 ERROR: All fetch strategies failed or returned low-quality content for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e. Attempting Google Search fallback...
+2025-09-14T23:47:41.700004 INFO: Google Search fallback: searching for '>'
+2025-09-14T23:47:41.734972 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:47:41.748244 INFO: Attempting direct fetch for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.807042 ERROR: Direct fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:47:41.807271 INFO: Attempting Reader Mode strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.852869 ERROR: Reader mode fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:47:41.853093 INFO: Attempting JS Disabled strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.886500 ERROR: JS disabled fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:47:41.886840 INFO: Attempting Refresh Stop strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.935704 ERROR: Refresh stop fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: cannot use a string pattern on a bytes-like object
+2025-09-14T23:47:41.936170 INFO: Attempting Inspect Element strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:41.970694 ERROR: Inspect element fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:47:41.971098 INFO: Attempting removepaywalls.com bypass for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:45.624208 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:47:45.624321 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:47:45.624348 INFO: Attempting archive.today for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:48.376168 INFO: No existing archive found, creating new archive for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:49.254521 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:47:49.255212 INFO: Attempting archive.is for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:52.909398 INFO: Attempting archive.li for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:55.011301 INFO: Attempting archive.fo for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:47:57.571615 INFO: Attempting archive.ph for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:00.081369 INFO: Attempting Googlebot spoof for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:00.118326 ERROR: Googlebot spoof failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:00.118633 INFO: Attempting Enhanced Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.033135 ERROR: Enhanced Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found in any timeframe
+2025-09-14T23:48:02.034910 INFO: Attempting Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.169316 ERROR: Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found
+2025-09-14T23:48:02.171145 ERROR: All fetch strategies failed or returned low-quality content for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e. Attempting Google Search fallback...
+2025-09-14T23:48:02.172016 INFO: Google Search fallback: searching for '>'
+2025-09-14T23:48:02.204102 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:48:02.212471 INFO: Attempting direct fetch for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.247856 ERROR: Direct fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:02.248185 INFO: Attempting Reader Mode strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.288708 ERROR: Reader mode fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:02.289038 INFO: Attempting JS Disabled strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.320922 ERROR: JS disabled fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:02.321259 INFO: Attempting Refresh Stop strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.386076 ERROR: Refresh stop fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: cannot use a string pattern on a bytes-like object
+2025-09-14T23:48:02.386347 INFO: Attempting Inspect Element strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:02.429658 ERROR: Inspect element fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:02.429897 INFO: Attempting removepaywalls.com bypass for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:05.634886 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:48:05.634996 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:48:05.635025 INFO: Attempting archive.today for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:08.218690 INFO: No existing archive found, creating new archive for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:09.126066 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:48:09.126779 INFO: Attempting archive.is for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:12.298927 INFO: Attempting archive.li for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:14.864743 INFO: Attempting archive.fo for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:17.052582 INFO: Attempting archive.ph for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:20.513907 INFO: Attempting Googlebot spoof for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:20.560197 ERROR: Googlebot spoof failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:20.560767 INFO: Attempting Enhanced Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:21.833632 ERROR: Enhanced Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found in any timeframe
+2025-09-14T23:48:21.834985 INFO: Attempting Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:22.008155 ERROR: Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found
+2025-09-14T23:48:22.009908 ERROR: All fetch strategies failed or returned low-quality content for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e. Attempting Google Search fallback...
+2025-09-14T23:48:22.010701 INFO: Google Search fallback: searching for '>'
+2025-09-14T23:48:22.045735 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:48:22.054326 INFO: Attempting direct fetch for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:22.089565 ERROR: Direct fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:22.089847 INFO: Attempting Reader Mode strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:22.122804 ERROR: Reader mode fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:22.123030 INFO: Attempting JS Disabled strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:22.162864 ERROR: JS disabled fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:22.163110 INFO: Attempting Refresh Stop strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:22.201658 ERROR: Refresh stop fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: cannot use a string pattern on a bytes-like object
+2025-09-14T23:48:22.201881 INFO: Attempting Inspect Element strategy for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:22.240577 ERROR: Inspect element fetch failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:22.241023 INFO: Attempting removepaywalls.com bypass for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:26.177079 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:48:26.177192 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:48:26.177220 INFO: Attempting archive.today for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:29.733882 INFO: No existing archive found, creating new archive for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:30.607461 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:48:30.608130 INFO: Attempting archive.is for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:34.139645 INFO: Attempting archive.li for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:37.565140 INFO: Attempting archive.fo for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:41.186437 INFO: Attempting archive.ph for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:44.942058 INFO: Attempting Googlebot spoof for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:44.979745 ERROR: Googlebot spoof failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: 403 Client Error: Forbidden for url: http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3E
+2025-09-14T23:48:44.980070 INFO: Attempting Enhanced Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:46.208832 ERROR: Enhanced Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found in any timeframe
+2025-09-14T23:48:46.210468 INFO: Attempting Wayback Machine for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e
+2025-09-14T23:48:46.402239 ERROR: Wayback Machine failed for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e: No archived snapshots found
+2025-09-14T23:48:46.413236 ERROR: All fetch strategies failed or returned low-quality content for http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e. Attempting Google Search fallback...
+2025-09-14T23:48:46.414141 INFO: Google Search fallback: searching for '>'
+2025-09-14T23:48:46.446667 INFO: Google Search fallback did not find alternative URL

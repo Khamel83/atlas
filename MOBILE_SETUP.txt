@@ -1,0 +1,90 @@
+ATLAS MOBILE INTEGRATION SETUP
+===============================
+
+Server URL: http://10.0.0.45:8000
+
+
+IPHONE SHORTCUT SETUP:
+
+1. Open the Shortcuts app on your iPhone
+2. Tap the '+' button to create a new shortcut
+3. Tap 'Add Action'
+4. Search for "URL" and select it
+5. Enter: http://10.0.0.45:8000/api/content
+6. Tap 'Add Action' again
+7. Search for "Get Contents of URL" and select it
+8. Change method to "POST"
+9. Tap "Show More"
+10. For "Request Body", choose "JSON"
+11. Add this JSON:
+{
+  "content": "Your text or article content here",
+  "title": "Article Title"
+}
+12. Tap "Done"
+13. Tap the arrow at the top
+14. Name your shortcut "Save to Atlas"
+15. Tap "Done"
+
+HOW TO USE:
+- In Safari or any app, tap the Share button
+- Scroll down and tap "Save to Atlas"
+- Your content will be saved to Atlas!
+
+TIP: You can also share text directly to this shortcut from Notes, Messages, etc.
+
+
+
+BOOKMARKLET SETUP (Mac/PC):
+
+1. In your browser (Safari/Chrome/Firefox):
+2. Right-click on your bookmarks bar and select "Add Page..."
+3. Name it: "Save to Atlas"
+4. For the URL, copy and paste this entire line:
+javascript:(function(){
+    var url=window.location.href;
+    var title=document.title;
+    fetch('http://10.0.0.45:8000/api/content',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({url:url,title:title})
+    }).then(function(){
+        alert('Saved to Atlas!');
+    }).catch(function(){
+        alert('Failed to save. Make sure Atlas is running!');
+    });
+})();
+
+HOW TO USE:
+- Visit any webpage you want to save
+- Click the "Save to Atlas" bookmark in your bookmarks bar
+- The page will be automatically saved to your Atlas!
+
+ALTERNATIVE METHOD:
+1. Create a new bookmark
+2. Name it: "Save to Atlas"
+3. Copy the bookmarklet code above
+4. Paste it as the URL
+5. Save and drag to your bookmarks bar
+
+
+TESTING YOUR SETUP:
+------------------
+1. Start Atlas: python3 start_web.py
+2. Try the bookmarklet on any webpage
+3. Check http://localhost:8000 to see your saved content
+4. Try the iPhone shortcut if you set it up
+
+TROUBLESHOOTING:
+---------------
+- Make sure Atlas is running (python3 start_web.py)
+- Check that port 8000 is available
+- Ensure your Mac allows incoming connections (System Preferences > Security & Firewall)
+- Both devices must be on the same WiFi network
+
+FOR IPHONE ACCESS:
+-----------------
+Use your computer's IP address instead of localhost:
+http://10.0.0.45:8000
+
+This lets your iPhone access Atlas from the same WiFi network.

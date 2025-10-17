@@ -1,0 +1,27 @@
+2025-09-15T13:32:15.739664 INFO: Attempting direct fetch for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:15.961866 ERROR: Direct fetch failed for http://www.economist.com/node/17857461/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857461/print
+2025-09-15T13:32:15.963558 INFO: Attempting Reader Mode strategy for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.152528 ERROR: Reader mode fetch failed for http://www.economist.com/node/17857461/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.154323 INFO: Attempting JS Disabled strategy for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.419884 ERROR: JS disabled fetch failed for http://www.economist.com/node/17857461/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.421635 INFO: Attempting Refresh Stop strategy for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.578382 ERROR: Refresh stop fetch failed for http://www.economist.com/node/17857461/print: cannot use a string pattern on a bytes-like object
+2025-09-15T13:32:16.580100 INFO: Attempting Inspect Element strategy for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.873930 ERROR: Inspect element fetch failed for http://www.economist.com/node/17857461/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857461/print
+2025-09-15T13:32:16.875722 INFO: Attempting removepaywalls.com bypass for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:19.681710 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:32:19.681805 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:32:19.681831 INFO: Attempting archive.today for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:21.931740 INFO: No existing archive found, creating new archive for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:22.822011 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:32:22.822585 INFO: Attempting archive.is for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:25.643179 INFO: Attempting archive.li for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:27.876317 INFO: Attempting archive.fo for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:30.977745 INFO: Attempting archive.ph for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:33.551094 INFO: Attempting Googlebot spoof for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:33.714050 ERROR: Googlebot spoof failed for http://www.economist.com/node/17857461/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857461/print
+2025-09-15T13:32:33.716013 INFO: Attempting Enhanced Wayback Machine for http://www.economist.com/node/17857461/print
+2025-09-15T13:32:44.681945 INFO: Found Wayback snapshot from 20150609025236: http://web.archive.org/web/20150609025236/http://www.economist.com/node/17857461/print
+2025-09-15T13:32:44.682092 INFO: Timeframe 20220101 failed: [Errno 32] Broken pipe
+2025-09-15T13:32:55.459298 INFO: Found Wayback snapshot from 20150609025236: http://web.archive.org/web/20150609025236/http://www.economist.com/node/17857461/print
+2025-09-15T13:32:56.553130 INFO: Successfully fetched http://www.economist.com/node/17857461/print using wayback_machine_enhanced

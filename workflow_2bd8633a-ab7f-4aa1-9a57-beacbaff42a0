@@ -1,0 +1,123 @@
+2025-09-15T13:32:56.660394 INFO: Attempting direct fetch for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:32:57.534489 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:32:57.652823 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:32:57.652977 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:32:57.653015 INFO: Attempting Reader Mode strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:32:57.890790 ERROR: Reader mode fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:32:57.891157 INFO: Attempting JS Disabled strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:32:58.288064 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:32:58.288166 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:32:58.288192 INFO: Attempting Refresh Stop strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:32:58.585813 ERROR: Refresh stop fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:32:58.586229 INFO: Attempting Inspect Element strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:32:58.942158 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:32:58.942262 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:32:58.942288 INFO: Attempting removepaywalls.com bypass for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:03.577135 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:33:03.577235 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:03.577264 INFO: Attempting archive.today for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:06.084965 INFO: No existing archive found, creating new archive for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:06.979148 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:33:06.979879 INFO: Attempting archive.is for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:10.607585 INFO: Attempting archive.li for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:14.375631 INFO: Attempting archive.fo for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:16.316680 INFO: Attempting archive.ph for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:18.874287 INFO: Attempting Googlebot spoof for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:18.921777 ERROR: Googlebot spoof failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: 403 Client Error: Forbidden for url: http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:18.922136 INFO: Attempting Enhanced Wayback Machine for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:22.083823 INFO: Found Wayback snapshot from 20170818081625: http://web.archive.org/web/20170818081625/http://www.avclub.com:80/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:23.430449 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T13:33:23.430573 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:23.430619 INFO: Attempting Wayback Machine for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:23.583450 INFO: Found Wayback snapshot: http://web.archive.org/web/20170818081625/http://www.avclub.com:80/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:23.772187 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T13:33:23.772308 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:23.772341 ERROR: All fetch strategies failed or returned low-quality content for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315. Attempting Google Search fallback...
+2025-09-15T13:33:23.772412 INFO: Google Search fallback: searching for 'black ish got trump and made lemonade 248315'
+2025-09-15T13:33:23.803735 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:33:23.811799 INFO: Attempting direct fetch for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:24.124043 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:24.245229 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:24.245349 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:24.245384 INFO: Attempting Reader Mode strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:24.475134 ERROR: Reader mode fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:33:24.475657 INFO: Attempting JS Disabled strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:24.800924 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:24.801034 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:24.801063 INFO: Attempting Refresh Stop strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:25.095070 ERROR: Refresh stop fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:33:25.095565 INFO: Attempting Inspect Element strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:25.710230 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:25.710330 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:25.710357 INFO: Attempting removepaywalls.com bypass for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:28.026522 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:33:28.026646 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:28.026677 INFO: Attempting archive.today for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:30.528495 INFO: No existing archive found, creating new archive for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:31.408049 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:33:31.408965 INFO: Attempting archive.is for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:34.907142 INFO: Attempting archive.li for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:37.580578 INFO: Attempting archive.fo for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:37.591318 INFO: Attempting direct fetch for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:37.918380 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:38.045825 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:38.045933 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:38.045983 INFO: Attempting Reader Mode strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:38.324334 ERROR: Reader mode fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:33:38.324657 INFO: Attempting JS Disabled strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:38.614257 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:38.614364 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:38.614392 INFO: Attempting Refresh Stop strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:38.824335 ERROR: Refresh stop fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:33:38.824672 INFO: Attempting Inspect Element strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:39.216873 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:39.216975 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:39.217002 INFO: Attempting removepaywalls.com bypass for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:42.439702 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:33:42.439815 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:42.439845 INFO: Attempting archive.today for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:44.794498 INFO: No existing archive found, creating new archive for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:45.654902 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:33:45.655339 INFO: Attempting archive.is for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:49.116627 INFO: Attempting archive.li for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:51.353025 INFO: Attempting archive.fo for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:55.107932 INFO: Attempting archive.ph for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.166760 INFO: Attempting Googlebot spoof for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.231971 ERROR: Googlebot spoof failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: 403 Client Error: Forbidden for url: http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.232218 INFO: Attempting Enhanced Wayback Machine for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.380142 INFO: Found Wayback snapshot from 20170818081625: http://web.archive.org/web/20170818081625/http://www.avclub.com:80/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.576704 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T13:33:57.576880 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:57.576907 INFO: Attempting Wayback Machine for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.703130 INFO: Found Wayback snapshot: http://web.archive.org/web/20170818081625/http://www.avclub.com:80/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:57.892340 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T13:33:57.892488 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:57.892523 ERROR: All fetch strategies failed or returned low-quality content for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315. Attempting Google Search fallback...
+2025-09-15T13:33:57.892611 INFO: Google Search fallback: searching for 'black ish got trump and made lemonade 248315'
+2025-09-15T13:33:57.923666 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:33:57.931431 INFO: Attempting direct fetch for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:58.402954 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:58.534779 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:58.534894 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:58.534929 INFO: Attempting Reader Mode strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:58.770328 ERROR: Reader mode fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:33:58.770662 INFO: Attempting JS Disabled strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:59.043865 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:59.043967 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:59.043992 INFO: Attempting Refresh Stop strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:59.284542 ERROR: Refresh stop fetch failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: cannot use a string pattern on a bytes-like object
+2025-09-15T13:33:59.285029 INFO: Attempting Inspect Element strategy for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:33:59.681793 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T13:33:59.681894 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:33:59.681920 INFO: Attempting removepaywalls.com bypass for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:03.486101 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:34:03.486225 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:34:03.486280 INFO: Attempting archive.today for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:07.021037 INFO: No existing archive found, creating new archive for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:07.983108 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:34:07.983820 INFO: Attempting archive.is for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:10.743763 INFO: Attempting archive.li for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:13.585821 INFO: Attempting archive.fo for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:16.282468 INFO: Attempting archive.ph for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:19.518604 INFO: Attempting Googlebot spoof for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315
+2025-09-15T13:34:19.567047 ERROR: Googlebot spoof failed for http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315: 403 Client Error: Forbidden for url: http://www.avclub.com/tvclub/black-ish-got-trump-and-made-lemonade-248315

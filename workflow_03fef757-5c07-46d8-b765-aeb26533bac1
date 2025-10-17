@@ -1,0 +1,135 @@
+2025-09-15T02:30:32.398727 INFO: Attempting direct fetch for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:32.582352 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:30:32.590723 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:30:32.590815 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:32.590854 INFO: Attempting Reader Mode strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:32.803727 ERROR: Reader mode fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:30:32.805810 INFO: Attempting JS Disabled strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:33.003898 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:30:33.003998 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:33.004022 INFO: Attempting Refresh Stop strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:33.188905 ERROR: Refresh stop fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:30:33.191433 INFO: Attempting Inspect Element strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:33.426969 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:30:33.427077 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:33.427104 INFO: Attempting removepaywalls.com bypass for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:37.161556 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:30:37.161786 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:37.161824 INFO: Attempting archive.today for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:40.138759 INFO: No existing archive found, creating new archive for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:40.996241 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:30:40.996819 INFO: Attempting archive.is for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:43.262934 INFO: Attempting archive.li for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:46.492750 INFO: Attempting archive.fo for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:49.163348 INFO: Attempting archive.ph for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:52.713044 INFO: Attempting Googlebot spoof for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:52.816676 ERROR: Googlebot spoof failed for https://x.com/Nate_Cohn/status/1455154377136742403: 403 Client Error: Forbidden for url: https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:52.818707 INFO: Attempting Enhanced Wayback Machine for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:54.887677 INFO: Found Wayback snapshot from 20250510064558: http://web.archive.org/web/20250510064558/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:54.887828 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T02:30:55.893355 INFO: Found Wayback snapshot from 20250318140906: http://web.archive.org/web/20250318140906/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:57.224934 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:30:57.225048 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:57.225072 INFO: Attempting Wayback Machine for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:57.375839 INFO: Found Wayback snapshot: http://web.archive.org/web/20250510064558/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:58.413439 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:30:58.413562 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:58.413619 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Nate_Cohn/status/1455154377136742403. Attempting Google Search fallback...
+2025-09-15T02:30:58.413684 INFO: Google Search fallback: searching for 'status'
+2025-09-15T02:30:58.446091 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:30:58.453432 INFO: Attempting direct fetch for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:58.659075 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:30:58.667428 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:30:58.667513 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:58.667547 INFO: Attempting Reader Mode strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:58.887184 ERROR: Reader mode fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:30:58.888930 INFO: Attempting JS Disabled strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:59.082036 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:30:59.082139 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:59.082164 INFO: Attempting Refresh Stop strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:59.270120 ERROR: Refresh stop fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:30:59.272021 INFO: Attempting Inspect Element strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:30:59.475733 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:30:59.475839 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:30:59.475865 INFO: Attempting removepaywalls.com bypass for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:03.165268 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:31:03.165378 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:03.165403 INFO: Attempting archive.today for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:07.775175 INFO: No existing archive found, creating new archive for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:08.704131 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:31:08.706665 INFO: Attempting archive.is for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:10.967894 INFO: Attempting archive.li for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:14.273796 INFO: Attempting archive.fo for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:18.055797 INFO: Attempting archive.ph for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.021875 INFO: Attempting Googlebot spoof for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.114472 ERROR: Googlebot spoof failed for https://x.com/Nate_Cohn/status/1455154377136742403: 403 Client Error: Forbidden for url: https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.116305 INFO: Attempting Enhanced Wayback Machine for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.235555 INFO: Found Wayback snapshot from 20250510064558: http://web.archive.org/web/20250510064558/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.315170 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:31:20.315266 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:20.315306 INFO: Attempting Wayback Machine for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.440868 INFO: Found Wayback snapshot: http://web.archive.org/web/20250510064558/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.517937 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:31:20.518043 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:20.518074 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Nate_Cohn/status/1455154377136742403. Attempting Google Search fallback...
+2025-09-15T02:31:20.518133 INFO: Google Search fallback: searching for 'status'
+2025-09-15T02:31:20.556558 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:31:20.564907 INFO: Attempting direct fetch for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.755855 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:31:20.764959 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:31:20.765048 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:20.765090 INFO: Attempting Reader Mode strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:20.991125 ERROR: Reader mode fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:31:20.992474 INFO: Attempting JS Disabled strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:21.183012 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:31:21.183121 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:21.183150 INFO: Attempting Refresh Stop strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:21.360096 ERROR: Refresh stop fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:31:21.361676 INFO: Attempting Inspect Element strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:21.590309 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:31:21.590424 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:21.590451 INFO: Attempting removepaywalls.com bypass for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:24.171223 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:31:24.171311 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:24.171341 INFO: Attempting archive.today for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:28.791263 INFO: No existing archive found, creating new archive for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:29.687269 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:31:29.688851 INFO: Attempting archive.is for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:32.807636 INFO: Attempting archive.li for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:32.817210 INFO: Attempting direct fetch for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:33.008395 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:31:33.016546 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T02:31:33.016682 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:33.016722 INFO: Attempting Reader Mode strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:33.242978 ERROR: Reader mode fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:31:33.244818 INFO: Attempting JS Disabled strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:33.454213 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:31:33.454328 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:33.454353 INFO: Attempting Refresh Stop strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:33.641327 ERROR: Refresh stop fetch failed for https://x.com/Nate_Cohn/status/1455154377136742403: cannot use a string pattern on a bytes-like object
+2025-09-15T02:31:33.643353 INFO: Attempting Inspect Element strategy for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:33.854879 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T02:31:33.854989 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:33.855015 INFO: Attempting removepaywalls.com bypass for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:38.352796 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:31:38.352903 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:38.352929 INFO: Attempting archive.today for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:41.198138 INFO: No existing archive found, creating new archive for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:42.059279 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:31:42.059796 INFO: Attempting archive.is for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:45.591273 INFO: Attempting archive.li for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:49.120495 INFO: Attempting archive.fo for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:51.480563 INFO: Attempting archive.ph for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:53.532802 INFO: Attempting Googlebot spoof for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:53.633798 ERROR: Googlebot spoof failed for https://x.com/Nate_Cohn/status/1455154377136742403: 403 Client Error: Forbidden for url: https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:53.635311 INFO: Attempting Enhanced Wayback Machine for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:53.755320 INFO: Found Wayback snapshot from 20250510064558: http://web.archive.org/web/20250510064558/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:53.834310 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:31:53.834406 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:53.834432 INFO: Attempting Wayback Machine for https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:53.951098 INFO: Found Wayback snapshot: http://web.archive.org/web/20250510064558/https://x.com/Nate_Cohn/status/1455154377136742403
+2025-09-15T02:31:54.029938 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:31:54.030036 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:31:54.030068 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Nate_Cohn/status/1455154377136742403. Attempting Google Search fallback...
+2025-09-15T02:31:54.030128 INFO: Google Search fallback: searching for 'status'
+2025-09-15T02:31:54.065001 INFO: Google Search fallback did not find alternative URL

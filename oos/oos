@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+"""
+OOS Command Line Interface
+Entry point for the Open Operating System
+"""
+import sys
+import os
+from pathlib import Path
+
+# Add the src directory to Python path
+oos_root = Path(__file__).parent
+sys.path.insert(0, str(oos_root / 'src'))
+
+# Import and run the CLI
+from oos_cli import main
+import asyncio
+
+if __name__ == "__main__":
+    asyncio.run(main())

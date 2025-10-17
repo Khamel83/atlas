@@ -1,0 +1,87 @@
+2025-09-15T01:51:58.056072 INFO: Attempting direct fetch for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.237682 ERROR: Direct fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.237919 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.820387 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:51:58.822888 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.882736 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.882945 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.941962 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:51:58.942176 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.999020 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:51:58.999207 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:02.675684 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:52:02.675795 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:52:02.675822 INFO: Attempting archive.today for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:08.195480 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:09.069939 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:52:09.070750 INFO: Attempting archive.is for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:12.901388 INFO: Attempting archive.li for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:16.294317 INFO: Attempting archive.fo for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:19.549259 INFO: Attempting archive.ph for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:22.704179 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:22.773557 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:22.773804 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:34.654325 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:52:34.655774 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:34.778489 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T01:52:34.780541 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:52:34.781355 INFO: Google Search fallback: searching for 'jim cramer hits an all time high.html'
+2025-09-15T01:52:34.813793 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:52:34.821696 INFO: Attempting direct fetch for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:34.889434 ERROR: Direct fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:34.889682 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:35.462327 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:52:35.464762 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:35.532362 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:35.532652 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:35.591306 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:52:35.591496 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:35.648108 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:35.648298 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.193359 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:52:38.193467 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:52:38.193495 INFO: Attempting archive.today for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.200889 INFO: Attempting direct fetch for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.257172 ERROR: Direct fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.257364 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.769401 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:52:38.771543 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.833551 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.833765 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.891681 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:52:38.891862 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.950918 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:38.951097 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:41.641072 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:52:41.641177 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:52:41.641202 INFO: Attempting archive.today for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:43.319732 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:44.214306 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:52:44.215119 INFO: Attempting archive.is for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:46.313267 INFO: Attempting archive.li for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:48.647420 INFO: Attempting archive.fo for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:51.681774 INFO: Attempting archive.ph for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:53.786962 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:53.864020 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:53.864238 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:55.385942 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:52:55.387211 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:55.522915 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T01:52:55.524847 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:52:55.525649 INFO: Google Search fallback: searching for 'jim cramer hits an all time high.html'
+2025-09-15T01:52:55.557643 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:52:55.566691 INFO: Attempting direct fetch for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:55.623225 ERROR: Direct fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:55.623400 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:56.185295 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:52:56.186827 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:56.245870 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:56.246072 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:56.304718 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:52:56.304891 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:56.361150 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:56.361334 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:52:58.713197 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:52:58.713307 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:52:58.713344 INFO: Attempting archive.today for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print
+2025-09-15T01:53:01.572388 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/05/15/magazine/jim-cramer-hits-an-all-time-high.html?hpw=&pagewanted=print

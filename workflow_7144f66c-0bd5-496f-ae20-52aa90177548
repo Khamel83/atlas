@@ -1,0 +1,25 @@
+2025-09-15T04:21:54.854242 INFO: Attempting direct fetch for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.052784 ERROR: Direct fetch failed for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.054689 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.607692 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:21:55.610058 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.728031 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.729867 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.848775 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:21:55.850615 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:55.851483 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html: [Errno 32] Broken pipe
+2025-09-15T04:21:55.851545 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:21:58.529255 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:21:58.529361 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:21:58.529388 INFO: Attempting archive.today for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:02.474633 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:03.357698 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:22:03.358185 INFO: Attempting archive.is for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:07.324279 INFO: Attempting archive.li for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:11.024525 INFO: Attempting archive.fo for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:13.364474 INFO: Attempting archive.ph for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:16.681338 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:16.801653 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:16.803172 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:17.317555 INFO: Found Wayback snapshot from 20250731012843: http://web.archive.org/web/20250731012843/https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html
+2025-09-15T04:22:18.393947 INFO: Successfully fetched https://www.nytimes.com/2023/10/11/opinion/driverless-cars-san-francisco.html using wayback_machine_enhanced

@@ -1,0 +1,115 @@
+2025-09-15T13:23:41.865214 INFO: Attempting direct fetch for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:42.070877 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:23:42.081343 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:23:42.081429 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:42.081468 INFO: Attempting Reader Mode strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:42.172203 ERROR: Reader mode fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:23:42.174193 INFO: Attempting JS Disabled strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:42.286092 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:23:42.286185 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:42.286212 INFO: Attempting Refresh Stop strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:42.387807 ERROR: Refresh stop fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:23:42.389909 INFO: Attempting Inspect Element strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:42.506548 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:23:42.506698 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:42.506729 INFO: Attempting removepaywalls.com bypass for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:46.381949 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:23:46.382065 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:46.382094 INFO: Attempting archive.today for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:50.017564 INFO: No existing archive found, creating new archive for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:50.878649 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:23:50.879479 INFO: Attempting archive.is for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:53.101430 INFO: Attempting archive.li for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:23:56.924528 INFO: Attempting archive.fo for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:00.618573 INFO: Attempting archive.ph for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:03.858557 INFO: Attempting Googlebot spoof for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:03.905243 ERROR: Googlebot spoof failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: 403 Client Error: Forbidden for url: https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:03.907202 INFO: Attempting Enhanced Wayback Machine for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:03.908299 ERROR: Enhanced Wayback Machine failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: [Errno 32] Broken pipe
+2025-09-15T13:24:03.908347 INFO: Attempting Wayback Machine for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:04.357178 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911022816/https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:05.689965 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T13:24:05.690073 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:05.690106 ERROR: All fetch strategies failed or returned low-quality content for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624. Attempting Google Search fallback...
+2025-09-15T13:24:05.690165 INFO: Google Search fallback: searching for 'businessman sitting with arms outstretched at desk royalty free image'
+2025-09-15T13:24:05.727165 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:24:05.740189 INFO: Attempting direct fetch for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:05.887194 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:24:05.900862 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:24:05.900951 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:05.900993 INFO: Attempting Reader Mode strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:06.009180 ERROR: Reader mode fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:24:06.015808 INFO: Attempting JS Disabled strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:06.150464 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:24:06.150562 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:06.150624 INFO: Attempting Refresh Stop strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:06.256211 ERROR: Refresh stop fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:24:06.258263 INFO: Attempting Inspect Element strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:06.383765 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:24:06.383871 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:06.383899 INFO: Attempting removepaywalls.com bypass for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:09.255528 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:24:09.255730 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:09.255761 INFO: Attempting archive.today for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:11.669625 INFO: No existing archive found, creating new archive for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:12.533865 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:24:12.534704 INFO: Attempting archive.is for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:15.109094 INFO: Attempting archive.li for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:17.677919 INFO: Attempting archive.fo for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:19.887060 INFO: Attempting archive.ph for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:22.890514 INFO: Attempting Googlebot spoof for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:22.937768 ERROR: Googlebot spoof failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: 403 Client Error: Forbidden for url: https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:22.939672 INFO: Attempting Enhanced Wayback Machine for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:23.075449 INFO: Found Wayback snapshot from 20250911022816: http://web.archive.org/web/20250911022816/https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:23.367363 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T13:24:23.367471 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:23.367500 INFO: Attempting Wayback Machine for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:23.484860 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911022816/https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:23.796722 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T13:24:23.796835 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:23.796869 ERROR: All fetch strategies failed or returned low-quality content for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624. Attempting Google Search fallback...
+2025-09-15T13:24:23.796940 INFO: Google Search fallback: searching for 'businessman sitting with arms outstretched at desk royalty free image'
+2025-09-15T13:24:23.830333 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:24:23.837550 INFO: Attempting direct fetch for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:23.937019 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:24:23.945467 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:24:23.945563 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:23.945634 INFO: Attempting Reader Mode strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:24.041939 ERROR: Reader mode fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:24:24.052185 INFO: Attempting direct fetch for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:24.152846 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:24:24.162574 INFO: Suspicious title-to-content ratio: 0.20. Likely truncated.
+2025-09-15T13:24:24.162681 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:24.162720 INFO: Attempting Reader Mode strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:24.254992 ERROR: Reader mode fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:24:24.256962 INFO: Attempting JS Disabled strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:24.369523 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:24:24.369656 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:24.369688 INFO: Attempting Refresh Stop strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:24.471825 ERROR: Refresh stop fetch failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: cannot use a string pattern on a bytes-like object
+2025-09-15T13:24:24.473821 INFO: Attempting Inspect Element strategy for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:24.595204 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:24:24.595305 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:24.595331 INFO: Attempting removepaywalls.com bypass for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:28.243196 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:24:28.243308 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:28.243339 INFO: Attempting archive.today for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:31.422502 INFO: No existing archive found, creating new archive for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:32.329549 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:24:32.331650 INFO: Attempting archive.is for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:34.748465 INFO: Attempting archive.li for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:37.525410 INFO: Attempting archive.fo for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:40.817269 INFO: Attempting archive.ph for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:44.015326 INFO: Attempting Googlebot spoof for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:44.086950 ERROR: Googlebot spoof failed for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624: 403 Client Error: Forbidden for url: https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:44.089063 INFO: Attempting Enhanced Wayback Machine for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:44.310221 INFO: Found Wayback snapshot from 20250911022816: http://web.archive.org/web/20250911022816/https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:44.744095 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T13:24:44.744218 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:44.744245 INFO: Attempting Wayback Machine for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:44.877267 INFO: Found Wayback snapshot: http://web.archive.org/web/20250911022816/https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624
+2025-09-15T13:24:45.319315 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T13:24:45.319431 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:24:45.319467 ERROR: All fetch strategies failed or returned low-quality content for https://www.gettyimages.com/detail/photo/businessman-sitting-with-arms-outstretched-at-desk-royalty-free-image/1073867624. Attempting Google Search fallback...
+2025-09-15T13:24:45.319531 INFO: Google Search fallback: searching for 'businessman sitting with arms outstretched at desk royalty free image'
+2025-09-15T13:24:45.353057 INFO: Google Search fallback did not find alternative URL

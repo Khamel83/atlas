@@ -1,0 +1,30 @@
+2025-09-14T20:49:32.298364 INFO: Attempting direct fetch for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:32.706980 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T20:49:32.804686 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T20:49:32.804805 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:49:32.804850 INFO: Attempting Reader Mode strategy for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:32.940721 ERROR: Reader mode fetch failed for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night: cannot use a string pattern on a bytes-like object
+2025-09-14T20:49:32.942461 INFO: Attempting JS Disabled strategy for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:33.128795 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T20:49:33.128896 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:49:33.128921 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:33.271846 ERROR: Refresh stop fetch failed for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night: cannot use a string pattern on a bytes-like object
+2025-09-14T20:49:33.273670 INFO: Attempting Inspect Element strategy for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:33.542917 INFO: Content is very short (48 words). Likely a teaser.
+2025-09-14T20:49:33.543023 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:49:33.543050 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:36.428047 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:49:36.428158 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:49:36.428185 INFO: Attempting archive.today for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:38.233539 INFO: No existing archive found, creating new archive for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:39.124430 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:49:39.125208 INFO: Attempting archive.is for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:42.805682 INFO: Attempting archive.li for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:45.870032 INFO: Attempting archive.fo for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:49.343028 INFO: Attempting archive.ph for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:52.097890 INFO: Attempting Googlebot spoof for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:52.303702 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T20:49:52.303826 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:49:52.303855 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:53.936278 INFO: Found Wayback snapshot from 20230129220151: http://web.archive.org/web/20230129220151/https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night
+2025-09-14T20:49:57.973902 INFO: Successfully fetched https://food52.com/blog/22509-legendary-crispy-as-heck-chicken-thighs-we-d-want-for-dinner-any-night using wayback_machine_enhanced

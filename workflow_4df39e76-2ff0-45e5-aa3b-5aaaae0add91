@@ -1,0 +1,126 @@
+2025-09-15T14:06:26.701778 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:27.255506 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:27.347206 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:27.347323 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:27.347360 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:27.600119 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:06:27.600517 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:27.893747 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:27.893851 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:27.893878 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:27.956768 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:06:27.957041 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:28.363763 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T14:06:28.363868 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:28.363895 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:32.351683 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:06:32.351796 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:32.351823 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:35.984632 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:36.876254 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:06:36.876649 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:39.086508 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:41.063181 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:43.426537 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:46.438679 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:47.070691 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:47.070803 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:47.070833 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:47.776745 INFO: Found Wayback snapshot from 20140703150247: http://web.archive.org/web/20140703150247/http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:48.591012 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T14:06:48.591141 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:48.591166 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:48.711434 INFO: Found Wayback snapshot: http://web.archive.org/web/20140703150247/http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:48.840047 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T14:06:48.840166 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:48.840199 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all. Attempting Google Search fallback...
+2025-09-15T14:06:48.840268 INFO: Google Search fallback: searching for '090907fa fact grann'
+2025-09-15T14:06:48.872646 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:06:48.880479 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:49.004182 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:49.098512 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:49.098653 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:49.098694 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:49.169281 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:06:49.169562 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:49.428310 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:06:49.428419 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:49.428446 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:49.536989 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:06:49.537263 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:49.957876 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T14:06:49.957990 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:49.958022 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:52.191099 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:06:52.191205 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:06:52.191233 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:56.706560 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:06:57.641311 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:06:57.643547 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:00.748174 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:03.592331 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:07.193211 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:10.370773 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:10.379424 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:10.512336 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:10.605399 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:10.605528 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:10.605568 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:10.683312 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:07:10.683614 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:11.096905 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:11.097017 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:11.097043 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:11.162244 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:07:11.162514 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:11.598742 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T14:07:11.598857 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:11.598884 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:16.041375 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:07:16.041480 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:16.041508 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:20.569005 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:21.428295 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:07:21.428758 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:25.449822 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:27.932577 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:31.669089 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:34.562095 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:34.917654 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:34.917783 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:34.917811 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:35.033424 INFO: Found Wayback snapshot from 20140703150247: http://web.archive.org/web/20140703150247/http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:35.207367 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T14:07:35.207498 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:35.207541 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:35.861654 INFO: Found Wayback snapshot: http://web.archive.org/web/20140703150247/http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:35.990008 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T14:07:35.990131 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:35.990167 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all. Attempting Google Search fallback...
+2025-09-15T14:07:35.990238 INFO: Google Search fallback: searching for '090907fa fact grann'
+2025-09-15T14:07:36.021771 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:07:36.029981 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:36.156704 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:36.249686 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:36.249806 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:36.249845 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:36.316978 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:07:36.317258 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:36.564646 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:07:36.564769 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:36.564801 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:36.626977 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all: cannot use a string pattern on a bytes-like object
+2025-09-15T14:07:36.627329 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:37.077835 INFO: Content is very short (10 words). Likely a teaser.
+2025-09-15T14:07:37.077938 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:37.077964 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:40.608968 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:07:40.609083 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:07:40.609112 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:43.311217 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:44.199166 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:07:44.199527 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:46.359050 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:48.548830 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:52.013893 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all
+2025-09-15T14:07:54.553089 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/09/07/090907fa_fact_grann?currentPage=all

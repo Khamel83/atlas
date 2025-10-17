@@ -1,0 +1,123 @@
+2025-09-15T10:52:35.083839 INFO: Attempting direct fetch for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:36.779715 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:52:36.990571 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:52:36.990712 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:52:36.990751 INFO: Attempting Reader Mode strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:37.613705 ERROR: Reader mode fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:52:37.613867 INFO: Attempting JS Disabled strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:38.374615 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:52:38.374719 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:52:38.374745 INFO: Attempting Refresh Stop strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:38.939384 ERROR: Refresh stop fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:52:38.939941 INFO: Attempting Inspect Element strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:39.868883 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:52:39.868998 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:52:39.869031 INFO: Attempting removepaywalls.com bypass for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:44.067341 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:52:44.067450 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:52:44.067480 INFO: Attempting archive.today for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:46.668844 INFO: No existing archive found, creating new archive for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:47.553451 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:52:47.553947 INFO: Attempting archive.is for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:50.141355 INFO: Attempting archive.li for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:52.994561 INFO: Attempting archive.fo for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:55.737932 INFO: Attempting archive.ph for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:59.356728 INFO: Attempting Googlebot spoof for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:52:59.784825 ERROR: Googlebot spoof failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: 403 Client Error: Forbidden for url: https://www.pa.gov/en/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/elk.html
+2025-09-15T10:52:59.785946 INFO: Attempting Enhanced Wayback Machine for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:06.589141 INFO: Found Wayback snapshot from 20231128221630: http://web.archive.org/web/20231128221630/https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/Pages/default.aspx
+2025-09-15T10:53:10.933054 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T10:53:10.933176 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:10.933207 INFO: Attempting Wayback Machine for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:11.150350 ERROR: Wayback Machine failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: No archived snapshots found
+2025-09-15T10:53:11.151868 ERROR: All fetch strategies failed or returned low-quality content for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx. Attempting Google Search fallback...
+2025-09-15T10:53:11.151985 INFO: Google Search fallback: searching for 'default.aspx'
+2025-09-15T10:53:11.183176 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:53:11.190704 INFO: Attempting direct fetch for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:11.879789 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:12.091667 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:12.091782 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:12.091820 INFO: Attempting Reader Mode strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:12.709189 ERROR: Reader mode fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:53:12.709349 INFO: Attempting JS Disabled strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:13.328668 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:13.328774 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:13.328800 INFO: Attempting Refresh Stop strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:13.874511 ERROR: Refresh stop fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:53:13.874920 INFO: Attempting Inspect Element strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:14.988853 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:14.988966 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:14.988995 INFO: Attempting removepaywalls.com bypass for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:18.538413 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:53:18.538525 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:18.538551 INFO: Attempting archive.today for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:21.332086 INFO: No existing archive found, creating new archive for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:22.190387 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:53:22.199443 INFO: Attempting direct fetch for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:23.007970 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:23.231573 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:23.231707 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:23.231744 INFO: Attempting Reader Mode strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:23.739726 ERROR: Reader mode fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:53:23.739919 INFO: Attempting JS Disabled strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:24.343102 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:24.343218 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:24.343261 INFO: Attempting Refresh Stop strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:24.922710 ERROR: Refresh stop fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:53:24.923138 INFO: Attempting Inspect Element strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:25.728462 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:25.728567 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:25.728636 INFO: Attempting removepaywalls.com bypass for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:29.283015 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:53:29.283119 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:29.283147 INFO: Attempting archive.today for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:32.173005 INFO: No existing archive found, creating new archive for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:33.048612 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:53:33.048994 INFO: Attempting archive.is for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:36.398311 INFO: Attempting archive.li for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:40.053755 INFO: Attempting archive.fo for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:42.849975 INFO: Attempting archive.ph for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:46.175485 INFO: Attempting Googlebot spoof for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:47.492349 ERROR: Googlebot spoof failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: 403 Client Error: Forbidden for url: https://www.pa.gov/en/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/elk.html
+2025-09-15T10:53:47.493466 INFO: Attempting Enhanced Wayback Machine for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:47.750419 INFO: Found Wayback snapshot from 20231128221630: http://web.archive.org/web/20231128221630/https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/Pages/default.aspx
+2025-09-15T10:53:47.916608 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T10:53:47.916731 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:47.916759 INFO: Attempting Wayback Machine for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:48.070063 ERROR: Wayback Machine failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: No archived snapshots found
+2025-09-15T10:53:48.071560 ERROR: All fetch strategies failed or returned low-quality content for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx. Attempting Google Search fallback...
+2025-09-15T10:53:48.071739 INFO: Google Search fallback: searching for 'default.aspx'
+2025-09-15T10:53:48.102829 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:53:48.110293 INFO: Attempting direct fetch for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:49.085826 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:49.293343 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:49.293457 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:49.293509 INFO: Attempting Reader Mode strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:49.814685 ERROR: Reader mode fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:53:49.814866 INFO: Attempting JS Disabled strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:50.487509 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:50.487665 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:50.487697 INFO: Attempting Refresh Stop strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:51.280848 ERROR: Refresh stop fetch failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: cannot use a string pattern on a bytes-like object
+2025-09-15T10:53:51.281250 INFO: Attempting Inspect Element strategy for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:52.147431 INFO: Content is very short (86 words). Likely a teaser.
+2025-09-15T10:53:52.147544 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:52.147571 INFO: Attempting removepaywalls.com bypass for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:55.269215 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:53:55.269330 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:53:55.269359 INFO: Attempting archive.today for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:58.902321 INFO: No existing archive found, creating new archive for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:53:59.819234 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:53:59.819782 INFO: Attempting archive.is for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:03.570361 INFO: Attempting archive.li for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:06.400059 INFO: Attempting archive.fo for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:08.786796 INFO: Attempting archive.ph for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:11.951122 INFO: Attempting Googlebot spoof for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:12.412160 ERROR: Googlebot spoof failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: 403 Client Error: Forbidden for url: https://www.pa.gov/en/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/elk.html
+2025-09-15T10:54:12.413375 INFO: Attempting Enhanced Wayback Machine for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:12.413822 ERROR: Enhanced Wayback Machine failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: [Errno 32] Broken pipe
+2025-09-15T10:54:12.413919 INFO: Attempting Wayback Machine for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx
+2025-09-15T10:54:12.546428 ERROR: Wayback Machine failed for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx: No archived snapshots found
+2025-09-15T10:54:12.547889 ERROR: All fetch strategies failed or returned low-quality content for https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/pages/default.aspx. Attempting Google Search fallback...
+2025-09-15T10:54:12.548316 INFO: Google Search fallback: searching for 'default.aspx'
+2025-09-15T10:54:12.579826 INFO: Google Search fallback did not find alternative URL

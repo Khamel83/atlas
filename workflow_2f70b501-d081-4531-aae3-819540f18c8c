@@ -1,0 +1,124 @@
+2025-09-15T03:58:50.858246 INFO: Attempting direct fetch for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:51.141698 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:58:51.185710 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:58:51.185812 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:51.185854 INFO: Attempting Reader Mode strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:51.354853 ERROR: Reader mode fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:51.357728 INFO: Attempting JS Disabled strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:51.586040 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:58:51.586136 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:51.586162 INFO: Attempting Refresh Stop strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:51.770784 ERROR: Refresh stop fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:51.774722 INFO: Attempting Inspect Element strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:51.958570 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:58:51.958744 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:51.958773 INFO: Attempting removepaywalls.com bypass for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:57.041076 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:58:57.041183 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:57.041210 INFO: Attempting archive.today for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:59.047386 INFO: No existing archive found, creating new archive for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:58:59.907536 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:58:59.907987 INFO: Attempting archive.is for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:03.311818 INFO: Attempting archive.li for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:05.688177 INFO: Attempting archive.fo for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:09.515871 INFO: Attempting archive.ph for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:12.866147 INFO: Attempting Googlebot spoof for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:13.026756 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:13.026870 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:13.026898 INFO: Attempting Enhanced Wayback Machine for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:13.418758 INFO: Found Wayback snapshot from 20250614062220: http://web.archive.org/web/20250614062220/https://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:14.610746 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:14.610854 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:14.610898 INFO: Attempting Wayback Machine for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:14.718641 INFO: Found Wayback snapshot: http://web.archive.org/web/20250614062220/https://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:14.786896 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:14.787014 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:14.787049 ERROR: All fetch strategies failed or returned low-quality content for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters. Attempting Google Search fallback...
+2025-09-15T03:59:14.787115 INFO: Google Search fallback: searching for 'an amazing online collection of 40000 vintage film posters'
+2025-09-15T03:59:14.818521 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:59:14.827292 INFO: Attempting direct fetch for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:14.987374 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:15.016061 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:15.016171 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:15.016210 INFO: Attempting Reader Mode strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:15.156896 ERROR: Reader mode fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:59:15.158474 INFO: Attempting JS Disabled strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:15.328711 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:15.328818 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:15.328846 INFO: Attempting Refresh Stop strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:15.495026 ERROR: Refresh stop fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:59:15.496467 INFO: Attempting Inspect Element strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:15.673560 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:15.673695 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:15.673724 INFO: Attempting removepaywalls.com bypass for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:20.250614 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:59:20.250726 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:20.250755 INFO: Attempting archive.today for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:21.990456 INFO: No existing archive found, creating new archive for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:22.901220 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:59:22.902389 INFO: Attempting archive.is for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:26.176868 INFO: Attempting archive.li for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:29.521002 INFO: Attempting archive.fo for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:31.729847 INFO: Attempting archive.ph for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:31.740781 INFO: Attempting direct fetch for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:31.917249 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:31.944840 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:31.944949 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:31.944984 INFO: Attempting Reader Mode strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:32.094389 ERROR: Reader mode fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:59:32.095836 INFO: Attempting JS Disabled strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:32.253315 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:32.253422 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:32.253448 INFO: Attempting Refresh Stop strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:32.515422 ERROR: Refresh stop fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:59:32.517283 INFO: Attempting Inspect Element strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:32.696174 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:32.696281 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:32.696308 INFO: Attempting removepaywalls.com bypass for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:36.708191 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:59:36.708344 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:36.708373 INFO: Attempting archive.today for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:40.163752 INFO: No existing archive found, creating new archive for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:41.040771 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:59:41.041213 INFO: Attempting archive.is for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:43.773575 INFO: Attempting archive.li for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:45.981529 INFO: Attempting archive.fo for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:49.144207 INFO: Attempting archive.ph for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:51.599766 INFO: Attempting Googlebot spoof for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:51.777694 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:51.777807 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:51.777836 INFO: Attempting Enhanced Wayback Machine for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:51.887469 INFO: Found Wayback snapshot from 20250614062220: http://web.archive.org/web/20250614062220/https://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:51.960233 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:51.960368 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:51.960400 INFO: Attempting Wayback Machine for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:52.089503 INFO: Found Wayback snapshot: http://web.archive.org/web/20250614062220/https://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:52.161926 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:52.162022 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:52.162059 ERROR: All fetch strategies failed or returned low-quality content for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters. Attempting Google Search fallback...
+2025-09-15T03:59:52.162129 INFO: Google Search fallback: searching for 'an amazing online collection of 40000 vintage film posters'
+2025-09-15T03:59:52.196103 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:59:52.204436 INFO: Attempting direct fetch for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:52.384776 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:52.415954 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:52.416053 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:52.416095 INFO: Attempting Reader Mode strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:52.567844 ERROR: Reader mode fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:59:52.570463 INFO: Attempting JS Disabled strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:52.735187 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:52.735285 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:52.735314 INFO: Attempting Refresh Stop strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:52.916648 ERROR: Refresh stop fetch failed for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters: cannot use a string pattern on a bytes-like object
+2025-09-15T03:59:52.919247 INFO: Attempting Inspect Element strategy for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:53.109264 INFO: Content is very short (101 words). Likely a teaser.
+2025-09-15T03:59:53.109368 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:53.109396 INFO: Attempting removepaywalls.com bypass for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T03:59:57.387877 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:59:57.387986 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:59:57.388015 INFO: Attempting archive.today for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T04:00:00.171685 INFO: No existing archive found, creating new archive for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T04:00:01.040505 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:00:01.041345 INFO: Attempting archive.is for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T04:00:03.323896 INFO: Attempting archive.li for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T04:00:05.450982 INFO: Attempting archive.fo for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters
+2025-09-15T04:00:07.767726 INFO: Attempting archive.ph for http://kottke.org/17/06/an-amazing-online-collection-of-40000-vintage-film-posters

@@ -1,0 +1,20 @@
+OOS Integration Status
+=====================
+Date: Sun Sep 28 15:58:06 PDT 2025
+OOS Version: b9fb215 fix: integration script now properly adds /consultant to slash commands
+Integration Components:
+- ✅ Slash commands copied to .claude/
+- ✅ Scripts copied to bin/
+- ✅ OOS command bridge created
+- ✅ Consultant command available
+
+Usage:
+- /consultant <query>    - Strategic AI consultant
+- /archon-status         - Show Archon project status
+- /archon-research       - Search Archon knowledge base
+- oos-command.sh <cmd>   - Direct OOS command access
+
+Next Steps:
+1. Restart Claude Code to pick up new slash commands
+2. Test: /consultant status
+3. Verify: oos-command.sh help

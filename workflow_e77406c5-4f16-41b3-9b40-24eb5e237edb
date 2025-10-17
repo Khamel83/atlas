@@ -1,0 +1,30 @@
+2025-09-14T23:14:48.044186 INFO: Attempting direct fetch for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:48.473427 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:14:48.581117 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:14:48.581236 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:14:48.581283 INFO: Attempting Reader Mode strategy for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:48.713812 ERROR: Reader mode fetch failed for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet: cannot use a string pattern on a bytes-like object
+2025-09-14T23:14:48.716331 INFO: Attempting JS Disabled strategy for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:48.952986 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-14T23:14:48.953098 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:14:48.953127 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:49.221317 ERROR: Refresh stop fetch failed for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet: cannot use a string pattern on a bytes-like object
+2025-09-14T23:14:49.223712 INFO: Attempting Inspect Element strategy for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:49.530552 INFO: Content is very short (56 words). Likely a teaser.
+2025-09-14T23:14:49.530683 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:14:49.530712 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:51.759371 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:14:51.759487 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:14:51.759514 INFO: Attempting archive.today for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:54.957272 INFO: No existing archive found, creating new archive for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:55.858854 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:14:55.859802 INFO: Attempting archive.is for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:14:58.784072 INFO: Attempting archive.li for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:15:00.855820 INFO: Attempting archive.fo for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:15:03.955120 INFO: Attempting archive.ph for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:15:06.520303 INFO: Attempting Googlebot spoof for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:15:06.917774 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:15:06.917895 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:15:06.917934 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:15:07.415121 INFO: Found Wayback snapshot from 20200803152708: http://web.archive.org/web/20200803152708/https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet
+2025-09-14T23:15:08.429984 INFO: Successfully fetched https://food52.com/blog/19249-an-any-budget-guide-to-the-best-bedding-on-the-internet using wayback_machine_enhanced

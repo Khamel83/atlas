@@ -1,0 +1,41 @@
+#!/bin/bash
+# Secure Execution Wrapper
+# This script retrieves the OpenRouter API key from 1Password and executes
+# a command with the key in its environment. The key is never exposed to the parent process.
+
+set -euo pipefail
+
+if [ "$#" -eq 0 ]; then
+    echo "Usage: $0 <command> [args...]"
+    exit 1
+fi
+
+# Check if op CLI is installed and signed in
+if ! command -v op &> /dev/null; then
+    echo "❌ 1Password CLI ('op') is not installed. Please install it to continue."
+    exit 1
+fi
+
+if ! op whoami &> /dev/null; then
+    echo "❌ Not signed in to 1Password. Please run 'eval $(op signin)' in your terminal."
+    exit 1
+fi
+
+echo "🔐 Retrieving secure API key from 1Password..."
+
+# Retrieve the key
+API_KEY=$(op item get "bootstrap-env" --vault "Private" --fields "env" | grep "OPENROUTER_API_KEY" | cut -d'=' -f2 | tr -d '"\')
+
+if [ -z "$API_KEY" ]; then
+    echo "❌ Could not retrieve OPENROUTER_API_KEY from 1Password."
+    echo "   Ensure the 'bootstrap-env' item exists in the 'Private' vault and has an 'env' field with the key."
+    exit 1
+fi
+
+# Export the key ONLY for the child process
+export OPENROUTER_API_KEY="$API_KEY"
+
+echo "🚀 Executing command with secure environment..."
+
+# Replace this script's process with the requested command
+exec "$@"

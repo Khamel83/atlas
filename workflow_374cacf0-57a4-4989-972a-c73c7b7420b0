@@ -1,0 +1,86 @@
+2025-09-15T01:02:50.557151 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:50.724344 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:50.724577 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:51.284998 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:02:51.286728 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:51.346760 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:51.346966 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:51.406650 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:02:51.406823 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:51.470972 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:51.471151 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:53.682750 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:02:53.682857 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:02:53.682885 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:56.076920 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:56.998522 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:02:56.998767 INFO: Attempting archive.is for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:02:59.653902 INFO: Attempting archive.li for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:02.937428 INFO: Attempting archive.fo for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:06.960274 INFO: Attempting archive.ph for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:10.645463 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:10.732499 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:10.733050 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:22.329016 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:03:22.330460 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:22.459745 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: No archived snapshots found
+2025-09-15T01:03:22.461865 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:03:22.462544 INFO: Google Search fallback: searching for 'an impeccable disaster.html'
+2025-09-15T01:03:22.495704 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:03:22.503419 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:22.531497 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:22.531710 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:23.071570 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:23.073269 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:23.104937 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:23.105129 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:23.144996 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:23.145174 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:23.174358 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:23.174541 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.015406 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:03:26.015504 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:03:26.023849 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.068713 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.068916 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.479798 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:26.482313 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.514490 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.514737 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.544654 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:26.544845 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.584455 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:26.584782 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:31.511565 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:03:31.511704 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:03:31.511731 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:34.639458 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:35.544712 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:03:35.545630 INFO: Attempting archive.is for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:37.982639 INFO: Attempting archive.li for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:41.668457 INFO: Attempting archive.fo for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:44.035078 INFO: Attempting archive.ph for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:47.116935 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:47.183144 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:47.183339 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:48.482704 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:03:48.484089 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:48.604957 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: No archived snapshots found
+2025-09-15T01:03:48.606971 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:03:48.607926 INFO: Google Search fallback: searching for 'an impeccable disaster.html'
+2025-09-15T01:03:48.640821 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:03:48.648834 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:48.676352 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:48.676542 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:49.246898 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:49.249700 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:49.281251 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:49.281463 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:49.316327 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:49.316534 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:49.344849 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:49.345064 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:51.930894 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:03:51.931020 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:03:51.931046 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print
+2025-09-15T01:03:55.280862 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/12/opinion/an-impeccable-disaster.html?_r=4&ref=opinion&pagewanted=print

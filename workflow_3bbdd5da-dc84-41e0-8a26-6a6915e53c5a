@@ -1,0 +1,116 @@
+2025-09-14T23:34:48.389620 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:48.762497 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:48.762703 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:49.354126 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:34:49.356086 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:49.416158 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:49.416360 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:49.484044 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:34:49.484236 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:49.542900 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:49.543085 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:52.522753 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:34:52.522858 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:34:52.522884 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:55.095761 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:55.971011 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:34:55.971494 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:34:59.013358 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:02.939533 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:06.391301 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:08.939471 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:09.021306 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:09.021504 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:38.626533 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:35:38.627935 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:38.739386 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-14T23:35:38.740852 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:35:38.741319 INFO: Google Search fallback: searching for 'brooks the fighter fallacy.html'
+2025-09-14T23:35:38.773115 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:35:38.781797 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:38.839992 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:38.840166 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:39.524747 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:35:39.527378 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:39.597148 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:39.597355 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:39.657040 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:35:39.657232 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:39.718070 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:39.718270 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:43.653231 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:35:43.653373 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:35:43.653402 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:45.598183 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:46.495408 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:35:46.496076 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:48.541836 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:52.259145 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:55.655538 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:57.839736 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:57.924162 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:57.924363 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:59.258491 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:35:59.260015 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:59.412291 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-14T23:35:59.414304 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:35:59.414993 INFO: Google Search fallback: searching for 'brooks the fighter fallacy.html'
+2025-09-14T23:35:59.450423 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:35:59.459710 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:59.521820 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:35:59.522032 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:00.087028 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:36:00.089736 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:00.152018 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:00.152227 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:00.210447 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:36:00.210661 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:00.267505 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:00.267766 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:04.752840 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:36:04.752960 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:36:04.752987 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:07.712047 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:08.610363 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:36:08.611383 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:11.445198 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:15.025020 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:17.411020 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:21.031893 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:21.127430 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:21.127678 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:22.429004 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:36:22.430739 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:22.548969 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-14T23:36:22.551187 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:36:22.551869 INFO: Google Search fallback: searching for 'brooks the fighter fallacy.html'
+2025-09-14T23:36:22.586192 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:36:22.598304 INFO: Attempting direct fetch for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:22.657974 ERROR: Direct fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:22.658164 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:23.225314 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:36:23.228049 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:23.290441 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:23.290846 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:23.349552 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:36:23.351836 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:23.409791 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:23.409994 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:26.832247 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:36:26.832358 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:36:26.832385 INFO: Attempting archive.today for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:30.191836 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:31.097021 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:36:31.097958 INFO: Attempting archive.is for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:33.562401 INFO: Attempting archive.li for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:36.401920 INFO: Attempting archive.fo for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:39.411759 INFO: Attempting archive.ph for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:41.518520 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:41.604156 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:41.604357 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:42.886907 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:36:42.888668 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print
+2025-09-14T23:36:43.000996 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-14T23:36:43.003154 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/10/25/opinion/brooks-the-fighter-fallacy.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:36:43.003804 INFO: Google Search fallback: searching for 'brooks the fighter fallacy.html'
+2025-09-14T23:36:43.039735 INFO: Google Search fallback did not find alternative URL

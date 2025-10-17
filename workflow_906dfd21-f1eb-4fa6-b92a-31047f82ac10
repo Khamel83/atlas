@@ -1,0 +1,148 @@
+2025-09-15T04:42:14.580305 INFO: Attempting direct fetch for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:14.785559 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:42:14.794316 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:42:14.794410 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:14.794447 INFO: Attempting Reader Mode strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:15.130079 ERROR: Reader mode fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:42:15.131956 INFO: Attempting JS Disabled strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:15.320541 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:42:15.320674 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:15.320702 INFO: Attempting Refresh Stop strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:15.518032 ERROR: Refresh stop fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:42:15.520493 INFO: Attempting Inspect Element strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:15.726231 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:42:15.726337 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:15.726363 INFO: Attempting removepaywalls.com bypass for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:19.887046 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:42:19.887161 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:19.887190 INFO: Attempting archive.today for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:24.511365 INFO: No existing archive found, creating new archive for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:25.385632 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:42:25.386040 INFO: Attempting archive.is for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:28.347482 INFO: Attempting archive.li for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:31.078824 INFO: Attempting archive.fo for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:34.344574 INFO: Attempting archive.ph for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:36.396263 INFO: Attempting Googlebot spoof for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:36.477406 ERROR: Googlebot spoof failed for https://x.com/Noahpinion/status/1916185096757146022: 403 Client Error: Forbidden for url: https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:36.478817 INFO: Attempting Enhanced Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:37.051873 INFO: Found Wayback snapshot from 20250511152011: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:38.176806 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:42:38.176904 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:38.176930 INFO: Attempting Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:38.295385 INFO: Found Wayback snapshot: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:38.378097 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:42:38.378197 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:38.378228 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Noahpinion/status/1916185096757146022. Attempting Google Search fallback...
+2025-09-15T04:42:38.378298 INFO: Google Search fallback: searching for 'status'
+2025-09-15T04:42:38.409717 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:42:38.417342 INFO: Attempting direct fetch for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:38.613553 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:42:38.621505 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:42:38.621677 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:38.621724 INFO: Attempting Reader Mode strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:38.877102 ERROR: Reader mode fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:42:38.880533 INFO: Attempting JS Disabled strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:39.090207 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:42:39.090295 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:39.090321 INFO: Attempting Refresh Stop strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:39.280937 ERROR: Refresh stop fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:42:39.284371 INFO: Attempting Inspect Element strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:39.286913 ERROR: Inspect element fetch failed for https://x.com/Noahpinion/status/1916185096757146022: [Errno 32] Broken pipe
+2025-09-15T04:42:39.286994 INFO: Attempting removepaywalls.com bypass for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:43.596645 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:42:43.596783 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:42:43.596813 INFO: Attempting archive.today for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:48.069941 INFO: No existing archive found, creating new archive for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:48.972537 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:42:48.973030 INFO: Attempting archive.is for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:52.597521 INFO: Attempting archive.li for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:55.426430 INFO: Attempting archive.fo for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:42:59.229585 INFO: Attempting archive.ph for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:02.904836 INFO: Attempting Googlebot spoof for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.003504 ERROR: Googlebot spoof failed for https://x.com/Noahpinion/status/1916185096757146022: 403 Client Error: Forbidden for url: https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.005074 INFO: Attempting Enhanced Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.124896 INFO: Found Wayback snapshot from 20250511152011: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.205218 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:43:03.205324 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:03.205350 INFO: Attempting Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.346106 INFO: Found Wayback snapshot: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.431847 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:43:03.431951 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:03.431982 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Noahpinion/status/1916185096757146022. Attempting Google Search fallback...
+2025-09-15T04:43:03.432039 INFO: Google Search fallback: searching for 'status'
+2025-09-15T04:43:03.465856 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:43:03.473260 INFO: Attempting direct fetch for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.674656 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:43:03.682536 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:43:03.682657 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:03.682701 INFO: Attempting Reader Mode strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:03.922976 ERROR: Reader mode fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:43:03.925146 INFO: Attempting JS Disabled strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:04.153000 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:43:04.153108 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:04.153137 INFO: Attempting Refresh Stop strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:04.346504 ERROR: Refresh stop fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:43:04.349185 INFO: Attempting Inspect Element strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:04.576243 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:43:04.576354 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:04.576383 INFO: Attempting removepaywalls.com bypass for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:08.478120 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:43:08.478224 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:08.478252 INFO: Attempting archive.today for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:12.391904 INFO: No existing archive found, creating new archive for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:13.277545 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:43:13.278003 INFO: Attempting archive.is for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:15.222121 INFO: Attempting archive.li for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:17.749176 INFO: Attempting archive.fo for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:20.654239 INFO: Attempting archive.ph for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.015196 INFO: Attempting Googlebot spoof for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.110650 ERROR: Googlebot spoof failed for https://x.com/Noahpinion/status/1916185096757146022: 403 Client Error: Forbidden for url: https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.112176 INFO: Attempting Enhanced Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.267936 INFO: Found Wayback snapshot from 20250511152011: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.350317 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:43:24.350418 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:24.350460 INFO: Attempting Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.472526 INFO: Found Wayback snapshot: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.551056 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:43:24.551141 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:24.551172 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Noahpinion/status/1916185096757146022. Attempting Google Search fallback...
+2025-09-15T04:43:24.551229 INFO: Google Search fallback: searching for 'status'
+2025-09-15T04:43:24.583665 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:43:24.591813 INFO: Attempting direct fetch for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:24.771094 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:43:24.779792 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:43:24.779892 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:24.779930 INFO: Attempting Reader Mode strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:25.038200 ERROR: Reader mode fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:43:25.039729 INFO: Attempting JS Disabled strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:25.266760 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:43:25.266921 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:43:25.266956 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:25.266980 INFO: Attempting Refresh Stop strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:25.458641 ERROR: Refresh stop fetch failed for https://x.com/Noahpinion/status/1916185096757146022: cannot use a string pattern on a bytes-like object
+2025-09-15T04:43:25.461163 INFO: Attempting Inspect Element strategy for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:25.686354 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:43:25.686467 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:25.686493 INFO: Attempting removepaywalls.com bypass for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:29.916730 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:43:29.916842 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:29.916868 INFO: Attempting archive.today for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:34.456963 INFO: No existing archive found, creating new archive for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:35.326175 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:43:35.326638 INFO: Attempting archive.is for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:39.028984 INFO: Attempting archive.li for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:42.048575 INFO: Attempting archive.fo for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:45.050828 INFO: Attempting archive.ph for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.298325 INFO: Attempting Googlebot spoof for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.375791 ERROR: Googlebot spoof failed for https://x.com/Noahpinion/status/1916185096757146022: 403 Client Error: Forbidden for url: https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.377241 INFO: Attempting Enhanced Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.510127 INFO: Found Wayback snapshot from 20250511152011: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.591524 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:43:48.591659 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:48.591688 INFO: Attempting Wayback Machine for https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.693682 INFO: Found Wayback snapshot: http://web.archive.org/web/20250511152011/https://x.com/Noahpinion/status/1916185096757146022
+2025-09-15T04:43:48.773280 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T04:43:48.773381 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:48.773411 ERROR: All fetch strategies failed or returned low-quality content for https://x.com/Noahpinion/status/1916185096757146022. Attempting Google Search fallback...
+2025-09-15T04:43:48.773467 INFO: Google Search fallback: searching for 'status'
+2025-09-15T04:43:48.806155 INFO: Google Search fallback did not find alternative URL

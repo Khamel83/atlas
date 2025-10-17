@@ -1,0 +1,29 @@
+2025-09-15T11:08:41.473881 INFO: Attempting direct fetch for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:41.780502 ERROR: Direct fetch failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:08:41.785071 INFO: Attempting Reader Mode strategy for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:41.961157 ERROR: Reader mode fetch failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:08:41.974803 INFO: Attempting direct fetch for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.147729 ERROR: Direct fetch failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.150631 INFO: Attempting Reader Mode strategy for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.468674 ERROR: Reader mode fetch failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.472679 INFO: Attempting JS Disabled strategy for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.652579 ERROR: JS disabled fetch failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.654501 INFO: Attempting Refresh Stop strategy for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:42.840655 ERROR: Refresh stop fetch failed for http://www.economist.com/node/17857297/print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:08:42.842163 INFO: Attempting Inspect Element strategy for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:43.151272 ERROR: Inspect element fetch failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:08:43.152910 INFO: Attempting removepaywalls.com bypass for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:46.062419 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:08:46.062537 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:08:46.062565 INFO: Attempting archive.today for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:47.956224 INFO: No existing archive found, creating new archive for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:48.868812 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:08:48.869389 INFO: Attempting archive.is for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:51.522785 INFO: Attempting archive.li for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:55.389442 INFO: Attempting archive.fo for http://www.economist.com/node/17857297/print
+2025-09-15T11:08:58.955161 INFO: Attempting archive.ph for http://www.economist.com/node/17857297/print
+2025-09-15T11:09:00.967020 INFO: Attempting Googlebot spoof for http://www.economist.com/node/17857297/print
+2025-09-15T11:09:01.149073 ERROR: Googlebot spoof failed for http://www.economist.com/node/17857297/print: 403 Client Error: Forbidden for url: https://www.economist.com/node/17857297/print
+2025-09-15T11:09:01.150945 INFO: Attempting Enhanced Wayback Machine for http://www.economist.com/node/17857297/print
+2025-09-15T11:09:03.168662 INFO: Found Wayback snapshot from 20150708194209: http://web.archive.org/web/20150708194209/http://www.economist.com/node/17857297/print
+2025-09-15T11:09:05.209465 INFO: Successfully fetched http://www.economist.com/node/17857297/print using wayback_machine_enhanced

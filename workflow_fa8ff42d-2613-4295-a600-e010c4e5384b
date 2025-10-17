@@ -1,0 +1,87 @@
+2025-09-15T02:51:09.659731 INFO: Attempting direct fetch for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:09.730903 ERROR: Direct fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1e6ebff0>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:09.731013 INFO: Attempting Reader Mode strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:09.732705 ERROR: Reader mode fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x209179e0>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:09.732786 INFO: Attempting JS Disabled strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:09.734098 ERROR: JS disabled fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1e8276a0>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:09.734161 INFO: Attempting Refresh Stop strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:09.735557 ERROR: Refresh stop fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1fc70540>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:09.735661 INFO: Attempting Inspect Element strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:09.737087 ERROR: Inspect element fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x2028ad20>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:09.737155 INFO: Attempting removepaywalls.com bypass for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:13.879871 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:51:13.879960 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:51:13.879987 INFO: Attempting archive.today for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:18.105465 INFO: No existing archive found, creating new archive for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:18.997024 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:51:18.997440 INFO: Attempting archive.is for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:22.697705 INFO: Attempting archive.li for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:25.863617 INFO: Attempting archive.fo for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:29.917297 INFO: Attempting archive.ph for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:33.487532 INFO: Attempting Googlebot spoof for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:33.490553 ERROR: Googlebot spoof failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x202c6080>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:33.490728 INFO: Attempting Enhanced Wayback Machine for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:39.748160 INFO: Found Wayback snapshot from 20210917080710: http://web.archive.org/web/20210917080710/http://www.nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.154265 INFO: Content is very short (4 words). Likely a teaser.
+2025-09-15T02:51:44.154376 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:51:44.154404 INFO: Attempting Wayback Machine for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.276846 ERROR: Wayback Machine failed for http://nuclearpyramid.com/other_two_pyramids.php: No archived snapshots found
+2025-09-15T02:51:44.278369 ERROR: All fetch strategies failed or returned low-quality content for http://nuclearpyramid.com/other_two_pyramids.php. Attempting Google Search fallback...
+2025-09-15T02:51:44.278896 INFO: Google Search fallback: searching for 'other two pyramids.php'
+2025-09-15T02:51:44.310634 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:51:44.318060 INFO: Attempting direct fetch for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.330322 ERROR: Direct fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x2019ce40>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:44.330424 INFO: Attempting Reader Mode strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.334631 ERROR: Reader mode fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x2014f0c0>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:44.334710 INFO: Attempting JS Disabled strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.336182 ERROR: JS disabled fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1e8a08a0>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:44.336247 INFO: Attempting Refresh Stop strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.337498 ERROR: Refresh stop fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1f1985e0>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:44.337559 INFO: Attempting Inspect Element strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:44.338838 ERROR: Inspect element fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1fbe2100>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:44.338901 INFO: Attempting removepaywalls.com bypass for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:47.200282 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:51:47.209144 INFO: Attempting direct fetch for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:47.211171 ERROR: Direct fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1fbe8c50>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:47.211264 INFO: Attempting Reader Mode strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:47.212769 ERROR: Reader mode fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1e820a70>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:47.212843 INFO: Attempting JS Disabled strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:47.214249 ERROR: JS disabled fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1ee90450>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:47.214314 INFO: Attempting Refresh Stop strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:47.215779 ERROR: Refresh stop fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x20163230>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:47.215844 INFO: Attempting Inspect Element strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:47.218163 ERROR: Inspect element fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x201b1250>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:51:47.218223 INFO: Attempting removepaywalls.com bypass for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:49.407806 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:51:49.407905 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:51:49.407934 INFO: Attempting archive.today for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:52.549530 INFO: No existing archive found, creating new archive for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:53.460448 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:51:53.460901 INFO: Attempting archive.is for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:55.565839 INFO: Attempting archive.li for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:51:58.379056 INFO: Attempting archive.fo for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:01.516050 INFO: Attempting archive.ph for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.209721 INFO: Attempting Googlebot spoof for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.212194 ERROR: Googlebot spoof failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1f0ea710>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:52:04.212278 INFO: Attempting Enhanced Wayback Machine for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.489572 INFO: Found Wayback snapshot from 20210917080710: http://web.archive.org/web/20210917080710/http://www.nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.541891 INFO: Content is very short (4 words). Likely a teaser.
+2025-09-15T02:52:04.541987 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:04.542015 INFO: Attempting Wayback Machine for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.668811 ERROR: Wayback Machine failed for http://nuclearpyramid.com/other_two_pyramids.php: No archived snapshots found
+2025-09-15T02:52:04.670335 ERROR: All fetch strategies failed or returned low-quality content for http://nuclearpyramid.com/other_two_pyramids.php. Attempting Google Search fallback...
+2025-09-15T02:52:04.670981 INFO: Google Search fallback: searching for 'other two pyramids.php'
+2025-09-15T02:52:04.704342 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:52:04.713208 INFO: Attempting direct fetch for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.716997 ERROR: Direct fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1f2a1710>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:52:04.717081 INFO: Attempting Reader Mode strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.718466 ERROR: Reader mode fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x2186d490>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:52:04.718573 INFO: Attempting JS Disabled strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.722298 ERROR: JS disabled fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1ee54680>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:52:04.722553 INFO: Attempting Refresh Stop strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.725920 ERROR: Refresh stop fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x204f4910>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:52:04.725984 INFO: Attempting Inspect Element strategy for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:04.727285 ERROR: Inspect element fetch failed for http://nuclearpyramid.com/other_two_pyramids.php: HTTPConnectionPool(host='nuclearpyramid.com', port=80): Max retries exceeded with url: /other_two_pyramids.php (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1eb50290>: Failed to resolve 'nuclearpyramid.com' ([Errno -2] Name or service not known)"))
+2025-09-15T02:52:04.727345 INFO: Attempting removepaywalls.com bypass for http://nuclearpyramid.com/other_two_pyramids.php
+2025-09-15T02:52:09.095567 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:52:09.095697 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...

@@ -1,0 +1,86 @@
+2025-09-15T03:09:00.794032 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:00.888987 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:00.889191 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:01.641116 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:01.643225 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:01.703176 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:01.703367 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:01.762377 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:01.762555 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:01.818722 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:01.818914 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:06.845810 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:09:06.845923 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:09:06.845953 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:08.956158 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:08.968038 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.026147 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.026334 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.689496 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:09.691663 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.752105 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.752304 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.819349 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:09.819533 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.879071 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:09.879264 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:14.104014 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:09:14.104129 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:09:14.104157 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:16.775567 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:17.646039 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:09:17.646708 INFO: Attempting archive.is for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:20.652413 INFO: Attempting archive.li for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:23.200325 INFO: Attempting archive.fo for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:26.096790 INFO: Attempting archive.ph for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:29.870314 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:29.953005 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:29.953204 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:39.755568 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:09:39.757025 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:39.876641 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T03:09:39.878383 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:09:39.878929 INFO: Google Search fallback: searching for 'what if the secret to success is failure.html'
+2025-09-15T03:09:39.910979 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:09:39.918286 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:39.976357 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:39.976552 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:40.609380 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:40.611508 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:40.671348 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:40.671553 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:40.730066 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:40.730258 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:40.788557 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:40.788803 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:45.242707 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:09:45.242831 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:09:45.268935 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:45.326248 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:45.326435 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:45.961453 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:45.963518 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:46.027535 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:46.027747 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:46.087057 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:09:46.087234 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:46.152184 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:46.152380 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:50.534654 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:09:50.534763 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:09:50.534789 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:52.334988 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:53.190624 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:09:53.191295 INFO: Attempting archive.is for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:09:56.482545 INFO: Attempting archive.li for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:00.272578 INFO: Attempting archive.fo for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:03.322220 INFO: Attempting archive.ph for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:05.786366 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:05.895714 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:05.895959 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:07.133231 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:10:07.135071 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print
+2025-09-15T03:10:07.256267 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T03:10:07.258291 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/09/18/magazine/what-if-the-secret-to-success-is-failure.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:10:07.258882 INFO: Google Search fallback: searching for 'what if the secret to success is failure.html'
+2025-09-15T03:10:07.292455 INFO: Google Search fallback did not find alternative URL
