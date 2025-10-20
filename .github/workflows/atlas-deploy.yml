@@ -1,0 +1,582 @@
+name: Atlas Deployment
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+      skip_tests:
+        description: 'Skip pre-deployment tests'
+        required: false
+        default: false
+        type: boolean
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # Pre-deployment validation
+  pre-deploy:
+    name: Pre-Deployment Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      version: ${{ steps.get-version.outputs.version }}
+      environment: ${{ steps.set-env.outputs.environment }}
+      skip_tests: ${{ steps.set-env.outputs.skip_tests }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get version
+      id: get-version
+      run: |
+        if [[ "${{ github.ref_type }}" == "tag" ]]; then
+          VERSION="${{ github.ref_name }}"
+        else
+          VERSION="dev-$(git rev-parse --short HEAD)"
+        fi
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+        echo "📦 Version: $VERSION"
+
+    - name: Set environment
+      id: set-env
+      run: |
+        ENV="${{ github.event.inputs.environment || 'production' }}"
+        SKIP="${{ github.event.inputs.skip_tests || 'false' }}"
+
+        echo "environment=$ENV" >> $GITHUB_OUTPUT
+        echo "skip_tests=$SKIP" >> $GITHUB_OUTPUT
+
+        echo "🎯 Target: $ENV"
+        echo "⏭️  Skip tests: $SKIP"
+
+    - name: Validate deployment
+      run: |
+        echo "🔍 Validating deployment configuration..."
+
+        # Check required files exist
+        missing_files=()
+
+        [ ! -f "requirements.txt" ] && missing_files+=("requirements.txt")
+
+        if [ ${#missing_files[@]} -gt 0 ]; then
+          echo "❌ Missing required files:"
+          printf '%s\n' "${missing_files[@]}"
+          exit 1
+        fi
+
+        # Check if this is a valid deployment trigger
+        if [[ "${{ github.event_name }}" == "push" && "${{ github.ref_type }}" != "tag" ]]; then
+          echo "❌ Deployment must be triggered by a tag or manual dispatch"
+          exit 1
+        fi
+
+        echo "✅ Deployment validation passed"
+
+  # Quick smoke tests (unless skipped)
+  quick-tests:
+    name: Quick Smoke Tests
+    runs-on: ubuntu-latest
+    needs: pre-deploy
+    if: needs.pre-deploy.outputs.skip_tests != 'true'
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run quick validation
+      run: |
+        echo "🧪 Running quick validation tests..."
+
+        # Test Python imports
+        python -c "
+        import sys
+        print('✅ Python environment OK')
+        print(f'Python version: {sys.version}')
+        "
+
+        # Check SQLite
+        python -c "
+        import sqlite3
+        print('✅ SQLite available')
+        print(f'SQLite version: {sqlite3.sqlite_version}')
+        "
+
+        echo "✅ Quick tests passed"
+
+  # Build deployment package
+  build:
+    name: Build Deployment Package
+    runs-on: ubuntu-latest
+    needs: [pre-deploy, quick-tests]
+    if: always() && needs.pre-deploy.result == 'success' && (needs.quick-tests.result == 'success' || needs.quick-tests.result == 'skipped')
+    timeout-minutes: 15
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Install build dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build wheel setuptools
+
+    - name: Build Python package
+      run: |
+        echo "🔨 Building Python package..."
+
+        # Only build if we have a setup.py or pyproject.toml
+        if [ -f setup.py ] || [ -f pyproject.toml ]; then
+          python -m build --sdist --wheel --outdir dist/
+          echo "✅ Python package built"
+        else
+          echo "ℹ️  No setup.py/pyproject.toml - creating simple package"
+          mkdir -p dist
+        fi
+
+    - name: Create deployment bundle
+      run: |
+        echo "📦 Creating deployment bundle..."
+
+        VERSION="${{ needs.pre-deploy.outputs.version }}"
+        ENV="${{ needs.pre-deploy.outputs.environment }}"
+        BUNDLE_NAME="atlas-${ENV}-${VERSION}"
+
+        mkdir -p "deployment-bundle/$BUNDLE_NAME"
+
+        # Copy core application files
+        [ -d "src" ] && cp -r src/ "deployment-bundle/$BUNDLE_NAME/"
+        [ -d "config" ] && cp -r config/ "deployment-bundle/$BUNDLE_NAME/"
+        [ -d "systemd" ] && cp -r systemd/ "deployment-bundle/$BUNDLE_NAME/"
+        [ -d "helpers" ] && cp -r helpers/ "deployment-bundle/$BUNDLE_NAME/"
+
+        # Copy requirements
+        cp requirements*.txt "deployment-bundle/$BUNDLE_NAME/" 2>/dev/null || true
+
+        # Copy main application files
+        for file in api.py standalone_monitoring_service.py atlas_manager.py; do
+          [ -f "$file" ] && cp "$file" "deployment-bundle/$BUNDLE_NAME/"
+        done
+
+        # Create directory structure
+        mkdir -p "deployment-bundle/$BUNDLE_NAME"/{data,logs,temp}
+
+        # Create deployment manifest
+        cat > "deployment-bundle/$BUNDLE_NAME/DEPLOYMENT_MANIFEST.md" << EOF
+        # Atlas Deployment Manifest
+
+        ## Build Information
+        - **Version**: $VERSION
+        - **Environment**: $ENV
+        - **Commit**: ${{ github.sha }}
+        - **Built**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+        - **Built By**: GitHub Actions
+        - **Workflow**: ${{ github.workflow }}
+        - **Run**: ${{ github.run_number }}
+
+        ## Contents
+        - Application source code
+        - Configuration files
+        - Systemd service definitions
+        - Helper scripts
+        - Python dependencies list
+        - Empty data/logs/temp directories
+
+        ## Installation
+        See DEPLOYMENT_GUIDE.md for installation instructions.
+
+        ## Verification
+        - SHA256: \$(sha256sum is calculated post-build)
+        - Git Commit: ${{ github.sha }}
+        EOF
+
+        # Create tarball
+        tar -czf "${BUNDLE_NAME}.tar.gz" -C deployment-bundle "$BUNDLE_NAME"
+
+        # Calculate checksum
+        sha256sum "${BUNDLE_NAME}.tar.gz" > "${BUNDLE_NAME}.tar.gz.sha256"
+
+        echo "✅ Deployment bundle created: ${BUNDLE_NAME}.tar.gz"
+        ls -lh "${BUNDLE_NAME}.tar.gz"
+
+    - name: Generate deployment guide
+      run: |
+        VERSION="${{ needs.pre-deploy.outputs.version }}"
+        ENV="${{ needs.pre-deploy.outputs.environment }}"
+
+        cat > DEPLOYMENT_GUIDE.md << 'EOF'
+        # Atlas Deployment Guide
+
+        ## System Requirements
+        - Ubuntu 20.04/22.04 or compatible Linux distribution
+        - Python 3.11 or 3.12
+        - systemd (for service management)
+        - SQLite3
+        - ffmpeg (for media processing)
+        - 2GB RAM minimum, 4GB recommended
+        - 10GB disk space minimum
+
+        ## Pre-Deployment Checklist
+        - [ ] System packages updated
+        - [ ] Python version verified
+        - [ ] User account created (non-root)
+        - [ ] Firewall rules configured
+        - [ ] SSL certificates ready (if using HTTPS)
+        - [ ] Environment variables prepared
+        - [ ] Backup of existing installation (if upgrading)
+
+        ## Installation Steps
+
+        ### 1. Download Package
+        ```bash
+        # Download from GitHub Actions artifacts
+        # Extract the deployment bundle
+        tar -xzf atlas-*.tar.gz
+        cd atlas-*
+        ```
+
+        ### 2. Verify Package
+        ```bash
+        # Check SHA256 checksum
+        sha256sum -c ../atlas-*.tar.gz.sha256
+        ```
+
+        ### 3. Install System Dependencies
+        ```bash
+        sudo apt-get update
+        sudo apt-get install -y \
+          python3.11 \
+          python3-pip \
+          python3-venv \
+          sqlite3 \
+          ffmpeg \
+          curl \
+          git
+        ```
+
+        ### 4. Create Python Environment
+        ```bash
+        python3.11 -m venv venv
+        source venv/bin/activate
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        ```
+
+        ### 5. Configure Environment
+        ```bash
+        # Copy and edit configuration
+        cp config/.env.template .env
+        nano .env
+
+        # Set required environment variables:
+        # - API keys
+        # - Database paths
+        # - Service ports
+        # - Logging levels
+        ```
+
+        ### 6. Initialize Database
+        ```bash
+        # Database will be created automatically on first run
+        # Or manually initialize:
+        python -c "from src.database import init_db; init_db()"
+        ```
+
+        ### 7. Install Systemd Services (Optional)
+        ```bash
+        # Copy service files
+        sudo cp systemd/*.service /etc/systemd/system/
+
+        # Edit service files to match your paths
+        sudo nano /etc/systemd/system/atlas-api.service
+
+        # Reload systemd
+        sudo systemctl daemon-reload
+
+        # Enable services
+        sudo systemctl enable atlas-api.service
+        sudo systemctl enable atlas-monitoring-dashboard.service
+        ```
+
+        ### 8. Start Services
+        ```bash
+        # Using systemd
+        sudo systemctl start atlas-api.service
+        sudo systemctl start atlas-monitoring-dashboard.service
+
+        # Or run directly
+        source venv/bin/activate
+        python api.py &
+        python standalone_monitoring_service.py &
+        ```
+
+        ### 9. Verify Deployment
+        ```bash
+        # Check service status
+        sudo systemctl status atlas-api.service
+
+        # Check API health
+        curl http://localhost:17444/health
+
+        # Check monitoring dashboard
+        curl http://localhost:8081/health
+
+        # View logs
+        sudo journalctl -u atlas-api.service -f
+        ```
+
+        ## Service Endpoints
+        - **API Server**: http://localhost:17444
+        - **API Docs**: http://localhost:17444/docs
+        - **Monitoring Dashboard**: http://localhost:8081
+        - **Monitoring Docs**: http://localhost:8081/docs
+
+        ## Configuration Files
+        - `.env` - Environment variables
+        - `config/database.yaml` - Database configuration
+        - `config/logging.yaml` - Logging configuration
+        - `systemd/*.service` - Service definitions
+
+        ## Maintenance
+
+        ### View Logs
+        ```bash
+        # Systemd services
+        sudo journalctl -u atlas-api.service -n 100 --no-pager
+
+        # Application logs
+        tail -f logs/atlas.log
+        ```
+
+        ### Restart Services
+        ```bash
+        sudo systemctl restart atlas-api.service
+        sudo systemctl restart atlas-monitoring-dashboard.service
+        ```
+
+        ### Update Database
+        ```bash
+        # Backup first
+        cp data/atlas.db data/atlas.db.backup
+
+        # Run migrations if needed
+        python scripts/migrate_db.py
+        ```
+
+        ### Monitor Resources
+        ```bash
+        # CPU and memory usage
+        systemctl status atlas-api.service
+
+        # Disk usage
+        df -h data/
+
+        # Database size
+        du -h data/atlas.db
+        ```
+
+        ## Troubleshooting
+
+        ### Service Won't Start
+        ```bash
+        # Check logs
+        sudo journalctl -u atlas-api.service -n 50
+
+        # Check file permissions
+        ls -la /path/to/atlas/
+
+        # Check Python environment
+        source venv/bin/activate
+        python -c "import sys; print(sys.version)"
+        ```
+
+        ### Database Issues
+        ```bash
+        # Check database file
+        sqlite3 data/atlas.db ".schema"
+
+        # Verify permissions
+        ls -la data/atlas.db
+
+        # Test connection
+        python -c "import sqlite3; sqlite3.connect('data/atlas.db')"
+        ```
+
+        ### Port Conflicts
+        ```bash
+        # Check what's using the port
+        sudo lsof -i :17444
+        sudo lsof -i :8081
+
+        # Change port in .env file
+        nano .env
+        ```
+
+        ## Rollback Procedure
+        ```bash
+        # Stop services
+        sudo systemctl stop atlas-api.service
+        sudo systemctl stop atlas-monitoring-dashboard.service
+
+        # Restore previous version
+        cd /opt/atlas/
+        rm -rf current
+        ln -s previous-version current
+
+        # Restore database backup
+        cp data/atlas.db.backup data/atlas.db
+
+        # Restart services
+        sudo systemctl start atlas-api.service
+        sudo systemctl start atlas-monitoring-dashboard.service
+        ```
+
+        ## Security Hardening
+        - Run services as non-root user
+        - Use systemd sandboxing options
+        - Enable firewall (ufw)
+        - Restrict file permissions (600 for .env)
+        - Use HTTPS in production
+        - Regular security updates
+        - Monitor access logs
+
+        ## Support
+        - Check logs first
+        - Review configuration
+        - Verify system requirements
+        - Check GitHub issues
+        - Review documentation
+        EOF
+
+        echo "Version: $VERSION" >> DEPLOYMENT_GUIDE.md
+        echo "Environment: $ENV" >> DEPLOYMENT_GUIDE.md
+
+    - name: Upload deployment artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: atlas-deployment-${{ needs.pre-deploy.outputs.version }}
+        path: |
+          atlas-*.tar.gz
+          atlas-*.tar.gz.sha256
+          DEPLOYMENT_GUIDE.md
+          deployment-bundle/*/DEPLOYMENT_MANIFEST.md
+        retention-days: 90
+
+  # Security scan of deployment package
+  scan-deployment:
+    name: Scan Deployment Package
+    runs-on: ubuntu-latest
+    needs: build
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Download deployment artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: atlas-deployment-${{ needs.pre-deploy.outputs.version }}
+
+    - name: Scan for secrets in deployment bundle
+      run: |
+        echo "🔍 Scanning deployment package for secrets..."
+
+        # Extract bundle
+        tar -xzf atlas-*.tar.gz
+
+        # Check for sensitive files
+        if find atlas-*/ -name ".env" -o -name "*.key" -o -name "*.pem" 2>/dev/null | grep -q .; then
+          echo "❌ Found sensitive files in deployment bundle"
+          find atlas-*/ -name ".env" -o -name "*.key" -o -name "*.pem"
+          exit 1
+        fi
+
+        echo "✅ No sensitive files in deployment bundle"
+
+  # Deployment summary
+  deploy-summary:
+    name: Deployment Summary
+    runs-on: ubuntu-latest
+    needs: [pre-deploy, quick-tests, build, scan-deployment]
+    if: always()
+    timeout-minutes: 5
+
+    steps:
+    - name: Generate summary
+      run: |
+        cat >> $GITHUB_STEP_SUMMARY << EOF
+        # 🚀 Atlas Deployment Summary
+
+        ## Build Information
+        - **Version**: ${{ needs.pre-deploy.outputs.version }}
+        - **Environment**: ${{ needs.pre-deploy.outputs.environment }}
+        - **Commit**: ${{ github.sha }}
+        - **Triggered By**: ${{ github.event_name }}
+
+        ## Job Status
+        | Job | Status |
+        |-----|--------|
+        | Pre-Deploy Checks | ${{ needs.pre-deploy.result == 'success' && '✅' || '❌' }} ${{ needs.pre-deploy.result }} |
+        | Quick Tests | ${{ needs.quick-tests.result == 'success' && '✅' || needs.quick-tests.result == 'skipped' && '⏭️' || '❌' }} ${{ needs.quick-tests.result }} |
+        | Build Package | ${{ needs.build.result == 'success' && '✅' || '❌' }} ${{ needs.build.result }} |
+        | Security Scan | ${{ needs.scan-deployment.result == 'success' && '✅' || '❌' }} ${{ needs.scan-deployment.result }} |
+
+        ## Next Steps
+        EOF
+
+        if [[ "${{ needs.build.result }}" == "success" ]]; then
+          cat >> $GITHUB_STEP_SUMMARY << EOF
+        1. ✅ Download deployment artifacts from this workflow run
+        2. 📖 Review DEPLOYMENT_GUIDE.md
+        3. 🔒 Verify package checksum (SHA256)
+        4. 🚀 Deploy to ${{ needs.pre-deploy.outputs.environment }} environment
+        5. ✔️  Run post-deployment verification
+
+        ## Artifacts
+        - 📦 Deployment package: \`atlas-${{ needs.pre-deploy.outputs.environment }}-${{ needs.pre-deploy.outputs.version }}.tar.gz\`
+        - 🔐 Checksum: \`atlas-${{ needs.pre-deploy.outputs.environment }}-${{ needs.pre-deploy.outputs.version }}.tar.gz.sha256\`
+        - 📖 Deployment guide: \`DEPLOYMENT_GUIDE.md\`
+
+        ---
+        **Deployment artifacts are available for 90 days**
+        EOF
+        else
+          cat >> $GITHUB_STEP_SUMMARY << EOF
+        ❌ **Deployment build failed**
+
+        Review the failed jobs above and fix issues before retrying.
+        EOF
+          exit 1
+        fi
+
+        echo "Deployment workflow complete!"

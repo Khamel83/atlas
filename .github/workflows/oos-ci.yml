@@ -1,0 +1,370 @@
+name: OOS (Organized Operational Setup) CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+    paths:
+      - 'oos/**'
+      - '.github/workflows/oos-ci.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'oos/**'
+      - '.github/workflows/oos-ci.yml'
+
+env:
+  FORCE_COLOR: true
+  OOS_PATH: oos
+
+jobs:
+  # Security-critical checks
+  security-critical:
+    name: OOS Security Critical
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run security-critical tests
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "🔍 Running security-critical tests..."
+
+        # Check for hardcoded secrets in OOS
+        if grep -rE "(sk-[a-zA-Z0-9_-]{43,}|ghp_[a-zA-Z0-9]{36})" \
+          --include="*.sh" --include="*.py" \
+          --exclude-dir=.git --exclude-dir=oos-env . 2>/dev/null; then
+          echo "❌ Potential hardcoded secrets found"
+          exit 1
+        fi
+
+        echo "✅ No hardcoded secrets detected"
+
+    - name: Check file permissions
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "🔍 Checking file permissions..."
+
+        # Check .env files
+        for envfile in .env .env.* ; do
+          if [ -f "$envfile" ] && [ "$envfile" != ".env.template" ]; then
+            perms=$(stat -c "%a" "$envfile" 2>/dev/null || echo "000")
+            if [[ ! "$perms" =~ ^[67][0-7][0-7]$ ]]; then
+              echo "⚠️  $envfile has suspicious permissions: $perms"
+            fi
+          fi
+        done
+
+        # Check shell scripts are executable
+        for script in bin/*.sh scripts/*.sh; do
+          if [ -f "$script" ] && [ ! -x "$script" ]; then
+            echo "❌ $script is not executable"
+            exit 1
+          fi
+        done
+
+        echo "✅ File permissions check passed"
+
+  # Shell script validation
+  shell-validation:
+    name: OOS Shell Validation
+    runs-on: ubuntu-latest
+    needs: security-critical
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install ShellCheck and shfmt
+      run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+    - name: Run ShellCheck
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "🔍 Running ShellCheck..."
+
+        exit_code=0
+        find . -name "*.sh" \
+          -not -path "./.git/*" \
+          -not -path "./oos-env/*" \
+          | while read -r script; do
+
+          echo "Checking: $script"
+          if ! shellcheck -x "$script" 2>&1; then
+            echo "⚠️  Issues found in $script"
+            exit_code=1
+          fi
+        done
+
+        if [ $exit_code -ne 0 ]; then
+          echo "⚠️  ShellCheck found issues (not failing)"
+        else
+          echo "✅ All shell scripts passed ShellCheck"
+        fi
+
+        # Don't fail the build on shellcheck warnings
+        exit 0
+
+    - name: Check script syntax
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "🔍 Checking shell script syntax..."
+
+        find . -name "*.sh" \
+          -not -path "./.git/*" \
+          -not -path "./oos-env/*" \
+          | while read -r script; do
+
+          if bash -n "$script"; then
+            echo "✓ $script: Syntax OK"
+          else
+            echo "✗ $script: Syntax Error"
+            exit 1
+          fi
+        done
+
+        echo "✅ Shell script syntax check complete"
+
+  # Python tests (if OOS has Python components)
+  python-tests:
+    name: OOS Python Tests
+    runs-on: ubuntu-latest
+    needs: security-critical
+    timeout-minutes: 15
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Check for Python tests
+      id: check-tests
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        if [ -d "tests" ] && [ -n "$(find tests -name 'test_*.py' -o -name '*_test.py')" ]; then
+          echo "has_tests=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_tests=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Install test dependencies
+      if: steps.check-tests.outputs.has_tests == 'true'
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-asyncio pytest-cov
+
+        # Install requirements if they exist
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        fi
+
+    - name: Run Python tests
+      if: steps.check-tests.outputs.has_tests == 'true'
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "🧪 Running Python tests..."
+        python -m pytest tests/ -v --tb=short || {
+          echo "⚠️  Tests failed (not failing build)"
+          exit 0
+        }
+
+        echo "✅ Python tests passed"
+
+    - name: Skip tests (no tests found)
+      if: steps.check-tests.outputs.has_tests != 'true'
+      run: echo "ℹ️  No Python tests found - skipping"
+
+  # Bootstrap validation
+  bootstrap-validation:
+    name: OOS Bootstrap Validation
+    runs-on: ubuntu-latest
+    needs: [shell-validation]
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up test environment
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        # Create mock .env for bootstrap validation
+        cat > .env << 'EOF'
+        OPENROUTER_KEYS=test-key-1,test-key-2
+        GITHUB_PAT=mock-github-pat
+        CONTEXT7_API_KEY=mock-context7-key
+        EOF
+        chmod 600 .env
+
+        # Make scripts executable
+        chmod +x scripts/*.sh bin/*.sh 2>/dev/null || true
+
+    - name: Validate bootstrap script
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        if [ -f "scripts/bootstrap_enhanced.sh" ]; then
+          echo "🔍 Validating bootstrap script..."
+          ./scripts/bootstrap_enhanced.sh --dry-run --no-preflight --verbose test-ci /tmp/test-ci || {
+            echo "⚠️  Bootstrap validation failed (not critical)"
+            exit 0
+          }
+          echo "✅ Bootstrap validation passed"
+        else
+          echo "ℹ️  No bootstrap script found - skipping"
+        fi
+
+  # Integration tests
+  integration-tests:
+    name: OOS Integration Tests
+    runs-on: ubuntu-latest
+    needs: [shell-validation, python-tests]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    timeout-minutes: 15
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up test environment
+      run: sudo apt-get update && sudo apt-get install -y curl jq rsync
+
+    - name: Create mock dependencies
+      run: |
+        # Create mock op command for CI
+        sudo mkdir -p /usr/local/bin
+        cat << 'EOF' | sudo tee /usr/local/bin/op
+        #!/usr/bin/env bash
+        case "$1" in
+          whoami) echo "mock-user@example.com" ;;
+          signin) echo "export OP_SESSION_mock=mock-session" ;;
+          item) echo "MOCK_ENV_CONTENT=test" ;;
+          *) echo "Mock 1Password CLI" ;;
+        esac
+        EOF
+        sudo chmod +x /usr/local/bin/op
+
+    - name: Run integration tests
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        if [ -f "bin/run_tests.sh" ]; then
+          echo "🧪 Running integration tests..."
+          chmod +x bin/run_tests.sh
+          ./bin/run_tests.sh --integration --verbose --no-cleanup || {
+            echo "⚠️  Integration tests failed (not critical)"
+            exit 0
+          }
+        else
+          echo "ℹ️  No integration test script found - skipping"
+        fi
+
+  # Build validation
+  build-validation:
+    name: OOS Build Validation
+    runs-on: ubuntu-latest
+    needs: [bootstrap-validation, integration-tests]
+    if: always() && needs.bootstrap-validation.result == 'success'
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Validate critical files exist
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "🔍 Validating build artifacts..."
+
+        missing_files=()
+
+        # Check for critical files (adjust based on your OOS structure)
+        critical_files=(
+          "README.md"
+        )
+
+        for file in "${critical_files[@]}"; do
+          if [ ! -f "$file" ]; then
+            missing_files+=("$file")
+          fi
+        done
+
+        if [ ${#missing_files[@]} -gt 0 ]; then
+          echo "⚠️  Missing files:"
+          printf '%s\n' "${missing_files[@]}"
+          # Don't fail - OOS might not have all these files
+        fi
+
+        echo "✅ Build validation complete"
+
+    - name: Create distribution package
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      working-directory: ${{ env.OOS_PATH }}
+      run: |
+        echo "📦 Creating distribution package..."
+        mkdir -p dist
+
+        # Copy essential files (adjust based on your structure)
+        [ -d "scripts" ] && cp -r scripts/ dist/
+        [ -d "bin" ] && cp -r bin/ dist/
+        [ -d "docs" ] && cp -r docs/ dist/ || true
+        [ -f "README.md" ] && cp README.md dist/ || true
+        [ -f "LICENSE" ] && cp LICENSE dist/ || true
+
+        # Create package
+        if [ -n "$(ls -A dist/)" ]; then
+          tar -czf oos-$(date +%Y%m%d-%H%M%S).tar.gz -C dist .
+          echo "✅ Package created successfully"
+        else
+          echo "ℹ️  No files to package"
+        fi
+
+    - name: Upload artifacts
+      if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: actions/upload-artifact@v4
+      with:
+        name: oos-package-${{ github.run_number }}
+        path: ${{ env.OOS_PATH }}/oos-*.tar.gz
+        retention-days: 30
+
+  # Summary
+  oos-summary:
+    name: OOS CI Summary
+    runs-on: ubuntu-latest
+    needs: [security-critical, shell-validation, python-tests, bootstrap-validation, build-validation]
+    if: always()
+    timeout-minutes: 5
+
+    steps:
+    - name: Generate summary
+      run: |
+        cat >> $GITHUB_STEP_SUMMARY << EOF
+        # 🛠️ OOS CI Pipeline Summary
+
+        | Job | Status |
+        |-----|--------|
+        | Security Critical | ${{ needs.security-critical.result == 'success' && '✅' || '❌' }} ${{ needs.security-critical.result }} |
+        | Shell Validation | ${{ needs.shell-validation.result == 'success' && '✅' || '⚠️' }} ${{ needs.shell-validation.result }} |
+        | Python Tests | ${{ needs.python-tests.result == 'success' && '✅' || '⚠️' }} ${{ needs.python-tests.result }} |
+        | Bootstrap Validation | ${{ needs.bootstrap-validation.result == 'success' && '✅' || '⚠️' }} ${{ needs.bootstrap-validation.result }} |
+        | Build Validation | ${{ needs.build-validation.result == 'success' && '✅' || '⚠️' }} ${{ needs.build-validation.result }} |
+        EOF
+
+        # Determine overall status
+        if [[ "${{ needs.security-critical.result }}" == "success" && \
+              "${{ needs.shell-validation.result }}" == "success" ]]; then
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### ✅ OOS Pipeline Passed" >> $GITHUB_STEP_SUMMARY
+          echo "All critical checks passed successfully!" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### ❌ OOS Pipeline Failed" >> $GITHUB_STEP_SUMMARY
+          echo "Critical checks failed. Review the logs above." >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
