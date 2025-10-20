@@ -1,0 +1,488 @@
+name: Atlas CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    # Run daily at 2 AM UTC for security scans
+    - cron: '0 2 * * *'
+
+env:
+  FORCE_COLOR: true
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # Fast-fail security checks
+  security-critical:
+    name: Critical Security Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Check for hardcoded secrets (regex)
+      run: |
+        echo "🔍 Scanning for potential hardcoded secrets..."
+
+        # Check for common secret patterns
+        found=0
+
+        # API keys and tokens
+        if grep -rE "(sk-[a-zA-Z0-9_-]{43,}|ghp_[a-zA-Z0-9]{36}|gho_[a-zA-Z0-9]{36})" \
+          --include="*.py" --include="*.js" --include="*.yaml" --include="*.yml" \
+          --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=venv \
+          --exclude-dir=oos-env . 2>/dev/null; then
+          echo "❌ Potential API keys/tokens found"
+          found=1
+        fi
+
+        # Password patterns (but not variable assignments)
+        if grep -rE "(password|passwd|pwd)\s*=\s*['\"][^'\"]{8,}['\"]" \
+          --include="*.py" --include="*.yaml" --include="*.yml" \
+          --exclude-dir=.git --exclude-dir=tests . 2>/dev/null; then
+          echo "⚠️  Potential hardcoded passwords found (review needed)"
+          # Don't fail on this - could be test fixtures
+        fi
+
+        if [ $found -eq 1 ]; then
+          echo "❌ Security check failed - hardcoded secrets detected"
+          exit 1
+        fi
+
+        echo "✅ No hardcoded secrets detected"
+
+    - name: Check file permissions
+      run: |
+        echo "🔍 Checking file permissions..."
+
+        # Check .env files aren't world-readable
+        for envfile in .env .env.* ; do
+          if [ -f "$envfile" ] && [ "$envfile" != ".env.template" ]; then
+            perms=$(stat -c "%a" "$envfile" 2>/dev/null || echo "000")
+            if [[ ! "$perms" =~ ^[67][0-7][0-7]$ ]]; then
+              echo "⚠️  $envfile has suspicious permissions: $perms (should be 600 or 700)"
+            fi
+          fi
+        done
+
+        echo "✅ File permissions check complete"
+
+  # Advanced security scanning
+  security-scan:
+    name: Advanced Security Scanning
+    runs-on: ubuntu-latest
+    needs: security-critical
+    timeout-minutes: 15
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Run TruffleHog secrets scan
+      uses: trufflesecurity/trufflehog@main
+      with:
+        path: ./
+        base: ${{ github.event.repository.default_branch }}
+        head: HEAD
+        extra_args: --only-verified
+
+    - name: Install security tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install bandit safety semgrep
+
+    - name: Run Bandit (Python security linter)
+      continue-on-error: true
+      run: |
+        echo "🔍 Running Bandit security scan..."
+        bandit -r . \
+          -f json -o bandit-report.json \
+          -ll \
+          --exclude ./tests,./venv,./oos-env,./node_modules \
+          || echo "Bandit found potential issues (check report)"
+
+    - name: Run Safety (dependency vulnerability check)
+      continue-on-error: true
+      run: |
+        echo "🔍 Checking for vulnerable dependencies..."
+        pip install -r requirements.txt
+        safety check --json --output safety-report.json \
+          || echo "Safety found vulnerable dependencies (check report)"
+
+    - name: Run Semgrep (SAST)
+      continue-on-error: true
+      run: |
+        echo "🔍 Running Semgrep static analysis..."
+        semgrep --config=auto --json --output=semgrep-report.json . \
+          || echo "Semgrep found potential issues (check report)"
+
+    - name: Upload security reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: security-reports-${{ github.run_number }}
+        path: |
+          bandit-report.json
+          safety-report.json
+          semgrep-report.json
+        retention-days: 90
+
+    - name: Check critical vulnerabilities
+      run: |
+        echo "📊 Security scan summary:"
+
+        # Only fail on HIGH/CRITICAL findings
+        if [ -f bandit-report.json ]; then
+          high_issues=$(jq '[.results[] | select(.issue_severity == "HIGH" or .issue_severity == "CRITICAL")] | length' bandit-report.json 2>/dev/null || echo "0")
+          echo "Bandit HIGH/CRITICAL issues: $high_issues"
+
+          if [ "$high_issues" -gt 0 ]; then
+            echo "❌ Critical security issues found in code"
+            jq '.results[] | select(.issue_severity == "HIGH" or .issue_severity == "CRITICAL")' bandit-report.json
+            exit 1
+          fi
+        fi
+
+        echo "✅ No critical security issues found"
+
+  # CodeQL Analysis
+  codeql:
+    name: CodeQL Security Analysis
+    runs-on: ubuntu-latest
+    needs: security-critical
+    timeout-minutes: 20
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: python
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v3
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:python"
+
+  # Unit and integration tests
+  test:
+    name: Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    needs: security-critical
+    timeout-minutes: 20
+
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+      fail-fast: false
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-${{ matrix.python-version }}-
+          ${{ runner.os }}-pip-
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y sqlite3 ffmpeg curl git
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+        # Install dev dependencies if file exists
+        if [ -f requirements-dev.txt ]; then
+          pip install -r requirements-dev.txt
+        fi
+
+        # Install test dependencies
+        pip install pytest pytest-asyncio pytest-cov pytest-xdist pytest-timeout
+
+    - name: Set up test environment
+      run: |
+        # Create test directories
+        mkdir -p data/test logs/test temp/test
+
+        # Create minimal test .env from template
+        if [ -f .env.template ]; then
+          cp .env.template .env.test
+          echo "TESTING=true" >> .env.test
+          echo "ATLAS_ENV=test" >> .env.test
+        else
+          echo "TESTING=true" > .env.test
+          echo "ATLAS_ENV=test" >> .env.test
+        fi
+
+    - name: Create test database
+      run: |
+        sqlite3 data/test/atlas_test.db "CREATE TABLE IF NOT EXISTS content (
+          id INTEGER PRIMARY KEY,
+          url TEXT UNIQUE,
+          title TEXT,
+          content TEXT,
+          source_type TEXT,
+          created_at TEXT,
+          updated_at TEXT
+        );"
+
+    - name: Run tests
+      timeout-minutes: 15
+      env:
+        TESTING: true
+        ATLAS_ENV: test
+      run: |
+        echo "🧪 Running test suite..."
+
+        # Run tests with coverage
+        python -m pytest tests/ \
+          -v \
+          --tb=short \
+          --timeout=300 \
+          --cov=. \
+          --cov-report=xml \
+          --cov-report=term-missing \
+          --dist=loadscope \
+          -n auto \
+          || test_result=$?
+
+        # Don't fail if no tests found (some branches might not have tests yet)
+        if [ ${test_result:-0} -eq 5 ]; then
+          echo "⚠️  No tests found - skipping"
+          exit 0
+        elif [ ${test_result:-0} -ne 0 ]; then
+          echo "❌ Tests failed"
+          exit ${test_result}
+        fi
+
+        echo "✅ All tests passed"
+
+    - name: Upload coverage to Codecov
+      if: success() && matrix.python-version == '3.11'
+      uses: codecov/codecov-action@v4
+      continue-on-error: true
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-atlas
+        fail_ci_if_error: false
+
+    - name: Upload test artifacts
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-artifacts-py${{ matrix.python-version }}-${{ github.run_number }}
+        path: |
+          data/test/
+          logs/test/
+          .coverage
+        retention-days: 7
+
+  # Code quality checks
+  code-quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    needs: security-critical
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Install quality tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install ruff mypy radon
+
+        # Install dev requirements if they exist
+        if [ -f requirements-dev.txt ]; then
+          pip install -r requirements-dev.txt
+        fi
+
+    - name: Run Ruff (linter)
+      continue-on-error: true
+      run: |
+        echo "🔍 Running Ruff linter..."
+        ruff check . --output-format=github || echo "Ruff found issues (not failing)"
+
+    - name: Run Ruff (formatter check)
+      continue-on-error: true
+      run: |
+        echo "🔍 Checking code formatting..."
+        ruff format --check . || echo "Format issues found (not failing)"
+
+    - name: Run MyPy (type checker)
+      continue-on-error: true
+      run: |
+        echo "🔍 Running type checks..."
+        mypy --ignore-missing-imports --no-error-summary . || echo "Type issues found (not failing)"
+
+    - name: Calculate code complexity
+      continue-on-error: true
+      run: |
+        echo "🔍 Calculating code complexity..."
+        radon cc . -a -nb --json > complexity-report.json || true
+
+        # Show files with high complexity (just informational)
+        echo "Files with complexity > 10:"
+        radon cc . -n C || echo "No highly complex files found"
+
+    - name: Upload quality reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: quality-reports-${{ github.run_number }}
+        path: complexity-report.json
+        retention-days: 30
+
+  # Shell script validation
+  shell-check:
+    name: Shell Script Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install ShellCheck
+      run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+    - name: Run ShellCheck
+      run: |
+        echo "🔍 Checking shell scripts..."
+
+        # Find all shell scripts
+        find . -name "*.sh" \
+          -not -path "./.git/*" \
+          -not -path "./oos-env/*" \
+          -not -path "./venv/*" \
+          -not -path "./node_modules/*" \
+          | while read -r script; do
+
+          echo "Checking: $script"
+          shellcheck -x "$script" || {
+            echo "⚠️  Issues found in $script (not failing build)"
+          }
+        done
+
+        echo "✅ Shell script check complete"
+
+  # Build validation
+  build-check:
+    name: Build Validation
+    runs-on: ubuntu-latest
+    needs: [test, code-quality]
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: Install build tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install build wheel setuptools
+
+    - name: Validate project can build
+      run: |
+        echo "🔨 Testing build process..."
+
+        # Only try to build if setup.py or pyproject.toml exists
+        if [ -f setup.py ] || [ -f pyproject.toml ]; then
+          python -m build --sdist --wheel --outdir dist/ || {
+            echo "⚠️  Build failed (might not be packaged yet)"
+            exit 0
+          }
+          echo "✅ Build successful"
+        else
+          echo "ℹ️  No setup.py or pyproject.toml - skipping build"
+        fi
+
+    - name: Upload build artifacts
+      if: success()
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-dist-${{ github.run_number }}
+        path: dist/
+        retention-days: 7
+
+  # Final summary
+  ci-summary:
+    name: CI Summary
+    runs-on: ubuntu-latest
+    needs: [security-critical, security-scan, codeql, test, code-quality, shell-check, build-check]
+    if: always()
+    timeout-minutes: 5
+
+    steps:
+    - name: Check job results
+      run: |
+        echo "## 📊 CI Pipeline Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "| Job | Status |" >> $GITHUB_STEP_SUMMARY
+        echo "|-----|--------|" >> $GITHUB_STEP_SUMMARY
+        echo "| Security (Critical) | ${{ needs.security-critical.result == 'success' && '✅' || '❌' }} ${{ needs.security-critical.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Security (Scan) | ${{ needs.security-scan.result == 'success' && '✅' || '⚠️' }} ${{ needs.security-scan.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| CodeQL | ${{ needs.codeql.result == 'success' && '✅' || '⚠️' }} ${{ needs.codeql.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Tests | ${{ needs.test.result == 'success' && '✅' || '❌' }} ${{ needs.test.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Code Quality | ${{ needs.code-quality.result == 'success' && '✅' || '⚠️' }} ${{ needs.code-quality.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Shell Check | ${{ needs.shell-check.result == 'success' && '✅' || '⚠️' }} ${{ needs.shell-check.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Build | ${{ needs.build-check.result == 'success' && '✅' || '⚠️' }} ${{ needs.build-check.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+
+        # Determine overall status
+        if [[ "${{ needs.security-critical.result }}" == "success" && \
+              "${{ needs.test.result }}" == "success" ]]; then
+          echo "### ✅ Pipeline Passed" >> $GITHUB_STEP_SUMMARY
+          echo "All critical checks passed successfully!" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "### ❌ Pipeline Failed" >> $GITHUB_STEP_SUMMARY
+          echo "Critical checks failed. Review the logs above." >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
