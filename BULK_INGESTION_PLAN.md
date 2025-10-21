@@ -2,8 +2,8 @@
 
 **Goal**: Import a backlog of URLs (hundreds/thousands) into Atlas efficiently via email
 
-**Date**: 2025-10-20
-**Status**: ✅ READY TO USE - Script complete, tested architecture
+**Date**: 2025-10-21
+**Status**: ✅ READY TO USE - SMTP version complete
 
 ---
 
@@ -19,14 +19,17 @@ https://example.com/article2
 ...
 EOF
 
-# 2. Run the script (automatically handles Gmail limits)
+# 2. Set up your .env with Gmail credentials (see GMAIL_SETUP_GUIDE.md)
+# GMAIL_EMAIL_ADDRESS=your-email@gmail.com
+# GMAIL_APP_PASSWORD=your-16-char-app-password
+
+# 3. Run the script (automatically handles Gmail limits)
 cd ~/dev/atlas
 python scripts/atlas_bulk_sender.py ~/backlog.txt
 
 # That's it! Script will:
-# - Send 250 URLs per email
+# - Send 250 URLs per email using SMTP
 # - Respect 2,000 email/day limit (free Gmail)
-# - Auto-apply "Atlas" label
 # - Track progress (can resume if interrupted)
 # - Take ~2 days for 10,000 URLs
 ```
@@ -34,6 +37,8 @@ python scripts/atlas_bulk_sender.py ~/backlog.txt
 **Script location**: `scripts/atlas_bulk_sender.py` (included in repo)
 
 **Processing**: Atlas will process URLs over hours/days/weeks - no rush!
+
+**Note**: You'll need to manually apply the "Atlas" label to received emails, or set up a Gmail filter to do it automatically.
 
 ---
 
@@ -56,25 +61,26 @@ This means:
 ## 📊 Approach Comparison
 
 ### Option A: Email Batching (RECOMMENDED)
-**Send emails with multiple URLs per email**
+**Send emails with multiple URLs per email via SMTP**
 
 **Pros**:
 - ✅ Most efficient (fewer emails to send/receive)
-- ✅ Uses existing Gmail infrastructure
+- ✅ Uses existing Gmail infrastructure with app password
 - ✅ Can include context per batch
 - ✅ Easy to track progress by email
-- ✅ Gmail API handles rate limiting
+- ✅ Simple setup (no OAuth required)
 
 **Cons**:
 - ⚠️ Need to respect Gmail limits
 - ⚠️ Large emails might be slow to process
+- ⚠️ Need to manually label emails (or use Gmail filters)
 
 **Limits**:
 - Gmail message size: **25 MB**
 - URLs in plain text: ~100 chars avg → ~250,000 URLs per email (unrealistic)
 - **Recommended**: 100-500 URLs per email (sweet spot)
-- Gmail API rate: 250 quota units/second (sending uses 100 units)
-  - **Practical limit**: ~2-3 emails/second = 7,200-10,800 emails/hour
+- SMTP rate limiting: ~2-3 emails/second recommended (self-imposed for safety)
+  - **Daily limit**: 2,000 emails/day (free Gmail) or 10,000/day (Workspace)
 
 ### Option B: Single URL Per Email
 **One URL per email**
@@ -109,36 +115,40 @@ This means:
 
 ## 🎯 RECOMMENDED APPROACH: Email Batching
 
-Send emails with **100-500 URLs per email**, using Gmail API with your existing credentials.
+Send emails with **100-500 URLs per email**, using SMTP with your Gmail app password.
 
 ### Technical Architecture
 
 ```
-[backlog.txt] → [Batch Script] → [Gmail API] → [Your Gmail] → [Atlas Reads] → [URLs Extracted] → [Content Processed]
-     ↓              (Local)          (Send)        (Label)        (Ingest)         (Regex)            (Vault)
-  1000 URLs      Chunk 100        Send email    "Atlas" label    Every X min    Extract all      Save content
+[backlog.txt] → [Batch Script] → [SMTP] → [Your Gmail] → [Atlas Reads] → [URLs Extracted] → [Content Processed]
+     ↓              (Local)        (Send)    (Label manually)  (Ingest)        (Regex)            (Vault)
+  1000 URLs      Chunk 100      Send email   or use filter    Every X min   Extract all      Save content
 ```
 
 ### How It Works
 
-1. **Local Script** (on your machine, NOT in Atlas repo):
+1. **Bulk sender script** (in Atlas repo):
    ```
-   ~/scripts/atlas-bulk-sender.py
+   ~/dev/atlas/scripts/atlas_bulk_sender.py
    ```
 
 2. **Script reads** your backlog file:
    ```
-   ~/backlog/urls.txt
+   ~/backlog.txt
    ```
 
-3. **Chunks URLs** into batches (100 per email)
+3. **Chunks URLs** into batches (250 per email)
 
-4. **Sends emails** to yourself using Gmail API:
+4. **Sends emails** to yourself using SMTP:
    - Subject: "Atlas Bulk Import - Batch 1 of 10"
    - Body: List of URLs (one per line)
-   - Auto-applies "Atlas" label
+   - Uses app password from .env
 
-5. **Atlas reads Gmail** (your existing setup):
+5. **Apply "Atlas" label** (two options):
+   - Manually apply label in Gmail
+   - OR create Gmail filter to auto-label emails with subject "Atlas Bulk Import"
+
+6. **Atlas reads Gmail** (your existing IMAP setup):
    - Sees emails with "Atlas" label
    - Extracts ALL URLs from email body
    - Processes each URL separately
@@ -149,42 +159,41 @@ Send emails with **100-500 URLs per email**, using Gmail API with your existing 
 
 ### Phase 1: Preparation (5 minutes)
 
-**1.1. Check Your Gmail Credentials**
+**1.1. Check Your .env Configuration**
 ```bash
-ls -l ~/dev/atlas/config/gmail_credentials.json
-ls -l ~/dev/atlas/data/gmail_token.json
+# Verify these are set in .env:
+grep GMAIL_EMAIL_ADDRESS .env
+grep GMAIL_APP_PASSWORD .env
 ```
-✅ You already have these from Gmail setup
 
-**1.2. Verify Gmail API Scope**
-Check if your token has **send** permission:
-- Current scope: `https://www.googleapis.com/auth/gmail.readonly` (read only)
-- **Need**: `https://www.googleapis.com/auth/gmail.send` (send permission)
+**Required Variables**:
+- `GMAIL_EMAIL_ADDRESS`: Your Gmail address
+- `GMAIL_APP_PASSWORD`: 16-character app password
 
-**Action Required**: You'll need to add send scope and re-authenticate
+**If missing**: Follow `GMAIL_SETUP_GUIDE.md` to set up IMAP/SMTP with app password
 
-### Phase 2: Script Setup (15-30 minutes)
+### Phase 2: Script Setup (Already Done!)
 
 **2.1. Script Location**
 ```bash
-# Create scripts directory (NOT in Atlas repo)
-mkdir -p ~/scripts/
+# Script is already included in Atlas repo
+ls -l ~/dev/atlas/scripts/atlas_bulk_sender.py
 ```
 
 **2.2. Script Components**
 
-**File**: `~/scripts/atlas_bulk_sender.py`
+**File**: `scripts/atlas_bulk_sender.py` (included)
 
 **Requirements**:
-- Python 3.9+
-- `google-auth`, `google-auth-oauthlib`, `google-api-python-client`
-- Same credentials as Atlas
+- Python 3.9+ (already installed)
+- Built-in libraries only: `smtplib`, `email`, `json`
+- No external dependencies needed!
 
 **Core Functions**:
-1. `read_backlog(file_path)` - Read URLs from file
+1. `read_urls(file_path)` - Read URLs from file
 2. `chunk_urls(urls, batch_size)` - Split into batches
-3. `send_email_batch(urls_batch, batch_num)` - Send one email
-4. `create_gmail_message(urls, subject)` - Format email
+3. `send_email_smtp(message)` - Send one email via SMTP
+4. `create_email_message(urls, batch_num, total)` - Format email
 5. `track_progress(batch_num)` - Save progress
 6. `main()` - Orchestrate the process
 
@@ -217,30 +226,35 @@ Sent: 2025-10-20 14:30:00
 - ✅ Context for debugging
 - ✅ Atlas regex will extract all URLs
 
-### Phase 4: Gmail API Configuration
+### Phase 4: Gmail Filter Setup (Optional but Recommended)
 
-**4.1. Add Send Scope**
+**4.1. Create Gmail Filter for Auto-Labeling**
 
-Edit your OAuth consent screen in Google Cloud Console:
-- Add scope: `https://www.googleapis.com/auth/gmail.send`
+This saves you from manually labeling thousands of emails:
 
-**4.2. Re-authenticate**
+1. In Gmail, click the search box dropdown
+2. Set filter criteria:
+   - From: your-email@gmail.com
+   - Subject: "Atlas Bulk Import"
+3. Click "Create filter"
+4. Check "Apply label: Atlas"
+5. Save filter
 
-Delete old token and re-auth:
+Now all bulk import emails will automatically get the "Atlas" label!
+
+**4.2. Test SMTP Connection**
+
+Test sending before running full import:
 ```bash
-rm ~/dev/atlas/data/gmail_token.json
-# Script will prompt for re-authentication
-python ~/scripts/atlas_bulk_sender.py
-```
+# Create test file
+echo "https://example.com/test" > /tmp/test_url.txt
 
-Browser opens → Approve send permission → Token generated
+# Run dry-run (doesn't actually send)
+cd ~/dev/atlas
+python scripts/atlas_bulk_sender.py /tmp/test_url.txt --dry-run
 
-**4.3. Test Sending**
-
-Send a test email:
-```python
-# Test with 5 URLs
-python ~/scripts/atlas_bulk_sender.py --test --batch-size 5
+# If that works, try sending one real email
+python scripts/atlas_bulk_sender.py /tmp/test_url.txt
 ```
 
 ### Phase 5: Execution Strategy
@@ -334,39 +348,59 @@ EOF
 wc -l ~/backlog/urls.txt
 ```
 
-### Step 2: Add Send Permission to Gmail API
+### Step 2: Verify Gmail Configuration
 
-**2a. Google Cloud Console**
-1. Go to: https://console.cloud.google.com/
-2. Select your Atlas project
-3. APIs & Services → OAuth consent screen
-4. Scopes → Add scope: `https://www.googleapis.com/auth/gmail.send`
-5. Save
-
-**2b. Re-authenticate Locally**
+**2a. Check .env File**
 ```bash
-# Delete old token
-rm ~/dev/atlas/data/gmail_token.json
+cd ~/dev/atlas
+cat .env | grep GMAIL
+```
 
-# Script will prompt re-auth (I'll provide this script)
-python ~/scripts/atlas_bulk_sender.py --setup
+**Should see**:
+```
+GMAIL_EMAIL_ADDRESS=your-email@gmail.com
+GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
+```
+
+**If missing**: Follow `GMAIL_SETUP_GUIDE.md` to generate app password
+
+**2b. Test SMTP Connection**
+```bash
+# Quick SMTP test
+python -c "
+import smtplib
+from os import getenv
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+# Replace with your actual email and app password
+server.login('your-email@gmail.com', 'your-app-password')
+print('✅ SMTP works!')
+server.quit()
+"
 ```
 
 ### Step 3: Run Test Batch
 
 ```bash
-# Test with 5 URLs
-python ~/scripts/atlas_bulk_sender.py \
-  --input ~/backlog/urls.txt \
-  --batch-size 5 \
-  --max-batches 1 \
-  --test
+# Create small test file
+head -5 ~/backlog/urls.txt > ~/test_5_urls.txt
+
+# Test with dry-run first (doesn't send)
+cd ~/dev/atlas
+python scripts/atlas_bulk_sender.py ~/test_5_urls.txt --dry-run
+
+# If that works, send for real
+python scripts/atlas_bulk_sender.py ~/test_5_urls.txt --batch-size 5
 
 # Expected output:
-# ✅ Read 1000 URLs from backlog
-# ✅ Sending batch 1 of 1 (5 URLs)
-# ✅ Email sent successfully
-# ✅ Total: 1 email sent
+# 🔌 Testing SMTP connection...
+# ✅ SMTP connection successful
+# 📖 Reading URLs from file...
+# ✅ Read 5 URLs from file
+# 📦 Split into 1 batches
+# 🚀 Starting bulk send...
+# 📧 Batch 1/1 (5 URLs)
+# ✅ Sent successfully
 ```
 
 ### Step 4: Check Atlas Received It
@@ -386,24 +420,29 @@ tail -f ~/dev/atlas/logs/gmail.log
 ### Step 5: Run Full Import
 
 ```bash
-# Send all 1000 URLs (batches of 100)
-python ~/scripts/atlas_bulk_sender.py \
-  --input ~/backlog/urls.txt \
-  --batch-size 100 \
-  --delay 1
+# Send all 1000 URLs (batches of 250)
+cd ~/dev/atlas
+python scripts/atlas_bulk_sender.py ~/backlog/urls.txt --batch-size 250 --delay 0.5
 
 # Parameters:
-# --batch-size 100: 100 URLs per email
-# --delay 1: Wait 1 second between emails (rate limiting)
+# --batch-size 250: 250 URLs per email (default)
+# --delay 0.5: Wait 0.5 seconds between emails (default)
 
 # Expected output:
-# ✅ Read 1000 URLs from backlog
-# ✅ Sending batch 1 of 10 (100 URLs)
-# ✅ Email sent successfully
-# ⏳ Waiting 1 second...
-# ✅ Sending batch 2 of 10 (100 URLs)
+# 🔌 Testing SMTP connection...
+# ✅ SMTP connection successful
+# 📖 Reading URLs from: ~/backlog/urls.txt
+# ✅ Read 1000 URLs from file
+# 📦 Split into 4 batches of 250 URLs each
+# 🚀 Starting bulk send...
+# 📧 Batch 1/4 (250 URLs)
+#    ✅ Sent successfully
+# 📧 Batch 2/4 (250 URLs)
+#    ✅ Sent successfully
 # ... (continues)
-# ✅ Total: 10 emails sent in 12 seconds
+# ✅ Bulk send complete!
+#    Total URLs sent: 1000
+#    Total emails sent: 4
 ```
 
 ### Step 6: Monitor Atlas Processing
@@ -425,9 +464,11 @@ watch -n 10 "sqlite3 ~/dev/atlas/data/atlas.db 'SELECT COUNT(*) FROM content;'"
 ### Test 1: Single Email (5 URLs)
 **Goal**: Verify email sending works
 ```bash
-python ~/scripts/atlas_bulk_sender.py --test --batch-size 5
+cd ~/dev/atlas
+head -5 ~/backlog/urls.txt > /tmp/test_5.txt
+python scripts/atlas_bulk_sender.py /tmp/test_5.txt --batch-size 5
 ```
-**Success**: Email appears in Gmail with "Atlas" label
+**Success**: Email appears in Gmail (manually apply "Atlas" label or use filter)
 
 ### Test 2: URL Extraction (5 URLs)
 **Goal**: Verify Atlas extracts URLs
@@ -448,14 +489,17 @@ sqlite3 ~/dev/atlas/data/atlas.db "SELECT COUNT(*) FROM content WHERE source='gm
 ### Test 4: Medium Batch (50 URLs)
 **Goal**: Verify batch processing works
 ```bash
-python ~/scripts/atlas_bulk_sender.py --batch-size 50 --max-batches 1
+cd ~/dev/atlas
+head -50 ~/backlog/urls.txt > /tmp/test_50.txt
+python scripts/atlas_bulk_sender.py /tmp/test_50.txt --batch-size 50
 ```
 **Success**: 1 email, Atlas extracts 50 URLs
 
 ### Test 5: Full Run (1000+ URLs)
 **Goal**: Complete backlog import
 ```bash
-python ~/scripts/atlas_bulk_sender.py --batch-size 100
+cd ~/dev/atlas
+python scripts/atlas_bulk_sender.py ~/backlog/urls.txt --batch-size 250
 ```
 **Success**: All emails sent, Atlas processes over hours/days
 
@@ -483,18 +527,18 @@ cat ~/backlog/urls.txt >> ~/dev/atlas/inputs/articles.txt
 - ❌ Less flexible
 - ❌ No batch tracking
 
-### Alt 2: SMTP Instead of Gmail API
+### Alt 2: Gmail API Instead of SMTP
 
-**Use Gmail SMTP + app password**:
+**Use Gmail API + OAuth credentials** (not recommended):
 ```python
-import smtplib
-from email.mime.text import MIMEText
+from googleapiclient.discovery import build
 
-# Simpler than Gmail API
-# But same limits apply
+# More complex than SMTP
+# Requires OAuth setup
+# Same limits apply
 ```
 
-**When to use**: If Gmail API setup is too complex
+**When to use**: If you need additional Gmail API features beyond sending emails (e.g., auto-labeling sent emails)
 
 ### Alt 3: Third-Party Email Client
 
@@ -608,22 +652,31 @@ Atlas Machine:
 
 **For your use case** (backlog import via email):
 
-1. **Method**: Email batching via Gmail API
-2. **Batch Size**: 100-250 URLs per email
-3. **Script Location**: `~/scripts/` (NOT in Atlas repo)
-4. **Processing**: Let Atlas handle it (may take hours/days for large backlogs)
-5. **Monitoring**: Watch logs and database growth
+1. **Method**: Email batching via SMTP with app password
+2. **Batch Size**: 250 URLs per email (default)
+3. **Script Location**: `scripts/atlas_bulk_sender.py` (included in repo)
+4. **Setup**: Just need .env with GMAIL_EMAIL_ADDRESS and GMAIL_APP_PASSWORD
+5. **Labeling**: Use Gmail filter to auto-apply "Atlas" label to bulk import emails
+6. **Processing**: Let Atlas handle it (may take hours/days for large backlogs)
+7. **Monitoring**: Watch logs and database growth
 
-**Next Step**: I can write the actual `atlas_bulk_sender.py` script if you want to proceed with this approach.
+**The script is ready to use!** Just follow the steps above.
 
 ---
 
-## 🤔 Questions to Answer Before Coding
+## 🤔 Quick Start Checklist
 
-1. **How many URLs in your backlog?** (100? 1,000? 10,000?)
-2. **Timeframe?** (Need them all processed in 24 hours? Or can take weeks?)
-3. **Context needed?** (All URLs same source? Or need different context per batch?)
-4. **Gmail account type?** (Free Gmail or Workspace? Daily send limit matters)
-5. **Processing power?** (Can you increase MAX_CONCURRENT_ARTICLES for faster processing?)
+Before running the bulk sender:
 
-**Let me know your answers and I'll refine the plan or write the script!**
+- [ ] **App password generated** at https://myaccount.google.com/apppasswords
+- [ ] **.env configured** with GMAIL_EMAIL_ADDRESS and GMAIL_APP_PASSWORD
+- [ ] **Gmail filter created** to auto-label "Atlas Bulk Import" emails
+- [ ] **Backlog file created** with one URL per line
+- [ ] **Test run completed** with 5 URLs to verify everything works
+- [ ] **Atlas is running** and processing emails with "Atlas" label
+
+**Then just run**: `python scripts/atlas_bulk_sender.py ~/backlog.txt`
+
+---
+
+**Happy bulk importing! 🚀**

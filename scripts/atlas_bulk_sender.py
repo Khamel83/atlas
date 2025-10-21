@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Atlas Bulk URL Sender
-Sends batches of URLs to Gmail for Atlas ingestion
+Atlas Bulk URL Sender (SMTP Version)
+Sends batches of URLs to Gmail for Atlas ingestion using SMTP
 
 Usage:
     python atlas_bulk_sender.py backlog.txt
@@ -13,37 +13,21 @@ import os
 import sys
 import json
 import time
+import smtplib
 import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import List, Dict, Optional
-import base64
+from typing import List, Dict
 from email.mime.text import MIMEText
-
-try:
-    from google.auth.transport.requests import Request
-    from google.oauth2.credentials import Credentials
-    from google_auth_oauthlib.flow import InstalledAppFlow
-    from googleapiclient.discovery import build
-    from googleapiclient.errors import HttpError
-except ImportError:
-    print("ERROR: Required packages not installed!")
-    print("Install with: pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client")
-    sys.exit(1)
-
-# Gmail API scopes - need send permission
-SCOPES = [
-    'https://www.googleapis.com/auth/gmail.send',
-    'https://www.googleapis.com/auth/gmail.readonly'
-]
+from email.mime.multipart import MIMEMultipart
 
 class BulkSender:
-    def __init__(self, credentials_path: str, token_path: str, email_address: str):
-        """Initialize the bulk sender with Gmail API credentials."""
-        self.credentials_path = credentials_path
-        self.token_path = token_path
+    def __init__(self, email_address: str, app_password: str, smtp_host: str = 'smtp.gmail.com', smtp_port: int = 587):
+        """Initialize the bulk sender with SMTP credentials."""
         self.email_address = email_address
-        self.service = None
+        self.app_password = app_password
+        self.smtp_host = smtp_host
+        self.smtp_port = smtp_port
         self.progress_file = Path('bulk_sender_progress.json')
         self.progress = self.load_progress()
 
@@ -67,44 +51,36 @@ class BulkSender:
         with open(self.progress_file, 'w') as f:
             json.dump(self.progress, f, indent=2)
 
-    def authenticate(self):
-        """Authenticate with Gmail API."""
-        creds = None
+    def test_smtp_connection(self) -> bool:
+        """Test SMTP connection and authentication."""
+        try:
+            print(f"🔌 Testing SMTP connection to {self.smtp_host}:{self.smtp_port}...")
 
-        # Load existing token
-        if Path(self.token_path).exists():
-            creds = Credentials.from_authorized_user_file(self.token_path, SCOPES)
+            # Connect to SMTP server
+            server = smtplib.SMTP(self.smtp_host, self.smtp_port)
+            server.set_debuglevel(0)  # Set to 1 for verbose debugging
+            server.ehlo()
+            server.starttls()
+            server.ehlo()
 
-        # If no valid credentials, get new ones
-        if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                print("🔄 Refreshing expired credentials...")
-                creds.refresh(Request())
-            else:
-                print("🔐 No valid credentials found. Starting authentication flow...")
-                print(f"📁 Looking for credentials at: {self.credentials_path}")
+            # Authenticate
+            server.login(self.email_address, self.app_password)
 
-                if not Path(self.credentials_path).exists():
-                    print(f"❌ ERROR: Credentials file not found at {self.credentials_path}")
-                    print("\nTo fix this:")
-                    print("1. Go to Google Cloud Console")
-                    print("2. Create OAuth 2.0 credentials")
-                    print("3. Download as gmail_credentials.json")
-                    print("4. Place in ~/dev/atlas/config/")
-                    sys.exit(1)
+            print("✅ SMTP connection successful")
+            server.quit()
+            return True
 
-                flow = InstalledAppFlow.from_client_secrets_file(
-                    self.credentials_path, SCOPES)
-                creds = flow.run_local_server(port=0)
+        except smtplib.SMTPAuthenticationError as e:
+            print(f"❌ SMTP Authentication failed: {e}")
+            print("\nTo fix this:")
+            print("1. Verify your app password in .env (GMAIL_APP_PASSWORD)")
+            print("2. Ensure you're using an app password, not your regular password")
+            print("3. Generate new app password at: https://myaccount.google.com/apppasswords")
+            return False
 
-            # Save credentials for next time
-            print(f"💾 Saving credentials to: {self.token_path}")
-            with open(self.token_path, 'w') as token:
-                token.write(creds.to_json())
-
-        self.service = build('gmail', 'v1', credentials=creds)
-        print("✅ Gmail API authenticated successfully")
-        return True
+        except Exception as e:
+            print(f"❌ SMTP connection failed: {e}")
+            return False
 
     def read_urls(self, file_path: str) -> List[str]:
         """Read URLs from file, one per line."""
@@ -126,7 +102,7 @@ class BulkSender:
         print(f"📦 Split into {len(batches)} batches of {batch_size} URLs each")
         return batches
 
-    def create_email_message(self, urls: List[str], batch_num: int, total_batches: int) -> MIMEText:
+    def create_email_message(self, urls: List[str], batch_num: int, total_batches: int) -> MIMEMultipart:
         """Create email message with URLs."""
         subject = f"Atlas Bulk Import - Batch {batch_num} of {total_batches}"
 
@@ -142,69 +118,47 @@ Auto-generated by atlas_bulk_sender.py
 Sent: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 """
 
-        message = MIMEText(body)
-        message['to'] = self.email_address
-        message['subject'] = subject
+        # Create multipart message
+        message = MIMEMultipart()
+        message['From'] = self.email_address
+        message['To'] = self.email_address
+        message['Subject'] = subject
+
+        # Add body
+        message.attach(MIMEText(body, 'plain'))
 
         return message
 
-    def send_email(self, message: MIMEText) -> bool:
-        """Send email via Gmail API."""
+    def send_email_smtp(self, message: MIMEMultipart) -> bool:
+        """Send email via SMTP."""
         try:
-            # Create message for Gmail API
-            raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode('utf-8')
-            send_message = {'raw': raw_message}
+            # Connect to SMTP server
+            server = smtplib.SMTP(self.smtp_host, self.smtp_port)
+            server.set_debuglevel(0)
+            server.ehlo()
+            server.starttls()
+            server.ehlo()
+
+            # Authenticate
+            server.login(self.email_address, self.app_password)
 
             # Send the message
-            result = self.service.users().messages().send(
-                userId='me',
-                body=send_message
-            ).execute()
+            server.send_message(message)
 
-            # Apply "Atlas" label to the sent message
-            message_id = result.get('id')
-            self.apply_atlas_label(message_id)
+            # Close connection
+            server.quit()
 
             return True
 
-        except HttpError as error:
-            print(f"❌ Error sending email: {error}")
+        except smtplib.SMTPAuthenticationError as e:
+            print(f"❌ SMTP authentication error: {e}")
             return False
-
-    def apply_atlas_label(self, message_id: str):
-        """Apply 'Atlas' label to message for automatic processing."""
-        try:
-            # Get or create Atlas label
-            labels = self.service.users().labels().list(userId='me').execute()
-            atlas_label_id = None
-
-            for label in labels.get('labels', []):
-                if label['name'] == 'Atlas':
-                    atlas_label_id = label['id']
-                    break
-
-            # Create label if it doesn't exist
-            if not atlas_label_id:
-                label_object = {
-                    'name': 'Atlas',
-                    'labelListVisibility': 'labelShow',
-                    'messageListVisibility': 'show'
-                }
-                created_label = self.service.users().labels().create(
-                    userId='me',
-                    body=label_object
-                ).execute()
-                atlas_label_id = created_label['id']
-
-            # Apply label to message
-            self.service.users().messages().modify(
-                userId='me',
-                id=message_id,
-                body={'addLabelIds': [atlas_label_id]}
-            ).execute()
-
-        except HttpError as error:
-            print(f"⚠️  Could not apply Atlas label: {error}")
+        except smtplib.SMTPException as e:
+            print(f"❌ SMTP error sending email: {e}")
+            return False
+        except Exception as e:
+            print(f"❌ Error sending email: {e}")
+            return False
 
     def check_daily_limit(self, daily_limit: int) -> bool:
         """Check if we've hit the daily sending limit."""
@@ -265,7 +219,7 @@ Sent: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
             else:
                 message = self.create_email_message(urls, batch_num, total_batches)
 
-                if self.send_email(message):
+                if self.send_email_smtp(message):
                     print(f"   ✅ Sent successfully")
                     self.progress['batches_sent'] += 1
                     self.progress['urls_sent'] += len(urls)
@@ -289,9 +243,26 @@ Sent: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
         print(f"   Failed batches: {len(self.progress['failed_batches'])}")
 
 
+def load_env_vars():
+    """Load environment variables from .env file."""
+    env_file = Path('.env')
+    if not env_file.exists():
+        return {}
+
+    env_vars = {}
+    with open(env_file, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, value = line.split('=', 1)
+                env_vars[key.strip()] = value.strip()
+
+    return env_vars
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description='Send bulk URLs to Gmail for Atlas ingestion',
+        description='Send bulk URLs to Gmail for Atlas ingestion (SMTP version)',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -311,13 +282,13 @@ Examples:
     parser.add_argument('--delay', type=float, default=0.5,
                        help='Delay between emails in seconds (default: 0.5)')
     parser.add_argument('--email', type=str, default=None,
-                       help='Your Gmail address (default: auto-detect from credentials)')
-    parser.add_argument('--credentials', type=str,
-                       default='config/gmail_credentials.json',
-                       help='Path to Gmail credentials file')
-    parser.add_argument('--token', type=str,
-                       default='data/gmail_token.json',
-                       help='Path to Gmail token file')
+                       help='Your Gmail address (default: from .env GMAIL_EMAIL_ADDRESS)')
+    parser.add_argument('--app-password', type=str, default=None,
+                       help='Gmail app password (default: from .env GMAIL_APP_PASSWORD)')
+    parser.add_argument('--smtp-host', type=str, default='smtp.gmail.com',
+                       help='SMTP server host (default: smtp.gmail.com)')
+    parser.add_argument('--smtp-port', type=int, default=587,
+                       help='SMTP server port (default: 587)')
     parser.add_argument('--dry-run', action='store_true',
                        help='Test mode - don\'t actually send emails')
     parser.add_argument('--reset-progress', action='store_true',
@@ -325,30 +296,36 @@ Examples:
 
     args = parser.parse_args()
 
-    # Expand paths
-    credentials_path = os.path.expanduser(args.credentials)
-    token_path = os.path.expanduser(args.token)
-    input_file = os.path.expanduser(args.input_file)
+    # Load from .env if not provided
+    env_vars = load_env_vars()
 
-    # Auto-detect email if not provided
-    email_address = args.email
+    email_address = args.email or env_vars.get('GMAIL_EMAIL_ADDRESS')
+    app_password = args.app_password or env_vars.get('GMAIL_APP_PASSWORD')
+
+    # Validate required parameters
     if not email_address:
-        # Try to get from credentials
-        if Path(credentials_path).exists():
-            import json
-            with open(credentials_path, 'r') as f:
-                creds = json.load(f)
-                # Try to extract email from credentials
-                # For installed app, email might not be in credentials
-                # We'll prompt user if needed
-                pass
+        print("❌ ERROR: Gmail email address required")
+        print("   Provide via --email or set GMAIL_EMAIL_ADDRESS in .env")
+        sys.exit(1)
 
-        if not email_address:
-            email_address = input("Enter your Gmail address: ").strip()
+    if not app_password:
+        print("❌ ERROR: Gmail app password required")
+        print("   Provide via --app-password or set GMAIL_APP_PASSWORD in .env")
+        print("\nTo generate an app password:")
+        print("1. Go to https://myaccount.google.com/apppasswords")
+        print("2. Sign in with your Gmail account")
+        print("3. Select app: Mail")
+        print("4. Select device: Other -> 'Atlas'")
+        print("5. Click Generate")
+        print("6. Copy the 16-character password to your .env file")
+        sys.exit(1)
+
+    # Expand input file path
+    input_file = os.path.expanduser(args.input_file)
 
     print(f"""
 ╔══════════════════════════════════════════════════════════════╗
-║             Atlas Bulk URL Sender                            ║
+║             Atlas Bulk URL Sender (SMTP)                     ║
 ╚══════════════════════════════════════════════════════════════╝
 
 Configuration:
@@ -356,13 +333,12 @@ Configuration:
   Batch size:     {args.batch_size} URLs per email
   Daily limit:    {args.daily_limit} emails/day
   Email address:  {email_address}
-  Credentials:    {credentials_path}
-  Token:          {token_path}
+  SMTP server:    {args.smtp_host}:{args.smtp_port}
   Dry run:        {args.dry_run}
 """)
 
     # Initialize sender
-    sender = BulkSender(credentials_path, token_path, email_address)
+    sender = BulkSender(email_address, app_password, args.smtp_host, args.smtp_port)
 
     # Reset progress if requested
     if args.reset_progress:
@@ -370,10 +346,11 @@ Configuration:
         sender.progress_file.unlink(missing_ok=True)
         sender.progress = sender.load_progress()
 
-    # Authenticate with Gmail
-    if not sender.authenticate():
-        print("❌ Authentication failed")
-        sys.exit(1)
+    # Test SMTP connection
+    if not args.dry_run:
+        if not sender.test_smtp_connection():
+            print("\n❌ SMTP connection test failed. Please check your credentials.")
+            sys.exit(1)
 
     # Read URLs
     urls = sender.read_urls(input_file)
@@ -394,6 +371,10 @@ Configuration:
 
     print("\n" + "="*60)
     print("DONE! Your backlog has been sent to Gmail for Atlas processing.")
+    print("\nIMPORTANT: To ensure Atlas processes these emails:")
+    print("1. Set up a Gmail filter to label these emails with 'Atlas'")
+    print("2. Or manually apply the 'Atlas' label to the received emails")
+    print("3. Atlas will automatically process emails with the 'Atlas' label")
     print("="*60)
 
 

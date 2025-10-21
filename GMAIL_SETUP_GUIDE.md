@@ -1,7 +1,7 @@
 # Gmail Integration Setup Guide
 
-**Last Updated**: 2025-10-20
-**Difficulty**: Moderate (20-30 minutes)
+**Last Updated**: 2025-10-21
+**Difficulty**: Easy (5-10 minutes)
 **Prerequisites**: Google account, basic command line knowledge
 
 ---
@@ -17,149 +17,9 @@ After this setup, Atlas will:
 
 ---
 
-## 📋 Overview: Two Methods
+## 🔐 IMAP Setup with App Password
 
-### Method A: Gmail API (Recommended)
-**Pros**: More reliable, higher rate limits, better metadata
-**Cons**: Requires Google Cloud setup (15 min)
-**Best for**: Long-term use, multiple labels, high volume
-
-### Method B: IMAP (Simple)
-**Pros**: 5-minute setup, no Google Cloud needed
-**Cons**: Slower, fewer features, less reliable
-**Best for**: Quick testing, single folder
-
----
-
-## 🔐 Method A: Gmail API Setup (Recommended)
-
-### Step 1: Create Google Cloud Project (5 minutes)
-
-1. **Go to Google Cloud Console**: https://console.cloud.google.com/
-
-2. **Create new project**:
-   - Click "Select a project" → "New Project"
-   - Name: "Atlas Personal Knowledge"
-   - Click "Create"
-
-3. **Enable Gmail API**:
-   - Go to "APIs & Services" → "Library"
-   - Search for "Gmail API"
-   - Click "Enable"
-
-### Step 2: Create OAuth Credentials (5 minutes)
-
-1. **Configure OAuth consent screen**:
-   ```
-   Go to: APIs & Services → OAuth consent screen
-   User Type: External (if personal Gmail)
-   App name: Atlas
-   User support email: your-email@gmail.com
-   Developer contact: your-email@gmail.com
-   Scopes: Leave default
-   Test users: Add your-email@gmail.com
-   ```
-
-2. **Create credentials**:
-   ```
-   Go to: APIs & Services → Credentials
-   Click: "+ CREATE CREDENTIALS" → "OAuth client ID"
-   Application type: Desktop app
-   Name: Atlas Desktop Client
-   Click: "Create"
-   ```
-
-3. **Download credentials**:
-   - Click the download icon next to your new OAuth 2.0 Client ID
-   - Save as `gmail_credentials.json`
-
-### Step 3: Install Credentials in Atlas (2 minutes)
-
-```bash
-# Navigate to Atlas directory
-cd /path/to/atlas
-
-# Create config directory if it doesn't exist
-mkdir -p config
-
-# Copy your downloaded credentials
-cp ~/Downloads/gmail_credentials.json config/gmail_credentials.json
-
-# Set correct permissions
-chmod 600 config/gmail_credentials.json
-```
-
-### Step 4: Configure Environment Variables
-
-Edit your `.env` file:
-
-```bash
-nano .env
-```
-
-Add/update these lines:
-
-```bash
-# === GMAIL API INTEGRATION ===
-GMAIL_ENABLED=true
-GMAIL_CREDENTIALS_PATH=config/gmail_credentials.json
-GMAIL_TOKEN_PATH=data/gmail_token.json
-GMAIL_WATCH_LABELS=["Atlas", "Newsletter"]
-
-# Optional: Google Cloud Pub/Sub for real-time notifications
-GCP_PROJECT_ID=your-project-id
-PUBSUB_TOPIC=gmail-notifications
-PUBSUB_SUBSCRIPTION=gmail-push-subscription
-GMAIL_WEBHOOK_SECRET=generate-random-secret-here
-```
-
-**Important Notes**:
-- `GMAIL_CREDENTIALS_PATH`: Path to the credentials file you downloaded
-- `GMAIL_TOKEN_PATH`: Where Atlas will store the access token (auto-generated)
-- `GMAIL_WATCH_LABELS`: Which Gmail labels to monitor (JSON array format)
-
-### Step 5: Initial Authentication (5 minutes)
-
-**First time only**, you need to authenticate:
-
-```bash
-# Run Atlas with Gmail enabled
-python atlas_manager.py
-
-# OR if you want to test Gmail specifically:
-python -c "from gmail_integration import authenticate; authenticate()"
-```
-
-**What happens**:
-1. Browser opens automatically
-2. Google asks you to sign in
-3. Google asks permission for Atlas to read Gmail
-4. Click "Allow"
-5. Browser shows "Authentication successful"
-6. Token saved to `data/gmail_token.json`
-
-**⚠️  IMPORTANT**: The `gmail_token.json` file is auto-generated during this process. DO NOT create it manually!
-
-### Step 6: Verify It Works
-
-```bash
-# Check token was created
-ls -lh data/gmail_token.json
-# Should show a file (~1-2 KB)
-
-# Test Gmail connection
-python -c "
-from gmail_integration import list_labels
-labels = list_labels()
-print(f'Found {len(labels)} labels:', [l['name'] for l in labels])
-"
-
-# Should output your Gmail labels
-```
-
----
-
-## 🔧 Method B: IMAP Setup (Simple Alternative)
+Atlas uses IMAP (for reading emails) and SMTP (for sending emails) with Gmail app passwords. This is simpler and more reliable than OAuth.
 
 ### Step 1: Enable IMAP in Gmail
 
@@ -191,20 +51,38 @@ nano .env
 Add these lines:
 
 ```bash
-# === EMAIL INTEGRATION (IMAP) ===
-EMAIL_ENABLED=true
-EMAIL_IMAP_HOST=imap.gmail.com
-EMAIL_IMAP_PORT=993
-EMAIL_USERNAME=your-email@gmail.com
-EMAIL_PASSWORD=xxxx xxxx xxxx xxxx   # App password from Step 2
-EMAIL_FOLDER=Atlas                    # Which folder to monitor
+# === GMAIL INTEGRATION (IMAP/SMTP) ===
+GMAIL_ENABLED=true
+GMAIL_EMAIL_ADDRESS=your-email@gmail.com
+GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx   # App password from Step 2
+
+# IMAP settings (for reading emails)
+GMAIL_IMAP_HOST=imap.gmail.com
+GMAIL_IMAP_PORT=993
+GMAIL_FOLDER=INBOX
+GMAIL_LABEL="Atlas"
+
+# SMTP settings (for sending emails, e.g., bulk URL import)
+GMAIL_SMTP_HOST=smtp.gmail.com
+GMAIL_SMTP_PORT=587
+
+# Optional: Processing settings
+GMAIL_CHECK_INTERVAL=900          # Check every 15 minutes
+GMAIL_MARK_READ=true              # Mark as read after processing
+GMAIL_ARCHIVE_PROCESSED=false     # Archive after processing
 ```
 
-### Step 4: Create Gmail Folder/Label
+**Configuration Notes**:
+- `GMAIL_EMAIL_ADDRESS`: Your Gmail address
+- `GMAIL_APP_PASSWORD`: 16-character app password from Step 2
+- `GMAIL_LABEL`: Which Gmail label to monitor (default: "Atlas")
+- `GMAIL_CHECK_INTERVAL`: How often to check for new emails (in seconds)
 
-1. In Gmail, create a new label called "Atlas"
+### Step 4: Create Gmail Label
+
+1. In Gmail, create a new label called "Atlas" (or whatever you specified in GMAIL_LABEL)
 2. Apply this label to emails you want Atlas to process
-3. Atlas will check this folder periodically
+3. Atlas will check this label periodically
 
 ### Step 5: Test Connection
 
@@ -214,9 +92,19 @@ python -c "
 import imaplib
 mail = imaplib.IMAP4_SSL('imap.gmail.com', 993)
 mail.login('your-email@gmail.com', 'your-app-password')
-mail.select('Atlas')
+mail.select('INBOX')
 print('✅ IMAP connection successful')
 mail.logout()
+"
+
+# Test SMTP connection
+python -c "
+import smtplib
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login('your-email@gmail.com', 'your-app-password')
+print('✅ SMTP connection successful')
+server.quit()
 "
 ```
 
@@ -224,9 +112,17 @@ mail.logout()
 
 ## 🎨 Configuration Options
 
-### How Often Does Atlas Check Gmail?
+### Which Labels to Monitor
 
-In `.env`, you can control the frequency:
+```bash
+# Single label
+GMAIL_LABEL="Atlas"
+
+# To monitor multiple labels, you need to run multiple instances
+# or modify the code to support multiple labels
+```
+
+### How Often Does Atlas Check Gmail?
 
 ```bash
 # Check Gmail every 5 minutes (300 seconds)
@@ -239,28 +135,6 @@ GMAIL_CHECK_INTERVAL=3600
 GMAIL_CHECK_INTERVAL=900
 ```
 
-### Which Labels to Monitor
-
-**Gmail API** (Method A):
-```bash
-# Single label
-GMAIL_WATCH_LABELS=["Atlas"]
-
-# Multiple labels
-GMAIL_WATCH_LABELS=["Atlas", "Newsletter", "AI News", "Research"]
-
-# All labels (not recommended)
-GMAIL_WATCH_LABELS=["INBOX"]
-```
-
-**IMAP** (Method B):
-```bash
-# One folder only
-EMAIL_FOLDER=Atlas
-
-# To monitor multiple folders, you need multiple instances
-```
-
 ### What to Do with Processed Emails
 
 ```bash
@@ -270,9 +144,6 @@ GMAIL_MARK_READ=true
 # Archive after processing
 GMAIL_ARCHIVE_PROCESSED=true
 
-# Move to specific label
-GMAIL_PROCESSED_LABEL=AtlasProcessed
-
 # Delete after processing (NOT recommended)
 GMAIL_DELETE_PROCESSED=false
 ```
@@ -281,41 +152,14 @@ GMAIL_DELETE_PROCESSED=false
 
 ## 🔍 Troubleshooting
 
-### "Token file not found"
+### "Authentication failed"
 
-**Problem**: Atlas can't find `data/gmail_token.json`
+**Problem**: Atlas can't connect to Gmail
 
 **Solution**:
 ```bash
-# The token is auto-generated during first auth
-# Just run Atlas and it will prompt you to authenticate
-python atlas_manager.py
-
-# Browser will open for authentication
-# After you approve, token is created automatically
-```
-
-### "Authentication failed"
-
-**Problem**: Google won't let Atlas access Gmail
-
-**For Gmail API (Method A)**:
-```bash
-# 1. Check credentials file exists
-ls -lh config/gmail_credentials.json
-
-# 2. Check you added yourself as test user in Google Cloud Console
-# Go to: APIs & Services → OAuth consent screen → Test users
-
-# 3. Delete old token and re-authenticate
-rm data/gmail_token.json
-python atlas_manager.py
-```
-
-**For IMAP (Method B)**:
-```bash
 # 1. Verify you're using APP PASSWORD, not regular password
-echo "Check: $EMAIL_PASSWORD"
+echo "Check: $GMAIL_APP_PASSWORD"
 
 # 2. Verify IMAP is enabled in Gmail settings
 # Go to: Gmail Settings → Forwarding and POP/IMAP
@@ -366,30 +210,33 @@ GMAIL_BATCH_SIZE=50  # Process 50 emails at a time instead of 100
 
 ## 🎯 Quick Reference: Environment Variables
 
-### Gmail API (Method A)
+### Required Variables
 ```bash
 GMAIL_ENABLED=true
-GMAIL_CREDENTIALS_PATH=config/gmail_credentials.json
-GMAIL_TOKEN_PATH=data/gmail_token.json
-GMAIL_WATCH_LABELS=["Atlas", "Newsletter"]
+GMAIL_EMAIL_ADDRESS=your-email@gmail.com
+GMAIL_APP_PASSWORD=your-16-char-app-password
+```
+
+### IMAP Settings (Reading Emails)
+```bash
+GMAIL_IMAP_HOST=imap.gmail.com
+GMAIL_IMAP_PORT=993
+GMAIL_FOLDER=INBOX
+GMAIL_LABEL="Atlas"
+```
+
+### SMTP Settings (Sending Emails)
+```bash
+GMAIL_SMTP_HOST=smtp.gmail.com
+GMAIL_SMTP_PORT=587
+```
+
+### Optional Settings
+```bash
 GMAIL_CHECK_INTERVAL=900
 GMAIL_MARK_READ=true
 GMAIL_ARCHIVE_PROCESSED=false
-GMAIL_PROCESSED_LABEL=AtlasProcessed
 GMAIL_BATCH_SIZE=100
-```
-
-### IMAP (Method B)
-```bash
-EMAIL_ENABLED=true
-EMAIL_IMAP_HOST=imap.gmail.com
-EMAIL_IMAP_PORT=993
-EMAIL_USERNAME=your-email@gmail.com
-EMAIL_PASSWORD=your-app-password-here
-EMAIL_FOLDER=Atlas
-EMAIL_CHECK_INTERVAL=900
-EMAIL_MARK_READ=true
-EMAIL_SSL=true
 ```
 
 ---
@@ -398,12 +245,13 @@ EMAIL_SSL=true
 
 Before you're done, verify:
 
-- [ ] Credentials file in place: `config/gmail_credentials.json` (Method A) or app password in `.env` (Method B)
-- [ ] Token generated: `data/gmail_token.json` exists (Method A)
+- [ ] App password generated at https://myaccount.google.com/apppasswords
 - [ ] Environment variables set in `.env`
-- [ ] Atlas can authenticate without errors
-- [ ] Test email with correct label appears in vault
-- [ ] No errors in `logs/gmail.log`
+- [ ] IMAP enabled in Gmail settings
+- [ ] "Atlas" label created in Gmail
+- [ ] IMAP connection test passes
+- [ ] SMTP connection test passes (if using bulk sender)
+- [ ] Test email with "Atlas" label appears in Atlas
 
 ---
 
@@ -411,8 +259,8 @@ Before you're done, verify:
 
 Once Gmail is working:
 
-1. **Add more labels**: Update `GMAIL_WATCH_LABELS` in `.env`
-2. **Set up filters**: Create Gmail filters to auto-label newsletters
+1. **Add more labels**: Create Gmail filters to auto-label newsletters, important emails, etc.
+2. **Set up bulk import**: Use `scripts/atlas_bulk_sender.py` to import thousands of URLs
 3. **Monitor**: Check `logs/gmail.log` periodically
 4. **Optimize**: Adjust `GMAIL_CHECK_INTERVAL` based on your needs
 
@@ -421,9 +269,29 @@ Once Gmail is working:
 ## 📖 Related Documentation
 
 - `ATLAS_USER_GUIDE.md` - How to use Atlas
+- `BULK_INGESTION_PLAN.md` - Bulk URL import guide
 - `.env.template` - All configuration options
 - `CLAUDE.md` - Current system status
 
 ---
 
-**Pro Tip**: Start with IMAP for quick testing, then migrate to Gmail API once you're happy with the setup!
+## 💡 Why IMAP Instead of Gmail API?
+
+**IMAP with App Password is simpler**:
+- No Google Cloud Console setup required
+- No OAuth consent screen configuration
+- No redirect URI management
+- Works immediately with just an app password
+- Same reliability and features for Atlas's use case
+
+**Gmail API was considered but**:
+- Requires Google Cloud project setup
+- OAuth 2.0 flow is complex for desktop apps
+- Redirect URI issues with local applications
+- More overhead for no significant benefit
+
+For Atlas's use case (reading labeled emails), IMAP is the perfect solution.
+
+---
+
+**Pro Tip**: Set up Gmail filters to automatically apply the "Atlas" label to specific emails (newsletters, certain senders, etc.), and Atlas will automatically process them!
