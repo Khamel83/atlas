@@ -17,7 +17,8 @@
 ### What's Working
 - ✅ **Workflows**: atlas-ci.yml, atlas-deploy.yml, oos-ci.yml
 - ✅ **Security**: TruffleHog, Bandit, Safety, Semgrep, CodeQL integrated
-- ✅ **Documentation**: ATLAS_USER_GUIDE.md and GMAIL_SETUP_GUIDE.md
+- ✅ **Documentation**: ATLAS_USER_GUIDE.md, GMAIL_SETUP_GUIDE.md, BULK_INGESTION_PLAN.md
+- ✅ **Bulk Import**: scripts/atlas_bulk_sender.py for importing 1,000s of URLs
 - ✅ **Smart CI/CD**: Only fails on actual broken code, not warnings
 
 ### What Needs Setup
@@ -42,6 +43,12 @@
   - Method B: IMAP (simpler)
   - Step-by-step authentication
   - Environment variable configuration
+
+- **BULK_INGESTION_PLAN.md** - Bulk URL import for backlogs
+  - Import 1,000s of URLs via email
+  - Automated batching and rate limiting
+  - Complete implementation guide
+  - Ready-to-use script included
 
 ### For Developers
 - **GITHUB_ACTIONS_IMPROVEMENTS.md** - Workflow documentation
@@ -77,7 +84,9 @@ nano .env
 # - IMAP (simpler, just app password)
 ```
 
-### Step 3: Test Content Ingestion
+### Step 3: Add Content
+
+**Option A: Single URL**
 ```bash
 # Add a test URL
 echo "https://example.com/article" >> inputs/articles.txt
@@ -86,6 +95,13 @@ echo "https://example.com/article" >> inputs/articles.txt
 
 # Run Atlas
 python atlas_manager.py
+```
+
+**Option B: Bulk Import (1,000+ URLs)**
+```bash
+# For large backlogs, use the bulk sender
+# See BULK_INGESTION_PLAN.md for details
+python scripts/atlas_bulk_sender.py ~/backlog.txt
 ```
 
 ### Step 4: Verify It's Working
@@ -125,8 +141,11 @@ Before using Atlas, configure:
 ### October 20, 2025
 - ✅ Consolidated GitHub Actions workflows
 - ✅ Added advanced security scanning (TruffleHog, Bandit, Safety, Semgrep, CodeQL)
-- ✅ Created comprehensive user documentation
-- ✅ Created Gmail setup guide
+- ✅ Fixed TruffleHog "BASE and HEAD are the same" error
+- ✅ Created comprehensive user documentation (ATLAS_USER_GUIDE.md)
+- ✅ Created Gmail setup guide (GMAIL_SETUP_GUIDE.md)
+- ✅ Created bulk URL import system (BULK_INGESTION_PLAN.md + script)
+- ✅ Added bulk sender script for importing 1,000s of URLs via email
 - ✅ Updated CLAUDE.md to reflect rebuilt state
 
 ### October 2, 2025 (Historical)
@@ -188,6 +207,7 @@ sqlite3 data/atlas.db "SELECT COUNT(*) FROM content;"
 ### Documentation
 - Start with **ATLAS_USER_GUIDE.md** for usage
 - Read **GMAIL_SETUP_GUIDE.md** for Gmail setup
+- See **BULK_INGESTION_PLAN.md** for bulk URL import (1,000+ URLs)
 - Check **.env.template** for configuration options
 
 ### Debugging
