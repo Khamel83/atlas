@@ -613,23 +613,17 @@ Based on your needs:
 
 ```
 Your Machine:
-~/scripts/
-  atlas_bulk_sender.py       # Main script (I'll provide)
-  sender_config.yaml          # Configuration
-  progress_tracker.json       # Auto-generated
-
-~/backlog/
-  urls.txt                    # Your full backlog
-  test_10.txt                 # Test file (10 URLs)
-  failed_urls.txt             # URLs that failed to send
+~/backlog.txt                       # Your URL backlog (one per line)
+~/test_urls.txt                     # Test file (5-10 URLs)
 
 Atlas Machine:
 ~/dev/atlas/
-  config/gmail_credentials.json   # Already exists
-  data/gmail_token.json            # Already exists
-  logs/gmail.log                   # Atlas logs
-  logs/processing.log              # Processing logs
-  data/atlas.db                    # Database grows
+  scripts/atlas_bulk_sender.py     # Bulk sender script (included in repo)
+  bulk_sender_progress.json        # Progress tracking (auto-generated)
+  .env                              # Gmail credentials (GMAIL_EMAIL_ADDRESS, GMAIL_APP_PASSWORD)
+  logs/gmail.log                    # Gmail IMAP/SMTP logs
+  logs/processing.log               # Content processing logs
+  data/atlas.db                     # Database (grows as content is processed)
 ```
 
 ---

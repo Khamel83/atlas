@@ -1,8 +1,9 @@
-# Atlas Development Status - October 20, 2025
+# Atlas Development Status - October 21, 2025
 
 ## ✅ **SYSTEM REBUILT - READY FOR USE**
 **Status**: Atlas has been rebuilt after October 2nd issues
 **Documentation**: Complete user guides and GitHub Actions workflows implemented
+**Gmail Integration**: IMAP/SMTP with app password (simple 5-minute setup)
 
 ---
 
@@ -39,8 +40,8 @@
   - Troubleshooting
 
 - **GMAIL_SETUP_GUIDE.md** - Gmail integration setup
-  - Method A: Gmail API (recommended)
-  - Method B: IMAP (simpler)
+  - IMAP/SMTP with app password (5-10 minutes)
+  - No OAuth or Google Cloud setup required
   - Step-by-step authentication
   - Environment variable configuration
 
@@ -79,9 +80,8 @@ nano .env
 ### Step 2: Set Up Gmail (Optional but Recommended)
 ```bash
 # Follow GMAIL_SETUP_GUIDE.md for detailed instructions
-# Two methods available:
-# - Gmail API (more features, requires Google Cloud setup)
-# - IMAP (simpler, just app password)
+# Simple 5-minute setup using IMAP/SMTP with app password
+# No OAuth or Google Cloud setup required
 ```
 
 ### Step 3: Add Content
@@ -129,14 +129,25 @@ Before using Atlas, configure:
 
 ### Optional but Recommended
 - [ ] Gmail integration (see GMAIL_SETUP_GUIDE.md)
-  - [ ] OAuth credentials OR app password
-  - [ ] Watch labels configured
+  - [ ] App password generated (5 minutes at https://myaccount.google.com/apppasswords)
+  - [ ] GMAIL_EMAIL_ADDRESS and GMAIL_APP_PASSWORD in .env
+  - [ ] Watch labels configured (e.g., "Atlas", "Newsletter")
 - [ ] YouTube API key (for video content)
 - [ ] RSS feeds configured (for podcasts/blogs)
 
 ---
 
 ## 📋 Recent Changes
+
+### October 21, 2025
+- ✅ **Switched from Gmail API to IMAP/SMTP** with app password
+  - Gmail API OAuth was failing with redirect_uri_mismatch errors
+  - IMAP/SMTP is simpler, more reliable, and works immediately
+  - Rewritten bulk sender to use SMTP (no external dependencies)
+  - Updated all documentation to reflect IMAP/SMTP approach
+- ✅ **Verified newsletter processing** working with IMAP
+  - Successfully processing 3,253+ newsletters
+  - Full content extraction (15K-42K chars per email)
 
 ### October 20, 2025
 - ✅ Consolidated GitHub Actions workflows
@@ -177,9 +188,11 @@ sqlite3 data/atlas.db "SELECT COUNT(*) FROM content;"
 4. See ATLAS_USER_GUIDE.md troubleshooting section
 
 ### "Gmail isn't working"
-1. Check credentials are in place
-2. For Gmail API: Check `config/gmail_credentials.json` and `data/gmail_token.json`
-3. For IMAP: Check app password in `.env`
+1. Check credentials are in place in `.env`:
+   - `GMAIL_EMAIL_ADDRESS=your-email@gmail.com`
+   - `GMAIL_APP_PASSWORD=your-16-char-app-password`
+2. Verify app password at https://myaccount.google.com/apppasswords
+3. Test IMAP connection: `python test_gmail_imap.py`
 4. See GMAIL_SETUP_GUIDE.md troubleshooting section
 
 ---
@@ -218,8 +231,8 @@ sqlite3 data/atlas.db "SELECT COUNT(*) FROM content;"
 
 ---
 
-**Last Updated**: 2025-10-20 20:30 UTC
-**Status**: ✅ Rebuilt and documented - Ready for configuration and testing
+**Last Updated**: 2025-10-21 UTC
+**Status**: ✅ Rebuilt and documented - IMAP/SMTP Gmail integration working
 **Next Action**: Follow ATLAS_USER_GUIDE.md and GMAIL_SETUP_GUIDE.md to configure and use Atlas
 
 ---

@@ -1,164 +1,246 @@
-# Atlas Quick Start - Getting Content IN
+# Atlas User Guide - Adding Content to Atlas
 
-**Last Updated**: 2025-10-20
-**Audience**: You (Developer + User)
-**Current Status**: ⚠️  System requires rebuild (see CLAUDE.md)
-
----
-
-## 📍 WHERE ARE YOU NOW?
-
-According to `CLAUDE.md`, Atlas is currently not processing new content. You have:
-- ✅ **25,831 content records** in database (data/atlas.db)
-- ✅ **15,977 substantial pieces** of content
-- ❌ **Processing broken** - needs rebuild
-
-**Before adding new content, you need to get Atlas running again.**
+**Last Updated**: 2025-10-21
+**Audience**: Atlas users (you!)
+**System Status**: ✅ Working - Ready to use
 
 ---
 
-## 🔧 FOR DEVELOPERS: Getting Atlas Running
+## 🎯 What This Guide Covers
 
-### Current Problem
-Multiple competing processes (atlas_manager.py, systemd services) are interfering with each other.
+This guide shows you **5 ways to add content to Atlas**:
+1. Gmail / Email (newsletters, labeled emails)
+2. RSS Feeds (podcasts, blogs)
+3. YouTube Videos
+4. Web Articles (URLs)
+5. Documents (PDFs, text files)
 
-### Quick Fix (Option A - Recommended)
+Plus troubleshooting tips and verification steps.
+
+---
+
+## 📧 Method 1: Gmail / Email Content
+
+**What it does**: Automatically imports newsletters, important emails, and labeled messages as markdown notes.
+
+### Setup (One-Time)
+
+Follow `GMAIL_SETUP_GUIDE.md` to:
+1. Generate Gmail app password (5 minutes)
+2. Add credentials to `.env`
+3. Configure which labels to watch
+
+### Adding Content
+
+**Option A: Label Existing Emails**
+1. Open Gmail
+2. Select emails you want in Atlas
+3. Apply label: "Atlas" (or your configured label)
+4. Wait for next Gmail check (default: every 15 minutes)
+
+**Option B: Auto-Label with Filters**
+1. In Gmail: Settings → Filters
+2. Create filter (e.g., "from:newsletter@example.com")
+3. Apply label: "Atlas"
+4. Future emails auto-labeled and imported
+
+### Verify It's Working
+
 ```bash
-# 1. Kill all competing processes
-pkill -f atlas_manager
-pkill -f monitoring_service
-sudo systemctl stop atlas-* 2>/dev/null
+# Check Gmail logs
+tail -f logs/gmail.log
 
-# 2. Check database is intact
-ls -lh data/atlas.db
-# Should show your database file
+# Look for:
+# "Connected to Gmail via IMAP"
+# "Processing email: [subject]"
+# "Extracted X URLs from email"
 
-# 3. Run single process WITHOUT systemd
-python atlas_manager.py --no-daemon
-
-# 4. Monitor logs
-tail -f logs/atlas.log
+# Check vault
+ls -lt vault/inbox/emails/ | head -10
 ```
 
-### What You're Looking For
-✅ **Success signs**:
-- "Atlas manager started"
-- "Processing content..."
-- No SIGTERM messages
-- Content actually gets processed
-
-❌ **Failure signs**:
-- "SIGTERM received" every 30 seconds
-- Multiple atlas processes running
-- Nothing happening in database
-
 ---
 
-## 👤 FOR USERS: How to Add Content (When Working)
-
-### 1. Gmail / Email Content 📧
-
-**What it does**: Automatically imports newsletters, important emails, and labeled messages.
-
-**How to add**:
-1. **Label emails** in Gmail with labels you're watching (default: "Atlas", "Newsletter")
-2. **That's it!** Atlas checks Gmail every X minutes (configured)
-3. **Emails appear** as markdown files in your vault
-
-**Manual trigger**:
-```bash
-# Force immediate Gmail sync
-python -m atlas.ingest.gmail --force
-```
-
-### 2. RSS Feeds (Podcasts, Blogs) 📻
+## 📻 Method 2: RSS Feeds (Podcasts, Blogs)
 
 **What it does**: Monitors RSS feeds and downloads podcast transcripts or article content.
 
-**How to add**:
+### Adding a Feed
+
 ```bash
-# Add RSS feed to config
+# Add RSS feed URL to config
 echo "https://example.com/podcast/feed.xml" >> config/rss_feeds.txt
 
-# Or edit the config file
+# Or edit directly
 nano config/podcasts_full.csv
 ```
 
-**Feeds are checked**: Every 4 hours automatically
+### How Often It Checks
 
-### 3. YouTube Videos 📺
+- Feeds checked: Every 4 hours (default)
+- Configurable in `.env`: `RSS_CHECK_INTERVAL=14400`
+
+### Verify It's Working
+
+```bash
+# Check RSS logs
+tail -f logs/rss.log
+
+# Check database for new podcast entries
+sqlite3 data/atlas.db "SELECT title FROM content WHERE source='rss' ORDER BY created_at DESC LIMIT 10;"
+```
+
+---
+
+## 📺 Method 3: YouTube Videos
 
 **What it does**: Downloads transcripts and metadata from YouTube videos.
 
-**How to add**:
+### Adding Videos
+
 ```bash
-# Add YouTube URL
+# Single video
 echo "https://www.youtube.com/watch?v=VIDEO_ID" >> inputs/youtube.txt
 
-# Multiple at once
+# Multiple videos
 cat << EOF >> inputs/youtube.txt
 https://www.youtube.com/watch?v=VIDEO_ID_1
 https://www.youtube.com/watch?v=VIDEO_ID_2
+https://www.youtube.com/watch?v=VIDEO_ID_3
 EOF
 ```
 
-**Videos are processed**: Daily at 3 AM automatically
+### How Often It Processes
 
-### 4. Web Articles 📰
+- Videos processed: Daily at 3 AM (default)
+- Or manually: `python -m atlas.ingest.youtube --force`
+
+### Verify It's Working
+
+```bash
+# Check YouTube logs
+tail -f logs/youtube.log
+
+# Check vault
+ls -lt vault/inbox/youtube/ | head -10
+```
+
+---
+
+## 📰 Method 4: Web Articles
 
 **What it does**: Downloads and extracts article content from URLs.
 
-**How to add**:
+### Adding Articles
+
 ```bash
-# Add article URL
+# Simple method: Add to file
 echo "https://example.com/article" >> inputs/articles.txt
 
-# Or use the API (if running)
+# Multiple at once
+cat << EOF >> inputs/articles.txt
+https://example.com/article1
+https://example.com/article2
+https://example.com/article3
+EOF
+
+# Or use the API (if web interface is running)
 curl -X POST http://localhost:7444/api/ingest/article \
   -H "Content-Type: application/json" \
   -d '{"url": "https://example.com/article"}'
 ```
 
-**Articles are processed**: Every 30 minutes automatically
+### Bulk Import (1,000+ URLs)
 
-### 5. Documents (PDF, TXT, Markdown) 📄
-
-**What it does**: Extracts text from uploaded documents.
-
-**How to add**:
+For large backlogs, use the bulk sender:
 ```bash
-# Copy file to inputs directory
-cp my-document.pdf inputs/
-
-# Or move it
-mv ~/Downloads/report.pdf inputs/
+# See BULK_INGESTION_PLAN.md for details
+python scripts/atlas_bulk_sender.py ~/backlog.txt
 ```
 
-**Documents are processed**: Every 30 minutes automatically
+### How Often It Processes
+
+- Articles processed: Every 30 minutes (default)
+- Configurable in `.env`: `ARTICLE_CHECK_INTERVAL=1800`
+
+### Verify It's Working
+
+```bash
+# Check processing logs
+tail -f logs/processing.log
+
+# Check vault
+ls -lt vault/inbox/articles/ | head -10
+
+# Check database
+sqlite3 data/atlas.db "SELECT COUNT(*) FROM content WHERE source='article';"
+```
 
 ---
 
-## 🔍 Check If It's Working
+## 📄 Method 5: Documents (PDF, TXT, Markdown)
 
-### As a User
+**What it does**: Extracts text from uploaded documents.
+
+### Adding Documents
+
 ```bash
-# Check recent content
-ls -lt vault/inbox/ | head -20
+# Copy document to inputs directory
+cp ~/Downloads/report.pdf inputs/
 
-# Check database
-sqlite3 data/atlas.db "SELECT COUNT(*) FROM content;"
+# Or move it
+mv my-notes.md inputs/
 
-# View processing logs
-tail -f logs/processing.log
+# Supported formats:
+# - PDF (.pdf)
+# - Text (.txt)
+# - Markdown (.md)
+# - Word (.docx) - if configured
 ```
 
-### As a Developer
+### How Often It Processes
+
+- Documents processed: Every 30 minutes (default)
+- Or manually: `python -m atlas.ingest.documents --force`
+
+### Verify It's Working
+
 ```bash
-# Check service status
-python atlas_status.py --detailed
+# Check document processing logs
+tail -f logs/documents.log
+
+# Check vault
+ls -lt vault/inbox/documents/ | head -10
+```
+
+---
+
+## ✅ How to Check If Atlas Is Working
+
+### Quick Checks
+
+```bash
+# 1. Check Atlas is running
+ps aux | grep atlas_manager
+
+# 2. Check recent activity in logs
+tail -f logs/atlas.log
+
+# 3. Check database is growing
+sqlite3 data/atlas.db "SELECT COUNT(*) FROM content;"
+
+# 4. Check vault has new files
+ls -lt vault/inbox/ | head -20
+```
+
+### Detailed Monitoring
+
+```bash
+# Watch database grow in real-time
+watch -n 10 "sqlite3 data/atlas.db 'SELECT COUNT(*) FROM content;'"
 
 # Monitor processing
-watch -n 5 "sqlite3 data/atlas.db 'SELECT COUNT(*) FROM content;'"
+tail -f logs/processing.log
 
 # Check for errors
 tail -f logs/errors.log
@@ -166,97 +248,257 @@ tail -f logs/errors.log
 
 ---
 
-## 🎯 Quick Workflow Example
+## 🎯 Complete Workflow Example
 
-**Scenario**: I want Atlas to process my "AI News" Gmail label
+**Scenario**: I want to import my "AI News" newsletter
+
+### Step-by-Step
 
 ```bash
-# 1. Make sure Gmail is configured (see GMAIL_SETUP_GUIDE.md)
-# 2. Label emails in Gmail with "AI News"
-# 3. Add label to watch list in .env:
+# 1. Set up Gmail (one-time, 5 minutes)
+# Follow GMAIL_SETUP_GUIDE.md
+
+# 2. Create "AI News" label in Gmail
+# Done via Gmail web interface
+
+# 3. Add label to .env watch list
 nano .env
-# Add: GMAIL_WATCH_LABELS=["Atlas", "Newsletter", "AI News"]
+# Update line:
+# GMAIL_LABEL="AI News"
+# Or watch multiple labels (if supported):
+# GMAIL_WATCH_LABELS=["Atlas", "Newsletter", "AI News"]
 
-# 4. Restart Atlas (or wait for next check)
-pkill -f atlas_manager && python atlas_manager.py
+# 4. Apply label to emails
+# In Gmail, select emails → Apply "AI News" label
 
-# 5. Check results
-ls -lt vault/inbox/emails/
+# 5. Wait for next check (or force it)
+# Atlas checks every 15 minutes by default
+# Or manually: python -m atlas.ingest.gmail --force
+
+# 6. Verify emails were imported
+ls -lt vault/inbox/emails/ | grep -i "ai news"
+
+# 7. Check database
+sqlite3 data/atlas.db "SELECT title FROM content WHERE source='gmail' ORDER BY created_at DESC LIMIT 10;"
 ```
 
 ---
 
-## ⚠️  IMPORTANT NOTES
-
-### Current System State
-- **Atlas is not running automatically** (based on CLAUDE.md)
-- **You need to start it manually** or fix the systemd services
-- **Database is intact** - your 25K+ records are safe
-
-### Before You Start Adding Content
-1. ✅ Verify Atlas is actually running
-2. ✅ Check logs show processing activity
-3. ✅ Test with ONE URL/email first
-4. ✅ Confirm it appears in database/vault
-5. ✅ THEN add more content
-
-### If Nothing Happens
-- Check `logs/atlas.log` for errors
-- Verify `.env` configuration is correct
-- Ensure only ONE atlas process is running: `ps aux | grep atlas`
-- Check disk space: `df -h`
-
----
-
-## 📖 Next Steps
-
-1. **Read GMAIL_SETUP_GUIDE.md** - Set up Gmail integration properly
-2. **Fix the system** - Follow CLAUDE.md rebuild instructions
-3. **Test with one item** - Add single URL/email and verify
-4. **Bulk add** - Once working, add all your sources
-
----
-
-## 🆘 Quick Troubleshooting
+## 🆘 Troubleshooting
 
 ### "I added content but nothing happened"
+
+**Check if Atlas is running:**
 ```bash
-# Check if Atlas is running
 ps aux | grep atlas_manager
-
-# Force manual processing
-python atlas_manager.py --process-now 2>/dev/null || python run.py --all
-
-# Check logs
-tail -n 50 logs/processing.log
+# Should see at least one process
 ```
 
-### "Content appears but isn't searchable"
+**If not running:**
 ```bash
-# Rebuild search index
-python scripts/populate_enhanced_search.py 2>/dev/null || echo "Script not found"
-
-# Test search
-curl "http://localhost:7444/api/search?q=test"
+# Start Atlas
+python atlas_manager.py
 ```
 
-### "Too much content, system is slow"
+**Check logs for errors:**
 ```bash
-# Reduce concurrent processing in .env
+tail -f logs/atlas.log
+tail -f logs/processing.log
+```
+
+**Force manual processing:**
+```bash
+# For Gmail
+python -m atlas.ingest.gmail --force
+
+# For articles
+python -m atlas.ingest.articles --force
+
+# For YouTube
+python -m atlas.ingest.youtube --force
+```
+
+---
+
+### "Gmail emails aren't being imported"
+
+**Check Gmail configuration:**
+```bash
+# Verify credentials in .env
+grep GMAIL .env
+
+# Should see:
+# GMAIL_ENABLED=true
+# GMAIL_EMAIL_ADDRESS=your-email@gmail.com
+# GMAIL_APP_PASSWORD=your-16-char-password
+# GMAIL_LABEL="Atlas"
+```
+
+**Test IMAP connection:**
+```bash
+python test_gmail_imap.py
+
+# Should see:
+# "✅ Connected to Gmail"
+# "Found X emails with label 'Atlas'"
+```
+
+**Check Gmail logs:**
+```bash
+tail -f logs/gmail.log
+
+# Look for:
+# "Connected to Gmail via IMAP"
+# "Processing email: [subject]"
+```
+
+**See GMAIL_SETUP_GUIDE.md** for detailed troubleshooting
+
+---
+
+### "Content appears but isn't in vault/searchable"
+
+**Check processing completed:**
+```bash
+# Look for processed content in database
+sqlite3 data/atlas.db "SELECT title, vault_path FROM content ORDER BY created_at DESC LIMIT 10;"
+```
+
+**Rebuild search index (if needed):**
+```bash
+python scripts/populate_enhanced_search.py
+```
+
+**Check vault permissions:**
+```bash
+# Ensure vault directory is writable
+ls -ld vault/
+ls -ld vault/inbox/
+```
+
+---
+
+### "System is slow / too much content processing"
+
+**Reduce concurrent processing:**
+```bash
+# Edit .env
 nano .env
-# Set:
-# MAX_CONCURRENT_ARTICLES=2
-# MAX_CONCURRENT_PODCASTS=1
+
+# Reduce these values:
+MAX_CONCURRENT_ARTICLES=2  # Default is usually 5-10
+MAX_CONCURRENT_PODCASTS=1
 
 # Restart Atlas
 pkill -f atlas_manager && python atlas_manager.py
 ```
 
+**Check system resources:**
+```bash
+# Check disk space
+df -h
+
+# Check memory
+free -h
+
+# Check CPU
+top
+```
+
 ---
 
-**Remember**: You're both developer and user. Start with getting it working (developer hat), then use it seamlessly (user hat).
+### "Bulk import isn't working"
 
-**See also**:
-- `GMAIL_SETUP_GUIDE.md` - Detailed Gmail configuration
-- `CLAUDE.md` - Current system status and rebuild options
-- `.env.template` - All configuration options
+**For bulk URL import via email**, see `BULK_INGESTION_PLAN.md`
+
+**Quick test:**
+```bash
+# Create test file with 5 URLs
+cat > /tmp/test_urls.txt << EOF
+https://example.com/1
+https://example.com/2
+https://example.com/3
+https://example.com/4
+https://example.com/5
+EOF
+
+# Run bulk sender (dry-run first)
+python scripts/atlas_bulk_sender.py /tmp/test_urls.txt --dry-run
+
+# If that works, send for real
+python scripts/atlas_bulk_sender.py /tmp/test_urls.txt
+```
+
+---
+
+## 📊 Configuration Quick Reference
+
+### Key .env Variables
+
+```bash
+# === REQUIRED ===
+OPENROUTER_API_KEY=sk-or-...  # For AI processing
+
+# === GMAIL (Optional but Recommended) ===
+GMAIL_ENABLED=true
+GMAIL_EMAIL_ADDRESS=your-email@gmail.com
+GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
+GMAIL_LABEL="Atlas"
+GMAIL_CHECK_INTERVAL=900  # 15 minutes
+
+# === PROCESSING INTERVALS ===
+ARTICLE_CHECK_INTERVAL=1800    # 30 minutes
+RSS_CHECK_INTERVAL=14400       # 4 hours
+YOUTUBE_CHECK_INTERVAL=86400   # Daily
+
+# === PERFORMANCE ===
+MAX_CONCURRENT_ARTICLES=5
+MAX_CONCURRENT_PODCASTS=2
+```
+
+### Processing Schedules (Defaults)
+
+| Content Type | Check Frequency | Configurable? |
+|--------------|-----------------|---------------|
+| Gmail        | Every 15 min    | Yes (GMAIL_CHECK_INTERVAL) |
+| Articles     | Every 30 min    | Yes (ARTICLE_CHECK_INTERVAL) |
+| RSS Feeds    | Every 4 hours   | Yes (RSS_CHECK_INTERVAL) |
+| YouTube      | Daily at 3 AM   | Yes (YOUTUBE_CHECK_INTERVAL) |
+| Documents    | Every 30 min    | Yes (DOCUMENT_CHECK_INTERVAL) |
+
+---
+
+## 📖 Next Steps
+
+Now that you know how to add content:
+
+1. **Set up Gmail** (recommended): Follow `GMAIL_SETUP_GUIDE.md`
+2. **Add your first content**: Try one method above
+3. **Verify it works**: Check logs and vault
+4. **Bulk import** (if needed): See `BULK_INGESTION_PLAN.md`
+5. **Configure sources**: Add your RSS feeds, labels, etc.
+
+---
+
+## 📚 Related Documentation
+
+- **GMAIL_SETUP_GUIDE.md** - Detailed Gmail/IMAP setup (5-10 minutes)
+- **BULK_INGESTION_PLAN.md** - Import 1,000+ URLs via email
+- **CLAUDE.md** - Current system status and overview
+- **.env.template** - All configuration options explained
+
+---
+
+## ✨ Pro Tips
+
+1. **Use Gmail filters** to auto-label incoming emails with "Atlas"
+2. **Start small** - test with 1-2 items before bulk importing
+3. **Monitor logs** - they tell you exactly what's happening
+4. **Check database counts** - quick way to see if content is being added
+5. **Bookmark this guide** - you'll reference it often at first!
+
+---
+
+**Questions?** Check `CLAUDE.md` for system status or troubleshooting sections above.
+
+**Happy Atlas-ing! 🚀**

@@ -1,7 +1,7 @@
 # GitHub Actions Workflow Improvements
 
-**Date**: 2025-10-20
-**Status**: ✅ Complete
+**Date**: 2025-10-20 (Updated: 2025-10-21)
+**Status**: ✅ Complete and Fixed
 
 ## Summary
 
@@ -284,7 +284,7 @@ For issues or questions:
 
 ## ✅ Verification Test
 
-**Date**: 2025-10-20 19:58 UTC  
+**Date**: 2025-10-20 19:58 UTC
 **Status**: Testing workflow execution
 
 This line added to verify:
@@ -292,4 +292,22 @@ This line added to verify:
 - Security scans execute successfully
 - Secrets are properly configured
 - Smart failure handling works as expected
+
+---
+
+## 🔧 Post-Launch Fix (October 21, 2025)
+
+### TruffleHog "BASE and HEAD are the same" Error
+
+**Problem**: TruffleHog was failing with error "BASE and HEAD commits are the same" when running on push events to main branch.
+
+**Root Cause**: Using the same commit SHA for both base and head parameters.
+
+**Fix**: Split TruffleHog into two conditional steps:
+- **PR events**: Use `pull_request.base.sha` and `pull_request.head.sha`
+- **Push events**: Use `github.event.before` and `github.event.after`
+
+**Impact**: TruffleHog now works correctly on all event types.
+
+**Commit**: See atlas-ci.yml for implementation details.
 
