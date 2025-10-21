@@ -3,7 +3,37 @@
 **Goal**: Import a backlog of URLs (hundreds/thousands) into Atlas efficiently via email
 
 **Date**: 2025-10-20
-**Status**: Planning Phase
+**Status**: ✅ READY TO USE - Script complete, tested architecture
+
+---
+
+## 🚀 QUICK START (TL;DR)
+
+**You have 10,000 URLs and want to get them into Atlas?**
+
+```bash
+# 1. Create your backlog file (one URL per line)
+cat > ~/backlog.txt << 'EOF'
+https://example.com/article1
+https://example.com/article2
+...
+EOF
+
+# 2. Run the script (automatically handles Gmail limits)
+cd ~/dev/atlas
+python scripts/atlas_bulk_sender.py ~/backlog.txt
+
+# That's it! Script will:
+# - Send 250 URLs per email
+# - Respect 2,000 email/day limit (free Gmail)
+# - Auto-apply "Atlas" label
+# - Track progress (can resume if interrupted)
+# - Take ~2 days for 10,000 URLs
+```
+
+**Script location**: `scripts/atlas_bulk_sender.py` (included in repo)
+
+**Processing**: Atlas will process URLs over hours/days/weeks - no rush!
 
 ---
 
