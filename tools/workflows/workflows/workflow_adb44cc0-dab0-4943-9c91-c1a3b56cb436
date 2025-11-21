@@ -1,0 +1,25 @@
+2025-09-14T20:42:40.806969 INFO: Attempting direct fetch for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:40.988686 ERROR: Direct fetch failed for https://people.com/archive/coverage-denied-vol-68-no-4/: 403 Client Error: Forbidden for url: https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:40.989866 INFO: Attempting Reader Mode strategy for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.075876 ERROR: Reader mode fetch failed for https://people.com/archive/coverage-denied-vol-68-no-4/: 403 Client Error: Forbidden for url: https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.076980 INFO: Attempting JS Disabled strategy for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.169909 ERROR: JS disabled fetch failed for https://people.com/archive/coverage-denied-vol-68-no-4/: 403 Client Error: Forbidden for url: https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.171003 INFO: Attempting Refresh Stop strategy for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.261895 ERROR: Refresh stop fetch failed for https://people.com/archive/coverage-denied-vol-68-no-4/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:42:41.263293 INFO: Attempting Inspect Element strategy for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.371021 ERROR: Inspect element fetch failed for https://people.com/archive/coverage-denied-vol-68-no-4/: 403 Client Error: Forbidden for url: https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:41.372506 INFO: Attempting removepaywalls.com bypass for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:46.311268 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:42:46.311376 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:42:46.311405 INFO: Attempting archive.today for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:49.594651 INFO: No existing archive found, creating new archive for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:50.507961 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:42:50.508402 INFO: Attempting archive.is for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:52.648240 INFO: Attempting archive.li for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:55.963129 INFO: Attempting archive.fo for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:42:59.650487 INFO: Attempting archive.ph for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:43:03.139398 INFO: Attempting Googlebot spoof for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:43:03.241199 ERROR: Googlebot spoof failed for https://people.com/archive/coverage-denied-vol-68-no-4/: 403 Client Error: Forbidden for url: https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:43:03.242553 INFO: Attempting Enhanced Wayback Machine for https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:43:03.830483 INFO: Found Wayback snapshot from 20240919222120: http://web.archive.org/web/20240919222120/https://people.com/archive/coverage-denied-vol-68-no-4/
+2025-09-14T20:43:05.418836 INFO: Successfully fetched https://people.com/archive/coverage-denied-vol-68-no-4/ using wayback_machine_enhanced

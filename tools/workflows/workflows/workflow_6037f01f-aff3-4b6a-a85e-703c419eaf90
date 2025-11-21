@@ -1,0 +1,24 @@
+2025-09-15T12:59:03.763622 INFO: Attempting direct fetch for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T12:59:33.943841 ERROR: Direct fetch failed for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T12:59:33.943976 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T12:59:54.041884 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T12:59:54.042025 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:14.166967 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:00:14.167095 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:17.229942 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:37.327268 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:00:37.327418 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:40.108281 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:00:40.108418 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:00:40.108446 INFO: Attempting archive.today for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:43.190912 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:44.069874 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:00:44.070391 INFO: Attempting archive.is for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:46.406477 INFO: Attempting archive.li for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:49.741768 INFO: Attempting archive.fo for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:52.343288 INFO: Attempting archive.ph for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:00:56.108984 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:01:11.239283 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T13:01:11.239409 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:01:17.551540 INFO: Found Wayback snapshot from 20220518085210: http://web.archive.org/web/20220518085210/https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/
+2025-09-15T13:01:18.966662 INFO: Successfully fetched https://www.washingtonpost.com/politics/2021/12/07/white-house-gets-testy-its-coroanvirus-testing-regime/ using wayback_machine_enhanced

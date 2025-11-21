@@ -1,0 +1,144 @@
+2025-09-14T22:31:59.554708 INFO: Attempting direct fetch for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:31:59.814446 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:31:59.871672 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:31:59.871786 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:59.871827 INFO: Attempting Reader Mode strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:00.035555 ERROR: Reader mode fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:32:00.037665 INFO: Attempting JS Disabled strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:00.248988 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:32:00.249090 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:00.249120 INFO: Attempting Refresh Stop strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:00.451482 ERROR: Refresh stop fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:32:00.457331 INFO: Attempting Inspect Element strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:00.779534 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:32:00.779660 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:00.779690 INFO: Attempting removepaywalls.com bypass for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:05.484762 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:32:05.484871 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:05.484897 INFO: Attempting archive.today for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:07.654205 INFO: No existing archive found, creating new archive for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:08.574670 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:32:08.575472 INFO: Attempting archive.is for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:11.124015 INFO: Attempting archive.li for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:26.881533 INFO: Attempting archive.fo for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:30.127409 INFO: Attempting archive.ph for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:34.844834 INFO: Attempting Googlebot spoof for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:34.961212 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:32:34.961329 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:34.961355 INFO: Attempting Enhanced Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:40.746550 INFO: Found Wayback snapshot from 20231203034918: http://web.archive.org/web/20231203034918/https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:41.689895 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:32:41.690036 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:41.690064 INFO: Attempting Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:41.841070 ERROR: Wayback Machine failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: No archived snapshots found
+2025-09-14T22:32:41.843575 ERROR: All fetch strategies failed or returned low-quality content for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect. Attempting Google Search fallback...
+2025-09-14T22:32:41.844003 INFO: Google Search fallback: searching for 'esquire all access membership 2.html'
+2025-09-14T22:32:41.926210 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:32:41.938813 INFO: Attempting direct fetch for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:42.166218 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:32:42.257517 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:32:42.258821 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:42.258895 INFO: Attempting Reader Mode strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:42.464153 ERROR: Reader mode fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:32:42.469219 INFO: Attempting JS Disabled strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:42.742703 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:32:42.742859 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:42.742888 INFO: Attempting Refresh Stop strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:42.847696 ERROR: Refresh stop fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:32:42.857990 INFO: Attempting Inspect Element strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:43.228562 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:32:43.228830 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:43.228866 INFO: Attempting removepaywalls.com bypass for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:48.313188 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:32:48.313298 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:32:48.313324 INFO: Attempting archive.today for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:52.279279 INFO: No existing archive found, creating new archive for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:53.181481 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:32:53.182317 INFO: Attempting archive.is for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:56.104752 INFO: Attempting archive.li for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:32:59.964298 INFO: Attempting archive.fo for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:02.597120 INFO: Attempting archive.ph for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:04.878777 INFO: Attempting Googlebot spoof for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:05.054123 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:05.054252 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:05.054280 INFO: Attempting Enhanced Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:05.300631 INFO: Found Wayback snapshot from 20231203034918: http://web.archive.org/web/20231203034918/https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:05.432319 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:05.432453 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:05.432478 INFO: Attempting Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:05.547638 ERROR: Wayback Machine failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: No archived snapshots found
+2025-09-14T22:33:05.550030 ERROR: All fetch strategies failed or returned low-quality content for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect. Attempting Google Search fallback...
+2025-09-14T22:33:05.550401 INFO: Google Search fallback: searching for 'esquire all access membership 2.html'
+2025-09-14T22:33:05.585435 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:33:05.594910 INFO: Attempting direct fetch for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:05.769108 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:05.830445 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:05.830621 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:05.830670 INFO: Attempting Reader Mode strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:05.976076 ERROR: Reader mode fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:33:05.978343 INFO: Attempting JS Disabled strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:06.240008 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:33:06.240154 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:06.240187 INFO: Attempting Refresh Stop strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:06.337174 ERROR: Refresh stop fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:33:06.339706 INFO: Attempting Inspect Element strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:06.592505 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:33:06.592646 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:06.592679 INFO: Attempting removepaywalls.com bypass for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:10.403372 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:33:10.403521 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:10.403548 INFO: Attempting archive.today for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:12.397337 INFO: No existing archive found, creating new archive for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:13.260852 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:33:13.261695 INFO: Attempting archive.is for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:15.833623 INFO: Attempting archive.li for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:19.066354 INFO: Attempting archive.fo for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:22.486799 INFO: Attempting archive.ph for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:32.937304 INFO: Attempting Googlebot spoof for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:33.058476 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:33.058584 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:33.058634 INFO: Attempting Enhanced Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:33.330972 INFO: Found Wayback snapshot from 20231203034918: http://web.archive.org/web/20231203034918/https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:33.459664 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:33.459782 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:33.459806 INFO: Attempting Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:33.635197 ERROR: Wayback Machine failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: No archived snapshots found
+2025-09-14T22:33:33.637466 ERROR: All fetch strategies failed or returned low-quality content for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect. Attempting Google Search fallback...
+2025-09-14T22:33:33.637859 INFO: Google Search fallback: searching for 'esquire all access membership 2.html'
+2025-09-14T22:33:33.670073 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:33:33.680128 INFO: Attempting direct fetch for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:33.876675 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:34.073369 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:34.073470 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:34.073514 INFO: Attempting Reader Mode strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:34.244487 ERROR: Reader mode fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:33:34.254553 INFO: Attempting JS Disabled strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:34.570449 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:33:34.570551 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:34.570579 INFO: Attempting Refresh Stop strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:34.734654 ERROR: Refresh stop fetch failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: cannot use a string pattern on a bytes-like object
+2025-09-14T22:33:34.740952 INFO: Attempting Inspect Element strategy for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:35.116275 INFO: Content is very short (72 words). Likely a teaser.
+2025-09-14T22:33:35.116384 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:35.116410 INFO: Attempting removepaywalls.com bypass for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:37.520705 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:33:37.520825 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:37.520854 INFO: Attempting archive.today for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:39.296552 INFO: No existing archive found, creating new archive for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:40.206096 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:33:40.207033 INFO: Attempting archive.is for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:42.729517 INFO: Attempting archive.li for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:46.600178 INFO: Attempting archive.fo for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:49.214612 INFO: Attempting archive.ph for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:51.348641 INFO: Attempting Googlebot spoof for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:51.523349 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:51.523484 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:51.523512 INFO: Attempting Enhanced Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:51.765051 INFO: Found Wayback snapshot from 20231203034918: http://web.archive.org/web/20231203034918/https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:51.886147 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T22:33:51.886333 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:33:51.886361 INFO: Attempting Wayback Machine for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect
+2025-09-14T22:33:51.999868 ERROR: Wayback Machine failed for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect: No archived snapshots found
+2025-09-14T22:33:52.006670 ERROR: All fetch strategies failed or returned low-quality content for https://shop.esquire.com/esquire-all-access-membership-2.html?cds_tracking_code=esqengredirect. Attempting Google Search fallback...
+2025-09-14T22:33:52.007295 INFO: Google Search fallback: searching for 'esquire all access membership 2.html'
+2025-09-14T22:33:52.080134 INFO: Google Search fallback did not find alternative URL

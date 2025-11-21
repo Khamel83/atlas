@@ -1,0 +1,27 @@
+2025-09-15T08:42:53.902728 INFO: Attempting direct fetch for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:42:59.556406 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T08:42:59.709440 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T08:42:59.709566 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:42:59.709635 INFO: Attempting Reader Mode strategy for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:00.182085 ERROR: Reader mode fetch failed for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html: cannot use a string pattern on a bytes-like object
+2025-09-15T08:43:00.183953 INFO: Attempting JS Disabled strategy for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:00.680924 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T08:43:00.681031 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:43:00.681061 INFO: Attempting Refresh Stop strategy for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:01.152934 ERROR: Refresh stop fetch failed for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html: cannot use a string pattern on a bytes-like object
+2025-09-15T08:43:01.154733 INFO: Attempting Inspect Element strategy for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:01.832693 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T08:43:01.832806 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:43:01.832832 INFO: Attempting removepaywalls.com bypass for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:04.377139 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:43:04.377252 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:43:04.377281 INFO: Attempting archive.today for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:07.683309 INFO: No existing archive found, creating new archive for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:08.600412 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:43:08.600934 INFO: Attempting archive.is for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:11.771637 INFO: Attempting archive.li for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:14.126136 INFO: Attempting archive.fo for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:17.076059 INFO: Attempting archive.ph for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:20.862622 INFO: Attempting Googlebot spoof for http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html
+2025-09-15T08:43:21.473119 INFO: Content is very short (30 words). Likely a teaser.
+2025-09-15T08:43:21.473493 INFO: Successfully fetched http://www.frugaltravelguy.com/2016/02/10-cool-new-travel-products-for-2016.html using googlebot_spoof

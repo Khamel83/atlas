@@ -1,0 +1,99 @@
+2025-09-14T21:16:08.037467 INFO: Attempting direct fetch for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:08.676797 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:16:08.700856 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:16:08.700972 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:08.701015 INFO: Attempting Reader Mode strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:09.066060 ERROR: Reader mode fetch failed for http://jonahweiner.com/Louis_CK_Q&A.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:16:09.068452 INFO: Attempting JS Disabled strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:09.466695 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-14T21:16:09.466801 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:09.466829 INFO: Attempting Refresh Stop strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:09.811573 ERROR: Refresh stop fetch failed for http://jonahweiner.com/Louis_CK_Q&A.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:16:09.813506 INFO: Attempting Inspect Element strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:10.242041 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-14T21:16:10.242136 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:10.242163 INFO: Attempting removepaywalls.com bypass for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:15.329956 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:16:15.330081 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:15.330109 INFO: Attempting archive.today for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:20.221287 INFO: No existing archive found, creating new archive for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:21.089668 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:16:21.090037 INFO: Attempting archive.is for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:25.016787 INFO: Attempting archive.li for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:27.820293 INFO: Attempting archive.fo for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:30.558162 INFO: Attempting archive.ph for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:33.385765 INFO: Attempting Googlebot spoof for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:33.458822 ERROR: Googlebot spoof failed for http://jonahweiner.com/Louis_CK_Q&A.html: 403 Client Error: Forbidden for url: http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:33.458987 INFO: Attempting Enhanced Wayback Machine for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:49.774299 ERROR: Enhanced Wayback Machine failed for http://jonahweiner.com/Louis_CK_Q&A.html: No archived snapshots found in any timeframe
+2025-09-14T21:16:49.775503 INFO: Attempting Wayback Machine for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:49.894985 ERROR: Wayback Machine failed for http://jonahweiner.com/Louis_CK_Q&A.html: No archived snapshots found
+2025-09-14T21:16:49.896332 ERROR: All fetch strategies failed or returned low-quality content for http://jonahweiner.com/Louis_CK_Q&A.html. Attempting Google Search fallback...
+2025-09-14T21:16:49.896789 INFO: Google Search fallback: searching for 'Louis CK Q&A.html'
+2025-09-14T21:16:49.928822 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:16:49.937136 INFO: Attempting direct fetch for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:50.286786 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:16:50.310031 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:16:50.310140 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:50.310196 INFO: Attempting Reader Mode strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:50.667283 ERROR: Reader mode fetch failed for http://jonahweiner.com/Louis_CK_Q&A.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:16:50.669268 INFO: Attempting JS Disabled strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:51.010373 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-14T21:16:51.010475 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:51.010501 INFO: Attempting Refresh Stop strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:51.340446 ERROR: Refresh stop fetch failed for http://jonahweiner.com/Louis_CK_Q&A.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:16:51.342315 INFO: Attempting Inspect Element strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:51.704741 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-14T21:16:51.704849 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:51.704875 INFO: Attempting removepaywalls.com bypass for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:54.059414 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:16:54.059524 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:16:54.059550 INFO: Attempting archive.today for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:57.225070 INFO: No existing archive found, creating new archive for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:16:58.099728 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:16:58.100131 INFO: Attempting archive.is for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:00.530916 INFO: Attempting archive.li for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:03.603108 INFO: Attempting archive.fo for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:06.704639 INFO: Attempting archive.ph for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:10.378700 INFO: Attempting Googlebot spoof for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:10.449771 ERROR: Googlebot spoof failed for http://jonahweiner.com/Louis_CK_Q&A.html: 403 Client Error: Forbidden for url: http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:10.449942 INFO: Attempting Enhanced Wayback Machine for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:11.630872 ERROR: Enhanced Wayback Machine failed for http://jonahweiner.com/Louis_CK_Q&A.html: No archived snapshots found in any timeframe
+2025-09-14T21:17:11.632226 INFO: Attempting Wayback Machine for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:11.810049 ERROR: Wayback Machine failed for http://jonahweiner.com/Louis_CK_Q&A.html: No archived snapshots found
+2025-09-14T21:17:11.811488 ERROR: All fetch strategies failed or returned low-quality content for http://jonahweiner.com/Louis_CK_Q&A.html. Attempting Google Search fallback...
+2025-09-14T21:17:11.811670 INFO: Google Search fallback: searching for 'Louis CK Q&A.html'
+2025-09-14T21:17:11.843996 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:17:11.851884 INFO: Attempting direct fetch for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:12.203649 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:17:12.227246 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:17:12.227358 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:17:12.227396 INFO: Attempting Reader Mode strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:12.536509 ERROR: Reader mode fetch failed for http://jonahweiner.com/Louis_CK_Q&A.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:17:12.538759 INFO: Attempting JS Disabled strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:12.896135 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-14T21:17:12.896235 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:17:12.896262 INFO: Attempting Refresh Stop strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:13.193767 ERROR: Refresh stop fetch failed for http://jonahweiner.com/Louis_CK_Q&A.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:17:13.195518 INFO: Attempting Inspect Element strategy for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:13.531987 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-14T21:17:13.532094 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:17:13.532121 INFO: Attempting removepaywalls.com bypass for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:18.617822 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:17:18.617928 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:17:18.617958 INFO: Attempting archive.today for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:22.346426 INFO: No existing archive found, creating new archive for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:23.230833 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:17:23.231270 INFO: Attempting archive.is for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:25.371729 INFO: Attempting archive.li for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:29.106057 INFO: Attempting archive.fo for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:31.854216 INFO: Attempting archive.ph for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:35.529425 INFO: Attempting Googlebot spoof for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:35.601642 ERROR: Googlebot spoof failed for http://jonahweiner.com/Louis_CK_Q&A.html: 403 Client Error: Forbidden for url: http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:35.601830 INFO: Attempting Enhanced Wayback Machine for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:36.833237 ERROR: Enhanced Wayback Machine failed for http://jonahweiner.com/Louis_CK_Q&A.html: No archived snapshots found in any timeframe
+2025-09-14T21:17:36.834494 INFO: Attempting Wayback Machine for http://jonahweiner.com/Louis_CK_Q&A.html
+2025-09-14T21:17:36.951418 ERROR: Wayback Machine failed for http://jonahweiner.com/Louis_CK_Q&A.html: No archived snapshots found
+2025-09-14T21:17:36.952787 ERROR: All fetch strategies failed or returned low-quality content for http://jonahweiner.com/Louis_CK_Q&A.html. Attempting Google Search fallback...
+2025-09-14T21:17:36.953188 INFO: Google Search fallback: searching for 'Louis CK Q&A.html'
+2025-09-14T21:17:36.985209 INFO: Google Search fallback did not find alternative URL

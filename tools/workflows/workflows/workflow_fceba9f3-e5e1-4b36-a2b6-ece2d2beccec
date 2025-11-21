@@ -1,0 +1,89 @@
+2025-09-15T10:19:11.758800 INFO: Attempting direct fetch for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:12.434738 ERROR: Direct fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:12.437031 INFO: Attempting Reader Mode strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:12.711674 ERROR: Reader mode fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:12.713961 INFO: Attempting JS Disabled strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:12.944787 ERROR: JS disabled fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:12.947068 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:13.233336 ERROR: Refresh stop fetch failed for https://doi.org/10.1007/s10464-008-9165-0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:19:13.235696 INFO: Attempting Inspect Element strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:13.485449 ERROR: Inspect element fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:13.487946 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:17.875065 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:19:17.875176 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:19:17.875202 INFO: Attempting archive.today for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:21.100487 INFO: No existing archive found, creating new archive for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:22.026105 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:19:22.026585 INFO: Attempting archive.is for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:24.694196 INFO: Attempting archive.li for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:27.926329 INFO: Attempting archive.fo for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:30.340089 INFO: Attempting archive.ph for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:33.096905 INFO: Attempting Googlebot spoof for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:33.566541 ERROR: Googlebot spoof failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:33.569310 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:54.246430 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1007/s10464-008-9165-0: No archived snapshots found in any timeframe
+2025-09-15T10:19:54.247910 INFO: Attempting Wayback Machine for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:54.710767 ERROR: Wayback Machine failed for https://doi.org/10.1007/s10464-008-9165-0: No archived snapshots found
+2025-09-15T10:19:54.712682 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1007/s10464-008-9165-0. Attempting Google Search fallback...
+2025-09-15T10:19:54.713213 INFO: Google Search fallback: searching for 's10464 008 9165 0'
+2025-09-15T10:19:54.745127 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:19:54.752778 INFO: Attempting direct fetch for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.083512 ERROR: Direct fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.085887 INFO: Attempting Reader Mode strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.325377 ERROR: Reader mode fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.327852 INFO: Attempting JS Disabled strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.680106 ERROR: JS disabled fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.683821 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:55.921491 ERROR: Refresh stop fetch failed for https://doi.org/10.1007/s10464-008-9165-0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:19:55.924169 INFO: Attempting Inspect Element strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:19:56.367958 ERROR: Inspect element fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:19:56.370647 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:00.897953 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:20:00.898071 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:20:00.898100 INFO: Attempting archive.today for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:02.985877 INFO: No existing archive found, creating new archive for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:03.847580 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:20:03.848011 INFO: Attempting archive.is for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:07.708766 INFO: Attempting archive.li for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:11.191537 INFO: Attempting archive.fo for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:13.986631 INFO: Attempting archive.ph for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:17.337959 INFO: Attempting Googlebot spoof for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:17.578851 ERROR: Googlebot spoof failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:17.581887 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:19.541688 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1007/s10464-008-9165-0: No archived snapshots found in any timeframe
+2025-09-15T10:20:19.543034 INFO: Attempting Wayback Machine for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:19.664371 ERROR: Wayback Machine failed for https://doi.org/10.1007/s10464-008-9165-0: No archived snapshots found
+2025-09-15T10:20:19.666373 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1007/s10464-008-9165-0. Attempting Google Search fallback...
+2025-09-15T10:20:19.667000 INFO: Google Search fallback: searching for 's10464 008 9165 0'
+2025-09-15T10:20:19.702674 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:20:19.712539 INFO: Attempting direct fetch for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:19.943053 ERROR: Direct fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:19.953190 INFO: Attempting direct fetch for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:20.293776 ERROR: Direct fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:20.296095 INFO: Attempting Reader Mode strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:20.519536 ERROR: Reader mode fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:20.521870 INFO: Attempting JS Disabled strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:20.767540 ERROR: JS disabled fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:20.769970 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:21.146962 ERROR: Refresh stop fetch failed for https://doi.org/10.1007/s10464-008-9165-0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:20:21.149320 INFO: Attempting Inspect Element strategy for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:21.415842 ERROR: Inspect element fetch failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:21.418204 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:25.774431 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:20:25.774540 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:20:25.774567 INFO: Attempting archive.today for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:27.942028 INFO: No existing archive found, creating new archive for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:28.978434 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:20:28.980954 INFO: Attempting archive.is for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:32.861117 INFO: Attempting archive.li for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:36.435010 INFO: Attempting archive.fo for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:38.553105 INFO: Attempting archive.ph for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:41.835469 INFO: Attempting Googlebot spoof for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:42.151114 ERROR: Googlebot spoof failed for https://doi.org/10.1007/s10464-008-9165-0: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1007/s10464-008-9165-0
+2025-09-15T10:20:42.154221 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:43.658675 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1007/s10464-008-9165-0: No archived snapshots found in any timeframe
+2025-09-15T10:20:43.660002 INFO: Attempting Wayback Machine for https://doi.org/10.1007/s10464-008-9165-0
+2025-09-15T10:20:43.818518 ERROR: Wayback Machine failed for https://doi.org/10.1007/s10464-008-9165-0: No archived snapshots found
+2025-09-15T10:20:43.820728 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1007/s10464-008-9165-0. Attempting Google Search fallback...
+2025-09-15T10:20:43.821362 INFO: Google Search fallback: searching for 's10464 008 9165 0'
+2025-09-15T10:20:43.857237 INFO: Google Search fallback did not find alternative URL

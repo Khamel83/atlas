@@ -1,0 +1,30 @@
+2025-09-15T19:17:42.416801 INFO: Attempting direct fetch for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:42.587737 INFO: Paywall element '.paywall' detected.
+2025-09-15T19:17:42.649357 INFO: Paywall element '.paywall' detected.
+2025-09-15T19:17:42.649529 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:17:42.649575 INFO: Attempting Reader Mode strategy for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:42.708552 ERROR: Reader mode fetch failed for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/: cannot use a string pattern on a bytes-like object
+2025-09-15T19:17:42.710974 INFO: Attempting JS Disabled strategy for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:42.871340 INFO: Paywall element '.paywall' detected.
+2025-09-15T19:17:42.871449 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:17:42.871474 INFO: Attempting Refresh Stop strategy for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:42.924475 ERROR: Refresh stop fetch failed for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/: cannot use a string pattern on a bytes-like object
+2025-09-15T19:17:42.926677 INFO: Attempting Inspect Element strategy for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:43.199742 INFO: Content is very short (108 words). Likely a teaser.
+2025-09-15T19:17:43.199851 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:17:43.199878 INFO: Attempting removepaywalls.com bypass for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:47.944767 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T19:17:47.944888 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:17:47.944918 INFO: Attempting archive.today for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:50.973093 INFO: No existing archive found, creating new archive for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:51.834901 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:17:51.835360 INFO: Attempting archive.is for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:54.796943 INFO: Attempting archive.li for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:17:57.554025 INFO: Attempting archive.fo for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:18:01.111411 INFO: Attempting archive.ph for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:18:04.649748 INFO: Attempting Googlebot spoof for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:18:04.911053 INFO: Paywall element '.paywall' detected.
+2025-09-15T19:18:04.911176 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:18:04.911206 INFO: Attempting Enhanced Wayback Machine for https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:18:27.504208 INFO: Found Wayback snapshot from 20200920135402: http://web.archive.org/web/20200920135402/https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/
+2025-09-15T19:18:28.119996 INFO: Successfully fetched https://www.wired.com/story/geoengineering-is-the-only-solution-to-our-climate-calamities/ using wayback_machine_enhanced

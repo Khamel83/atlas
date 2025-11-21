@@ -1,0 +1,105 @@
+2025-09-14T20:18:57.124812 INFO: Attempting direct fetch for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:18:58.779695 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:18:59.020833 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:18:59.020950 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:18:59.020990 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:18:59.280297 ERROR: Reader mode fetch failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:18:59.282303 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:00.784867 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:00.784981 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:00.785008 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:01.771841 ERROR: Refresh stop fetch failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:19:01.774368 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:03.566863 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:03.566960 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:03.566992 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:06.531469 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T20:19:06.531583 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:06.531636 INFO: Attempting archive.today for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:08.939847 INFO: No existing archive found, creating new archive for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:09.835760 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:19:09.836454 INFO: Attempting archive.is for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:13.472346 INFO: Attempting archive.li for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:16.732160 INFO: Attempting archive.fo for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:19.330926 INFO: Attempting archive.ph for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:21.670153 INFO: Attempting Googlebot spoof for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:21.835459 ERROR: Googlebot spoof failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:21.837219 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:27.413402 INFO: Found Wayback snapshot from 20231002225311: http://web.archive.org/web/20231002225311/https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:28.468067 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:28.468188 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:28.468219 INFO: Attempting Wayback Machine for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:28.595350 ERROR: Wayback Machine failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: No archived snapshots found
+2025-09-14T20:19:28.597458 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html. Attempting Google Search fallback...
+2025-09-14T20:19:28.597802 INFO: Google Search fallback: searching for 'disney staff to walk out over companys response to florida lgbtq bill.html'
+2025-09-14T20:19:28.630476 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:19:28.641447 INFO: Attempting direct fetch for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:30.163984 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:30.420093 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:30.420193 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:30.420234 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:30.692820 ERROR: Reader mode fetch failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:19:30.694901 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:32.224114 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:32.224227 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:32.224255 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:33.281202 ERROR: Refresh stop fetch failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:19:33.285701 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:35.086243 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:35.086338 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:35.086365 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:37.535690 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T20:19:37.535801 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:37.535827 INFO: Attempting archive.today for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:40.468396 INFO: No existing archive found, creating new archive for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:41.344854 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:19:41.345543 INFO: Attempting archive.is for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:43.406024 INFO: Attempting archive.li for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:45.591568 INFO: Attempting archive.fo for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:48.243248 INFO: Attempting archive.ph for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:51.694832 INFO: Attempting Googlebot spoof for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:51.856247 ERROR: Googlebot spoof failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:51.858276 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:52.102861 INFO: Found Wayback snapshot from 20231002225311: http://web.archive.org/web/20231002225311/https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:52.634736 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:52.634857 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:52.634886 INFO: Attempting Wayback Machine for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:52.744733 ERROR: Wayback Machine failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: No archived snapshots found
+2025-09-14T20:19:52.747088 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html. Attempting Google Search fallback...
+2025-09-14T20:19:52.747220 INFO: Google Search fallback: searching for 'disney staff to walk out over companys response to florida lgbtq bill.html'
+2025-09-14T20:19:52.783827 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:19:52.792088 INFO: Attempting direct fetch for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:53.371379 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:53.612990 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:53.613096 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:53.613137 INFO: Attempting Reader Mode strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:53.737912 ERROR: Reader mode fetch failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:19:53.740169 INFO: Attempting JS Disabled strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:55.123253 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:55.123376 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:55.123404 INFO: Attempting Refresh Stop strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:56.117466 ERROR: Refresh stop fetch failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: cannot use a string pattern on a bytes-like object
+2025-09-14T20:19:56.120051 INFO: Attempting Inspect Element strategy for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:19:57.762215 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:19:57.762334 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:19:57.762364 INFO: Attempting removepaywalls.com bypass for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:02.026264 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T20:20:02.026372 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:20:02.026399 INFO: Attempting archive.today for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:04.531821 INFO: No existing archive found, creating new archive for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:05.399649 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:20:05.400387 INFO: Attempting archive.is for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:08.194585 INFO: Attempting archive.li for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:10.557516 INFO: Attempting archive.fo for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:12.815294 INFO: Attempting archive.ph for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:14.923714 INFO: Attempting Googlebot spoof for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:15.080573 ERROR: Googlebot spoof failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: 403 Client Error: Forbidden for url: https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:15.085500 INFO: Attempting Enhanced Wayback Machine for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:15.332109 INFO: Found Wayback snapshot from 20231002225311: http://web.archive.org/web/20231002225311/https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:15.781380 INFO: Content is very short (58 words). Likely a teaser.
+2025-09-14T20:20:15.781495 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:20:15.781525 INFO: Attempting Wayback Machine for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html
+2025-09-14T20:20:15.894040 ERROR: Wayback Machine failed for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html: No archived snapshots found
+2025-09-14T20:20:15.896296 ERROR: All fetch strategies failed or returned low-quality content for https://www.cnbc.com/video/2022/03/22/disney-staff-to-walk-out-over-companys-response-to-florida-lgbtq-bill.html. Attempting Google Search fallback...
+2025-09-14T20:20:15.896680 INFO: Google Search fallback: searching for 'disney staff to walk out over companys response to florida lgbtq bill.html'
+2025-09-14T20:20:15.933392 INFO: Google Search fallback did not find alternative URL

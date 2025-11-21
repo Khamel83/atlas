@@ -1,0 +1,145 @@
+2025-09-15T00:43:40.744860 INFO: Attempting direct fetch for https://harkaudio.com/
+2025-09-15T00:43:41.128697 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:43:41.154714 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:43:41.154823 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:43:41.154861 INFO: Attempting Reader Mode strategy for https://harkaudio.com/
+2025-09-15T00:43:41.224423 ERROR: Reader mode fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:43:41.226251 INFO: Attempting JS Disabled strategy for https://harkaudio.com/
+2025-09-15T00:43:41.296985 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:43:41.297080 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:43:41.297161 INFO: Attempting Refresh Stop strategy for https://harkaudio.com/
+2025-09-15T00:43:41.354630 ERROR: Refresh stop fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:43:41.356702 INFO: Attempting Inspect Element strategy for https://harkaudio.com/
+2025-09-15T00:43:41.437785 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:43:41.437887 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:43:41.437915 INFO: Attempting removepaywalls.com bypass for https://harkaudio.com/
+2025-09-15T00:43:44.129467 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:43:44.130412 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:43:44.130454 INFO: Attempting archive.today for https://harkaudio.com/
+2025-09-15T00:43:46.798420 INFO: No existing archive found, creating new archive for https://harkaudio.com/
+2025-09-15T00:43:47.653814 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:43:47.654504 INFO: Attempting archive.is for https://harkaudio.com/
+2025-09-15T00:43:51.441332 INFO: Attempting archive.li for https://harkaudio.com/
+2025-09-15T00:43:53.763127 INFO: Attempting archive.fo for https://harkaudio.com/
+2025-09-15T00:43:55.967807 INFO: Attempting archive.ph for https://harkaudio.com/
+2025-09-15T00:43:59.199275 INFO: Attempting Googlebot spoof for https://harkaudio.com/
+2025-09-15T00:43:59.369510 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:43:59.369668 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:43:59.369702 INFO: Attempting Enhanced Wayback Machine for https://harkaudio.com/
+2025-09-15T00:44:03.760170 INFO: Found Wayback snapshot from 20250901231145: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:44:04.316905 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:04.317062 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:04.317092 INFO: Attempting Wayback Machine for https://harkaudio.com/
+2025-09-15T00:44:04.444198 INFO: Found Wayback snapshot: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:44:04.625734 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:04.625839 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:04.625871 ERROR: All fetch strategies failed or returned low-quality content for https://harkaudio.com/. Attempting Google Search fallback...
+2025-09-15T00:44:04.625930 INFO: Google Search fallback: searching for 'article harkaudio.com'
+2025-09-15T00:44:04.658433 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:44:04.665900 INFO: Attempting direct fetch for https://harkaudio.com/
+2025-09-15T00:44:04.739106 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:04.767335 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:04.767452 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:04.767494 INFO: Attempting Reader Mode strategy for https://harkaudio.com/
+2025-09-15T00:44:04.816143 ERROR: Reader mode fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:44:04.818031 INFO: Attempting JS Disabled strategy for https://harkaudio.com/
+2025-09-15T00:44:04.881008 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:04.881153 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:04.881181 INFO: Attempting Refresh Stop strategy for https://harkaudio.com/
+2025-09-15T00:44:04.932846 ERROR: Refresh stop fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:44:04.934786 INFO: Attempting Inspect Element strategy for https://harkaudio.com/
+2025-09-15T00:44:05.020578 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:05.020716 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:05.020745 INFO: Attempting removepaywalls.com bypass for https://harkaudio.com/
+2025-09-15T00:44:07.141081 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:44:07.141187 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:07.141216 INFO: Attempting archive.today for https://harkaudio.com/
+2025-09-15T00:44:10.609177 INFO: No existing archive found, creating new archive for https://harkaudio.com/
+2025-09-15T00:44:11.480424 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:44:11.481439 INFO: Attempting archive.is for https://harkaudio.com/
+2025-09-15T00:44:14.005404 INFO: Attempting archive.li for https://harkaudio.com/
+2025-09-15T00:44:16.893324 INFO: Attempting archive.fo for https://harkaudio.com/
+2025-09-15T00:44:18.913792 INFO: Attempting archive.ph for https://harkaudio.com/
+2025-09-15T00:44:21.430341 INFO: Attempting Googlebot spoof for https://harkaudio.com/
+2025-09-15T00:44:21.540548 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:21.540730 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:21.540762 INFO: Attempting Enhanced Wayback Machine for https://harkaudio.com/
+2025-09-15T00:44:21.698064 INFO: Found Wayback snapshot from 20250901231145: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:44:21.779012 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:21.779139 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:21.787879 INFO: Attempting direct fetch for https://harkaudio.com/
+2025-09-15T00:44:21.869373 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:21.897521 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:21.897658 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:21.897705 INFO: Attempting Reader Mode strategy for https://harkaudio.com/
+2025-09-15T00:44:21.949124 ERROR: Reader mode fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:44:21.951138 INFO: Attempting JS Disabled strategy for https://harkaudio.com/
+2025-09-15T00:44:22.018621 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:22.018719 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:22.018746 INFO: Attempting Refresh Stop strategy for https://harkaudio.com/
+2025-09-15T00:44:22.071908 ERROR: Refresh stop fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:44:22.073858 INFO: Attempting Inspect Element strategy for https://harkaudio.com/
+2025-09-15T00:44:22.156834 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:22.156990 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:22.157031 INFO: Attempting removepaywalls.com bypass for https://harkaudio.com/
+2025-09-15T00:44:27.215384 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:44:27.215505 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:27.215536 INFO: Attempting archive.today for https://harkaudio.com/
+2025-09-15T00:44:29.418399 INFO: No existing archive found, creating new archive for https://harkaudio.com/
+2025-09-15T00:44:30.288621 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:44:30.290220 INFO: Attempting archive.is for https://harkaudio.com/
+2025-09-15T00:44:32.633395 INFO: Attempting archive.li for https://harkaudio.com/
+2025-09-15T00:44:35.315790 INFO: Attempting archive.fo for https://harkaudio.com/
+2025-09-15T00:44:38.602790 INFO: Attempting archive.ph for https://harkaudio.com/
+2025-09-15T00:44:40.768102 INFO: Attempting Googlebot spoof for https://harkaudio.com/
+2025-09-15T00:44:41.054313 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:41.054415 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:41.054443 INFO: Attempting Enhanced Wayback Machine for https://harkaudio.com/
+2025-09-15T00:44:41.174326 INFO: Found Wayback snapshot from 20250901231145: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:44:41.252547 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:41.252705 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:41.252736 INFO: Attempting Wayback Machine for https://harkaudio.com/
+2025-09-15T00:44:41.381397 INFO: Found Wayback snapshot: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:44:41.494272 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:41.494378 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:41.494414 ERROR: All fetch strategies failed or returned low-quality content for https://harkaudio.com/. Attempting Google Search fallback...
+2025-09-15T00:44:41.494476 INFO: Google Search fallback: searching for 'article harkaudio.com'
+2025-09-15T00:44:41.544434 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:44:41.564191 INFO: Attempting direct fetch for https://harkaudio.com/
+2025-09-15T00:44:41.686572 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:41.726058 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:41.726161 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:41.726205 INFO: Attempting Reader Mode strategy for https://harkaudio.com/
+2025-09-15T00:44:41.787731 ERROR: Reader mode fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:44:41.791925 INFO: Attempting JS Disabled strategy for https://harkaudio.com/
+2025-09-15T00:44:41.879827 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:41.879917 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:41.879945 INFO: Attempting Refresh Stop strategy for https://harkaudio.com/
+2025-09-15T00:44:41.953224 ERROR: Refresh stop fetch failed for https://harkaudio.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T00:44:41.957856 INFO: Attempting Inspect Element strategy for https://harkaudio.com/
+2025-09-15T00:44:42.077311 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:44:42.077405 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:42.077433 INFO: Attempting removepaywalls.com bypass for https://harkaudio.com/
+2025-09-15T00:44:44.683419 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:44:44.683544 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:44:44.683572 INFO: Attempting archive.today for https://harkaudio.com/
+2025-09-15T00:44:48.143733 INFO: No existing archive found, creating new archive for https://harkaudio.com/
+2025-09-15T00:44:49.043915 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:44:49.045001 INFO: Attempting archive.is for https://harkaudio.com/
+2025-09-15T00:44:52.476728 INFO: Attempting archive.li for https://harkaudio.com/
+2025-09-15T00:44:54.557081 INFO: Attempting archive.fo for https://harkaudio.com/
+2025-09-15T00:44:57.216354 INFO: Attempting archive.ph for https://harkaudio.com/
+2025-09-15T00:45:00.073511 INFO: Attempting Googlebot spoof for https://harkaudio.com/
+2025-09-15T00:45:00.232338 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:45:00.232457 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:45:00.232491 INFO: Attempting Enhanced Wayback Machine for https://harkaudio.com/
+2025-09-15T00:45:00.361260 INFO: Found Wayback snapshot from 20250901231145: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:45:00.443248 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:45:00.443352 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:45:00.443385 INFO: Attempting Wayback Machine for https://harkaudio.com/
+2025-09-15T00:45:00.594563 INFO: Found Wayback snapshot: http://web.archive.org/web/20250901231145/https://harkaudio.com/
+2025-09-15T00:45:00.669164 INFO: Content is very short (31 words). Likely a teaser.
+2025-09-15T00:45:00.669288 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:45:00.669328 ERROR: All fetch strategies failed or returned low-quality content for https://harkaudio.com/. Attempting Google Search fallback...
+2025-09-15T00:45:00.669391 INFO: Google Search fallback: searching for 'article harkaudio.com'
+2025-09-15T00:45:00.702137 INFO: Google Search fallback did not find alternative URL

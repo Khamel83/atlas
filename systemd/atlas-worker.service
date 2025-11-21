@@ -1,0 +1,43 @@
+[Unit]
+Description=Atlas Worker Service
+After=network.target atlas-api.service
+Requires=atlas-api.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+Environment=ATLAS_LOG_LEVEL=INFO
+
+ExecStart=/usr/bin/python3 worker.py
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-worker
+
+# Resource limits
+MemoryMax=1G
+CPUQuota=200%
+TasksMax=50
+LimitNOFILE=32768
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/home/ubuntu/dev/atlas/data /home/ubuntu/dev/atlas/logs
+
+# Restart policy with graceful shutdown
+RestartKillSignal=SIGTERM
+KillMode=mixed
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target

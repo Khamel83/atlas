@@ -1,0 +1,105 @@
+2025-09-15T02:05:11.883716 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:11.911461 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:11.911669 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:12.597364 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:05:12.599138 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:12.627832 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:12.628027 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:12.662675 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:05:12.662842 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:12.701968 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:12.702150 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:15.601085 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:05:15.601192 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:05:15.601220 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:18.118469 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:18.977887 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:05:18.978382 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:22.496879 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:26.356676 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:28.430440 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:31.532481 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:31.560860 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:31.561050 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:49.988741 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:05:49.990215 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:49.990704 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T02:05:49.990758 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:05:49.990827 INFO: Google Search fallback: searching for '09rosen.html'
+2025-09-15T02:05:50.059665 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:05:50.071320 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.145480 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.145889 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.656231 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:05:50.661833 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.692013 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.692218 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.723916 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:05:50.724123 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.753052 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:50.753251 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:54.860883 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:05:54.860996 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:05:54.861024 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:57.079998 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:57.940648 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:05:57.941305 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:05:59.832363 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:03.408959 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:06.518779 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:10.011549 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:10.074101 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:10.074307 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:11.471888 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:06:11.473537 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:11.670521 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T02:06:11.673378 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:06:11.674150 INFO: Google Search fallback: searching for '09rosen.html'
+2025-09-15T02:06:11.723130 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:06:11.735326 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:11.765005 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:11.765209 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:12.282698 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:06:12.284969 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:12.326260 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:12.326458 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:12.355064 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:06:12.355259 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:12.392430 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:12.392657 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:17.284908 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:06:17.285030 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:06:17.285058 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:18.886296 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:20.231318 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:06:20.232033 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.062613 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.073044 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.112642 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.112835 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.286804 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:06:24.289008 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.332978 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.333177 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.361824 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:06:24.362025 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.388739 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:24.388933 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:29.073748 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:06:29.073865 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:06:29.073892 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:32.438322 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:33.329344 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:06:33.330044 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:35.993919 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:38.053527 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:40.762879 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:43.074470 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:43.128631 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:43.128834 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:44.526526 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:06:44.528058 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print
+2025-09-15T02:06:44.700366 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T02:06:44.702299 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/weekinreview/09rosen.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:06:44.702923 INFO: Google Search fallback: searching for '09rosen.html'
+2025-09-15T02:06:44.735495 INFO: Google Search fallback did not find alternative URL

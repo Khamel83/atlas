@@ -1,0 +1,106 @@
+2025-09-15T09:13:10.268695 INFO: Attempting direct fetch for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:11.113825 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:13:11.172014 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:13:11.172116 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:13:11.172154 INFO: Attempting Reader Mode strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:11.698566 ERROR: Reader mode fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:13:11.702306 INFO: Attempting JS Disabled strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:12.229849 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:13:12.229955 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:13:12.229982 INFO: Attempting Refresh Stop strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:12.759184 ERROR: Refresh stop fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:13:12.762385 INFO: Attempting Inspect Element strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:13.336656 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:13:13.336769 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:13:13.336796 INFO: Attempting removepaywalls.com bypass for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:18.362411 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:13:18.362528 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:13:18.362556 INFO: Attempting archive.today for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:21.616529 INFO: No existing archive found, creating new archive for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:22.524843 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:13:22.525631 INFO: Attempting archive.is for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:26.078628 INFO: Attempting archive.li for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:28.418128 INFO: Attempting archive.fo for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:31.026816 INFO: Attempting archive.ph for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:34.420431 INFO: Attempting Googlebot spoof for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:13:35.008266 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:13:35.008383 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:13:35.008412 INFO: Attempting Enhanced Wayback Machine for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:05.895096 ERROR: Enhanced Wayback Machine failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: No archived snapshots found in any timeframe
+2025-09-15T09:14:05.897140 INFO: Attempting Wayback Machine for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:06.072462 ERROR: Wayback Machine failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: No archived snapshots found
+2025-09-15T09:14:06.075385 ERROR: All fetch strategies failed or returned low-quality content for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481. Attempting Google Search fallback...
+2025-09-15T09:14:06.076221 INFO: Google Search fallback: searching for 'profile.cfm'
+2025-09-15T09:14:06.110170 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:14:06.119481 INFO: Attempting direct fetch for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:06.679789 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:06.734838 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:06.734950 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:06.734987 INFO: Attempting Reader Mode strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:07.229939 ERROR: Reader mode fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:07.234069 INFO: Attempting JS Disabled strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:07.801685 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:07.801791 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:07.801817 INFO: Attempting Refresh Stop strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:08.305003 ERROR: Refresh stop fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:08.308163 INFO: Attempting Inspect Element strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:08.897490 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:08.897634 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:08.897665 INFO: Attempting removepaywalls.com bypass for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:08.904996 INFO: Attempting direct fetch for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:09.537066 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:09.590981 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:09.591072 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:09.591116 INFO: Attempting Reader Mode strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:10.113653 ERROR: Reader mode fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:10.117110 INFO: Attempting JS Disabled strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:10.689902 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:10.690031 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:10.690059 INFO: Attempting Refresh Stop strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:11.193540 ERROR: Refresh stop fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:11.196702 INFO: Attempting Inspect Element strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:11.775570 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:11.775713 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:11.775743 INFO: Attempting removepaywalls.com bypass for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:15.456061 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:14:15.456178 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:15.456204 INFO: Attempting archive.today for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:18.240492 INFO: No existing archive found, creating new archive for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:19.112099 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:14:19.112931 INFO: Attempting archive.is for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:21.304073 INFO: Attempting archive.li for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:23.850904 INFO: Attempting archive.fo for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:27.667309 INFO: Attempting archive.ph for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:30.507456 INFO: Attempting Googlebot spoof for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:31.086892 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:31.087040 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:31.087075 INFO: Attempting Enhanced Wayback Machine for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:32.762030 ERROR: Enhanced Wayback Machine failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: No archived snapshots found in any timeframe
+2025-09-15T09:14:32.765341 INFO: Attempting Wayback Machine for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:32.901349 ERROR: Wayback Machine failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: No archived snapshots found
+2025-09-15T09:14:32.903349 ERROR: All fetch strategies failed or returned low-quality content for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481. Attempting Google Search fallback...
+2025-09-15T09:14:32.903933 INFO: Google Search fallback: searching for 'profile.cfm'
+2025-09-15T09:14:32.936242 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:14:32.952916 INFO: Attempting direct fetch for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:33.530000 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:33.583868 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:33.583979 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:33.584019 INFO: Attempting Reader Mode strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:34.119014 ERROR: Reader mode fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:34.122161 INFO: Attempting JS Disabled strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:34.772708 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:34.772813 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:34.772839 INFO: Attempting Refresh Stop strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:35.277069 ERROR: Refresh stop fetch failed for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481: cannot use a string pattern on a bytes-like object
+2025-09-15T09:14:35.281584 INFO: Attempting Inspect Element strategy for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:35.856689 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-15T09:14:35.856804 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:35.856831 INFO: Attempting removepaywalls.com bypass for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:39.968431 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:14:39.968542 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:14:39.968568 INFO: Attempting archive.today for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:43.326271 INFO: No existing archive found, creating new archive for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:44.204494 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:14:44.205352 INFO: Attempting archive.is for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:47.549737 INFO: Attempting archive.li for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481
+2025-09-15T09:14:49.571097 INFO: Attempting archive.fo for https://apps.smhs.gwu.edu/smhs/facultydirectory/profile.cfm?empName=Tamara%20Ritsema&FacID=2046529481

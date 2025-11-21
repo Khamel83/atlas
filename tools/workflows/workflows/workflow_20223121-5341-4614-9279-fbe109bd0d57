@@ -1,0 +1,143 @@
+2025-09-15T15:05:44.573875 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:45.533909 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:05:45.589051 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:05:45.589177 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:05:45.589224 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:45.733559 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:05:45.735920 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:46.160745 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:05:46.160858 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:05:46.160887 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:46.234055 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:05:46.236471 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:46.489022 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T15:05:46.489134 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:05:46.489160 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:49.337969 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:05:49.338090 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:05:49.338116 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:52.502701 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:53.386065 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:05:53.386575 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:56.653904 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:05:59.994457 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:03.347081 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:06.060424 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:06.190338 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:06.190445 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:06.190480 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:12.058442 INFO: Found Wayback snapshot from 20231128053103: http://web.archive.org/web/20231128053103/https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.009987 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:13.010110 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:13.010145 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.190148 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: No archived snapshots found
+2025-09-15T15:06:13.193136 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/mike-daiseys-pride. Attempting Google Search fallback...
+2025-09-15T15:06:13.193806 INFO: Google Search fallback: searching for 'mike daiseys pride'
+2025-09-15T15:06:13.231785 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:06:13.240569 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.324917 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:13.378956 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:13.379070 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:13.379113 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.432888 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:06:13.435685 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.571563 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:13.571706 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:13.571735 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.571806 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: [Errno 32] Broken pipe
+2025-09-15T15:06:13.571837 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:13.816082 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T15:06:13.816188 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:13.816215 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:18.425993 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:06:18.426105 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:18.426131 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:22.129823 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:23.050284 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:06:23.052898 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:25.624161 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:29.480389 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:31.783822 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:34.843817 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:34.997544 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:34.997663 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:34.997704 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.283222 INFO: Found Wayback snapshot from 20231128053103: http://web.archive.org/web/20231128053103/https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.425385 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:35.425546 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:35.425575 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.568532 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: No archived snapshots found
+2025-09-15T15:06:35.571210 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/mike-daiseys-pride. Attempting Google Search fallback...
+2025-09-15T15:06:35.571350 INFO: Google Search fallback: searching for 'mike daiseys pride'
+2025-09-15T15:06:35.604375 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:06:35.611998 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.697604 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:35.749504 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:35.749640 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:35.749689 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.802467 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:06:35.805015 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.935319 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:35.935426 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:35.935457 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:35.985225 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:06:35.987662 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:36.233251 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T15:06:36.233355 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:36.233382 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:40.160518 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:06:40.160646 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:40.160678 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:43.181251 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:44.078255 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:06:44.078850 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:46.544250 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:48.833456 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:52.036043 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:54.716762 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:54.931619 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:54.931731 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:54.931763 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.208712 INFO: Found Wayback snapshot from 20231128053103: http://web.archive.org/web/20231128053103/https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.373256 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:55.373424 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:55.373454 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.512227 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: No archived snapshots found
+2025-09-15T15:06:55.514967 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/mike-daiseys-pride. Attempting Google Search fallback...
+2025-09-15T15:06:55.515127 INFO: Google Search fallback: searching for 'mike daiseys pride'
+2025-09-15T15:06:55.548432 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:06:55.556104 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.637284 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:55.690035 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:06:55.690153 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:55.690206 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.745934 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:06:55.748999 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.749557 ERROR: JS disabled fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: [Errno 32] Broken pipe
+2025-09-15T15:06:55.749622 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:55.801261 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: cannot use a string pattern on a bytes-like object
+2025-09-15T15:06:55.803723 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:56.152575 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T15:06:56.152712 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:56.152740 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:06:59.331263 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:06:59.331380 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:06:59.331407 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:03.024552 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:03.916162 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:07:03.916746 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:05.903854 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:08.136949 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:11.894088 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:14.131156 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:14.215083 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:07:14.215207 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:07:14.215241 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:14.451550 INFO: Found Wayback snapshot from 20231128053103: http://web.archive.org/web/20231128053103/https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:14.598893 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:07:14.599038 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:07:14.599064 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/mike-daiseys-pride
+2025-09-15T15:07:14.789582 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/mike-daiseys-pride: No archived snapshots found
+2025-09-15T15:07:14.792230 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/mike-daiseys-pride. Attempting Google Search fallback...
+2025-09-15T15:07:14.792375 INFO: Google Search fallback: searching for 'mike daiseys pride'
+2025-09-15T15:07:14.826240 INFO: Google Search fallback did not find alternative URL

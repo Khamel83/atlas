@@ -1,0 +1,25 @@
+2025-09-15T15:37:05.659824 INFO: Attempting direct fetch for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:05.735067 ERROR: Direct fetch failed for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:05.736237 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:06.319904 ERROR: Reader mode fetch failed for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:37:06.321857 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:06.397741 ERROR: JS disabled fetch failed for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:06.399274 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:06.475695 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:37:06.477190 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:06.555683 ERROR: Inspect element fetch failed for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:06.557224 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:10.344489 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:37:10.345676 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:37:10.345748 INFO: Attempting archive.today for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:13.784081 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:14.680143 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:37:14.680698 INFO: Attempting archive.is for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:16.921494 INFO: Attempting archive.li for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:20.040307 INFO: Attempting archive.fo for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:23.848449 INFO: Attempting archive.ph for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:27.163500 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:27.278692 ERROR: Googlebot spoof failed for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:27.279893 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:27.642468 INFO: Found Wayback snapshot from 20250308045748: http://web.archive.org/web/20250308045748/https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html
+2025-09-15T15:37:28.677401 INFO: Successfully fetched https://www.nytimes.com/2021/08/16/opinion/debate-critical-race-theory.html using wayback_machine_enhanced

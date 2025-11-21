@@ -1,0 +1,25 @@
+2025-09-15T08:05:36.274558 INFO: Attempting direct fetch for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:36.527657 ERROR: Direct fetch failed for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:36.527868 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:37.164894 ERROR: Reader mode fetch failed for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html: cannot use a string pattern on a bytes-like object
+2025-09-15T08:05:37.166609 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:37.199293 ERROR: JS disabled fetch failed for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:37.199491 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:37.238906 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html: cannot use a string pattern on a bytes-like object
+2025-09-15T08:05:37.239098 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:37.267927 ERROR: Inspect element fetch failed for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:37.268159 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:41.504979 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:05:41.505089 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:05:41.505115 INFO: Attempting archive.today for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:46.472758 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:47.390228 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:05:47.390742 INFO: Attempting archive.is for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:49.740049 INFO: Attempting archive.li for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:53.212743 INFO: Attempting archive.fo for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:55.545127 INFO: Attempting archive.ph for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:59.360548 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:59.414276 ERROR: Googlebot spoof failed for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:05:59.414470 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:06:01.812750 INFO: Found Wayback snapshot from 20250809134637: http://web.archive.org/web/20250809134637/https://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html
+2025-09-15T08:06:04.327069 INFO: Successfully fetched http://www.nytimes.com/2016/11/30/arts/television/can-television-be-fair-to-muslims.html using wayback_machine_enhanced

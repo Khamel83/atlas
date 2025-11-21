@@ -1,0 +1,135 @@
+2025-09-15T01:03:56.821630 INFO: Attempting direct fetch for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:03:56.992691 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:03:57.002917 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:03:57.003027 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:03:57.003063 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:03:58.845397 ERROR: Reader mode fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:58.847827 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:03:59.000477 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:03:59.000586 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:03:59.000654 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:03:59.411025 ERROR: Refresh stop fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:03:59.413146 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:03:59.571925 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:03:59.572025 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:03:59.572050 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:02.585629 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:04:02.585745 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:02.585770 INFO: Attempting archive.today for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:06.232805 INFO: No existing archive found, creating new archive for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:07.117715 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:04:07.118448 INFO: Attempting archive.is for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:09.817959 INFO: Attempting archive.li for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:12.705070 INFO: Attempting archive.fo for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:16.572883 INFO: Attempting archive.ph for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:19.507244 INFO: Attempting Googlebot spoof for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:19.815554 ERROR: Googlebot spoof failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: 500 Server Error:  for url: https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:19.819257 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:20.206703 INFO: Found Wayback snapshot from 20240815200525: http://web.archive.org/web/20240815200525/https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:21.646342 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:21.646452 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:21.646477 INFO: Attempting Wayback Machine for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:21.784524 INFO: Found Wayback snapshot: http://web.archive.org/web/20240815200525/https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:21.846397 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:21.846510 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:21.846544 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/. Attempting Google Search fallback...
+2025-09-15T01:04:21.846631 INFO: Google Search fallback: searching for 'dp'
+2025-09-15T01:04:21.880338 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:04:21.888490 INFO: Attempting direct fetch for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:22.054434 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:22.065726 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:22.065828 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:22.065865 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:23.807081 ERROR: Reader mode fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:04:23.809754 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:23.975202 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:23.975309 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:23.975336 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:24.397767 ERROR: Refresh stop fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:04:24.400197 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:24.573305 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:24.573419 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:24.573446 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:27.546955 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:04:27.547074 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:27.547101 INFO: Attempting archive.today for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:29.642002 INFO: No existing archive found, creating new archive for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:30.497634 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:04:30.498508 INFO: Attempting archive.is for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:33.232975 INFO: Attempting archive.li for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:35.550962 INFO: Attempting archive.fo for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:38.784677 INFO: Attempting archive.ph for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:42.624426 INFO: Attempting Googlebot spoof for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:42.807312 ERROR: Googlebot spoof failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: 500 Server Error:  for url: https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:42.818657 INFO: Attempting direct fetch for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:42.982379 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:42.993495 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:42.993727 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:42.993775 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:44.584925 ERROR: Reader mode fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:04:44.587541 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:44.755142 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:44.755243 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:44.755270 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:45.166314 ERROR: Refresh stop fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:04:45.168958 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:45.340920 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:04:45.341036 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:45.341064 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:48.151236 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:04:48.151347 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:04:48.151376 INFO: Attempting archive.today for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:51.690745 INFO: No existing archive found, creating new archive for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:52.555263 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:04:52.556354 INFO: Attempting archive.is for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:56.115948 INFO: Attempting archive.li for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:04:59.150430 INFO: Attempting archive.fo for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:01.302303 INFO: Attempting archive.ph for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:03.201786 INFO: Attempting Googlebot spoof for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:03.419248 ERROR: Googlebot spoof failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: 500 Server Error:  for url: https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:03.421678 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:04.213127 INFO: Found Wayback snapshot from 20240815200525: http://web.archive.org/web/20240815200525/https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:04.272460 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:04.272572 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:04.272617 INFO: Attempting Wayback Machine for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:04.425471 INFO: Found Wayback snapshot: http://web.archive.org/web/20240815200525/https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:04.484749 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:04.484856 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:04.484887 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/. Attempting Google Search fallback...
+2025-09-15T01:05:04.484946 INFO: Google Search fallback: searching for 'dp'
+2025-09-15T01:05:04.518674 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:05:04.527247 INFO: Attempting direct fetch for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:04.693006 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:04.706012 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:04.706107 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:04.706142 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:06.224404 ERROR: Reader mode fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:05:06.227268 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:06.403971 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:06.404062 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:06.404088 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:06.844981 ERROR: Refresh stop fetch failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:05:06.847326 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:07.020087 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:07.020195 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:07.020221 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:09.417561 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:05:09.417696 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:09.417723 INFO: Attempting archive.today for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:11.261682 INFO: No existing archive found, creating new archive for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:12.147489 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:05:12.148419 INFO: Attempting archive.is for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:15.285872 INFO: Attempting archive.li for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:18.699073 INFO: Attempting archive.fo for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:22.195854 INFO: Attempting archive.ph for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:24.388360 INFO: Attempting Googlebot spoof for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:24.652913 ERROR: Googlebot spoof failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: 500 Server Error:  for url: https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:24.655059 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:24.656071 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/: [Errno 32] Broken pipe
+2025-09-15T01:05:24.656139 INFO: Attempting Wayback Machine for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:24.764742 INFO: Found Wayback snapshot: http://web.archive.org/web/20240815200525/https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/
+2025-09-15T01:05:24.822855 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T01:05:24.822958 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:05:24.822989 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Lost-Game-Book-about-Basketball/dp/1478018836/. Attempting Google Search fallback...
+2025-09-15T01:05:24.823048 INFO: Google Search fallback: searching for 'dp'
+2025-09-15T01:05:24.855564 INFO: Google Search fallback did not find alternative URL

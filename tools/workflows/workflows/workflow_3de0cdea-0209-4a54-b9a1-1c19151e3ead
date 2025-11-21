@@ -1,0 +1,30 @@
+2025-09-14T20:13:11.018835 INFO: Attempting direct fetch for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:11.323882 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:13:11.507166 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:13:11.507283 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:13:11.507327 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:11.652142 ERROR: Reader mode fetch failed for https://techcrunch.com/author/kirsten-korosec/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:13:11.653799 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:11.827890 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:13:11.828002 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:13:11.828029 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:11.974288 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/kirsten-korosec/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:13:11.975800 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:12.376047 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:13:12.376153 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:13:12.376182 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:14.673552 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:13:14.673694 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:13:14.673725 INFO: Attempting archive.today for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:19.038189 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:19.946785 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:13:19.947195 INFO: Attempting archive.is for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:22.189501 INFO: Attempting archive.li for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:24.907919 INFO: Attempting archive.fo for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:28.179680 INFO: Attempting archive.ph for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:30.393656 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:30.621039 INFO: Content is very short (94 words). Likely a teaser.
+2025-09-14T20:13:30.621145 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:13:30.621173 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:39.235766 INFO: Found Wayback snapshot from 20231201234640: http://web.archive.org/web/20231201234640/https://techcrunch.com/author/kirsten-korosec/
+2025-09-14T20:13:41.995826 INFO: Successfully fetched https://techcrunch.com/author/kirsten-korosec/ using wayback_machine_enhanced

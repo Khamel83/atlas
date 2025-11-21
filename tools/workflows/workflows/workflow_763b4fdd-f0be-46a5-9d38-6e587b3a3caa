@@ -1,0 +1,101 @@
+2025-09-15T04:46:12.053786 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:12.334377 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:12.334556 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:13.139273 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:46:13.143235 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:13.213563 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:13.213798 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:13.274233 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:46:13.274422 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:13.336519 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:13.336742 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:18.090122 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:46:18.090234 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:46:18.090260 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:20.627216 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:21.484287 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:46:21.485133 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:24.227752 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:26.792963 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:30.203902 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:33.252653 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:33.310024 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:33.310215 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:47.215452 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T04:46:47.219502 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:47.375211 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T04:46:47.395286 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:47.492710 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:47.492923 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:48.032185 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:46:48.034637 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:48.096177 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:48.096402 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:48.155541 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:46:48.155777 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:48.213033 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:48.213230 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:51.031187 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:46:51.031305 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:46:51.031336 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:54.407391 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:55.295679 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:46:55.296844 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:46:58.376699 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:01.785027 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:05.636198 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:07.576908 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:07.640423 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:07.642787 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.003348 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T04:47:09.004813 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.136760 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T04:47:09.139168 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T04:47:09.139967 INFO: Google Search fallback: searching for '30kahlenberg.html'
+2025-09-15T04:47:09.176122 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:47:09.184393 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.242682 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.242859 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.796198 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:47:09.797919 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.858029 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.858218 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.917626 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:47:09.917798 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.983496 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:09.983707 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:14.829730 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:47:14.829857 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:47:14.829886 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:17.191730 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.085773 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:47:18.086206 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.099347 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.180471 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.182728 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.772510 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:47:18.776069 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.841980 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.842180 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.900446 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T04:47:18.900660 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.957298 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:18.957496 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:23.009031 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:47:23.009148 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:47:23.009179 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:25.607083 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:26.480141 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:47:26.480943 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:29.686066 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:33.409961 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:36.825207 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:39.688108 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:39.756836 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:39.757038 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:41.071322 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T04:47:41.072895 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T04:47:41.204516 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T04:47:41.206518 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/09/30/opinion/30kahlenberg.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T04:47:41.207132 INFO: Google Search fallback: searching for '30kahlenberg.html'
+2025-09-15T04:47:41.240072 INFO: Google Search fallback did not find alternative URL

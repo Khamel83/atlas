@@ -1,0 +1,87 @@
+2025-09-14T20:46:33.852936 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:33.915841 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:33.916035 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:34.606708 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:46:34.608731 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:34.679133 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:34.679332 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:34.748354 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:46:34.748542 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:34.808310 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:34.808489 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:38.473358 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:46:38.473473 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:46:38.473502 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:41.337375 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:42.247115 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:46:42.247802 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:44.806819 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:48.134100 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:51.217313 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:53.562297 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:53.623375 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:46:53.623570 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:22.101982 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T20:47:22.103306 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:22.221343 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T20:47:22.223087 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T20:47:22.223815 INFO: Google Search fallback: searching for 'Keillor t.html'
+2025-09-14T20:47:22.260493 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:47:22.270449 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:22.381434 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:22.381736 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:22.978671 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:47:22.980813 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:23.046165 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:23.046349 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:23.109739 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:47:23.109955 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:23.173353 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:23.173551 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:25.898701 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:47:25.898815 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:47:25.898843 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:28.355345 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:29.249231 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:47:29.249967 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:32.808420 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:35.621219 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:38.458015 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:40.371982 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:40.480100 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:40.480322 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:41.811433 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T20:47:41.812758 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:41.946398 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T20:47:41.948426 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T20:47:41.949161 INFO: Google Search fallback: searching for 'Keillor t.html'
+2025-09-14T20:47:41.986298 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:47:41.996007 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.057567 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.057784 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.671928 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:47:42.674216 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.737744 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.737940 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.797793 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:47:42.797980 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.858424 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:42.858664 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:45.782374 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:47:45.782494 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:47:45.782522 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:48.962527 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:49.847026 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:47:49.847702 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:53.197288 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:55.658418 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:47:58.496422 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:48:00.756440 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:48:00.827891 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:48:00.828078 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:48:02.163703 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T20:48:02.165041 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print
+2025-09-14T20:48:02.280741 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T20:48:02.282565 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/12/19/books/review/Keillor-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T20:48:02.283299 INFO: Google Search fallback: searching for 'Keillor t.html'
+2025-09-14T20:48:02.315804 INFO: Google Search fallback did not find alternative URL

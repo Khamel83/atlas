@@ -1,0 +1,144 @@
+2025-09-14T23:36:43.097842 INFO: Attempting direct fetch for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:43.324151 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:36:43.425131 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:36:43.425259 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:36:43.425301 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:43.505304 ERROR: Reader mode fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:36:43.507400 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:43.722803 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:36:43.722916 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:36:43.722945 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:43.809691 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:36:43.811746 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:44.073999 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:36:44.074105 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:36:44.074131 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:46.249834 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:36:46.249939 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:36:46.249966 INFO: Attempting archive.today for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:49.142719 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:50.001529 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:36:50.002275 INFO: Attempting archive.is for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:53.474613 INFO: Attempting archive.li for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:36:57.187499 INFO: Attempting archive.fo for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:00.591274 INFO: Attempting archive.ph for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:02.779371 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:02.933834 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:02.933954 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:02.933985 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:08.723474 INFO: Found Wayback snapshot from 20250628070426: http://web.archive.org/web/20250628070426/https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:10.002891 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:10.003020 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:10.003047 INFO: Attempting Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:10.130512 ERROR: Wayback Machine failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: No archived snapshots found
+2025-09-14T23:37:10.132477 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/. Attempting Google Search fallback...
+2025-09-14T23:37:10.132748 INFO: Google Search fallback: searching for 'katie haun makes the case for tokenizing more of the world'
+2025-09-14T23:37:10.166047 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:37:10.174514 INFO: Attempting direct fetch for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:10.416556 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:10.535820 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:10.535926 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:10.535970 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:10.690031 ERROR: Reader mode fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:37:10.691980 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:10.910160 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:37:10.910266 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:10.910295 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:11.068020 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:37:11.069781 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:11.420674 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:37:11.420784 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:11.420811 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:16.085922 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:37:16.086040 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:16.086068 INFO: Attempting archive.today for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:19.695916 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:20.600687 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:37:20.601214 INFO: Attempting archive.is for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:23.288100 INFO: Attempting archive.li for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:25.927242 INFO: Attempting archive.fo for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:28.376923 INFO: Attempting archive.ph for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:30.652732 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:30.870159 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:30.870316 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:30.870347 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:31.125079 INFO: Found Wayback snapshot from 20250628070426: http://web.archive.org/web/20250628070426/https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:31.280194 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:31.280311 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:31.280338 INFO: Attempting Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:31.429352 ERROR: Wayback Machine failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: No archived snapshots found
+2025-09-14T23:37:31.431074 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/. Attempting Google Search fallback...
+2025-09-14T23:37:31.431231 INFO: Google Search fallback: searching for 'katie haun makes the case for tokenizing more of the world'
+2025-09-14T23:37:31.463265 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:37:31.471944 INFO: Attempting direct fetch for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:31.788471 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:31.888635 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:31.888755 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:31.888805 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:32.032187 ERROR: Reader mode fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:37:32.034461 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:32.190334 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:37:32.190447 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:32.190473 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:32.277575 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:37:32.279740 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:32.523960 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:37:32.524070 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:32.524097 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:36.412828 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:37:36.412919 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:36.412957 INFO: Attempting archive.today for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:39.126561 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:40.021146 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:37:40.021883 INFO: Attempting archive.is for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:42.935901 INFO: Attempting archive.li for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:45.054067 INFO: Attempting archive.fo for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:47.896540 INFO: Attempting archive.ph for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:51.405605 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:51.626571 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:51.626719 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:51.626756 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:51.899879 INFO: Found Wayback snapshot from 20250628070426: http://web.archive.org/web/20250628070426/https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:52.062273 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:52.062408 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:52.062434 INFO: Attempting Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:52.186214 ERROR: Wayback Machine failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: No archived snapshots found
+2025-09-14T23:37:52.190449 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/. Attempting Google Search fallback...
+2025-09-14T23:37:52.190718 INFO: Google Search fallback: searching for 'katie haun makes the case for tokenizing more of the world'
+2025-09-14T23:37:52.292842 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:37:52.304957 INFO: Attempting direct fetch for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:52.523323 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:52.622070 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:37:52.622245 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:52.622292 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:52.701100 ERROR: Reader mode fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:37:52.702918 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:52.925475 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:37:52.925605 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:52.925635 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:53.073476 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:37:53.076801 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:53.328493 INFO: Content is very short (84 words). Likely a teaser.
+2025-09-14T23:37:53.328627 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:53.328658 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:57.394171 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:37:57.394277 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:37:57.394305 INFO: Attempting archive.today for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:37:59.939889 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:00.840820 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:38:00.841331 INFO: Attempting archive.is for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:02.969936 INFO: Attempting archive.li for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:05.305089 INFO: Attempting archive.fo for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:08.263747 INFO: Attempting archive.ph for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:11.677101 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:11.904493 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:38:11.904636 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:38:11.904666 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:12.151930 INFO: Found Wayback snapshot from 20250628070426: http://web.archive.org/web/20250628070426/https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:12.312196 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T23:38:12.312315 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:38:12.312341 INFO: Attempting Wayback Machine for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/
+2025-09-14T23:38:12.457621 ERROR: Wayback Machine failed for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/: No archived snapshots found
+2025-09-14T23:38:12.460185 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/katie-haun-makes-the-case-for-tokenizing-more-of-the-world/. Attempting Google Search fallback...
+2025-09-14T23:38:12.460333 INFO: Google Search fallback: searching for 'katie haun makes the case for tokenizing more of the world'
+2025-09-14T23:38:12.532242 INFO: Google Search fallback did not find alternative URL

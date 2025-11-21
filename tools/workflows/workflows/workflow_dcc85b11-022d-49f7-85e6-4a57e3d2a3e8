@@ -1,0 +1,110 @@
+2025-09-15T21:00:07.655693 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:07.834419 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:07.907575 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:07.907710 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:07.907750 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:07.965172 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:07.967775 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:08.164254 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:08.164357 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:08.164381 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:08.238493 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:08.242992 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:08.721619 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T21:00:08.721722 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:08.721750 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:12.472842 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T21:00:12.472950 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:12.472976 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:16.672526 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:17.571429 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T21:00:17.571981 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:19.843859 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:22.087079 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:26.029342 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:29.163129 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:29.386007 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:29.386125 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:29.386153 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:29.525182 INFO: Found Wayback snapshot from 20250905033308: http://web.archive.org/web/20250905033308/https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:29.798463 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:29.798567 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:29.798659 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:29.968654 INFO: Found Wayback snapshot: http://web.archive.org/web/20250905033308/https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:30.214731 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:30.214843 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:30.214877 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda. Attempting Google Search fallback...
+2025-09-15T21:00:30.214944 INFO: Google Search fallback: searching for 'how my mother and i became chinese propaganda'
+2025-09-15T21:00:30.249802 INFO: Google Search fallback did not find alternative URL
+2025-09-15T21:00:30.258580 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:30.380338 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:30.636143 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:30.636267 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:30.636326 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:30.698015 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:30.700854 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:30.910698 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:30.910786 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:30.910812 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:30.976379 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:30.987486 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:31.272536 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:31.348446 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:31.348548 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:31.348656 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:31.410983 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:31.413848 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:31.605964 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:31.606282 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:31.606359 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:31.665722 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:31.668250 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:32.006790 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T21:00:32.006896 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:32.006924 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:36.980002 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T21:00:36.980113 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:36.980139 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:41.351530 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:42.246675 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T21:00:42.247119 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:46.568847 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:49.254855 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:51.823534 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:54.710703 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:54.941270 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:54.941394 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:54.941423 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:55.063774 INFO: Found Wayback snapshot from 20250905033308: http://web.archive.org/web/20250905033308/https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:55.259864 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:55.259983 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:55.260009 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:55.549200 INFO: Found Wayback snapshot: http://web.archive.org/web/20250905033308/https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:55.812323 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:55.812452 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:55.812486 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda. Attempting Google Search fallback...
+2025-09-15T21:00:55.812556 INFO: Google Search fallback: searching for 'how my mother and i became chinese propaganda'
+2025-09-15T21:00:55.868791 INFO: Google Search fallback did not find alternative URL
+2025-09-15T21:00:55.879865 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:56.003421 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:56.122179 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:56.122307 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:56.122351 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:56.205740 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:56.209947 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:56.479028 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:00:56.479137 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:56.479164 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:56.544893 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda: cannot use a string pattern on a bytes-like object
+2025-09-15T21:00:56.547981 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:57.112646 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T21:00:57.112744 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:57.112769 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:00:59.850617 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T21:00:59.850730 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:00:59.850757 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:01:02.819544 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:01:03.711750 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T21:01:03.712403 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:01:05.822679 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda
+2025-09-15T21:01:08.569714 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2020/09/14/how-my-mother-and-i-became-chinese-propaganda

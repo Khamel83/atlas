@@ -1,0 +1,26 @@
+2025-09-15T02:04:24.479646 INFO: Attempting direct fetch for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:25.367457 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:04:25.755933 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:04:25.756047 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:04:25.756087 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:25.893021 ERROR: Reader mode fetch failed for https://nymag.com/tags/michael-bloomberg/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:04:25.894655 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:26.323159 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:26.447842 ERROR: Refresh stop fetch failed for https://nymag.com/tags/michael-bloomberg/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:04:26.449643 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:26.989432 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:30.000528 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:04:30.000677 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:04:30.000707 INFO: Attempting archive.today for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:32.293335 INFO: No existing archive found, creating new archive for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:33.182066 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:04:33.182533 INFO: Attempting archive.is for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:35.574908 INFO: Attempting archive.li for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:38.852255 INFO: Attempting archive.fo for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:41.405021 INFO: Attempting archive.ph for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:44.275497 INFO: Attempting Googlebot spoof for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:44.665838 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:04:44.665952 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:04:44.665980 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:45.030328 INFO: Found Wayback snapshot from 20241226011106: http://web.archive.org/web/20241226011106/https://nymag.com/tags/michael-bloomberg/
+2025-09-15T02:04:46.947300 INFO: Successfully fetched https://nymag.com/tags/michael-bloomberg/ using wayback_machine_enhanced

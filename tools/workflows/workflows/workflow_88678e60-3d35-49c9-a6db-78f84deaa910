@@ -1,0 +1,99 @@
+2025-09-15T01:06:47.643394 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:47.643743 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T01:06:47.643804 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:48.440171 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:06:48.442580 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:48.502014 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:48.502213 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:48.561781 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:06:48.561969 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:48.620064 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:48.620283 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:53.007913 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:06:53.008036 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:06:53.008064 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:55.500897 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:56.356415 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:06:56.357305 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:06:58.476752 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:01.679995 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:04.612954 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:06.736797 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:06.793663 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:06.793853 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:43.358575 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:07:43.360480 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:43.493393 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T01:07:43.495556 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:07:43.496388 INFO: Google Search fallback: searching for '07HOOVER t.html'
+2025-09-15T01:07:43.530818 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:07:43.540394 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:43.607684 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:43.607866 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:44.186229 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:07:44.189267 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:44.250643 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:44.250872 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:44.310618 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:07:44.310820 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:44.367714 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:44.367923 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:49.020662 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:07:49.020778 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:07:49.020805 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:51.984390 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:52.861355 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:07:52.863470 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:54.763297 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:57.954546 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:07:59.970911 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:03.884676 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:03.899287 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:03.988187 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:03.988373 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:04.613686 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:08:04.616029 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:04.683284 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:04.683482 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:04.751103 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:08:04.751271 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:04.807735 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:04.807922 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:09.107885 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:08:09.107973 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:08:09.107999 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:11.323336 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:12.235425 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:08:12.236433 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:15.418147 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:18.257756 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:21.953654 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:24.213179 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:24.302654 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:24.302862 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:25.655875 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:08:25.657505 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:25.768848 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T01:08:25.771038 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:08:25.772016 INFO: Google Search fallback: searching for '07HOOVER t.html'
+2025-09-15T01:08:25.804929 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:08:25.812307 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:25.870991 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:25.871182 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:26.468205 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:08:26.469730 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:26.530822 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:26.531046 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:26.589358 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:08:26.589525 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:26.646459 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:26.646679 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:31.701908 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:08:31.702023 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:08:31.702049 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:34.174494 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:35.116367 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:08:35.116940 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:37.347322 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:40.354537 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print
+2025-09-15T01:08:42.833453 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/07/education/edlife/07HOOVER-t.html?hp=&pagewanted=print

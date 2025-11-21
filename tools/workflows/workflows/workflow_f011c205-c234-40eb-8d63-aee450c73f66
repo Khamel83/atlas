@@ -1,0 +1,25 @@
+2025-09-15T05:53:26.487491 INFO: Attempting direct fetch for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:53:56.645033 ERROR: Direct fetch failed for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination: HTTPConnectionPool(host='www.alondranelson.com', port=80): Read timed out. (read timeout=30)
+2025-09-15T05:53:56.645151 INFO: Attempting Reader Mode strategy for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:54:16.766563 ERROR: Reader mode fetch failed for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination: HTTPConnectionPool(host='www.alondranelson.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T05:54:16.766723 INFO: Attempting JS Disabled strategy for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:54:36.875319 ERROR: JS disabled fetch failed for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination: HTTPConnectionPool(host='www.alondranelson.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T05:54:36.875439 INFO: Attempting Refresh Stop strategy for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:54:36.875504 ERROR: Refresh stop fetch failed for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination: [Errno 32] Broken pipe
+2025-09-15T05:54:36.875536 INFO: Attempting Inspect Element strategy for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:54:57.009055 ERROR: Inspect element fetch failed for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination: HTTPConnectionPool(host='www.alondranelson.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T05:54:57.009156 INFO: Attempting removepaywalls.com bypass for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:00.120480 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:55:00.120585 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:55:00.120631 INFO: Attempting archive.today for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:03.113817 INFO: No existing archive found, creating new archive for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:03.994020 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:55:03.994452 INFO: Attempting archive.is for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:07.698728 INFO: Attempting archive.li for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:11.533850 INFO: Attempting archive.fo for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:14.887630 INFO: Attempting archive.ph for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:16.821283 INFO: Attempting Googlebot spoof for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:31.936663 ERROR: Googlebot spoof failed for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination: HTTPConnectionPool(host='www.alondranelson.com', port=80): Read timed out. (read timeout=15)
+2025-09-15T05:55:31.936806 INFO: Attempting Enhanced Wayback Machine for http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:32.892429 INFO: Found Wayback snapshot from 20241116173501: http://web.archive.org/web/20241116173501/http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination
+2025-09-15T05:55:38.823311 INFO: Successfully fetched http://www.alondranelson.com/books/body-and-soul-the-black-panther-party-and-the-fight-against-medical-discrimination using wayback_machine_enhanced

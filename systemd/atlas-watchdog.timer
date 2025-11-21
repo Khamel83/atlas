@@ -1,0 +1,11 @@
+[Unit]
+Description=Atlas Progress Watchdog Timer
+Requires=atlas-watchdog.service
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

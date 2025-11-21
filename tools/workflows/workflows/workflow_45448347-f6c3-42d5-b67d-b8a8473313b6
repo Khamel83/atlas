@@ -1,0 +1,30 @@
+2025-09-14T22:31:39.155934 INFO: Attempting direct fetch for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:39.535800 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:31:39.644983 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:31:39.645112 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:39.645154 INFO: Attempting Reader Mode strategy for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:39.776678 ERROR: Reader mode fetch failed for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes: cannot use a string pattern on a bytes-like object
+2025-09-14T22:31:39.778952 INFO: Attempting JS Disabled strategy for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:39.980642 INFO: Content is very short (77 words). Likely a teaser.
+2025-09-14T22:31:39.980752 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:39.980778 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:40.136745 ERROR: Refresh stop fetch failed for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes: cannot use a string pattern on a bytes-like object
+2025-09-14T22:31:40.139160 INFO: Attempting Inspect Element strategy for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:40.453095 INFO: Content is very short (77 words). Likely a teaser.
+2025-09-14T22:31:40.453216 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:40.453244 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:42.798198 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:31:42.798319 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:42.798346 INFO: Attempting archive.today for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:45.563934 INFO: No existing archive found, creating new archive for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:46.420719 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:31:46.421510 INFO: Attempting archive.is for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:48.482830 INFO: Attempting archive.li for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:51.718955 INFO: Attempting archive.fo for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:54.231158 INFO: Attempting archive.ph for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:57.622037 INFO: Attempting Googlebot spoof for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:57.951333 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:31:57.951454 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:31:57.951481 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:58.559518 INFO: Found Wayback snapshot from 20250208200938: http://web.archive.org/web/20250208200938/https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes
+2025-09-14T22:31:59.409088 INFO: Successfully fetched https://food52.com/blog/18930-10-freezable-meals-that-might-as-well-be-superheroes using wayback_machine_enhanced

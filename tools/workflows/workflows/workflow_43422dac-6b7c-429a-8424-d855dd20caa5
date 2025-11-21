@@ -1,0 +1,26 @@
+2025-09-15T13:13:32.941560 INFO: Attempting direct fetch for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:33.774415 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:13:34.144793 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:13:34.144909 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:13:34.144950 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:34.327988 ERROR: Reader mode fetch failed for https://nymag.com/tags/elon-musk/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:13:34.329731 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:34.724663 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:34.873968 ERROR: Refresh stop fetch failed for https://nymag.com/tags/elon-musk/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:13:34.876268 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:35.687801 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:40.064374 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:13:40.064486 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:13:40.064513 INFO: Attempting archive.today for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:43.522908 INFO: No existing archive found, creating new archive for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:44.419944 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:13:44.420768 INFO: Attempting archive.is for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:46.833682 INFO: Attempting archive.li for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:49.330110 INFO: Attempting archive.fo for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:52.805063 INFO: Attempting archive.ph for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:55.595971 INFO: Attempting Googlebot spoof for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:56.122342 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T13:13:56.122471 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:13:56.122497 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:56.436944 INFO: Found Wayback snapshot from 20250524114713: http://web.archive.org/web/20250524114713/https://nymag.com/tags/elon-musk/
+2025-09-15T13:13:58.176638 INFO: Successfully fetched https://nymag.com/tags/elon-musk/ using wayback_machine_enhanced

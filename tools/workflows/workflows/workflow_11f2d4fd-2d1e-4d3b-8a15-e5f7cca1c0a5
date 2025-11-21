@@ -1,0 +1,115 @@
+2025-09-15T15:51:53.264140 INFO: Attempting direct fetch for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:51:53.595604 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:51:53.893636 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:51:53.893764 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:51:53.893803 INFO: Attempting Reader Mode strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:51:54.145473 ERROR: Reader mode fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:51:54.147206 INFO: Attempting JS Disabled strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:51:54.831351 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:51:54.831480 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:51:54.831511 INFO: Attempting Refresh Stop strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:51:54.961607 ERROR: Refresh stop fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:51:54.963975 INFO: Attempting Inspect Element strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:51:55.637948 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:51:55.638059 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:51:55.638091 INFO: Attempting removepaywalls.com bypass for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:51:59.626014 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:51:59.626128 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:51:59.626156 INFO: Attempting archive.today for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:03.153032 INFO: No existing archive found, creating new archive for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:04.032725 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:52:04.033157 INFO: Attempting archive.is for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:06.483932 INFO: Attempting archive.li for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:09.173217 INFO: Attempting archive.fo for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:11.419015 INFO: Attempting archive.ph for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:14.633513 INFO: Attempting Googlebot spoof for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:14.861094 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:14.861216 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:14.861246 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:15.224268 INFO: Found Wayback snapshot from 20250811203130: http://web.archive.org/web/20250811203130/https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:16.256296 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:16.256426 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:16.256451 INFO: Attempting Wayback Machine for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:16.371191 INFO: Found Wayback snapshot: http://web.archive.org/web/20250811203130/https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:16.795517 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:16.795662 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:16.795696 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html. Attempting Google Search fallback...
+2025-09-15T15:52:16.795769 INFO: Google Search fallback: searching for 'the unabomber ted kaczynski new generation of acolytes.html'
+2025-09-15T15:52:16.827238 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:52:16.834801 INFO: Attempting direct fetch for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:17.120204 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:17.398234 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:17.398356 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:17.398396 INFO: Attempting Reader Mode strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:17.551829 ERROR: Reader mode fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:52:17.553751 INFO: Attempting JS Disabled strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:17.972723 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:17.972846 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:17.972870 INFO: Attempting Refresh Stop strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:18.100036 ERROR: Refresh stop fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:52:18.102171 INFO: Attempting Inspect Element strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:18.758323 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:18.758446 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:18.758475 INFO: Attempting removepaywalls.com bypass for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:21.097702 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:52:21.097819 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:21.097844 INFO: Attempting archive.today for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:21.107099 INFO: Attempting direct fetch for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:21.397925 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:21.682462 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:21.682585 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:21.682660 INFO: Attempting Reader Mode strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:21.836021 ERROR: Reader mode fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:52:21.838375 INFO: Attempting JS Disabled strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:22.267901 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:22.268023 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:22.268054 INFO: Attempting Refresh Stop strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:22.398381 ERROR: Refresh stop fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:52:22.400798 INFO: Attempting Inspect Element strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:23.004997 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:23.005259 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:23.005301 INFO: Attempting removepaywalls.com bypass for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:25.163941 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:52:25.164058 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:25.164087 INFO: Attempting archive.today for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:28.423075 INFO: No existing archive found, creating new archive for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:29.281819 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:52:29.282230 INFO: Attempting archive.is for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:31.761778 INFO: Attempting archive.li for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:35.003791 INFO: Attempting archive.fo for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:37.054249 INFO: Attempting archive.ph for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:39.351294 INFO: Attempting Googlebot spoof for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:39.644495 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:39.644663 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:39.644694 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:39.895114 INFO: Found Wayback snapshot from 20250811203130: http://web.archive.org/web/20250811203130/https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:40.136379 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:40.136500 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:40.136527 INFO: Attempting Wayback Machine for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:40.294379 INFO: Found Wayback snapshot: http://web.archive.org/web/20250811203130/https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:40.857182 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:40.857539 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:40.857586 ERROR: All fetch strategies failed or returned low-quality content for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html. Attempting Google Search fallback...
+2025-09-15T15:52:40.857691 INFO: Google Search fallback: searching for 'the unabomber ted kaczynski new generation of acolytes.html'
+2025-09-15T15:52:40.890733 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:52:40.897821 INFO: Attempting direct fetch for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:41.414710 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:41.599289 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:41.599397 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:41.599436 INFO: Attempting Reader Mode strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:41.874363 ERROR: Reader mode fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:52:41.878205 INFO: Attempting JS Disabled strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:42.476992 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:42.477101 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:42.477128 INFO: Attempting Refresh Stop strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:42.620074 ERROR: Refresh stop fetch failed for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:52:42.622737 INFO: Attempting Inspect Element strategy for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:43.403627 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T15:52:43.403749 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:43.403778 INFO: Attempting removepaywalls.com bypass for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:48.119172 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:52:48.119517 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:52:48.119552 INFO: Attempting archive.today for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:52.507877 INFO: No existing archive found, creating new archive for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html
+2025-09-15T15:52:53.412266 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:52:53.412665 INFO: Attempting archive.is for https://nymag.com/intelligencer/2018/12/the-unabomber-ted-kaczynski-new-generation-of-acolytes.html

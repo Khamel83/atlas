@@ -1,0 +1,111 @@
+2025-09-15T09:30:01.956039 INFO: Attempting direct fetch for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:02.340892 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:02.535423 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:02.535547 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:02.535644 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:03.107894 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/cult/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:30:03.109983 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:03.755967 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T09:30:03.756079 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:03.756106 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:03.893137 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/cult/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:30:03.894880 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:04.463971 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T09:30:04.464075 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:04.464102 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:06.861504 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:30:06.861650 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:06.861680 INFO: Attempting archive.today for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:09.978421 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:10.862945 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:30:10.863460 INFO: Attempting archive.is for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:14.686906 INFO: Attempting archive.li for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:17.653317 INFO: Attempting archive.fo for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:20.187377 INFO: Attempting archive.ph for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:23.018636 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:23.876656 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:23.876813 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:23.876843 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:29.442031 INFO: Found Wayback snapshot from 20231202200538: http://web.archive.org/web/20231202200538/https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:32.102075 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:32.102211 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:32.102237 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:32.287561 ERROR: Wayback Machine failed for https://www.rollingstone.com/t/cult/: No archived snapshots found
+2025-09-15T09:30:32.289895 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/cult/. Attempting Google Search fallback...
+2025-09-15T09:30:32.290014 INFO: Google Search fallback: searching for 'cult'
+2025-09-15T09:30:32.323120 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:30:32.331869 INFO: Attempting direct fetch for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:32.627138 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:32.787931 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:32.795385 INFO: Attempting direct fetch for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:33.099966 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:33.291352 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:33.291462 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:33.291508 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:33.384213 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/cult/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:30:33.385838 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:33.683803 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T09:30:33.683909 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:33.683935 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:33.763107 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/cult/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:30:33.764727 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:34.129697 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T09:30:34.129806 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:34.129834 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:37.870011 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:30:37.870114 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:37.870144 INFO: Attempting archive.today for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:40.325995 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:41.208688 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:30:41.208836 INFO: Attempting archive.is for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:43.500851 INFO: Attempting archive.li for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:45.956227 INFO: Attempting archive.fo for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:47.848933 INFO: Attempting archive.ph for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:50.112845 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:50.553668 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:50.553794 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:50.553821 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:50.909650 INFO: Found Wayback snapshot from 20231202200538: http://web.archive.org/web/20231202200538/https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:51.173768 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:51.173892 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:51.173927 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:51.348403 ERROR: Wayback Machine failed for https://www.rollingstone.com/t/cult/: No archived snapshots found
+2025-09-15T09:30:51.350473 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/cult/. Attempting Google Search fallback...
+2025-09-15T09:30:51.350781 INFO: Google Search fallback: searching for 'cult'
+2025-09-15T09:30:51.382578 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:30:51.390669 INFO: Attempting direct fetch for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:51.683650 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:51.836760 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:30:51.836880 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:51.836930 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:52.012118 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/cult/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:30:52.013961 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:52.231653 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T09:30:52.231773 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:52.231826 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:52.311804 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/cult/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:30:52.313951 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:52.766032 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T09:30:52.766146 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:52.766174 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:56.225828 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:30:56.225955 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:30:56.225985 INFO: Attempting archive.today for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:58.123874 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/cult/
+2025-09-15T09:30:59.036203 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:30:59.036776 INFO: Attempting archive.is for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:02.123189 INFO: Attempting archive.li for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:05.602099 INFO: Attempting archive.fo for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:08.298027 INFO: Attempting archive.ph for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:11.362279 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:11.572912 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:31:11.573029 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:11.573064 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:11.905979 INFO: Found Wayback snapshot from 20231202200538: http://web.archive.org/web/20231202200538/https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:12.146955 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:31:12.147078 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:12.147106 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/cult/
+2025-09-15T09:31:12.391218 ERROR: Wayback Machine failed for https://www.rollingstone.com/t/cult/: No archived snapshots found
+2025-09-15T09:31:12.392699 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/cult/. Attempting Google Search fallback...
+2025-09-15T09:31:12.392828 INFO: Google Search fallback: searching for 'cult'
+2025-09-15T09:31:12.423858 INFO: Google Search fallback did not find alternative URL

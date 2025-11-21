@@ -1,0 +1,102 @@
+# Podcast mapping configuration for transcript discovery
+# Each podcast can have custom selectors and resolver settings
+
+political-gabfest:
+  rss_url: https://feeds.megaphone.fm/slatespoliticalgabfest
+  site_url: https://slate.com/podcasts/political-gabfest
+  resolver: generic_html
+  episode_selector: 'a[href*="/podcasts/political-gabfest/"]'
+  transcript_selector: 'section[data-component="Transcript"], .transcript'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+conversations-with-tyler:
+  rss_url: https://feeds.soundcloud.com/users/soundcloud:users:264034133/sounds.rss
+  site_url: https://conversationswithtyler.com
+  resolver: generic_html
+  episode_selector: 'a[href*="/episodes/"]'
+  transcript_selector: '.transcript-content, .episode-transcript, .full-transcript'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 1.5
+
+acquired:
+  rss_url: https://feeds.megaphone.fm/acquired
+  site_url: https://acquired.fm
+  resolver: generic_html
+  episode_selector: 'a[href*="/episodes/"]'
+  transcript_selector: '.episode-content .transcript, .show-notes'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+acq2-by-acquired:
+  rss_url: https://feeds.megaphone.fm/acq2
+  site_url: https://acquired.fm
+  resolver: generic_html
+  episode_selector: 'a[href*="/episodes/"]'
+  transcript_selector: '.episode-content .transcript, .show-notes'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+hard-fork:
+  rss_url: https://feeds.simplecast.com/KqTCbOXZ
+  site_url: https://nytimes.com/column/hard-fork
+  resolver: generic_html
+  episode_selector: 'a[href*="/hard-fork/"]'
+  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 3.0
+
+ezra-klein-show:
+  rss_url: https://feeds.simplecast.com/82FI35Px
+  site_url: https://nytimes.com/column/ezra-klein-podcast
+  resolver: generic_html
+  episode_selector: 'a[href*="/ezra-klein-podcast/"]'
+  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 3.0
+
+planet-money:
+  rss_url: https://feeds.npr.org/510289/podcast.xml
+  site_url: https://npr.org/sections/money
+  resolver: generic_html
+  episode_selector: 'a[href*="/planet-money/"], a[href*="/money/"]'
+  transcript_selector: '.transcript, .storytext, #transcript'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+radiolab:
+  rss_url: https://feeds.wnyc.org/radiolab
+  site_url: https://radiolab.org
+  resolver: generic_html
+  episode_selector: 'a[href*="/story/"], a[href*="/episodes/"]'
+  transcript_selector: '.episode-transcript, .transcript, .story-text'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+sharp-tech:
+  rss_url: https://feeds.stratechery.com/sharp-tech
+  site_url: https://stratechery.com
+  resolver: generic_html
+  episode_selector: 'a[href*="/sharp-tech/"]'
+  transcript_selector: '.post-content, .entry-content'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+stratechery:
+  rss_url: https://feeds.stratechery.com/stratechery
+  site_url: https://stratechery.com
+  resolver: generic_html
+  episode_selector: 'a[href*="/podcast/"], a[href*="/sharp-tech/"]'
+  transcript_selector: '.post-content, .entry-content'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0

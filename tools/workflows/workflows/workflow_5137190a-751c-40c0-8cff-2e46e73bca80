@@ -1,0 +1,88 @@
+2025-09-15T04:29:45.662935 INFO: Attempting direct fetch for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:45.784250 ERROR: Direct fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:45.785421 INFO: Attempting Reader Mode strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:45.866945 ERROR: Reader mode fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:45.868099 INFO: Attempting JS Disabled strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:45.950581 ERROR: JS disabled fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:45.951751 INFO: Attempting Refresh Stop strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:46.027792 ERROR: Refresh stop fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: cannot use a string pattern on a bytes-like object
+2025-09-15T04:29:46.028884 INFO: Attempting Inspect Element strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:46.113413 ERROR: Inspect element fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:46.114568 INFO: Attempting removepaywalls.com bypass for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:50.047776 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:29:50.047870 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:29:50.047896 INFO: Attempting archive.today for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:52.699046 INFO: No existing archive found, creating new archive for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:53.960467 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:29:53.960975 INFO: Attempting archive.is for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:56.758240 INFO: Attempting archive.li for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:29:59.298675 INFO: Attempting archive.fo for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:02.589937 INFO: Attempting archive.ph for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:05.830479 INFO: Attempting Googlebot spoof for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:05.915029 ERROR: Googlebot spoof failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:05.918464 INFO: Attempting Enhanced Wayback Machine for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.039427 ERROR: Enhanced Wayback Machine failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: No archived snapshots found in any timeframe
+2025-09-15T04:30:17.040751 INFO: Attempting Wayback Machine for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.176004 ERROR: Wayback Machine failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: No archived snapshots found
+2025-09-15T04:30:17.177535 ERROR: All fetch strategies failed or returned low-quality content for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa. Attempting Google Search fallback...
+2025-09-15T04:30:17.178006 INFO: Google Search fallback: searching for '10.1177'
+2025-09-15T04:30:17.209904 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:30:17.218205 INFO: Attempting direct fetch for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.295137 ERROR: Direct fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.296269 INFO: Attempting Reader Mode strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.385730 ERROR: Reader mode fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.386849 INFO: Attempting JS Disabled strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.460514 ERROR: JS disabled fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.461731 INFO: Attempting Refresh Stop strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.546923 ERROR: Refresh stop fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: cannot use a string pattern on a bytes-like object
+2025-09-15T04:30:17.548028 INFO: Attempting Inspect Element strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.628174 ERROR: Inspect element fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:17.629380 INFO: Attempting removepaywalls.com bypass for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.597104 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:30:20.597220 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:30:20.605043 INFO: Attempting direct fetch for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.698461 ERROR: Direct fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.699903 INFO: Attempting Reader Mode strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.783262 ERROR: Reader mode fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.784669 INFO: Attempting JS Disabled strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.873202 ERROR: JS disabled fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.874643 INFO: Attempting Refresh Stop strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:20.958392 ERROR: Refresh stop fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: cannot use a string pattern on a bytes-like object
+2025-09-15T04:30:20.959745 INFO: Attempting Inspect Element strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:21.046177 ERROR: Inspect element fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:21.047548 INFO: Attempting removepaywalls.com bypass for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:23.599284 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:30:23.599398 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:30:23.599426 INFO: Attempting archive.today for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:26.094669 INFO: No existing archive found, creating new archive for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:26.969528 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:30:26.970021 INFO: Attempting archive.is for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:29.843486 INFO: Attempting archive.li for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:33.038075 INFO: Attempting archive.fo for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:36.064686 INFO: Attempting archive.ph for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:39.941669 INFO: Attempting Googlebot spoof for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:40.024245 ERROR: Googlebot spoof failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:40.025641 INFO: Attempting Enhanced Wayback Machine for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.301415 ERROR: Enhanced Wayback Machine failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: No archived snapshots found in any timeframe
+2025-09-15T04:30:41.302857 INFO: Attempting Wayback Machine for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.414970 ERROR: Wayback Machine failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: No archived snapshots found
+2025-09-15T04:30:41.416445 ERROR: All fetch strategies failed or returned low-quality content for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa. Attempting Google Search fallback...
+2025-09-15T04:30:41.416958 INFO: Google Search fallback: searching for '10.1177'
+2025-09-15T04:30:41.448411 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:30:41.457045 INFO: Attempting direct fetch for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.544554 ERROR: Direct fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.545753 INFO: Attempting Reader Mode strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.627233 ERROR: Reader mode fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.628409 INFO: Attempting JS Disabled strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.713345 ERROR: JS disabled fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.714543 INFO: Attempting Refresh Stop strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.803577 ERROR: Refresh stop fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: cannot use a string pattern on a bytes-like object
+2025-09-15T04:30:41.805017 INFO: Attempting Inspect Element strategy for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.892811 ERROR: Inspect element fetch failed for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:41.894389 INFO: Attempting removepaywalls.com bypass for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:46.892274 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:30:46.892395 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:30:46.892423 INFO: Attempting archive.today for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:50.068531 INFO: No existing archive found, creating new archive for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa
+2025-09-15T04:30:50.974199 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:30:50.974700 INFO: Attempting archive.is for https://journals.sagepub.com/doi/abs/10.1177/1750698017720257?download=true&journalCode=mssa

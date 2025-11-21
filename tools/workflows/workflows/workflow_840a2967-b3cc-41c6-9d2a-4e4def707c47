@@ -1,0 +1,116 @@
+2025-09-14T22:27:42.402752 INFO: Attempting direct fetch for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:42.677865 ERROR: Direct fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:42.678052 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:43.334326 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:27:43.336111 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:43.403197 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:43.403420 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:43.470427 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:27:43.470694 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:43.532970 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:43.533165 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:46.329286 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:27:46.329497 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:27:46.329558 INFO: Attempting archive.today for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:48.620915 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:49.513198 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:27:49.514421 INFO: Attempting archive.is for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:52.518233 INFO: Attempting archive.li for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:56.354039 INFO: Attempting archive.fo for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:27:59.845146 INFO: Attempting archive.ph for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:02.149825 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:02.239810 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:02.240020 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:35.582648 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T22:28:35.584205 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:35.691165 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T22:28:35.693320 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T22:28:35.694314 INFO: Google Search fallback: searching for '03Ryan t.html'
+2025-09-14T22:28:35.727551 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:28:35.737303 INFO: Attempting direct fetch for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:35.825533 ERROR: Direct fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:35.825803 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:36.421193 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:28:36.424951 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:36.490887 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:36.491069 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:36.557886 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:28:36.558103 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:36.618123 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:36.618306 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:38.831286 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:28:38.831395 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:28:38.831425 INFO: Attempting archive.today for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:41.579908 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:42.498435 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:28:42.498904 INFO: Attempting archive.is for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:44.676405 INFO: Attempting archive.li for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:48.444190 INFO: Attempting archive.fo for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:51.493013 INFO: Attempting archive.ph for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:55.079220 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:55.188664 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:55.188875 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:56.405838 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T22:28:56.407280 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:56.526185 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T22:28:56.528209 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T22:28:56.528815 INFO: Google Search fallback: searching for '03Ryan t.html'
+2025-09-14T22:28:56.563125 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:28:56.572045 INFO: Attempting direct fetch for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:56.630227 ERROR: Direct fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:56.630409 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:57.153136 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:28:57.155941 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:57.220273 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:57.220448 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:57.285465 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:28:57.285903 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:57.347039 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:28:57.347222 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:01.793069 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:29:01.793182 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:29:01.793211 INFO: Attempting archive.today for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:04.108044 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:05.003274 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:29:05.003547 INFO: Attempting archive.is for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:07.650066 INFO: Attempting archive.li for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:11.370407 INFO: Attempting archive.fo for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:23.234173 INFO: Attempting archive.ph for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:25.915821 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:25.991810 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:25.992016 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:28.547251 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T22:29:28.550507 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:28.663357 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T22:29:28.665509 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T22:29:28.666213 INFO: Google Search fallback: searching for '03Ryan t.html'
+2025-09-14T22:29:28.699978 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:29:28.710028 INFO: Attempting direct fetch for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:28.769440 ERROR: Direct fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:28.769654 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:29.309863 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:29:29.311522 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:29.371232 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:29.371418 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:29.433739 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T22:29:29.433963 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:29.499184 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:29.499396 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:32.610774 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:29:32.610907 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:29:32.610940 INFO: Attempting archive.today for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:35.590827 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:36.457554 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:29:36.457924 INFO: Attempting archive.is for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:45.021134 INFO: Attempting archive.li for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:47.566402 INFO: Attempting archive.fo for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:50.884574 INFO: Attempting archive.ph for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:53.567279 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:53.662822 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:53.663040 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:55.772291 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T22:29:55.773893 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print
+2025-09-14T22:29:55.884754 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print: No archived snapshots found
+2025-09-14T22:29:55.886923 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/10/03/magazine/03Ryan-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-14T22:29:55.887651 INFO: Google Search fallback: searching for '03Ryan t.html'
+2025-09-14T22:29:55.922538 INFO: Google Search fallback did not find alternative URL

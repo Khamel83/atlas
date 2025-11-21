@@ -1,0 +1,31 @@
+2025-09-15T09:45:15.350407 INFO: Attempting direct fetch for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:15.556557 ERROR: Direct fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:15.558293 INFO: Attempting Reader Mode strategy for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:15.746216 ERROR: Reader mode fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:15.758727 INFO: Attempting direct fetch for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:15.959069 ERROR: Direct fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:15.962690 INFO: Attempting Reader Mode strategy for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.167942 ERROR: Reader mode fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.171512 INFO: Attempting JS Disabled strategy for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.333852 ERROR: JS disabled fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.337361 INFO: Attempting Refresh Stop strategy for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.527273 ERROR: Refresh stop fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: cannot use a string pattern on a bytes-like object
+2025-09-15T09:45:16.530802 INFO: Attempting Inspect Element strategy for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.756876 ERROR: Inspect element fetch failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:16.759474 INFO: Attempting removepaywalls.com bypass for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:20.587801 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T09:45:20.587912 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:45:20.587940 INFO: Attempting archive.today for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:23.188740 INFO: No existing archive found, creating new archive for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:24.066109 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:45:24.066555 INFO: Attempting archive.is for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:26.335030 INFO: Attempting archive.li for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:29.487983 INFO: Attempting archive.fo for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:32.399516 INFO: Attempting archive.ph for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:35.029057 INFO: Attempting Googlebot spoof for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:35.092148 ERROR: Googlebot spoof failed for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364: 403 Client Error: Forbidden for url: http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:35.092420 INFO: Attempting Enhanced Wayback Machine for http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364
+2025-09-15T09:45:35.500432 INFO: Found Wayback snapshot from 20231202194736: http://web.archive.org/web/20231202194736/https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364/
+2025-09-15T09:46:00.549757 INFO: Timeframe  failed: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=25)
+2025-09-15T09:46:10.286738 INFO: Found Wayback snapshot from 20211021222354: http://web.archive.org/web/20211021222354/https://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364/
+2025-09-15T09:46:12.242300 INFO: Successfully fetched http://www.politico.com/magazine/story/2015/11/paris-attacks-war-no-one-can-name-213364 using wayback_machine_enhanced

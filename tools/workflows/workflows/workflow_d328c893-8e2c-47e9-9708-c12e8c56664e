@@ -1,0 +1,25 @@
+2025-09-14T21:00:38.820535 INFO: Attempting direct fetch for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:38.957290 ERROR: Direct fetch failed for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:38.957464 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:39.680185 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:00:39.681692 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:39.747691 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:39.747879 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:39.807631 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T21:00:39.807806 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:39.875698 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:39.875944 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:42.853168 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:00:42.853270 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:00:42.853298 INFO: Attempting archive.today for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:45.182827 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:46.058197 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:00:46.058974 INFO: Attempting archive.is for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:49.724304 INFO: Attempting archive.li for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:52.113161 INFO: Attempting archive.fo for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:55.725510 INFO: Attempting archive.ph for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:58.455733 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:58.515050 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:00:58.515241 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print
+2025-09-14T21:01:02.570178 INFO: Found Wayback snapshot from 20120530014854: http://web.archive.org/web/20120530014854/http://www.nytimes.com:80/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine
+2025-09-14T21:01:03.306825 INFO: Successfully fetched http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?ref=magazine&pagewanted=print using wayback_machine_enhanced

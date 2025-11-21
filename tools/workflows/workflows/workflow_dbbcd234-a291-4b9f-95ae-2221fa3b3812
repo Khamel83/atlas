@@ -1,0 +1,96 @@
+2025-09-15T12:56:50.438173 INFO: Attempting direct fetch for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.689272 ERROR: Direct fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.691217 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.773683 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.775877 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.860135 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.862058 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:50.952244 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/SB107832734296045356: cannot use a string pattern on a bytes-like object
+2025-09-15T12:56:50.954198 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:51.035038 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:51.036996 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:53.798239 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:56:53.798349 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:56:53.798374 INFO: Attempting archive.today for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:57.133628 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:56:58.036329 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:56:58.037189 INFO: Attempting archive.is for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:01.751297 INFO: Attempting archive.li for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:05.354164 INFO: Attempting archive.fo for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:08.310605 INFO: Attempting archive.ph for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:11.863723 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:11.946163 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:11.948028 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:19.479884 INFO: Found Wayback snapshot from 20231126063733: http://web.archive.org/web/20231126063733/https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:20.561379 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T12:57:20.561505 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:57:20.561532 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.252290 ERROR: Wayback Machine failed for https://www.wsj.com/articles/SB107832734296045356: No archived snapshots found
+2025-09-15T12:57:21.254735 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/SB107832734296045356. Attempting Google Search fallback...
+2025-09-15T12:57:21.254870 INFO: Google Search fallback: searching for 'SB107832734296045356'
+2025-09-15T12:57:21.287914 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:57:21.295949 INFO: Attempting direct fetch for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.400895 ERROR: Direct fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.410128 INFO: Attempting direct fetch for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.490336 ERROR: Direct fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.491834 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.576159 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.577584 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.656893 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.658410 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.738322 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/SB107832734296045356: cannot use a string pattern on a bytes-like object
+2025-09-15T12:57:21.739812 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.824387 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:21.825962 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:26.559317 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:57:26.559420 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:57:26.559448 INFO: Attempting archive.today for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:29.536754 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:30.407296 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:57:30.408117 INFO: Attempting archive.is for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:33.429905 INFO: Attempting archive.li for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:36.879224 INFO: Attempting archive.fo for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:40.466907 INFO: Attempting archive.ph for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:43.261711 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:43.343254 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:43.345340 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:43.631554 INFO: Found Wayback snapshot from 20231126063733: http://web.archive.org/web/20231126063733/https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:43.800048 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T12:57:43.800161 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:57:43.800187 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.046297 ERROR: Wayback Machine failed for https://www.wsj.com/articles/SB107832734296045356: No archived snapshots found
+2025-09-15T12:57:44.054081 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/SB107832734296045356. Attempting Google Search fallback...
+2025-09-15T12:57:44.054477 INFO: Google Search fallback: searching for 'SB107832734296045356'
+2025-09-15T12:57:44.088874 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:57:44.096892 INFO: Attempting direct fetch for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.202870 ERROR: Direct fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.204185 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.290114 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.291399 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.372268 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.373569 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.456885 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/SB107832734296045356: cannot use a string pattern on a bytes-like object
+2025-09-15T12:57:44.458174 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.542201 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:44.543525 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:49.502848 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T12:57:49.502962 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:57:49.502988 INFO: Attempting archive.today for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:51.555958 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:52.447256 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:57:52.447728 INFO: Attempting archive.is for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:56.173451 INFO: Attempting archive.li for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:57:59.206235 INFO: Attempting archive.fo for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:02.838378 INFO: Attempting archive.ph for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:05.631994 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:05.772744 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/SB107832734296045356: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:05.774352 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:06.081730 INFO: Found Wayback snapshot from 20231126063733: http://web.archive.org/web/20231126063733/https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:06.267541 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T12:58:06.267671 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:58:06.267698 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/SB107832734296045356
+2025-09-15T12:58:06.396763 ERROR: Wayback Machine failed for https://www.wsj.com/articles/SB107832734296045356: No archived snapshots found
+2025-09-15T12:58:06.398388 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/SB107832734296045356. Attempting Google Search fallback...
+2025-09-15T12:58:06.398529 INFO: Google Search fallback: searching for 'SB107832734296045356'
+2025-09-15T12:58:06.429792 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:58:06.429906 ERROR: Google Search fallback failed: [Errno 32] Broken pipe

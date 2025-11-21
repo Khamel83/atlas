@@ -1,0 +1,30 @@
+2025-09-15T02:08:59.079326 INFO: Attempting direct fetch for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:08:59.547931 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:08:59.668366 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:08:59.668483 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:08:59.668531 INFO: Attempting Reader Mode strategy for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:08:59.804628 ERROR: Reader mode fetch failed for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016: cannot use a string pattern on a bytes-like object
+2025-09-15T02:08:59.806259 INFO: Attempting JS Disabled strategy for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:00.018247 INFO: Content is very short (47 words). Likely a teaser.
+2025-09-15T02:09:00.018361 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:09:00.018389 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:00.173988 ERROR: Refresh stop fetch failed for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016: cannot use a string pattern on a bytes-like object
+2025-09-15T02:09:00.175858 INFO: Attempting Inspect Element strategy for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:00.523504 INFO: Content is very short (47 words). Likely a teaser.
+2025-09-15T02:09:00.523648 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:09:00.523678 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:03.833921 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:09:03.834037 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:09:03.834064 INFO: Attempting archive.today for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:06.283934 INFO: No existing archive found, creating new archive for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:07.136515 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:09:07.137114 INFO: Attempting archive.is for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:10.870545 INFO: Attempting archive.li for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:12.745983 INFO: Attempting archive.fo for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:16.186199 INFO: Attempting archive.ph for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:19.045946 INFO: Attempting Googlebot spoof for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:19.269926 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T02:09:19.270048 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:09:19.270082 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:19.737546 INFO: Found Wayback snapshot from 20230531165340: http://web.archive.org/web/20230531165340/https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016
+2025-09-15T02:09:20.792127 INFO: Successfully fetched https://food52.com/blog/18836-the-15-design-articles-you-loved-the-most-in-2016 using wayback_machine_enhanced

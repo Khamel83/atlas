@@ -1,0 +1,143 @@
+2025-09-15T08:50:23.823212 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:24.200036 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:50:24.212563 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:50:24.213691 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:50:24.213746 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:24.326549 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:50:24.328267 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:24.449331 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:50:24.449439 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:50:24.449468 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:24.558918 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:50:24.560840 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:24.677328 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:50:24.677433 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:50:24.677460 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:27.669428 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:50:27.669539 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:50:27.669566 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:30.892403 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:31.791930 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:50:31.792363 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:35.025434 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:37.592398 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:41.013860 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:44.732207 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:44.908878 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:50:44.908977 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:50:44.909039 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:45.509079 INFO: Found Wayback snapshot from 20250731012147: http://web.archive.org/web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:48.232163 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:51.500909 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:50:53.486888 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:06.504787 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:23.115934 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:25.687471 ERROR: Enhanced Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: No archived snapshots found in any timeframe
+2025-09-15T08:51:25.688411 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:25.822112 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:27.662312 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:27.662413 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:51:27.662445 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg. Attempting Google Search fallback...
+2025-09-15T08:51:27.662505 INFO: Google Search fallback: searching for 'chevron.svg'
+2025-09-15T08:51:27.693985 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:51:27.701494 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:27.909448 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:27.912555 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:27.912673 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:51:27.912714 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:28.019231 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:51:28.020762 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:28.138107 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:28.138255 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:28.138288 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:51:28.138312 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:28.252195 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:51:28.254177 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:28.369849 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:28.369950 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:51:28.369976 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:30.952966 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:51:30.953078 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:51:30.953106 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:33.609776 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:34.469547 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:51:34.470057 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:36.976517 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:39.561489 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:43.440376 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:45.810751 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:45.978260 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:51:45.978362 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:51:45.978388 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:46.159790 INFO: Found Wayback snapshot from 20250731012147: http://web.archive.org/web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:48.356009 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:51.516982 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:52.933049 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:55.214064 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:57.787512 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:59.846182 ERROR: Enhanced Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: No archived snapshots found in any timeframe
+2025-09-15T08:51:59.847021 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:51:59.986384 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.061680 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.061779 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:02.061809 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg. Attempting Google Search fallback...
+2025-09-15T08:52:02.061868 INFO: Google Search fallback: searching for 'chevron.svg'
+2025-09-15T08:52:02.095229 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:52:02.104696 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.330993 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.334631 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.334706 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:02.334744 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.442322 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:52:02.443829 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.557491 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.557606 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:02.557636 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.667934 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:52:02.669501 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.783330 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.783437 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:02.783465 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.790739 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:02.900377 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.903926 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:02.904017 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:02.904056 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:03.012872 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:52:03.014436 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:03.128481 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:03.128636 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:03.128666 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:03.241849 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T08:52:03.243366 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:03.358719 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:03.358818 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:03.358843 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:07.805754 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:52:07.805864 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:07.805893 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:10.483920 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:11.359674 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:52:11.360181 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:14.913056 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:18.523533 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:20.646548 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:24.103259 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:24.275583 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T08:52:24.275714 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:24.275741 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:24.594268 INFO: Found Wayback snapshot from 20250731012147: http://web.archive.org/web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:27.105841 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:29.614578 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:31.707816 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:33.952664 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:33.976041 INFO: Timeframe 20180101 failed: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2008f370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-15T08:52:34.347858 INFO: Found Wayback snapshot from 20241023133932: http://web.archive.org/web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:34.371493 INFO: Timeframe 20100101 failed: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /web/20241023133932/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1fc4bfa0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-15T08:52:34.371629 ERROR: Enhanced Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: No archived snapshots found in any timeframe
+2025-09-15T08:52:34.371673 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:34.603709 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg
+2025-09-15T08:52:34.628820 ERROR: Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /web/20250731012147/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1fb668d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-15T08:52:34.628925 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/chevron.svg. Attempting Google Search fallback...
+2025-09-15T08:52:34.629011 INFO: Google Search fallback: searching for 'chevron.svg'
+2025-09-15T08:52:34.629064 ERROR: Google Search fallback failed: [Errno 32] Broken pipe

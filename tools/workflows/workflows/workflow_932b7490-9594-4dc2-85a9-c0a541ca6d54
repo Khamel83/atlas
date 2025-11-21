@@ -1,0 +1,25 @@
+2025-09-14T20:46:05.839894 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:05.925697 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:05.925870 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:06.592207 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:46:06.593910 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:06.668970 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:06.669162 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:06.732934 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:46:06.733121 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:06.794340 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:06.794524 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:11.708704 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:46:11.708813 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:46:11.708840 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:14.025512 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:14.939160 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:46:14.941010 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:18.452926 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:21.272673 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:23.760543 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:26.706532 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:26.789976 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:26.790210 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print
+2025-09-14T20:46:27.205383 INFO: Found Wayback snapshot from 20120720102048: http://web.archive.org/web/20120720102048/http://www.nytimes.com:80/2010/12/26/sports/football/26tackling.html?_r=1
+2025-09-14T20:46:27.830157 INFO: Successfully fetched http://www.nytimes.com/2010/12/26/sports/football/26tackling.html?_r=1&hp=&pagewanted=print using wayback_machine_enhanced

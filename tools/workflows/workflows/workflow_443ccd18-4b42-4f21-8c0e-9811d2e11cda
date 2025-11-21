@@ -1,0 +1,85 @@
+2025-09-15T08:52:37.048932 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:37.242272 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:37.242476 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:37.984740 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:52:37.986394 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:38.018287 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:38.018476 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:38.049251 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:52:38.049427 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:38.081175 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:38.081356 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:41.290386 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:52:41.290502 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:52:41.290530 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:44.941310 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:45.842650 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:52:45.843314 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:49.106571 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:51.322395 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:54.426138 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:57.050410 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:57.079154 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:52:57.079359 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:16.793200 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:53:16.794844 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:17.119040 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T08:53:17.121158 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:53:17.121829 INFO: Google Search fallback: searching for '01iht edcohen01.html'
+2025-09-15T08:53:17.156567 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:53:17.295114 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:17.352710 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:17.352914 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.085476 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:53:18.087908 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.119309 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.119504 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.149381 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:53:18.149609 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.189337 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.189549 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.197476 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.235941 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.236137 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.670575 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:53:18.672989 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.706273 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.706462 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.737477 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:53:18.737688 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.766237 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:18.766414 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:23.802432 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:53:23.802542 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:53:23.802571 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:26.575460 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:27.456889 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:53:27.457535 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:31.313745 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:33.312899 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:37.064692 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:39.261638 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:39.361065 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:39.361252 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:40.753485 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:53:40.754810 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:40.891658 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T08:53:40.893469 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:53:40.894030 INFO: Google Search fallback: searching for '01iht edcohen01.html'
+2025-09-15T08:53:40.926143 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:53:40.933914 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.003491 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.003721 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.679656 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:53:41.682122 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.742475 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.742706 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.802501 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:53:41.802706 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.861119 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:41.861315 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:45.150199 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:53:45.150311 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:53:45.150340 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:47.172252 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/01/opinion/01iht-edcohen01.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:53:48.067050 INFO: Rate limited on archive.today, trying next mirror...

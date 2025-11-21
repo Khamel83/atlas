@@ -1,0 +1,25 @@
+2025-09-14T22:10:40.175245 INFO: Attempting direct fetch for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:40.361010 ERROR: Direct fetch failed for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:40.362211 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:40.903329 ERROR: Reader mode fetch failed for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:10:40.904739 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:41.028700 ERROR: JS disabled fetch failed for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:41.029943 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:41.149462 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:10:41.150757 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:41.277317 ERROR: Inspect element fetch failed for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:41.278745 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:45.813416 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:10:45.813679 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:10:45.813722 INFO: Attempting archive.today for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:47.944034 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:48.814016 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:10:48.814436 INFO: Attempting archive.is for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:53.292151 INFO: Attempting archive.li for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:56.272429 INFO: Attempting archive.fo for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:10:59.246421 INFO: Attempting archive.ph for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:11:02.018373 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:11:02.142260 ERROR: Googlebot spoof failed for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:11:02.143565 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:11:02.602934 INFO: Found Wayback snapshot from 20250821054829: http://web.archive.org/web/20250821054829/https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html
+2025-09-14T22:11:03.118141 INFO: Successfully fetched https://www.nytimes.com/2017/04/30/technology/tipping-point-for-amazon-in-apparel.html using wayback_machine_enhanced

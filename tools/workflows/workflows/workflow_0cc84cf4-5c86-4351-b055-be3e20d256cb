@@ -1,0 +1,32 @@
+2025-09-15T08:03:35.609328 INFO: Attempting direct fetch for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:36.470402 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:03:36.561206 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:03:36.561324 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:36.561363 INFO: Attempting Reader Mode strategy for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:36.732131 ERROR: Reader mode fetch failed for http://food52.com/blog/15663-you-can-do-better-than-subway-tile: cannot use a string pattern on a bytes-like object
+2025-09-15T08:03:36.732322 INFO: Attempting JS Disabled strategy for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:36.969147 INFO: Content is very short (71 words). Likely a teaser.
+2025-09-15T08:03:36.969255 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:36.969281 INFO: Attempting Refresh Stop strategy for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:37.254628 ERROR: Refresh stop fetch failed for http://food52.com/blog/15663-you-can-do-better-than-subway-tile: cannot use a string pattern on a bytes-like object
+2025-09-15T08:03:37.254859 INFO: Attempting Inspect Element strategy for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:37.588464 INFO: Content is very short (71 words). Likely a teaser.
+2025-09-15T08:03:37.588577 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:37.588630 INFO: Attempting removepaywalls.com bypass for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:41.137540 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:03:41.137662 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:41.137690 INFO: Attempting archive.today for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:44.656190 INFO: No existing archive found, creating new archive for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:45.540719 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:03:45.541159 INFO: Attempting archive.is for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:47.900271 INFO: Attempting archive.li for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:50.908395 INFO: Attempting archive.fo for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:54.426922 INFO: Attempting archive.ph for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:58.313468 INFO: Attempting Googlebot spoof for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:03:58.679009 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:03:58.679131 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:03:58.679159 INFO: Attempting Enhanced Wayback Machine for http://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:04:04.335244 INFO: Found Wayback snapshot from 20240519122852: http://web.archive.org/web/20240519122852/https://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:04:04.335386 INFO: Timeframe 20231201 failed: [Errno 32] Broken pipe
+2025-09-15T08:04:05.041079 INFO: Found Wayback snapshot from 20220518043307: http://web.archive.org/web/20220518043307/https://food52.com/blog/15663-you-can-do-better-than-subway-tile
+2025-09-15T08:04:07.244310 INFO: Successfully fetched http://food52.com/blog/15663-you-can-do-better-than-subway-tile using wayback_machine_enhanced

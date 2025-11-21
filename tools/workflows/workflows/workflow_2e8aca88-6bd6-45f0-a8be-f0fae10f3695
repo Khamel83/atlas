@@ -1,0 +1,102 @@
+2025-09-15T11:11:24.639190 INFO: Attempting direct fetch for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:24.733053 ERROR: Direct fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:24.733241 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:25.386348 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:11:25.388696 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:25.422261 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:25.422439 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:25.452696 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:11:25.452874 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:25.481786 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:25.481973 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:30.046885 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:11:30.047029 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:11:30.047061 INFO: Attempting archive.today for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:32.574866 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:33.454273 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:11:33.455145 INFO: Attempting archive.is for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:36.821435 INFO: Attempting archive.li for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:39.986980 INFO: Attempting archive.fo for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:42.386897 INFO: Attempting archive.ph for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:46.269474 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:46.334719 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:46.334916 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:46.335056 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T11:11:46.335099 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:47.046339 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T11:11:47.048544 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T11:11:47.049751 INFO: Google Search fallback: searching for '22Adulthood t.html'
+2025-09-15T11:11:47.086404 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:11:47.094188 INFO: Attempting direct fetch for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:47.129533 ERROR: Direct fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:47.130453 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:47.981888 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:11:47.984762 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:48.020821 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:48.021067 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:48.053939 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:11:48.054150 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:48.082458 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:48.083733 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:51.426755 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:11:51.426853 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:11:51.426879 INFO: Attempting archive.today for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:53.283772 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:54.192610 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:11:54.193547 INFO: Attempting archive.is for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:56.526966 INFO: Attempting archive.li for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:11:59.867472 INFO: Attempting archive.fo for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:03.298671 INFO: Attempting archive.ph for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:05.746276 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:05.776198 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:05.776395 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:34.925158 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T11:12:34.926843 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.075049 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T11:12:35.077186 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T11:12:35.078135 INFO: Google Search fallback: searching for '22Adulthood t.html'
+2025-09-15T11:12:35.111002 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:12:35.119051 INFO: Attempting direct fetch for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.225653 ERROR: Direct fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.225843 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.853815 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:12:35.856505 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.918193 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.918392 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:35.981610 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:12:35.981797 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:36.040874 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:36.041073 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:40.239196 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:12:40.239297 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:12:40.239325 INFO: Attempting archive.today for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:42.974495 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:42.985283 INFO: Attempting direct fetch for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.045259 ERROR: Direct fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.045464 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.657676 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:12:43.660197 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.723875 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.724083 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.786939 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T11:12:43.787132 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.847844 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:43.848050 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:48.419686 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:12:48.419797 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:12:48.419822 INFO: Attempting archive.today for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:50.072229 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:50.983301 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:12:50.984224 INFO: Attempting archive.is for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:54.718254 INFO: Attempting archive.li for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:56.898705 INFO: Attempting archive.fo for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:12:58.851371 INFO: Attempting archive.ph for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:13:01.061169 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:13:01.149361 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:13:01.149569 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:13:03.096064 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T11:13:03.097579 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print
+2025-09-15T11:13:03.299386 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T11:13:03.301533 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/08/22/magazine/22Adulthood-t.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T11:13:03.302276 INFO: Google Search fallback: searching for '22Adulthood t.html'
+2025-09-15T11:13:03.335315 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,104 @@
+2025-09-15T10:35:48.831462 INFO: Attempting direct fetch for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:48.997745 ERROR: Direct fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:48.998921 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:50.032136 ERROR: Reader mode fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:35:50.033788 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:50.153973 ERROR: JS disabled fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:50.155504 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:50.276916 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:35:50.278576 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:50.397057 ERROR: Inspect element fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:50.398568 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:54.889904 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:35:54.890012 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:35:54.890040 INFO: Attempting archive.today for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:58.138670 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:35:59.033924 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:35:59.034486 INFO: Attempting archive.is for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:01.230638 INFO: Attempting archive.li for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:03.808045 INFO: Attempting archive.fo for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:05.809535 INFO: Attempting archive.ph for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:08.681116 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:08.799336 ERROR: Googlebot spoof failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:08.800990 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:30.154908 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: No archived snapshots found in any timeframe
+2025-09-15T10:36:30.156399 INFO: Attempting Wayback Machine for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:30.294040 ERROR: Wayback Machine failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: No archived snapshots found
+2025-09-15T10:36:30.295822 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0. Attempting Google Search fallback...
+2025-09-15T10:36:30.296405 INFO: Google Search fallback: searching for 'design good taste.html'
+2025-09-15T10:36:30.328659 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:36:30.336271 INFO: Attempting direct fetch for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:30.482240 ERROR: Direct fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:30.483475 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:31.623509 ERROR: Reader mode fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:36:31.625073 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:31.745280 ERROR: JS disabled fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:31.746517 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:31.865084 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:36:31.866280 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:31.984809 ERROR: Inspect element fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:31.986431 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:36.642196 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:36:36.642312 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:36:36.642339 INFO: Attempting archive.today for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:38.399267 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:39.314959 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:36:39.315634 INFO: Attempting archive.is for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:41.303649 INFO: Attempting archive.li for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:44.269235 INFO: Attempting archive.fo for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:47.464203 INFO: Attempting archive.ph for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:49.955485 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:50.123223 ERROR: Googlebot spoof failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:50.124822 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:50.125449 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: [Errno 32] Broken pipe
+2025-09-15T10:36:50.125506 INFO: Attempting Wayback Machine for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:50.273726 ERROR: Wayback Machine failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: No archived snapshots found
+2025-09-15T10:36:50.275551 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0. Attempting Google Search fallback...
+2025-09-15T10:36:50.276065 INFO: Google Search fallback: searching for 'design good taste.html'
+2025-09-15T10:36:50.309162 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:36:50.316294 INFO: Attempting direct fetch for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:50.434057 ERROR: Direct fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:50.435262 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:51.345407 ERROR: Reader mode fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:36:51.346938 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:51.466678 ERROR: JS disabled fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:51.467947 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:51.586415 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:36:51.587662 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:51.704250 ERROR: Inspect element fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:51.706666 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:55.938683 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:36:55.938792 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:36:55.938817 INFO: Attempting archive.today for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:58.525568 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:36:59.443034 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:36:59.443902 INFO: Attempting archive.is for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:01.419912 INFO: Attempting archive.li for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:03.851712 INFO: Attempting archive.fo for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:07.468898 INFO: Attempting archive.ph for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:10.061379 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:10.188880 ERROR: Googlebot spoof failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:10.190480 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:12.173352 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: No archived snapshots found in any timeframe
+2025-09-15T10:37:12.174750 INFO: Attempting Wayback Machine for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:12.318767 ERROR: Wayback Machine failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: No archived snapshots found
+2025-09-15T10:37:12.320471 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0. Attempting Google Search fallback...
+2025-09-15T10:37:12.321072 INFO: Google Search fallback: searching for 'design good taste.html'
+2025-09-15T10:37:12.353358 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:37:12.375306 INFO: Attempting direct fetch for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:12.491260 ERROR: Direct fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:12.492472 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:13.544745 ERROR: Reader mode fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:37:13.546301 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:13.666635 ERROR: JS disabled fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:13.667851 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:13.797683 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: cannot use a string pattern on a bytes-like object
+2025-09-15T10:37:13.798880 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:13.923661 ERROR: Inspect element fetch failed for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:13.924934 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:18.981259 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:37:18.981377 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:37:18.981403 INFO: Attempting archive.today for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:22.531986 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0
+2025-09-15T10:37:23.436384 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:37:23.436856 INFO: Attempting archive.is for https://www.nytimes.com/2017/10/04/style/design-good-taste.html?nytmobile=0

@@ -1,0 +1,25 @@
+2025-09-15T08:39:40.573093 INFO: Attempting direct fetch for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:40.944856 ERROR: Direct fetch failed for http://www.kpcb.com/blog/2016-internet-trends-report: 404 Client Error: Not Found for url: https://www.kleinerperkins.com/blog/2016-internet-trends-report
+2025-09-15T08:39:40.946696 INFO: Attempting Reader Mode strategy for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.131779 ERROR: Reader mode fetch failed for http://www.kpcb.com/blog/2016-internet-trends-report: 404 Client Error: Not Found for url: https://www.kleinerperkins.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.133227 INFO: Attempting JS Disabled strategy for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.442719 ERROR: JS disabled fetch failed for http://www.kpcb.com/blog/2016-internet-trends-report: 404 Client Error: Not Found for url: https://www.kleinerperkins.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.444213 INFO: Attempting Refresh Stop strategy for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.747675 ERROR: Refresh stop fetch failed for http://www.kpcb.com/blog/2016-internet-trends-report: cannot use a string pattern on a bytes-like object
+2025-09-15T08:39:41.749442 INFO: Attempting Inspect Element strategy for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.901267 ERROR: Inspect element fetch failed for http://www.kpcb.com/blog/2016-internet-trends-report: 404 Client Error: Not Found for url: https://www.kleinerperkins.com/blog/2016-internet-trends-report
+2025-09-15T08:39:41.902764 INFO: Attempting removepaywalls.com bypass for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:44.643254 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:39:44.643371 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:39:44.643399 INFO: Attempting archive.today for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:49.007396 INFO: No existing archive found, creating new archive for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:49.870648 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:39:49.871070 INFO: Attempting archive.is for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:53.277548 INFO: Attempting archive.li for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:39:56.810496 INFO: Attempting archive.fo for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:40:00.453769 INFO: Attempting archive.ph for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:40:03.474729 INFO: Attempting Googlebot spoof for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:40:03.809727 ERROR: Googlebot spoof failed for http://www.kpcb.com/blog/2016-internet-trends-report: 404 Client Error: Not Found for url: https://www.kleinerperkins.com/blog/2016-internet-trends-report
+2025-09-15T08:40:03.811582 INFO: Attempting Enhanced Wayback Machine for http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:40:19.912314 INFO: Found Wayback snapshot from 20180625120505: http://web.archive.org/web/20180625120505/http://www.kpcb.com/blog/2016-internet-trends-report
+2025-09-15T08:40:25.427162 INFO: Successfully fetched http://www.kpcb.com/blog/2016-internet-trends-report using wayback_machine_enhanced

@@ -1,0 +1,138 @@
+2025-09-15T06:01:02.570318 INFO: Attempting direct fetch for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:02.893425 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:01:03.186754 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:01:03.186866 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:01:03.186908 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:03.278513 ERROR: Reader mode fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:01:03.280624 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:03.539641 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:01:03.539737 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:01:03.539763 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:03.652582 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:01:03.654471 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:04.053396 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:01:04.053493 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:01:04.053521 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:08.811658 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:01:08.811771 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:01:08.811798 INFO: Attempting archive.today for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:11.911446 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:12.797509 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:01:12.798079 INFO: Attempting archive.is for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:15.698679 INFO: Attempting archive.li for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:19.316087 INFO: Attempting archive.fo for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:23.204123 INFO: Attempting archive.ph for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:25.588875 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/gaming/
+2025-09-15T06:01:25.857741 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:01:25.857863 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:01:25.857889 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:04.166426 INFO: Found Wayback snapshot from 20121016032336: http://web.archive.org/web/20121016032336/http://techcrunch.com:80/category/gaming/
+2025-09-15T06:02:06.795570 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:02:06.795729 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:06.795757 INFO: Attempting Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:07.032412 ERROR: Wayback Machine failed for https://techcrunch.com/category/gaming/: No archived snapshots found
+2025-09-15T06:02:07.033889 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/gaming/. Attempting Google Search fallback...
+2025-09-15T06:02:07.034012 INFO: Google Search fallback: searching for 'gaming'
+2025-09-15T06:02:07.064899 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:02:07.072818 INFO: Attempting direct fetch for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:07.524392 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:07.749430 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:07.749545 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:07.749585 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:07.893886 ERROR: Reader mode fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:02:07.895721 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:08.112101 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:08.112208 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:08.112233 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:08.200908 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:02:08.202539 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:08.622911 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:08.623021 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:08.623051 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:12.316053 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:02:12.316144 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:12.316171 INFO: Attempting archive.today for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:15.179521 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:16.043703 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:02:16.044269 INFO: Attempting archive.is for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:18.381744 INFO: Attempting archive.li for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:21.144425 INFO: Attempting archive.fo for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:23.056963 INFO: Attempting archive.ph for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:25.799177 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:26.142427 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:26.142532 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:26.142559 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:27.566152 INFO: Found Wayback snapshot from 20121016032336: http://web.archive.org/web/20121016032336/http://techcrunch.com:80/category/gaming/
+2025-09-15T06:02:27.832096 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:02:27.843833 INFO: Attempting direct fetch for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:28.181172 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:28.399269 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:28.399384 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:28.399427 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:28.480404 ERROR: Reader mode fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:02:28.482141 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:28.937206 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:28.937317 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:28.937356 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:29.029320 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:02:29.031260 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:29.457119 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:29.457215 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:29.457241 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:33.574585 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:02:33.574705 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:33.574735 INFO: Attempting archive.today for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:36.033127 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:36.921900 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:02:36.922618 INFO: Attempting archive.is for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:39.736053 INFO: Attempting archive.li for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:43.505510 INFO: Attempting archive.fo for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:46.397671 INFO: Attempting archive.ph for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:49.473415 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:49.807214 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:49.807325 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:49.807352 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:51.160798 INFO: Found Wayback snapshot from 20121016032336: http://web.archive.org/web/20121016032336/http://techcrunch.com:80/category/gaming/
+2025-09-15T06:02:51.373578 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:02:51.373716 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:51.373752 INFO: Attempting Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:51.629310 ERROR: Wayback Machine failed for https://techcrunch.com/category/gaming/: No archived snapshots found
+2025-09-15T06:02:51.630991 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/gaming/. Attempting Google Search fallback...
+2025-09-15T06:02:51.631183 INFO: Google Search fallback: searching for 'gaming'
+2025-09-15T06:02:51.662640 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:02:51.670757 INFO: Attempting direct fetch for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:52.008251 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:52.234534 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:52.234659 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:52.234710 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:52.377683 ERROR: Reader mode fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:02:52.379252 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:52.594131 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:52.594250 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:52.594277 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:52.681296 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/gaming/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:02:52.682761 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:53.112735 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:02:53.112844 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:53.112871 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:57.153953 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:02:57.154073 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:02:57.154101 INFO: Attempting archive.today for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:59.088497 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/gaming/
+2025-09-15T06:02:59.967071 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:02:59.967495 INFO: Attempting archive.is for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:02.277620 INFO: Attempting archive.li for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:04.922947 INFO: Attempting archive.fo for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:07.242172 INFO: Attempting archive.ph for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:10.169524 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:10.586182 INFO: Content is very short (54 words). Likely a teaser.
+2025-09-15T06:03:10.586299 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:03:10.586325 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:14.282183 INFO: Found Wayback snapshot from 20121016032336: http://web.archive.org/web/20121016032336/http://techcrunch.com:80/category/gaming/
+2025-09-15T06:03:14.497653 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T06:03:14.497779 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:03:14.497813 INFO: Attempting Wayback Machine for https://techcrunch.com/category/gaming/
+2025-09-15T06:03:14.694369 ERROR: Wayback Machine failed for https://techcrunch.com/category/gaming/: No archived snapshots found
+2025-09-15T06:03:14.696510 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/gaming/. Attempting Google Search fallback...
+2025-09-15T06:03:14.696841 INFO: Google Search fallback: searching for 'gaming'
+2025-09-15T06:03:14.728794 INFO: Google Search fallback did not find alternative URL

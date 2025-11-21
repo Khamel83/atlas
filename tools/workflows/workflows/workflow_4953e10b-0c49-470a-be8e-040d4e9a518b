@@ -1,0 +1,25 @@
+2025-09-14T23:10:52.629189 INFO: Attempting direct fetch for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:52.781293 ERROR: Direct fetch failed for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:52.786746 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:53.395191 ERROR: Reader mode fetch failed for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html: cannot use a string pattern on a bytes-like object
+2025-09-14T23:10:53.399323 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:53.539571 ERROR: JS disabled fetch failed for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:53.542602 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:53.674396 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html: cannot use a string pattern on a bytes-like object
+2025-09-14T23:10:53.677927 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:53.849246 ERROR: Inspect element fetch failed for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:53.851873 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:10:58.959586 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:10:58.959705 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:10:58.959733 INFO: Attempting archive.today for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:03.104153 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:03.976366 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:11:03.977859 INFO: Attempting archive.is for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:07.607796 INFO: Attempting archive.li for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:11.506984 INFO: Attempting archive.fo for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:15.078236 INFO: Attempting archive.ph for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:18.050402 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:18.227470 ERROR: Googlebot spoof failed for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:18.228756 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:25.095563 INFO: Found Wayback snapshot from 20240118134025: http://web.archive.org/web/20240118134025/https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html
+2025-09-14T23:11:30.489801 INFO: Successfully fetched https://www.nytimes.com/2024/01/18/business/dealbook/antisemitism-davos.html using wayback_machine_enhanced

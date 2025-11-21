@@ -1,0 +1,125 @@
+2025-09-15T11:24:16.126139 INFO: Attempting direct fetch for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:16.407783 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:16.644889 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:16.645003 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:16.645044 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:16.727084 ERROR: Reader mode fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:24:16.729579 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:16.895790 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:24:16.895901 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:16.895926 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:17.044123 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:24:17.046410 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:17.405097 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:24:17.405222 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:17.405249 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:20.400032 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:24:20.400140 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:20.400166 INFO: Attempting archive.today for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:23.442851 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:24.332448 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:24:24.333274 INFO: Attempting archive.is for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:26.606114 INFO: Attempting archive.li for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:28.776708 INFO: Attempting archive.fo for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:31.353053 INFO: Attempting archive.ph for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:33.788440 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:34.012260 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:34.012403 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:34.012428 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:34.641654 INFO: Found Wayback snapshot from 20250830224458: http://web.archive.org/web/20250830224458/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:34.641842 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T11:24:35.684111 INFO: Found Wayback snapshot from 20250628070457: http://web.archive.org/web/20250628070457/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:38.401101 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:38.401234 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:38.401261 INFO: Attempting Wayback Machine for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:38.517132 INFO: Found Wayback snapshot: http://web.archive.org/web/20250830224458/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:41.331398 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:41.331522 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:41.331555 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/. Attempting Google Search fallback...
+2025-09-15T11:24:41.331648 INFO: Google Search fallback: searching for 'what the next generation of ai natives mean for founders and funders'
+2025-09-15T11:24:41.363256 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:24:41.370726 INFO: Attempting direct fetch for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:41.526526 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:41.623066 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:24:41.623184 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:41.623227 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:41.771645 ERROR: Reader mode fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:24:41.773463 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:41.928660 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:24:41.928761 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:41.928789 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:42.073407 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:24:42.075012 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:42.382163 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:24:42.382274 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:42.382304 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:47.280913 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:24:47.281025 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:24:47.281054 INFO: Attempting archive.today for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:49.469771 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:50.363618 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:24:50.364128 INFO: Attempting archive.is for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:53.913521 INFO: Attempting archive.li for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:24:57.379834 INFO: Attempting archive.fo for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:00.889924 INFO: Attempting archive.ph for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:04.635296 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:04.856782 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:04.856907 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:04.856934 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:04.967315 INFO: Found Wayback snapshot from 20250830224458: http://web.archive.org/web/20250830224458/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:05.139001 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:05.139125 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:05.139150 INFO: Attempting Wayback Machine for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:05.275265 INFO: Found Wayback snapshot: http://web.archive.org/web/20250830224458/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:05.431512 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:05.431648 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:05.431684 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/. Attempting Google Search fallback...
+2025-09-15T11:25:05.431753 INFO: Google Search fallback: searching for 'what the next generation of ai natives mean for founders and funders'
+2025-09-15T11:25:05.462926 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:25:05.470888 INFO: Attempting direct fetch for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:05.825441 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:05.925255 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:05.925381 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:05.925423 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:06.005396 ERROR: Reader mode fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:25:06.007439 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:06.169500 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:25:06.169657 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:06.177242 INFO: Attempting direct fetch for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:06.333136 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:06.430809 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:06.430932 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:06.430971 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:06.572416 ERROR: Reader mode fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:25:06.574277 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:06.741411 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:25:06.741505 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:06.741534 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:06.889311 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:25:06.891185 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:07.148416 INFO: Content is very short (88 words). Likely a teaser.
+2025-09-15T11:25:07.148536 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:07.148566 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:10.583023 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:25:10.583132 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:10.583162 INFO: Attempting archive.today for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:13.950038 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:14.857387 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:25:14.858024 INFO: Attempting archive.is for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:17.834427 INFO: Attempting archive.li for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:19.794799 INFO: Attempting archive.fo for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:23.667317 INFO: Attempting archive.ph for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:27.719695 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:27.877186 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:27.877298 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:27.877328 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:27.989546 INFO: Found Wayback snapshot from 20250830224458: http://web.archive.org/web/20250830224458/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:28.150937 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:28.151056 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:28.151082 INFO: Attempting Wayback Machine for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:28.278103 INFO: Found Wayback snapshot: http://web.archive.org/web/20250830224458/https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/
+2025-09-15T11:25:28.445365 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:25:28.445478 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:25:28.445517 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/what-the-next-generation-of-ai-natives-mean-for-founders-and-funders/. Attempting Google Search fallback...
+2025-09-15T11:25:28.445584 INFO: Google Search fallback: searching for 'what the next generation of ai natives mean for founders and funders'
+2025-09-15T11:25:28.481169 INFO: Google Search fallback did not find alternative URL

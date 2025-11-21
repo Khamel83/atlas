@@ -1,0 +1,105 @@
+// Xcode project file for AtlasCapture iOS app
+// Generated for Atlas Knowledge System
+
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1234567890123456789012A /* AtlasCaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012B /* AtlasCaptureApp.swift */; };
+		A1234567890123456789012C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012D /* ContentView.swift */; };
+		A1234567890123456789012E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012F /* SettingsView.swift */; };
+		A1234567890123456789013A /* CaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013B /* CaptureService.swift */; };
+		A1234567890123456789013C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013D /* ShareViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1234567890123456789012B /* AtlasCaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasCaptureApp.swift; sourceTree = "<group>"; };
+		A1234567890123456789012D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1234567890123456789012F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1234567890123456789013B /* CaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureService.swift; sourceTree = "<group>"; };
+		A1234567890123456789013D /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A1234567890123456789014A /* AtlasCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtlasCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1234567890123456789014B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1234567890123456789014C /* AtlasShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AtlasShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A1234567890123456789010A = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789011A /* AtlasCapture */,
+				A1234567890123456789012A /* AtlasShareExtension */,
+				A1234567890123456789013A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1234567890123456789011A /* AtlasCapture */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789012B /* AtlasCaptureApp.swift */,
+				A1234567890123456789012D /* ContentView.swift */,
+				A1234567890123456789012F /* SettingsView.swift */,
+				A1234567890123456789013B /* CaptureService.swift */,
+				A1234567890123456789014B /* Info.plist */,
+			);
+			path = AtlasCapture;
+			sourceTree = "<group>";
+		};
+		A1234567890123456789012A /* AtlasShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789013D /* ShareViewController.swift */,
+			);
+			path = AtlasShareExtension;
+			sourceTree = "<group>";
+		};
+		A1234567890123456789013A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789014A /* AtlasCapture.app */,
+				A1234567890123456789014C /* AtlasShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		A1234567890123456789010B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1234567890123456789014A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1234567890123456789010C /* Build configuration list for PBXProject "AtlasCapture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1234567890123456789010A;
+			productRefGroup = A1234567890123456789013A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1234567890123456789014A /* AtlasCapture */,
+				A1234567890123456789014C /* AtlasShareExtension */,
+			);
+		};
+/* End PBXProject section */
+
+	};
+	rootObject = A1234567890123456789010B /* Project object */;
+}

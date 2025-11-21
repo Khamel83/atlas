@@ -1,0 +1,37 @@
+# Atlas v4 Configuration
+
+version: "4.0.0"
+
+# Database settings (optional, for future search/indexing)
+database:
+  path: "data/atlas.db"
+  backup_enabled: true
+  backup_interval_hours: 24
+  max_backups: 7
+
+# Vault storage settings
+vault:
+  root: "./vault"
+  inbox_dir: "inbox"
+  logs_dir: "logs"
+  failures_dir: "failures"
+
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "vault/logs/atlas.log"
+  max_size_mb: 100
+  backup_count: 5
+  enable_console: true
+
+# Telegram bot configuration
+telegram:
+  bot_token: "${TELEGRAM_BOT_TOKEN}"  # Set environment variable
+  allowed_user_id: ${TELEGRAM_USER_ID:-123456789}
+  enabled: false
+
+# Processing settings
+processing:
+  max_concurrent_jobs: 5
+  timeout_seconds: 300
+  retry_attempts: 3

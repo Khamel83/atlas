@@ -1,0 +1,114 @@
+2025-09-14T20:24:36.887450 INFO: Attempting direct fetch for https://www.targetals.org/
+2025-09-14T20:24:37.435305 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:24:37.597186 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:24:37.597293 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:37.597337 INFO: Attempting Reader Mode strategy for https://www.targetals.org/
+2025-09-14T20:24:37.746290 ERROR: Reader mode fetch failed for https://www.targetals.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:24:37.747911 INFO: Attempting JS Disabled strategy for https://www.targetals.org/
+2025-09-14T20:24:37.971341 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:24:37.971453 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:37.971481 INFO: Attempting Refresh Stop strategy for https://www.targetals.org/
+2025-09-14T20:24:38.117130 ERROR: Refresh stop fetch failed for https://www.targetals.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:24:38.119060 INFO: Attempting Inspect Element strategy for https://www.targetals.org/
+2025-09-14T20:24:38.440299 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:24:38.440409 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:38.440438 INFO: Attempting removepaywalls.com bypass for https://www.targetals.org/
+2025-09-14T20:24:41.510309 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:24:41.510418 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:41.510445 INFO: Attempting archive.today for https://www.targetals.org/
+2025-09-14T20:24:45.853555 INFO: No existing archive found, creating new archive for https://www.targetals.org/
+2025-09-14T20:24:46.722856 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:24:46.723245 INFO: Attempting archive.is for https://www.targetals.org/
+2025-09-14T20:24:48.870807 INFO: Attempting archive.li for https://www.targetals.org/
+2025-09-14T20:24:51.771788 INFO: Attempting archive.fo for https://www.targetals.org/
+2025-09-14T20:24:55.500931 INFO: Attempting archive.ph for https://www.targetals.org/
+2025-09-14T20:24:57.446311 INFO: Attempting Googlebot spoof for https://www.targetals.org/
+2025-09-14T20:24:57.697683 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:24:57.697798 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:24:57.697826 INFO: Attempting Enhanced Wayback Machine for https://www.targetals.org/
+2025-09-14T20:24:59.642378 INFO: Found Wayback snapshot from 20250807133413: http://web.archive.org/web/20250807133413/https://www.targetals.org/
+2025-09-14T20:25:00.373793 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:00.373968 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:00.374000 INFO: Attempting Wayback Machine for https://www.targetals.org/
+2025-09-14T20:25:00.502111 INFO: Found Wayback snapshot: http://web.archive.org/web/20250807133413/https://www.targetals.org/
+2025-09-14T20:25:00.796664 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:00.799724 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:00.799893 ERROR: All fetch strategies failed or returned low-quality content for https://www.targetals.org/. Attempting Google Search fallback...
+2025-09-14T20:25:00.799972 INFO: Google Search fallback: searching for 'article www.targetals.org'
+2025-09-14T20:25:00.870856 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:25:00.883088 INFO: Attempting direct fetch for https://www.targetals.org/
+2025-09-14T20:25:01.228717 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:01.610918 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:01.611080 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:01.611132 INFO: Attempting Reader Mode strategy for https://www.targetals.org/
+2025-09-14T20:25:01.775749 ERROR: Reader mode fetch failed for https://www.targetals.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:25:01.777724 INFO: Attempting JS Disabled strategy for https://www.targetals.org/
+2025-09-14T20:25:02.172882 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:02.172983 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:02.173011 INFO: Attempting Refresh Stop strategy for https://www.targetals.org/
+2025-09-14T20:25:02.320299 ERROR: Refresh stop fetch failed for https://www.targetals.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:25:02.322289 INFO: Attempting Inspect Element strategy for https://www.targetals.org/
+2025-09-14T20:25:02.658410 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:02.658526 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:02.658553 INFO: Attempting removepaywalls.com bypass for https://www.targetals.org/
+2025-09-14T20:25:07.786523 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:25:07.786664 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:07.786697 INFO: Attempting archive.today for https://www.targetals.org/
+2025-09-14T20:25:11.331908 INFO: No existing archive found, creating new archive for https://www.targetals.org/
+2025-09-14T20:25:12.216911 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:25:12.217098 INFO: Attempting archive.is for https://www.targetals.org/
+2025-09-14T20:25:14.120275 INFO: Attempting archive.li for https://www.targetals.org/
+2025-09-14T20:25:16.274086 INFO: Attempting archive.fo for https://www.targetals.org/
+2025-09-14T20:25:19.574285 INFO: Attempting archive.ph for https://www.targetals.org/
+2025-09-14T20:25:21.834711 INFO: Attempting Googlebot spoof for https://www.targetals.org/
+2025-09-14T20:25:22.115214 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:22.115331 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:22.115363 INFO: Attempting Enhanced Wayback Machine for https://www.targetals.org/
+2025-09-14T20:25:22.234196 INFO: Found Wayback snapshot from 20250807133413: http://web.archive.org/web/20250807133413/https://www.targetals.org/
+2025-09-14T20:25:22.468537 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:22.468707 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:22.468737 INFO: Attempting Wayback Machine for https://www.targetals.org/
+2025-09-14T20:25:22.581567 INFO: Found Wayback snapshot: http://web.archive.org/web/20250807133413/https://www.targetals.org/
+2025-09-14T20:25:22.819634 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:22.819748 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:22.819780 ERROR: All fetch strategies failed or returned low-quality content for https://www.targetals.org/. Attempting Google Search fallback...
+2025-09-14T20:25:22.819851 INFO: Google Search fallback: searching for 'article www.targetals.org'
+2025-09-14T20:25:22.851951 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:25:22.860375 INFO: Attempting direct fetch for https://www.targetals.org/
+2025-09-14T20:25:23.126086 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:23.311857 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:23.311978 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:23.312045 INFO: Attempting Reader Mode strategy for https://www.targetals.org/
+2025-09-14T20:25:23.450260 ERROR: Reader mode fetch failed for https://www.targetals.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:25:23.452326 INFO: Attempting JS Disabled strategy for https://www.targetals.org/
+2025-09-14T20:25:23.687360 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:23.687459 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:23.687486 INFO: Attempting Refresh Stop strategy for https://www.targetals.org/
+2025-09-14T20:25:23.808876 ERROR: Refresh stop fetch failed for https://www.targetals.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:25:23.810767 INFO: Attempting Inspect Element strategy for https://www.targetals.org/
+2025-09-14T20:25:24.158818 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:24.158943 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:24.158975 INFO: Attempting removepaywalls.com bypass for https://www.targetals.org/
+2025-09-14T20:25:27.219427 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:25:27.219535 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:27.219562 INFO: Attempting archive.today for https://www.targetals.org/
+2025-09-14T20:25:31.104628 INFO: No existing archive found, creating new archive for https://www.targetals.org/
+2025-09-14T20:25:31.992401 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:25:31.992831 INFO: Attempting archive.is for https://www.targetals.org/
+2025-09-14T20:25:34.120302 INFO: Attempting archive.li for https://www.targetals.org/
+2025-09-14T20:25:37.748281 INFO: Attempting archive.fo for https://www.targetals.org/
+2025-09-14T20:25:41.241307 INFO: Attempting archive.ph for https://www.targetals.org/
+2025-09-14T20:25:44.279712 INFO: Attempting Googlebot spoof for https://www.targetals.org/
+2025-09-14T20:25:44.567513 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:44.567665 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:44.567696 INFO: Attempting Enhanced Wayback Machine for https://www.targetals.org/
+2025-09-14T20:25:44.682403 INFO: Found Wayback snapshot from 20250807133413: http://web.archive.org/web/20250807133413/https://www.targetals.org/
+2025-09-14T20:25:45.033083 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:45.033214 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:45.033243 INFO: Attempting Wayback Machine for https://www.targetals.org/
+2025-09-14T20:25:45.176880 INFO: Found Wayback snapshot: http://web.archive.org/web/20250807133413/https://www.targetals.org/
+2025-09-14T20:25:45.427007 INFO: Content is very short (52 words). Likely a teaser.
+2025-09-14T20:25:45.427136 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:45.427168 ERROR: All fetch strategies failed or returned low-quality content for https://www.targetals.org/. Attempting Google Search fallback...
+2025-09-14T20:25:45.427292 INFO: Google Search fallback: searching for 'article www.targetals.org'
+2025-09-14T20:25:45.460783 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,133 @@
+2025-09-15T09:19:52.751661 INFO: Attempting direct fetch for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.018610 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:19:53.029790 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:19:53.029881 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:19:53.029918 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.204753 ERROR: Reader mode fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.206810 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.495500 ERROR: JS disabled fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.497566 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.731783 ERROR: Refresh stop fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: cannot use a string pattern on a bytes-like object
+2025-09-15T09:19:53.733882 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:53.893296 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:19:53.893387 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:19:53.893413 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:56.617908 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:19:56.618016 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:19:56.618045 INFO: Attempting archive.today for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:19:59.653496 INFO: No existing archive found, creating new archive for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:00.524672 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:20:00.525524 INFO: Attempting archive.is for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:02.476471 INFO: Attempting archive.li for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:04.507052 INFO: Attempting archive.fo for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:08.039704 INFO: Attempting archive.ph for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:10.434053 INFO: Attempting Googlebot spoof for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:10.599861 ERROR: Googlebot spoof failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:10.601870 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:20.616426 INFO: Found Wayback snapshot from 20220114194418: http://web.archive.org/web/20220114194418/https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788
+2025-09-15T09:20:25.763526 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:20:25.763691 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:25.763724 INFO: Attempting Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:25.921775 ERROR: Wayback Machine failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: No archived snapshots found
+2025-09-15T09:20:25.923683 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*. Attempting Google Search fallback...
+2025-09-15T09:20:25.923942 INFO: Google Search fallback: searching for '1591847788)*'
+2025-09-15T09:20:25.955274 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:20:25.964014 INFO: Attempting direct fetch for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.115549 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:20:26.127364 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:20:26.127461 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:26.127495 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.301672 ERROR: Reader mode fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.303206 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.542318 ERROR: JS disabled fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.543909 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.771559 ERROR: Refresh stop fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: cannot use a string pattern on a bytes-like object
+2025-09-15T09:20:26.773178 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:26.773726 ERROR: Inspect element fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: [Errno 32] Broken pipe
+2025-09-15T09:20:26.773773 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:30.256761 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:20:30.256874 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:30.256902 INFO: Attempting archive.today for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:33.665808 INFO: No existing archive found, creating new archive for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:34.523972 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:20:34.524528 INFO: Attempting archive.is for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:38.353492 INFO: Attempting archive.li for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:41.985429 INFO: Attempting archive.fo for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:43.975264 INFO: Attempting archive.ph for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:46.823836 INFO: Attempting Googlebot spoof for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:46.967383 ERROR: Googlebot spoof failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:46.969184 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:47.661341 INFO: Found Wayback snapshot from 20220114194418: http://web.archive.org/web/20220114194418/https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788
+2025-09-15T09:20:48.351184 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:20:48.351308 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:48.351339 INFO: Attempting Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:48.518060 ERROR: Wayback Machine failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: No archived snapshots found
+2025-09-15T09:20:48.522700 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*. Attempting Google Search fallback...
+2025-09-15T09:20:48.522829 INFO: Google Search fallback: searching for '1591847788)*'
+2025-09-15T09:20:48.571074 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:20:48.582880 INFO: Attempting direct fetch for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:48.771143 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:20:48.786213 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:20:48.786303 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:48.786338 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:48.971689 ERROR: Reader mode fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:48.974929 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:49.296892 ERROR: JS disabled fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:49.301152 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:49.556444 ERROR: Refresh stop fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: cannot use a string pattern on a bytes-like object
+2025-09-15T09:20:49.558313 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:49.715228 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:20:49.715332 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:49.715358 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:54.074882 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:20:54.074995 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:20:54.075023 INFO: Attempting archive.today for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:56.145073 INFO: No existing archive found, creating new archive for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:57.014118 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:20:57.014892 INFO: Attempting archive.is for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:20:59.681543 INFO: Attempting archive.li for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:02.002579 INFO: Attempting archive.fo for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:04.069654 INFO: Attempting archive.ph for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:06.542848 INFO: Attempting Googlebot spoof for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:06.753700 ERROR: Googlebot spoof failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:06.755501 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:07.156421 INFO: Found Wayback snapshot from 20220114194418: http://web.archive.org/web/20220114194418/https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788
+2025-09-15T09:21:07.656065 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:21:07.656188 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:21:07.656220 INFO: Attempting Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:07.807152 ERROR: Wayback Machine failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: No archived snapshots found
+2025-09-15T09:21:07.808970 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*. Attempting Google Search fallback...
+2025-09-15T09:21:07.809097 INFO: Google Search fallback: searching for '1591847788)*'
+2025-09-15T09:21:07.840479 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:21:07.847877 INFO: Attempting direct fetch for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:07.848075 ERROR: Direct fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: [Errno 32] Broken pipe
+2025-09-15T09:21:07.848125 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:08.025689 ERROR: Reader mode fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:08.027105 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:08.257961 ERROR: JS disabled fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 404 Client Error: Not Found for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:08.259496 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:08.546531 ERROR: Refresh stop fetch failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: cannot use a string pattern on a bytes-like object
+2025-09-15T09:21:08.548104 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:08.703173 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T09:21:08.703282 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:21:08.703307 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:12.628285 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:21:12.628402 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:21:12.628432 INFO: Attempting archive.today for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:15.017500 INFO: No existing archive found, creating new archive for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:15.873195 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:21:15.873741 INFO: Attempting archive.is for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:19.148120 INFO: Attempting archive.li for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:21.221248 INFO: Attempting archive.fo for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:23.374891 INFO: Attempting archive.ph for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:25.792692 INFO: Attempting Googlebot spoof for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:25.936097 ERROR: Googlebot spoof failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:25.937745 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:26.480174 INFO: Found Wayback snapshot from 20220114194418: http://web.archive.org/web/20220114194418/https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788
+2025-09-15T09:21:27.063557 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T09:21:27.063713 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:21:27.063740 INFO: Attempting Wayback Machine for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*
+2025-09-15T09:21:27.189528 ERROR: Wayback Machine failed for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*: No archived snapshots found
+2025-09-15T09:21:27.192219 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788)*. Attempting Google Search fallback...
+2025-09-15T09:21:27.192347 INFO: Google Search fallback: searching for '1591847788)*'
+2025-09-15T09:21:27.234435 INFO: Google Search fallback did not find alternative URL

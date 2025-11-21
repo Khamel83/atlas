@@ -1,0 +1,30 @@
+2025-09-15T13:31:46.446727 INFO: Attempting direct fetch for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:47.822563 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T13:31:48.147086 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T13:31:48.147206 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:31:48.147247 INFO: Attempting Reader Mode strategy for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:49.089646 ERROR: Reader mode fetch failed for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:31:49.091885 INFO: Attempting JS Disabled strategy for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:49.666922 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:31:49.667015 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:31:49.667039 INFO: Attempting Refresh Stop strategy for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:50.608893 ERROR: Refresh stop fetch failed for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/: cannot use a string pattern on a bytes-like object
+2025-09-15T13:31:50.611130 INFO: Attempting Inspect Element strategy for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:51.482432 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:31:51.482548 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:31:51.482575 INFO: Attempting removepaywalls.com bypass for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:55.790344 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:31:55.790443 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:31:55.790472 INFO: Attempting archive.today for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:58.589336 INFO: No existing archive found, creating new archive for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:31:59.489676 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:31:59.490490 INFO: Attempting archive.is for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:03.104379 INFO: Attempting archive.li for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:05.885295 INFO: Attempting archive.fo for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:08.474741 INFO: Attempting archive.ph for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:11.077525 INFO: Attempting Googlebot spoof for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:12.148310 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T13:32:12.148430 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:32:12.148463 INFO: Attempting Enhanced Wayback Machine for https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:12.752760 INFO: Found Wayback snapshot from 20230425012303: http://web.archive.org/web/20230425012303/https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/
+2025-09-15T13:32:14.223805 INFO: Successfully fetched https://www.indiewire.com/2021/01/euphoria-season-2-filming-march-episodes-release-1234611069/ using wayback_machine_enhanced

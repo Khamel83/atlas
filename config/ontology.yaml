@@ -1,0 +1,164 @@
+# Domain Ontology for OOS Capability Layer
+# Defines capability domains and their aliases for routing natural language requests
+
+domains:
+  account/plan:
+    aliases:
+      - "plan"
+      - "subscription"
+      - "entitlements"
+      - "quota"
+      - "limits"
+      - "pricing"
+      - "billing"
+      - "tier"
+      - "plan details"
+      - "subscription info"
+
+  search/web:
+    aliases:
+      - "search"
+      - "look up"
+      - "research"
+      - "find on the web"
+      - "sources"
+      - "web search"
+      - "online research"
+      - "internet search"
+
+  docs/api:
+    aliases:
+      - "API docs"
+      - "documentation"
+      - "endpoints"
+      - "SDK"
+      - "auth"
+      - "api documentation"
+      - "reference"
+      - "technical docs"
+
+  files/cloud:
+    aliases:
+      - "cloud storage"
+      - "drive"
+      - "files"
+      - "upload"
+      - "download"
+      - "storage"
+      - "file storage"
+      - "cloud files"
+
+  calendar:
+    aliases:
+      - "calendar"
+      - "event"
+      - "schedule"
+      - "meeting"
+      - "appointment"
+      - "booking"
+      - "availability"
+
+  messaging:
+    aliases:
+      - "chat"
+      - "slack"
+      - "teams"
+      - "dm"
+      - "send message"
+      - "messaging"
+      - "communication"
+      - "notification"
+
+  payments:
+    aliases:
+      - "pay"
+      - "charge"
+      - "invoice"
+      - "subscription payment"
+      - "billing"
+      - "payment"
+      - "transaction"
+      - "checkout"
+
+  transport:
+    aliases:
+      - "ride"
+      - "delivery"
+      - "route"
+      - "eta"
+      - "transportation"
+      - "travel"
+      - "commute"
+      - "shipping"
+
+  maps:
+    aliases:
+      - "map"
+      - "geocode"
+      - "address"
+      - "distance"
+      - "route"
+      - "location"
+      - "directions"
+      - "navigation"
+
+  devops:
+    aliases:
+      - "deploy"
+      - "ci"
+      - "logs"
+      - "status"
+      - "health"
+      - "monitoring"
+      - "infrastructure"
+      - "deployment"
+
+  email:
+    aliases:
+      - "email"
+      - "inbox"
+      - "send mail"
+      - "message"
+      - "mail"
+      - "compose"
+      - "mailbox"
+
+# Mode detection patterns
+mode_patterns:
+  info_keywords:
+    - "what"
+    - "how"
+    - "can I"
+    - "do I get"
+    - "docs"
+    - "plan"
+    - "quota"
+    - "limits"
+    - "pricing"
+    - "information"
+    - "tell me"
+    - "show me"
+    - "explain"
+    - "capabilities"
+    - "features"
+
+  action_keywords:
+    - "create"
+    - "upload"
+    - "download"
+    - "send"
+    - "schedule"
+    - "book"
+    - "deploy"
+    - "run"
+    - "execute"
+    - "start"
+    - "stop"
+    - "delete"
+    - "update"
+    - "modify"
+    - "save"
+    - "store"
+    - "pay"
+    - "charge"
+    - "notify"

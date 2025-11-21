@@ -1,0 +1,150 @@
+2025-09-15T04:51:23.730218 INFO: Attempting direct fetch for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:24.703337 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:24.952663 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:24.952808 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:24.952846 INFO: Attempting Reader Mode strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:24.952921 ERROR: Reader mode fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: [Errno 32] Broken pipe
+2025-09-15T04:51:24.952952 INFO: Attempting JS Disabled strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:26.002402 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:26.002523 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:26.002550 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:26.127560 ERROR: Refresh stop fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:51:26.129674 INFO: Attempting Inspect Element strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:26.774541 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:26.774676 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:26.774705 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:30.031821 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:51:30.031930 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:30.031957 INFO: Attempting archive.today for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:34.633126 INFO: No existing archive found, creating new archive for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:35.519066 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:51:35.519445 INFO: Attempting archive.is for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:38.743362 INFO: Attempting archive.li for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:41.132270 INFO: Attempting archive.fo for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:44.510607 INFO: Attempting archive.ph for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:48.118830 INFO: Attempting Googlebot spoof for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:48.434582 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:48.434741 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:48.434774 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:48.948382 INFO: Found Wayback snapshot from 20250912120452: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:50.790500 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:50.790651 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:50.790678 INFO: Attempting Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:50.936984 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:51.463090 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:51.463199 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:51.463233 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/article/weight-loss-ozempic.html. Attempting Google Search fallback...
+2025-09-15T04:51:51.463312 INFO: Google Search fallback: searching for 'weight loss ozempic.html'
+2025-09-15T04:51:51.496966 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:51:51.510327 INFO: Attempting direct fetch for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:51.847395 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:51.989311 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:51.989424 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:51.989465 INFO: Attempting Reader Mode strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:52.207858 ERROR: Reader mode fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:51:52.209456 INFO: Attempting JS Disabled strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:52.673402 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:52.673527 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:52.673553 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:52.796776 ERROR: Refresh stop fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:51:52.798424 INFO: Attempting Inspect Element strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:53.438507 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:51:53.438641 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:53.438673 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:51:57.396536 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:51:57.396675 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:51:57.396704 INFO: Attempting archive.today for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:00.633370 INFO: No existing archive found, creating new archive for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:01.519762 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:52:01.520144 INFO: Attempting archive.is for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:03.905120 INFO: Attempting archive.li for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:06.659107 INFO: Attempting archive.fo for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:08.805669 INFO: Attempting archive.ph for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:10.885120 INFO: Attempting Googlebot spoof for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:11.363564 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:11.363707 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:11.363735 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:11.513479 INFO: Found Wayback snapshot from 20250912120452: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:11.812726 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:11.812852 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:11.812877 INFO: Attempting Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:11.927443 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:12.194486 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:12.194635 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:12.194674 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/article/weight-loss-ozempic.html. Attempting Google Search fallback...
+2025-09-15T04:52:12.194742 INFO: Google Search fallback: searching for 'weight loss ozempic.html'
+2025-09-15T04:52:12.194802 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T04:52:12.202454 INFO: Attempting direct fetch for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:12.479871 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:12.614008 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:12.614123 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:12.614163 INFO: Attempting Reader Mode strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:12.831632 ERROR: Reader mode fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:52:12.833051 INFO: Attempting JS Disabled strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:13.408474 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:13.408672 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:13.408706 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:13.535850 ERROR: Refresh stop fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:52:13.538148 INFO: Attempting Inspect Element strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:14.248639 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:14.248752 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:14.248782 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:18.223265 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:52:18.223377 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:18.223403 INFO: Attempting archive.today for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:22.267194 INFO: No existing archive found, creating new archive for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:23.125560 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:52:23.132703 INFO: Attempting archive.is for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:25.238945 INFO: Attempting archive.li for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:27.342935 INFO: Attempting archive.fo for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:29.457432 INFO: Attempting archive.ph for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:31.475935 INFO: Attempting Googlebot spoof for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:31.761435 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:31.761564 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:31.761610 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:31.886238 INFO: Found Wayback snapshot from 20250912120452: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:32.263253 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:32.263410 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:32.263436 INFO: Attempting Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:32.547779 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:32.901561 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:32.901700 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:32.901735 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/article/weight-loss-ozempic.html. Attempting Google Search fallback...
+2025-09-15T04:52:32.901803 INFO: Google Search fallback: searching for 'weight loss ozempic.html'
+2025-09-15T04:52:32.933157 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:52:32.941027 INFO: Attempting direct fetch for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:33.161573 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:33.442273 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:33.442394 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:33.442432 INFO: Attempting Reader Mode strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:33.671829 ERROR: Reader mode fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:52:33.673803 INFO: Attempting JS Disabled strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:34.054395 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:34.054504 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:34.054529 INFO: Attempting Refresh Stop strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:34.164330 ERROR: Refresh stop fetch failed for https://www.thecut.com/article/weight-loss-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:52:34.169112 INFO: Attempting Inspect Element strategy for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:34.813418 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:34.813537 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:34.813567 INFO: Attempting removepaywalls.com bypass for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:37.902277 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:52:37.902383 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:37.902410 INFO: Attempting archive.today for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:41.885979 INFO: No existing archive found, creating new archive for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:42.754286 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:52:42.754696 INFO: Attempting archive.is for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:46.017878 INFO: Attempting archive.li for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:48.397813 INFO: Attempting archive.fo for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:51.829180 INFO: Attempting archive.ph for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:54.630563 INFO: Attempting Googlebot spoof for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:54.861911 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:54.862028 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:54.862068 INFO: Attempting Enhanced Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:55.025945 INFO: Found Wayback snapshot from 20250912120452: http://web.archive.org/web/20250912120452/https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:55.318685 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:52:55.318813 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:52:55.318839 INFO: Attempting Wayback Machine for https://www.thecut.com/article/weight-loss-ozempic.html
+2025-09-15T04:52:55.318983 ERROR: Wayback Machine failed for https://www.thecut.com/article/weight-loss-ozempic.html: [Errno 32] Broken pipe
+2025-09-15T04:52:55.319024 ERROR: All fetch strategies failed or returned low-quality content for https://www.thecut.com/article/weight-loss-ozempic.html. Attempting Google Search fallback...
+2025-09-15T04:52:55.319089 INFO: Google Search fallback: searching for 'weight loss ozempic.html'
+2025-09-15T04:52:55.350076 INFO: Google Search fallback did not find alternative URL

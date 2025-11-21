@@ -1,0 +1,60 @@
+2025-09-15T01:50:35.494304 INFO: Attempting direct fetch for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:35.855425 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T01:50:36.027402 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T01:50:36.027539 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:50:36.027602 INFO: Attempting Reader Mode strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:36.175732 ERROR: Reader mode fetch failed for https://food52.com/blog/24489-best-cookbook-recipes-food52: cannot use a string pattern on a bytes-like object
+2025-09-15T01:50:36.177787 INFO: Attempting JS Disabled strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:36.575567 INFO: Content is very short (67 words). Likely a teaser.
+2025-09-15T01:50:36.575700 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:50:36.575728 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:36.735230 ERROR: Refresh stop fetch failed for https://food52.com/blog/24489-best-cookbook-recipes-food52: cannot use a string pattern on a bytes-like object
+2025-09-15T01:50:36.737870 INFO: Attempting Inspect Element strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:37.203305 INFO: Content is very short (67 words). Likely a teaser.
+2025-09-15T01:50:37.203419 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:50:37.203446 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:39.977501 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:50:39.977625 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:50:39.977653 INFO: Attempting archive.today for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:43.833733 INFO: No existing archive found, creating new archive for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:44.743323 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:50:44.744236 INFO: Attempting archive.is for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:48.380009 INFO: Attempting archive.li for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:50.591936 INFO: Attempting archive.fo for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:53.001204 INFO: Attempting archive.ph for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:55.853143 INFO: Attempting Googlebot spoof for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:50:56.147409 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T01:50:56.147534 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:50:56.147559 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:01.828531 INFO: Found Wayback snapshot from 20230603005445: http://web.archive.org/web/20230603005445/https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:04.224204 INFO: Successfully fetched https://food52.com/blog/24489-best-cookbook-recipes-food52 using wayback_machine_enhanced
+2025-09-15T01:51:04.232357 INFO: Attempting direct fetch for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:04.530184 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T01:51:04.706482 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T01:51:04.706629 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:04.706676 INFO: Attempting Reader Mode strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:04.862453 ERROR: Reader mode fetch failed for https://food52.com/blog/24489-best-cookbook-recipes-food52: cannot use a string pattern on a bytes-like object
+2025-09-15T01:51:04.864690 INFO: Attempting JS Disabled strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:05.135723 INFO: Content is very short (67 words). Likely a teaser.
+2025-09-15T01:51:05.135836 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:05.135865 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:05.292252 ERROR: Refresh stop fetch failed for https://food52.com/blog/24489-best-cookbook-recipes-food52: cannot use a string pattern on a bytes-like object
+2025-09-15T01:51:05.294610 INFO: Attempting Inspect Element strategy for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:05.935312 INFO: Content is very short (67 words). Likely a teaser.
+2025-09-15T01:51:05.935407 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:05.935433 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:09.967178 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:51:09.967295 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:09.967323 INFO: Attempting archive.today for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:12.686313 INFO: No existing archive found, creating new archive for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:13.584187 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:51:13.585231 INFO: Attempting archive.is for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:16.214490 INFO: Attempting archive.li for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:18.397289 INFO: Attempting archive.fo for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:20.668462 INFO: Attempting archive.ph for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:24.122522 INFO: Attempting Googlebot spoof for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:24.451350 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T01:51:24.451486 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:51:24.451521 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:24.716377 INFO: Found Wayback snapshot from 20230603005445: http://web.archive.org/web/20230603005445/https://food52.com/blog/24489-best-cookbook-recipes-food52
+2025-09-15T01:51:25.148773 INFO: Successfully fetched https://food52.com/blog/24489-best-cookbook-recipes-food52 using wayback_machine_enhanced

@@ -1,0 +1,25 @@
+2025-09-15T06:16:35.720686 INFO: Attempting direct fetch for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:35.851899 ERROR: Direct fetch failed for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:35.853934 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:36.489288 ERROR: Reader mode fetch failed for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:16:36.490744 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:36.563862 ERROR: JS disabled fetch failed for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:36.565005 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:36.636308 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html: cannot use a string pattern on a bytes-like object
+2025-09-15T06:16:36.637408 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:36.710535 ERROR: Inspect element fetch failed for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:36.711912 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:41.391051 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:16:41.391161 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:16:41.391189 INFO: Attempting archive.today for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:44.585825 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:45.493778 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:16:45.494231 INFO: Attempting archive.is for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:47.533993 INFO: Attempting archive.li for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:49.883516 INFO: Attempting archive.fo for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:52.393518 INFO: Attempting archive.ph for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:55.974760 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:56.068995 ERROR: Googlebot spoof failed for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:16:56.070370 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:17:12.164077 INFO: Found Wayback snapshot from 20201229193455: http://web.archive.org/web/20201229193455/https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html
+2025-09-15T06:17:16.361389 INFO: Successfully fetched https://www.nytimes.com/2018/08/16/business/elon-musk-interview-tesla.html using wayback_machine_enhanced

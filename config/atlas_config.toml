@@ -1,0 +1,48 @@
+# Atlas RelayQ Integration Configuration
+# TOML configuration for the Atlas podcast transcript discovery system
+# Migration from atlas_relayq_config.json
+
+[service]
+name = "Atlas RelayQ Integration"
+version = "1.0.0"
+created = "2025-11-08T18:17:23.162151"
+
+[atlas]
+# Atlas database configuration
+database_path = "/home/ubuntu/dev/atlas/podcast_processing.db"
+podcasts_count = 73
+episodes_count = 2373
+
+[relayq]
+# RelayQ integration settings
+repository = "Khamel83/relayq"
+workflow_file = "atlas_podcast_processing.yml"
+job_labels = [
+    "atlas-podcast",
+    "transcript-discovery"
+]
+auto_schedule = "0 */4 * * *"  # Cron expression: every 4 hours
+
+[processing]
+# Processing configuration
+batch_size = 10
+retry_attempts = 3
+priority_levels = 5
+supported_tasks = [
+    "transcript-discovery",
+    "episode-backlog",
+    "podcast-monitoring",
+    "batch-processing"
+]
+
+[endpoints]
+# API endpoints
+github_api = "https://api.github.com"
+relayq_repo = "https://github.com/Khamel83/relayq"
+atlas_status = "sqlite:///home/ubuntu/dev/atlas/podcast_processing.db"
+
+[logging]
+# Logging configuration (new section not in original JSON)
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+file = "atlas.log"

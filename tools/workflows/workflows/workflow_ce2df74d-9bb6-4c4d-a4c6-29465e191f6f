@@ -1,0 +1,114 @@
+2025-09-15T14:18:43.409789 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:43.810501 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:18:43.869479 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:18:43.869653 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:43.869703 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:43.990035 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:18:43.992437 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:44.152240 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:18:44.152349 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:44.152381 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:44.202048 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:18:44.204541 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:44.486970 INFO: Content is very short (111 words). Likely a teaser.
+2025-09-15T14:18:44.487071 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:44.487101 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:48.150867 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:18:48.150980 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:48.151008 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:51.577335 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:52.486320 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:18:52.486853 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:55.256347 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:18:58.651577 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:01.919346 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:04.415095 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:04.593258 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:04.593394 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:04.593426 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:10.807361 INFO: Found Wayback snapshot from 20240117042957: http://web.archive.org/web/20240117042957/https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:14.536318 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:14.536444 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:14.536470 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:14.686145 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: No archived snapshots found
+2025-09-15T14:19:14.688812 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth. Attempting Google Search fallback...
+2025-09-15T14:19:14.689292 INFO: Google Search fallback: searching for 'the race to leave planet earth'
+2025-09-15T14:19:14.722375 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:19:14.730889 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:14.817993 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:14.959703 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:14.959828 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:14.959881 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.012787 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:19:15.015356 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.161306 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:15.168421 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.254448 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:15.309938 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:15.310064 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:15.310109 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.365107 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:19:15.368355 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.515303 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:15.515404 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:15.515442 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.567168 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:19:15.570777 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:15.840431 INFO: Content is very short (111 words). Likely a teaser.
+2025-09-15T14:19:15.840533 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:15.840561 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:20.544573 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:19:20.544705 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:20.544736 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:24.309296 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:25.193200 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:19:25.193666 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:28.985511 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:31.888303 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:35.710896 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:38.958317 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:39.200600 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:39.200717 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:39.200747 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:39.505942 INFO: Found Wayback snapshot from 20240117042957: http://web.archive.org/web/20240117042957/https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:39.661655 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:39.661777 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:39.661803 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:39.793155 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: No archived snapshots found
+2025-09-15T14:19:39.795790 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth. Attempting Google Search fallback...
+2025-09-15T14:19:39.796260 INFO: Google Search fallback: searching for 'the race to leave planet earth'
+2025-09-15T14:19:39.829142 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:19:39.837044 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:39.919387 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:39.973350 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:39.973480 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:39.973523 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:40.025992 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:19:40.028642 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:40.167119 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:19:40.167220 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:40.167250 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:40.218550 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: cannot use a string pattern on a bytes-like object
+2025-09-15T14:19:40.220919 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:40.440997 INFO: Content is very short (111 words). Likely a teaser.
+2025-09-15T14:19:40.441113 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:40.441142 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:43.528708 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:19:43.528846 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:19:43.528874 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:47.621740 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:48.500055 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:19:48.500524 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:52.010983 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:54.235512 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:19:56.623969 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:20:00.229034 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:20:00.527976 INFO: Paywall element '.paywall' detected.
+2025-09-15T14:20:00.528107 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:20:00.528140 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:20:00.528203 ERROR: Enhanced Wayback Machine failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: [Errno 32] Broken pipe
+2025-09-15T14:20:00.528237 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth
+2025-09-15T14:20:00.841220 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth: No archived snapshots found
+2025-09-15T14:20:00.842832 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/07/26/the-race-to-leave-planet-earth. Attempting Google Search fallback...
+2025-09-15T14:20:00.843346 INFO: Google Search fallback: searching for 'the race to leave planet earth'
+2025-09-15T14:20:00.874883 INFO: Google Search fallback did not find alternative URL

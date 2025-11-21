@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Atlas - Digital Filing Cabinet{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🗂️ Atlas</h1>
+            <p>Your Simple Digital Filing Cabinet</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="/" {% if request.path == '/' %}class="active"{% endif %}>Dashboard</a></li>
+                <li><a href="/add" {% if request.path == '/add' %}class="active"{% endif %}>Add Content</a></li>
+                <li><a href="/search" {% if request.path == '/search' %}class="active"{% endif %}>Search</a></li>
+                <li><a href="/stats" {% if request.path == '/stats' %}class="active"{% endif %}>Statistics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Atlas - Simple Content Management</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

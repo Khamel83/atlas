@@ -1,0 +1,119 @@
+2025-09-15T01:37:01.689189 INFO: Attempting direct fetch for https://harpers.org/tag/cheran/
+2025-09-15T01:37:02.134011 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:02.172642 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:02.172746 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:02.172782 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:02.552425 ERROR: Reader mode fetch failed for https://harpers.org/tag/cheran/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:37:02.554843 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:02.793689 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:02.793794 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:02.793819 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:02.998427 ERROR: Refresh stop fetch failed for https://harpers.org/tag/cheran/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:37:03.002292 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:03.305970 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:03.306073 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:03.306099 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/cheran/
+2025-09-15T01:37:07.556752 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:37:07.556860 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:07.556886 INFO: Attempting archive.today for https://harpers.org/tag/cheran/
+2025-09-15T01:37:10.893408 INFO: No existing archive found, creating new archive for https://harpers.org/tag/cheran/
+2025-09-15T01:37:11.789570 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:37:11.790360 INFO: Attempting archive.is for https://harpers.org/tag/cheran/
+2025-09-15T01:37:14.595813 INFO: Attempting archive.li for https://harpers.org/tag/cheran/
+2025-09-15T01:37:18.089118 INFO: Attempting archive.fo for https://harpers.org/tag/cheran/
+2025-09-15T01:37:21.619120 INFO: Attempting archive.ph for https://harpers.org/tag/cheran/
+2025-09-15T01:37:24.991212 INFO: Attempting Googlebot spoof for https://harpers.org/tag/cheran/
+2025-09-15T01:37:25.084917 ERROR: Googlebot spoof failed for https://harpers.org/tag/cheran/: 403 Client Error: Forbidden for url: https://harpers.org/tag/cheran/
+2025-09-15T01:37:25.086721 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/cheran/
+2025-09-15T01:37:27.222133 INFO: Found Wayback snapshot from 20250718010511: http://web.archive.org/web/20250718010511/https://harpers.org/tag/cheran/
+2025-09-15T01:37:28.453874 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:28.453997 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:28.454022 INFO: Attempting Wayback Machine for https://harpers.org/tag/cheran/
+2025-09-15T01:37:28.585391 INFO: Found Wayback snapshot: http://web.archive.org/web/20250718010511/https://harpers.org/tag/cheran/
+2025-09-15T01:37:28.712683 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:28.712807 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:28.712841 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/cheran/. Attempting Google Search fallback...
+2025-09-15T01:37:28.712908 INFO: Google Search fallback: searching for 'cheran'
+2025-09-15T01:37:28.744421 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:37:28.751948 INFO: Attempting direct fetch for https://harpers.org/tag/cheran/
+2025-09-15T01:37:28.941497 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:28.977260 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:28.977387 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:28.977423 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:28.977484 ERROR: Reader mode fetch failed for https://harpers.org/tag/cheran/: [Errno 32] Broken pipe
+2025-09-15T01:37:28.977611 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:29.262026 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:29.262133 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:29.262157 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:29.658278 ERROR: Refresh stop fetch failed for https://harpers.org/tag/cheran/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:37:29.660140 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:30.100358 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:30.100457 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:30.100484 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/cheran/
+2025-09-15T01:37:33.617874 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:37:33.617967 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:33.617993 INFO: Attempting archive.today for https://harpers.org/tag/cheran/
+2025-09-15T01:37:35.219332 INFO: No existing archive found, creating new archive for https://harpers.org/tag/cheran/
+2025-09-15T01:37:36.093493 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:37:36.094031 INFO: Attempting archive.is for https://harpers.org/tag/cheran/
+2025-09-15T01:37:39.833894 INFO: Attempting archive.li for https://harpers.org/tag/cheran/
+2025-09-15T01:37:42.970843 INFO: Attempting archive.fo for https://harpers.org/tag/cheran/
+2025-09-15T01:37:46.035258 INFO: Attempting archive.ph for https://harpers.org/tag/cheran/
+2025-09-15T01:37:49.465268 INFO: Attempting Googlebot spoof for https://harpers.org/tag/cheran/
+2025-09-15T01:37:49.551555 ERROR: Googlebot spoof failed for https://harpers.org/tag/cheran/: 403 Client Error: Forbidden for url: https://harpers.org/tag/cheran/
+2025-09-15T01:37:49.553011 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/cheran/
+2025-09-15T01:37:49.679191 INFO: Found Wayback snapshot from 20250718010511: http://web.archive.org/web/20250718010511/https://harpers.org/tag/cheran/
+2025-09-15T01:37:49.809925 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:49.810052 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:49.810079 INFO: Attempting Wayback Machine for https://harpers.org/tag/cheran/
+2025-09-15T01:37:49.934383 INFO: Found Wayback snapshot: http://web.archive.org/web/20250718010511/https://harpers.org/tag/cheran/
+2025-09-15T01:37:50.138428 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:50.138547 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:50.138580 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/cheran/. Attempting Google Search fallback...
+2025-09-15T01:37:50.138673 INFO: Google Search fallback: searching for 'cheran'
+2025-09-15T01:37:50.171055 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:37:50.178943 INFO: Attempting direct fetch for https://harpers.org/tag/cheran/
+2025-09-15T01:37:50.433051 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:50.471486 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:50.471623 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:50.471680 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:50.669418 ERROR: Reader mode fetch failed for https://harpers.org/tag/cheran/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:37:50.671875 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:50.929246 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:50.929346 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:50.929370 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:51.115009 ERROR: Refresh stop fetch failed for https://harpers.org/tag/cheran/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:37:51.117332 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:37:51.390226 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:37:51.390326 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:51.390352 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/cheran/
+2025-09-15T01:37:55.672753 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:37:55.672868 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:37:55.672896 INFO: Attempting archive.today for https://harpers.org/tag/cheran/
+2025-09-15T01:37:57.548842 INFO: No existing archive found, creating new archive for https://harpers.org/tag/cheran/
+2025-09-15T01:37:58.403266 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:37:58.404074 INFO: Attempting archive.is for https://harpers.org/tag/cheran/
+2025-09-15T01:38:01.619351 INFO: Attempting archive.li for https://harpers.org/tag/cheran/
+2025-09-15T01:38:04.376548 INFO: Attempting archive.fo for https://harpers.org/tag/cheran/
+2025-09-15T01:38:07.926476 INFO: Attempting archive.ph for https://harpers.org/tag/cheran/
+2025-09-15T01:38:09.836768 INFO: Attempting Googlebot spoof for https://harpers.org/tag/cheran/
+2025-09-15T01:38:09.933811 ERROR: Googlebot spoof failed for https://harpers.org/tag/cheran/: 403 Client Error: Forbidden for url: https://harpers.org/tag/cheran/
+2025-09-15T01:38:09.935508 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/cheran/
+2025-09-15T01:38:10.163744 INFO: Found Wayback snapshot from 20250718010511: http://web.archive.org/web/20250718010511/https://harpers.org/tag/cheran/
+2025-09-15T01:38:10.333368 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:38:10.333487 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:38:10.333514 INFO: Attempting Wayback Machine for https://harpers.org/tag/cheran/
+2025-09-15T01:38:10.446875 INFO: Found Wayback snapshot: http://web.archive.org/web/20250718010511/https://harpers.org/tag/cheran/
+2025-09-15T01:38:10.575748 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:38:10.575866 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:38:10.575896 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/cheran/. Attempting Google Search fallback...
+2025-09-15T01:38:10.576002 INFO: Google Search fallback: searching for 'cheran'
+2025-09-15T01:38:10.607444 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:38:10.615265 INFO: Attempting direct fetch for https://harpers.org/tag/cheran/
+2025-09-15T01:38:11.006484 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:38:11.041465 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T01:38:11.041582 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:38:11.041654 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:38:11.215402 ERROR: Reader mode fetch failed for https://harpers.org/tag/cheran/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:38:11.217395 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cheran/
+2025-09-15T01:38:11.504970 INFO: Paywall phrase 'to continue reading' detected.

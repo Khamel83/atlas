@@ -1,0 +1,26 @@
+2025-09-15T11:21:48.521236 INFO: Attempting direct fetch for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:49.574659 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T11:21:50.158698 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T11:21:50.158816 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:21:50.158859 INFO: Attempting Reader Mode strategy for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:50.667878 ERROR: Reader mode fetch failed for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html: cannot use a string pattern on a bytes-like object
+2025-09-15T11:21:50.670127 INFO: Attempting JS Disabled strategy for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:51.643788 INFO: Attempting Refresh Stop strategy for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:52.009254 ERROR: Refresh stop fetch failed for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html: cannot use a string pattern on a bytes-like object
+2025-09-15T11:21:52.011705 INFO: Attempting Inspect Element strategy for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:53.156552 INFO: Attempting removepaywalls.com bypass for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:55.520949 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:21:55.521068 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:21:55.521094 INFO: Attempting archive.today for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:57.482940 INFO: No existing archive found, creating new archive for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:21:58.349025 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:21:58.349963 INFO: Attempting archive.is for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:02.378767 INFO: Attempting archive.li for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:04.767298 INFO: Attempting archive.fo for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:07.350763 INFO: Attempting archive.ph for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:10.583510 INFO: Attempting Googlebot spoof for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:12.109953 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T11:22:12.110077 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:22:12.110104 INFO: Attempting Enhanced Wayback Machine for http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:12.694914 INFO: Found Wayback snapshot from 20210413175323: http://web.archive.org/web/20210413175323/https://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html
+2025-09-15T11:22:14.522647 INFO: Successfully fetched http://news.yahoo.com/nypd-designates-mosques-terrorism-organizations-070801349.html using wayback_machine_enhanced

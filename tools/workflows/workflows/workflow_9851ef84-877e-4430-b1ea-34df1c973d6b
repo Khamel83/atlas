@@ -1,0 +1,126 @@
+2025-09-15T04:01:59.959378 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:00.470873 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:00.535272 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:00.535388 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:00.535427 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:00.695951 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:02:00.696381 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:00.940644 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:00.940742 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:00.940778 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:01.006971 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:02:01.007232 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:01.280005 INFO: Content is very short (78 words). Likely a teaser.
+2025-09-15T04:02:01.280122 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:01.280151 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:04.429893 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:02:04.430006 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:04.430035 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:06.843000 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:07.698682 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:02:07.699368 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:10.038423 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:13.728882 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:16.251514 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:19.780381 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:20.117598 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:20.117713 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:20.117741 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:24.933905 INFO: Found Wayback snapshot from 20131213045755: http://web.archive.org/web/20131213045755/http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:28.324821 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:02:28.324933 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:28.324958 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:28.438643 INFO: Found Wayback snapshot: http://web.archive.org/web/20131213045755/http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:28.525042 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:02:28.525151 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:28.525183 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true. Attempting Google Search fallback...
+2025-09-15T04:02:28.525248 INFO: Google Search fallback: searching for '090601fa fact gawande'
+2025-09-15T04:02:28.557056 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:02:28.564298 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:28.675881 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:28.842637 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:28.842761 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:28.842800 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:28.915058 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:02:28.915344 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:29.113447 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:29.113553 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:29.113578 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:29.178607 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:02:29.178872 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:29.454334 INFO: Content is very short (78 words). Likely a teaser.
+2025-09-15T04:02:29.454440 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:29.454467 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:33.059027 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:02:33.059143 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:33.059175 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:35.347327 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:36.219193 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:02:36.220044 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:39.510668 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:41.894444 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:45.310357 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:48.944702 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:48.953915 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:49.064456 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:49.130071 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:49.130233 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:49.130276 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:49.197296 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:02:49.197560 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:49.387348 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:02:49.387455 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:49.387484 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:49.454949 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:02:49.455233 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:49.726732 INFO: Content is very short (78 words). Likely a teaser.
+2025-09-15T04:02:49.726841 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:49.726870 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:52.794006 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:02:52.794124 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:02:52.794215 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:55.871176 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:56.804417 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:02:56.805572 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:02:58.790505 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:02.011541 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:05.244819 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:08.471941 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:08.773610 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:03:08.773737 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:08.773766 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:08.893574 INFO: Found Wayback snapshot from 20131213045755: http://web.archive.org/web/20131213045755/http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:08.975537 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:03:08.975662 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:08.975703 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:09.090846 INFO: Found Wayback snapshot: http://web.archive.org/web/20131213045755/http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:09.167440 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T04:03:09.167550 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:09.167581 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true. Attempting Google Search fallback...
+2025-09-15T04:03:09.167695 INFO: Google Search fallback: searching for '090601fa fact gawande'
+2025-09-15T04:03:09.199073 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:03:09.206182 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:09.316260 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:03:09.379268 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:03:09.379386 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:09.379426 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:09.452743 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:03:09.453022 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:09.639420 INFO: Paywall element '.paywall' detected.
+2025-09-15T04:03:09.639528 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:09.639555 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:09.705667 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T04:03:09.705968 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:10.097921 INFO: Content is very short (78 words). Likely a teaser.
+2025-09-15T04:03:10.098028 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:10.098054 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:14.596697 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:03:14.596811 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:03:14.596842 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:18.182914 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:19.107290 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:03:19.108284 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:22.351300 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:24.443862 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:26.680624 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true
+2025-09-15T04:03:28.837451 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2009/06/01/090601fa_fact_gawande?printable=true

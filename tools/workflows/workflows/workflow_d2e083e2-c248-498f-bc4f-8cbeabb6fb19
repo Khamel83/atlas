@@ -1,0 +1,130 @@
+2025-09-15T13:37:08.453766 INFO: Attempting direct fetch for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:08.711696 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:08.773028 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:08.773163 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:08.773207 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:09.019870 ERROR: Reader mode fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:37:09.022326 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:09.192404 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:09.192518 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:09.192548 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:09.243633 ERROR: Refresh stop fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:37:09.245960 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:09.477365 INFO: Content is very short (100 words). Likely a teaser.
+2025-09-15T13:37:09.477489 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:09.477515 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:13.945242 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:37:13.945359 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:13.945386 INFO: Attempting archive.today for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:17.505232 INFO: No existing archive found, creating new archive for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:18.368069 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:37:18.368537 INFO: Attempting archive.is for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:20.443176 INFO: Attempting archive.li for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:23.144140 INFO: Attempting archive.fo for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:26.208943 INFO: Attempting archive.ph for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:29.318076 INFO: Attempting Googlebot spoof for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:29.464160 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:29.464281 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:29.464309 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:29.939301 INFO: Found Wayback snapshot from 20240613224636: http://web.archive.org/web/20240613224636/https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.185330 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:31.185473 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:31.185500 INFO: Attempting Wayback Machine for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.326420 INFO: Found Wayback snapshot: http://web.archive.org/web/20240613224636/https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.496658 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:31.496779 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:31.496812 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down. Attempting Google Search fallback...
+2025-09-15T13:37:31.496878 INFO: Google Search fallback: searching for 'bill walton throws it down'
+2025-09-15T13:37:31.530872 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:37:31.540117 INFO: Attempting direct fetch for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.628054 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:31.686117 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:31.686234 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:31.686275 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.744921 ERROR: Reader mode fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:37:31.747542 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.895930 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:31.896044 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:31.896070 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:31.946347 ERROR: Refresh stop fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:37:31.949022 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:32.192100 INFO: Content is very short (100 words). Likely a teaser.
+2025-09-15T13:37:32.192208 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:32.192235 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:36.167958 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:37:36.168070 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:36.168099 INFO: Attempting archive.today for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:40.049996 INFO: No existing archive found, creating new archive for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:40.909782 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:37:40.910227 INFO: Attempting archive.is for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:44.568720 INFO: Attempting archive.li for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:48.011976 INFO: Attempting archive.fo for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:50.763760 INFO: Attempting archive.ph for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:53.833264 INFO: Attempting Googlebot spoof for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:53.957051 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:53.957174 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:53.965275 INFO: Attempting direct fetch for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:54.058735 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:54.206819 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:54.206934 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:54.206972 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:54.262170 ERROR: Reader mode fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:37:54.265010 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:54.430988 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:37:54.431105 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:54.431131 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:54.481691 ERROR: Refresh stop fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:37:54.483968 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:54.708848 INFO: Content is very short (100 words). Likely a teaser.
+2025-09-15T13:37:54.708949 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:54.708976 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:37:59.645673 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:37:59.645786 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:37:59.645812 INFO: Attempting archive.today for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:03.549980 INFO: No existing archive found, creating new archive for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:04.452499 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:38:04.452968 INFO: Attempting archive.is for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:07.361205 INFO: Attempting archive.li for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:10.297159 INFO: Attempting archive.fo for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:12.793175 INFO: Attempting archive.ph for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:16.275548 INFO: Attempting Googlebot spoof for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:16.634451 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:16.634564 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:16.634614 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:16.904522 INFO: Found Wayback snapshot from 20240613224636: http://web.archive.org/web/20240613224636/https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.181975 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:17.182096 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:17.182123 INFO: Attempting Wayback Machine for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.316344 INFO: Found Wayback snapshot: http://web.archive.org/web/20240613224636/https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.512156 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:17.512283 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:17.512317 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down. Attempting Google Search fallback...
+2025-09-15T13:38:17.512386 INFO: Google Search fallback: searching for 'bill walton throws it down'
+2025-09-15T13:38:17.545555 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:38:17.553130 INFO: Attempting direct fetch for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.641521 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:17.699244 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:17.699375 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:17.699416 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.759810 ERROR: Reader mode fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:38:17.762712 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.908504 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:17.908631 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:17.908659 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:17.960332 ERROR: Refresh stop fetch failed for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down: cannot use a string pattern on a bytes-like object
+2025-09-15T13:38:17.962802 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:18.196661 INFO: Content is very short (100 words). Likely a teaser.
+2025-09-15T13:38:18.196773 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:18.196812 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:22.886948 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:38:22.887060 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:38:22.887090 INFO: Attempting archive.today for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:25.877021 INFO: No existing archive found, creating new archive for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:26.776130 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:38:26.776564 INFO: Attempting archive.is for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:30.339481 INFO: Attempting archive.li for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:33.176822 INFO: Attempting archive.fo for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:36.342374 INFO: Attempting archive.ph for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:38.837720 INFO: Attempting Googlebot spoof for https://www.newyorker.com/sports/sporting-scene/bill-walton-throws-it-down
+2025-09-15T13:38:38.951448 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:38:38.951573 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...

@@ -1,0 +1,104 @@
+2025-09-15T04:52:55.400700 INFO: Attempting direct fetch for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:55.505181 ERROR: Direct fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:55.505350 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:56.421811 ERROR: Reader mode fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:52:56.423290 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:56.485323 ERROR: JS disabled fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:56.485512 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:56.544838 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:52:56.545021 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:56.601578 ERROR: Inspect element fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:52:56.601824 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:01.777543 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:53:01.777684 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:01.777715 INFO: Attempting archive.today for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:05.158090 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:06.010868 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:53:06.011221 INFO: Attempting archive.is for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:08.411204 INFO: Attempting archive.li for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:11.289664 INFO: Attempting archive.fo for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:14.908003 INFO: Attempting archive.ph for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:17.815727 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:17.900703 ERROR: Googlebot spoof failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:17.900888 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:19.851071 INFO: Found Wayback snapshot from 20241130105134: http://web.archive.org/web/20241130105134/https://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:21.969177 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:53:21.969277 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:21.969303 INFO: Attempting Wayback Machine for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:22.085892 INFO: Found Wayback snapshot: http://web.archive.org/web/20241130105134/https://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:22.207565 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:53:22.207712 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:22.207751 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html. Attempting Google Search fallback...
+2025-09-15T04:53:22.207822 INFO: Google Search fallback: searching for 'jeffrey wrights gold mine.html'
+2025-09-15T04:53:22.282081 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:53:22.294095 INFO: Attempting direct fetch for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:22.353480 ERROR: Direct fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:22.353736 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:23.047920 ERROR: Reader mode fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:53:23.050914 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:23.111314 ERROR: JS disabled fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:23.111496 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:23.172552 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:53:23.173367 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:23.232638 ERROR: Inspect element fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:23.232831 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:26.176214 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:53:26.176319 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:26.176348 INFO: Attempting archive.today for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:29.472095 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.332873 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:53:30.333375 INFO: Attempting archive.is for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.343730 INFO: Attempting direct fetch for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.401777 ERROR: Direct fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.401965 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.664091 ERROR: Reader mode fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:53:30.666736 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.728516 ERROR: JS disabled fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.728763 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.789864 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:53:30.790045 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.847067 ERROR: Inspect element fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:30.847285 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:35.046268 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:53:35.046372 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:35.046401 INFO: Attempting archive.today for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:39.028380 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:39.910300 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:53:39.910812 INFO: Attempting archive.is for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:42.544253 INFO: Attempting archive.li for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:45.496795 INFO: Attempting archive.fo for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:48.801028 INFO: Attempting archive.ph for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.309003 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.390954 ERROR: Googlebot spoof failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.391144 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.516015 INFO: Found Wayback snapshot from 20241130105134: http://web.archive.org/web/20241130105134/https://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.622468 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:53:51.622614 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:51.622646 INFO: Attempting Wayback Machine for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.744910 INFO: Found Wayback snapshot: http://web.archive.org/web/20241130105134/https://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.856063 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T04:53:51.856173 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:51.856210 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html. Attempting Google Search fallback...
+2025-09-15T04:53:51.856291 INFO: Google Search fallback: searching for 'jeffrey wrights gold mine.html'
+2025-09-15T04:53:51.888910 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:53:51.897549 INFO: Attempting direct fetch for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.960765 ERROR: Direct fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:51.960946 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:52.557774 ERROR: Reader mode fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:53:52.559402 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:52.620420 ERROR: JS disabled fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:52.620644 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:52.679026 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: cannot use a string pattern on a bytes-like object
+2025-09-15T04:53:52.679195 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:52.737224 ERROR: Inspect element fetch failed for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:52.737405 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:53:57.547532 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:53:57.547654 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:53:57.547685 INFO: Attempting archive.today for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:54:00.269207 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:54:01.127449 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:54:01.128503 INFO: Attempting archive.is for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:54:04.694799 INFO: Attempting archive.li for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:54:06.961849 INFO: Attempting archive.fo for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:54:08.873056 INFO: Attempting archive.ph for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html
+2025-09-15T04:54:11.382663 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2014/01/19/magazine/jeffrey-wrights-gold-mine.html

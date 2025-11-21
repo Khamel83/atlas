@@ -1,0 +1,25 @@
+2025-09-15T07:54:58.303216 INFO: Attempting direct fetch for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:58.528610 ERROR: Direct fetch failed for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:58.530686 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:58.792012 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:54:58.794532 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:58.914285 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:58.916329 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:59.034969 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:54:59.036957 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:59.154808 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:54:59.156873 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:04.112842 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:55:04.112956 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:55:04.112983 INFO: Attempting archive.today for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:07.520960 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:08.425685 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:55:08.426101 INFO: Attempting archive.is for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:10.440372 INFO: Attempting archive.li for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:13.384828 INFO: Attempting archive.fo for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:15.845536 INFO: Attempting archive.ph for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:18.806812 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:19.146060 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:19.147701 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:25.173954 INFO: Found Wayback snapshot from 20230801201452: http://web.archive.org/web/20230801201452/http://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html
+2025-09-15T07:55:27.804568 INFO: Successfully fetched https://www.nytimes.com/2022/03/05/business/pregnancy-remote-work.html using wayback_machine_enhanced

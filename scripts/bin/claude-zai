@@ -1,0 +1,164 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Clean ZAI Launcher for OOS
+# Based on integration learnings - ensures pristine environment
+
+# Path to secrets management
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SECRETS_SCRIPT="${SCRIPT_DIR}/secrets.sh"
+
+# Default values
+DEFAULT_BASE_URL="https://api.z.ai/api/anthropic"
+DEFAULT_MODEL="glm-4.5"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Error handling
+error() {
+    echo -e "${RED}Error: $1${NC}" >&2
+    exit 1
+}
+
+warning() {
+    echo -e "${YELLOW}Warning: $1${NC}" >&2
+}
+
+info() {
+    echo -e "${BLUE}Info: $1${NC}"
+}
+
+success() {
+    echo -e "${GREEN}Success: $1${NC}"
+}
+
+# Check if secrets script exists
+if [[ ! -f "${SECRETS_SCRIPT}" ]]; then
+    error "Secrets script not found at ${SECRETS_SCRIPT}"
+fi
+
+# Get ZAI key
+ZAI_KEY=$("${SECRETS_SCRIPT}" get) || error "No ZAI key found. Run 'bin/secrets.sh store <your_key>' first"
+
+if [[ -z "${ZAI_KEY}" ]]; then
+    error "ZAI key is empty or missing"
+fi
+
+# Parse command line arguments
+MODEL=""
+BASE_URL=""
+EXTRA_ARGS=()
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --model)
+            MODEL="$2"
+            shift 2
+            ;;
+        --base-url)
+            BASE_URL="$2"
+            shift 2
+            ;;
+        *)
+            EXTRA_ARGS+=("$1")
+            shift
+            ;;
+    esac
+done
+
+# Set defaults if not provided
+if [[ -z "${MODEL}" ]]; then
+    MODEL="${DEFAULT_MODEL}"
+fi
+
+if [[ -z "${BASE_URL}" ]]; then
+    BASE_URL="${DEFAULT_BASE_URL}"
+fi
+
+# Validate model name (use plain names, not provider-prefixed)
+case "${MODEL}" in
+    z-ai/glm-4.5|zai/glm-4.5)
+        warning "Using provider-prefixed model name '${MODEL}'. Use 'glm-4.5' instead."
+        MODEL="glm-4.5"
+        ;;
+    z-ai/glm-4.5-air|zai/glm-4.5-air)
+        warning "Using provider-prefixed model name '${MODEL}'. Use 'glm-4.5-air' instead."
+        MODEL="glm-4.5-air"
+        ;;
+    glm-4.5|glm-4.5-air)
+        # Valid model names
+        ;;
+    *)
+        warning "Unknown model '${MODEL}'. Supported models: glm-4.5, glm-4.5-air"
+        ;;
+esac
+
+# Check if Claude Code is available
+if ! command -v claude &> /dev/null; then
+    error "Claude Code not found. Please install it first."
+fi
+
+# Preflight check - test API connection
+info "Testing ZAI connection..."
+
+# Create a minimal test request
+TEST_RESPONSE=$(env -i \
+    HOME="${HOME}" \
+    USER="${USER}" \
+    SHELL="${SHELL:-/bin/bash}" \
+    PATH="${PATH}" \
+    TERM="${TERM:-xterm-256color}" \
+    ANTHROPIC_BASE_URL="${BASE_URL}" \
+    ANTHROPIC_AUTH_TOKEN="${ZAI_KEY}" \
+    curl -s -X POST "${BASE_URL}/v1/messages" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer ${ZAI_KEY}" \
+    -d '{
+        "model": "'"${MODEL}"'",
+        "max_tokens": 10,
+        "messages": [{"role": "user", "content": "test"}]
+    }' 2>/dev/null || true)
+
+# Check for errors in test response
+if echo "${TEST_RESPONSE}" | grep -q "error\|401\|403\|404"; then
+    error "ZAI API test failed. Check your key and model: ${TEST_RESPONSE}"
+fi
+
+if echo "${TEST_RESPONSE}" | grep -q "content"; then
+    success "ZAI API connection successful"
+else
+    warning "ZAI API test response unclear, proceeding anyway"
+fi
+
+# Clean environment variables to prevent pollution
+# Only pass essential variables to Claude Code
+CLEAN_ENV=(
+    "HOME=${HOME}"
+    "USER=${USER}"
+    "SHELL=${SHELL:-/bin/bash}"
+    "PATH=${PATH}"
+    "TERM=${TERM:-xterm-256color}"
+    "ANTHROPIC_BASE_URL=${BASE_URL}"
+    "ANTHROPIC_AUTH_TOKEN=${ZAI_KEY}"
+)
+
+# Build clean environment command
+ENV_CMD="env -i"
+for env_var in "${CLEAN_ENV[@]}"; do
+    ENV_CMD="${ENV_CMD} '${env_var}'"
+done
+
+# Launch Claude Code with clean environment
+info "Launching Claude Code with ZAI (model: ${MODEL})"
+info "Base URL: ${BASE_URL}"
+
+# Execute Claude Code with clean environment and args
+eval "${ENV_CMD} claude --model '${MODEL}' ${EXTRA_ARGS[*]:+${EXTRA_ARGS[*]}}"
+
+# Note: We don't use --dangerously-skip-permissions here as that might break
+# legitimate permission checks. The clean environment prevents unwanted prompts.

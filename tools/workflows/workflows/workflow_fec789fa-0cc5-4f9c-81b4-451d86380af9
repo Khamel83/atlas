@@ -1,0 +1,104 @@
+2025-09-15T08:40:25.597697 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:25.708504 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:25.708748 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:26.461270 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:40:26.463520 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:26.526900 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:26.527101 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:26.590287 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:40:26.590481 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:26.651063 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:26.651259 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:29.751158 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:40:29.751266 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:40:29.751291 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:32.797822 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:33.670516 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:40:33.671005 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:36.178011 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:38.110734 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:40.010092 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:43.230476 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:43.289706 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:40:43.289917 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:06.963209 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:41:06.964744 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.162668 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T08:41:07.164359 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:41:07.172786 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.280709 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.280920 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.850320 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:41:07.852075 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.913662 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.913867 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:07.974448 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:41:07.974651 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:08.033020 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:08.033204 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:11.828760 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:41:11.828897 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:41:11.828923 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:13.641613 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:14.531259 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:41:14.531855 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:16.457111 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:18.497027 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:21.562618 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:23.553876 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:23.613529 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:23.613905 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.019926 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:41:25.021351 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.144305 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T08:41:25.145861 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:41:25.146333 INFO: Google Search fallback: searching for '27sexting.html'
+2025-09-15T08:41:25.178317 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:41:25.186745 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.243875 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.244055 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.863051 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:41:25.864725 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.932153 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.932341 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:25.993572 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:41:25.993770 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:26.052790 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:26.052980 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:28.775107 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:41:28.775219 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:41:28.775248 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:32.322256 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:33.184880 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:41:33.185300 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:36.861763 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:39.052629 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:39.063234 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:39.147192 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:39.147427 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:39.938771 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:41:39.940528 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:40.000827 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:40.001024 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:40.060450 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:41:40.060651 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:40.117794 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:40.117983 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:43.661257 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:41:43.661352 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:41:43.661382 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:45.700935 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:46.569670 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:41:46.570110 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:50.042367 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:52.312806 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:55.576026 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:57.899427 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:57.960234 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:57.960432 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:59.368090 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:41:59.369464 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print
+2025-09-15T08:41:59.475131 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print: No archived snapshots found
+2025-09-15T08:41:59.476755 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/us/27sexting.html?ref=homepage&src=me&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:41:59.477196 INFO: Google Search fallback: searching for '27sexting.html'
+2025-09-15T08:41:59.509230 INFO: Google Search fallback did not find alternative URL

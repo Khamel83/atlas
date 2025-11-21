@@ -1,0 +1,112 @@
+2025-09-15T05:59:55.133231 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T05:59:56.195729 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T05:59:56.315029 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T05:59:56.315144 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:59:56.315184 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T05:59:56.423060 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T05:59:56.425545 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T05:59:56.705012 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T05:59:56.705122 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:59:56.705150 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T05:59:56.818867 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T05:59:56.821359 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T05:59:57.087820 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T05:59:57.087928 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:59:57.087957 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:01.604196 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:00:01.604313 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:01.604339 INFO: Attempting archive.today for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:07.410763 INFO: No existing archive found, creating new archive for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:08.328817 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:00:08.329455 INFO: Attempting archive.is for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:10.407505 INFO: Attempting archive.li for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:13.594448 INFO: Attempting archive.fo for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:15.909330 INFO: Attempting archive.ph for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:19.541718 INFO: Attempting Googlebot spoof for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:19.986256 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:19.986371 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:19.986398 INFO: Attempting Enhanced Wayback Machine for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:24.494917 INFO: Found Wayback snapshot from 20250825212126: http://web.archive.org/web/20250825212126/https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:27.271675 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:27.271787 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:27.271815 INFO: Attempting Wayback Machine for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:27.446877 INFO: Found Wayback snapshot: http://web.archive.org/web/20250825212126/https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:27.632275 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:27.632391 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:27.632424 ERROR: All fetch strategies failed or returned low-quality content for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere. Attempting Google Search fallback...
+2025-09-15T06:00:27.632492 INFO: Google Search fallback: searching for 'even after 100 billion self driving cars are going nowhere'
+2025-09-15T06:00:27.665873 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:00:27.675078 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:27.958535 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:28.075473 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:28.075584 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:28.075655 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:28.415301 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T06:00:28.417991 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:28.668666 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:28.668773 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:28.668800 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:28.828679 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T06:00:28.832154 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:29.284329 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:29.284415 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:29.284444 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:33.151756 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:00:33.151867 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:33.151896 INFO: Attempting archive.today for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:33.159952 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:33.411219 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:33.528073 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:33.528183 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:33.528224 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:33.859431 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T06:00:33.861963 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:34.107924 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:34.108016 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:34.108044 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:34.388395 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T06:00:34.390998 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:34.691310 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:34.691424 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:34.691452 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:39.538919 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:00:39.539025 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:39.539052 INFO: Attempting archive.today for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:43.038527 INFO: No existing archive found, creating new archive for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:43.937644 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:00:43.938101 INFO: Attempting archive.is for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:45.862876 INFO: Attempting archive.li for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:48.298872 INFO: Attempting archive.fo for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:51.716627 INFO: Attempting archive.ph for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:53.902246 INFO: Attempting Googlebot spoof for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:54.153545 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:54.153686 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:54.153718 INFO: Attempting Enhanced Wayback Machine for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:54.556707 INFO: Found Wayback snapshot from 20250825212126: http://web.archive.org/web/20250825212126/https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:54.749220 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:54.749341 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:54.749369 INFO: Attempting Wayback Machine for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:55.433703 INFO: Found Wayback snapshot: http://web.archive.org/web/20250825212126/https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:55.630563 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:55.630701 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:55.630736 ERROR: All fetch strategies failed or returned low-quality content for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere. Attempting Google Search fallback...
+2025-09-15T06:00:55.630801 INFO: Google Search fallback: searching for 'even after 100 billion self driving cars are going nowhere'
+2025-09-15T06:00:55.663739 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:00:55.671994 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:55.925507 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:56.139093 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:56.139217 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:56.139257 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:56.297980 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T06:00:56.300378 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:56.535980 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:56.536093 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:56.536122 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:56.702260 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere: cannot use a string pattern on a bytes-like object
+2025-09-15T06:00:56.704740 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:00:57.010429 INFO: Content is very short (136 words). Likely a teaser.
+2025-09-15T06:00:57.010544 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:00:57.010573 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere
+2025-09-15T06:01:00.770905 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T06:01:00.771022 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:01:00.771052 INFO: Attempting archive.today for https://www.bloomberg.com/news/features/2022-10-06/even-after-100-billion-self-driving-cars-are-going-nowhere

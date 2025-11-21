@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Atlas - Search{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <h2>Search Content</h2>
+        <p>Search through all your stored content using keywords and phrases.</p>
+
+        <form id="search-form">
+            <div class="form-group">
+                <label for="search-query">Search Query</label>
+                <input type="text" id="search-query" name="query" class="form-control" placeholder="Enter search terms..." required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <div id="search-results">
+        <!-- Search results will appear here -->
+    </div>
+{% endblock %}

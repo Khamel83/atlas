@@ -1,0 +1,50 @@
+2025-09-15T15:56:23.091095 INFO: Attempting direct fetch for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:23.214897 ERROR: Direct fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:23.216559 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:23.794827 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:56:23.797202 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:23.918851 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:23.920732 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:24.049212 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:56:24.051004 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:24.169754 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:24.171571 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:26.419158 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:56:26.419271 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:56:26.419300 INFO: Attempting archive.today for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:30.588569 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:31.451490 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:56:31.452008 INFO: Attempting archive.is for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:33.461203 INFO: Attempting archive.li for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:36.342129 INFO: Attempting archive.fo for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:40.053643 INFO: Attempting archive.ph for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:42.459049 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:42.577791 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:42.579215 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:53.389403 INFO: Found Wayback snapshot from 20231017100013: http://web.archive.org/web/20231017100013/https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:54.732514 INFO: Successfully fetched https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html using wayback_machine_enhanced
+2025-09-15T15:56:54.740292 INFO: Attempting direct fetch for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:54.884031 ERROR: Direct fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:54.885396 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:55.652930 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:56:55.654518 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:55.774105 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:55.775377 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:55.895077 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: cannot use a string pattern on a bytes-like object
+2025-09-15T15:56:55.896362 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:56.012521 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:56.013829 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:56:59.891893 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:56:59.892010 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:56:59.892040 INFO: Attempting archive.today for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:02.665375 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:03.844179 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:57:03.844816 INFO: Attempting archive.is for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:07.210919 INFO: Attempting archive.li for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:10.288195 INFO: Attempting archive.fo for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:13.696287 INFO: Attempting archive.ph for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:16.082537 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:16.191870 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:16.193274 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:16.622400 INFO: Found Wayback snapshot from 20231017100013: http://web.archive.org/web/20231017100013/https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html
+2025-09-15T15:57:16.948844 INFO: Successfully fetched https://www.nytimes.com/2023/10/17/magazine/us-public-investment.html using wayback_machine_enhanced

@@ -1,0 +1,120 @@
+2025-09-15T13:46:58.376849 INFO: Attempting direct fetch for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:46:58.973400 ERROR: Direct fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:46:58.974796 INFO: Attempting Reader Mode strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:46:59.438061 ERROR: Reader mode fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:46:59.439446 INFO: Attempting JS Disabled strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:46:59.735389 ERROR: JS disabled fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:46:59.736800 INFO: Attempting Refresh Stop strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:00.076521 ERROR: Refresh stop fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: cannot use a string pattern on a bytes-like object
+2025-09-15T13:47:00.080286 INFO: Attempting Inspect Element strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:00.376671 ERROR: Inspect element fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:00.379184 INFO: Attempting removepaywalls.com bypass for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:04.994817 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:47:04.994918 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:47:04.994945 INFO: Attempting archive.today for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:08.280831 INFO: No existing archive found, creating new archive for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:09.188520 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:47:09.189261 INFO: Attempting archive.is for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:11.313928 INFO: Attempting archive.li for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:13.322234 INFO: Attempting archive.fo for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:16.886920 INFO: Attempting archive.ph for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:20.676102 INFO: Attempting Googlebot spoof for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:20.922309 ERROR: Googlebot spoof failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:20.924534 INFO: Attempting Enhanced Wayback Machine for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:21.385671 INFO: Found Wayback snapshot from 20230420023831: http://web.archive.org/web/20230420023831/https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:22.426080 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T13:47:22.426194 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:47:22.426220 INFO: Attempting Wayback Machine for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:22.549123 INFO: Found Wayback snapshot: http://web.archive.org/web/20230420023831/https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:22.549260 ERROR: Wayback Machine failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: [Errno 32] Broken pipe
+2025-09-15T13:47:22.551455 ERROR: All fetch strategies failed or returned low-quality content for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1. Attempting Google Search fallback...
+2025-09-15T13:47:22.551570 INFO: Google Search fallback: searching for 'vi679000601'
+2025-09-15T13:47:22.583861 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:47:22.591850 INFO: Attempting direct fetch for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:22.876485 ERROR: Direct fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:22.877917 INFO: Attempting Reader Mode strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:23.311092 ERROR: Reader mode fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:23.312457 INFO: Attempting JS Disabled strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:23.583459 ERROR: JS disabled fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:23.585046 INFO: Attempting Refresh Stop strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:23.858093 ERROR: Refresh stop fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: cannot use a string pattern on a bytes-like object
+2025-09-15T13:47:23.859971 INFO: Attempting Inspect Element strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:24.248752 ERROR: Inspect element fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:24.250893 INFO: Attempting removepaywalls.com bypass for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:27.567953 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:47:27.568062 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:47:27.568092 INFO: Attempting archive.today for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:29.463729 INFO: No existing archive found, creating new archive for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:31.052623 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:47:31.053369 INFO: Attempting archive.is for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:34.707853 INFO: Attempting archive.li for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:37.336979 INFO: Attempting archive.fo for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:40.640456 INFO: Attempting archive.ph for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:42.916258 INFO: Attempting Googlebot spoof for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:45.232969 ERROR: Googlebot spoof failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:45.235269 INFO: Attempting Enhanced Wayback Machine for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:45.371906 INFO: Found Wayback snapshot from 20230420023831: http://web.archive.org/web/20230420023831/https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:45.562270 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T13:47:45.562415 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:47:45.562459 INFO: Attempting Wayback Machine for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:45.694086 INFO: Found Wayback snapshot: http://web.archive.org/web/20230420023831/https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:45.889179 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T13:47:45.889297 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:47:45.889327 ERROR: All fetch strategies failed or returned low-quality content for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1. Attempting Google Search fallback...
+2025-09-15T13:47:45.889387 INFO: Google Search fallback: searching for 'vi679000601'
+2025-09-15T13:47:45.922627 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:47:45.929909 INFO: Attempting direct fetch for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:46.216115 ERROR: Direct fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:46.217422 INFO: Attempting Reader Mode strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:46.455241 ERROR: Reader mode fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:46.456528 INFO: Attempting JS Disabled strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:47.023967 ERROR: JS disabled fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:47.025279 INFO: Attempting Refresh Stop strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:47.386271 ERROR: Refresh stop fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: cannot use a string pattern on a bytes-like object
+2025-09-15T13:47:47.387999 INFO: Attempting Inspect Element strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:47.662415 ERROR: Inspect element fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:47.664391 INFO: Attempting removepaywalls.com bypass for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:51.189454 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:47:51.189561 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:47:51.189604 INFO: Attempting archive.today for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:53.124229 INFO: No existing archive found, creating new archive for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:53.999004 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:47:53.999862 INFO: Attempting archive.is for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:56.574490 INFO: Attempting archive.li for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:47:58.478742 INFO: Attempting archive.fo for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:02.321093 INFO: Attempting archive.ph for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:04.746195 INFO: Attempting Googlebot spoof for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:05.092334 ERROR: Googlebot spoof failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:05.104807 INFO: Attempting direct fetch for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:05.321525 ERROR: Direct fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:05.323421 INFO: Attempting Reader Mode strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:06.850698 ERROR: Reader mode fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:06.853206 INFO: Attempting JS Disabled strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:07.210405 ERROR: JS disabled fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:07.212393 INFO: Attempting Refresh Stop strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:07.488042 ERROR: Refresh stop fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: cannot use a string pattern on a bytes-like object
+2025-09-15T13:48:07.490732 INFO: Attempting Inspect Element strategy for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:07.787312 ERROR: Inspect element fetch failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:07.789582 INFO: Attempting removepaywalls.com bypass for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:12.577311 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:48:12.577422 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:48:12.577449 INFO: Attempting archive.today for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:15.983891 INFO: No existing archive found, creating new archive for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:16.871451 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:48:16.872233 INFO: Attempting archive.is for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:20.057338 INFO: Attempting archive.li for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:23.871907 INFO: Attempting archive.fo for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:27.648089 INFO: Attempting archive.ph for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:30.849534 INFO: Attempting Googlebot spoof for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:31.109504 ERROR: Googlebot spoof failed for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1: 404 Client Error: Not Found for url: https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:31.113048 INFO: Attempting Enhanced Wayback Machine for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:31.409252 INFO: Found Wayback snapshot from 20230420023831: http://web.archive.org/web/20230420023831/https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:31.732960 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T13:48:31.733058 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:48:31.733085 INFO: Attempting Wayback Machine for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:31.896336 INFO: Found Wayback snapshot: http://web.archive.org/web/20230420023831/https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1
+2025-09-15T13:48:32.106551 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-15T13:48:32.106682 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:48:32.106717 ERROR: All fetch strategies failed or returned low-quality content for https://www.imdb.com/video/vi679000601/?ref_=nmvi_vi_imdb_1. Attempting Google Search fallback...
+2025-09-15T13:48:32.106782 INFO: Google Search fallback: searching for 'vi679000601'
+2025-09-15T13:48:32.139059 INFO: Google Search fallback did not find alternative URL

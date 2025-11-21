@@ -1,0 +1,35 @@
+2025-09-15T13:04:42.771740 INFO: Attempting direct fetch for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:43.513844 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:04:43.682152 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:04:43.682274 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:04:43.682313 INFO: Attempting Reader Mode strategy for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:43.741698 ERROR: Reader mode fetch failed for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm: cannot use a string pattern on a bytes-like object
+2025-09-15T13:04:43.744021 INFO: Attempting JS Disabled strategy for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:43.894920 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:04:43.895033 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:04:43.895060 INFO: Attempting Refresh Stop strategy for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:43.978164 ERROR: Refresh stop fetch failed for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm: cannot use a string pattern on a bytes-like object
+2025-09-15T13:04:43.980667 INFO: Attempting Inspect Element strategy for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:44.239345 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:04:44.239452 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:04:44.239478 INFO: Attempting removepaywalls.com bypass for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:49.184850 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:04:49.184964 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:04:49.184991 INFO: Attempting archive.today for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:52.548551 INFO: No existing archive found, creating new archive for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:53.458870 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:04:53.459296 INFO: Attempting archive.is for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:55.988000 INFO: Attempting archive.li for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:04:58.073792 INFO: Attempting archive.fo for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:00.195098 INFO: Attempting archive.ph for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:03.996929 INFO: Attempting Googlebot spoof for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:04.271838 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:05:04.271949 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:04.271976 INFO: Attempting Enhanced Wayback Machine for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:04.744989 INFO: Found Wayback snapshot from 20250910034345: http://web.archive.org/web/20250910034345/https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:06.316519 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:05:06.316649 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:06.316683 INFO: Attempting Wayback Machine for https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:06.440878 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910034345/https://www.cdc.gov/nchs/fastats/obesity-overweight.htm
+2025-09-15T13:05:06.638894 INFO: Content is very short (27 words). Likely a teaser.
+2025-09-15T13:05:06.639165 INFO: Successfully fetched https://www.cdc.gov/nchs/fastats/obesity-overweight.htm using 12ft

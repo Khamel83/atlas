@@ -1,0 +1,116 @@
+2025-09-15T02:33:37.509691 INFO: Attempting direct fetch for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.593015 ERROR: Direct fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.594623 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.677683 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.679286 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.761837 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.763454 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.847878 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: cannot use a string pattern on a bytes-like object
+2025-09-15T02:33:37.849571 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:37.850160 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: [Errno 32] Broken pipe
+2025-09-15T02:33:37.850208 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:42.699475 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T02:33:42.699634 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:33:42.699666 INFO: Attempting archive.today for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:47.141725 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:48.323571 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:33:48.324093 INFO: Attempting archive.is for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:51.196425 INFO: Attempting archive.li for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:53.887755 INFO: Attempting archive.fo for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:33:57.666398 INFO: Attempting archive.ph for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:00.863688 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:00.971193 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:00.972738 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:05.887300 INFO: Found Wayback snapshot from 20210508234725: http://web.archive.org/web/20210508234725/https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.293286 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T02:34:07.293406 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:07.293450 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.422330 INFO: Found Wayback snapshot: http://web.archive.org/web/20210508234725/https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.595046 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T02:34:07.595164 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:07.595196 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657. Attempting Google Search fallback...
+2025-09-15T02:34:07.595262 INFO: Google Search fallback: searching for 'is it time to invest in energy stocks 1422028657'
+2025-09-15T02:34:07.626933 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:34:07.634418 INFO: Attempting direct fetch for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.732152 ERROR: Direct fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.733653 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.816415 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.818332 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.900909 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.902662 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:07.990899 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: cannot use a string pattern on a bytes-like object
+2025-09-15T02:34:07.992676 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:08.078693 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:08.080457 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:10.359079 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T02:34:10.359180 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:10.359208 INFO: Attempting archive.today for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:13.927931 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:14.799004 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:34:14.799365 INFO: Attempting archive.is for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:17.716640 INFO: Attempting archive.li for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:21.668655 INFO: Attempting archive.fo for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:25.452405 INFO: Attempting archive.ph for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:29.241980 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:29.334221 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:29.336061 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:29.450896 INFO: Found Wayback snapshot from 20210508234725: http://web.archive.org/web/20210508234725/https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:29.762546 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T02:34:29.762683 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:29.762711 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:29.879835 INFO: Found Wayback snapshot: http://web.archive.org/web/20210508234725/https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.057810 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T02:34:30.057927 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:30.057963 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657. Attempting Google Search fallback...
+2025-09-15T02:34:30.065698 INFO: Attempting direct fetch for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.151953 ERROR: Direct fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.153971 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.241164 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.243295 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.340172 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.341985 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.426817 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: cannot use a string pattern on a bytes-like object
+2025-09-15T02:34:30.428683 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.515154 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:30.516990 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:33.482313 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T02:34:33.482421 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:33.482462 INFO: Attempting archive.today for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:37.139891 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:38.047934 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:34:38.048381 INFO: Attempting archive.is for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:42.360766 INFO: Attempting archive.li for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:44.915621 INFO: Attempting archive.fo for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:47.899450 INFO: Attempting archive.ph for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:50.725563 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:50.808679 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:50.810245 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:50.977205 INFO: Found Wayback snapshot from 20210508234725: http://web.archive.org/web/20210508234725/https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.178328 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T02:34:51.178460 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:51.178485 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.315652 INFO: Found Wayback snapshot: http://web.archive.org/web/20210508234725/https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.501536 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T02:34:51.501710 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:51.501747 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657. Attempting Google Search fallback...
+2025-09-15T02:34:51.501819 INFO: Google Search fallback: searching for 'is it time to invest in energy stocks 1422028657'
+2025-09-15T02:34:51.536773 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:34:51.548067 INFO: Attempting direct fetch for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.656937 ERROR: Direct fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.659523 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.773358 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.774994 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.871262 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.874083 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:51.977307 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: cannot use a string pattern on a bytes-like object
+2025-09-15T02:34:51.982024 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:52.089863 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:52.091582 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:34:56.763138 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T02:34:56.763229 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:34:56.763256 INFO: Attempting archive.today for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:35:01.593143 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:35:02.477135 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:35:02.477498 INFO: Attempting archive.is for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:35:05.644647 INFO: Attempting archive.li for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657
+2025-09-15T02:35:09.478073 INFO: Attempting archive.fo for http://www.wsj.com/articles/is-it-time-to-invest-in-energy-stocks-1422028657

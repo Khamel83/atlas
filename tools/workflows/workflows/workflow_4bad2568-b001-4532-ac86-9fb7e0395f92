@@ -1,0 +1,25 @@
+2025-09-14T22:13:16.481062 INFO: Attempting direct fetch for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:16.635533 ERROR: Direct fetch failed for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:16.637919 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:17.245371 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:13:17.247740 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:17.367573 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:17.369452 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:17.489240 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html: cannot use a string pattern on a bytes-like object
+2025-09-14T22:13:17.491353 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:17.607760 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:17.609640 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:20.607208 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:13:20.607326 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:13:20.607354 INFO: Attempting archive.today for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:23.709318 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:24.590545 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:13:24.590927 INFO: Attempting archive.is for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:30.495159 INFO: Attempting archive.li for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:34.105184 INFO: Attempting archive.fo for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:37.047411 INFO: Attempting archive.ph for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:39.657415 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:39.783730 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:39.784900 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:40.092443 INFO: Found Wayback snapshot from 20250831190943: http://web.archive.org/web/20250831190943/https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html
+2025-09-14T22:13:41.142787 INFO: Successfully fetched https://www.nytimes.com/2023/02/05/opinion/elle-mills-youtube-quit.html using wayback_machine_enhanced

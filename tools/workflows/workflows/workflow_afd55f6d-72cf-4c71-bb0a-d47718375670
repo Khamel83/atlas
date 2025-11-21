@@ -1,0 +1,127 @@
+2025-09-15T15:54:39.752747 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:39.952638 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:54:40.017231 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:54:40.017349 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:54:40.017390 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:40.069713 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:54:40.072105 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:40.231213 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:54:40.231321 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:54:40.231348 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:40.282177 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:54:40.284352 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:40.557080 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T15:54:40.557184 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:54:40.557211 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:45.298030 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:54:45.298152 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:54:45.298180 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:49.575879 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:50.500819 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:54:50.501223 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:54.229939 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:56.679203 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:54:59.318792 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:03.046349 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:03.229699 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:03.229813 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:03.229840 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:08.872229 INFO: Found Wayback snapshot from 20231028101920: http://web.archive.org/web/20231028101920/https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:09.541520 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:09.541670 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:09.541701 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:09.665505 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: No archived snapshots found
+2025-09-15T15:55:09.667278 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over. Attempting Google Search fallback...
+2025-09-15T15:55:09.667441 INFO: Google Search fallback: searching for 'what if you could do it all over'
+2025-09-15T15:55:09.699391 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:55:09.707696 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:09.791990 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:09.966294 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:09.966418 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:09.966463 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:10.019462 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:55:10.022012 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:10.181077 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:10.181189 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:10.181215 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:10.235032 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:55:10.237433 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:10.528384 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T15:55:10.528491 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:10.528517 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:15.231781 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:55:15.231883 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:15.231912 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:19.255759 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:20.146545 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:55:20.147021 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:22.550460 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:24.962348 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:27.398254 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:30.754979 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:30.946939 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:30.947062 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:30.947088 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:30.947166 ERROR: Enhanced Wayback Machine failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: [Errno 32] Broken pipe
+2025-09-15T15:55:30.947226 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:31.086050 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: No archived snapshots found
+2025-09-15T15:55:31.088229 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over. Attempting Google Search fallback...
+2025-09-15T15:55:31.088916 INFO: Google Search fallback: searching for 'what if you could do it all over'
+2025-09-15T15:55:31.122784 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:55:31.132348 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:31.227908 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:31.291504 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:31.291649 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:31.291694 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:31.350460 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:55:31.353154 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:31.515996 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:31.516100 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:31.516125 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:31.567141 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:55:31.569518 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:31.848101 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T15:55:31.848249 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:31.848278 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:34.114156 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:55:34.114248 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:34.114275 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:37.423902 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:38.329381 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:55:38.329909 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:42.144611 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:44.591375 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:46.574247 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:49.371655 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:49.571268 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:49.571391 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:49.571420 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:49.808437 INFO: Found Wayback snapshot from 20231028101920: http://web.archive.org/web/20231028101920/https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.042861 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:50.042991 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:50.043019 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.172743 ERROR: Wayback Machine failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: No archived snapshots found
+2025-09-15T15:55:50.175350 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over. Attempting Google Search fallback...
+2025-09-15T15:55:50.175873 INFO: Google Search fallback: searching for 'what if you could do it all over'
+2025-09-15T15:55:50.208649 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:55:50.216703 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.306513 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:50.369109 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:50.369227 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:50.369267 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.423265 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:55:50.425907 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.583062 INFO: Paywall element '.paywall' detected.
+2025-09-15T15:55:50.583174 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:50.583202 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.632541 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over: cannot use a string pattern on a bytes-like object
+2025-09-15T15:55:50.634978 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:50.906642 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T15:55:50.906754 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:50.906780 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:55.499075 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:55:55.499189 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:55:55.499216 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:55:59.607839 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over
+2025-09-15T15:56:00.468425 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:56:00.469040 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over

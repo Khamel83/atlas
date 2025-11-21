@@ -1,0 +1,45 @@
+2025-09-15T11:54:55.922411 INFO: Attempting direct fetch for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:54:57.507308 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:54:57.835435 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:54:57.837700 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:54:57.837782 INFO: Attempting Reader Mode strategy for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:54:58.819300 ERROR: Reader mode fetch failed for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true: cannot use a string pattern on a bytes-like object
+2025-09-15T11:54:58.819843 INFO: Attempting JS Disabled strategy for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:54:58.819965 ERROR: JS disabled fetch failed for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true: [Errno 32] Broken pipe
+2025-09-15T11:54:58.820020 INFO: Attempting Refresh Stop strategy for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:54:59.781629 ERROR: Refresh stop fetch failed for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true: cannot use a string pattern on a bytes-like object
+2025-09-15T11:54:59.781886 INFO: Attempting Inspect Element strategy for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:00.249878 INFO: Content is very short (26 words). Likely a teaser.
+2025-09-15T11:55:00.249991 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:55:00.250019 INFO: Attempting removepaywalls.com bypass for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:04.592007 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:55:04.592118 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:55:04.592151 INFO: Attempting archive.today for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:08.231267 INFO: No existing archive found, creating new archive for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:09.154878 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:55:09.155335 INFO: Attempting archive.is for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:11.141305 INFO: Attempting archive.li for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:13.639331 INFO: Attempting archive.fo for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:17.096259 INFO: Attempting archive.ph for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:19.038301 INFO: Attempting Googlebot spoof for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:19.461425 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:55:19.461544 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:55:19.461571 INFO: Attempting Enhanced Wayback Machine for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:20.094335 INFO: Found Wayback snapshot from 20171211162353: http://web.archive.org/web/20171211162353/http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:21.298994 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T11:55:21.299117 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:55:21.299146 INFO: Attempting Wayback Machine for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:21.426830 INFO: Found Wayback snapshot: http://web.archive.org/web/20171211162353/http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:21.549802 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T11:55:21.549913 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:55:21.549950 ERROR: All fetch strategies failed or returned low-quality content for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true. Attempting Google Search fallback...
+2025-09-15T11:55:21.550021 INFO: Google Search fallback: searching for 'the scam wall street learned from the mafia 20120620'
+2025-09-15T11:55:21.581671 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:55:21.590475 INFO: Attempting direct fetch for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:21.908719 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:55:22.123673 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T11:55:22.123804 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:55:22.123842 INFO: Attempting Reader Mode strategy for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:22.348498 ERROR: Reader mode fetch failed for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true: cannot use a string pattern on a bytes-like object
+2025-09-15T11:55:22.348816 INFO: Attempting JS Disabled strategy for http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true
+2025-09-15T11:55:23.761409 INFO: Successfully fetched http://www.rollingstone.com/politics/news/the-scam-wall-street-learned-from-the-mafia-20120620?print=true using js_disabled

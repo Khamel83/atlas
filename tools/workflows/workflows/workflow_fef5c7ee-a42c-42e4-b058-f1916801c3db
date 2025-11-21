@@ -1,0 +1,27 @@
+2025-09-15T11:38:22.731731 INFO: Attempting direct fetch for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:22.884676 ERROR: Direct fetch failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:22.893861 INFO: Attempting direct fetch for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:23.015301 ERROR: Direct fetch failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:23.017269 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:23.907193 ERROR: Reader mode fetch failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: cannot use a string pattern on a bytes-like object
+2025-09-15T11:38:23.909951 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:24.040421 ERROR: JS disabled fetch failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:24.042505 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:24.165585 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: cannot use a string pattern on a bytes-like object
+2025-09-15T11:38:24.167656 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:24.296658 ERROR: Inspect element fetch failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:24.298618 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:28.280511 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:38:28.280648 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:38:28.280677 INFO: Attempting archive.today for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:32.806958 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:33.681549 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:38:33.682068 INFO: Attempting archive.is for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:36.564286 INFO: Attempting archive.li for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:38.777037 INFO: Attempting archive.fo for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:42.214289 INFO: Attempting archive.ph for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:45.322371 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:45.448519 ERROR: Googlebot spoof failed for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:45.449918 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:45.997422 INFO: Found Wayback snapshot from 20250702183035: http://web.archive.org/web/20250702183035/https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html
+2025-09-15T11:38:48.578772 INFO: Successfully fetched https://www.nytimes.com/2017/07/11/magazine/washington-dc-politics-trump-this-town-melts-down.html using wayback_machine_enhanced

@@ -1,0 +1,122 @@
+2025-09-15T09:31:13.649873 INFO: Attempting direct fetch for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:13.653417 ERROR: Direct fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: [Errno 32] Broken pipe
+2025-09-15T09:31:13.653537 INFO: Attempting Reader Mode strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:14.043368 ERROR: Reader mode fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:31:14.045704 INFO: Attempting JS Disabled strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:14.524868 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:14.524974 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:14.525001 INFO: Attempting Refresh Stop strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:14.948195 ERROR: Refresh stop fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:31:14.953138 INFO: Attempting Inspect Element strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:15.276144 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:15.276250 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:15.276281 INFO: Attempting removepaywalls.com bypass for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:19.368824 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:31:19.368931 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:19.368957 INFO: Attempting archive.today for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:23.772954 INFO: No existing archive found, creating new archive for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:24.628670 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:31:24.629159 INFO: Attempting archive.is for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:26.589987 INFO: Attempting archive.li for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:29.780396 INFO: Attempting archive.fo for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:32.687200 INFO: Attempting archive.ph for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:35.966151 INFO: Attempting Googlebot spoof for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:36.364621 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:36.364743 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:36.364777 INFO: Attempting Enhanced Wayback Machine for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:36.921040 INFO: Found Wayback snapshot from 20250821163117: http://web.archive.org/web/20250821163117/https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:38.021532 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:38.021684 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:38.021722 INFO: Attempting Wayback Machine for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:38.184336 INFO: Found Wayback snapshot: http://web.archive.org/web/20250821163117/https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:38.320639 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:38.320751 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:38.320793 ERROR: All fetch strategies failed or returned low-quality content for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/. Attempting Google Search fallback...
+2025-09-15T09:31:38.320863 INFO: Google Search fallback: searching for 'the 45 best and weirdest charts we made in 2018'
+2025-09-15T09:31:38.352970 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:31:38.360290 INFO: Attempting direct fetch for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:38.842411 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:38.926216 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:38.926327 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:38.926371 INFO: Attempting Reader Mode strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:39.275490 ERROR: Reader mode fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:31:39.277754 INFO: Attempting JS Disabled strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:39.485987 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:39.486089 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:39.486118 INFO: Attempting Refresh Stop strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:39.935117 ERROR: Refresh stop fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:31:39.937382 INFO: Attempting Inspect Element strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:40.404574 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:40.404702 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:40.404733 INFO: Attempting removepaywalls.com bypass for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:43.383692 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:31:43.383808 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:43.383838 INFO: Attempting archive.today for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:47.690525 INFO: No existing archive found, creating new archive for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:48.596911 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:31:48.597348 INFO: Attempting archive.is for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:51.312545 INFO: Attempting archive.li for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:53.952366 INFO: Attempting archive.fo for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:56.115111 INFO: Attempting archive.ph for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:59.747782 INFO: Attempting Googlebot spoof for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:59.759364 INFO: Attempting direct fetch for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:31:59.903569 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:59.983759 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:31:59.983877 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:31:59.983919 INFO: Attempting Reader Mode strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:00.373969 ERROR: Reader mode fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:32:00.376067 INFO: Attempting JS Disabled strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:00.521294 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:00.521407 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:00.521435 INFO: Attempting Refresh Stop strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:00.881996 ERROR: Refresh stop fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:32:00.884103 INFO: Attempting Inspect Element strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:01.133555 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:01.133691 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:01.133719 INFO: Attempting removepaywalls.com bypass for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:04.278401 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:32:04.278514 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:04.278540 INFO: Attempting archive.today for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:08.176395 INFO: No existing archive found, creating new archive for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:09.040398 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:32:09.040882 INFO: Attempting archive.is for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:11.488364 INFO: Attempting archive.li for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:14.559471 INFO: Attempting archive.fo for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:17.217231 INFO: Attempting archive.ph for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:19.740848 INFO: Attempting Googlebot spoof for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:19.939786 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:19.939904 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:19.939935 INFO: Attempting Enhanced Wayback Machine for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:20.248887 INFO: Found Wayback snapshot from 20250821163117: http://web.archive.org/web/20250821163117/https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:20.470401 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:20.470514 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:20.470551 INFO: Attempting Wayback Machine for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:20.602490 INFO: Found Wayback snapshot: http://web.archive.org/web/20250821163117/https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:20.741933 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:20.742051 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:20.742090 ERROR: All fetch strategies failed or returned low-quality content for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/. Attempting Google Search fallback...
+2025-09-15T09:32:20.742154 INFO: Google Search fallback: searching for 'the 45 best and weirdest charts we made in 2018'
+2025-09-15T09:32:20.774642 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:32:20.783267 INFO: Attempting direct fetch for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:20.923045 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:21.001650 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:21.001766 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:21.001810 INFO: Attempting Reader Mode strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:21.328738 ERROR: Reader mode fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:32:21.330925 INFO: Attempting JS Disabled strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:21.533948 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:21.534065 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:21.534093 INFO: Attempting Refresh Stop strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:21.684018 ERROR: Refresh stop fetch failed for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:32:21.686268 INFO: Attempting Inspect Element strategy for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:22.143844 INFO: Content is very short (74 words). Likely a teaser.
+2025-09-15T09:32:22.143960 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:22.143989 INFO: Attempting removepaywalls.com bypass for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:25.380103 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:32:25.380210 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:25.380240 INFO: Attempting archive.today for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:29.166199 INFO: No existing archive found, creating new archive for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:30.052481 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:32:30.052980 INFO: Attempting archive.is for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:33.108538 INFO: Attempting archive.li for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/
+2025-09-15T09:32:35.470930 INFO: Attempting archive.fo for https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/

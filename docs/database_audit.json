@@ -1,0 +1,1455 @@
+{
+  "audit_timestamp": "2025-08-26T20:10:42.891954",
+  "summary": {
+    "total_databases": 13,
+    "total_size_mb": 1100.5859375,
+    "total_records": 134190,
+    "estimated_junk_records": 9935,
+    "databases_with_issues": 5
+  },
+  "databases": {
+    "atlas.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/atlas.db",
+        "size_mb": 290.29296875,
+        "tables": {
+          "content": {
+            "records": 8216,
+            "columns": 7,
+            "column_names": [
+              "id",
+              "title",
+              "content_type",
+              "source_url",
+              "created_at",
+              "metadata",
+              "content"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "search_index": {
+            "records": 0,
+            "columns": 5,
+            "column_names": [
+              "id",
+              "content_id",
+              "content",
+              "title",
+              "created_at"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 0,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 8216,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "content": {
+          "total": 8216,
+          "estimated_junk": 8216,
+          "estimated_legitimate": 0
+        },
+        "search_index": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "sqlite_sequence": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:37.734977"
+    },
+    "atlas_search.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/atlas_search.db",
+        "size_mb": 3.06640625,
+        "tables": {
+          "transcript_segments": {
+            "records": 197,
+            "columns": 15,
+            "column_names": [
+              "id",
+              "episode_id",
+              "content_uid",
+              "speaker",
+              "content",
+              "segment_id",
+              "start_line",
+              "end_line",
+              "start_timestamp",
+              "end_timestamp",
+              "word_count",
+              "segment_type",
+              "topic_tags",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": [
+              "Potential interface HTML junk detected in transcript_segments"
+            ]
+          },
+          "sqlite_sequence": {
+            "records": 3,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 3,
+            "quality_issues": []
+          },
+          "topic_clusters": {
+            "records": 176,
+            "columns": 8,
+            "column_names": [
+              "id",
+              "topic_name",
+              "keywords",
+              "related_segments",
+              "episode_count",
+              "content_count",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "transcript_speakers": {
+            "records": 2,
+            "columns": 10,
+            "column_names": [
+              "id",
+              "speaker_name",
+              "normalized_name",
+              "episode_count",
+              "segment_count",
+              "total_word_count",
+              "first_appearance",
+              "last_appearance",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 2,
+            "quality_issues": []
+          },
+          "transcript_segments_fts": {
+            "records": 197,
+            "columns": 4,
+            "column_names": [
+              "content",
+              "speaker",
+              "segment_type",
+              "topic_tags"
+            ],
+            "sample_data": 5,
+            "quality_issues": [
+              "Potential interface HTML junk detected in transcript_segments_fts"
+            ]
+          },
+          "transcript_segments_fts_data": {
+            "records": 162,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "block"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "transcript_segments_fts_idx": {
+            "records": 160,
+            "columns": 3,
+            "column_names": [
+              "segid",
+              "term",
+              "pgno"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "transcript_segments_fts_docsize": {
+            "records": 197,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "sz"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "transcript_segments_fts_config": {
+            "records": 1,
+            "columns": 2,
+            "column_names": [
+              "k",
+              "v"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          }
+        },
+        "total_records": 1095,
+        "quality_issues": [
+          "Potential interface HTML junk detected in transcript_segments",
+          "Potential interface HTML junk detected in transcript_segments_fts"
+        ]
+      },
+      "junk_estimates": {
+        "transcript_segments": {
+          "total": 197,
+          "estimated_junk": 191,
+          "estimated_legitimate": 6
+        },
+        "sqlite_sequence": {
+          "total": 3,
+          "estimated_junk": 0,
+          "estimated_legitimate": 3
+        },
+        "topic_clusters": {
+          "total": 176,
+          "estimated_junk": 0,
+          "estimated_legitimate": 176
+        },
+        "transcript_speakers": {
+          "total": 2,
+          "estimated_junk": 0,
+          "estimated_legitimate": 2
+        },
+        "transcript_segments_fts": {
+          "total": 197,
+          "estimated_junk": 191,
+          "estimated_legitimate": 6
+        },
+        "transcript_segments_fts_data": {
+          "total": 162,
+          "estimated_junk": 0,
+          "estimated_legitimate": 162
+        },
+        "transcript_segments_fts_idx": {
+          "total": 160,
+          "estimated_junk": 0,
+          "estimated_legitimate": 160
+        },
+        "transcript_segments_fts_docsize": {
+          "total": 197,
+          "estimated_junk": 0,
+          "estimated_legitimate": 197
+        },
+        "transcript_segments_fts_config": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        }
+      },
+      "timestamp": "2025-08-26T20:10:37.830801"
+    },
+    "atlas_20250824_141734_backup.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/backups/atlas_20250824_141734_backup.db",
+        "size_mb": 68.41796875,
+        "tables": {
+          "content": {
+            "records": 3936,
+            "columns": 8,
+            "column_names": [
+              "id",
+              "title",
+              "url",
+              "content",
+              "content_type",
+              "metadata",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 1,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          },
+          "worker_jobs": {
+            "records": 2,
+            "columns": 10,
+            "column_names": [
+              "id",
+              "type",
+              "data",
+              "priority",
+              "status",
+              "assigned_worker",
+              "created_at",
+              "assigned_at",
+              "completed_at",
+              "result"
+            ],
+            "sample_data": 2,
+            "quality_issues": []
+          },
+          "workers": {
+            "records": 0,
+            "columns": 9,
+            "column_names": [
+              "worker_id",
+              "capabilities",
+              "platform",
+              "whisper_available",
+              "ytdlp_available",
+              "metadata",
+              "registered_at",
+              "last_seen",
+              "status"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "transcriptions": {
+            "records": 0,
+            "columns": 7,
+            "column_names": [
+              "id",
+              "filename",
+              "transcript",
+              "source",
+              "metadata",
+              "created_at",
+              "processed"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 3939,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "content": {
+          "total": 3936,
+          "estimated_junk": 249,
+          "estimated_legitimate": 3687
+        },
+        "sqlite_sequence": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        },
+        "worker_jobs": {
+          "total": 2,
+          "estimated_junk": 0,
+          "estimated_legitimate": 2
+        },
+        "workers": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "transcriptions": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:40.002578"
+    },
+    "atlas_search_20250824_141734_backup.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/backups/atlas_search_20250824_141734_backup.db",
+        "size_mb": 0.671875,
+        "tables": {
+          "search_index": {
+            "records": 30,
+            "columns": 9,
+            "column_names": [
+              "id",
+              "doc_id",
+              "title",
+              "content",
+              "content_type",
+              "word_count",
+              "created_at",
+              "search_vector",
+              "metadata"
+            ],
+            "sample_data": 5,
+            "quality_issues": [
+              "Potential interface HTML junk detected in search_index"
+            ]
+          },
+          "fts_index": {
+            "records": 30,
+            "columns": 3,
+            "column_names": [
+              "doc_id",
+              "title",
+              "content"
+            ],
+            "sample_data": 5,
+            "quality_issues": [
+              "Potential interface HTML junk detected in fts_index"
+            ]
+          },
+          "fts_index_data": {
+            "records": 58,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "block"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "fts_index_idx": {
+            "records": 56,
+            "columns": 3,
+            "column_names": [
+              "segid",
+              "term",
+              "pgno"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "fts_index_docsize": {
+            "records": 30,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "sz"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "fts_index_config": {
+            "records": 1,
+            "columns": 2,
+            "column_names": [
+              "k",
+              "v"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          }
+        },
+        "total_records": 205,
+        "quality_issues": [
+          "Potential interface HTML junk detected in search_index",
+          "Potential interface HTML junk detected in fts_index"
+        ]
+      },
+      "junk_estimates": {
+        "search_index": {
+          "total": 30,
+          "estimated_junk": 17,
+          "estimated_legitimate": 13
+        },
+        "fts_index": {
+          "total": 30,
+          "estimated_junk": 17,
+          "estimated_legitimate": 13
+        },
+        "fts_index_data": {
+          "total": 58,
+          "estimated_junk": 0,
+          "estimated_legitimate": 58
+        },
+        "fts_index_idx": {
+          "total": 56,
+          "estimated_junk": 0,
+          "estimated_legitimate": 56
+        },
+        "fts_index_docsize": {
+          "total": 30,
+          "estimated_junk": 0,
+          "estimated_legitimate": 30
+        },
+        "fts_index_config": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        }
+      },
+      "timestamp": "2025-08-26T20:10:40.018255"
+    },
+    "ai_costs.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/ai_costs.db",
+        "size_mb": 0.04296875,
+        "tables": {
+          "api_usage": {
+            "records": 2,
+            "columns": 13,
+            "column_names": [
+              "id",
+              "timestamp",
+              "provider",
+              "model",
+              "operation",
+              "input_tokens",
+              "output_tokens",
+              "total_tokens",
+              "cost_usd",
+              "response_time",
+              "success",
+              "error_type",
+              "metadata"
+            ],
+            "sample_data": 2,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 1,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          },
+          "cost_budgets": {
+            "records": 0,
+            "columns": 7,
+            "column_names": [
+              "id",
+              "period_type",
+              "period_start",
+              "budget_usd",
+              "spent_usd",
+              "requests_made",
+              "updated_at"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "ai_response_cache": {
+            "records": 0,
+            "columns": 7,
+            "column_names": [
+              "cache_key",
+              "request_hash",
+              "response_data",
+              "tokens_saved",
+              "cost_saved",
+              "created_at",
+              "expires_at"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "fallback_usage": {
+            "records": 0,
+            "columns": 7,
+            "column_names": [
+              "id",
+              "timestamp",
+              "operation",
+              "fallback_strategy",
+              "reason",
+              "success",
+              "metadata"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "cost_tracking": {
+            "records": 0,
+            "columns": 6,
+            "column_names": [
+              "id",
+              "timestamp",
+              "model",
+              "input_tokens",
+              "output_tokens",
+              "cost"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 3,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "api_usage": {
+          "total": 2,
+          "estimated_junk": 0,
+          "estimated_legitimate": 2
+        },
+        "sqlite_sequence": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        },
+        "cost_budgets": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "ai_response_cache": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "fallback_usage": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "cost_tracking": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:40.021895"
+    },
+    "analytics.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/analytics.db",
+        "size_mb": 391.4296875,
+        "tables": {
+          "content_analytics": {
+            "records": 23041,
+            "columns": 9,
+            "column_names": [
+              "id",
+              "content_type",
+              "title",
+              "url",
+              "date_added",
+              "word_count",
+              "tags",
+              "metadata",
+              "created_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 2,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 2,
+            "quality_issues": []
+          },
+          "consumption_events": {
+            "records": 23041,
+            "columns": 6,
+            "column_names": [
+              "id",
+              "content_id",
+              "event_type",
+              "timestamp",
+              "duration",
+              "metadata"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "analytics_cache": {
+            "records": 1,
+            "columns": 4,
+            "column_names": [
+              "cache_key",
+              "data",
+              "created_at",
+              "expires_at"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          }
+        },
+        "total_records": 46085,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "content_analytics": {
+          "total": 23041,
+          "estimated_junk": 0,
+          "estimated_legitimate": 23041
+        },
+        "sqlite_sequence": {
+          "total": 2,
+          "estimated_junk": 0,
+          "estimated_legitimate": 2
+        },
+        "consumption_events": {
+          "total": 23041,
+          "estimated_junk": 0,
+          "estimated_legitimate": 23041
+        },
+        "analytics_cache": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        }
+      },
+      "timestamp": "2025-08-26T20:10:40.367578"
+    },
+    "enhanced_search.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/enhanced_search.db",
+        "size_mb": 263.3359375,
+        "tables": {
+          "enhanced_content_index": {
+            "records": 1966,
+            "columns": 15,
+            "column_names": [
+              "id",
+              "title",
+              "content",
+              "content_type",
+              "url",
+              "tags",
+              "keywords",
+              "summary",
+              "word_count",
+              "quality_score",
+              "popularity_score",
+              "recency_score",
+              "semantic_vector",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "content_relationships": {
+            "records": 0,
+            "columns": 6,
+            "column_names": [
+              "id",
+              "source_id",
+              "target_id",
+              "relationship_type",
+              "strength",
+              "created_at"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 2,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 2,
+            "quality_issues": []
+          },
+          "search_analytics": {
+            "records": 79,
+            "columns": 8,
+            "column_names": [
+              "id",
+              "query",
+              "query_type",
+              "results_count",
+              "top_result_id",
+              "clicked_result_id",
+              "search_time",
+              "timestamp"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "tag_index": {
+            "records": 0,
+            "columns": 3,
+            "column_names": [
+              "content_id",
+              "tag",
+              "weight"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "search_index": {
+            "records": 15728,
+            "columns": 9,
+            "column_names": [
+              "id",
+              "content_id",
+              "title",
+              "content",
+              "content_type",
+              "url",
+              "tags",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": [
+              "Potential interface HTML junk detected in search_index"
+            ]
+          }
+        },
+        "total_records": 17775,
+        "quality_issues": [
+          "Potential interface HTML junk detected in search_index"
+        ]
+      },
+      "junk_estimates": {
+        "enhanced_content_index": {
+          "total": 1966,
+          "estimated_junk": 117,
+          "estimated_legitimate": 1849
+        },
+        "content_relationships": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "sqlite_sequence": {
+          "total": 2,
+          "estimated_junk": 0,
+          "estimated_legitimate": 2
+        },
+        "search_analytics": {
+          "total": 79,
+          "estimated_junk": 0,
+          "estimated_legitimate": 79
+        },
+        "tag_index": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "search_index": {
+          "total": 15728,
+          "estimated_junk": 936,
+          "estimated_legitimate": 14792
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.869751"
+    },
+    "enhanced_search_optimized.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/enhanced_search_optimized.db",
+        "size_mb": 0.05859375,
+        "tables": {
+          "optimized_content": {
+            "records": 0,
+            "columns": 11,
+            "column_names": [
+              "id",
+              "title",
+              "content",
+              "content_type",
+              "url",
+              "word_count",
+              "tags",
+              "quality_score",
+              "created_at",
+              "updated_at",
+              "metadata"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "content_fts": {
+            "records": 0,
+            "columns": 4,
+            "column_names": [
+              "title",
+              "content",
+              "tags",
+              "content_id"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "content_fts_data": {
+            "records": 2,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "block"
+            ],
+            "sample_data": 2,
+            "quality_issues": []
+          },
+          "content_fts_idx": {
+            "records": 0,
+            "columns": 3,
+            "column_names": [
+              "segid",
+              "term",
+              "pgno"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "content_fts_content": {
+            "records": 0,
+            "columns": 5,
+            "column_names": [
+              "id",
+              "c0",
+              "c1",
+              "c2",
+              "c3"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "content_fts_docsize": {
+            "records": 0,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "sz"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "content_fts_config": {
+            "records": 1,
+            "columns": 2,
+            "column_names": [
+              "k",
+              "v"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          },
+          "query_performance": {
+            "records": 20,
+            "columns": 7,
+            "column_names": [
+              "id",
+              "query_hash",
+              "query_text",
+              "execution_time",
+              "result_count",
+              "cache_hit",
+              "timestamp"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 1,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 1,
+            "quality_issues": []
+          },
+          "search_analytics": {
+            "records": 0,
+            "columns": 5,
+            "column_names": [
+              "id",
+              "query_text",
+              "results_found",
+              "user_clicked",
+              "timestamp"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 24,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "optimized_content": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "content_fts": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "content_fts_data": {
+          "total": 2,
+          "estimated_junk": 0,
+          "estimated_legitimate": 2
+        },
+        "content_fts_idx": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "content_fts_content": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "content_fts_docsize": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "content_fts_config": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        },
+        "query_performance": {
+          "total": 20,
+          "estimated_junk": 0,
+          "estimated_legitimate": 20
+        },
+        "sqlite_sequence": {
+          "total": 1,
+          "estimated_junk": 0,
+          "estimated_legitimate": 1
+        },
+        "search_analytics": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.874812"
+    },
+    "atlas_podcasts.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/podcasts/atlas_podcasts.db",
+        "size_mb": 83.05078125,
+        "tables": {
+          "podcasts": {
+            "records": 73,
+            "columns": 11,
+            "column_names": [
+              "id",
+              "name",
+              "slug",
+              "rss_url",
+              "site_url",
+              "resolver",
+              "episode_selector",
+              "transcript_selector",
+              "config",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 4,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 4,
+            "quality_issues": []
+          },
+          "episodes": {
+            "records": 31387,
+            "columns": 12,
+            "column_names": [
+              "id",
+              "podcast_id",
+              "guid",
+              "title",
+              "url",
+              "publish_date",
+              "transcript_url",
+              "transcript_status",
+              "transcript_path",
+              "metadata",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "transcript_sources": {
+            "records": 0,
+            "columns": 7,
+            "column_names": [
+              "id",
+              "episode_id",
+              "resolver",
+              "url",
+              "confidence",
+              "metadata",
+              "created_at"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "discovery_runs": {
+            "records": 25310,
+            "columns": 10,
+            "column_names": [
+              "id",
+              "podcast_id",
+              "resolver",
+              "episodes_found",
+              "transcripts_found",
+              "errors",
+              "duration_seconds",
+              "status",
+              "started_at",
+              "completed_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "capture_queue": {
+            "records": 1,
+            "columns": 11,
+            "column_names": [
+              "id",
+              "capture_id",
+              "content_type",
+              "content",
+              "metadata",
+              "source_device",
+              "captured_at",
+              "processed_at",
+              "status",
+              "error_message",
+              "atlas_content_id"
+            ],
+            "sample_data": 1,
+            "quality_issues": [
+              "High percentage of very short content in capture_queue"
+            ]
+          },
+          "export_history": {
+            "records": 0,
+            "columns": 10,
+            "column_names": [
+              "id",
+              "export_type",
+              "content_count",
+              "filters",
+              "output_path",
+              "export_timestamp",
+              "success",
+              "error_message",
+              "file_count",
+              "total_size_bytes"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 56775,
+        "quality_issues": [
+          "High percentage of very short content in capture_queue"
+        ]
+      },
+      "junk_estimates": {
+        "podcasts": {
+          "total": 73,
+          "estimated_junk": 0,
+          "estimated_legitimate": 73
+        },
+        "sqlite_sequence": {
+          "total": 4,
+          "estimated_junk": 0,
+          "estimated_legitimate": 4
+        },
+        "episodes": {
+          "total": 31387,
+          "estimated_junk": 0,
+          "estimated_legitimate": 31387
+        },
+        "transcript_sources": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "discovery_runs": {
+          "total": 25310,
+          "estimated_junk": 0,
+          "estimated_legitimate": 25310
+        },
+        "capture_queue": {
+          "total": 1,
+          "estimated_junk": 1,
+          "estimated_legitimate": 0
+        },
+        "export_history": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.885615"
+    },
+    "processed_content.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/processed_content.db",
+        "size_mb": 0.1171875,
+        "tables": {
+          "processed_content": {
+            "records": 34,
+            "columns": 12,
+            "column_names": [
+              "content_id",
+              "title",
+              "url",
+              "source",
+              "content_type",
+              "content_hash",
+              "extraction_quality",
+              "processing_status",
+              "insights_path",
+              "raw_path",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": []
+          },
+          "content_insights": {
+            "records": 33,
+            "columns": 12,
+            "column_names": [
+              "content_id",
+              "summary",
+              "key_topics",
+              "key_themes",
+              "entities",
+              "quotes",
+              "theses",
+              "sentiment",
+              "complexity",
+              "extraction_quality",
+              "model_used",
+              "created_at"
+            ],
+            "sample_data": 5,
+            "quality_issues": [
+              "Potential interface HTML junk detected in content_insights"
+            ]
+          }
+        },
+        "total_records": 67,
+        "quality_issues": [
+          "Potential interface HTML junk detected in content_insights"
+        ]
+      },
+      "junk_estimates": {
+        "processed_content": {
+          "total": 34,
+          "estimated_junk": 0,
+          "estimated_legitimate": 34
+        },
+        "content_insights": {
+          "total": 33,
+          "estimated_junk": 0,
+          "estimated_legitimate": 33
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.886361"
+    },
+    "test_processed_content.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/data/test_processed_content.db",
+        "size_mb": 0.04296875,
+        "tables": {
+          "processed_content": {
+            "records": 3,
+            "columns": 12,
+            "column_names": [
+              "content_id",
+              "title",
+              "url",
+              "source",
+              "content_type",
+              "content_hash",
+              "extraction_quality",
+              "processing_status",
+              "insights_path",
+              "raw_path",
+              "created_at",
+              "updated_at"
+            ],
+            "sample_data": 3,
+            "quality_issues": []
+          },
+          "content_insights": {
+            "records": 3,
+            "columns": 12,
+            "column_names": [
+              "content_id",
+              "summary",
+              "key_topics",
+              "key_themes",
+              "entities",
+              "quotes",
+              "theses",
+              "sentiment",
+              "complexity",
+              "extraction_quality",
+              "model_used",
+              "created_at"
+            ],
+            "sample_data": 3,
+            "quality_issues": []
+          }
+        },
+        "total_records": 6,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "processed_content": {
+          "total": 3,
+          "estimated_junk": 0,
+          "estimated_legitimate": 3
+        },
+        "content_insights": {
+          "total": 3,
+          "estimated_junk": 0,
+          "estimated_legitimate": 3
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.888389"
+    },
+    "scheduler.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/scheduler.db",
+        "size_mb": 0.015625,
+        "tables": {
+          "apscheduler_jobs": {
+            "records": 0,
+            "columns": 3,
+            "column_names": [
+              "id",
+              "next_run_time",
+              "job_state"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 0,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "apscheduler_jobs": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.889377"
+    },
+    "search_index.db": {
+      "analysis": {
+        "path": "/home/ubuntu/dev/atlas/search_index.db",
+        "size_mb": 0.04296875,
+        "tables": {
+          "documents": {
+            "records": 0,
+            "columns": 9,
+            "column_names": [
+              "id",
+              "title",
+              "content",
+              "content_type",
+              "author",
+              "created_at",
+              "updated_at",
+              "word_count",
+              "metadata"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "terms": {
+            "records": 0,
+            "columns": 2,
+            "column_names": [
+              "id",
+              "term"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "sqlite_sequence": {
+            "records": 0,
+            "columns": 2,
+            "column_names": [
+              "name",
+              "seq"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          },
+          "document_terms": {
+            "records": 0,
+            "columns": 3,
+            "column_names": [
+              "document_id",
+              "term_id",
+              "frequency"
+            ],
+            "sample_data": 0,
+            "quality_issues": []
+          }
+        },
+        "total_records": 0,
+        "quality_issues": []
+      },
+      "junk_estimates": {
+        "documents": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "terms": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "sqlite_sequence": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        },
+        "document_terms": {
+          "total": 0,
+          "estimated_junk": 0,
+          "estimated_legitimate": 0
+        }
+      },
+      "timestamp": "2025-08-26T20:10:42.891944"
+    }
+  },
+  "recommendations": [
+    "High volume of junk entries detected - database cleanup recommended",
+    "Large database size - consider archiving old data",
+    "Multiple databases have quality issues - systematic cleanup needed"
+  ]
+}

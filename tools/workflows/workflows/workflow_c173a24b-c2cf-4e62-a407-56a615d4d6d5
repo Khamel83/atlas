@@ -1,0 +1,108 @@
+2025-09-15T04:00:45.604397 INFO: Attempting direct fetch for https://harpers.org/tag/cartels/
+2025-09-15T04:00:46.079520 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:00:46.117687 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:00:46.117802 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:00:46.117840 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:00:46.549516 ERROR: Reader mode fetch failed for https://harpers.org/tag/cartels/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:00:46.551678 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:00:46.826289 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:00:46.826400 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:00:46.826424 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:00:47.032712 ERROR: Refresh stop fetch failed for https://harpers.org/tag/cartels/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:00:47.034981 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:00:47.496546 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:00:47.496681 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:00:47.496710 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/cartels/
+2025-09-15T04:00:50.215343 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:00:50.215450 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:00:50.215475 INFO: Attempting archive.today for https://harpers.org/tag/cartels/
+2025-09-15T04:00:53.968266 INFO: No existing archive found, creating new archive for https://harpers.org/tag/cartels/
+2025-09-15T04:00:54.878131 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:00:54.878907 INFO: Attempting archive.is for https://harpers.org/tag/cartels/
+2025-09-15T04:00:58.086530 INFO: Attempting archive.li for https://harpers.org/tag/cartels/
+2025-09-15T04:01:00.591173 INFO: Attempting archive.fo for https://harpers.org/tag/cartels/
+2025-09-15T04:01:02.607048 INFO: Attempting archive.ph for https://harpers.org/tag/cartels/
+2025-09-15T04:01:04.586316 INFO: Attempting Googlebot spoof for https://harpers.org/tag/cartels/
+2025-09-15T04:01:04.668406 ERROR: Googlebot spoof failed for https://harpers.org/tag/cartels/: 403 Client Error: Forbidden for url: https://harpers.org/tag/cartels/
+2025-09-15T04:01:04.670134 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/cartels/
+2025-09-15T04:01:16.567986 INFO: Found Wayback snapshot from 20210226193858: http://web.archive.org/web/20210226193858/https://harpers.org/tag/cartels/
+2025-09-15T04:01:17.510540 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:01:17.510673 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:17.510704 INFO: Attempting Wayback Machine for https://harpers.org/tag/cartels/
+2025-09-15T04:01:17.510762 ERROR: Wayback Machine failed for https://harpers.org/tag/cartels/: [Errno 32] Broken pipe
+2025-09-15T04:01:17.510797 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/cartels/. Attempting Google Search fallback...
+2025-09-15T04:01:17.510862 INFO: Google Search fallback: searching for 'cartels'
+2025-09-15T04:01:17.595534 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:01:17.610956 INFO: Attempting direct fetch for https://harpers.org/tag/cartels/
+2025-09-15T04:01:17.901813 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:17.941681 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:17.941804 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:17.941862 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:18.311246 ERROR: Reader mode fetch failed for https://harpers.org/tag/cartels/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:01:18.313406 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:18.563288 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:18.563396 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:18.563422 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:18.850077 ERROR: Refresh stop fetch failed for https://harpers.org/tag/cartels/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:01:18.852145 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:19.138527 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:19.138660 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:19.138688 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/cartels/
+2025-09-15T04:01:21.310460 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:01:21.310572 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:21.310619 INFO: Attempting archive.today for https://harpers.org/tag/cartels/
+2025-09-15T04:01:23.915290 INFO: No existing archive found, creating new archive for https://harpers.org/tag/cartels/
+2025-09-15T04:01:24.819151 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:01:24.819837 INFO: Attempting archive.is for https://harpers.org/tag/cartels/
+2025-09-15T04:01:28.541086 INFO: Attempting archive.li for https://harpers.org/tag/cartels/
+2025-09-15T04:01:32.176423 INFO: Attempting archive.fo for https://harpers.org/tag/cartels/
+2025-09-15T04:01:34.597727 INFO: Attempting archive.ph for https://harpers.org/tag/cartels/
+2025-09-15T04:01:38.110496 INFO: Attempting Googlebot spoof for https://harpers.org/tag/cartels/
+2025-09-15T04:01:38.197655 ERROR: Googlebot spoof failed for https://harpers.org/tag/cartels/: 403 Client Error: Forbidden for url: https://harpers.org/tag/cartels/
+2025-09-15T04:01:38.199191 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/cartels/
+2025-09-15T04:01:38.564906 INFO: Found Wayback snapshot from 20210226193858: http://web.archive.org/web/20210226193858/https://harpers.org/tag/cartels/
+2025-09-15T04:01:38.681874 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:01:38.681976 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:38.682001 INFO: Attempting Wayback Machine for https://harpers.org/tag/cartels/
+2025-09-15T04:01:38.797706 ERROR: Wayback Machine failed for https://harpers.org/tag/cartels/: No archived snapshots found
+2025-09-15T04:01:38.799574 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/cartels/. Attempting Google Search fallback...
+2025-09-15T04:01:38.799820 INFO: Google Search fallback: searching for 'cartels'
+2025-09-15T04:01:38.831169 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:01:38.838737 INFO: Attempting direct fetch for https://harpers.org/tag/cartels/
+2025-09-15T04:01:39.118142 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:39.157472 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:39.157614 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:39.157655 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:39.397717 ERROR: Reader mode fetch failed for https://harpers.org/tag/cartels/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:01:39.400083 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:39.826178 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:39.826294 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:39.826320 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:40.200351 ERROR: Refresh stop fetch failed for https://harpers.org/tag/cartels/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:01:40.202720 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/cartels/
+2025-09-15T04:01:40.649497 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:40.649631 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:40.649659 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/cartels/
+2025-09-15T04:01:44.066339 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:01:44.066466 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:44.066492 INFO: Attempting archive.today for https://harpers.org/tag/cartels/
+2025-09-15T04:01:47.080088 INFO: No existing archive found, creating new archive for https://harpers.org/tag/cartels/
+2025-09-15T04:01:47.952535 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:01:47.953431 INFO: Attempting archive.is for https://harpers.org/tag/cartels/
+2025-09-15T04:01:51.547980 INFO: Attempting archive.li for https://harpers.org/tag/cartels/
+2025-09-15T04:01:53.663613 INFO: Attempting archive.fo for https://harpers.org/tag/cartels/
+2025-09-15T04:01:56.143438 INFO: Attempting archive.ph for https://harpers.org/tag/cartels/
+2025-09-15T04:01:58.749194 INFO: Attempting Googlebot spoof for https://harpers.org/tag/cartels/
+2025-09-15T04:01:58.833937 ERROR: Googlebot spoof failed for https://harpers.org/tag/cartels/: 403 Client Error: Forbidden for url: https://harpers.org/tag/cartels/
+2025-09-15T04:01:58.835986 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/cartels/
+2025-09-15T04:01:59.321993 INFO: Found Wayback snapshot from 20210226193858: http://web.archive.org/web/20210226193858/https://harpers.org/tag/cartels/
+2025-09-15T04:01:59.442520 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:01:59.442659 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:01:59.442687 INFO: Attempting Wayback Machine for https://harpers.org/tag/cartels/
+2025-09-15T04:01:59.565502 ERROR: Wayback Machine failed for https://harpers.org/tag/cartels/: No archived snapshots found
+2025-09-15T04:01:59.567842 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/cartels/. Attempting Google Search fallback...
+2025-09-15T04:01:59.567968 INFO: Google Search fallback: searching for 'cartels'
+2025-09-15T04:01:59.599939 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:01:59.607184 INFO: Attempting direct fetch for https://harpers.org/tag/cartels/
+2025-09-15T04:01:59.880156 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T04:01:59.916887 INFO: Paywall phrase 'to continue reading' detected.

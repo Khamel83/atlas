@@ -1,0 +1,25 @@
+2025-09-15T05:26:31.602196 INFO: Attempting direct fetch for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:31.824146 ERROR: Direct fetch failed for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:31.825382 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:32.500551 ERROR: Reader mode fetch failed for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:26:32.502660 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:32.627181 ERROR: JS disabled fetch failed for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:32.628816 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:32.745608 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:26:32.747243 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:32.863438 ERROR: Inspect element fetch failed for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:32.865045 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:37.235338 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:26:37.235430 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:37.235459 INFO: Attempting archive.today for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:41.676281 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:42.577000 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:26:42.577425 INFO: Attempting archive.is for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:44.533766 INFO: Attempting archive.li for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:46.626023 INFO: Attempting archive.fo for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:49.195398 INFO: Attempting archive.ph for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:51.553757 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:51.668088 ERROR: Googlebot spoof failed for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:51.669376 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:52.157705 INFO: Found Wayback snapshot from 20250802020832: http://web.archive.org/web/20250802020832/https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html
+2025-09-15T05:26:53.213821 INFO: Successfully fetched https://www.nytimes.com/2019/06/12/health/breastmilk-microbiome-parenting.html using wayback_machine_enhanced

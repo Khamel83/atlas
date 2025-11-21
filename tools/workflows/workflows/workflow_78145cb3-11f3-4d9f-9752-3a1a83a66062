@@ -1,0 +1,127 @@
+2025-09-15T00:15:55.184726 INFO: Attempting direct fetch for https://t.co/f9HK2YZRRE
+2025-09-15T00:15:55.407488 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:15:55.409798 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:15:55.409879 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:15:55.409914 INFO: Attempting Reader Mode strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:15:56.013536 ERROR: Reader mode fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:15:56.014952 INFO: Attempting JS Disabled strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:15:56.166843 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:15:56.166942 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:15:56.166966 INFO: Attempting Refresh Stop strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:15:56.327422 ERROR: Refresh stop fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:15:56.328786 INFO: Attempting Inspect Element strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:15:56.329191 ERROR: Inspect element fetch failed for https://t.co/f9HK2YZRRE: [Errno 32] Broken pipe
+2025-09-15T00:15:56.329236 INFO: Attempting removepaywalls.com bypass for https://t.co/f9HK2YZRRE
+2025-09-15T00:15:59.892561 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:15:59.892729 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:15:59.892762 INFO: Attempting archive.today for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:03.308496 INFO: No existing archive found, creating new archive for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:04.195420 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:16:04.195862 INFO: Attempting archive.is for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:06.476700 INFO: Attempting archive.li for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:10.244869 INFO: Attempting archive.fo for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:13.517435 INFO: Attempting archive.ph for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:17.196029 INFO: Attempting Googlebot spoof for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:17.438332 ERROR: Googlebot spoof failed for https://t.co/f9HK2YZRRE: 403 Client Error: Forbidden for url: https://twitter.com/FinancialReview/status/1701440109948887057/video/1
+2025-09-15T00:16:17.440780 INFO: Attempting Enhanced Wayback Machine for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:18.367887 INFO: Found Wayback snapshot from 20250830043208: http://web.archive.org/web/20250830043208/https://t.co/f9HK2YZRRE
+2025-09-15T00:16:19.434732 INFO: Suspicious title-to-content ratio: 0.89. Likely truncated.
+2025-09-15T00:16:19.434837 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:19.434863 INFO: Attempting Wayback Machine for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:19.568779 INFO: Found Wayback snapshot: http://web.archive.org/web/20250830043208/https://t.co/f9HK2YZRRE
+2025-09-15T00:16:19.621063 INFO: Suspicious title-to-content ratio: 0.89. Likely truncated.
+2025-09-15T00:16:19.621163 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:19.621194 ERROR: All fetch strategies failed or returned low-quality content for https://t.co/f9HK2YZRRE. Attempting Google Search fallback...
+2025-09-15T00:16:19.621271 INFO: Google Search fallback: searching for 'f9HK2YZRRE'
+2025-09-15T00:16:19.652763 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:16:19.660515 INFO: Attempting direct fetch for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:19.809181 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:19.811389 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:19.811457 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:19.811507 INFO: Attempting Reader Mode strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:20.415466 ERROR: Reader mode fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:16:20.418915 INFO: Attempting JS Disabled strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:20.610279 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:20.610368 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:20.610395 INFO: Attempting Refresh Stop strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:20.784357 ERROR: Refresh stop fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:16:20.786915 INFO: Attempting Inspect Element strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:20.961110 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:20.961221 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:20.961249 INFO: Attempting removepaywalls.com bypass for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:23.921969 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:16:23.922079 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:23.922106 INFO: Attempting archive.today for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:25.783672 INFO: No existing archive found, creating new archive for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:26.671231 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:16:26.671732 INFO: Attempting archive.is for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:29.631392 INFO: Attempting archive.li for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:32.107653 INFO: Attempting archive.fo for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:35.204560 INFO: Attempting archive.ph for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:37.907882 INFO: Attempting Googlebot spoof for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:38.143506 ERROR: Googlebot spoof failed for https://t.co/f9HK2YZRRE: 403 Client Error: Forbidden for url: https://twitter.com/FinancialReview/status/1701440109948887057/video/1
+2025-09-15T00:16:38.146093 INFO: Attempting Enhanced Wayback Machine for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:38.266563 INFO: Found Wayback snapshot from 20250830043208: http://web.archive.org/web/20250830043208/https://t.co/f9HK2YZRRE
+2025-09-15T00:16:38.313253 INFO: Suspicious title-to-content ratio: 0.89. Likely truncated.
+2025-09-15T00:16:38.313355 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:38.313380 INFO: Attempting Wayback Machine for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:38.427386 INFO: Found Wayback snapshot: http://web.archive.org/web/20250830043208/https://t.co/f9HK2YZRRE
+2025-09-15T00:16:38.476192 INFO: Suspicious title-to-content ratio: 0.89. Likely truncated.
+2025-09-15T00:16:38.476298 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:38.476328 ERROR: All fetch strategies failed or returned low-quality content for https://t.co/f9HK2YZRRE. Attempting Google Search fallback...
+2025-09-15T00:16:38.476387 INFO: Google Search fallback: searching for 'f9HK2YZRRE'
+2025-09-15T00:16:38.508240 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:16:38.516076 INFO: Attempting direct fetch for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:38.657627 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:38.660015 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:38.660116 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:38.660153 INFO: Attempting Reader Mode strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:39.259488 ERROR: Reader mode fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:16:39.260844 INFO: Attempting JS Disabled strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:39.497906 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:39.498009 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:39.498033 INFO: Attempting Refresh Stop strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:39.732532 ERROR: Refresh stop fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:16:39.734058 INFO: Attempting Inspect Element strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:39.888416 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:39.888521 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:39.888549 INFO: Attempting removepaywalls.com bypass for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:43.934540 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:16:43.934680 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:43.943362 INFO: Attempting direct fetch for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:44.170020 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:44.172843 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:44.172949 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:44.172986 INFO: Attempting Reader Mode strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:44.746222 ERROR: Reader mode fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:16:44.747929 INFO: Attempting JS Disabled strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:45.002356 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:45.002460 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:45.002486 INFO: Attempting Refresh Stop strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:45.153756 ERROR: Refresh stop fetch failed for https://t.co/f9HK2YZRRE: cannot use a string pattern on a bytes-like object
+2025-09-15T00:16:45.155474 INFO: Attempting Inspect Element strategy for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:45.327264 INFO: Suspicious title-to-content ratio: 1.00. Likely truncated.
+2025-09-15T00:16:45.327374 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:45.327400 INFO: Attempting removepaywalls.com bypass for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:50.199475 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:16:50.199609 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:16:50.199639 INFO: Attempting archive.today for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:52.582746 INFO: No existing archive found, creating new archive for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:53.491392 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:16:53.492004 INFO: Attempting archive.is for https://t.co/f9HK2YZRRE
+2025-09-15T00:16:57.198873 INFO: Attempting archive.li for https://t.co/f9HK2YZRRE
+2025-09-15T00:17:00.411407 INFO: Attempting archive.fo for https://t.co/f9HK2YZRRE
+2025-09-15T00:17:04.127197 INFO: Attempting archive.ph for https://t.co/f9HK2YZRRE
+2025-09-15T00:17:07.494504 INFO: Attempting Googlebot spoof for https://t.co/f9HK2YZRRE
+2025-09-15T00:17:07.740255 ERROR: Googlebot spoof failed for https://t.co/f9HK2YZRRE: 403 Client Error: Forbidden for url: https://twitter.com/FinancialReview/status/1701440109948887057/video/1
+2025-09-15T00:17:07.742843 INFO: Attempting Enhanced Wayback Machine for https://t.co/f9HK2YZRRE
+2025-09-15T00:17:07.859044 INFO: Found Wayback snapshot from 20250830043208: http://web.archive.org/web/20250830043208/https://t.co/f9HK2YZRRE
+2025-09-15T00:17:07.906196 INFO: Suspicious title-to-content ratio: 0.89. Likely truncated.
+2025-09-15T00:17:07.906303 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:17:07.906328 INFO: Attempting Wayback Machine for https://t.co/f9HK2YZRRE
+2025-09-15T00:17:08.040265 INFO: Found Wayback snapshot: http://web.archive.org/web/20250830043208/https://t.co/f9HK2YZRRE
+2025-09-15T00:17:08.091424 INFO: Suspicious title-to-content ratio: 0.89. Likely truncated.
+2025-09-15T00:17:08.091519 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:17:08.091549 ERROR: All fetch strategies failed or returned low-quality content for https://t.co/f9HK2YZRRE. Attempting Google Search fallback...
+2025-09-15T00:17:08.091624 INFO: Google Search fallback: searching for 'f9HK2YZRRE'
+2025-09-15T00:17:08.124844 INFO: Google Search fallback did not find alternative URL

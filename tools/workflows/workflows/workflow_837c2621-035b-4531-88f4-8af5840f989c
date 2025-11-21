@@ -1,0 +1,93 @@
+2025-09-14T21:19:22.975858 INFO: Attempting direct fetch for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:23.279959 ERROR: Direct fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:23.281290 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:23.791687 ERROR: Reader mode fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:19:23.793282 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:23.932271 ERROR: JS disabled fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:23.933604 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:24.070023 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:19:24.072344 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:24.216063 ERROR: Inspect element fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:24.217455 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:28.320203 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:19:28.320323 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:19:28.320351 INFO: Attempting archive.today for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:31.809327 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:32.716963 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:19:32.717405 INFO: Attempting archive.is for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:36.303494 INFO: Attempting archive.li for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:39.314641 INFO: Attempting archive.fo for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:42.720563 INFO: Attempting archive.ph for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:46.360544 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:46.493197 ERROR: Googlebot spoof failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:46.494509 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:52.722865 INFO: Found Wayback snapshot from 20250202131019: http://web.archive.org/web/20250202131019/https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:53.139805 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:19:53.139926 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:19:53.139954 INFO: Attempting Wayback Machine for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:53.250108 ERROR: Wayback Machine failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: No archived snapshots found
+2025-09-14T21:19:53.252328 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html. Attempting Google Search fallback...
+2025-09-14T21:19:53.252739 INFO: Google Search fallback: searching for 'weight loss side effects sex ozempic.html'
+2025-09-14T21:19:53.285234 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:19:53.294025 INFO: Attempting direct fetch for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:53.414042 ERROR: Direct fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:53.415364 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:54.011314 ERROR: Reader mode fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:19:54.014785 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:54.157965 ERROR: JS disabled fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:54.159307 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:54.279726 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:19:54.282076 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:54.409494 ERROR: Inspect element fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:54.410814 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:19:58.655551 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:19:58.655694 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:19:58.655728 INFO: Attempting archive.today for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:03.135939 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:04.012977 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:20:04.013429 INFO: Attempting archive.is for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:07.682867 INFO: Attempting archive.li for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:10.480009 INFO: Attempting archive.fo for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:12.522865 INFO: Attempting archive.ph for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.073011 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.215723 ERROR: Googlebot spoof failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.217043 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.466757 INFO: Found Wayback snapshot from 20250202131019: http://web.archive.org/web/20250202131019/https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.597429 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:20:15.597546 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:20:15.597572 INFO: Attempting Wayback Machine for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.723552 ERROR: Wayback Machine failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: No archived snapshots found
+2025-09-14T21:20:15.727946 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html. Attempting Google Search fallback...
+2025-09-14T21:20:15.728116 INFO: Google Search fallback: searching for 'weight loss side effects sex ozempic.html'
+2025-09-14T21:20:15.817447 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:20:15.831326 INFO: Attempting direct fetch for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.970428 ERROR: Direct fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:15.974237 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:16.220546 ERROR: Reader mode fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:20:16.222666 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:16.369239 ERROR: JS disabled fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:16.372064 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:16.507716 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:20:16.512419 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:16.668324 ERROR: Inspect element fetch failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:16.672186 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:19.322067 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:20:19.322183 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:20:19.322213 INFO: Attempting archive.today for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:23.146813 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:24.022570 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:20:24.025104 INFO: Attempting archive.is for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:27.600075 INFO: Attempting archive.li for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:29.968745 INFO: Attempting archive.fo for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:33.627079 INFO: Attempting archive.ph for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:36.065558 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:36.209188 ERROR: Googlebot spoof failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:36.210561 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:36.441786 INFO: Found Wayback snapshot from 20250202131019: http://web.archive.org/web/20250202131019/https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:36.564495 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-14T21:20:36.564639 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:20:36.564673 INFO: Attempting Wayback Machine for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html
+2025-09-14T21:20:36.682334 ERROR: Wayback Machine failed for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html: No archived snapshots found
+2025-09-14T21:20:36.684121 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/2025/02/02/magazine/weight-loss-side-effects-sex-ozempic.html. Attempting Google Search fallback...
+2025-09-14T21:20:36.684273 INFO: Google Search fallback: searching for 'weight loss side effects sex ozempic.html'
+2025-09-14T21:20:36.727901 INFO: Google Search fallback did not find alternative URL

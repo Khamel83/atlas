@@ -1,0 +1,6 @@
+2025-09-15T04:41:24.090819 INFO: Attempting direct fetch for http://www.washingtonpost.com/sf/investigative/2013/09/08/left-with-nothing/
+2025-09-15T04:41:54.210187 ERROR: Direct fetch failed for http://www.washingtonpost.com/sf/investigative/2013/09/08/left-with-nothing/: HTTPConnectionPool(host='www.washingtonpost.com', port=80): Read timed out. (read timeout=30)
+2025-09-15T04:41:54.210328 INFO: Attempting Reader Mode strategy for http://www.washingtonpost.com/sf/investigative/2013/09/08/left-with-nothing/
+2025-09-15T04:42:14.276540 ERROR: Reader mode fetch failed for http://www.washingtonpost.com/sf/investigative/2013/09/08/left-with-nothing/: HTTPConnectionPool(host='www.washingtonpost.com', port=80): Read timed out. (read timeout=20)
+2025-09-15T04:42:14.276693 INFO: Attempting JS Disabled strategy for http://www.washingtonpost.com/sf/investigative/2013/09/08/left-with-nothing/
+2025-09-15T04:42:14.516728 INFO: Successfully fetched http://www.washingtonpost.com/sf/investigative/2013/09/08/left-with-nothing/ using js_disabled

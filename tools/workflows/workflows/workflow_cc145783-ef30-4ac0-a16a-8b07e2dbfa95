@@ -1,0 +1,128 @@
+2025-09-15T15:14:10.185888 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:10.590133 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:10.723460 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:10.723583 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:10.723645 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:10.831153 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:14:10.834039 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:11.053480 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:11.187093 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:14:11.190642 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:11.549974 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:13.982283 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:14:13.982408 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:13.982435 INFO: Attempting archive.today for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:18.377241 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:19.292354 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:14:19.293973 INFO: Attempting archive.is for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:21.574302 INFO: Attempting archive.li for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:24.339002 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:27.373235 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:30.457021 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:30.645753 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/person/donald-trump/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:30.647303 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:31.101232 INFO: Found Wayback snapshot from 20250910234319: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:31.848156 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:31.848271 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:31.848297 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:31.848355 ERROR: Wayback Machine failed for https://www.theatlantic.com/tag/person/donald-trump/: [Errno 32] Broken pipe
+2025-09-15T15:14:31.848435 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/person/donald-trump/. Attempting Google Search fallback...
+2025-09-15T15:14:31.848505 INFO: Google Search fallback: searching for 'donald trump'
+2025-09-15T15:14:31.881688 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:14:31.889143 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:32.099731 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:32.226639 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:32.226753 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:32.226812 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:32.325363 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:14:32.327700 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:32.527617 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:32.651712 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:14:32.654089 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:32.909069 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:37.153303 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:14:37.153420 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:37.153448 INFO: Attempting archive.today for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:40.875892 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:41.770734 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:14:41.771154 INFO: Attempting archive.is for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:44.999902 INFO: Attempting archive.li for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:48.261704 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:51.095560 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:53.168199 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:53.441216 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/person/donald-trump/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:53.442843 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:53.558764 INFO: Found Wayback snapshot from 20250910234319: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:53.742761 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:53.742882 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:53.742909 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:53.870173 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:54.067451 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:54.067569 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:54.067633 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/person/donald-trump/. Attempting Google Search fallback...
+2025-09-15T15:14:54.067707 INFO: Google Search fallback: searching for 'donald trump'
+2025-09-15T15:14:54.100625 INFO: Google Search fallback did not find alternative URL
+2025-09-15T15:14:54.109932 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:54.328747 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:54.458052 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:14:54.458170 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:54.458223 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:54.572172 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:14:54.574685 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:54.867930 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:54.993965 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:14:55.000656 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:55.298143 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:14:57.890027 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:14:57.890141 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:14:57.890167 INFO: Attempting archive.today for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:01.921692 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:02.816858 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:15:02.817390 INFO: Attempting archive.is for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:06.237953 INFO: Attempting archive.li for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:08.326884 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:10.585052 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:12.976434 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:13.175196 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/person/donald-trump/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:13.177058 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:13.301996 INFO: Found Wayback snapshot from 20250910234319: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:13.531864 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:15:13.531978 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:15:13.532004 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:13.658017 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:13.942520 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:15:13.942695 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:15:13.942731 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/person/donald-trump/. Attempting Google Search fallback...
+2025-09-15T15:15:13.969297 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:14.236854 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:15:14.393446 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:15:14.393619 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:15:14.393664 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:14.494223 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:15:14.496887 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:14.692413 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:14.817122 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/person/donald-trump/: cannot use a string pattern on a bytes-like object
+2025-09-15T15:15:14.819620 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:15.082732 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:19.535069 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T15:15:19.535182 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:15:19.535212 INFO: Attempting archive.today for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:23.269882 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:24.148092 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T15:15:24.148616 INFO: Attempting archive.is for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:26.653284 INFO: Attempting archive.li for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:29.170574 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:32.341470 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:36.233138 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:36.413173 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/person/donald-trump/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:36.414740 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:36.528800 INFO: Found Wayback snapshot from 20250910234319: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:36.745505 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:15:36.745653 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:15:36.745683 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:36.870293 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910234319/https://www.theatlantic.com/tag/person/donald-trump/
+2025-09-15T15:15:37.069265 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T15:15:37.069392 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T15:15:37.069426 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/person/donald-trump/. Attempting Google Search fallback...
+2025-09-15T15:15:37.069492 INFO: Google Search fallback: searching for 'donald trump'
+2025-09-15T15:15:37.104164 INFO: Google Search fallback did not find alternative URL

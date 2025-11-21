@@ -1,0 +1,93 @@
+2025-09-15T05:37:31.890701 INFO: Attempting direct fetch for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.130421 ERROR: Direct fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.131664 INFO: Attempting Reader Mode strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.217341 ERROR: Reader mode fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.218584 INFO: Attempting JS Disabled strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.306582 ERROR: JS disabled fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.307822 INFO: Attempting Refresh Stop strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.405524 ERROR: Refresh stop fetch failed for https://bookshop.org/a/56144/9780190844141: cannot use a string pattern on a bytes-like object
+2025-09-15T05:37:32.406848 INFO: Attempting Inspect Element strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.507774 ERROR: Inspect element fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:32.509053 INFO: Attempting removepaywalls.com bypass for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:36.286442 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:37:36.286556 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:37:36.286585 INFO: Attempting archive.today for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:38.958834 INFO: No existing archive found, creating new archive for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:39.869248 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:37:39.870080 INFO: Attempting archive.is for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:43.191456 INFO: Attempting archive.li for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:45.161007 INFO: Attempting archive.fo for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:47.637192 INFO: Attempting archive.ph for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:49.738283 INFO: Attempting Googlebot spoof for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:49.827466 ERROR: Googlebot spoof failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:37:49.829223 INFO: Attempting Enhanced Wayback Machine for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:40.834015 ERROR: Enhanced Wayback Machine failed for https://bookshop.org/a/56144/9780190844141: No archived snapshots found in any timeframe
+2025-09-15T05:38:40.835502 INFO: Attempting Wayback Machine for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.088449 ERROR: Wayback Machine failed for https://bookshop.org/a/56144/9780190844141: No archived snapshots found
+2025-09-15T05:38:41.090547 ERROR: All fetch strategies failed or returned low-quality content for https://bookshop.org/a/56144/9780190844141. Attempting Google Search fallback...
+2025-09-15T05:38:41.091131 INFO: Google Search fallback: searching for 'a'
+2025-09-15T05:38:41.123718 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:38:41.131153 INFO: Attempting direct fetch for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.212852 ERROR: Direct fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.214041 INFO: Attempting Reader Mode strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.307042 ERROR: Reader mode fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.308251 INFO: Attempting JS Disabled strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.391668 ERROR: JS disabled fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.392846 INFO: Attempting Refresh Stop strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.493725 ERROR: Refresh stop fetch failed for https://bookshop.org/a/56144/9780190844141: cannot use a string pattern on a bytes-like object
+2025-09-15T05:38:41.494869 INFO: Attempting Inspect Element strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.576708 ERROR: Inspect element fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:41.577940 INFO: Attempting removepaywalls.com bypass for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:46.419374 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:38:46.419486 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:38:46.419516 INFO: Attempting archive.today for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:49.292744 INFO: No existing archive found, creating new archive for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:50.188030 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:38:50.188438 INFO: Attempting archive.is for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:53.017960 INFO: Attempting archive.li for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:56.152991 INFO: Attempting archive.fo for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:38:59.962271 INFO: Attempting archive.ph for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:03.434689 INFO: Attempting Googlebot spoof for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:03.543001 ERROR: Googlebot spoof failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:03.544730 INFO: Attempting Enhanced Wayback Machine for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:04.997070 ERROR: Enhanced Wayback Machine failed for https://bookshop.org/a/56144/9780190844141: No archived snapshots found in any timeframe
+2025-09-15T05:39:04.998503 INFO: Attempting Wayback Machine for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.126800 ERROR: Wayback Machine failed for https://bookshop.org/a/56144/9780190844141: No archived snapshots found
+2025-09-15T05:39:05.128855 ERROR: All fetch strategies failed or returned low-quality content for https://bookshop.org/a/56144/9780190844141. Attempting Google Search fallback...
+2025-09-15T05:39:05.129785 INFO: Google Search fallback: searching for 'a'
+2025-09-15T05:39:05.162428 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:39:05.179581 INFO: Attempting direct fetch for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.263012 ERROR: Direct fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.264213 INFO: Attempting Reader Mode strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.346276 ERROR: Reader mode fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.358636 INFO: Attempting JS Disabled strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.467009 ERROR: JS disabled fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.481160 INFO: Attempting direct fetch for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.574201 ERROR: Direct fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.575443 INFO: Attempting Reader Mode strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.682979 ERROR: Reader mode fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.684236 INFO: Attempting JS Disabled strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.806309 ERROR: JS disabled fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.807538 INFO: Attempting Refresh Stop strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:05.920307 ERROR: Refresh stop fetch failed for https://bookshop.org/a/56144/9780190844141: cannot use a string pattern on a bytes-like object
+2025-09-15T05:39:05.923064 INFO: Attempting Inspect Element strategy for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:06.026109 ERROR: Inspect element fetch failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:06.029439 INFO: Attempting removepaywalls.com bypass for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:09.606364 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:39:09.606474 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:39:09.606502 INFO: Attempting archive.today for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:12.473043 INFO: No existing archive found, creating new archive for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:13.380445 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:39:13.381194 INFO: Attempting archive.is for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:16.062283 INFO: Attempting archive.li for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:19.794525 INFO: Attempting archive.fo for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:22.695163 INFO: Attempting archive.ph for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:25.814295 INFO: Attempting Googlebot spoof for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:25.910557 ERROR: Googlebot spoof failed for https://bookshop.org/a/56144/9780190844141: 403 Client Error: Forbidden for url: https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:25.912336 INFO: Attempting Enhanced Wayback Machine for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:27.631457 ERROR: Enhanced Wayback Machine failed for https://bookshop.org/a/56144/9780190844141: No archived snapshots found in any timeframe
+2025-09-15T05:39:27.632836 INFO: Attempting Wayback Machine for https://bookshop.org/a/56144/9780190844141
+2025-09-15T05:39:27.751210 ERROR: Wayback Machine failed for https://bookshop.org/a/56144/9780190844141: No archived snapshots found
+2025-09-15T05:39:27.753271 ERROR: All fetch strategies failed or returned low-quality content for https://bookshop.org/a/56144/9780190844141. Attempting Google Search fallback...
+2025-09-15T05:39:27.753871 INFO: Google Search fallback: searching for 'a'
+2025-09-15T05:39:27.787780 INFO: Google Search fallback did not find alternative URL

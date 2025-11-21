@@ -1,0 +1,25 @@
+2025-09-15T00:29:32.786863 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:32.972762 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:32.972966 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:33.538310 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T00:29:33.540318 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:33.570466 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:33.570696 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:33.610235 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T00:29:33.610416 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:33.639360 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:33.639542 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:37.429238 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:29:37.429352 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:29:37.429378 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:40.036870 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:40.893979 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:29:40.894617 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:43.797950 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:47.223073 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:49.924559 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:53.326324 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:53.389739 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:53.389989 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:54.273196 INFO: Found Wayback snapshot from 20130510045543: http://web.archive.org/web/20130510045543/http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print
+2025-09-15T00:29:55.048186 INFO: Successfully fetched http://www.nytimes.com/2011/01/02/weekinreview/02siegelbernard.html?pagewanted=print using wayback_machine_enhanced

@@ -1,0 +1,41 @@
+{
+  "integration": {
+    "enabled": true,
+    "version": "1.0.0",
+    "atlas_database_path": "data/atlas.db",
+    "processing_queue_shared": true,
+    "mac_mini_coordination": true
+  },
+  "queue_configuration": {
+    "podcast_episode_priority": "high",
+    "max_concurrent_transcriptions": 2,
+    "processing_timeout_minutes": 30,
+    "retry_attempts": 3,
+    "queue_cleanup_hours": 24
+  },
+  "atlas_content_settings": {
+    "clean_episode_prefix": "[CLEAN]",
+    "content_type": "podcast_clean",
+    "index_for_search": true,
+    "quality_threshold": 0.8,
+    "auto_reprocess_failed": true
+  },
+  "monitoring": {
+    "log_processing_events": true,
+    "processing_log_path": "data/podemos/processing.log",
+    "metrics_export_enabled": true,
+    "health_check_interval": 300
+  },
+  "resource_management": {
+    "shared_storage_path": "data/podemos/shared",
+    "temp_processing_path": "/tmp/podemos_processing",
+    "cleanup_temp_files": true,
+    "max_storage_gb": 10
+  },
+  "feed_coordination": {
+    "rss_update_trigger": "episode_complete",
+    "feed_cache_minutes": 15,
+    "private_feed_auth_required": true,
+    "feed_hosting_url": "https://podemos.your-domain.com"
+  }
+}

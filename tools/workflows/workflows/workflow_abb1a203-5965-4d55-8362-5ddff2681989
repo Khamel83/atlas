@@ -1,0 +1,103 @@
+2025-09-15T05:26:53.321976 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:53.381640 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:53.381835 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:53.948819 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:26:53.950711 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:54.016470 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:54.016680 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:54.083176 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:26:54.083355 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:54.141095 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:54.141295 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:26:56.674421 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:26:56.674549 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:56.674579 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:01.420537 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:02.281268 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:27:02.282054 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:06.115580 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:09.689502 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:13.080635 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:16.167990 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:16.237276 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:16.237463 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:24.436064 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T05:27:24.445736 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:24.503927 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:24.504115 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:25.059880 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:27:25.062027 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:25.131432 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:25.131656 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:25.190986 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:27:25.191170 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:25.248013 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:25.248207 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:29.061781 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:27:29.061900 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:27:29.061931 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:31.887912 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:32.792503 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:27:32.793280 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:35.460836 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:38.073760 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:40.470280 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:44.209252 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:44.315906 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:44.316100 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:45.639916 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T05:27:45.641358 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:45.749716 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: No archived snapshots found
+2025-09-15T05:27:45.751554 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T05:27:45.752157 INFO: Google Search fallback: searching for '19Essays HigherEd t.html'
+2025-09-15T05:27:45.784570 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:27:45.792741 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:45.851369 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:45.851549 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:46.108830 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:27:46.111163 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:46.171377 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:46.171574 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:46.237248 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:27:46.237451 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:46.308461 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:46.308701 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:48.896656 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:27:48.896776 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:27:48.896806 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:51.704334 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:52.616772 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:27:52.617473 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:55.414372 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:57.333549 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:27:59.482306 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:02.777003 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:02.785550 INFO: Attempting direct fetch for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:02.855298 ERROR: Direct fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:02.855480 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:03.714474 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:28:03.716552 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:03.777895 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:03.778091 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:03.837969 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T05:28:03.838306 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:03.896206 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:03.896387 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:08.787456 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:28:08.787564 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:28:08.787605 INFO: Attempting archive.today for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:12.201544 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:13.111580 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:28:13.112290 INFO: Attempting archive.is for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:16.098643 INFO: Attempting archive.li for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:18.187618 INFO: Attempting archive.fo for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:22.033102 INFO: Attempting archive.ph for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:24.011548 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:24.094340 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:24.094610 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:25.557824 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T05:28:25.559231 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print
+2025-09-15T05:28:25.671193 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print: No archived snapshots found
+2025-09-15T05:28:25.673186 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/09/19/magazine/19Essays-HigherEd-t.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T05:28:25.673790 INFO: Google Search fallback: searching for '19Essays HigherEd t.html'
+2025-09-15T05:28:25.717027 INFO: Google Search fallback did not find alternative URL

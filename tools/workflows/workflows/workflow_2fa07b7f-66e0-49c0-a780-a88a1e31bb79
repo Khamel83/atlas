@@ -1,0 +1,109 @@
+2025-09-15T04:35:35.404928 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:36.552856 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:35:36.571796 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:35:36.571899 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:36.571939 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:36.734695 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:35:36.736518 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:38.492080 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:35:38.492190 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:38.492217 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:39.610361 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:35:39.612196 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:41.351559 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:35:41.351688 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:41.351716 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:45.965945 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:35:45.966059 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:35:45.966085 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:48.361890 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:49.268224 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:35:49.268421 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:52.929917 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:55.972318 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:35:59.024782 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:02.131423 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:03.174058 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:03.174197 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:03.174230 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:03.919771 INFO: Found Wayback snapshot from 20250912063832: http://web.archive.org/web/20250912063832/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:06.734740 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:06.734843 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:06.734872 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:06.897500 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912063832/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:08.963859 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:08.963978 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:08.964013 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp. Attempting Google Search fallback...
+2025-09-15T04:36:08.964075 INFO: Google Search fallback: searching for 'office final 54 1 @@ 1200.webp'
+2025-09-15T04:36:08.995567 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:36:09.002939 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:09.957471 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:09.975462 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:09.975567 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:09.975631 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:10.177151 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:36:10.179074 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:11.924260 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:11.924367 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:11.924394 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:13.031486 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:36:13.033460 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:14.822636 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:14.822737 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:14.822763 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:14.833969 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:15.928581 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:15.948755 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:15.948864 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:15.948922 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:16.151938 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:36:16.153868 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:17.911264 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:17.911386 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:17.911414 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:19.024446 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:36:19.026924 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:20.818363 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:20.818471 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:20.818500 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:24.548725 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:36:24.548836 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:24.548863 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:28.049932 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:28.946871 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:36:28.947098 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:32.464406 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:35.946557 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:39.595059 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:43.457999 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:44.483005 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:44.483117 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:44.483148 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:44.594807 INFO: Found Wayback snapshot from 20250912063832: http://web.archive.org/web/20250912063832/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:47.896364 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:47.896478 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:47.896521 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:48.014395 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912063832/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:49.755120 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:49.755235 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:49.755270 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp. Attempting Google Search fallback...
+2025-09-15T04:36:49.755332 INFO: Google Search fallback: searching for 'office final 54 1 @@ 1200.webp'
+2025-09-15T04:36:49.787216 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:36:49.795845 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:50.789942 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:50.808676 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:50.808775 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:50.808818 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:51.012659 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:36:51.014492 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:52.773025 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:52.773131 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:52.773158 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:53.889772 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp: cannot use a string pattern on a bytes-like object
+2025-09-15T04:36:53.891760 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:55.650018 INFO: Content is very short (28 words). Likely a teaser.
+2025-09-15T04:36:55.650109 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:55.650136 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp
+2025-09-15T04:36:59.240941 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:36:59.241062 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:36:59.241091 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/office_final_54_1-@@-1200.webp

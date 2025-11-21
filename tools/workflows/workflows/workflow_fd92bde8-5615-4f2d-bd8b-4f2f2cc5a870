@@ -1,0 +1,27 @@
+2025-09-15T14:43:54.152033 INFO: Attempting direct fetch for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.276762 ERROR: Direct fetch failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.277960 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.491656 ERROR: Reader mode fetch failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:43:54.493802 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.574043 ERROR: JS disabled fetch failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.575681 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.651298 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: cannot use a string pattern on a bytes-like object
+2025-09-15T14:43:54.652919 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.728230 ERROR: Inspect element fetch failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:54.729930 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:43:58.879429 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:43:58.879546 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:43:58.879572 INFO: Attempting archive.today for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:02.893188 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:03.785001 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:44:03.785401 INFO: Attempting archive.is for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:07.009943 INFO: Attempting archive.li for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:08.994247 INFO: Attempting archive.fo for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:11.009444 INFO: Attempting archive.ph for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:14.866917 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:14.940575 ERROR: Googlebot spoof failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:14.941786 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:14.942187 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html: [Errno 32] Broken pipe
+2025-09-15T14:44:14.942232 INFO: Attempting Wayback Machine for https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:17.883160 INFO: Found Wayback snapshot: http://web.archive.org/web/20250804142509/https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html
+2025-09-15T14:44:18.966615 INFO: Successfully fetched https://www.nytimes.com/2023/09/20/arts/hasan-minhaj-comedy.html using 12ft

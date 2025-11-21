@@ -1,0 +1,109 @@
+2025-09-15T13:25:35.696095 INFO: Attempting direct fetch for https://www.freddiemac.com/pmms
+2025-09-15T13:25:36.003554 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:25:36.136669 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:25:36.136772 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:25:36.136828 INFO: Attempting Reader Mode strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:25:36.236340 ERROR: Reader mode fetch failed for https://www.freddiemac.com/pmms: cannot use a string pattern on a bytes-like object
+2025-09-15T13:25:36.239094 INFO: Attempting JS Disabled strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:25:36.433823 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:25:36.433921 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:25:36.433948 INFO: Attempting Refresh Stop strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:25:36.731101 ERROR: Refresh stop fetch failed for https://www.freddiemac.com/pmms: cannot use a string pattern on a bytes-like object
+2025-09-15T13:25:36.733181 INFO: Attempting Inspect Element strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:25:37.034532 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:25:37.034674 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:25:37.034705 INFO: Attempting removepaywalls.com bypass for https://www.freddiemac.com/pmms
+2025-09-15T13:25:39.226706 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:25:39.226838 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:25:39.226867 INFO: Attempting archive.today for https://www.freddiemac.com/pmms
+2025-09-15T13:25:42.791759 INFO: No existing archive found, creating new archive for https://www.freddiemac.com/pmms
+2025-09-15T13:25:43.661121 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:25:43.661320 INFO: Attempting archive.is for https://www.freddiemac.com/pmms
+2025-09-15T13:25:47.380103 INFO: Attempting archive.li for https://www.freddiemac.com/pmms
+2025-09-15T13:25:50.152016 INFO: Attempting archive.fo for https://www.freddiemac.com/pmms
+2025-09-15T13:25:53.926692 INFO: Attempting archive.ph for https://www.freddiemac.com/pmms
+2025-09-15T13:25:57.231754 INFO: Attempting Googlebot spoof for https://www.freddiemac.com/pmms
+2025-09-15T13:25:57.450579 ERROR: Googlebot spoof failed for https://www.freddiemac.com/pmms: 403 Client Error: Forbidden for url: https://www.freddiemac.com/pmms
+2025-09-15T13:25:57.452411 INFO: Attempting Enhanced Wayback Machine for https://www.freddiemac.com/pmms
+2025-09-15T13:26:03.366644 INFO: Found Wayback snapshot from 20231202020559: http://web.archive.org/web/20231202020559/https://www.freddiemac.com/pmms
+2025-09-15T13:26:10.631669 INFO: Content is very short (82 words). Likely a teaser.
+2025-09-15T13:26:10.631811 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:10.631848 INFO: Attempting Wayback Machine for https://www.freddiemac.com/pmms
+2025-09-15T13:26:10.762871 ERROR: Wayback Machine failed for https://www.freddiemac.com/pmms: No archived snapshots found
+2025-09-15T13:26:10.768016 ERROR: All fetch strategies failed or returned low-quality content for https://www.freddiemac.com/pmms. Attempting Google Search fallback...
+2025-09-15T13:26:10.768713 INFO: Google Search fallback: searching for 'pmms'
+2025-09-15T13:26:10.805853 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:26:10.813529 INFO: Attempting direct fetch for https://www.freddiemac.com/pmms
+2025-09-15T13:26:11.092834 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:11.213547 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:11.213690 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:11.213756 INFO: Attempting Reader Mode strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:11.312882 ERROR: Reader mode fetch failed for https://www.freddiemac.com/pmms: cannot use a string pattern on a bytes-like object
+2025-09-15T13:26:11.314509 INFO: Attempting JS Disabled strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:11.478072 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:11.478178 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:11.478206 INFO: Attempting Refresh Stop strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:11.601548 ERROR: Refresh stop fetch failed for https://www.freddiemac.com/pmms: cannot use a string pattern on a bytes-like object
+2025-09-15T13:26:11.603217 INFO: Attempting Inspect Element strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:11.838579 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:11.838722 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:11.838749 INFO: Attempting removepaywalls.com bypass for https://www.freddiemac.com/pmms
+2025-09-15T13:26:14.068835 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:26:14.068950 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:14.068977 INFO: Attempting archive.today for https://www.freddiemac.com/pmms
+2025-09-15T13:26:18.287227 INFO: No existing archive found, creating new archive for https://www.freddiemac.com/pmms
+2025-09-15T13:26:19.198357 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:26:19.198772 INFO: Attempting archive.is for https://www.freddiemac.com/pmms
+2025-09-15T13:26:22.664769 INFO: Attempting archive.li for https://www.freddiemac.com/pmms
+2025-09-15T13:26:26.365636 INFO: Attempting archive.fo for https://www.freddiemac.com/pmms
+2025-09-15T13:26:29.884297 INFO: Attempting archive.ph for https://www.freddiemac.com/pmms
+2025-09-15T13:26:33.404871 INFO: Attempting Googlebot spoof for https://www.freddiemac.com/pmms
+2025-09-15T13:26:33.525676 ERROR: Googlebot spoof failed for https://www.freddiemac.com/pmms: 403 Client Error: Forbidden for url: https://www.freddiemac.com/pmms
+2025-09-15T13:26:33.527050 INFO: Attempting Enhanced Wayback Machine for https://www.freddiemac.com/pmms
+2025-09-15T13:26:33.912665 INFO: Found Wayback snapshot from 20231202020559: http://web.archive.org/web/20231202020559/https://www.freddiemac.com/pmms
+2025-09-15T13:26:34.085261 INFO: Content is very short (82 words). Likely a teaser.
+2025-09-15T13:26:34.085367 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:34.085397 INFO: Attempting Wayback Machine for https://www.freddiemac.com/pmms
+2025-09-15T13:26:34.203257 ERROR: Wayback Machine failed for https://www.freddiemac.com/pmms: No archived snapshots found
+2025-09-15T13:26:34.204793 ERROR: All fetch strategies failed or returned low-quality content for https://www.freddiemac.com/pmms. Attempting Google Search fallback...
+2025-09-15T13:26:34.204928 INFO: Google Search fallback: searching for 'pmms'
+2025-09-15T13:26:34.236252 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:26:34.244835 INFO: Attempting direct fetch for https://www.freddiemac.com/pmms
+2025-09-15T13:26:34.453578 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:34.582310 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:34.582427 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:34.590025 INFO: Attempting direct fetch for https://www.freddiemac.com/pmms
+2025-09-15T13:26:34.907634 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:35.029530 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:35.029665 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:35.029726 INFO: Attempting Reader Mode strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:35.165765 ERROR: Reader mode fetch failed for https://www.freddiemac.com/pmms: cannot use a string pattern on a bytes-like object
+2025-09-15T13:26:35.167851 INFO: Attempting JS Disabled strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:35.342217 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:35.342326 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:35.342355 INFO: Attempting Refresh Stop strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:35.508727 ERROR: Refresh stop fetch failed for https://www.freddiemac.com/pmms: cannot use a string pattern on a bytes-like object
+2025-09-15T13:26:35.510839 INFO: Attempting Inspect Element strategy for https://www.freddiemac.com/pmms
+2025-09-15T13:26:35.761502 INFO: Content is very short (49 words). Likely a teaser.
+2025-09-15T13:26:35.761638 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:35.761674 INFO: Attempting removepaywalls.com bypass for https://www.freddiemac.com/pmms
+2025-09-15T13:26:38.723810 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:26:38.723909 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:38.723940 INFO: Attempting archive.today for https://www.freddiemac.com/pmms
+2025-09-15T13:26:42.397133 INFO: No existing archive found, creating new archive for https://www.freddiemac.com/pmms
+2025-09-15T13:26:43.312525 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:26:43.312989 INFO: Attempting archive.is for https://www.freddiemac.com/pmms
+2025-09-15T13:26:46.676815 INFO: Attempting archive.li for https://www.freddiemac.com/pmms
+2025-09-15T13:26:49.272787 INFO: Attempting archive.fo for https://www.freddiemac.com/pmms
+2025-09-15T13:26:52.661354 INFO: Attempting archive.ph for https://www.freddiemac.com/pmms
+2025-09-15T13:26:56.463504 INFO: Attempting Googlebot spoof for https://www.freddiemac.com/pmms
+2025-09-15T13:26:56.708020 ERROR: Googlebot spoof failed for https://www.freddiemac.com/pmms: 403 Client Error: Forbidden for url: https://www.freddiemac.com/pmms
+2025-09-15T13:26:56.709555 INFO: Attempting Enhanced Wayback Machine for https://www.freddiemac.com/pmms
+2025-09-15T13:26:57.038145 INFO: Found Wayback snapshot from 20231202020559: http://web.archive.org/web/20231202020559/https://www.freddiemac.com/pmms
+2025-09-15T13:26:57.223420 INFO: Content is very short (82 words). Likely a teaser.
+2025-09-15T13:26:57.223534 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:26:57.223564 INFO: Attempting Wayback Machine for https://www.freddiemac.com/pmms
+2025-09-15T13:26:57.349027 ERROR: Wayback Machine failed for https://www.freddiemac.com/pmms: No archived snapshots found
+2025-09-15T13:26:57.350826 ERROR: All fetch strategies failed or returned low-quality content for https://www.freddiemac.com/pmms. Attempting Google Search fallback...
+2025-09-15T13:26:57.350940 INFO: Google Search fallback: searching for 'pmms'
+2025-09-15T13:26:57.382852 INFO: Google Search fallback did not find alternative URL

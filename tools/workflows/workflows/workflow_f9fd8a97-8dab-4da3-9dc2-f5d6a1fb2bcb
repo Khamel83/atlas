@@ -1,0 +1,26 @@
+2025-09-14T21:18:56.499042 INFO: Attempting direct fetch for https://nymag.com/tags/robert-moses/
+2025-09-14T21:18:57.220856 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T21:18:57.420230 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T21:18:57.420347 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:18:57.420395 INFO: Attempting Reader Mode strategy for https://nymag.com/tags/robert-moses/
+2025-09-14T21:18:57.604266 ERROR: Reader mode fetch failed for https://nymag.com/tags/robert-moses/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:18:57.605966 INFO: Attempting JS Disabled strategy for https://nymag.com/tags/robert-moses/
+2025-09-14T21:18:57.826336 INFO: Attempting Refresh Stop strategy for https://nymag.com/tags/robert-moses/
+2025-09-14T21:18:57.956650 ERROR: Refresh stop fetch failed for https://nymag.com/tags/robert-moses/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:18:57.958395 INFO: Attempting Inspect Element strategy for https://nymag.com/tags/robert-moses/
+2025-09-14T21:18:58.280220 INFO: Attempting removepaywalls.com bypass for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:02.688865 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:19:02.688986 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:19:02.689014 INFO: Attempting archive.today for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:05.736909 INFO: No existing archive found, creating new archive for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:06.623364 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:19:06.623890 INFO: Attempting archive.is for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:10.125201 INFO: Attempting archive.li for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:13.425901 INFO: Attempting archive.fo for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:16.911996 INFO: Attempting archive.ph for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:20.344570 INFO: Attempting Googlebot spoof for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:20.607967 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-14T21:19:20.608089 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:19:20.608115 INFO: Attempting Enhanced Wayback Machine for https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:21.323919 INFO: Found Wayback snapshot from 20250117225235: http://web.archive.org/web/20250117225235/https://nymag.com/tags/robert-moses/
+2025-09-14T21:19:22.858214 INFO: Successfully fetched https://nymag.com/tags/robert-moses/ using wayback_machine_enhanced

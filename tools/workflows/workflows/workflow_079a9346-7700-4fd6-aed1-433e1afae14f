@@ -1,0 +1,104 @@
+2025-09-15T19:58:56.599063 INFO: Attempting direct fetch for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.717475 ERROR: Direct fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.718896 INFO: Attempting Reader Mode strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.806545 ERROR: Reader mode fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.807920 INFO: Attempting JS Disabled strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.904811 ERROR: JS disabled fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.906137 INFO: Attempting Refresh Stop strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:56.998983 ERROR: Refresh stop fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: cannot use a string pattern on a bytes-like object
+2025-09-15T19:58:57.000342 INFO: Attempting Inspect Element strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:57.087848 ERROR: Inspect element fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:58:57.089284 INFO: Attempting removepaywalls.com bypass for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:00.271552 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T19:59:00.271676 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:00.271703 INFO: Attempting archive.today for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:03.822165 INFO: No existing archive found, creating new archive for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:04.679784 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:59:04.680734 INFO: Attempting archive.is for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:06.675807 INFO: Attempting archive.li for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:09.248346 INFO: Attempting archive.fo for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:12.304418 INFO: Attempting archive.ph for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:15.889818 INFO: Attempting Googlebot spoof for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:16.552955 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T19:59:16.553078 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:16.553104 INFO: Attempting Enhanced Wayback Machine for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:16.678708 INFO: Found Wayback snapshot from 20240327180515: http://web.archive.org/web/20240327180515/https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:16.780874 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T19:59:16.781028 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:16.781057 INFO: Attempting Wayback Machine for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:16.910005 INFO: Found Wayback snapshot: http://web.archive.org/web/20240327180515/https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.024043 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T19:59:17.024168 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:17.024206 ERROR: All fetch strategies failed or returned low-quality content for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html. Attempting Google Search fallback...
+2025-09-15T19:59:17.024316 INFO: Google Search fallback: searching for 'the case for gpt 3.html'
+2025-09-15T19:59:17.056556 INFO: Google Search fallback did not find alternative URL
+2025-09-15T19:59:17.064022 INFO: Attempting direct fetch for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.148832 ERROR: Direct fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.150100 INFO: Attempting Reader Mode strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.242802 ERROR: Reader mode fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.244074 INFO: Attempting JS Disabled strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.335017 ERROR: JS disabled fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.336342 INFO: Attempting Refresh Stop strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.430892 ERROR: Refresh stop fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: cannot use a string pattern on a bytes-like object
+2025-09-15T19:59:17.432113 INFO: Attempting Inspect Element strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.516733 ERROR: Inspect element fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:17.518020 INFO: Attempting removepaywalls.com bypass for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:20.769416 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T19:59:20.769527 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:20.769556 INFO: Attempting archive.today for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:23.307391 INFO: No existing archive found, creating new archive for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:24.206570 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:59:24.207411 INFO: Attempting archive.is for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:27.885288 INFO: Attempting archive.li for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:27.897269 INFO: Attempting direct fetch for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:27.997953 ERROR: Direct fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:27.999700 INFO: Attempting Reader Mode strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.087698 ERROR: Reader mode fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.089415 INFO: Attempting JS Disabled strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.179151 ERROR: JS disabled fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.180888 INFO: Attempting Refresh Stop strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.272022 ERROR: Refresh stop fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: cannot use a string pattern on a bytes-like object
+2025-09-15T19:59:28.273739 INFO: Attempting Inspect Element strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.394944 ERROR: Inspect element fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:28.396724 INFO: Attempting removepaywalls.com bypass for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:32.694163 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T19:59:32.694281 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:32.694312 INFO: Attempting archive.today for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:36.253189 INFO: No existing archive found, creating new archive for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:37.155243 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:59:37.156016 INFO: Attempting archive.is for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:40.117984 INFO: Attempting archive.li for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:43.090958 INFO: Attempting archive.fo for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:46.849321 INFO: Attempting archive.ph for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:49.004357 INFO: Attempting Googlebot spoof for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:49.641543 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T19:59:49.641688 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:49.641715 INFO: Attempting Enhanced Wayback Machine for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:49.765832 INFO: Found Wayback snapshot from 20240327180515: http://web.archive.org/web/20240327180515/https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:49.873641 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T19:59:49.873763 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:49.873789 INFO: Attempting Wayback Machine for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:49.999844 INFO: Found Wayback snapshot: http://web.archive.org/web/20240327180515/https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.106379 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T19:59:50.106496 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:50.106533 ERROR: All fetch strategies failed or returned low-quality content for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html. Attempting Google Search fallback...
+2025-09-15T19:59:50.106617 INFO: Google Search fallback: searching for 'the case for gpt 3.html'
+2025-09-15T19:59:50.138854 INFO: Google Search fallback did not find alternative URL
+2025-09-15T19:59:50.146420 INFO: Attempting direct fetch for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.230811 ERROR: Direct fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.232034 INFO: Attempting Reader Mode strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.324377 ERROR: Reader mode fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.325610 INFO: Attempting JS Disabled strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.437900 ERROR: JS disabled fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.439321 INFO: Attempting Refresh Stop strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.569461 ERROR: Refresh stop fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: cannot use a string pattern on a bytes-like object
+2025-09-15T19:59:50.571943 INFO: Attempting Inspect Element strategy for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.685303 ERROR: Inspect element fetch failed for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html: 403 Client Error: Forbidden for url: https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:50.686577 INFO: Attempting removepaywalls.com bypass for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:55.057237 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T19:59:55.057347 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:59:55.057377 INFO: Attempting archive.today for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:58.500954 INFO: No existing archive found, creating new archive for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T19:59:59.358872 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:59:59.359666 INFO: Attempting archive.is for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html
+2025-09-15T20:00:01.613514 INFO: Attempting archive.li for https://marginalrevolution.com/marginalrevolution/2020/07/the-case-for-gpt-3.html

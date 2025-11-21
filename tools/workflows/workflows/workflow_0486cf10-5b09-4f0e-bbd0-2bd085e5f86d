@@ -1,0 +1,114 @@
+2025-09-14T21:13:42.769574 INFO: Attempting direct fetch for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:43.082780 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:13:43.108222 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:13:43.108330 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:43.108370 INFO: Attempting Reader Mode strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:43.321848 ERROR: Reader mode fetch failed for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time: cannot use a string pattern on a bytes-like object
+2025-09-14T21:13:43.323215 INFO: Attempting JS Disabled strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:43.499308 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:13:43.499416 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:43.499501 INFO: Attempting Refresh Stop strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:43.664579 ERROR: Refresh stop fetch failed for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time: cannot use a string pattern on a bytes-like object
+2025-09-14T21:13:43.666080 INFO: Attempting Inspect Element strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:43.868744 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:13:43.868826 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:43.868921 INFO: Attempting removepaywalls.com bypass for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:46.438645 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:13:46.438764 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:13:46.438791 INFO: Attempting archive.today for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:49.784920 INFO: No existing archive found, creating new archive for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:50.701036 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:13:50.701508 INFO: Attempting archive.is for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:54.042004 INFO: Attempting archive.li for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:56.165315 INFO: Attempting archive.fo for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:13:58.243275 INFO: Attempting archive.ph for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:00.471432 INFO: Attempting Googlebot spoof for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:00.664120 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:00.664231 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:00.664280 INFO: Attempting Enhanced Wayback Machine for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:01.319572 INFO: Found Wayback snapshot from 20241202144246: http://web.archive.org/web/20241202144246/https://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:01.905881 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:01.905980 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:01.906012 INFO: Attempting Wayback Machine for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:02.141420 INFO: Found Wayback snapshot: http://web.archive.org/web/20241202144246/https://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:02.213754 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:02.213870 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:02.213909 ERROR: All fetch strategies failed or returned low-quality content for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time. Attempting Google Search fallback...
+2025-09-14T21:14:02.213974 INFO: Google Search fallback: searching for 'the 40 most groundbreaking albums of all time'
+2025-09-14T21:14:02.275890 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:14:02.290149 INFO: Attempting direct fetch for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:02.487627 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:02.524355 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:02.524451 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:02.524497 INFO: Attempting Reader Mode strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:02.699182 ERROR: Reader mode fetch failed for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time: cannot use a string pattern on a bytes-like object
+2025-09-14T21:14:02.701580 INFO: Attempting JS Disabled strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:02.890437 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:02.890533 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:02.890561 INFO: Attempting Refresh Stop strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:03.061585 ERROR: Refresh stop fetch failed for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time: cannot use a string pattern on a bytes-like object
+2025-09-14T21:14:03.063111 INFO: Attempting Inspect Element strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:03.242735 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:03.242841 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:03.242868 INFO: Attempting removepaywalls.com bypass for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:08.077425 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:14:08.077537 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:08.077565 INFO: Attempting archive.today for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:10.165254 INFO: No existing archive found, creating new archive for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:11.089143 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:14:11.090775 INFO: Attempting archive.is for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:13.451412 INFO: Attempting archive.li for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:17.071628 INFO: Attempting archive.fo for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:20.674798 INFO: Attempting archive.ph for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:23.933737 INFO: Attempting Googlebot spoof for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.117899 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:24.118005 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:24.118048 INFO: Attempting Enhanced Wayback Machine for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.248957 INFO: Found Wayback snapshot from 20241202144246: http://web.archive.org/web/20241202144246/https://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.366505 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:24.366654 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:24.366685 INFO: Attempting Wayback Machine for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.486738 INFO: Found Wayback snapshot: http://web.archive.org/web/20241202144246/https://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.558103 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:24.558222 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:24.558318 ERROR: All fetch strategies failed or returned low-quality content for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time. Attempting Google Search fallback...
+2025-09-14T21:14:24.558405 INFO: Google Search fallback: searching for 'the 40 most groundbreaking albums of all time'
+2025-09-14T21:14:24.591285 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:14:24.599897 INFO: Attempting direct fetch for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.790126 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:24.816259 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:24.816365 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:24.816402 INFO: Attempting Reader Mode strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:24.971442 ERROR: Reader mode fetch failed for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time: cannot use a string pattern on a bytes-like object
+2025-09-14T21:14:24.973145 INFO: Attempting JS Disabled strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:25.188032 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:25.188139 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:25.188167 INFO: Attempting Refresh Stop strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:25.361158 ERROR: Refresh stop fetch failed for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time: cannot use a string pattern on a bytes-like object
+2025-09-14T21:14:25.362621 INFO: Attempting Inspect Element strategy for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:25.572389 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:25.572492 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:25.572521 INFO: Attempting removepaywalls.com bypass for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:29.015543 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:14:29.015679 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:29.015711 INFO: Attempting archive.today for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:32.595831 INFO: No existing archive found, creating new archive for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:33.449836 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:14:33.450360 INFO: Attempting archive.is for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:36.230627 INFO: Attempting archive.li for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:39.724275 INFO: Attempting archive.fo for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:43.556525 INFO: Attempting archive.ph for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:46.458658 INFO: Attempting Googlebot spoof for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:46.642732 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:46.642840 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:46.642869 INFO: Attempting Enhanced Wayback Machine for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:46.756125 INFO: Found Wayback snapshot from 20241202144246: http://web.archive.org/web/20241202144246/https://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:46.825308 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:46.825407 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:46.825434 INFO: Attempting Wayback Machine for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:46.980911 INFO: Found Wayback snapshot: http://web.archive.org/web/20241202144246/https://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time
+2025-09-14T21:14:47.051142 INFO: Content is very short (123 words). Likely a teaser.
+2025-09-14T21:14:47.051250 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:14:47.051285 ERROR: All fetch strategies failed or returned low-quality content for http://kottke.org/14/12/the-40-most-groundbreaking-albums-of-all-time. Attempting Google Search fallback...
+2025-09-14T21:14:47.051346 INFO: Google Search fallback: searching for 'the 40 most groundbreaking albums of all time'
+2025-09-14T21:14:47.089200 INFO: Google Search fallback did not find alternative URL

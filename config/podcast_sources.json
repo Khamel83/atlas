@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-09-28T00:00:00Z",
+  "sources": [
+    {
+      "name": "atp",
+      "display_name": "Accidental Tech Podcast",
+      "description": "ATP episodes from catatp.fm",
+      "url_patterns": [
+        "atp\\.fm",
+        "accidental.*tech",
+        "atp"
+      ],
+      "title_patterns": [
+        "\\d+:",
+        "Episode \\d+",
+        "ATP \\d+"
+      ],
+      "scraper_class": "helpers.atp_transcript_scraper.ATPTranscriptScraper",
+      "enabled": true,
+      "priority": 100,
+      "requires_auth": false,
+      "success_rate": 0.865,
+      "last_updated": "2025-09-28T00:00:00Z"
+    },
+    {
+      "name": "tal",
+      "display_name": "This American Life",
+      "description": "TAL episodes with transcripts",
+      "url_patterns": [
+        "thisamericanlife\\.org",
+        "tal\\.org"
+      ],
+      "title_patterns": [
+        "\\d+:",
+        "Act \\d+",
+        "Prologue"
+      ],
+      "scraper_class": "helpers.tal_transcript_scraper.TALTranscriptScraper",
+      "enabled": true,
+      "priority": 90,
+      "requires_auth": false,
+      "success_rate": 0.675,
+      "last_updated": "2025-09-28T00:00:00Z"
+    },
+    {
+      "name": "99pi",
+      "display_name": "99% Invisible",
+      "description": "Design and architecture podcast",
+      "url_patterns": [
+        "99percentinvisible\\.org",
+        "99pi\\.org"
+      ],
+      "title_patterns": [
+        "\\d+:",
+        "Episode \\d+",
+        "99\\% Invisible"
+      ],
+      "scraper_class": "helpers.ninety_nine_pi_scraper.NinetyNinePiTranscriptScraper",
+      "enabled": true,
+      "priority": 80,
+      "requires_auth": false,
+      "success_rate": 0.7,
+      "last_updated": ""
+    },
+    {
+      "name": "huberman",
+      "display_name": "Huberman Lab",
+      "description": "Science podcast with occasional transcripts",
+      "url_patterns": [
+        "hubermanlab\\.com"
+      ],
+      "title_patterns": [
+        "Episode \\d+",
+        "Dr\\. Andrew Huberman"
+      ],
+      "scraper_class": "helpers.huberman_scraper.HubermanScraper",
+      "enabled": true,
+      "priority": 70,
+      "requires_auth": false,
+      "success_rate": 0.3,
+      "last_updated": ""
+    },
+    {
+      "name": "lex",
+      "display_name": "Lex Fridman Podcast",
+      "description": "AI and science interviews",
+      "url_patterns": [
+        "lexfridman\\.com"
+      ],
+      "title_patterns": [
+        "#\\d+",
+        "Episode \\d+"
+      ],
+      "scraper_class": "helpers.lex_fridman_scraper.LexFridmanScraper",
+      "enabled": true,
+      "priority": 60,
+      "requires_auth": false,
+      "success_rate": 0.25,
+      "last_updated": ""
+    }
+  ]
+}

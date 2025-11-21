@@ -1,0 +1,152 @@
+2025-09-14T22:58:58.020102 INFO: Attempting direct fetch for https://fly.io/
+2025-09-14T22:58:58.476882 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:58:58.620188 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:58:58.620307 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:58:58.620345 INFO: Attempting Reader Mode strategy for https://fly.io/
+2025-09-14T22:58:58.734929 ERROR: Reader mode fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:58:58.737644 INFO: Attempting JS Disabled strategy for https://fly.io/
+2025-09-14T22:58:58.925042 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:58:58.925154 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:58:58.925183 INFO: Attempting Refresh Stop strategy for https://fly.io/
+2025-09-14T22:58:59.001020 ERROR: Refresh stop fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:58:59.003133 INFO: Attempting Inspect Element strategy for https://fly.io/
+2025-09-14T22:58:59.256518 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:58:59.256650 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:58:59.256683 INFO: Attempting removepaywalls.com bypass for https://fly.io/
+2025-09-14T22:59:02.176237 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:59:02.176351 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:02.176380 INFO: Attempting archive.today for https://fly.io/
+2025-09-14T22:59:06.277863 INFO: No existing archive found, creating new archive for https://fly.io/
+2025-09-14T22:59:07.186901 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:59:07.187585 INFO: Attempting archive.is for https://fly.io/
+2025-09-14T22:59:10.780487 INFO: Attempting archive.li for https://fly.io/
+2025-09-14T22:59:13.927742 INFO: Attempting archive.fo for https://fly.io/
+2025-09-14T22:59:17.604096 INFO: Attempting archive.ph for https://fly.io/
+2025-09-14T22:59:21.266433 INFO: Attempting Googlebot spoof for https://fly.io/
+2025-09-14T22:59:21.486265 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:21.486380 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:21.486411 INFO: Attempting Enhanced Wayback Machine for https://fly.io/
+2025-09-14T22:59:21.788885 INFO: Found Wayback snapshot from 20250914081425: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T22:59:27.348897 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:27.349022 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:27.349052 INFO: Attempting Wayback Machine for https://fly.io/
+2025-09-14T22:59:27.501080 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T22:59:27.731381 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:27.731513 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:27.731554 ERROR: All fetch strategies failed or returned low-quality content for https://fly.io/. Attempting Google Search fallback...
+2025-09-14T22:59:27.731678 INFO: Google Search fallback: searching for 'article fly.io'
+2025-09-14T22:59:27.763369 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:59:27.773171 INFO: Attempting direct fetch for https://fly.io/
+2025-09-14T22:59:27.987904 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:28.122437 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:28.122553 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:28.122620 INFO: Attempting Reader Mode strategy for https://fly.io/
+2025-09-14T22:59:28.191650 ERROR: Reader mode fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:59:28.193235 INFO: Attempting JS Disabled strategy for https://fly.io/
+2025-09-14T22:59:28.343083 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:28.343192 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:28.343220 INFO: Attempting Refresh Stop strategy for https://fly.io/
+2025-09-14T22:59:28.416471 ERROR: Refresh stop fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:59:28.418032 INFO: Attempting Inspect Element strategy for https://fly.io/
+2025-09-14T22:59:28.665719 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:28.665821 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:28.665850 INFO: Attempting removepaywalls.com bypass for https://fly.io/
+2025-09-14T22:59:31.213620 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:59:31.213743 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:31.213771 INFO: Attempting archive.today for https://fly.io/
+2025-09-14T22:59:35.466111 INFO: No existing archive found, creating new archive for https://fly.io/
+2025-09-14T22:59:36.354617 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:59:36.355047 INFO: Attempting archive.is for https://fly.io/
+2025-09-14T22:59:39.363689 INFO: Attempting archive.li for https://fly.io/
+2025-09-14T22:59:42.839252 INFO: Attempting archive.fo for https://fly.io/
+2025-09-14T22:59:46.213149 INFO: Attempting archive.ph for https://fly.io/
+2025-09-14T22:59:48.239105 INFO: Attempting Googlebot spoof for https://fly.io/
+2025-09-14T22:59:48.423166 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:48.423267 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:48.423295 INFO: Attempting Enhanced Wayback Machine for https://fly.io/
+2025-09-14T22:59:48.537038 INFO: Found Wayback snapshot from 20250914081425: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T22:59:48.759243 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:48.759367 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:48.759394 INFO: Attempting Wayback Machine for https://fly.io/
+2025-09-14T22:59:48.865192 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T22:59:49.241829 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:49.241951 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:49.241984 ERROR: All fetch strategies failed or returned low-quality content for https://fly.io/. Attempting Google Search fallback...
+2025-09-14T22:59:49.242054 INFO: Google Search fallback: searching for 'article fly.io'
+2025-09-14T22:59:49.278006 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:59:49.296156 INFO: Attempting direct fetch for https://fly.io/
+2025-09-14T22:59:49.530585 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:49.670798 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:49.670920 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:49.670966 INFO: Attempting Reader Mode strategy for https://fly.io/
+2025-09-14T22:59:49.754504 ERROR: Reader mode fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:59:49.756561 INFO: Attempting JS Disabled strategy for https://fly.io/
+2025-09-14T22:59:49.909781 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:49.909900 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:49.909944 INFO: Attempting Refresh Stop strategy for https://fly.io/
+2025-09-14T22:59:49.990142 ERROR: Refresh stop fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:59:49.992189 INFO: Attempting Inspect Element strategy for https://fly.io/
+2025-09-14T22:59:50.248400 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T22:59:50.248525 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:50.248555 INFO: Attempting removepaywalls.com bypass for https://fly.io/
+2025-09-14T22:59:54.106350 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:59:54.106466 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:59:54.106491 INFO: Attempting archive.today for https://fly.io/
+2025-09-14T22:59:56.972137 INFO: No existing archive found, creating new archive for https://fly.io/
+2025-09-14T22:59:57.879309 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:59:57.879809 INFO: Attempting archive.is for https://fly.io/
+2025-09-14T23:00:01.430912 INFO: Attempting archive.li for https://fly.io/
+2025-09-14T23:00:03.733901 INFO: Attempting archive.fo for https://fly.io/
+2025-09-14T23:00:07.225643 INFO: Attempting archive.ph for https://fly.io/
+2025-09-14T23:00:09.988370 INFO: Attempting Googlebot spoof for https://fly.io/
+2025-09-14T23:00:10.518933 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:10.519066 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:10.519110 INFO: Attempting Enhanced Wayback Machine for https://fly.io/
+2025-09-14T23:00:10.735706 INFO: Found Wayback snapshot from 20250914081425: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T23:00:11.386409 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:11.386517 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:11.386554 INFO: Attempting Wayback Machine for https://fly.io/
+2025-09-14T23:00:11.540726 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T23:00:11.776009 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:11.776125 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:11.776165 ERROR: All fetch strategies failed or returned low-quality content for https://fly.io/. Attempting Google Search fallback...
+2025-09-14T23:00:11.776227 INFO: Google Search fallback: searching for 'article fly.io'
+2025-09-14T23:00:11.808949 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:00:11.818579 INFO: Attempting direct fetch for https://fly.io/
+2025-09-14T23:00:12.025382 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:12.165809 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:12.165935 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:12.165978 INFO: Attempting Reader Mode strategy for https://fly.io/
+2025-09-14T23:00:12.234393 ERROR: Reader mode fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:00:12.236093 INFO: Attempting JS Disabled strategy for https://fly.io/
+2025-09-14T23:00:12.420877 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:12.420989 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:12.421015 INFO: Attempting Refresh Stop strategy for https://fly.io/
+2025-09-14T23:00:12.500306 ERROR: Refresh stop fetch failed for https://fly.io/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:00:12.501810 INFO: Attempting Inspect Element strategy for https://fly.io/
+2025-09-14T23:00:12.741698 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:12.741814 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:12.741842 INFO: Attempting removepaywalls.com bypass for https://fly.io/
+2025-09-14T23:00:16.050254 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:00:16.050378 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:16.050404 INFO: Attempting archive.today for https://fly.io/
+2025-09-14T23:00:20.554494 INFO: No existing archive found, creating new archive for https://fly.io/
+2025-09-14T23:00:21.411989 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:00:21.412384 INFO: Attempting archive.is for https://fly.io/
+2025-09-14T23:00:25.137863 INFO: Attempting archive.li for https://fly.io/
+2025-09-14T23:00:28.413204 INFO: Attempting archive.fo for https://fly.io/
+2025-09-14T23:00:31.100273 INFO: Attempting archive.ph for https://fly.io/
+2025-09-14T23:00:33.735825 INFO: Attempting Googlebot spoof for https://fly.io/
+2025-09-14T23:00:34.065725 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:34.065850 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:34.065877 INFO: Attempting Enhanced Wayback Machine for https://fly.io/
+2025-09-14T23:00:34.207332 INFO: Found Wayback snapshot from 20250914081425: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T23:00:34.435481 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:34.435618 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:34.435656 INFO: Attempting Wayback Machine for https://fly.io/
+2025-09-14T23:00:34.584070 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914081425/https://fly.io/
+2025-09-14T23:00:34.836962 INFO: Content is very short (43 words). Likely a teaser.
+2025-09-14T23:00:34.837077 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:00:34.837109 ERROR: All fetch strategies failed or returned low-quality content for https://fly.io/. Attempting Google Search fallback...
+2025-09-14T23:00:34.837174 INFO: Google Search fallback: searching for 'article fly.io'
+2025-09-14T23:00:34.869917 INFO: Google Search fallback did not find alternative URL

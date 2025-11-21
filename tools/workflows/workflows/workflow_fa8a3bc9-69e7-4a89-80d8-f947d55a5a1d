@@ -1,0 +1,30 @@
+2025-09-14T22:23:59.969747 INFO: Attempting direct fetch for https://techcrunch.com/
+2025-09-14T22:24:00.373568 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:24:00.776564 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:24:00.776703 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:24:00.776744 INFO: Attempting Reader Mode strategy for https://techcrunch.com/
+2025-09-14T22:24:00.940874 ERROR: Reader mode fetch failed for https://techcrunch.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:24:00.942476 INFO: Attempting JS Disabled strategy for https://techcrunch.com/
+2025-09-14T22:24:01.299905 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-14T22:24:01.300012 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:24:01.300039 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/
+2025-09-14T22:24:01.385853 ERROR: Refresh stop fetch failed for https://techcrunch.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:24:01.387363 INFO: Attempting Inspect Element strategy for https://techcrunch.com/
+2025-09-14T22:24:02.048452 INFO: Content is very short (24 words). Likely a teaser.
+2025-09-14T22:24:02.048559 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:24:02.048647 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/
+2025-09-14T22:24:05.094709 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:24:05.094823 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:24:05.094850 INFO: Attempting archive.today for https://techcrunch.com/
+2025-09-14T22:24:09.517327 INFO: No existing archive found, creating new archive for https://techcrunch.com/
+2025-09-14T22:24:10.416328 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:24:10.416730 INFO: Attempting archive.is for https://techcrunch.com/
+2025-09-14T22:24:13.848102 INFO: Attempting archive.li for https://techcrunch.com/
+2025-09-14T22:24:16.368681 INFO: Attempting archive.fo for https://techcrunch.com/
+2025-09-14T22:24:18.462289 INFO: Attempting archive.ph for https://techcrunch.com/
+2025-09-14T22:24:21.320336 INFO: Attempting Googlebot spoof for https://techcrunch.com/
+2025-09-14T22:24:21.748029 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:24:21.748144 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:24:21.748184 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/
+2025-09-14T22:24:27.432370 INFO: Found Wayback snapshot from 20231202000540: http://web.archive.org/web/20231202000540/https://techcrunch.com/
+2025-09-14T22:24:30.929119 INFO: Successfully fetched https://techcrunch.com/ using wayback_machine_enhanced

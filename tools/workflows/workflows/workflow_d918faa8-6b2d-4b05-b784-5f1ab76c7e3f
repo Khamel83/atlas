@@ -1,0 +1,25 @@
+2025-09-15T00:47:07.049676 INFO: Attempting direct fetch for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.203035 ERROR: Direct fetch failed for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.204707 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.294000 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.295640 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.378551 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.380213 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.469890 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201: cannot use a string pattern on a bytes-like object
+2025-09-15T00:47:07.471475 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.555716 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:07.557398 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:09.867889 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T00:47:09.868000 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:47:09.868027 INFO: Attempting archive.today for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:13.677943 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:14.582581 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:47:14.582968 INFO: Attempting archive.is for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:17.433621 INFO: Attempting archive.li for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:21.263398 INFO: Attempting archive.fo for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:23.997863 INFO: Attempting archive.ph for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:26.300762 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:26.382243 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:26.383650 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:26.820000 INFO: Found Wayback snapshot from 20250831204637: http://web.archive.org/web/20250831204637/https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201
+2025-09-15T00:47:27.952892 INFO: Successfully fetched https://www.wsj.com/articles/how-13-became-the-internets-age-of-adulthood-11560850201 using wayback_machine_enhanced

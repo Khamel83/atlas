@@ -1,0 +1,130 @@
+2025-09-15T11:43:03.943666 INFO: Attempting direct fetch for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.121143 ERROR: Direct fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.122938 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.213081 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.214902 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.297708 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.299682 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.390281 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: cannot use a string pattern on a bytes-like object
+2025-09-15T11:43:04.392262 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:04.392881 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: [Errno 32] Broken pipe
+2025-09-15T11:43:04.392936 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:09.561930 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:43:09.562045 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:43:09.562073 INFO: Attempting archive.today for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:14.408662 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:15.318678 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:43:15.319105 INFO: Attempting archive.is for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:18.648806 INFO: Attempting archive.li for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:22.686860 INFO: Attempting archive.fo for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:26.447965 INFO: Attempting archive.ph for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:28.774221 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:28.881852 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:28.884713 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:29.299209 INFO: Found Wayback snapshot from 20250817042300: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.158079 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:43:32.158188 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:43:32.158219 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.283792 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.514017 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:43:32.514129 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:43:32.514165 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882. Attempting Google Search fallback...
+2025-09-15T11:43:32.514229 INFO: Google Search fallback: searching for 'let me ask america a question 1460675882'
+2025-09-15T11:43:32.546115 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:43:32.553642 INFO: Attempting direct fetch for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.637844 ERROR: Direct fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.639251 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.730450 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.731921 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.817035 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.818454 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:32.906269 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: cannot use a string pattern on a bytes-like object
+2025-09-15T11:43:32.907719 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:33.049391 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:33.050822 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:36.935044 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:43:36.935147 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:43:36.935177 INFO: Attempting archive.today for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:41.557811 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:42.465341 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:43:42.465772 INFO: Attempting archive.is for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:45.495566 INFO: Attempting archive.li for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:48.078669 INFO: Attempting archive.fo for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:51.486748 INFO: Attempting archive.ph for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:54.008416 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:54.095477 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:54.097304 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:54.411385 INFO: Found Wayback snapshot from 20250817042300: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:54.728446 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:43:54.728562 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:43:54.728615 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.023434 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.253875 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:43:55.253994 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:43:55.254029 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882. Attempting Google Search fallback...
+2025-09-15T11:43:55.254097 INFO: Google Search fallback: searching for 'let me ask america a question 1460675882'
+2025-09-15T11:43:55.286072 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:43:55.294106 INFO: Attempting direct fetch for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.294233 ERROR: Direct fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: [Errno 32] Broken pipe
+2025-09-15T11:43:55.294276 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.379276 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.380917 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.463258 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.464780 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.554190 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: cannot use a string pattern on a bytes-like object
+2025-09-15T11:43:55.555668 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.638747 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:43:55.640231 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:00.218755 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:44:00.218866 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:44:00.218895 INFO: Attempting archive.today for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:04.474393 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:05.350960 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:44:05.351386 INFO: Attempting archive.is for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:07.259389 INFO: Attempting archive.li for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:10.836409 INFO: Attempting archive.fo for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:13.468610 INFO: Attempting archive.ph for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:15.452852 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:15.591384 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:15.592916 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:15.808155 INFO: Found Wayback snapshot from 20250817042300: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.017664 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:44:16.017780 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:44:16.017806 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.151499 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.367726 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:44:16.367843 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:44:16.367876 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882. Attempting Google Search fallback...
+2025-09-15T11:44:16.367940 INFO: Google Search fallback: searching for 'let me ask america a question 1460675882'
+2025-09-15T11:44:16.399305 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:44:16.406883 INFO: Attempting direct fetch for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.490669 ERROR: Direct fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.492015 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.577956 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.579301 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.667235 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.668637 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.756295 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: cannot use a string pattern on a bytes-like object
+2025-09-15T11:44:16.757662 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.841723 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:16.843346 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:19.834585 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T11:44:19.834746 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:44:19.834775 INFO: Attempting archive.today for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:23.412580 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:24.269337 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:44:24.269746 INFO: Attempting archive.is for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:27.393862 INFO: Attempting archive.li for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:29.507785 INFO: Attempting archive.fo for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:31.426241 INFO: Attempting archive.ph for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:34.226253 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:34.325506 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:34.327493 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:34.328085 ERROR: Enhanced Wayback Machine failed for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882: [Errno 32] Broken pipe
+2025-09-15T11:44:34.328134 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:34.605295 INFO: Found Wayback snapshot: http://web.archive.org/web/20250817042300/https://www.wsj.com/articles/let-me-ask-america-a-question-1460675882
+2025-09-15T11:44:34.824118 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-15T11:44:34.824230 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:44:34.824264 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/let-me-ask-america-a-question-1460675882. Attempting Google Search fallback...
+2025-09-15T11:44:34.824327 INFO: Google Search fallback: searching for 'let me ask america a question 1460675882'
+2025-09-15T11:44:34.855872 INFO: Google Search fallback did not find alternative URL

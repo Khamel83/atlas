@@ -1,0 +1,101 @@
+2025-09-15T05:25:30.360132 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.559700 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.560904 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.651560 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.653010 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.765746 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.766972 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.884549 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: cannot use a string pattern on a bytes-like object
+2025-09-15T05:25:30.887041 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.993526 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:30.994784 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:34.179298 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:25:34.179398 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:25:34.179427 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:37.335916 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:38.258302 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:25:38.258800 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:40.832481 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:43.344352 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:46.478304 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:49.330467 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:49.420227 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:49.421550 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:49.770988 INFO: Found Wayback snapshot from 20250510064558: http://web.archive.org/web/20250510064558/https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:50.936636 INFO: Content is very short (131 words). Likely a teaser.
+2025-09-15T05:25:50.936763 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:25:50.936790 INFO: Attempting Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.073894 INFO: Found Wayback snapshot: http://web.archive.org/web/20250510064558/https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.319880 INFO: Content is very short (131 words). Likely a teaser.
+2025-09-15T05:25:51.320002 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:25:51.320055 ERROR: All fetch strategies failed or returned low-quality content for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713. Attempting Google Search fallback...
+2025-09-15T05:25:51.320129 INFO: Google Search fallback: searching for 'ajps.12713'
+2025-09-15T05:25:51.351772 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:25:51.359719 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.460966 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.462101 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.553113 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.554276 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.636453 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.637614 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.637972 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: [Errno 32] Broken pipe
+2025-09-15T05:25:51.638017 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.718652 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:51.719859 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:55.608346 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:25:55.608466 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:25:55.608492 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:58.917864 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:25:59.790223 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:25:59.790831 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:02.397190 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:04.277223 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:06.697342 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:08.775106 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:08.857763 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:08.859306 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.065520 INFO: Found Wayback snapshot from 20250510064558: http://web.archive.org/web/20250510064558/https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.312879 INFO: Content is very short (131 words). Likely a teaser.
+2025-09-15T05:26:09.312999 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:09.313049 INFO: Attempting Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.430815 INFO: Found Wayback snapshot: http://web.archive.org/web/20250510064558/https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.677685 INFO: Content is very short (131 words). Likely a teaser.
+2025-09-15T05:26:09.677783 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:09.677818 ERROR: All fetch strategies failed or returned low-quality content for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713. Attempting Google Search fallback...
+2025-09-15T05:26:09.677887 INFO: Google Search fallback: searching for 'ajps.12713'
+2025-09-15T05:26:09.709423 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:26:09.718107 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.812409 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.813492 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.925928 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:09.927179 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:10.012800 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:10.013993 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:10.103834 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: cannot use a string pattern on a bytes-like object
+2025-09-15T05:26:10.104984 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:10.192941 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:10.195164 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:14.478066 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:26:14.478242 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:14.478282 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:17.584195 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:18.466159 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:26:18.466541 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:21.260726 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:24.167995 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:27.397008 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:30.494669 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:30.576699 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:30.577889 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:30.703385 INFO: Found Wayback snapshot from 20250510064558: http://web.archive.org/web/20250510064558/https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:31.050473 INFO: Content is very short (131 words). Likely a teaser.
+2025-09-15T05:26:31.050584 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:31.050702 INFO: Attempting Wayback Machine for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:31.179944 INFO: Found Wayback snapshot: http://web.archive.org/web/20250510064558/https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:31.428765 INFO: Content is very short (131 words). Likely a teaser.
+2025-09-15T05:26:31.428887 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:26:31.428924 ERROR: All fetch strategies failed or returned low-quality content for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713. Attempting Google Search fallback...
+2025-09-15T05:26:31.428987 INFO: Google Search fallback: searching for 'ajps.12713'
+2025-09-15T05:26:31.460697 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:26:31.467917 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713
+2025-09-15T05:26:31.559507 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12713

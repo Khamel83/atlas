@@ -1,0 +1,85 @@
+2025-09-15T07:16:10.501211 INFO: Attempting direct fetch for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.692459 ERROR: Direct fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.694690 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.782423 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.784577 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.874928 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.877140 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:10.965202 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: cannot use a string pattern on a bytes-like object
+2025-09-15T07:16:10.967296 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:11.055720 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:11.057978 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:13.627161 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T07:16:13.627274 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:16:13.627300 INFO: Attempting archive.today for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:16.665890 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:17.538490 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:16:17.539059 INFO: Attempting archive.is for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:20.790667 INFO: Attempting archive.li for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:24.194978 INFO: Attempting archive.fo for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:26.451018 INFO: Attempting archive.ph for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:28.457637 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:28.548045 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:28.550210 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:28.982112 INFO: Found Wayback snapshot from 20230410172431: http://web.archive.org/web/20230410172431/https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:34.872327 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T07:16:34.872449 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:16:34.872475 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:34.991328 INFO: Found Wayback snapshot: http://web.archive.org/web/20230410172431/https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.184574 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T07:16:35.184747 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:16:35.184783 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783. Attempting Google Search fallback...
+2025-09-15T07:16:35.184853 INFO: Google Search fallback: searching for 'how law order creator dick wolf took chicago 1447357783'
+2025-09-15T07:16:35.216963 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:16:35.225125 INFO: Attempting direct fetch for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.306311 ERROR: Direct fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.316892 INFO: Attempting direct fetch for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.402939 ERROR: Direct fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.404628 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.488320 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.490050 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.577700 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.579403 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.663523 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: cannot use a string pattern on a bytes-like object
+2025-09-15T07:16:35.665311 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.749716 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:35.751438 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:40.754402 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T07:16:40.754508 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:16:40.754536 INFO: Attempting archive.today for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:44.999442 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:45.914956 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:16:45.915341 INFO: Attempting archive.is for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:48.263090 INFO: Attempting archive.li for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:50.358186 INFO: Attempting archive.fo for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:53.826370 INFO: Attempting archive.ph for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:55.737176 INFO: Attempting Googlebot spoof for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:55.820537 ERROR: Googlebot spoof failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:55.822042 INFO: Attempting Enhanced Wayback Machine for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:55.952275 INFO: Found Wayback snapshot from 20230410172431: http://web.archive.org/web/20230410172431/https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.150909 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T07:16:56.151045 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:16:56.151071 INFO: Attempting Wayback Machine for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.298963 INFO: Found Wayback snapshot: http://web.archive.org/web/20230410172431/https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.493069 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T07:16:56.493196 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:16:56.493229 ERROR: All fetch strategies failed or returned low-quality content for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783. Attempting Google Search fallback...
+2025-09-15T07:16:56.493298 INFO: Google Search fallback: searching for 'how law order creator dick wolf took chicago 1447357783'
+2025-09-15T07:16:56.524852 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:16:56.532465 INFO: Attempting direct fetch for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.615137 ERROR: Direct fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.616457 INFO: Attempting Reader Mode strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.703891 ERROR: Reader mode fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.706160 INFO: Attempting JS Disabled strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.793824 ERROR: JS disabled fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.795184 INFO: Attempting Refresh Stop strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.885503 ERROR: Refresh stop fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: cannot use a string pattern on a bytes-like object
+2025-09-15T07:16:56.886905 INFO: Attempting Inspect Element strategy for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.971896 ERROR: Inspect element fetch failed for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:16:56.973320 INFO: Attempting removepaywalls.com bypass for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:17:00.467098 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T07:17:00.467208 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:17:00.467235 INFO: Attempting archive.today for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:17:04.938930 INFO: No existing archive found, creating new archive for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783
+2025-09-15T07:17:05.797412 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:17:05.797833 INFO: Attempting archive.is for http://www.wsj.com/articles/how-law-order-creator-dick-wolf-took-chicago-1447357783

@@ -1,0 +1,25 @@
+2025-09-15T01:53:01.621835 INFO: Attempting direct fetch for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:01.742775 ERROR: Direct fetch failed for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:01.744265 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:02.250495 ERROR: Reader mode fetch failed for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html: cannot use a string pattern on a bytes-like object
+2025-09-15T01:53:02.252469 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:02.334520 ERROR: JS disabled fetch failed for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:02.336047 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:02.410097 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html: cannot use a string pattern on a bytes-like object
+2025-09-15T01:53:02.411568 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:02.483951 ERROR: Inspect element fetch failed for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:02.485519 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:04.801120 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:53:04.801226 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:53:04.801252 INFO: Attempting archive.today for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:08.780144 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:09.684948 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:53:09.685108 INFO: Attempting archive.is for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:13.441449 INFO: Attempting archive.li for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:16.938119 INFO: Attempting archive.fo for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:19.240096 INFO: Attempting archive.ph for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:22.998418 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:23.070410 ERROR: Googlebot spoof failed for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:23.072174 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:23.451154 INFO: Found Wayback snapshot from 20250831034223: http://web.archive.org/web/20250831034223/https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html
+2025-09-15T01:53:24.718265 INFO: Successfully fetched https://www.nytimes.com/2018/02/08/arts/jimmy-buffett-does-not-live-the-jimmy-buffett-lifestyle.html using wayback_machine_enhanced

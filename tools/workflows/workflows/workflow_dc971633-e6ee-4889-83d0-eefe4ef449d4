@@ -1,0 +1,148 @@
+2025-09-15T16:03:31.491712 INFO: Attempting direct fetch for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:31.715373 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:03:31.881222 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:03:31.881339 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:31.881379 INFO: Attempting Reader Mode strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:31.954270 ERROR: Reader mode fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:03:31.956509 INFO: Attempting JS Disabled strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:32.087516 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T16:03:32.087659 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:32.087691 INFO: Attempting Refresh Stop strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:32.252376 ERROR: Refresh stop fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:03:32.254472 INFO: Attempting Inspect Element strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:32.424156 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T16:03:32.424263 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:32.424290 INFO: Attempting removepaywalls.com bypass for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:37.488644 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:03:37.488757 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:37.488787 INFO: Attempting archive.today for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:39.417290 INFO: No existing archive found, creating new archive for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:40.289336 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:03:40.290398 INFO: Attempting archive.is for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:42.591149 INFO: Attempting archive.li for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:45.496571 INFO: Attempting archive.fo for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:48.019325 INFO: Attempting archive.ph for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:50.443923 INFO: Attempting Googlebot spoof for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:50.973471 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:03:50.973577 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:50.973643 INFO: Attempting Enhanced Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:51.594332 INFO: Found Wayback snapshot from 20250812084420: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:52.348111 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:03:52.348242 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:52.348270 INFO: Attempting Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:52.464372 INFO: Found Wayback snapshot: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:52.598665 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:03:52.598795 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:52.598836 ERROR: All fetch strategies failed or returned low-quality content for https://ritholtz.com/2020/08/retail-bankruptcies/. Attempting Google Search fallback...
+2025-09-15T16:03:52.598923 INFO: Google Search fallback: searching for 'retail bankruptcies'
+2025-09-15T16:03:52.631326 INFO: Google Search fallback did not find alternative URL
+2025-09-15T16:03:52.638559 INFO: Attempting direct fetch for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:52.770017 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T16:03:52.770168 ERROR: Direct fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: [Errno 32] Broken pipe
+2025-09-15T16:03:52.771421 INFO: Attempting Reader Mode strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:52.844167 ERROR: Reader mode fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:03:52.845796 INFO: Attempting JS Disabled strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:52.974339 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T16:03:52.974451 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:52.974478 INFO: Attempting Refresh Stop strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:53.133014 ERROR: Refresh stop fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:03:53.134807 INFO: Attempting Inspect Element strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:53.303691 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T16:03:53.303796 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:53.303822 INFO: Attempting removepaywalls.com bypass for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:55.844099 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:03:55.844213 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:03:55.844243 INFO: Attempting archive.today for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:57.898774 INFO: No existing archive found, creating new archive for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:03:58.776405 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:03:58.777092 INFO: Attempting archive.is for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:00.981448 INFO: Attempting archive.li for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:04.539723 INFO: Attempting archive.fo for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:06.678602 INFO: Attempting archive.ph for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:08.571199 INFO: Attempting Googlebot spoof for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:08.724131 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:08.724252 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:08.724286 INFO: Attempting Enhanced Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:08.885191 INFO: Found Wayback snapshot from 20250812084420: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:09.026478 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:09.026651 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:09.026688 INFO: Attempting Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:09.150548 INFO: Found Wayback snapshot: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:09.280539 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:09.280688 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:09.280732 ERROR: All fetch strategies failed or returned low-quality content for https://ritholtz.com/2020/08/retail-bankruptcies/. Attempting Google Search fallback...
+2025-09-15T16:04:09.280796 INFO: Google Search fallback: searching for 'retail bankruptcies'
+2025-09-15T16:04:09.313573 INFO: Google Search fallback did not find alternative URL
+2025-09-15T16:04:09.322418 INFO: Attempting direct fetch for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:09.535959 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T16:04:09.539439 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T16:04:09.539514 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:09.539548 INFO: Attempting Reader Mode strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:09.961060 ERROR: Reader mode fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:04:09.962976 INFO: Attempting JS Disabled strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:10.105703 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T16:04:10.105811 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:10.105837 INFO: Attempting Refresh Stop strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:10.266459 ERROR: Refresh stop fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:04:10.268120 INFO: Attempting Inspect Element strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:10.464970 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T16:04:10.465082 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:10.465108 INFO: Attempting removepaywalls.com bypass for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:14.835315 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:04:14.835432 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:14.835458 INFO: Attempting archive.today for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:18.173312 INFO: No existing archive found, creating new archive for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:19.036373 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:04:19.036937 INFO: Attempting archive.is for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:22.688077 INFO: Attempting archive.li for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:26.229866 INFO: Attempting archive.fo for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:29.579992 INFO: Attempting archive.ph for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:32.344492 INFO: Attempting Googlebot spoof for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:32.948226 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:32.948329 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:32.948358 INFO: Attempting Enhanced Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:33.094829 INFO: Found Wayback snapshot from 20250812084420: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:33.235817 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:33.235952 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:33.235994 INFO: Attempting Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:33.367917 INFO: Found Wayback snapshot: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:33.504030 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:33.504152 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:33.512058 INFO: Attempting direct fetch for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:33.651525 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:33.852499 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:33.852620 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:33.852666 INFO: Attempting Reader Mode strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:33.928718 ERROR: Reader mode fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:04:33.931176 INFO: Attempting JS Disabled strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:34.097558 INFO: Paywall phrase 'please enable javascript' detected.
+2025-09-15T16:04:34.097688 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:34.097742 INFO: Attempting Refresh Stop strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:34.196539 ERROR: Refresh stop fetch failed for https://ritholtz.com/2020/08/retail-bankruptcies/: cannot use a string pattern on a bytes-like object
+2025-09-15T16:04:34.198920 INFO: Attempting Inspect Element strategy for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:34.394939 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T16:04:34.395037 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:34.395063 INFO: Attempting removepaywalls.com bypass for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:37.568983 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T16:04:37.569094 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:37.569123 INFO: Attempting archive.today for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:41.099167 INFO: No existing archive found, creating new archive for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:41.976338 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T16:04:41.977163 INFO: Attempting archive.is for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:44.215732 INFO: Attempting archive.li for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:47.126775 INFO: Attempting archive.fo for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:49.442257 INFO: Attempting archive.ph for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:52.971436 INFO: Attempting Googlebot spoof for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:53.157267 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:53.157372 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:53.157407 INFO: Attempting Enhanced Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:53.302712 INFO: Found Wayback snapshot from 20250812084420: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:53.462045 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:53.462147 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:53.462193 INFO: Attempting Wayback Machine for https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:53.604414 INFO: Found Wayback snapshot: http://web.archive.org/web/20250812084420/https://ritholtz.com/2020/08/retail-bankruptcies/
+2025-09-15T16:04:53.791198 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T16:04:53.791305 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T16:04:53.791346 ERROR: All fetch strategies failed or returned low-quality content for https://ritholtz.com/2020/08/retail-bankruptcies/. Attempting Google Search fallback...
+2025-09-15T16:04:53.791409 INFO: Google Search fallback: searching for 'retail bankruptcies'
+2025-09-15T16:04:53.833130 INFO: Google Search fallback did not find alternative URL

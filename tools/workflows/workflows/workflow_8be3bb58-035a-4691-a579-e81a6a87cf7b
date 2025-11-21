@@ -1,0 +1,98 @@
+2025-09-15T09:05:48.349102 INFO: Attempting direct fetch for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:49.805412 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:05:49.813486 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:05:49.813602 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:49.813639 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:50.152894 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:05:50.156156 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:50.925297 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:51.840523 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: cannot use a string pattern on a bytes-like object
+2025-09-15T09:05:51.842727 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:52.790653 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:56.055778 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:05:56.055893 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:05:56.055919 INFO: Attempting archive.today for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:58.513974 INFO: No existing archive found, creating new archive for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:05:59.416040 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:05:59.417071 INFO: Attempting archive.is for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:02.366316 INFO: Attempting archive.li for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:06.215870 INFO: Attempting archive.fo for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:09.775233 INFO: Attempting archive.ph for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:11.942075 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:12.211669 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:06:12.214837 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:31.914276 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0022-006x.71.2.211: No archived snapshots found in any timeframe
+2025-09-15T09:06:31.915729 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:32.040013 ERROR: Wayback Machine failed for https://doi.org/10.1037/0022-006x.71.2.211: No archived snapshots found
+2025-09-15T09:06:32.042333 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0022-006x.71.2.211. Attempting Google Search fallback...
+2025-09-15T09:06:32.043433 INFO: Google Search fallback: searching for '0022 006x.71.2.211'
+2025-09-15T09:06:32.076024 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:06:32.083835 INFO: Attempting direct fetch for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:32.970553 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:06:32.977783 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:06:32.977879 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:06:32.977913 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:33.242536 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:06:33.245893 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:34.285512 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:35.133460 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: cannot use a string pattern on a bytes-like object
+2025-09-15T09:06:35.135725 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:35.919640 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:39.441947 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:06:39.442070 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:06:39.442098 INFO: Attempting archive.today for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:41.102026 INFO: No existing archive found, creating new archive for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:41.965621 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:06:41.966634 INFO: Attempting archive.is for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:45.697969 INFO: Attempting archive.li for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:48.308976 INFO: Attempting archive.fo for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:50.944554 INFO: Attempting archive.ph for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:52.948997 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:53.421266 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:06:53.424649 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:55.234947 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0022-006x.71.2.211: No archived snapshots found in any timeframe
+2025-09-15T09:06:55.236484 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:55.373249 ERROR: Wayback Machine failed for https://doi.org/10.1037/0022-006x.71.2.211: No archived snapshots found
+2025-09-15T09:06:55.375863 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0022-006x.71.2.211. Attempting Google Search fallback...
+2025-09-15T09:06:55.377029 INFO: Google Search fallback: searching for '0022 006x.71.2.211'
+2025-09-15T09:06:55.411858 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:06:55.420499 INFO: Attempting direct fetch for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:56.465398 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:06:56.474401 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:06:56.474520 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:06:56.474554 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:56.760479 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:06:56.763723 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:57.630256 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:58.472350 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: cannot use a string pattern on a bytes-like object
+2025-09-15T09:06:58.474620 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:59.152540 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:59.161325 INFO: Attempting direct fetch for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:06:59.937265 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:06:59.945884 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T09:06:59.945983 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:06:59.946017 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:00.222216 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:07:00.225609 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:01.370324 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:02.273443 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0022-006x.71.2.211: cannot use a string pattern on a bytes-like object
+2025-09-15T09:07:02.276026 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:03.357580 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:07.803980 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:07:07.804929 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:07:07.804978 INFO: Attempting archive.today for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:11.178779 INFO: No existing archive found, creating new archive for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:12.074445 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:07:12.075653 INFO: Attempting archive.is for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:15.185371 INFO: Attempting archive.li for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:17.319798 INFO: Attempting archive.fo for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:20.757232 INFO: Attempting archive.ph for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:24.315710 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:24.582351 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0022-006x.71.2.211: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0022-006X.71.2.211
+2025-09-15T09:07:24.586106 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:26.096052 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0022-006x.71.2.211: No archived snapshots found in any timeframe
+2025-09-15T09:07:26.097394 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0022-006x.71.2.211
+2025-09-15T09:07:26.225336 ERROR: Wayback Machine failed for https://doi.org/10.1037/0022-006x.71.2.211: No archived snapshots found
+2025-09-15T09:07:26.227740 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0022-006x.71.2.211. Attempting Google Search fallback...
+2025-09-15T09:07:26.228963 INFO: Google Search fallback: searching for '0022 006x.71.2.211'
+2025-09-15T09:07:26.262434 INFO: Google Search fallback did not find alternative URL

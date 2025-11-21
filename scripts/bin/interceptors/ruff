@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# Command Interceptor for ruff - Requires Development Gate
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
+# Check for emergency bypass
+if [[ "${DEV_GATE_BYPASS:-}" == "true" ]]; then
+    exec "$(command -v ruff | grep -v interceptors | head -1)" "$@"
+fi
+
+# Check if gate has been passed recently
+if [[ -f "$PROJECT_ROOT/.dev-gate-passed" ]]; then
+    # Check if gate is recent (within last hour)
+    if command -v stat >/dev/null 2>&1; then
+        gate_time=$(stat -f %m "$PROJECT_ROOT/.dev-gate-passed" 2>/dev/null || stat -c %Y "$PROJECT_ROOT/.dev-gate-passed" 2>/dev/null)
+        current_time=$(date +%s)
+        age=$((current_time - gate_time))
+
+        if [[ $age -lt 3600 ]]; then
+            # Gate is recent, allow command
+            exec "$(command -v ruff | grep -v interceptors | head -1)" "$@"
+        fi
+    else
+        # No stat command, just check if file exists
+        exec "$(command -v ruff | grep -v interceptors | head -1)" "$@"
+    fi
+fi
+
+# Gate not passed or stale
+echo -e "\033[0;31m❌ Development environment not ready\033[0m"
+echo -e "\033[0;33mRun: ./bin/dev-gate.sh\033[0m"
+echo
+echo "This command (ruff) is blocked until development environment is validated."
+echo "Emergency bypass: DEV_GATE_BYPASS=true ruff"
+exit 1

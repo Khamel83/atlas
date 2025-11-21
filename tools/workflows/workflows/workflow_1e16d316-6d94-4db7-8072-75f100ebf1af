@@ -1,0 +1,25 @@
+2025-09-14T20:53:16.403987 INFO: Attempting direct fetch for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.603108 ERROR: Direct fetch failed for https://us.macmillan.com/books/9781250125514/thedeathoftheartist: 403 Client Error: Forbidden for url: https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.604213 INFO: Attempting Reader Mode strategy for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.730784 ERROR: Reader mode fetch failed for https://us.macmillan.com/books/9781250125514/thedeathoftheartist: 403 Client Error: Forbidden for url: https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.731898 INFO: Attempting JS Disabled strategy for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.840023 ERROR: JS disabled fetch failed for https://us.macmillan.com/books/9781250125514/thedeathoftheartist: 403 Client Error: Forbidden for url: https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.841132 INFO: Attempting Refresh Stop strategy for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:16.955960 ERROR: Refresh stop fetch failed for https://us.macmillan.com/books/9781250125514/thedeathoftheartist: cannot use a string pattern on a bytes-like object
+2025-09-14T20:53:16.957091 INFO: Attempting Inspect Element strategy for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:17.047637 ERROR: Inspect element fetch failed for https://us.macmillan.com/books/9781250125514/thedeathoftheartist: 403 Client Error: Forbidden for url: https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:17.048737 INFO: Attempting removepaywalls.com bypass for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:20.394649 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:53:20.394757 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:53:20.394785 INFO: Attempting archive.today for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:25.467289 INFO: No existing archive found, creating new archive for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:26.868322 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:53:26.868809 INFO: Attempting archive.is for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:29.013951 INFO: Attempting archive.li for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:32.758870 INFO: Attempting archive.fo for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:36.382606 INFO: Attempting archive.ph for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:40.176078 INFO: Attempting Googlebot spoof for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:40.256182 ERROR: Googlebot spoof failed for https://us.macmillan.com/books/9781250125514/thedeathoftheartist: 403 Client Error: Forbidden for url: https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:40.257848 INFO: Attempting Enhanced Wayback Machine for https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:46.042095 INFO: Found Wayback snapshot from 20231209094420: http://web.archive.org/web/20231209094420/https://us.macmillan.com/books/9781250125514/thedeathoftheartist
+2025-09-14T20:53:46.793294 INFO: Successfully fetched https://us.macmillan.com/books/9781250125514/thedeathoftheartist using wayback_machine_enhanced

@@ -1,0 +1,25 @@
+2025-09-15T10:15:05.256942 INFO: Attempting direct fetch for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:05.434403 ERROR: Direct fetch failed for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:05.434576 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:06.027122 ERROR: Reader mode fetch failed for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html: cannot use a string pattern on a bytes-like object
+2025-09-15T10:15:06.028679 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:06.063832 ERROR: JS disabled fetch failed for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:06.064012 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:06.093123 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html: cannot use a string pattern on a bytes-like object
+2025-09-15T10:15:06.093283 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:06.121773 ERROR: Inspect element fetch failed for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:06.121946 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:08.970368 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:15:08.970475 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:15:08.970502 INFO: Attempting archive.today for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:11.820931 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:12.726909 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:15:12.727291 INFO: Attempting archive.is for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:15.123670 INFO: Attempting archive.li for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:18.339101 INFO: Attempting archive.fo for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:20.671332 INFO: Attempting archive.ph for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:23.451657 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:23.480918 ERROR: Googlebot spoof failed for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:23.481113 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:24.531233 INFO: Found Wayback snapshot from 20250905105215: http://web.archive.org/web/20250905105215/https://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html
+2025-09-15T10:15:26.262711 INFO: Successfully fetched http://www.nytimes.com/2016/01/31/opinion/sunday/a-chance-to-reset-the-republican-race.html using wayback_machine_enhanced

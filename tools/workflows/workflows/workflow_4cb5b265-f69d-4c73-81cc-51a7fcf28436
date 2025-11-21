@@ -1,0 +1,102 @@
+2025-09-15T10:56:57.640829 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:57.726573 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:57.726779 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:58.275630 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:58.277186 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:58.307896 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:58.308099 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:58.338466 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:56:58.338664 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:58.367105 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:56:58.367289 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:02.668295 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:57:02.668409 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:57:02.668439 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:05.939945 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:06.856695 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:57:06.857225 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:09.515837 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:11.652827 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:15.487476 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:17.555982 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:17.613998 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:17.614203 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:58.533817 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T10:57:58.536456 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:58.668908 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: No archived snapshots found
+2025-09-15T10:57:58.671748 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T10:57:58.672308 INFO: Google Search fallback: searching for '12blow.html'
+2025-09-15T10:57:58.716819 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:57:58.728739 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.030122 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.030297 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.769652 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:57:59.771627 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.831996 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.832196 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.896223 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:57:59.896395 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.954634 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:57:59.954826 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:04.364768 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:58:04.364893 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:58:04.364922 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:07.135839 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:08.016362 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:58:08.016852 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:10.519473 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:13.566187 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:15.985009 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:15.994571 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.053971 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.054141 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.697100 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:58:16.698861 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.764383 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.764566 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.826473 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:58:16.826675 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.885119 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:16.885309 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:21.779442 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:58:21.779552 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:58:21.779577 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:24.177099 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:25.048770 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:58:25.049316 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:28.658229 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:30.951393 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:33.521809 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:35.856294 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:35.964319 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:35.964517 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:37.460886 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T10:58:37.462546 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:37.574863 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: No archived snapshots found
+2025-09-15T10:58:37.576520 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T10:58:37.577044 INFO: Google Search fallback: searching for '12blow.html'
+2025-09-15T10:58:37.609357 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:58:37.617288 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:37.676403 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:37.676653 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:37.951893 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:58:37.954546 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:38.017768 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:38.017972 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:38.080694 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:58:38.080876 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:38.142779 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:38.142999 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:41.774627 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:58:41.774729 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:58:41.774756 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:44.336770 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:45.202004 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:58:45.202403 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:47.956243 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:51.386421 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:53.536474 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:57.343273 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:57.415970 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:57.416180 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print
+2025-09-15T10:58:58.903972 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/12/opinion/12blow.html?pagewanted=print: No archived snapshots found in any timeframe

@@ -1,0 +1,29 @@
+2025-09-15T12:25:22.593873 INFO: Attempting direct fetch for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:22.745060 ERROR: Direct fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:22.746266 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:23.600100 ERROR: Reader mode fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:23.609803 INFO: Attempting direct fetch for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:23.726542 ERROR: Direct fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:23.727891 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:24.494087 ERROR: Reader mode fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:24.495636 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:24.616399 ERROR: JS disabled fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:24.617631 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:24.738118 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:24.739358 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:24.855061 ERROR: Inspect element fetch failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:24.856317 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:27.913191 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:25:27.913297 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:27.913324 INFO: Attempting archive.today for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:31.717075 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:32.638487 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:25:32.639186 INFO: Attempting archive.is for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:34.701459 INFO: Attempting archive.li for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:38.234833 INFO: Attempting archive.fo for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:41.826135 INFO: Attempting archive.ph for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:45.225603 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:45.394688 ERROR: Googlebot spoof failed for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:45.396389 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:45.914322 INFO: Found Wayback snapshot from 20250819222503: http://web.archive.org/web/20250819222503/https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html
+2025-09-15T12:25:47.569744 INFO: Successfully fetched https://www.nytimes.com/2020/05/06/dining/canned-tomato-sauce-recipes.html using wayback_machine_enhanced

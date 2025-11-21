@@ -1,0 +1,79 @@
+2025-09-15T14:56:01.823277 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:01.952875 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:01.953066 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:02.609168 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:02.611011 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:02.674481 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:02.682100 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:02.742877 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:02.743059 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:03.254097 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:03.255826 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:03.320462 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:03.320733 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:03.383864 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:03.384044 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:03.443414 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:03.443639 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:06.494233 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:56:06.494374 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:56:06.494430 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:09.151295 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:10.069755 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:56:10.077727 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:13.358027 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:16.193963 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:19.515350 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:22.582433 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:22.643311 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:22.643524 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:28.388187 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T14:56:28.389705 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:28.522350 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T14:56:28.524652 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T14:56:28.525304 INFO: Google Search fallback: searching for '28FOB consumed t.html'
+2025-09-15T14:56:28.557980 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:56:28.567131 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:28.675338 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:28.675537 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:29.310286 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:29.312034 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:29.377056 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:29.377245 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:29.439770 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:29.439969 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:29.497886 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:29.498063 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:32.962108 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:56:32.962206 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:56:32.962236 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:35.374390 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:35.383978 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:35.453082 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:35.453313 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:36.048226 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:36.050933 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:36.113198 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:36.113412 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:36.173171 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T14:56:36.173360 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:36.232305 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:36.232548 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:39.187719 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:56:39.187824 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:56:39.187852 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:41.868743 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:42.755550 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:56:42.756571 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:45.471031 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:47.858503 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:49.813218 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:52.274253 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:52.359516 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:52.359742 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:54.118263 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T14:56:54.120007 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T14:56:54.244759 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T14:56:54.246899 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/28/magazine/28FOB-consumed-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T14:56:54.247500 INFO: Google Search fallback: searching for '28FOB consumed t.html'
+2025-09-15T14:56:54.286952 INFO: Google Search fallback did not find alternative URL

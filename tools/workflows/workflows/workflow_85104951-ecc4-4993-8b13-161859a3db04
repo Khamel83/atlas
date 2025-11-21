@@ -1,0 +1,25 @@
+2025-09-15T07:20:14.879497 INFO: Attempting direct fetch for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.089502 ERROR: Direct fetch failed for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.089777 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.722329 ERROR: Reader mode fetch failed for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:20:15.724916 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.789105 ERROR: JS disabled fetch failed for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.789286 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.859747 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:20:15.859919 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.919290 ERROR: Inspect element fetch failed for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:15.919479 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:19.912073 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:20:19.912185 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:20:19.912212 INFO: Attempting archive.today for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:24.301578 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:25.181174 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:20:25.181568 INFO: Attempting archive.is for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:28.082227 INFO: Attempting archive.li for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:30.099159 INFO: Attempting archive.fo for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:33.937092 INFO: Attempting archive.ph for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:35.974777 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:36.058081 ERROR: Googlebot spoof failed for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:36.058310 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:36.548803 INFO: Found Wayback snapshot from 20250818111657: http://web.archive.org/web/20250818111657/https://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html
+2025-09-15T07:20:39.278808 INFO: Successfully fetched http://www.nytimes.com/2016/11/10/opinion/america-elects-a-bigot.html using wayback_machine_enhanced

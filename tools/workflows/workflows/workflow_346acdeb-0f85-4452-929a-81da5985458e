@@ -1,0 +1,24 @@
+2025-09-15T01:38:11.580256 INFO: Attempting direct fetch for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:11.846380 ERROR: Direct fetch failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: 502 Server Error: Bad Gateway for url: https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:11.847871 INFO: Attempting Reader Mode strategy for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.033747 ERROR: Reader mode fetch failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: 502 Server Error: Bad Gateway for url: https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.037147 INFO: Attempting JS Disabled strategy for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.194997 ERROR: JS disabled fetch failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: 502 Server Error: Bad Gateway for url: https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.196367 INFO: Attempting Refresh Stop strategy for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.366910 ERROR: Refresh stop fetch failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:38:12.368262 INFO: Attempting Inspect Element strategy for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.514999 ERROR: Inspect element fetch failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: 502 Server Error: Bad Gateway for url: https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:12.516370 INFO: Attempting removepaywalls.com bypass for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:15.515962 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:38:15.516064 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:38:15.516090 INFO: Attempting archive.today for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:32.716170 ERROR: archive.today failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: HTTPSConnectionPool(host='archive.today', port=443): Read timed out. (read timeout=15)
+2025-09-15T01:38:32.716276 INFO: Attempting archive.is for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:35.456884 INFO: Attempting archive.li for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:39.216233 INFO: Attempting archive.fo for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:41.766420 INFO: Attempting archive.ph for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:44.063332 INFO: Attempting Googlebot spoof for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:44.208200 ERROR: Googlebot spoof failed for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/: 502 Server Error: Bad Gateway for url: https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:44.209650 INFO: Attempting Enhanced Wayback Machine for https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:44.627941 INFO: Found Wayback snapshot from 20250604031300: http://web.archive.org/web/20250604031300/https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/
+2025-09-15T01:38:45.797800 INFO: Successfully fetched https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/ using wayback_machine_enhanced

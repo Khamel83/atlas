@@ -1,0 +1,9 @@
+[Unit]
+Description=Atlas Universal Content Intelligence System
+Documentation=https://github.com/user/atlas
+Requires=atlas-api.service atlas-manager.service
+Wants=atlas-google-search.service atlas-web.service atlas-health-monitor.service atlas-watchdog.service
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target

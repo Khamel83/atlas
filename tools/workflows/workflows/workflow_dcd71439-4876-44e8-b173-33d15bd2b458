@@ -1,0 +1,83 @@
+2025-09-15T03:26:07.343838 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:07.402942 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:07.403120 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:08.106388 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:26:08.108617 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:08.168065 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:08.168256 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:08.225448 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:26:08.225655 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:08.283384 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:08.283637 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:12.986506 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:26:12.986627 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:26:12.986701 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:16.686249 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:17.556533 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:26:17.556917 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:20.612960 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:24.217091 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:27.613782 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:30.951752 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:31.011551 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:31.011808 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.117389 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:26:45.118906 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.316716 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T03:26:45.318884 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:26:45.319877 INFO: Google Search fallback: searching for '14Hacker t.html'
+2025-09-15T03:26:45.352662 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:26:45.360381 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.490537 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.490752 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.755314 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:26:45.756879 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.815321 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.815508 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.874564 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:26:45.881517 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.944611 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:45.944797 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:46.201877 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:26:46.203475 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:46.264088 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:46.264279 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:46.323752 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:26:46.323919 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:46.381307 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:46.381492 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:48.865535 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:26:48.865658 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:26:48.865689 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:51.768266 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:52.638966 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:26:52.639076 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:55.486707 INFO: Attempting archive.li for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:26:58.702388 INFO: Attempting archive.fo for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:01.226990 INFO: Attempting archive.ph for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:04.756347 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:04.822059 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:04.822257 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:06.445356 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:27:06.446940 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:06.628896 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T03:27:06.631210 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:27:06.632000 INFO: Google Search fallback: searching for '14Hacker t.html'
+2025-09-15T03:27:06.670252 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:27:06.698824 INFO: Attempting direct fetch for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:06.755567 ERROR: Direct fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:06.755805 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:07.011863 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:27:07.013402 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:07.070575 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:07.070803 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:07.136075 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:27:07.136247 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:07.192585 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:07.192805 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:10.573581 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:27:10.573704 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:27:10.573732 INFO: Attempting archive.today for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:14.162882 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T03:27:15.037583 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:27:15.038040 INFO: Attempting archive.is for http://www.nytimes.com/2010/11/14/magazine/14Hacker-t.html?partner=rss&emc=rss&pagewanted=print

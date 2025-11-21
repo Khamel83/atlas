@@ -1,0 +1,79 @@
+2025-09-15T01:20:08.678799 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:09.025516 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:09.154084 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:09.154183 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:09.154221 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:09.580468 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:20:09.582776 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:09.749187 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:09.868939 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:20:09.871052 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:10.114939 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:10.124945 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:10.351162 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:10.480821 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:10.480926 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:10.480966 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:10.574849 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:20:10.577294 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:10.747949 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:10.866806 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:20:10.868892 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:11.210649 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:15.083363 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:20:15.083465 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:15.083496 INFO: Attempting archive.today for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:19.267365 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:20.157400 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:20:20.157934 INFO: Attempting archive.is for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:23.086797 INFO: Attempting archive.li for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:25.048801 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:26.949426 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:29.677267 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:29.865647 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/general/literature/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:29.867252 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:35.498300 INFO: Found Wayback snapshot from 20241205093213: http://web.archive.org/web/20241205093213/https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:36.300123 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:36.300249 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:36.300274 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:36.469703 ERROR: Wayback Machine failed for https://www.theatlantic.com/tag/general/literature/: No archived snapshots found
+2025-09-15T01:20:36.472394 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/general/literature/. Attempting Google Search fallback...
+2025-09-15T01:20:36.472527 INFO: Google Search fallback: searching for 'literature'
+2025-09-15T01:20:36.505219 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:20:36.513320 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:36.730308 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:36.859632 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:36.859747 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:36.859786 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:36.989612 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:20:36.992132 INFO: Attempting JS Disabled strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:37.191296 INFO: Attempting Refresh Stop strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:37.301899 ERROR: Refresh stop fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:20:37.304259 INFO: Attempting Inspect Element strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:37.568371 INFO: Attempting removepaywalls.com bypass for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:41.709933 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:20:41.710057 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:41.710085 INFO: Attempting archive.today for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:45.663939 INFO: No existing archive found, creating new archive for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:46.541255 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:20:46.541701 INFO: Attempting archive.is for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:48.707118 INFO: Attempting archive.li for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:52.363668 INFO: Attempting archive.fo for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:54.856436 INFO: Attempting archive.ph for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:58.119557 INFO: Attempting Googlebot spoof for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:58.346045 ERROR: Googlebot spoof failed for https://www.theatlantic.com/tag/general/literature/: 403 Client Error: Forbidden for url: https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:58.347503 INFO: Attempting Enhanced Wayback Machine for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:58.606173 INFO: Found Wayback snapshot from 20241205093213: http://web.archive.org/web/20241205093213/https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:58.793680 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:58.793797 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:58.793842 INFO: Attempting Wayback Machine for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:58.928172 ERROR: Wayback Machine failed for https://www.theatlantic.com/tag/general/literature/: No archived snapshots found
+2025-09-15T01:20:58.930575 ERROR: All fetch strategies failed or returned low-quality content for https://www.theatlantic.com/tag/general/literature/. Attempting Google Search fallback...
+2025-09-15T01:20:58.931013 INFO: Google Search fallback: searching for 'literature'
+2025-09-15T01:20:58.963365 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:20:58.970801 INFO: Attempting direct fetch for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:59.169291 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:59.293996 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T01:20:59.294113 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:20:59.294156 INFO: Attempting Reader Mode strategy for https://www.theatlantic.com/tag/general/literature/
+2025-09-15T01:20:59.401262 ERROR: Reader mode fetch failed for https://www.theatlantic.com/tag/general/literature/: cannot use a string pattern on a bytes-like object

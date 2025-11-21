@@ -1,0 +1,106 @@
+2025-09-15T21:12:25.921649 INFO: Attempting direct fetch for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:27.235605 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:27.306772 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:27.306885 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:27.306928 INFO: Attempting Reader Mode strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:27.431771 ERROR: Reader mode fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:12:27.434453 INFO: Attempting JS Disabled strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:27.664345 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:27.664456 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:27.664481 INFO: Attempting Refresh Stop strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:27.717297 ERROR: Refresh stop fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:12:27.719829 INFO: Attempting Inspect Element strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:27.984703 INFO: Content is very short (113 words). Likely a teaser.
+2025-09-15T21:12:27.984820 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:27.984846 INFO: Attempting removepaywalls.com bypass for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:32.066901 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T21:12:32.067019 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:32.067046 INFO: Attempting archive.today for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:35.852750 INFO: No existing archive found, creating new archive for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:36.761044 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T21:12:36.761585 INFO: Attempting archive.is for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:39.727576 INFO: Attempting archive.li for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:42.019514 INFO: Attempting archive.fo for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:45.261265 INFO: Attempting archive.ph for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:48.346774 INFO: Attempting Googlebot spoof for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:48.600518 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:48.600672 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:48.600706 INFO: Attempting Enhanced Wayback Machine for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:48.983252 INFO: Found Wayback snapshot from 20250812031028: http://web.archive.org/web/20250812031028/https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.147048 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:50.147157 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:50.147184 INFO: Attempting Wayback Machine for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.272198 INFO: Found Wayback snapshot: http://web.archive.org/web/20250812031028/https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.449048 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:50.449169 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:50.449205 ERROR: All fetch strategies failed or returned low-quality content for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays. Attempting Google Search fallback...
+2025-09-15T21:12:50.449272 INFO: Google Search fallback: searching for 'the biden administration rejected an october proposal for free rapid tests for the holidays'
+2025-09-15T21:12:50.482203 INFO: Google Search fallback did not find alternative URL
+2025-09-15T21:12:50.489834 INFO: Attempting direct fetch for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.590041 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:50.655234 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:50.655361 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:50.655440 INFO: Attempting Reader Mode strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.740444 ERROR: Reader mode fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:12:50.743195 INFO: Attempting JS Disabled strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.912773 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:50.912880 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:50.912905 INFO: Attempting Refresh Stop strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:50.964313 ERROR: Refresh stop fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:12:50.966714 INFO: Attempting Inspect Element strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:51.262188 INFO: Content is very short (113 words). Likely a teaser.
+2025-09-15T21:12:51.262304 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:51.262332 INFO: Attempting removepaywalls.com bypass for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:51.269508 INFO: Attempting direct fetch for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:51.358425 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:51.424494 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:51.424628 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:51.424677 INFO: Attempting Reader Mode strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:51.482986 ERROR: Reader mode fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:12:51.486036 INFO: Attempting JS Disabled strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:51.654829 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:12:51.654941 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:51.654967 INFO: Attempting Refresh Stop strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:51.734336 ERROR: Refresh stop fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:12:51.736794 INFO: Attempting Inspect Element strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:52.001489 INFO: Content is very short (113 words). Likely a teaser.
+2025-09-15T21:12:52.001626 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:52.001657 INFO: Attempting removepaywalls.com bypass for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:12:56.904088 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T21:12:56.904197 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:12:56.904226 INFO: Attempting archive.today for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:01.208153 INFO: No existing archive found, creating new archive for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:02.069430 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T21:13:02.070045 INFO: Attempting archive.is for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:05.106372 INFO: Attempting archive.li for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:07.365469 INFO: Attempting archive.fo for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:10.427378 INFO: Attempting archive.ph for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:13.103067 INFO: Attempting Googlebot spoof for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:13.408252 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:13:13.408388 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:13:13.408421 INFO: Attempting Enhanced Wayback Machine for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:13.565194 INFO: Found Wayback snapshot from 20250812031028: http://web.archive.org/web/20250812031028/https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:13.782499 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:13:13.782652 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:13:13.782682 INFO: Attempting Wayback Machine for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:13.921441 INFO: Found Wayback snapshot: http://web.archive.org/web/20250812031028/https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:14.160895 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:13:14.161027 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:13:14.161065 ERROR: All fetch strategies failed or returned low-quality content for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays. Attempting Google Search fallback...
+2025-09-15T21:13:14.161137 INFO: Google Search fallback: searching for 'the biden administration rejected an october proposal for free rapid tests for the holidays'
+2025-09-15T21:13:14.194433 INFO: Google Search fallback did not find alternative URL
+2025-09-15T21:13:14.202886 INFO: Attempting direct fetch for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:14.456790 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:13:14.524907 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:13:14.525049 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:13:14.525116 INFO: Attempting Reader Mode strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:14.581251 ERROR: Reader mode fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:13:14.584052 INFO: Attempting JS Disabled strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:14.757736 INFO: Paywall element '.paywall' detected.
+2025-09-15T21:13:14.757861 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:13:14.757888 INFO: Attempting Refresh Stop strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:14.815945 ERROR: Refresh stop fetch failed for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays: cannot use a string pattern on a bytes-like object
+2025-09-15T21:13:14.818465 INFO: Attempting Inspect Element strategy for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays
+2025-09-15T21:13:15.094781 INFO: Content is very short (113 words). Likely a teaser.
+2025-09-15T21:13:15.094909 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T21:13:15.094937 INFO: Attempting removepaywalls.com bypass for https://www.vanityfair.com/news/2021/12/the-biden-administration-rejected-an-october-proposal-for-free-rapid-tests-for-the-holidays

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Save Bookmarklet - Easy Installation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #fafafa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .bookmarklet {
+            background: #007AFF;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: 600;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        .bookmarklet:hover {
+            background: #0056CC;
+        }
+        .instructions {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin: 15px 0;
+        }
+        .step-number {
+            background: #007AFF;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+        .code {
+            background: #f1f3f4;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border-left: 4px solid #007AFF;
+        }
+        h1 { color: #1d1d1f; margin-bottom: 10px; }
+        h2 { color: #424245; margin-top: 30px; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; border-radius: 6px; padding: 15px; margin: 20px 0; }
+        .warning { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 6px; padding: 15px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 Atlas Save Bookmarklet</h1>
+        <p><strong>Save any web page to Atlas with one click</strong></p>
+        
+        <h2>🚀 Easy Installation</h2>
+        <div class="instructions">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Drag this button to your bookmarks bar:</strong><br>
+                    <a href="javascript:(function(){var t=document.title;var u=window.location.href;var c=document.body.innerText.substring(0,5000);var x=new XMLHttpRequest();x.open('POST','https://atlas.khamel.com/api/v1/content/save',true);x.setRequestHeader('Content-Type','application/json');x.onreadystatechange=function(){if(x.readyState===4){if(x.status===200||x.status===201){alert('Saved: '+t);}else{alert('Error: '+x.status);}}};x.send(JSON.stringify({title:t,url:u,content:c,content_type:'article'}));})()" class="bookmarklet">📖 Save to Atlas</a>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Make sure Atlas is running:</strong><br>
+                    <code>python atlas_service_manager.py start</code>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>Click the bookmark</strong> on any web page you want to save to Atlas
+                </div>
+            </div>
+        </div>
+
+        <div class="success">
+            <strong>✅ That's it!</strong> The bookmarklet will automatically detect your Atlas port and save the page.
+        </div>
+
+        <h2>🔧 Manual Installation</h2>
+        <p>If dragging doesn't work, manually create a bookmark with this JavaScript:</p>
+        <div class="code">javascript:(function(){var t=document.title;var u=window.location.href;var c=document.body.innerText.substring(0,5000);var x=new XMLHttpRequest();x.open('POST','https://atlas.khamel.com/api/v1/content/save',true);x.setRequestHeader('Content-Type','application/json');x.onreadystatechange=function(){if(x.readyState===4){if(x.status===200||x.status===201){alert('Saved: '+t);}else{alert('Error: '+x.status);}}};x.send(JSON.stringify({title:t,url:u,content:c,content_type:'article'}));})()</div>
+
+        <h2>💡 How It Works</h2>
+        <ul>
+            <li><strong>Captures page title</strong> and URL automatically</li>
+            <li><strong>Extracts text content</strong> (first 10,000 characters)</li>
+            <li><strong>Asks for Atlas URL</strong> (defaults to atlas.khamel.com)</li>
+            <li><strong>Saves to your Atlas database</strong> via REST API</li>
+            <li><strong>Shows confirmation</strong> when successful</li>
+        </ul>
+
+        <div class="warning">
+            <strong>⚠️ Note:</strong> Make sure Atlas is running before using the bookmarklet. The default port is 7444, but you can change it when prompted.
+        </div>
+
+        <h2>🔗 Alternative Capture Methods</h2>
+        <ul>
+            <li><strong>Apple Shortcuts:</strong> "Hey Siri, save to Atlas" (see Mac User Guide)</li>
+            <li><strong>File Drop:</strong> Drop PDFs into ~/Documents/Atlas/articles/</li>
+            <li><strong>Email Forward:</strong> Forward emails to your Atlas inbox</li>
+        </ul>
+    </div>
+</body>
+</html>

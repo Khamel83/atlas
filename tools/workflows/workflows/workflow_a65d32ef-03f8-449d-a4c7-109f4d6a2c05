@@ -1,0 +1,152 @@
+2025-09-14T22:56:00.604889 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:01.122635 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:01.192728 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:01.192878 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:01.192924 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:01.316264 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:56:01.318708 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:01.511409 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:01.511521 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:01.511552 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:01.566012 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:56:01.568434 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:01.820772 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-14T22:56:01.820880 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:01.820908 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:04.027080 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:56:04.027177 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:04.027207 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:08.471906 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:09.356157 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:56:09.356578 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:12.440444 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:16.306355 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:19.170657 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:22.933077 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:23.227734 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:23.227850 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:23.227884 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:24.906997 INFO: Found Wayback snapshot from 20250730065650: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:26.256007 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:26.256125 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:26.256186 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:26.405760 INFO: Found Wayback snapshot: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:26.655658 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:26.657707 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:26.657763 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home. Attempting Google Search fallback...
+2025-09-14T22:56:26.657829 INFO: Google Search fallback: searching for 'herman melville at home'
+2025-09-14T22:56:26.707880 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:56:26.717518 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:26.852862 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:26.932527 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:26.932783 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:26.932840 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:27.004975 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:56:27.011059 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:27.213755 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:27.213868 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:27.213893 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:27.264027 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:56:27.268456 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:27.525107 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-14T22:56:27.525217 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:27.525246 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:31.298745 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:56:31.298864 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:31.298891 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:34.986306 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:35.905448 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:56:35.911103 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:39.152805 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:41.597430 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:45.222020 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:49.092386 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:49.211096 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:49.211194 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:49.211227 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:49.372886 INFO: Found Wayback snapshot from 20250730065650: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:49.684043 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:49.684176 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:49.684203 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:49.830235 INFO: Found Wayback snapshot: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:50.200668 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:50.200866 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:50.200963 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home. Attempting Google Search fallback...
+2025-09-14T22:56:50.201043 INFO: Google Search fallback: searching for 'herman melville at home'
+2025-09-14T22:56:50.235049 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:56:50.244005 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:50.337627 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:50.412136 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:50.412259 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:50.412305 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:50.467789 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:56:50.470712 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:50.650200 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:56:50.650313 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:50.650344 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:50.700315 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:56:50.702680 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:50.959487 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-14T22:56:50.959634 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:50.959664 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:53.847171 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:56:53.847278 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:56:53.847304 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:58.056341 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:56:58.928407 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:56:58.928928 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:01.168806 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:03.529709 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:06.923353 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:09.331118 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:09.621229 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:09.621352 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:09.621385 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:09.914560 INFO: Found Wayback snapshot from 20250730065650: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.125361 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:10.125486 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:10.125513 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.247005 INFO: Found Wayback snapshot: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.469118 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:10.469240 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:10.469276 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home. Attempting Google Search fallback...
+2025-09-14T22:57:10.469339 INFO: Google Search fallback: searching for 'herman melville at home'
+2025-09-14T22:57:10.507908 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:57:10.516437 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.606106 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:10.673405 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:10.673518 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:10.673564 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.725448 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:57:10.727159 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.891022 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:10.891123 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:10.891150 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:10.940334 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home: cannot use a string pattern on a bytes-like object
+2025-09-14T22:57:10.941851 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:11.209872 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-14T22:57:11.209978 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:11.210005 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:16.204701 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:57:16.204811 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:16.204838 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:19.073343 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:19.954534 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:57:19.954974 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:21.839479 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:25.193144 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:28.826031 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:31.247093 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:31.355829 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:31.355945 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:31.355977 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:31.496081 INFO: Found Wayback snapshot from 20250730065650: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:31.681808 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:31.681928 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:31.681952 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:32.035951 INFO: Found Wayback snapshot: http://web.archive.org/web/20250730065650/https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home
+2025-09-14T22:57:32.267876 INFO: Paywall element '.paywall' detected.
+2025-09-14T22:57:32.267992 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:57:32.268032 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2019/07/29/herman-melville-at-home. Attempting Google Search fallback...
+2025-09-14T22:57:32.268102 INFO: Google Search fallback: searching for 'herman melville at home'
+2025-09-14T22:57:32.313795 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,80 @@
+2025-09-15T08:29:55.723092 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:55.835152 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:55.835354 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:56.560674 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:29:56.562877 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:56.624065 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:56.624267 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:56.683479 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:29:56.683683 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:56.742611 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:56.742832 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:29:59.044959 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:29:59.045060 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:29:59.045091 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:02.248288 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:03.144657 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:30:03.145412 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:07.016103 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:09.591542 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:11.946793 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:14.874304 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:14.956542 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:14.956816 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:38.119282 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:30:38.120939 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:38.251068 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T08:30:38.253760 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:30:38.254277 INFO: Google Search fallback: searching for '09Immortality t.html'
+2025-09-15T08:30:38.287076 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:30:38.295778 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:38.366402 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:38.374973 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:38.433130 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:38.433319 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:39.557849 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:30:39.561981 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:39.623793 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:39.623984 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:39.688985 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:30:39.689197 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:39.756847 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:39.757072 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:44.693799 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:30:44.693914 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:30:44.693944 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:47.440182 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:48.354897 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:30:48.355467 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:50.815519 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:53.769831 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:57.088638 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:59.256410 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:59.441084 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:30:59.441281 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:01.091316 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:31:01.092778 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:01.335183 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T08:31:01.336864 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:31:01.337455 INFO: Google Search fallback: searching for '09Immortality t.html'
+2025-09-15T08:31:01.369458 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:31:01.381387 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:01.445360 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:01.445553 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:02.116742 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:31:02.118959 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:02.181834 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:02.182025 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:02.239659 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:31:02.239849 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:02.305553 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:02.305778 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:06.498853 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:31:06.498975 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:31:06.499001 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:09.863154 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:10.731423 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:31:10.734488 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:13.740195 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:16.855307 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print
+2025-09-15T08:31:19.972757 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html?hpw=&pagewanted=print

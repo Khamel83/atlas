@@ -1,0 +1,102 @@
+2025-09-15T13:53:42.123153 INFO: Attempting direct fetch for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:54:12.299761 ERROR: Direct fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T13:54:12.299897 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:54:32.387911 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:54:32.388042 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:54:52.511915 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:54:52.512039 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:54:55.627005 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:15.703342 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:55:15.703474 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:20.538844 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:55:20.539028 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:55:20.539071 INFO: Attempting archive.today for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:23.962864 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:24.864834 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:55:24.865251 INFO: Attempting archive.is for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:28.683106 INFO: Attempting archive.li for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:31.108277 INFO: Attempting archive.fo for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:33.346223 INFO: Attempting archive.ph for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:36.856375 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:51.944986 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T13:55:51.945127 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:57.869857 INFO: Found Wayback snapshot from 20231119200025: http://web.archive.org/web/20231119200025/https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:58.631241 INFO: Paywall phrase 'create a free account' detected.
+2025-09-15T13:55:58.631350 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:55:58.631380 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:55:58.771673 ERROR: Wayback Machine failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: No archived snapshots found
+2025-09-15T13:55:58.773294 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/. Attempting Google Search fallback...
+2025-09-15T13:55:58.773451 INFO: Google Search fallback: searching for 'unemployment claims coronavirus'
+2025-09-15T13:55:58.805040 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:55:58.812545 INFO: Attempting direct fetch for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:56:28.917141 ERROR: Direct fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T13:56:28.917278 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:56:49.022822 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:56:49.023408 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:09.170777 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:57:09.170909 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:12.240320 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:32.364926 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:57:32.365049 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:34.822992 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:57:34.823104 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:57:34.823132 INFO: Attempting archive.today for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:39.116564 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:39.979420 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:57:39.979838 INFO: Attempting archive.is for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:43.849571 INFO: Attempting archive.li for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:46.843528 INFO: Attempting archive.fo for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:48.804075 INFO: Attempting archive.ph for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:57:52.462580 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:58:07.589101 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T13:58:07.596376 INFO: Attempting direct fetch for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:58:37.669359 ERROR: Direct fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T13:58:37.669554 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:58:57.805391 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:58:57.805525 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:17.876713 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:59:17.876858 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:20.981760 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:41.104165 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T13:59:41.104296 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:44.298146 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:59:44.298292 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:59:44.298320 INFO: Attempting archive.today for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:47.796490 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:48.685649 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:59:48.686059 INFO: Attempting archive.is for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:51.609389 INFO: Attempting archive.li for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:55.225648 INFO: Attempting archive.fo for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T13:59:58.245288 INFO: Attempting archive.ph for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:00:01.077885 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:00:16.176962 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)
+2025-09-15T14:00:16.177103 INFO: Attempting Enhanced Wayback Machine for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:00:16.571990 INFO: Found Wayback snapshot from 20231119200025: http://web.archive.org/web/20231119200025/https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:00:16.847934 INFO: Paywall phrase 'create a free account' detected.
+2025-09-15T14:00:16.848057 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:00:16.848087 INFO: Attempting Wayback Machine for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:00:16.993053 ERROR: Wayback Machine failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: No archived snapshots found
+2025-09-15T14:00:16.995130 ERROR: All fetch strategies failed or returned low-quality content for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/. Attempting Google Search fallback...
+2025-09-15T14:00:16.995444 INFO: Google Search fallback: searching for 'unemployment claims coronavirus'
+2025-09-15T14:00:17.027237 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:00:17.034668 INFO: Attempting direct fetch for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:00:47.168455 ERROR: Direct fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=30)
+2025-09-15T14:00:47.168635 INFO: Attempting Reader Mode strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:07.259068 ERROR: Reader mode fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T14:01:07.259226 INFO: Attempting JS Disabled strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:27.336823 ERROR: JS disabled fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T14:01:27.336978 INFO: Attempting Refresh Stop strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:30.400740 INFO: Attempting Inspect Element strategy for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:50.478937 ERROR: Inspect element fetch failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=20)
+2025-09-15T14:01:50.479053 INFO: Attempting removepaywalls.com bypass for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:53.290986 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T14:01:53.291100 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:01:53.291128 INFO: Attempting archive.today for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:56.945476 INFO: No existing archive found, creating new archive for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:01:57.814505 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:01:57.814944 INFO: Attempting archive.is for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:02:01.733709 INFO: Attempting archive.li for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:02:03.789747 INFO: Attempting archive.fo for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:02:06.043348 INFO: Attempting archive.ph for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:02:09.151486 INFO: Attempting Googlebot spoof for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/
+2025-09-15T14:02:24.277883 ERROR: Googlebot spoof failed for https://www.washingtonpost.com/business/2020/05/28/unemployment-claims-coronavirus/: HTTPSConnectionPool(host='www.washingtonpost.com', port=443): Read timed out. (read timeout=15)

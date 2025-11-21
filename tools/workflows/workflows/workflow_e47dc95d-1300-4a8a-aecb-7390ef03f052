@@ -1,0 +1,128 @@
+2025-09-15T07:01:54.863547 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:01:55.337737 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:01:55.730246 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:01:55.730342 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:01:55.730391 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:01:55.932063 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:01:55.934429 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:01:55.934888 ERROR: JS disabled fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: [Errno 32] Broken pipe
+2025-09-15T07:01:55.934949 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:01:56.123314 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:01:56.126944 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:01:56.673697 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:01:56.673797 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:01:56.673824 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:01.474985 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:02:01.475104 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:01.475135 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:04.222447 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:05.094052 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:02:05.094939 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:07.628062 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:11.288899 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:14.882280 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:17.733634 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:18.156365 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:02:18.156480 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:18.156531 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:30.901207 INFO: Found Wayback snapshot from 20240520175009: http://web.archive.org/web/20240520175009/https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:32.390790 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T07:02:32.390909 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:32.390953 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:32.515576 ERROR: Wayback Machine failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: No archived snapshots found
+2025-09-15T07:02:32.518123 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/. Attempting Google Search fallback...
+2025-09-15T07:02:32.518251 INFO: Google Search fallback: searching for 'ucla bruins college football'
+2025-09-15T07:02:32.551872 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:02:32.560478 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:32.957414 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:02:33.196695 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:02:33.196813 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:33.196858 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:33.389318 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:02:33.391809 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:33.726001 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:02:33.726125 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:33.726153 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:33.904119 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:02:33.907138 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:34.430165 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:02:34.430262 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:34.430290 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:39.323245 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:02:39.323354 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:39.323381 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:42.810629 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:43.683158 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:02:43.684190 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:47.331637 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:49.255333 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:52.502786 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:55.691647 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:56.279949 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:02:56.280070 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:56.280103 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:57.788961 INFO: Found Wayback snapshot from 20240520175009: http://web.archive.org/web/20240520175009/https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:58.093652 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T07:02:58.093800 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:58.093826 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:58.093890 ERROR: Wayback Machine failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: [Errno 32] Broken pipe
+2025-09-15T07:02:58.093935 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/. Attempting Google Search fallback...
+2025-09-15T07:02:58.093996 INFO: Google Search fallback: searching for 'ucla bruins college football'
+2025-09-15T07:02:58.127129 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:02:58.134943 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:58.539510 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:02:58.784079 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:02:58.784188 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:58.784232 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:58.970756 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:02:58.973086 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:59.308503 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:02:59.308639 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:02:59.308671 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:02:59.487361 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:02:59.490110 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:00.045858 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:03:00.045957 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:00.045984 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:03.812776 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:03:03.812888 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:03.812915 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:07.254053 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:08.140430 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:03:08.141411 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:10.079056 INFO: Attempting archive.li for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:12.002144 INFO: Attempting archive.fo for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:15.021258 INFO: Attempting archive.ph for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:18.513438 INFO: Attempting Googlebot spoof for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:18.931719 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:03:18.931828 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:18.931864 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:19.500250 INFO: Found Wayback snapshot from 20240520175009: http://web.archive.org/web/20240520175009/https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:19.795149 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T07:03:19.795265 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:19.795292 INFO: Attempting Wayback Machine for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:19.936621 ERROR: Wayback Machine failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: No archived snapshots found
+2025-09-15T07:03:19.939247 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/. Attempting Google Search fallback...
+2025-09-15T07:03:19.939386 INFO: Google Search fallback: searching for 'ucla bruins college football'
+2025-09-15T07:03:19.972076 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:03:19.979434 INFO: Attempting direct fetch for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:20.406175 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:03:20.785669 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T07:03:20.785785 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:20.785835 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:20.978478 ERROR: Reader mode fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:03:20.980773 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:21.314185 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:03:21.314295 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:21.314325 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:21.493022 ERROR: Refresh stop fetch failed for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/: cannot use a string pattern on a bytes-like object
+2025-09-15T07:03:21.495555 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:22.010812 INFO: Content is very short (20 words). Likely a teaser.
+2025-09-15T07:03:22.010936 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:22.010966 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:26.072247 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:03:26.072360 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:03:26.072389 INFO: Attempting archive.today for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:29.332315 INFO: No existing archive found, creating new archive for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/
+2025-09-15T07:03:30.212168 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:03:30.213055 INFO: Attempting archive.is for https://www.nytimes.com/athletic/college-football/team/ucla-bruins-college-football/

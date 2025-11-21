@@ -1,0 +1,139 @@
+2025-09-15T08:07:43.126897 INFO: Attempting direct fetch for https://www.wearebodypolitic.com/
+2025-09-15T08:07:43.517728 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:07:43.642070 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:07:43.642180 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:07:43.642219 INFO: Attempting Reader Mode strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:07:43.784396 ERROR: Reader mode fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:07:43.786022 INFO: Attempting JS Disabled strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:07:44.026858 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:07:44.026964 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:07:44.026992 INFO: Attempting Refresh Stop strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:07:44.183092 ERROR: Refresh stop fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:07:44.184843 INFO: Attempting Inspect Element strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:07:44.427824 INFO: Attempting removepaywalls.com bypass for https://www.wearebodypolitic.com/
+2025-09-15T08:07:48.020685 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:07:48.020792 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:07:48.020819 INFO: Attempting archive.today for https://www.wearebodypolitic.com/
+2025-09-15T08:07:52.643551 INFO: No existing archive found, creating new archive for https://www.wearebodypolitic.com/
+2025-09-15T08:07:53.539316 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:07:53.539482 INFO: Attempting archive.is for https://www.wearebodypolitic.com/
+2025-09-15T08:07:55.887834 INFO: Attempting archive.li for https://www.wearebodypolitic.com/
+2025-09-15T08:07:59.468612 INFO: Attempting archive.fo for https://www.wearebodypolitic.com/
+2025-09-15T08:08:02.874897 INFO: Attempting archive.ph for https://www.wearebodypolitic.com/
+2025-09-15T08:08:05.759346 INFO: Attempting Googlebot spoof for https://www.wearebodypolitic.com/
+2025-09-15T08:08:05.890142 ERROR: Googlebot spoof failed for https://www.wearebodypolitic.com/: 403 Client Error: Forbidden for url: https://www.wearebodypolitic.com/
+2025-09-15T08:08:05.891349 INFO: Attempting Enhanced Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:08:06.361708 INFO: Found Wayback snapshot from 20250910235813: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:08:09.422278 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:09.422402 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:09.422430 INFO: Attempting Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:08:09.552671 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:08:09.730374 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:09.730491 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:09.730525 ERROR: All fetch strategies failed or returned low-quality content for https://www.wearebodypolitic.com/. Attempting Google Search fallback...
+2025-09-15T08:08:09.730608 INFO: Google Search fallback: searching for 'article www.wearebodypolitic.com'
+2025-09-15T08:08:09.761864 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:08:09.769101 INFO: Attempting direct fetch for https://www.wearebodypolitic.com/
+2025-09-15T08:08:10.040572 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:10.262963 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:10.263091 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:10.263129 INFO: Attempting Reader Mode strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:10.405432 ERROR: Reader mode fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:08:10.407639 INFO: Attempting JS Disabled strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:10.659049 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:10.659143 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:10.659170 INFO: Attempting Refresh Stop strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:10.823691 ERROR: Refresh stop fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:08:10.826069 INFO: Attempting Inspect Element strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:11.072518 INFO: Attempting removepaywalls.com bypass for https://www.wearebodypolitic.com/
+2025-09-15T08:08:14.005629 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:08:14.005740 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:14.005768 INFO: Attempting archive.today for https://www.wearebodypolitic.com/
+2025-09-15T08:08:17.022968 INFO: No existing archive found, creating new archive for https://www.wearebodypolitic.com/
+2025-09-15T08:08:17.956124 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:08:17.956547 INFO: Attempting archive.is for https://www.wearebodypolitic.com/
+2025-09-15T08:08:21.714115 INFO: Attempting archive.li for https://www.wearebodypolitic.com/
+2025-09-15T08:08:24.281235 INFO: Attempting archive.fo for https://www.wearebodypolitic.com/
+2025-09-15T08:08:27.733148 INFO: Attempting archive.ph for https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.124912 INFO: Attempting Googlebot spoof for https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.261409 ERROR: Googlebot spoof failed for https://www.wearebodypolitic.com/: 403 Client Error: Forbidden for url: https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.262918 INFO: Attempting Enhanced Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.442295 INFO: Found Wayback snapshot from 20250910235813: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.735333 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:31.735540 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:31.735569 INFO: Attempting Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.885553 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:08:31.885727 ERROR: Wayback Machine failed for https://www.wearebodypolitic.com/: [Errno 32] Broken pipe
+2025-09-15T08:08:31.890228 ERROR: All fetch strategies failed or returned low-quality content for https://www.wearebodypolitic.com/. Attempting Google Search fallback...
+2025-09-15T08:08:31.890350 INFO: Google Search fallback: searching for 'article www.wearebodypolitic.com'
+2025-09-15T08:08:31.938471 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:08:31.948191 INFO: Attempting direct fetch for https://www.wearebodypolitic.com/
+2025-09-15T08:08:32.244285 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:32.371144 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:32.371249 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:32.371288 INFO: Attempting Reader Mode strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:32.513656 ERROR: Reader mode fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:08:32.515639 INFO: Attempting JS Disabled strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:32.757737 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:32.757849 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:32.757881 INFO: Attempting Refresh Stop strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:32.911269 ERROR: Refresh stop fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:08:32.913269 INFO: Attempting Inspect Element strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:33.157807 INFO: Attempting removepaywalls.com bypass for https://www.wearebodypolitic.com/
+2025-09-15T08:08:35.605948 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:08:35.606059 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:35.606087 INFO: Attempting archive.today for https://www.wearebodypolitic.com/
+2025-09-15T08:08:39.103513 INFO: No existing archive found, creating new archive for https://www.wearebodypolitic.com/
+2025-09-15T08:08:39.994940 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:08:39.995354 INFO: Attempting archive.is for https://www.wearebodypolitic.com/
+2025-09-15T08:08:41.929078 INFO: Attempting archive.li for https://www.wearebodypolitic.com/
+2025-09-15T08:08:45.429748 INFO: Attempting archive.fo for https://www.wearebodypolitic.com/
+2025-09-15T08:08:47.841964 INFO: Attempting archive.ph for https://www.wearebodypolitic.com/
+2025-09-15T08:08:51.183582 INFO: Attempting Googlebot spoof for https://www.wearebodypolitic.com/
+2025-09-15T08:08:51.304518 ERROR: Googlebot spoof failed for https://www.wearebodypolitic.com/: 403 Client Error: Forbidden for url: https://www.wearebodypolitic.com/
+2025-09-15T08:08:51.307083 INFO: Attempting Enhanced Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:08:51.472036 INFO: Found Wayback snapshot from 20250910235813: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:08:51.705218 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:51.705325 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:51.705353 INFO: Attempting Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:08:51.843632 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:08:52.101852 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:52.101981 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:52.102017 ERROR: All fetch strategies failed or returned low-quality content for https://www.wearebodypolitic.com/. Attempting Google Search fallback...
+2025-09-15T08:08:52.102077 INFO: Google Search fallback: searching for 'article www.wearebodypolitic.com'
+2025-09-15T08:08:52.134858 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:08:52.145509 INFO: Attempting direct fetch for https://www.wearebodypolitic.com/
+2025-09-15T08:08:52.439730 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:52.595668 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:52.595826 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:52.595874 INFO: Attempting Reader Mode strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:52.756647 ERROR: Reader mode fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:08:52.760427 INFO: Attempting JS Disabled strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:53.167823 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:08:53.167938 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:53.167977 INFO: Attempting Refresh Stop strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:53.327083 ERROR: Refresh stop fetch failed for https://www.wearebodypolitic.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:08:53.329714 INFO: Attempting Inspect Element strategy for https://www.wearebodypolitic.com/
+2025-09-15T08:08:53.571895 INFO: Attempting removepaywalls.com bypass for https://www.wearebodypolitic.com/
+2025-09-15T08:08:56.842394 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:08:56.842507 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:08:56.842532 INFO: Attempting archive.today for https://www.wearebodypolitic.com/
+2025-09-15T08:09:00.444955 INFO: No existing archive found, creating new archive for https://www.wearebodypolitic.com/
+2025-09-15T08:09:01.374005 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:09:01.374495 INFO: Attempting archive.is for https://www.wearebodypolitic.com/
+2025-09-15T08:09:04.624271 INFO: Attempting archive.li for https://www.wearebodypolitic.com/
+2025-09-15T08:09:08.092042 INFO: Attempting archive.fo for https://www.wearebodypolitic.com/
+2025-09-15T08:09:10.560995 INFO: Attempting archive.ph for https://www.wearebodypolitic.com/
+2025-09-15T08:09:12.897194 INFO: Attempting Googlebot spoof for https://www.wearebodypolitic.com/
+2025-09-15T08:09:13.036157 ERROR: Googlebot spoof failed for https://www.wearebodypolitic.com/: 403 Client Error: Forbidden for url: https://www.wearebodypolitic.com/
+2025-09-15T08:09:13.037694 INFO: Attempting Enhanced Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:09:13.177131 INFO: Found Wayback snapshot from 20250910235813: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:09:13.385999 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:09:13.386124 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:13.386150 INFO: Attempting Wayback Machine for https://www.wearebodypolitic.com/
+2025-09-15T08:09:13.508972 INFO: Found Wayback snapshot: http://web.archive.org/web/20250910235813/https://www.wearebodypolitic.com/
+2025-09-15T08:09:13.691993 INFO: Content is very short (109 words). Likely a teaser.
+2025-09-15T08:09:13.692111 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:09:13.692143 ERROR: All fetch strategies failed or returned low-quality content for https://www.wearebodypolitic.com/. Attempting Google Search fallback...
+2025-09-15T08:09:13.692205 INFO: Google Search fallback: searching for 'article www.wearebodypolitic.com'
+2025-09-15T08:09:13.724143 INFO: Google Search fallback did not find alternative URL

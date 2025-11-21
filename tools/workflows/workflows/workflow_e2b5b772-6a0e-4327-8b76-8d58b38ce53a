@@ -1,0 +1,104 @@
+2025-09-15T01:10:10.818981 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:10.961400 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:10.961576 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:11.562242 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:10:11.563802 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:11.624492 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:11.624729 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:11.682354 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:10:11.682560 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:11.739925 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:11.740090 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:16.362352 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:10:16.362807 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:10:16.363023 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:19.895379 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:20.767043 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:10:20.767782 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:23.253912 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:26.020171 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:28.799064 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:31.016944 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:31.077385 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:31.077746 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:48.717781 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:10:48.719084 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:48.855794 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: No archived snapshots found
+2025-09-15T01:10:48.857671 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:10:48.858289 INFO: Google Search fallback: searching for '14rubinstein.html'
+2025-09-15T01:10:48.890824 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:10:48.898794 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:48.980113 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:48.980295 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:49.626001 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:10:49.627433 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:49.689239 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:49.689404 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:49.748499 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:10:49.748735 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:49.806869 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:49.807037 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:54.118716 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:10:54.118822 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:10:54.118850 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:57.568938 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:10:58.454407 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:10:58.454669 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:01.679584 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:04.693617 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:08.020916 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.336512 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.442457 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.442704 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.442832 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T01:11:11.442879 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.588342 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: No archived snapshots found
+2025-09-15T01:11:11.590274 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:11:11.591040 INFO: Google Search fallback: searching for '14rubinstein.html'
+2025-09-15T01:11:11.623089 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:11:11.631376 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.689008 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:11.689197 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:12.330560 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:11:12.332113 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:12.391538 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:12.391738 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:12.449678 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:11:12.449845 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:12.507572 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:12.507777 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:15.610329 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:11:15.610439 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:11:15.610465 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:17.277116 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:18.180223 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:11:18.180775 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:20.689810 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:23.721034 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:27.267683 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:29.708353 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:29.767205 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:29.767452 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.031400 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T01:11:31.032719 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.153822 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: No archived snapshots found
+2025-09-15T01:11:31.155726 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T01:11:31.156485 INFO: Google Search fallback: searching for '14rubinstein.html'
+2025-09-15T01:11:31.188474 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:11:31.196192 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.253656 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.253853 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.757795 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:11:31.759235 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.817816 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.817992 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.876319 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T01:11:31.876482 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.938870 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:31.939044 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:35.408185 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:11:35.408297 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:11:35.408323 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:37.890678 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print
+2025-09-15T01:11:38.779659 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:11:38.780077 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/14/opinion/14rubinstein.html?pagewanted=print

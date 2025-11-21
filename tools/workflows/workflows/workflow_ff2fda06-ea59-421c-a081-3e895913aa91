@@ -1,0 +1,107 @@
+2025-09-15T10:24:12.571227 INFO: Attempting direct fetch for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:13.742404 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:13.826203 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:13.826317 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:13.826356 INFO: Attempting Reader Mode strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:14.285565 ERROR: Reader mode fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:24:14.287926 INFO: Attempting JS Disabled strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:15.078284 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:15.078393 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:15.078418 INFO: Attempting Refresh Stop strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:16.086131 ERROR: Refresh stop fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:24:16.088291 INFO: Attempting Inspect Element strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:16.777078 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:16.777183 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:16.777210 INFO: Attempting removepaywalls.com bypass for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:19.731837 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:24:19.731937 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:19.731967 INFO: Attempting archive.today for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:22.728311 INFO: No existing archive found, creating new archive for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:23.602351 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:24:23.603129 INFO: Attempting archive.is for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:25.835798 INFO: Attempting archive.li for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:27.803149 INFO: Attempting archive.fo for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:30.745562 INFO: Attempting archive.ph for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:34.387611 INFO: Attempting Googlebot spoof for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:34.602183 ERROR: Googlebot spoof failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: 403 Client Error: Forbidden for url: https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:34.604190 INFO: Attempting Enhanced Wayback Machine for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:35.184275 INFO: Found Wayback snapshot from 20241225183231: http://web.archive.org/web/20241225183231/https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:36.904486 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:36.904627 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:36.904658 INFO: Attempting Wayback Machine for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:37.056917 INFO: Found Wayback snapshot: http://web.archive.org/web/20241225183231/https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:37.222416 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:37.222523 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:37.222559 ERROR: All fetch strategies failed or returned low-quality content for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers. Attempting Google Search fallback...
+2025-09-15T10:24:37.222716 INFO: Google Search fallback: searching for 'india colonial rule 1700 1885 douglas peers'
+2025-09-15T10:24:37.261838 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:24:37.276476 INFO: Attempting direct fetch for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:37.808566 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:37.893382 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:37.893485 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:37.893529 INFO: Attempting Reader Mode strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:38.295827 ERROR: Reader mode fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:24:38.298035 INFO: Attempting JS Disabled strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:39.045294 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:39.045410 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:39.045436 INFO: Attempting Refresh Stop strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:40.200027 ERROR: Refresh stop fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:24:40.202010 INFO: Attempting Inspect Element strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:40.916136 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:40.916244 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:40.916272 INFO: Attempting removepaywalls.com bypass for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:40.923430 INFO: Attempting direct fetch for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:41.482580 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:41.566142 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:41.566268 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:41.566307 INFO: Attempting Reader Mode strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:41.997534 ERROR: Reader mode fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:24:41.999862 INFO: Attempting JS Disabled strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:42.570947 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:42.571052 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:42.571080 INFO: Attempting Refresh Stop strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:43.748882 ERROR: Refresh stop fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:24:43.750886 INFO: Attempting Inspect Element strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:44.428605 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:24:44.428720 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:44.428747 INFO: Attempting removepaywalls.com bypass for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:47.967039 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:24:47.967139 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:24:47.967171 INFO: Attempting archive.today for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:49.744554 INFO: No existing archive found, creating new archive for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:50.604390 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:24:50.605135 INFO: Attempting archive.is for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:54.162198 INFO: Attempting archive.li for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:57.765216 INFO: Attempting archive.fo for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:24:59.739644 INFO: Attempting archive.ph for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:01.774223 INFO: Attempting Googlebot spoof for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:01.875571 ERROR: Googlebot spoof failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: 403 Client Error: Forbidden for url: https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:01.877547 INFO: Attempting Enhanced Wayback Machine for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:02.009316 INFO: Found Wayback snapshot from 20241225183231: http://web.archive.org/web/20241225183231/https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:02.179290 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:25:02.179447 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:25:02.179477 INFO: Attempting Wayback Machine for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:03.119281 INFO: Found Wayback snapshot: http://web.archive.org/web/20241225183231/https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:03.280475 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:25:03.280651 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:25:03.280691 ERROR: All fetch strategies failed or returned low-quality content for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers. Attempting Google Search fallback...
+2025-09-15T10:25:03.280762 INFO: Google Search fallback: searching for 'india colonial rule 1700 1885 douglas peers'
+2025-09-15T10:25:03.313227 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:25:03.323920 INFO: Attempting direct fetch for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:04.172967 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:25:04.253408 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:25:04.253528 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:25:04.253566 INFO: Attempting Reader Mode strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:04.658972 ERROR: Reader mode fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:25:04.661200 INFO: Attempting JS Disabled strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:05.517292 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:25:05.517390 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:25:05.517415 INFO: Attempting Refresh Stop strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:06.517345 ERROR: Refresh stop fetch failed for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers: cannot use a string pattern on a bytes-like object
+2025-09-15T10:25:06.519712 INFO: Attempting Inspect Element strategy for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:07.306193 INFO: Content is very short (134 words). Likely a teaser.
+2025-09-15T10:25:07.306301 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:25:07.306327 INFO: Attempting removepaywalls.com bypass for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers
+2025-09-15T10:25:11.213902 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:25:11.214013 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:25:11.214040 INFO: Attempting archive.today for https://www.taylorfrancis.com/books/mono/10.4324/9781315840437/india-colonial-rule-1700-1885-douglas-peers

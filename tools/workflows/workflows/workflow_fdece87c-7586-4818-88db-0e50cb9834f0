@@ -1,0 +1,102 @@
+2025-09-14T20:25:45.489397 INFO: Attempting direct fetch for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:45.774686 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:25:45.980318 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:25:45.980438 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:45.980480 INFO: Attempting Reader Mode strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:46.307027 ERROR: Reader mode fetch failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:25:46.309511 INFO: Attempting JS Disabled strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:46.672367 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:25:46.672480 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:46.672508 INFO: Attempting Refresh Stop strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:47.056270 ERROR: Refresh stop fetch failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:25:47.058518 INFO: Attempting Inspect Element strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:47.588716 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:25:47.588820 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:47.588846 INFO: Attempting removepaywalls.com bypass for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:51.790449 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:25:51.790562 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:25:51.790624 INFO: Attempting archive.today for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:53.686381 INFO: No existing archive found, creating new archive for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:54.552201 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:25:54.552962 INFO: Attempting archive.is for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:25:58.275964 INFO: Attempting archive.li for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:00.738373 INFO: Attempting archive.fo for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:03.677410 INFO: Attempting archive.ph for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:06.131839 INFO: Attempting Googlebot spoof for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:06.502926 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:06.503040 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:06.503067 INFO: Attempting Enhanced Wayback Machine for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:12.847466 ERROR: Enhanced Wayback Machine failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: No archived snapshots found in any timeframe
+2025-09-14T20:26:12.849269 INFO: Attempting Wayback Machine for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:13.018322 ERROR: Wayback Machine failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: No archived snapshots found
+2025-09-14T20:26:13.020224 ERROR: All fetch strategies failed or returned low-quality content for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false. Attempting Google Search fallback...
+2025-09-14T20:26:13.020812 INFO: Google Search fallback: searching for 'books'
+2025-09-14T20:26:13.057839 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:26:13.065998 INFO: Attempting direct fetch for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:13.326504 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:13.373232 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:13.373336 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:13.373373 INFO: Attempting Reader Mode strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:13.679902 ERROR: Reader mode fetch failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:26:13.682307 INFO: Attempting JS Disabled strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:14.199272 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:14.199376 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:14.199402 INFO: Attempting Refresh Stop strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:14.584578 ERROR: Refresh stop fetch failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:26:14.586811 INFO: Attempting Inspect Element strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:15.132432 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:15.132529 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:15.132561 INFO: Attempting removepaywalls.com bypass for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:20.121547 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:26:20.121683 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:20.121712 INFO: Attempting archive.today for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:22.242690 INFO: No existing archive found, creating new archive for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:23.129729 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:26:23.130459 INFO: Attempting archive.is for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:26.043634 INFO: Attempting archive.li for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:29.775965 INFO: Attempting archive.fo for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:32.960687 INFO: Attempting archive.ph for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:36.365735 INFO: Attempting Googlebot spoof for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:36.745389 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:36.745501 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:36.745542 INFO: Attempting Enhanced Wayback Machine for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:38.177103 ERROR: Enhanced Wayback Machine failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: No archived snapshots found in any timeframe
+2025-09-14T20:26:38.178745 INFO: Attempting Wayback Machine for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:38.340670 ERROR: Wayback Machine failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: No archived snapshots found
+2025-09-14T20:26:38.342622 ERROR: All fetch strategies failed or returned low-quality content for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false. Attempting Google Search fallback...
+2025-09-14T20:26:38.343301 INFO: Google Search fallback: searching for 'books'
+2025-09-14T20:26:38.378837 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:26:38.387242 INFO: Attempting direct fetch for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:38.815193 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:38.859101 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:38.859214 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:38.859253 INFO: Attempting Reader Mode strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:39.198481 ERROR: Reader mode fetch failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:26:39.201386 INFO: Attempting JS Disabled strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:39.543445 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:39.543551 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:39.543579 INFO: Attempting Refresh Stop strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:39.921188 ERROR: Refresh stop fetch failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: cannot use a string pattern on a bytes-like object
+2025-09-14T20:26:39.923329 INFO: Attempting Inspect Element strategy for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:40.455880 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:40.455985 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:40.456013 INFO: Attempting removepaywalls.com bypass for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:45.598451 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:26:45.598560 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:45.598605 INFO: Attempting archive.today for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:47.634361 INFO: No existing archive found, creating new archive for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:48.492388 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:26:48.492952 INFO: Attempting archive.is for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:50.484375 INFO: Attempting archive.li for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:52.485910 INFO: Attempting archive.fo for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:55.371905 INFO: Attempting archive.ph for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:57.725245 INFO: Attempting Googlebot spoof for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:58.084009 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T20:26:58.084097 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:26:58.084124 INFO: Attempting Enhanced Wayback Machine for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:59.290722 ERROR: Enhanced Wayback Machine failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: No archived snapshots found in any timeframe
+2025-09-14T20:26:59.292620 INFO: Attempting Wayback Machine for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false
+2025-09-14T20:26:59.424271 ERROR: Wayback Machine failed for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false: No archived snapshots found
+2025-09-14T20:26:59.426116 ERROR: All fetch strategies failed or returned low-quality content for https://books.google.ca/books?id=RAON5AW4yUEC&pg=PA118&redir_esc=y#v=onepage&q&f=false. Attempting Google Search fallback...
+2025-09-14T20:26:59.426708 INFO: Google Search fallback: searching for 'books'
+2025-09-14T20:26:59.459816 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,258 @@
+# Atlas Observability Configuration
+# Comprehensive monitoring, logging, metrics, and alerting settings
+
+# Metrics Collection Configuration
+metrics:
+  collection_interval: 60  # seconds between metric collections
+  retention_period: 7  # days to keep metric history
+  prometheus_export:
+    enabled: true
+    endpoint: "/metrics"
+    port: 8081
+
+  # Core metrics to collect
+  core_metrics:
+    - name: atlas_queue_pending_total
+      type: gauge
+      help: "Number of pending tasks in queue"
+    - name: atlas_queue_processing_total
+      type: gauge
+      help: "Number of tasks currently processing"
+    - name: atlas_transcriptions_total
+      type: counter
+      help: "Total number of transcriptions processed"
+    - name: atlas_transcription_rate
+      type: gauge
+      help: "Transcriptions processed per minute"
+    - name: atlas_system_uptime_seconds
+      type: gauge
+      help: "System uptime in seconds"
+    - name: atlas_memory_usage_bytes
+      type: gauge
+      help: "Memory usage in bytes"
+    - name: atlas_disk_free_bytes
+      type: gauge
+      help: "Free disk space in bytes"
+    - name: atlas_error_rate
+      type: gauge
+      help: "Error rate percentage"
+    - name: atlas_circuit_breaker_open
+      type: gauge
+      help: "Circuit breaker status (1=open, 0=closed)"
+
+# Alerting Configuration
+alerting:
+  check_interval: 30  # seconds between alert checks
+  max_concurrent_checks: 10
+  alert_history_size: 1000
+  log_level: INFO
+
+  # Default alert channels
+  default_channels: ["log"]
+
+  # Alert severity levels
+  severity_levels:
+    critical:
+      color: "#ff0000"
+      escalation_delay: 300  # 5 minutes
+    warning:
+      color: "#ffaa00"
+      escalation_delay: 900  # 15 minutes
+    info:
+      color: "#36a64f"
+      escalation_delay: 1800  # 30 minutes
+
+# Dashboard Configuration
+dashboard:
+  enabled: true
+  port: 8081
+  host: "0.0.0.0"
+  websocket_endpoint: "/monitoring/ws"
+  update_interval: 5  # seconds for real-time updates
+
+  # UI Configuration
+  ui:
+    theme: "dark"
+    refresh_interval: 30  # seconds
+    chart_retention: 50  # data points per chart
+    connection_timeout: 300  # seconds
+
+  # Features
+  features:
+    real_time_updates: true
+    historical_data: false  # Requires time-series database
+    export_data: true
+    alert_management: true
+    system_metrics: true
+    log_viewing: true
+
+# Logging Configuration
+logging:
+  level: INFO
+  format: "json"
+  retention_days: 30
+
+  # Log outputs
+  outputs:
+    console:
+      enabled: true
+      level: INFO
+    file:
+      enabled: true
+      path: "/var/log/atlas/atlas.log"
+      max_size: "100MB"
+      backup_count: 10
+    journald:
+      enabled: true
+      level: WARNING
+
+  # Performance logging
+  performance:
+    enabled: true
+    interval: 60  # seconds
+    include_metrics: true
+
+  # Emergency compression
+  emergency:
+    compression_threshold: 2  # GB
+    compression_min_size: 10  # MB
+
+# Health Check Configuration
+health:
+  check_interval: 60  # seconds
+  timeout: 10  # seconds
+
+  # Health check categories
+  checks:
+    database:
+      enabled: true
+      timeout: 5
+      query: "SELECT 1"
+
+    queue:
+      enabled: true
+      max_pending: 1000
+      max_processing_time: 300  # seconds
+
+    storage:
+      enabled: true
+      min_free_space: 1  # GB
+
+    memory:
+      enabled: true
+      max_usage_percent: 90
+
+    services:
+      enabled: true
+      services: ["api", "monitoring", "alerting"]
+
+# System Metrics Configuration
+system_metrics:
+  collection_interval: 60
+
+  # Components to monitor
+  components:
+    cpu:
+      enabled: true
+      collect_per_cpu: true
+
+    memory:
+      enabled: true
+      include_swap: true
+
+    disk:
+      enabled: true
+      include_io: true
+      paths: ["/", "/var/log"]
+
+    network:
+      enabled: true
+      interfaces: ["eth0", "lo"]
+
+    process:
+      enabled: true
+      include_threads: true
+      include_files: true
+
+# Integration Configuration
+integrations:
+  # Prometheus integration
+  prometheus:
+    enabled: true
+    endpoint: "/monitoring/prometheus"
+    format: "text/plain"
+
+  # Grafana integration (future)
+  grafana:
+    enabled: false
+    url: ""
+    api_key: ""
+
+  # External monitoring services (future)
+  external:
+    datadog:
+      enabled: false
+      api_key: ""
+    new_relic:
+      enabled: false
+      license_key: ""
+
+# Performance Configuration
+performance:
+  # Dashboard performance
+  dashboard:
+    max_connections: 100
+    message_buffer_size: 1024
+    cleanup_interval: 60
+
+  # Metrics collection performance
+  collection:
+    batch_size: 100
+    max_concurrent_collections: 5
+    timeout: 30
+
+  # Alerting performance
+  alerting:
+    max_concurrent_alerts: 50
+    evaluation_timeout: 10
+    notification_timeout: 30
+
+# Security Configuration
+security:
+  # Authentication
+  authentication:
+    enabled: false
+    type: "none"  # none, basic, token, oauth
+
+  # Authorization
+  authorization:
+    enabled: false
+    roles: []
+
+  # Rate limiting
+  rate_limiting:
+    enabled: true
+    requests_per_minute: 60
+    burst_size: 10
+
+  # CORS
+  cors:
+    enabled: true
+    origins: ["*"]
+    methods: ["GET", "POST"]
+    headers: ["*"]
+
+# Backup and Recovery
+backup:
+  enabled: false
+  schedule: "0 2 * * *"  # Daily at 2 AM
+  retention: 7  # days
+  compression: true
+
+  destinations:
+    local:
+      path: "/var/backups/atlas"
+    s3:
+      enabled: false
+      bucket: ""
+      region: ""

@@ -1,0 +1,16 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "version": "1.0.0",
+  "description": "Web application created from OOS template",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "{{#if_eq FRONTEND_FRAMEWORK 'react'}}react-scripts start{{/if_eq}}{{#if_eq FRONTEND_FRAMEWORK 'vue'}}vue-cli-service serve{{/if_eq}}",
+    "dev:backend": "nodemon api/server.js",
+    "build": "npm run build:frontend && npm run build:backend",
+    "test": "jest"
+  },
+  "dependencies": {
+    "{{#if_eq BACKEND_TYPE 'express'}}express{{/if_eq}}{{#if_eq BACKEND_TYPE 'fastify'}}fastify{{/if_eq}}": "latest"
+  }
+}

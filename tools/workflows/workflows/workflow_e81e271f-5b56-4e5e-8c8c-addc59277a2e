@@ -1,0 +1,108 @@
+2025-09-14T21:08:11.511035 INFO: Attempting direct fetch for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:11.740070 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:11.907765 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:11.907865 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:11.907910 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:11.990002 ERROR: Reader mode fetch failed for https://techcrunch.com/author/amanda-silberling/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:08:11.991727 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:12.225745 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:12.225852 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:12.225880 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:12.380534 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/amanda-silberling/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:08:12.382179 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:12.677905 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:12.678012 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:12.678042 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:15.195190 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:08:15.195297 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:15.195324 INFO: Attempting archive.today for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:19.604337 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:20.516368 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:08:20.516773 INFO: Attempting archive.is for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:22.674675 INFO: Attempting archive.li for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:24.677972 INFO: Attempting archive.fo for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:27.712175 INFO: Attempting archive.ph for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:29.901292 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:30.121967 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:30.122079 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:30.122105 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:52.847076 INFO: Found Wayback snapshot from 20210524190453: http://web.archive.org/web/20210524190453/https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:53.715844 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T21:08:53.715954 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:53.715982 INFO: Attempting Wayback Machine for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:53.888345 ERROR: Wayback Machine failed for https://techcrunch.com/author/amanda-silberling/: No archived snapshots found
+2025-09-14T21:08:53.889963 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/amanda-silberling/. Attempting Google Search fallback...
+2025-09-14T21:08:53.890109 INFO: Google Search fallback: searching for 'amanda silberling'
+2025-09-14T21:08:53.923452 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:08:53.932336 INFO: Attempting direct fetch for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:54.316904 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:54.494787 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:54.494904 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:54.494956 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:54.573303 ERROR: Reader mode fetch failed for https://techcrunch.com/author/amanda-silberling/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:08:54.575225 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:54.815994 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:54.816106 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:54.816132 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:54.904021 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/amanda-silberling/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:08:54.905814 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:08:55.209925 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:08:55.210040 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:08:55.210071 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:00.258206 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:09:00.258322 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:00.258350 INFO: Attempting archive.today for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:03.589039 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:04.500908 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:09:04.501361 INFO: Attempting archive.is for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:06.520654 INFO: Attempting archive.li for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:08.798662 INFO: Attempting archive.fo for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:12.091638 INFO: Attempting archive.ph for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:14.823187 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:15.110245 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:09:15.110411 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:15.110450 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:16.072189 INFO: Found Wayback snapshot from 20210524190453: http://web.archive.org/web/20210524190453/https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:16.177894 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T21:09:16.178003 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:16.178031 INFO: Attempting Wayback Machine for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:16.311300 ERROR: Wayback Machine failed for https://techcrunch.com/author/amanda-silberling/: No archived snapshots found
+2025-09-14T21:09:16.313162 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/amanda-silberling/. Attempting Google Search fallback...
+2025-09-14T21:09:16.313393 INFO: Google Search fallback: searching for 'amanda silberling'
+2025-09-14T21:09:16.345521 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:09:16.354189 INFO: Attempting direct fetch for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:16.575799 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:09:16.742895 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:09:16.743012 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:16.743056 INFO: Attempting Reader Mode strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:16.823347 ERROR: Reader mode fetch failed for https://techcrunch.com/author/amanda-silberling/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:09:16.824869 INFO: Attempting JS Disabled strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:17.060742 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:09:17.060853 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:17.060887 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:17.245693 ERROR: Refresh stop fetch failed for https://techcrunch.com/author/amanda-silberling/: cannot use a string pattern on a bytes-like object
+2025-09-14T21:09:17.249527 INFO: Attempting Inspect Element strategy for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:17.637694 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:09:17.637799 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:17.637829 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:22.750583 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:09:22.750728 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:22.750758 INFO: Attempting archive.today for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:26.871356 INFO: No existing archive found, creating new archive for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:27.752127 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:09:27.752541 INFO: Attempting archive.is for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:31.493210 INFO: Attempting archive.li for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:34.921885 INFO: Attempting archive.fo for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:36.849143 INFO: Attempting archive.ph for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:39.556371 INFO: Attempting Googlebot spoof for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:39.909071 INFO: Content is very short (112 words). Likely a teaser.
+2025-09-14T21:09:39.909184 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:39.909210 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:40.565584 INFO: Found Wayback snapshot from 20210524190453: http://web.archive.org/web/20210524190453/https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:40.679487 INFO: Content is very short (34 words). Likely a teaser.
+2025-09-14T21:09:40.679618 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:09:40.679649 INFO: Attempting Wayback Machine for https://techcrunch.com/author/amanda-silberling/
+2025-09-14T21:09:40.789724 ERROR: Wayback Machine failed for https://techcrunch.com/author/amanda-silberling/: No archived snapshots found
+2025-09-14T21:09:40.791883 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/author/amanda-silberling/. Attempting Google Search fallback...
+2025-09-14T21:09:40.792015 INFO: Google Search fallback: searching for 'amanda silberling'
+2025-09-14T21:09:40.824934 INFO: Google Search fallback did not find alternative URL

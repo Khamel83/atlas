@@ -1,0 +1,120 @@
+2025-09-15T03:13:44.644168 INFO: Attempting direct fetch for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:46.080003 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:13:46.089803 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:13:46.089909 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:13:46.089945 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:46.481618 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:46.484951 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:47.291163 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:48.311023 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: cannot use a string pattern on a bytes-like object
+2025-09-15T03:13:48.312937 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:49.113773 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:13:52.129426 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:13:52.129539 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:13:52.129565 INFO: Attempting archive.today for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:09.042809 ERROR: archive.today failed for https://doi.org/10.1037/0012-1649.43.4.960: HTTPSConnectionPool(host='archive.today', port=443): Max retries exceeded with url: /newest/https://doi.org/10.1037/0012-1649.43.4.960 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x209e0b10>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-09-15T03:14:09.042920 INFO: Attempting archive.is for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:12.595024 INFO: Attempting archive.li for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:16.271128 INFO: Attempting archive.fo for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:34.005988 ERROR: archive.fo failed for https://doi.org/10.1037/0012-1649.43.4.960: HTTPSConnectionPool(host='archive.fo', port=443): Max retries exceeded with url: /newest/https://doi.org/10.1037/0012-1649.43.4.960 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1fa03c10>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-09-15T03:14:34.006091 INFO: Attempting archive.ph for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:37.828106 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:38.220295 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:14:38.223521 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:08.849697 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found in any timeframe
+2025-09-15T03:15:08.851081 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:08.963985 ERROR: Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found
+2025-09-15T03:15:08.965922 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0012-1649.43.4.960. Attempting Google Search fallback...
+2025-09-15T03:15:08.966792 INFO: Google Search fallback: searching for '0012 1649.43.4.960'
+2025-09-15T03:15:08.999058 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:15:09.006145 INFO: Attempting direct fetch for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:09.900092 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:15:09.907383 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:15:09.907485 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:15:09.907520 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:10.180011 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:10.182930 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:10.846302 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:11.662374 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: cannot use a string pattern on a bytes-like object
+2025-09-15T03:15:11.665790 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:12.566211 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:15.616573 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:15:15.616689 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:15:15.616716 INFO: Attempting archive.today for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:18.284162 INFO: No existing archive found, creating new archive for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:19.177294 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:15:19.178065 INFO: Attempting archive.is for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:22.099818 INFO: Attempting archive.li for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:38.164940 ERROR: archive.li failed for https://doi.org/10.1037/0012-1649.43.4.960: HTTPSConnectionPool(host='archive.li', port=443): Max retries exceeded with url: /newest/https://doi.org/10.1037/0012-1649.43.4.960 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1e88f390>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-09-15T03:15:38.165042 INFO: Attempting archive.fo for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:41.368357 INFO: Attempting archive.ph for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:58.046261 ERROR: archive.ph failed for https://doi.org/10.1037/0012-1649.43.4.960: HTTPSConnectionPool(host='archive.ph', port=443): Max retries exceeded with url: /newest/https://doi.org/10.1037/0012-1649.43.4.960 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x209840d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-09-15T03:15:58.046381 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:58.327536 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:58.330437 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:59.552138 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found in any timeframe
+2025-09-15T03:15:59.553542 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:15:59.667102 ERROR: Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found
+2025-09-15T03:15:59.669159 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0012-1649.43.4.960. Attempting Google Search fallback...
+2025-09-15T03:15:59.669997 INFO: Google Search fallback: searching for '0012 1649.43.4.960'
+2025-09-15T03:15:59.702783 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:15:59.702922 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T03:15:59.710852 INFO: Attempting direct fetch for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:00.722794 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:16:00.730429 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:16:00.730538 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:16:00.730572 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:00.983626 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:00.986942 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:01.933463 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:02.807469 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: cannot use a string pattern on a bytes-like object
+2025-09-15T03:16:02.810128 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:03.643810 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:07.546918 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:16:07.547030 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:16:07.547056 INFO: Attempting archive.today for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:09.365437 INFO: No existing archive found, creating new archive for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:10.256120 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:16:10.256954 INFO: Attempting archive.is for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:12.193998 INFO: Attempting archive.li for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:14.930273 INFO: Attempting archive.fo for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:32.894097 ERROR: archive.fo failed for https://doi.org/10.1037/0012-1649.43.4.960: HTTPSConnectionPool(host='archive.fo', port=443): Max retries exceeded with url: /newest/https://doi.org/10.1037/0012-1649.43.4.960 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1f2c6d90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-09-15T03:16:32.894198 INFO: Attempting archive.ph for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:35.054062 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:35.451791 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:35.454229 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:36.666691 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found in any timeframe
+2025-09-15T03:16:36.668657 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:36.788866 ERROR: Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found
+2025-09-15T03:16:36.790897 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0012-1649.43.4.960. Attempting Google Search fallback...
+2025-09-15T03:16:36.791498 INFO: Google Search fallback: searching for '0012 1649.43.4.960'
+2025-09-15T03:16:36.824410 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:16:36.831716 INFO: Attempting direct fetch for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:37.793665 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:16:37.801077 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T03:16:37.801216 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:16:37.801250 INFO: Attempting Reader Mode strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:38.059324 ERROR: Reader mode fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:38.062413 INFO: Attempting JS Disabled strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:38.773829 INFO: Attempting Refresh Stop strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:39.756174 ERROR: Refresh stop fetch failed for https://doi.org/10.1037/0012-1649.43.4.960: cannot use a string pattern on a bytes-like object
+2025-09-15T03:16:39.758289 INFO: Attempting Inspect Element strategy for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:40.446432 INFO: Attempting removepaywalls.com bypass for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:43.569637 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:16:43.569741 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:16:43.569769 INFO: Attempting archive.today for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:46.055778 INFO: No existing archive found, creating new archive for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:46.961784 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:16:46.962678 INFO: Attempting archive.is for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:50.136786 INFO: Attempting archive.li for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:53.489508 INFO: Attempting archive.fo for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:16:56.691453 INFO: Attempting archive.ph for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:17:00.311214 INFO: Attempting Googlebot spoof for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:17:00.584970 ERROR: Googlebot spoof failed for https://doi.org/10.1037/0012-1649.43.4.960: 403 Client Error: Forbidden for url: https://doi.apa.org/doi/10.1037/0012-1649.43.4.960
+2025-09-15T03:17:00.587920 INFO: Attempting Enhanced Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:17:01.925194 ERROR: Enhanced Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found in any timeframe
+2025-09-15T03:17:01.927812 INFO: Attempting Wayback Machine for https://doi.org/10.1037/0012-1649.43.4.960
+2025-09-15T03:17:02.069835 ERROR: Wayback Machine failed for https://doi.org/10.1037/0012-1649.43.4.960: No archived snapshots found
+2025-09-15T03:17:02.074306 ERROR: All fetch strategies failed or returned low-quality content for https://doi.org/10.1037/0012-1649.43.4.960. Attempting Google Search fallback...
+2025-09-15T03:17:02.075312 INFO: Google Search fallback: searching for '0012 1649.43.4.960'
+2025-09-15T03:17:02.127295 INFO: Google Search fallback did not find alternative URL

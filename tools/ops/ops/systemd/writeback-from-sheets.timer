@@ -1,0 +1,11 @@
+[Unit]
+Description=Hourly Sheets write-back
+Requires=writeback-from-sheets.service
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=180
+
+[Install]
+WantedBy=timers.target

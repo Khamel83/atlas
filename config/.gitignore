@@ -1,0 +1,76 @@
+# Atlas Git Ignore File
+
+# Environment and secrets
+.env
+*.env.local
+*.env.production
+
+# Database files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Logs and runtime files
+logs/
+*.log
+nohup.out
+atlas.pid
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# RelayQ job files (can be regenerated)
+relayq_jobs/*.md
+
+# Processing artifacts
+atlas_processing_status*.json
+failure_patterns*.json
+ATLAS_FINAL_REPORT*.md
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp

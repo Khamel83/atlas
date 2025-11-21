@@ -1,0 +1,146 @@
+2025-09-15T05:13:06.755364 INFO: Attempting direct fetch for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:07.262641 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:07.430417 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:07.430535 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:07.430577 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:07.981340 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:13:07.983135 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:08.602442 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:13:08.602554 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:08.602582 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:09.150727 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:13:09.152424 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:09.553670 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:13:09.553791 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:09.553818 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:13.956196 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:13:13.956315 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:13.956344 INFO: Attempting archive.today for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:17.113251 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:17.977901 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:13:17.978442 INFO: Attempting archive.is for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:21.379745 INFO: Attempting archive.li for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:25.326742 INFO: Attempting archive.fo for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:28.458130 INFO: Attempting archive.ph for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:31.080096 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:31.290810 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:31.290956 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:31.290986 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:31.788157 INFO: Found Wayback snapshot from 20241225231146: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:35.854144 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:35.854252 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:35.854278 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:35.987536 INFO: Found Wayback snapshot: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:36.284422 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:36.284531 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:36.292789 INFO: Attempting direct fetch for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:36.540939 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:36.903668 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:36.903799 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:36.903837 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:37.015791 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:13:37.019843 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:37.422582 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:13:37.422710 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:37.422740 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:37.564202 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:13:37.566963 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:38.058233 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:13:38.058334 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:38.058359 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:41.219603 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:13:41.219711 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:41.219738 INFO: Attempting archive.today for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:44.515580 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:45.412217 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:13:45.412978 INFO: Attempting archive.is for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:47.826845 INFO: Attempting archive.li for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:50.951496 INFO: Attempting archive.fo for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:53.250937 INFO: Attempting archive.ph for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:56.379998 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:56.606166 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:56.606406 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:56.606463 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:56.815536 INFO: Found Wayback snapshot from 20241225231146: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:57.064472 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:57.064634 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:57.064665 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:57.196320 INFO: Found Wayback snapshot: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:57.440251 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:57.440387 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:57.440419 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/sam-levinson/. Attempting Google Search fallback...
+2025-09-15T05:13:57.440487 INFO: Google Search fallback: searching for 'sam levinson'
+2025-09-15T05:13:57.471659 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:13:57.479084 INFO: Attempting direct fetch for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:57.764977 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:57.915952 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:13:57.916079 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:57.916116 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:58.007469 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:13:58.008890 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:58.376207 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:13:58.376318 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:58.376345 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:58.513657 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:13:58.516156 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:13:58.911272 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:13:58.911382 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:13:58.911409 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:03.170926 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:14:03.171057 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:03.171084 INFO: Attempting archive.today for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:05.554862 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:06.408911 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:14:06.409800 INFO: Attempting archive.is for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:09.987935 INFO: Attempting archive.li for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:12.065752 INFO: Attempting archive.fo for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:15.377133 INFO: Attempting archive.ph for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:17.679572 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:17.894422 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:17.894546 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:17.894579 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:18.045547 INFO: Found Wayback snapshot from 20241225231146: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:18.276032 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:18.276154 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:18.276186 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:18.410520 INFO: Found Wayback snapshot: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:18.629124 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:18.629248 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:18.636920 INFO: Attempting direct fetch for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:18.843318 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:18.994399 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:18.994523 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:18.994562 INFO: Attempting Reader Mode strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:19.085084 ERROR: Reader mode fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:14:19.086510 INFO: Attempting JS Disabled strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:19.381361 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:14:19.381466 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:19.381492 INFO: Attempting Refresh Stop strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:19.516420 ERROR: Refresh stop fetch failed for https://www.rollingstone.com/t/sam-levinson/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:14:19.517914 INFO: Attempting Inspect Element strategy for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:19.891849 INFO: Content is very short (35 words). Likely a teaser.
+2025-09-15T05:14:19.891957 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:19.891984 INFO: Attempting removepaywalls.com bypass for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:24.445910 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:14:24.446022 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:24.446049 INFO: Attempting archive.today for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:27.295203 INFO: No existing archive found, creating new archive for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:28.195058 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:14:28.195494 INFO: Attempting archive.is for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:31.382263 INFO: Attempting archive.li for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:33.775861 INFO: Attempting archive.fo for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:35.657128 INFO: Attempting archive.ph for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:38.306449 INFO: Attempting Googlebot spoof for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:38.771246 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:38.771368 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:38.771394 INFO: Attempting Enhanced Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:38.884965 INFO: Found Wayback snapshot from 20241225231146: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:39.125361 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:39.125484 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:39.125515 INFO: Attempting Wayback Machine for https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:39.245369 INFO: Found Wayback snapshot: http://web.archive.org/web/20241225231146/https://www.rollingstone.com/t/sam-levinson/
+2025-09-15T05:14:39.469180 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:14:39.469297 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:14:39.469331 ERROR: All fetch strategies failed or returned low-quality content for https://www.rollingstone.com/t/sam-levinson/. Attempting Google Search fallback...
+2025-09-15T05:14:39.469414 INFO: Google Search fallback: searching for 'sam levinson'
+2025-09-15T05:14:39.501105 INFO: Google Search fallback did not find alternative URL

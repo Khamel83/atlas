@@ -1,0 +1,96 @@
+2025-09-15T09:38:10.329080 INFO: Attempting direct fetch for https://harpers.org/tag/lagos/
+2025-09-15T09:38:11.004286 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:11.039886 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:11.040002 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:11.040040 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:11.252965 ERROR: Reader mode fetch failed for https://harpers.org/tag/lagos/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:38:11.254970 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:11.496965 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:11.497069 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:11.497094 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:11.919119 ERROR: Refresh stop fetch failed for https://harpers.org/tag/lagos/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:38:11.921471 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:12.315482 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:12.315607 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:12.315639 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/lagos/
+2025-09-15T09:38:16.637545 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:38:16.637667 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:16.637697 INFO: Attempting archive.today for https://harpers.org/tag/lagos/
+2025-09-15T09:38:16.645427 INFO: Attempting direct fetch for https://harpers.org/tag/lagos/
+2025-09-15T09:38:16.858336 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:16.896143 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:16.896258 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:16.896296 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:17.108433 ERROR: Reader mode fetch failed for https://harpers.org/tag/lagos/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:38:17.110441 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:17.382573 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:17.382704 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:17.382731 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:17.828045 ERROR: Refresh stop fetch failed for https://harpers.org/tag/lagos/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:38:17.830190 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:18.318663 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:18.318767 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:18.318793 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/lagos/
+2025-09-15T09:38:22.824442 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:38:22.824575 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:22.824623 INFO: Attempting archive.today for https://harpers.org/tag/lagos/
+2025-09-15T09:38:26.243116 INFO: No existing archive found, creating new archive for https://harpers.org/tag/lagos/
+2025-09-15T09:38:27.132520 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:38:27.133240 INFO: Attempting archive.is for https://harpers.org/tag/lagos/
+2025-09-15T09:38:29.802017 INFO: Attempting archive.li for https://harpers.org/tag/lagos/
+2025-09-15T09:38:34.728337 INFO: Attempting archive.fo for https://harpers.org/tag/lagos/
+2025-09-15T09:38:37.582264 INFO: Attempting archive.ph for https://harpers.org/tag/lagos/
+2025-09-15T09:38:40.736306 INFO: Attempting Googlebot spoof for https://harpers.org/tag/lagos/
+2025-09-15T09:38:40.852557 ERROR: Googlebot spoof failed for https://harpers.org/tag/lagos/: 403 Client Error: Forbidden for url: https://harpers.org/tag/lagos/
+2025-09-15T09:38:40.854216 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/lagos/
+2025-09-15T09:38:41.473276 INFO: Found Wayback snapshot from 20250614162154: http://web.archive.org/web/20250614162154/https://harpers.org/tag/lagos/
+2025-09-15T09:38:43.047240 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:43.047376 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:43.047403 INFO: Attempting Wayback Machine for https://harpers.org/tag/lagos/
+2025-09-15T09:38:43.164007 INFO: Found Wayback snapshot: http://web.archive.org/web/20250614162154/https://harpers.org/tag/lagos/
+2025-09-15T09:38:43.293332 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:43.293456 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:43.293489 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/lagos/. Attempting Google Search fallback...
+2025-09-15T09:38:43.293560 INFO: Google Search fallback: searching for 'lagos'
+2025-09-15T09:38:43.324921 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:38:43.333978 INFO: Attempting direct fetch for https://harpers.org/tag/lagos/
+2025-09-15T09:38:43.624674 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:43.656641 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:43.656765 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:43.656801 INFO: Attempting Reader Mode strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:44.080476 ERROR: Reader mode fetch failed for https://harpers.org/tag/lagos/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:38:44.081900 INFO: Attempting JS Disabled strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:44.487738 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:44.487842 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:44.487869 INFO: Attempting Refresh Stop strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:44.813439 ERROR: Refresh stop fetch failed for https://harpers.org/tag/lagos/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:38:44.816217 INFO: Attempting Inspect Element strategy for https://harpers.org/tag/lagos/
+2025-09-15T09:38:45.115229 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:38:45.115360 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:45.115389 INFO: Attempting removepaywalls.com bypass for https://harpers.org/tag/lagos/
+2025-09-15T09:38:48.355650 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:38:48.355767 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:38:48.355792 INFO: Attempting archive.today for https://harpers.org/tag/lagos/
+2025-09-15T09:38:50.628105 INFO: No existing archive found, creating new archive for https://harpers.org/tag/lagos/
+2025-09-15T09:38:51.530532 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:38:51.531508 INFO: Attempting archive.is for https://harpers.org/tag/lagos/
+2025-09-15T09:38:55.132453 INFO: Attempting archive.li for https://harpers.org/tag/lagos/
+2025-09-15T09:38:57.436989 INFO: Attempting archive.fo for https://harpers.org/tag/lagos/
+2025-09-15T09:39:01.326745 INFO: Attempting archive.ph for https://harpers.org/tag/lagos/
+2025-09-15T09:39:04.390271 INFO: Attempting Googlebot spoof for https://harpers.org/tag/lagos/
+2025-09-15T09:39:04.485653 ERROR: Googlebot spoof failed for https://harpers.org/tag/lagos/: 403 Client Error: Forbidden for url: https://harpers.org/tag/lagos/
+2025-09-15T09:39:04.487422 INFO: Attempting Enhanced Wayback Machine for https://harpers.org/tag/lagos/
+2025-09-15T09:39:04.602103 INFO: Found Wayback snapshot from 20250614162154: http://web.archive.org/web/20250614162154/https://harpers.org/tag/lagos/
+2025-09-15T09:39:04.725741 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:39:04.725860 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:39:04.725887 INFO: Attempting Wayback Machine for https://harpers.org/tag/lagos/
+2025-09-15T09:39:04.965295 INFO: Found Wayback snapshot: http://web.archive.org/web/20250614162154/https://harpers.org/tag/lagos/
+2025-09-15T09:39:05.092345 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:39:05.092463 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:39:05.092496 ERROR: All fetch strategies failed or returned low-quality content for https://harpers.org/tag/lagos/. Attempting Google Search fallback...
+2025-09-15T09:39:05.092566 INFO: Google Search fallback: searching for 'lagos'
+2025-09-15T09:39:05.124285 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:39:05.131312 INFO: Attempting direct fetch for https://harpers.org/tag/lagos/
+2025-09-15T09:39:05.625071 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:39:05.661171 INFO: Paywall phrase 'to continue reading' detected.
+2025-09-15T09:39:05.661313 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...

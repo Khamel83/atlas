@@ -1,0 +1,22 @@
+2025-09-15T06:57:02.835073 INFO: Attempting direct fetch for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.054708 ERROR: Direct fetch failed for https://www.parsintl.com/publications/the-nation/: 403 Client Error: Forbidden for url: https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.055850 INFO: Attempting Reader Mode strategy for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.395042 ERROR: Reader mode fetch failed for https://www.parsintl.com/publications/the-nation/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:57:03.397962 INFO: Attempting JS Disabled strategy for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.516526 ERROR: JS disabled fetch failed for https://www.parsintl.com/publications/the-nation/: 403 Client Error: Forbidden for url: https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.517933 INFO: Attempting Refresh Stop strategy for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.640849 ERROR: Refresh stop fetch failed for https://www.parsintl.com/publications/the-nation/: cannot use a string pattern on a bytes-like object
+2025-09-15T06:57:03.642046 INFO: Attempting Inspect Element strategy for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.757380 ERROR: Inspect element fetch failed for https://www.parsintl.com/publications/the-nation/: 403 Client Error: Forbidden for url: https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:03.758611 INFO: Attempting removepaywalls.com bypass for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:06.817787 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:57:06.817903 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:57:06.817930 INFO: Attempting archive.today for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:09.509307 INFO: No existing archive found, creating new archive for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:10.368240 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:57:10.369045 INFO: Attempting archive.is for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:14.163069 INFO: Attempting archive.li for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:17.406244 INFO: Attempting archive.fo for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:20.803250 INFO: Attempting archive.ph for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:23.798947 INFO: Attempting Googlebot spoof for https://www.parsintl.com/publications/the-nation/
+2025-09-15T06:57:24.130999 INFO: Successfully fetched https://www.parsintl.com/publications/the-nation/ using googlebot_spoof

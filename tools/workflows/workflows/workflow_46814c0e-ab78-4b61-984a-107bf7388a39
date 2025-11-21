@@ -1,0 +1,152 @@
+2025-09-14T22:36:30.232876 INFO: Attempting direct fetch for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:30.557439 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:36:30.562554 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:36:30.562684 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:30.562721 INFO: Attempting Reader Mode strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:30.658356 ERROR: Reader mode fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:36:30.660641 INFO: Attempting JS Disabled strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:30.803523 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:36:30.803673 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:30.803702 INFO: Attempting Refresh Stop strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:30.964433 ERROR: Refresh stop fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:36:30.966387 INFO: Attempting Inspect Element strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:31.098497 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:36:31.098651 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:31.098685 INFO: Attempting removepaywalls.com bypass for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:34.159781 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:36:34.159903 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:34.159933 INFO: Attempting archive.today for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:36.741435 INFO: No existing archive found, creating new archive for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:37.650241 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:36:37.651101 INFO: Attempting archive.is for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:41.462907 INFO: Attempting archive.li for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:45.195515 INFO: Attempting archive.fo for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:47.152550 INFO: Attempting archive.ph for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:50.688728 INFO: Attempting Googlebot spoof for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:50.786990 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:36:50.787097 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:50.787123 INFO: Attempting Enhanced Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:54.629804 INFO: Found Wayback snapshot from 20230811181453: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.196529 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:36:55.196666 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:55.196693 INFO: Attempting Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.323079 INFO: Found Wayback snapshot: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.373686 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:36:55.373809 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:55.373843 ERROR: All fetch strategies failed or returned low-quality content for http://nymag.com/print/?/news/features/michael-lewis-2011-10/. Attempting Google Search fallback...
+2025-09-14T22:36:55.373904 INFO: Google Search fallback: searching for 'print'
+2025-09-14T22:36:55.406862 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:36:55.416111 INFO: Attempting direct fetch for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.513540 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:36:55.518417 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:36:55.518496 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:55.518530 INFO: Attempting Reader Mode strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.635432 ERROR: Reader mode fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:36:55.637397 INFO: Attempting JS Disabled strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.737007 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:36:55.737107 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:55.737132 INFO: Attempting Refresh Stop strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:55.896464 ERROR: Refresh stop fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:36:55.898392 INFO: Attempting Inspect Element strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:36:56.026011 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:36:56.026110 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:36:56.026136 INFO: Attempting removepaywalls.com bypass for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:00.827169 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:37:00.827290 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:00.827321 INFO: Attempting archive.today for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:03.460458 INFO: No existing archive found, creating new archive for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:04.353930 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:37:04.354649 INFO: Attempting archive.is for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:07.505804 INFO: Attempting archive.li for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:10.839052 INFO: Attempting archive.fo for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:13.773838 INFO: Attempting archive.ph for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.056041 INFO: Attempting Googlebot spoof for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.192050 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:17.192148 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:17.192174 INFO: Attempting Enhanced Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.336474 INFO: Found Wayback snapshot from 20230811181453: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.466507 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:37:17.466646 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:17.466681 INFO: Attempting Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.585862 INFO: Found Wayback snapshot: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.640416 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:37:17.640517 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:17.640551 ERROR: All fetch strategies failed or returned low-quality content for http://nymag.com/print/?/news/features/michael-lewis-2011-10/. Attempting Google Search fallback...
+2025-09-14T22:37:17.640650 INFO: Google Search fallback: searching for 'print'
+2025-09-14T22:37:17.673377 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:37:17.681625 INFO: Attempting direct fetch for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.845314 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:17.850227 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:17.850316 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:17.850351 INFO: Attempting Reader Mode strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:17.970299 ERROR: Reader mode fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:37:17.972137 INFO: Attempting JS Disabled strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:18.072092 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:37:18.072195 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:18.072220 INFO: Attempting Refresh Stop strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:18.233043 ERROR: Refresh stop fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:37:18.237107 INFO: Attempting Inspect Element strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:18.343078 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:37:18.343182 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:18.343209 INFO: Attempting removepaywalls.com bypass for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:21.944388 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:37:21.944496 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:21.944523 INFO: Attempting archive.today for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:25.340293 INFO: No existing archive found, creating new archive for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:26.247987 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:37:26.248821 INFO: Attempting archive.is for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:29.508651 INFO: Attempting archive.li for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:31.657319 INFO: Attempting archive.fo for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:35.377884 INFO: Attempting archive.ph for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:37.947790 INFO: Attempting Googlebot spoof for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.072712 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:38.072819 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:38.072846 INFO: Attempting Enhanced Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.211021 INFO: Found Wayback snapshot from 20230811181453: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.266036 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:37:38.266143 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:38.266173 INFO: Attempting Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.383337 INFO: Found Wayback snapshot: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.434972 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:37:38.435081 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:38.435116 ERROR: All fetch strategies failed or returned low-quality content for http://nymag.com/print/?/news/features/michael-lewis-2011-10/. Attempting Google Search fallback...
+2025-09-14T22:37:38.435177 INFO: Google Search fallback: searching for 'print'
+2025-09-14T22:37:38.468442 INFO: Google Search fallback did not find alternative URL
+2025-09-14T22:37:38.477102 INFO: Attempting direct fetch for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.596884 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:38.601148 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:38.601243 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:38.601279 INFO: Attempting Reader Mode strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.734643 ERROR: Reader mode fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:37:38.736012 INFO: Attempting JS Disabled strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.834518 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:37:38.834656 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:38.834688 INFO: Attempting Refresh Stop strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:38.994060 ERROR: Refresh stop fetch failed for http://nymag.com/print/?/news/features/michael-lewis-2011-10/: cannot use a string pattern on a bytes-like object
+2025-09-14T22:37:38.995530 INFO: Attempting Inspect Element strategy for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:39.138920 INFO: Content is very short (3 words). Likely a teaser.
+2025-09-14T22:37:39.139020 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:39.139047 INFO: Attempting removepaywalls.com bypass for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:44.263425 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:37:44.263537 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:44.263563 INFO: Attempting archive.today for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:46.903250 INFO: No existing archive found, creating new archive for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:47.789700 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:37:47.790160 INFO: Attempting archive.is for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:50.228124 INFO: Attempting archive.li for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:53.475137 INFO: Attempting archive.fo for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:56.105006 INFO: Attempting archive.ph for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:59.460536 INFO: Attempting Googlebot spoof for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:59.596183 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-14T22:37:59.596282 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:59.596307 INFO: Attempting Enhanced Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:59.725151 INFO: Found Wayback snapshot from 20230811181453: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:59.772782 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:37:59.772883 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:59.772909 INFO: Attempting Wayback Machine for http://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:59.898256 INFO: Found Wayback snapshot: http://web.archive.org/web/20230811181453/https://nymag.com/print/?/news/features/michael-lewis-2011-10/
+2025-09-14T22:37:59.951998 INFO: Suspicious title-to-content ratio: 0.14. Likely truncated.
+2025-09-14T22:37:59.952102 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:37:59.952135 ERROR: All fetch strategies failed or returned low-quality content for http://nymag.com/print/?/news/features/michael-lewis-2011-10/. Attempting Google Search fallback...
+2025-09-14T22:37:59.952194 INFO: Google Search fallback: searching for 'print'
+2025-09-14T22:37:59.984422 INFO: Google Search fallback did not find alternative URL

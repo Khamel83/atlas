@@ -1,0 +1,137 @@
+2025-09-15T04:43:53.201251 INFO: Attempting direct fetch for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:43:53.791956 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:43:53.794386 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:43:53.794479 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:53.794515 INFO: Attempting Reader Mode strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:43:54.341346 ERROR: Reader mode fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:43:54.341651 INFO: Attempting JS Disabled strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:43:54.666775 INFO: Attempting Refresh Stop strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:43:55.174509 ERROR: Refresh stop fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:43:55.174842 INFO: Attempting Inspect Element strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:43:55.655828 INFO: Attempting removepaywalls.com bypass for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:43:58.012171 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:43:58.012277 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:43:58.012304 INFO: Attempting archive.today for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:02.789632 INFO: No existing archive found, creating new archive for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:03.648268 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:44:03.648698 INFO: Attempting archive.is for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:07.197460 INFO: Attempting archive.li for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:09.623502 INFO: Attempting archive.fo for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:12.914514 INFO: Attempting archive.ph for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:15.782444 INFO: Attempting Googlebot spoof for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:15.920679 ERROR: Googlebot spoof failed for http://harpers.org/archive/2007/02/0081387: 403 Client Error: Forbidden for url: https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:15.922053 INFO: Attempting Enhanced Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:16.426178 INFO: Found Wayback snapshot from 20250903110327: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:44:26.161222 INFO: Found Wayback snapshot from 20220107013938: http://web.archive.org/web/20220107013938/https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:36.519482 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:44:36.519635 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:44:36.519668 INFO: Attempting Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:36.663508 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:44:39.683482 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:44:39.683616 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:44:39.683655 ERROR: All fetch strategies failed or returned low-quality content for http://harpers.org/archive/2007/02/0081387. Attempting Google Search fallback...
+2025-09-15T04:44:39.683715 INFO: Google Search fallback: searching for 'archive'
+2025-09-15T04:44:39.716213 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:44:39.723644 INFO: Attempting direct fetch for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:40.259766 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:44:40.261557 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:44:40.261677 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:44:40.261713 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:44:40.261742 INFO: Attempting Reader Mode strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:40.627647 ERROR: Reader mode fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:44:40.628006 INFO: Attempting JS Disabled strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:40.952299 INFO: Attempting Refresh Stop strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:41.430812 ERROR: Refresh stop fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:44:41.431079 INFO: Attempting Inspect Element strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:41.913422 INFO: Attempting removepaywalls.com bypass for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:47.058572 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:44:47.058737 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:44:47.058763 INFO: Attempting archive.today for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:50.974245 INFO: No existing archive found, creating new archive for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:51.839527 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:44:51.840012 INFO: Attempting archive.is for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:54.622822 INFO: Attempting archive.li for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:44:57.070226 INFO: Attempting archive.fo for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:00.445555 INFO: Attempting archive.ph for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:02.394350 INFO: Attempting Googlebot spoof for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:02.569855 ERROR: Googlebot spoof failed for http://harpers.org/archive/2007/02/0081387: 403 Client Error: Forbidden for url: https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:02.571492 INFO: Attempting Enhanced Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:02.711314 INFO: Found Wayback snapshot from 20250903110327: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:45:05.175321 INFO: Found Wayback snapshot from 20220107013938: http://web.archive.org/web/20220107013938/https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:05.258962 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:45:05.259066 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:05.259094 INFO: Attempting Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:05.389964 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:45:11.627031 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:45:11.627135 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:11.627165 ERROR: All fetch strategies failed or returned low-quality content for http://harpers.org/archive/2007/02/0081387. Attempting Google Search fallback...
+2025-09-15T04:45:11.627221 INFO: Google Search fallback: searching for 'archive'
+2025-09-15T04:45:11.659537 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:45:11.667419 INFO: Attempting direct fetch for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:12.208417 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:45:12.210267 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:45:12.210337 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:12.210369 INFO: Attempting Reader Mode strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:12.753731 ERROR: Reader mode fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:45:12.754104 INFO: Attempting JS Disabled strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:13.110723 INFO: Attempting Refresh Stop strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:13.443450 ERROR: Refresh stop fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:45:13.444908 INFO: Attempting Inspect Element strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:13.800281 INFO: Attempting removepaywalls.com bypass for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:16.020101 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:45:16.020204 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:16.020231 INFO: Attempting archive.today for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:20.615270 INFO: No existing archive found, creating new archive for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:21.485848 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:45:21.486683 INFO: Attempting archive.is for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:23.924348 INFO: Attempting archive.li for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:27.535767 INFO: Attempting archive.fo for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:31.080652 INFO: Attempting archive.ph for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:34.527864 INFO: Attempting Googlebot spoof for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:34.676966 ERROR: Googlebot spoof failed for http://harpers.org/archive/2007/02/0081387: 403 Client Error: Forbidden for url: https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:34.679112 INFO: Attempting Enhanced Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:34.825470 INFO: Found Wayback snapshot from 20250903110327: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:45:37.987566 INFO: Found Wayback snapshot from 20220107013938: http://web.archive.org/web/20220107013938/https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:38.069701 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:45:38.069823 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:38.069850 INFO: Attempting Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:38.179247 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:45:41.132186 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:45:41.132291 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:41.132322 ERROR: All fetch strategies failed or returned low-quality content for http://harpers.org/archive/2007/02/0081387. Attempting Google Search fallback...
+2025-09-15T04:45:41.132380 INFO: Google Search fallback: searching for 'archive'
+2025-09-15T04:45:41.165048 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:45:41.173520 INFO: Attempting direct fetch for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:41.486075 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:45:41.487819 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:45:41.487887 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:41.487933 INFO: Attempting Reader Mode strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:41.487990 ERROR: Reader mode fetch failed for http://harpers.org/archive/2007/02/0081387: [Errno 32] Broken pipe
+2025-09-15T04:45:41.488020 INFO: Attempting JS Disabled strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:41.882405 INFO: Attempting Refresh Stop strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:42.206919 ERROR: Refresh stop fetch failed for http://harpers.org/archive/2007/02/0081387: cannot use a string pattern on a bytes-like object
+2025-09-15T04:45:42.207303 INFO: Attempting Inspect Element strategy for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:42.677786 INFO: Attempting removepaywalls.com bypass for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:46.147753 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:45:46.147873 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:45:46.147901 INFO: Attempting archive.today for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:49.948707 INFO: No existing archive found, creating new archive for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:50.866247 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:45:50.866728 INFO: Attempting archive.is for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:54.117665 INFO: Attempting archive.li for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:56.616550 INFO: Attempting archive.fo for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:45:59.594958 INFO: Attempting archive.ph for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:46:01.782909 INFO: Attempting Googlebot spoof for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:46:01.928848 ERROR: Googlebot spoof failed for http://harpers.org/archive/2007/02/0081387: 403 Client Error: Forbidden for url: https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:46:01.931047 INFO: Attempting Enhanced Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:46:02.069187 INFO: Found Wayback snapshot from 20250903110327: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:46:06.956294 INFO: Found Wayback snapshot from 20220107013938: http://web.archive.org/web/20220107013938/https://harpers.org/archive/2007/02/0081387
+2025-09-15T04:46:07.037619 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T04:46:07.037737 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:46:07.037763 INFO: Attempting Wayback Machine for http://harpers.org/archive/2007/02/0081387
+2025-09-15T04:46:07.158370 INFO: Found Wayback snapshot: http://web.archive.org/web/20250903110327/https://harpers.org/archive/2007/02/0081387/
+2025-09-15T04:46:11.978090 INFO: Content is very short (13 words). Likely a teaser.
+2025-09-15T04:46:11.978199 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:46:11.978231 ERROR: All fetch strategies failed or returned low-quality content for http://harpers.org/archive/2007/02/0081387. Attempting Google Search fallback...
+2025-09-15T04:46:11.978290 INFO: Google Search fallback: searching for 'archive'
+2025-09-15T04:46:12.010490 INFO: Google Search fallback did not find alternative URL

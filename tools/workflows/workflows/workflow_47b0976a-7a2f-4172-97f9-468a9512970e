@@ -1,0 +1,25 @@
+2025-09-14T20:54:17.641695 INFO: Attempting direct fetch for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:17.736790 ERROR: Direct fetch failed for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:17.736969 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:18.435133 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:54:18.436839 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:18.502117 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:18.502303 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:18.566754 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T20:54:18.566932 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:18.625357 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:18.625546 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:21.492007 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:54:21.492121 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:54:21.492149 INFO: Attempting archive.today for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:24.989980 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:25.873109 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:54:25.873669 INFO: Attempting archive.is for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:28.240533 INFO: Attempting archive.li for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:30.846147 INFO: Attempting archive.fo for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:32.731253 INFO: Attempting archive.ph for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:36.007705 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:36.266688 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:36.266888 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print
+2025-09-14T20:54:40.850296 INFO: Found Wayback snapshot from 20230203121105: http://web.archive.org/web/20230203121105/http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1
+2025-09-14T20:54:41.861523 INFO: Successfully fetched http://www.nytimes.com/2011/08/02/opinion/02iht-edcohen02.html?_r=1&src=recg&pagewanted=print using wayback_machine_enhanced

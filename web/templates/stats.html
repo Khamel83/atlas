@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Atlas - Statistics{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <h2>System Statistics</h2>
+        <p>Overview of your Atlas content management system.</p>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">{{ stats.total_content }}</div>
+            <div class="stat-label">Total Items</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ stats.with_ai_summaries }}</div>
+            <div class="stat-label">With AI Summaries</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ content_types|length }}</div>
+            <div class="stat-label">Content Types</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ recent_activity }}</div>
+            <div class="stat-label">Recent Activity</div>
+        </div>
+    </div>
+
+    {% if stats.by_type %}
+    <div class="card">
+        <h2>Content by Type</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            {% for type_info in stats.by_type %}
+            <div class="stat-card">
+                <div class="stat-number">{{ type_info.count }}</div>
+                <div class="stat-label">{{ type_info.type }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if stats.by_stage %}
+    <div class="card">
+        <h2>Content by Processing Stage</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            {% for stage_info in stats.by_stage %}
+            <div class="stat-card">
+                <div class="stat-number">{{ stage_info.count }}</div>
+                <div class="stat-label">Stage {{ stage_info.stage }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

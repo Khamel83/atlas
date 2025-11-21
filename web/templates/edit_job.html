@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Job - {{ job.name }}</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        form { max-width: 400px; }
+        label { display: block; margin: 1em 0 0.5em; }
+        .msg { background: #e0ffe0; color: #205020; padding: 0.5em 1em; border-radius: 4px; margin-bottom: 1em; }
+        .error { background: #ffe0e0; color: #802020; padding: 0.5em 1em; border-radius: 4px; margin-bottom: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Edit Job: {{ job.name }}</h1>
+    {% if msg %}
+        <div class="msg">{{ msg }}</div>
+    {% endif %}
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="post" action="/jobs/{{ job.id }}/edit">
+        <label>Job Name: <input type="text" name="name" value="{{ job.name }}" readonly></label>
+        <label>Cron String: <input type="text" name="cron" value="{{ job.cron }}" required></label>
+        <button type="submit">Save Changes</button>
+        <a href="/jobs/html">Cancel</a>
+    </form>
+</body>
+</html> 

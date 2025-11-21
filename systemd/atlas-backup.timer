@@ -1,0 +1,16 @@
+[Unit]
+Description=Atlas Backup Timer
+Documentation=man:systemd.timer(5)
+Requires=atlas-backup.service
+
+[Timer]
+# Run daily at 2 AM
+OnCalendar=*-*-* 02:00:00
+AccuracySec=1h
+Persistent=true
+
+# Run immediately if missed
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

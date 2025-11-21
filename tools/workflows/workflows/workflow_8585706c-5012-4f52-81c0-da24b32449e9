@@ -1,0 +1,152 @@
+2025-09-14T23:01:11.812619 INFO: Attempting direct fetch for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:12.073429 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:01:12.092687 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:01:12.092773 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:12.092815 INFO: Attempting Reader Mode strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:12.288329 ERROR: Reader mode fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:01:12.298700 INFO: Attempting JS Disabled strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:12.506372 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:01:12.506481 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:12.506508 INFO: Attempting Refresh Stop strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:12.660685 ERROR: Refresh stop fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:01:12.666171 INFO: Attempting Inspect Element strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:12.863414 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:01:12.863512 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:12.863539 INFO: Attempting removepaywalls.com bypass for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:17.465654 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:01:17.465773 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:17.465805 INFO: Attempting archive.today for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:20.277646 INFO: No existing archive found, creating new archive for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:21.165049 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:01:21.165887 INFO: Attempting archive.is for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:24.119526 INFO: Attempting archive.li for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:26.070667 INFO: Attempting archive.fo for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:42.067272 INFO: Attempting archive.ph for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:45.485806 INFO: Attempting Googlebot spoof for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:45.638608 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:01:45.638723 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:45.638750 INFO: Attempting Enhanced Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:50.149899 INFO: Found Wayback snapshot from 20240107085001: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:53.873749 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:01:53.873864 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:53.873891 INFO: Attempting Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.006641 INFO: Found Wayback snapshot: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.129764 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:01:54.129875 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:54.129909 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA. Attempting Google Search fallback...
+2025-09-14T23:01:54.129969 INFO: Google Search fallback: searching for 'aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA'
+2025-09-14T23:01:54.163320 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:01:54.172336 INFO: Attempting direct fetch for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.320657 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:01:54.327829 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:01:54.327920 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:54.327959 INFO: Attempting Reader Mode strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.470397 ERROR: Reader mode fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:01:54.474445 INFO: Attempting JS Disabled strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.628370 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:01:54.628471 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:54.628498 INFO: Attempting Refresh Stop strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.766209 ERROR: Refresh stop fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:01:54.769517 INFO: Attempting Inspect Element strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:54.975748 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:01:54.975841 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:54.975868 INFO: Attempting removepaywalls.com bypass for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:01:59.159157 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:01:59.159268 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:01:59.159293 INFO: Attempting archive.today for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:02.497434 INFO: No existing archive found, creating new archive for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:03.410087 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:02:03.411208 INFO: Attempting archive.is for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:06.430400 INFO: Attempting archive.li for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:08.359369 INFO: Attempting archive.fo for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:10.904088 INFO: Attempting archive.ph for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:14.647929 INFO: Attempting Googlebot spoof for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:14.804465 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:14.804571 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:14.804629 INFO: Attempting Enhanced Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:14.967437 INFO: Found Wayback snapshot from 20240107085001: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:15.087873 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:02:15.087979 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:15.088005 INFO: Attempting Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:15.213547 INFO: Found Wayback snapshot: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:15.328268 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:02:15.328370 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:15.328406 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA. Attempting Google Search fallback...
+2025-09-14T23:02:15.328461 INFO: Google Search fallback: searching for 'aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA'
+2025-09-14T23:02:15.399134 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:02:15.416123 INFO: Attempting direct fetch for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:15.612552 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:15.627158 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:15.627263 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:15.627299 INFO: Attempting Reader Mode strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:15.851369 ERROR: Reader mode fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:02:15.858268 INFO: Attempting JS Disabled strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:16.077812 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:02:16.077959 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:16.077986 INFO: Attempting Refresh Stop strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:16.275149 ERROR: Refresh stop fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:02:16.278323 INFO: Attempting Inspect Element strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:16.429741 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:02:16.429846 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:16.429873 INFO: Attempting removepaywalls.com bypass for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:19.493404 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:02:19.493498 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:19.493528 INFO: Attempting archive.today for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:22.540003 INFO: No existing archive found, creating new archive for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:23.399857 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:02:23.400246 INFO: Attempting archive.is for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:26.086824 INFO: Attempting archive.li for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:29.649249 INFO: Attempting archive.fo for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:31.634508 INFO: Attempting archive.ph for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:35.521842 INFO: Attempting Googlebot spoof for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:35.665675 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:35.665787 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:35.665815 INFO: Attempting Enhanced Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:35.775475 INFO: Found Wayback snapshot from 20240107085001: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:35.911665 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:02:35.911775 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:35.911801 INFO: Attempting Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:36.029209 INFO: Found Wayback snapshot: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:36.150431 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:02:36.150547 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:36.150583 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA. Attempting Google Search fallback...
+2025-09-14T23:02:36.150667 INFO: Google Search fallback: searching for 'aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA'
+2025-09-14T23:02:36.183732 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:02:36.192531 INFO: Attempting direct fetch for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:36.353204 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:36.361010 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:36.361127 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:36.361163 INFO: Attempting Reader Mode strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:36.508914 ERROR: Reader mode fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:02:36.513050 INFO: Attempting JS Disabled strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:36.705909 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:02:36.706015 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:36.706042 INFO: Attempting Refresh Stop strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:36.845803 ERROR: Refresh stop fetch failed for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA: cannot use a string pattern on a bytes-like object
+2025-09-14T23:02:36.849331 INFO: Attempting Inspect Element strategy for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:37.000054 INFO: Content is very short (19 words). Likely a teaser.
+2025-09-14T23:02:37.000159 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:37.000186 INFO: Attempting removepaywalls.com bypass for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:39.475316 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:02:39.475432 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:39.475457 INFO: Attempting archive.today for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:42.042696 INFO: No existing archive found, creating new archive for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:42.929346 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:02:42.930129 INFO: Attempting archive.is for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:45.411868 INFO: Attempting archive.li for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:47.390460 INFO: Attempting archive.fo for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:50.417963 INFO: Attempting archive.ph for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:53.825813 INFO: Attempting Googlebot spoof for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:53.991043 INFO: Suspicious title-to-content ratio: 0.23. Likely truncated.
+2025-09-14T23:02:53.991153 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:53.991179 INFO: Attempting Enhanced Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:54.120385 INFO: Found Wayback snapshot from 20240107085001: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:54.234222 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:02:54.234329 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:54.234368 INFO: Attempting Wayback Machine for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:54.377826 INFO: Found Wayback snapshot: http://web.archive.org/web/20240107085001/https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA
+2025-09-14T23:02:54.518408 INFO: Content is very short (9 words). Likely a teaser.
+2025-09-14T23:02:54.518516 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:02:54.518548 ERROR: All fetch strategies failed or returned low-quality content for https://podcasts.google.com/feed/aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA. Attempting Google Search fallback...
+2025-09-14T23:02:54.518682 INFO: Google Search fallback: searching for 'aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL2V4cGVyaW1lbnRfcG9kY2FzdA'
+2025-09-14T23:02:54.589934 INFO: Google Search fallback did not find alternative URL

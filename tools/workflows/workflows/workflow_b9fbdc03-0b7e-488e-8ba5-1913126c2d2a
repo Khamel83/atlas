@@ -1,0 +1,125 @@
+2025-09-15T12:31:13.431899 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:14.809873 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:14.868204 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:14.868326 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:14.868369 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:15.013636 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:31:15.016573 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:15.180542 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:15.180694 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:15.180722 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:15.232158 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:31:15.234479 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:15.457710 INFO: Content is very short (120 words). Likely a teaser.
+2025-09-15T12:31:15.457826 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:15.457854 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:17.766633 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:31:17.766735 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:17.766764 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:21.583893 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:22.461129 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:31:22.461670 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:26.088883 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:28.157261 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:30.391984 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:32.637419 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:32.818496 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:32.818637 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:32.818669 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:43.788037 INFO: Found Wayback snapshot from 20211206043357: http://web.archive.org/web/20211206043357/https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:45.494604 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:45.494724 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:45.494756 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:45.621202 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: No archived snapshots found
+2025-09-15T12:31:45.624221 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder. Attempting Google Search fallback...
+2025-09-15T12:31:45.631840 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:45.715193 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:45.770954 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:45.771076 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:45.771117 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:45.824552 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:31:45.827338 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:45.966204 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:31:45.966311 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:45.966341 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:46.016234 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:31:46.018575 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:46.243052 INFO: Content is very short (120 words). Likely a teaser.
+2025-09-15T12:31:46.243163 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:46.243190 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:51.038165 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:31:51.038271 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:31:51.038302 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:55.393998 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:56.297247 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:31:56.297761 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:31:59.016402 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:00.916649 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:03.126558 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:06.105673 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:06.294284 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:06.294396 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:06.294430 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:06.786863 INFO: Found Wayback snapshot from 20211206043357: http://web.archive.org/web/20211206043357/https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:06.936640 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:06.936761 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:06.936787 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:07.079002 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: No archived snapshots found
+2025-09-15T12:32:07.081611 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder. Attempting Google Search fallback...
+2025-09-15T12:32:07.082077 INFO: Google Search fallback: searching for 'the khashoggi body doubleand mounting evidence of a premeditated murder'
+2025-09-15T12:32:07.114668 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:32:07.122762 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:07.207338 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:07.261690 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:07.261815 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:07.261857 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:07.318187 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:32:07.320838 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:07.456287 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:07.456395 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:07.456423 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:07.505884 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:32:07.508305 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:07.729353 INFO: Content is very short (120 words). Likely a teaser.
+2025-09-15T12:32:07.729446 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:07.729474 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:11.667139 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:32:11.667250 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:11.667278 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.033634 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.043287 INFO: Attempting direct fetch for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.278721 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:16.338828 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:16.338935 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:16.338974 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.398481 ERROR: Reader mode fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:32:16.401196 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.541048 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:16.541159 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:16.541184 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.592756 ERROR: Refresh stop fetch failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: cannot use a string pattern on a bytes-like object
+2025-09-15T12:32:16.595253 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:16.820523 INFO: Content is very short (120 words). Likely a teaser.
+2025-09-15T12:32:16.820663 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:16.820692 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:19.839812 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:32:19.839917 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:19.839945 INFO: Attempting archive.today for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:23.656450 INFO: No existing archive found, creating new archive for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:24.516804 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:32:24.517069 INFO: Attempting archive.is for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:26.898769 INFO: Attempting archive.li for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:29.999491 INFO: Attempting archive.fo for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:33.470410 INFO: Attempting archive.ph for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:35.416407 INFO: Attempting Googlebot spoof for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:35.517308 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:35.517426 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:35.517453 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:36.073757 INFO: Found Wayback snapshot from 20211206043357: http://web.archive.org/web/20211206043357/https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:36.319150 INFO: Paywall element '.paywall' detected.
+2025-09-15T12:32:36.319272 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:32:36.319298 INFO: Attempting Wayback Machine for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder
+2025-09-15T12:32:36.432298 ERROR: Wayback Machine failed for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder: No archived snapshots found
+2025-09-15T12:32:36.434872 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/news/news-desk/the-khashoggi-body-doubleand-mounting-evidence-of-a-premeditated-murder. Attempting Google Search fallback...
+2025-09-15T12:32:36.435307 INFO: Google Search fallback: searching for 'the khashoggi body doubleand mounting evidence of a premeditated murder'
+2025-09-15T12:32:36.468084 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,126 @@
+2025-09-15T13:22:04.726995 INFO: Attempting direct fetch for https://chat.openai.com/auth/login
+2025-09-15T13:22:04.992494 ERROR: Direct fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:04.995139 INFO: Attempting Reader Mode strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:05.162294 ERROR: Reader mode fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:05.165008 INFO: Attempting JS Disabled strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:05.334886 ERROR: JS disabled fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:05.337555 INFO: Attempting Refresh Stop strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:05.523206 ERROR: Refresh stop fetch failed for https://chat.openai.com/auth/login: cannot use a string pattern on a bytes-like object
+2025-09-15T13:22:05.528453 INFO: Attempting Inspect Element strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:05.696092 ERROR: Inspect element fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:05.698781 INFO: Attempting removepaywalls.com bypass for https://chat.openai.com/auth/login
+2025-09-15T13:22:08.603788 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:22:08.603962 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:22:08.604073 INFO: Attempting archive.today for https://chat.openai.com/auth/login
+2025-09-15T13:22:12.411810 INFO: No existing archive found, creating new archive for https://chat.openai.com/auth/login
+2025-09-15T13:22:13.292374 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:22:13.292902 INFO: Attempting archive.is for https://chat.openai.com/auth/login
+2025-09-15T13:22:16.859336 INFO: Attempting archive.li for https://chat.openai.com/auth/login
+2025-09-15T13:22:19.467314 INFO: Attempting archive.fo for https://chat.openai.com/auth/login
+2025-09-15T13:22:22.585262 INFO: Attempting archive.ph for https://chat.openai.com/auth/login
+2025-09-15T13:22:24.860107 INFO: Attempting Googlebot spoof for https://chat.openai.com/auth/login
+2025-09-15T13:22:25.032110 ERROR: Googlebot spoof failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:25.034960 INFO: Attempting Enhanced Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:22:30.799679 INFO: Found Wayback snapshot from 20231202024845: http://web.archive.org/web/20231202024845/https://chat.openai.com/auth/login
+2025-09-15T13:22:30.799895 INFO: Timeframe 20231201 failed: [Errno 32] Broken pipe
+2025-09-15T13:22:32.122057 INFO: Found Wayback snapshot from 20221130183729: http://web.archive.org/web/20221130183729/https://chat.openai.com/auth/login
+2025-09-15T13:22:36.040537 INFO: Content is very short (12 words). Likely a teaser.
+2025-09-15T13:22:36.040685 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:22:36.040718 INFO: Attempting Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:22:36.285091 ERROR: Wayback Machine failed for https://chat.openai.com/auth/login: No archived snapshots found
+2025-09-15T13:22:36.286598 ERROR: All fetch strategies failed or returned low-quality content for https://chat.openai.com/auth/login. Attempting Google Search fallback...
+2025-09-15T13:22:36.287039 INFO: Google Search fallback: searching for 'login'
+2025-09-15T13:22:36.318859 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:22:36.327310 INFO: Attempting direct fetch for https://chat.openai.com/auth/login
+2025-09-15T13:22:36.507245 ERROR: Direct fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:36.511035 INFO: Attempting Reader Mode strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:36.690027 ERROR: Reader mode fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:36.693358 INFO: Attempting JS Disabled strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:36.859527 ERROR: JS disabled fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:36.862951 INFO: Attempting Refresh Stop strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:37.061644 ERROR: Refresh stop fetch failed for https://chat.openai.com/auth/login: cannot use a string pattern on a bytes-like object
+2025-09-15T13:22:37.064993 INFO: Attempting Inspect Element strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:37.270689 ERROR: Inspect element fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:37.274184 INFO: Attempting removepaywalls.com bypass for https://chat.openai.com/auth/login
+2025-09-15T13:22:39.504980 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:22:39.505095 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:22:39.505121 INFO: Attempting archive.today for https://chat.openai.com/auth/login
+2025-09-15T13:22:43.625629 INFO: No existing archive found, creating new archive for https://chat.openai.com/auth/login
+2025-09-15T13:22:44.526973 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:22:44.527456 INFO: Attempting archive.is for https://chat.openai.com/auth/login
+2025-09-15T13:22:47.451282 INFO: Attempting archive.li for https://chat.openai.com/auth/login
+2025-09-15T13:22:51.512038 INFO: Attempting archive.fo for https://chat.openai.com/auth/login
+2025-09-15T13:22:54.978927 INFO: Attempting archive.ph for https://chat.openai.com/auth/login
+2025-09-15T13:22:57.430437 INFO: Attempting Googlebot spoof for https://chat.openai.com/auth/login
+2025-09-15T13:22:57.595320 ERROR: Googlebot spoof failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:57.598086 INFO: Attempting Enhanced Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:22:57.940266 INFO: Found Wayback snapshot from 20231202024845: http://web.archive.org/web/20231202024845/https://chat.openai.com/auth/login
+2025-09-15T13:22:58.866290 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:22:58.866405 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:22:58.866434 INFO: Attempting Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:22:59.051228 ERROR: Wayback Machine failed for https://chat.openai.com/auth/login: No archived snapshots found
+2025-09-15T13:22:59.053081 ERROR: All fetch strategies failed or returned low-quality content for https://chat.openai.com/auth/login. Attempting Google Search fallback...
+2025-09-15T13:22:59.053193 INFO: Google Search fallback: searching for 'login'
+2025-09-15T13:22:59.084860 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:22:59.091766 INFO: Attempting direct fetch for https://chat.openai.com/auth/login
+2025-09-15T13:22:59.264352 ERROR: Direct fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:59.266972 INFO: Attempting Reader Mode strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:59.423046 ERROR: Reader mode fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:59.425611 INFO: Attempting JS Disabled strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:59.621653 ERROR: JS disabled fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:59.624341 INFO: Attempting Refresh Stop strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:59.779431 ERROR: Refresh stop fetch failed for https://chat.openai.com/auth/login: cannot use a string pattern on a bytes-like object
+2025-09-15T13:22:59.782013 INFO: Attempting Inspect Element strategy for https://chat.openai.com/auth/login
+2025-09-15T13:22:59.952513 ERROR: Inspect element fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:22:59.955027 INFO: Attempting removepaywalls.com bypass for https://chat.openai.com/auth/login
+2025-09-15T13:23:04.847323 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:23:04.847439 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:04.847468 INFO: Attempting archive.today for https://chat.openai.com/auth/login
+2025-09-15T13:23:08.188038 INFO: No existing archive found, creating new archive for https://chat.openai.com/auth/login
+2025-09-15T13:23:09.092215 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:23:09.092706 INFO: Attempting archive.is for https://chat.openai.com/auth/login
+2025-09-15T13:23:12.681227 INFO: Attempting archive.li for https://chat.openai.com/auth/login
+2025-09-15T13:23:15.672413 INFO: Attempting archive.fo for https://chat.openai.com/auth/login
+2025-09-15T13:23:17.988820 INFO: Attempting archive.ph for https://chat.openai.com/auth/login
+2025-09-15T13:23:20.824034 INFO: Attempting Googlebot spoof for https://chat.openai.com/auth/login
+2025-09-15T13:23:21.007225 ERROR: Googlebot spoof failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:23:21.009890 INFO: Attempting Enhanced Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:23:23.154447 INFO: Found Wayback snapshot from 20231202024845: http://web.archive.org/web/20231202024845/https://chat.openai.com/auth/login
+2025-09-15T13:23:23.258701 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:23:23.258817 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:23.258847 INFO: Attempting Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:23:23.382088 ERROR: Wayback Machine failed for https://chat.openai.com/auth/login: No archived snapshots found
+2025-09-15T13:23:23.384703 ERROR: All fetch strategies failed or returned low-quality content for https://chat.openai.com/auth/login. Attempting Google Search fallback...
+2025-09-15T13:23:23.384832 INFO: Google Search fallback: searching for 'login'
+2025-09-15T13:23:23.385220 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T13:23:23.393181 INFO: Attempting direct fetch for https://chat.openai.com/auth/login
+2025-09-15T13:23:23.568471 ERROR: Direct fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:23:23.573515 INFO: Attempting Reader Mode strategy for https://chat.openai.com/auth/login
+2025-09-15T13:23:23.778532 ERROR: Reader mode fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:23:23.784371 INFO: Attempting JS Disabled strategy for https://chat.openai.com/auth/login
+2025-09-15T13:23:24.016912 ERROR: JS disabled fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:23:24.022393 INFO: Attempting Refresh Stop strategy for https://chat.openai.com/auth/login
+2025-09-15T13:23:24.225405 ERROR: Refresh stop fetch failed for https://chat.openai.com/auth/login: cannot use a string pattern on a bytes-like object
+2025-09-15T13:23:24.230916 INFO: Attempting Inspect Element strategy for https://chat.openai.com/auth/login
+2025-09-15T13:23:24.441426 ERROR: Inspect element fetch failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:23:24.448074 INFO: Attempting removepaywalls.com bypass for https://chat.openai.com/auth/login
+2025-09-15T13:23:27.110242 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:23:27.110350 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:27.110376 INFO: Attempting archive.today for https://chat.openai.com/auth/login
+2025-09-15T13:23:30.422651 INFO: No existing archive found, creating new archive for https://chat.openai.com/auth/login
+2025-09-15T13:23:31.282380 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:23:31.282913 INFO: Attempting archive.is for https://chat.openai.com/auth/login
+2025-09-15T13:23:33.662499 INFO: Attempting archive.li for https://chat.openai.com/auth/login
+2025-09-15T13:23:35.816401 INFO: Attempting archive.fo for https://chat.openai.com/auth/login
+2025-09-15T13:23:37.745073 INFO: Attempting archive.ph for https://chat.openai.com/auth/login
+2025-09-15T13:23:40.916854 INFO: Attempting Googlebot spoof for https://chat.openai.com/auth/login
+2025-09-15T13:23:41.086270 ERROR: Googlebot spoof failed for https://chat.openai.com/auth/login: 403 Client Error: Forbidden for url: https://chatgpt.com/auth/login
+2025-09-15T13:23:41.088989 INFO: Attempting Enhanced Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:23:41.389919 INFO: Found Wayback snapshot from 20231202024845: http://web.archive.org/web/20231202024845/https://chat.openai.com/auth/login
+2025-09-15T13:23:41.624480 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T13:23:41.624623 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:23:41.624660 INFO: Attempting Wayback Machine for https://chat.openai.com/auth/login
+2025-09-15T13:23:41.761278 ERROR: Wayback Machine failed for https://chat.openai.com/auth/login: No archived snapshots found
+2025-09-15T13:23:41.763919 ERROR: All fetch strategies failed or returned low-quality content for https://chat.openai.com/auth/login. Attempting Google Search fallback...
+2025-09-15T13:23:41.764411 INFO: Google Search fallback: searching for 'login'
+2025-09-15T13:23:41.798240 INFO: Google Search fallback did not find alternative URL

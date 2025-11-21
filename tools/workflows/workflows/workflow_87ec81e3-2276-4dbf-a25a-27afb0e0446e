@@ -1,0 +1,125 @@
+2025-09-15T11:01:20.417548 INFO: Attempting direct fetch for http://www.harryshearer.com/
+2025-09-15T11:01:24.145244 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:24.185752 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:24.185853 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:01:24.185895 INFO: Attempting Reader Mode strategy for http://www.harryshearer.com/
+2025-09-15T11:01:27.723851 ERROR: Reader mode fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:01:27.725561 INFO: Attempting JS Disabled strategy for http://www.harryshearer.com/
+2025-09-15T11:01:31.285411 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:31.285522 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:01:31.285550 INFO: Attempting Refresh Stop strategy for http://www.harryshearer.com/
+2025-09-15T11:01:34.843951 ERROR: Refresh stop fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:01:34.845676 INFO: Attempting Inspect Element strategy for http://www.harryshearer.com/
+2025-09-15T11:01:38.436009 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:38.436139 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:01:38.436172 INFO: Attempting removepaywalls.com bypass for http://www.harryshearer.com/
+2025-09-15T11:01:43.406033 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:01:43.406123 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:01:43.406149 INFO: Attempting archive.today for http://www.harryshearer.com/
+2025-09-15T11:01:43.437312 INFO: Attempting direct fetch for http://www.harryshearer.com/
+2025-09-15T11:01:47.961756 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:48.018175 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:48.018288 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:01:48.018329 INFO: Attempting Reader Mode strategy for http://www.harryshearer.com/
+2025-09-15T11:01:51.537054 ERROR: Reader mode fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:01:51.538806 INFO: Attempting JS Disabled strategy for http://www.harryshearer.com/
+2025-09-15T11:01:55.138187 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:01:55.138301 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:01:55.138331 INFO: Attempting Refresh Stop strategy for http://www.harryshearer.com/
+2025-09-15T11:01:58.674641 ERROR: Refresh stop fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:01:58.676544 INFO: Attempting Inspect Element strategy for http://www.harryshearer.com/
+2025-09-15T11:02:02.212450 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:02:02.212569 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:02.212641 INFO: Attempting removepaywalls.com bypass for http://www.harryshearer.com/
+2025-09-15T11:02:07.139523 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:02:07.139646 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:07.139678 INFO: Attempting archive.today for http://www.harryshearer.com/
+2025-09-15T11:02:11.575084 INFO: No existing archive found, creating new archive for http://www.harryshearer.com/
+2025-09-15T11:02:12.457296 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:02:12.457812 INFO: Attempting archive.is for http://www.harryshearer.com/
+2025-09-15T11:02:16.143886 INFO: Attempting archive.li for http://www.harryshearer.com/
+2025-09-15T11:02:18.236442 INFO: Attempting archive.fo for http://www.harryshearer.com/
+2025-09-15T11:02:20.682060 INFO: Attempting archive.ph for http://www.harryshearer.com/
+2025-09-15T11:02:24.141632 INFO: Attempting Googlebot spoof for http://www.harryshearer.com/
+2025-09-15T11:02:27.741098 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:02:27.741214 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:27.741247 INFO: Attempting Enhanced Wayback Machine for http://www.harryshearer.com/
+2025-09-15T11:02:33.463422 INFO: Found Wayback snapshot from 20231128192002: http://web.archive.org/web/20231128192002/https://harryshearer.com/
+2025-09-15T11:02:35.328412 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T11:02:35.328532 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:35.328563 INFO: Attempting Wayback Machine for http://www.harryshearer.com/
+2025-09-15T11:02:35.464148 ERROR: Wayback Machine failed for http://www.harryshearer.com/: No archived snapshots found
+2025-09-15T11:02:35.466188 ERROR: All fetch strategies failed or returned low-quality content for http://www.harryshearer.com/. Attempting Google Search fallback...
+2025-09-15T11:02:35.467052 INFO: Google Search fallback: searching for 'article www.harryshearer.com'
+2025-09-15T11:02:35.500535 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:02:35.509459 INFO: Attempting direct fetch for http://www.harryshearer.com/
+2025-09-15T11:02:39.090456 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:02:39.140460 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:02:39.140581 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:39.140675 INFO: Attempting Reader Mode strategy for http://www.harryshearer.com/
+2025-09-15T11:02:42.683812 ERROR: Reader mode fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:02:42.685452 INFO: Attempting JS Disabled strategy for http://www.harryshearer.com/
+2025-09-15T11:02:46.223311 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:02:46.223426 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:46.223456 INFO: Attempting Refresh Stop strategy for http://www.harryshearer.com/
+2025-09-15T11:02:49.795248 ERROR: Refresh stop fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:02:49.796769 INFO: Attempting Inspect Element strategy for http://www.harryshearer.com/
+2025-09-15T11:02:53.387917 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:02:53.388036 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:53.388067 INFO: Attempting removepaywalls.com bypass for http://www.harryshearer.com/
+2025-09-15T11:02:56.080370 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:02:56.080495 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:02:56.080528 INFO: Attempting archive.today for http://www.harryshearer.com/
+2025-09-15T11:03:00.026321 INFO: No existing archive found, creating new archive for http://www.harryshearer.com/
+2025-09-15T11:03:00.938176 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:03:00.938647 INFO: Attempting archive.is for http://www.harryshearer.com/
+2025-09-15T11:03:03.370508 INFO: Attempting archive.li for http://www.harryshearer.com/
+2025-09-15T11:03:05.413058 INFO: Attempting archive.fo for http://www.harryshearer.com/
+2025-09-15T11:03:07.765878 INFO: Attempting archive.ph for http://www.harryshearer.com/
+2025-09-15T11:03:10.442857 INFO: Attempting Googlebot spoof for http://www.harryshearer.com/
+2025-09-15T11:03:14.008969 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:03:14.009088 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:14.009115 INFO: Attempting Enhanced Wayback Machine for http://www.harryshearer.com/
+2025-09-15T11:03:14.268882 INFO: Found Wayback snapshot from 20231128192002: http://web.archive.org/web/20231128192002/https://harryshearer.com/
+2025-09-15T11:03:14.372251 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T11:03:14.372348 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:14.372376 INFO: Attempting Wayback Machine for http://www.harryshearer.com/
+2025-09-15T11:03:14.506299 ERROR: Wayback Machine failed for http://www.harryshearer.com/: No archived snapshots found
+2025-09-15T11:03:14.508287 ERROR: All fetch strategies failed or returned low-quality content for http://www.harryshearer.com/. Attempting Google Search fallback...
+2025-09-15T11:03:14.508917 INFO: Google Search fallback: searching for 'article www.harryshearer.com'
+2025-09-15T11:03:14.541984 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:03:14.549415 INFO: Attempting direct fetch for http://www.harryshearer.com/
+2025-09-15T11:03:18.132981 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:03:18.170474 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:03:18.170585 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:18.170654 INFO: Attempting Reader Mode strategy for http://www.harryshearer.com/
+2025-09-15T11:03:21.737734 ERROR: Reader mode fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:03:21.739639 INFO: Attempting JS Disabled strategy for http://www.harryshearer.com/
+2025-09-15T11:03:21.740155 ERROR: JS disabled fetch failed for http://www.harryshearer.com/: [Errno 32] Broken pipe
+2025-09-15T11:03:21.740212 INFO: Attempting Refresh Stop strategy for http://www.harryshearer.com/
+2025-09-15T11:03:25.270440 ERROR: Refresh stop fetch failed for http://www.harryshearer.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T11:03:25.271914 INFO: Attempting Inspect Element strategy for http://www.harryshearer.com/
+2025-09-15T11:03:28.873776 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:03:28.873891 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:28.873921 INFO: Attempting removepaywalls.com bypass for http://www.harryshearer.com/
+2025-09-15T11:03:32.128791 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:03:32.128929 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:32.128959 INFO: Attempting archive.today for http://www.harryshearer.com/
+2025-09-15T11:03:36.346908 INFO: No existing archive found, creating new archive for http://www.harryshearer.com/
+2025-09-15T11:03:37.203471 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:03:37.203967 INFO: Attempting archive.is for http://www.harryshearer.com/
+2025-09-15T11:03:39.982732 INFO: Attempting archive.li for http://www.harryshearer.com/
+2025-09-15T11:03:42.128097 INFO: Attempting archive.fo for http://www.harryshearer.com/
+2025-09-15T11:03:45.971772 INFO: Attempting archive.ph for http://www.harryshearer.com/
+2025-09-15T11:03:48.250160 INFO: Attempting Googlebot spoof for http://www.harryshearer.com/
+2025-09-15T11:03:51.951433 INFO: Content is very short (93 words). Likely a teaser.
+2025-09-15T11:03:51.951555 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:51.951583 INFO: Attempting Enhanced Wayback Machine for http://www.harryshearer.com/
+2025-09-15T11:03:52.228448 INFO: Found Wayback snapshot from 20231128192002: http://web.archive.org/web/20231128192002/https://harryshearer.com/
+2025-09-15T11:03:52.340383 INFO: Content is very short (75 words). Likely a teaser.
+2025-09-15T11:03:52.340500 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:52.340528 INFO: Attempting Wayback Machine for http://www.harryshearer.com/
+2025-09-15T11:03:52.473943 ERROR: Wayback Machine failed for http://www.harryshearer.com/: No archived snapshots found
+2025-09-15T11:03:52.475825 ERROR: All fetch strategies failed or returned low-quality content for http://www.harryshearer.com/. Attempting Google Search fallback...
+2025-09-15T11:03:52.476252 INFO: Google Search fallback: searching for 'article www.harryshearer.com'
+2025-09-15T11:03:52.555686 INFO: Google Search fallback did not find alternative URL

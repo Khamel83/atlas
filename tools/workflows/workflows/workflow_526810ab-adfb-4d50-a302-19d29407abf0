@@ -1,0 +1,131 @@
+2025-09-15T06:57:48.481221 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:48.881360 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:57:48.885456 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:57:48.885532 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:57:48.885569 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:48.992851 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T06:57:48.994614 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:49.107904 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:57:49.107998 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:57:49.108023 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:49.216334 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T06:57:49.218111 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:49.333978 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:57:49.334067 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:57:49.334093 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:54.228662 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:57:54.228767 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:57:54.228793 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:56.899704 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:57.756171 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:57:57.756675 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:57:59.658337 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:02.205977 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:04.246321 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:08.080112 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:08.275193 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:58:08.275296 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:58:08.275322 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:12.721198 INFO: Found Wayback snapshot from 20250731012136: http://web.archive.org/web/20250731012136/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:15.129564 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:15.129737 INFO: Timeframe 20231201 failed: [Errno 32] Broken pipe
+2025-09-15T06:58:21.014059 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:38.337112 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:39.702014 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:46.539571 ERROR: Enhanced Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: No archived snapshots found in any timeframe
+2025-09-15T06:58:46.542014 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:46.670980 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731012136/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:48.192081 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:58:48.192181 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:58:48.192212 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg. Attempting Google Search fallback...
+2025-09-15T06:58:48.192270 INFO: Google Search fallback: searching for 'next.svg'
+2025-09-15T06:58:48.225233 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:58:48.232614 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:48.404749 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:58:48.408413 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:58:48.408489 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:58:48.408524 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:48.515736 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T06:58:48.517254 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:48.630307 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:58:48.630401 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:58:48.630427 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:48.742488 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T06:58:48.744409 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:48.862541 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:58:48.862675 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:58:48.862705 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:51.009379 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:58:51.009485 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:58:51.009512 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:53.800717 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:54.688648 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:58:54.689462 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:58:58.399901 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:01.559972 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:03.579351 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:06.961526 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:07.148088 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:07.148189 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:07.148216 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:07.264872 INFO: Found Wayback snapshot from 20250731012136: http://web.archive.org/web/20250731012136/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:08.562130 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:11.511445 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:13.503881 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:15.796759 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:20.067188 ERROR: Enhanced Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: No archived snapshots found in any timeframe
+2025-09-15T06:59:20.069192 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:20.199380 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731012136/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:21.742507 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:21.742654 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:21.742699 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:21.742730 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg. Attempting Google Search fallback...
+2025-09-15T06:59:21.742792 INFO: Google Search fallback: searching for 'next.svg'
+2025-09-15T06:59:21.775319 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:59:21.784548 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:21.945652 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:21.949241 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:21.949332 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:21.949369 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:22.055809 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T06:59:22.057217 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:22.170079 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:22.170180 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:22.170204 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:22.278696 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object
+2025-09-15T06:59:22.280104 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:22.395917 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:22.396015 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:22.396040 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:27.060599 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T06:59:27.060717 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:27.060743 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:29.497503 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:30.350513 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T06:59:30.351318 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:32.756479 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:35.000986 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:38.668761 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:42.124014 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:42.317377 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:42.317479 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:42.317505 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:42.437072 INFO: Found Wayback snapshot from 20250731012136: http://web.archive.org/web/20250731012136/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:44.852022 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:46.259876 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:48.673781 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:51.061370 INFO: Found Wayback snapshot from 20241023134210: http://web.archive.org/web/20241023134210/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:53.759622 ERROR: Enhanced Wayback Machine failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: No archived snapshots found in any timeframe
+2025-09-15T06:59:53.761561 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:53.887300 INFO: Found Wayback snapshot: http://web.archive.org/web/20250731012136/https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:55.520804 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:55.520906 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:55.520936 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg. Attempting Google Search fallback...
+2025-09-15T06:59:55.520998 INFO: Google Search fallback: searching for 'next.svg'
+2025-09-15T06:59:55.557033 INFO: Google Search fallback did not find alternative URL
+2025-09-15T06:59:55.569521 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:55.761685 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:55.766324 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T06:59:55.766422 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T06:59:55.766460 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg
+2025-09-15T06:59:55.882003 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2024-09-27-tmag-greats/b2a0c71a-d1c2-47fb-ae32-7d568437bc5c/_assets/next.svg: cannot use a string pattern on a bytes-like object

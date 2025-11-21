@@ -1,0 +1,31 @@
+2025-09-15T07:55:29.548428 INFO: Attempting direct fetch for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:29.668458 ERROR: Direct fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:29.670449 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:29.902469 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:55:29.904805 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.020183 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.030129 INFO: Attempting direct fetch for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.146380 ERROR: Direct fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.148192 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.393768 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:55:30.396173 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.515158 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.517004 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.635626 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: cannot use a string pattern on a bytes-like object
+2025-09-15T07:55:30.637605 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.754140 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:30.756339 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:33.916657 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:55:33.916766 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:55:33.916792 INFO: Attempting archive.today for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:37.744665 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:38.614794 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:55:38.615224 INFO: Attempting archive.is for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:42.024919 INFO: Attempting archive.li for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:45.121134 INFO: Attempting archive.fo for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:48.286228 INFO: Attempting archive.ph for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:50.902812 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:51.089620 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:51.090972 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:51.602180 INFO: Found Wayback snapshot from 20250902214733: http://web.archive.org/web/20250902214733/https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html
+2025-09-15T07:55:57.421897 INFO: Successfully fetched https://www.nytimes.com/2022/01/01/business/customer-service-pandemic-rage.html using wayback_machine_enhanced

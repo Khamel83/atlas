@@ -1,0 +1,152 @@
+2025-09-14T21:34:07.785148 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:08.389624 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:08.399842 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:08.399960 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:08.400001 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:08.525223 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:34:08.526682 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:08.981676 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:08.981783 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:08.981810 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:09.464222 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:34:09.467854 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:09.961107 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:09.961202 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:09.961230 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:14.551999 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:34:14.552108 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:14.552134 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:16.740907 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:17.627247 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:34:17.627732 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:19.859725 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:22.628015 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:25.031756 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:28.862993 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:29.214237 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:29.214337 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:29.214365 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:29.670446 INFO: Found Wayback snapshot from 20250912063831: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:30.618884 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:30.619033 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:30.619059 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:30.727028 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:31.332612 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:31.332720 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:31.332751 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp. Attempting Google Search fallback...
+2025-09-14T21:34:31.332815 INFO: Google Search fallback: searching for 'bkbontanical arden0042 @@ 300.webp'
+2025-09-14T21:34:31.364767 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:34:31.375387 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:31.669672 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:31.679336 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:31.679421 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:31.679461 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:31.801722 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:34:31.803124 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:32.257143 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:32.257245 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:32.257271 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:32.787893 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:34:32.791659 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:33.395950 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:33.396049 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:33.396077 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:36.537660 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:34:36.537766 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:36.537794 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:38.835263 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:39.692014 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:34:39.692432 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:41.871536 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:44.029292 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:46.911748 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:50.228645 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:50.589961 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:50.590067 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:50.590095 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:50.743459 INFO: Found Wayback snapshot from 20250912063831: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:51.719783 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:51.719900 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:51.719927 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:51.845962 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:52.471408 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:52.471522 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:52.471557 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp. Attempting Google Search fallback...
+2025-09-14T21:34:52.473710 INFO: Google Search fallback: searching for 'bkbontanical arden0042 @@ 300.webp'
+2025-09-14T21:34:52.531883 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:34:52.542864 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:52.836464 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:52.848700 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:52.848812 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:52.848855 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:52.972192 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:34:52.973907 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:53.439057 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:53.439171 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:53.439199 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:53.892513 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:34:53.894246 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:54.415741 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:34:54.415840 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:54.415869 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:34:58.737046 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:34:58.737157 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:34:58.737232 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:01.705252 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:02.605068 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:35:02.605483 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:04.869262 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:07.876322 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:11.494970 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:14.801323 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:15.241261 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:15.241375 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:15.241403 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:15.377784 INFO: Found Wayback snapshot from 20250912063831: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:16.179704 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:16.179827 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:16.179855 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:16.312455 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:17.067470 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:17.067574 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:17.067664 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp. Attempting Google Search fallback...
+2025-09-14T21:35:17.067730 INFO: Google Search fallback: searching for 'bkbontanical arden0042 @@ 300.webp'
+2025-09-14T21:35:17.101025 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:35:17.110128 INFO: Attempting direct fetch for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:17.414293 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:17.424225 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:17.424322 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:17.424361 INFO: Attempting Reader Mode strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:17.546506 ERROR: Reader mode fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:35:17.547973 INFO: Attempting JS Disabled strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:18.011759 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:18.011868 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:18.011895 INFO: Attempting Refresh Stop strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:18.465751 ERROR: Refresh stop fetch failed for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp: cannot use a string pattern on a bytes-like object
+2025-09-14T21:35:18.467203 INFO: Attempting Inspect Element strategy for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:18.928440 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:18.928555 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:18.928582 INFO: Attempting removepaywalls.com bypass for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:23.102864 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:35:23.102973 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:23.103001 INFO: Attempting archive.today for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:26.433893 INFO: No existing archive found, creating new archive for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:27.325205 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:35:27.325670 INFO: Attempting archive.is for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:29.893562 INFO: Attempting archive.li for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:32.614843 INFO: Attempting archive.fo for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:36.469118 INFO: Attempting archive.ph for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:38.402460 INFO: Attempting Googlebot spoof for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:38.768666 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:38.768790 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:38.768819 INFO: Attempting Enhanced Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:38.893994 INFO: Found Wayback snapshot from 20250912063831: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:39.520020 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:39.520122 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:39.520150 INFO: Attempting Wayback Machine for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:39.632191 INFO: Found Wayback snapshot: http://web.archive.org/web/20250912063831/https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp
+2025-09-14T21:35:40.239642 INFO: Content is very short (68 words). Likely a teaser.
+2025-09-14T21:35:40.239746 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:35:40.239777 ERROR: All fetch strategies failed or returned low-quality content for https://static01.nytimes.com/newsgraphics/2025-01-27-covid-anniversary/_images/bkbontanical_arden0042-@@-300.webp. Attempting Google Search fallback...
+2025-09-14T21:35:40.239840 INFO: Google Search fallback: searching for 'bkbontanical arden0042 @@ 300.webp'
+2025-09-14T21:35:40.273190 INFO: Google Search fallback did not find alternative URL

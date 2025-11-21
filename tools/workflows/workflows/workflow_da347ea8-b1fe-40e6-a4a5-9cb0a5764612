@@ -1,0 +1,12 @@
+2025-09-15T05:05:55.356481 INFO: Attempting direct fetch for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/
+2025-09-15T05:05:55.719013 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:05:55.952923 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T05:05:55.953045 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:05:55.953093 INFO: Attempting Reader Mode strategy for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/
+2025-09-15T05:05:56.021307 ERROR: Reader mode fetch failed for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:05:56.023321 INFO: Attempting JS Disabled strategy for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/
+2025-09-15T05:05:56.023632 ERROR: JS disabled fetch failed for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/: [Errno 32] Broken pipe
+2025-09-15T05:05:56.023696 INFO: Attempting Refresh Stop strategy for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/
+2025-09-15T05:05:56.142544 ERROR: Refresh stop fetch failed for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:05:56.144539 INFO: Attempting Inspect Element strategy for https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/
+2025-09-15T05:05:56.472072 INFO: Successfully fetched https://www.railway-technology.com/features/will-california-ever-get-its-high-speed-rail/ using inspect_element

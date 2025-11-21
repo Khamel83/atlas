@@ -1,0 +1,132 @@
+2025-09-14T21:43:46.084943 INFO: Attempting direct fetch for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.230207 ERROR: Direct fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.231607 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.309874 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.311169 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.390010 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.391437 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.472288 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: cannot use a string pattern on a bytes-like object
+2025-09-14T21:43:46.473732 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.554091 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:46.555448 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:51.156201 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:43:51.158624 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:43:51.158720 INFO: Attempting archive.today for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:54.122796 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:54.978451 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:43:54.978920 INFO: Attempting archive.is for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:43:58.308642 INFO: Attempting archive.li for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:01.530864 INFO: Attempting archive.fo for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:03.690992 INFO: Attempting archive.ph for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:05.791133 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:05.870186 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:05.871552 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:06.897289 INFO: Found Wayback snapshot from 20241021203534: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.100754 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:44:08.100864 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:08.100952 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.210420 INFO: Found Wayback snapshot: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.414710 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:44:08.414811 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:08.414846 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870. Attempting Google Search fallback...
+2025-09-14T21:44:08.414912 INFO: Google Search fallback: searching for 'help were drowning in recycling cue the internet of trash 11551502870'
+2025-09-14T21:44:08.472539 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:44:08.484155 INFO: Attempting direct fetch for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.597132 ERROR: Direct fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.598561 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.679971 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.682782 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.790774 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.792218 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.893966 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: cannot use a string pattern on a bytes-like object
+2025-09-14T21:44:08.897760 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.990270 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:08.991723 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:12.460723 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:44:12.460883 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:12.460913 INFO: Attempting archive.today for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:15.294859 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:16.183785 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:44:16.184162 INFO: Attempting archive.is for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:18.794820 INFO: Attempting archive.li for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:22.372854 INFO: Attempting archive.fo for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:25.114127 INFO: Attempting archive.ph for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:27.318180 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:27.400063 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:27.401469 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:27.519338 INFO: Found Wayback snapshot from 20241021203534: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:27.718571 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:44:27.718714 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:27.718740 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:27.831113 INFO: Found Wayback snapshot: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.040927 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:44:28.041052 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:28.041085 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870. Attempting Google Search fallback...
+2025-09-14T21:44:28.041155 INFO: Google Search fallback: searching for 'help were drowning in recycling cue the internet of trash 11551502870'
+2025-09-14T21:44:28.074238 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:44:28.087300 INFO: Attempting direct fetch for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.189244 ERROR: Direct fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.190952 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.271015 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.273429 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.372333 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.374351 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.455495 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: cannot use a string pattern on a bytes-like object
+2025-09-14T21:44:28.457072 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.552299 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:28.554020 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:32.875489 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:44:32.875633 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:32.875668 INFO: Attempting archive.today for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:37.133073 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:38.037918 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:44:38.038264 INFO: Attempting archive.is for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:40.867045 INFO: Attempting archive.li for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:44.368233 INFO: Attempting archive.fo for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:47.864174 INFO: Attempting archive.ph for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:50.151822 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:50.260155 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:50.261976 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:50.380077 INFO: Found Wayback snapshot from 20241021203534: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:50.752746 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:44:50.752867 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:50.752892 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:50.872212 INFO: Found Wayback snapshot: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.075978 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:44:51.076096 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:51.076129 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870. Attempting Google Search fallback...
+2025-09-14T21:44:51.076194 INFO: Google Search fallback: searching for 'help were drowning in recycling cue the internet of trash 11551502870'
+2025-09-14T21:44:51.124924 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:44:51.140071 INFO: Attempting direct fetch for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.251174 ERROR: Direct fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.252582 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.335688 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.337815 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.418324 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.422389 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.569815 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: cannot use a string pattern on a bytes-like object
+2025-09-14T21:44:51.575404 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.667921 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:51.670293 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:55.334925 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-14T21:44:55.335037 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:44:55.335064 INFO: Attempting archive.today for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:44:59.452834 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:00.358646 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:45:00.359208 INFO: Attempting archive.is for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:02.920164 INFO: Attempting archive.li for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:06.425447 INFO: Attempting archive.fo for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:09.888933 INFO: Attempting archive.ph for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:12.655920 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:12.752715 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:12.754288 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:12.890473 INFO: Found Wayback snapshot from 20241021203534: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:13.176748 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:45:13.176857 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:45:13.176882 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:13.327318 INFO: Found Wayback snapshot: http://web.archive.org/web/20241021203534/https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870
+2025-09-14T21:45:13.590815 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-14T21:45:13.590914 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:45:13.590947 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/help-were-drowning-in-recycling-cue-the-internet-of-trash-11551502870. Attempting Google Search fallback...
+2025-09-14T21:45:13.591009 INFO: Google Search fallback: searching for 'help were drowning in recycling cue the internet of trash 11551502870'
+2025-09-14T21:45:13.670886 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,119 @@
+2025-09-15T08:34:02.944738 INFO: Attempting direct fetch for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:04.061572 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:04.109959 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:04.110047 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:04.110086 INFO: Attempting Reader Mode strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:04.910812 ERROR: Reader mode fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:34:04.913240 INFO: Attempting JS Disabled strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:05.867089 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:34:05.867197 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:05.867222 INFO: Attempting Refresh Stop strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:06.307110 ERROR: Refresh stop fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:34:06.309657 INFO: Attempting Inspect Element strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:07.224094 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:34:07.224205 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:07.224234 INFO: Attempting removepaywalls.com bypass for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:10.577417 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:34:10.577534 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:10.577562 INFO: Attempting archive.today for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:14.103467 INFO: No existing archive found, creating new archive for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:14.992145 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:34:14.992616 INFO: Attempting archive.is for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:18.165920 INFO: Attempting archive.li for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:21.227515 INFO: Attempting archive.fo for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:23.485432 INFO: Attempting archive.ph for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:25.975140 INFO: Attempting Googlebot spoof for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:27.056833 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:27.056957 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:27.056984 INFO: Attempting Enhanced Wayback Machine for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:27.494639 INFO: Found Wayback snapshot from 20250820041749: http://web.archive.org/web/20250820041749/https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:30.414964 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:30.415077 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:30.415115 INFO: Attempting Wayback Machine for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:30.525719 INFO: Found Wayback snapshot: http://web.archive.org/web/20250820041749/https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:30.716176 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:30.716296 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:30.716333 ERROR: All fetch strategies failed or returned low-quality content for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit. Attempting Google Search fallback...
+2025-09-15T08:34:30.716400 INFO: Google Search fallback: searching for 'edit'
+2025-09-15T08:34:30.748931 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:34:30.756411 INFO: Attempting direct fetch for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:31.760168 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:31.811489 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:31.811612 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:31.811663 INFO: Attempting Reader Mode strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:32.602908 ERROR: Reader mode fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:34:32.605384 INFO: Attempting JS Disabled strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:34.000002 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:34:34.000114 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:34.000139 INFO: Attempting Refresh Stop strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:34.428993 ERROR: Refresh stop fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:34:34.431208 INFO: Attempting Inspect Element strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:35.622998 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:34:35.623107 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:35.623134 INFO: Attempting removepaywalls.com bypass for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:38.992755 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:34:38.992867 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:38.992895 INFO: Attempting archive.today for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:43.155132 INFO: No existing archive found, creating new archive for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:44.064857 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:34:44.075206 INFO: Attempting direct fetch for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:45.404859 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:45.452468 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:34:45.452644 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:45.452709 INFO: Attempting Reader Mode strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:46.527642 ERROR: Reader mode fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:34:46.530468 INFO: Attempting JS Disabled strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:47.730503 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:34:47.730641 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:47.730670 INFO: Attempting Refresh Stop strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:48.231911 ERROR: Refresh stop fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:34:48.234215 INFO: Attempting Inspect Element strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:50.697643 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:34:50.697757 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:50.697783 INFO: Attempting removepaywalls.com bypass for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:55.264316 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:34:55.264425 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:34:55.264454 INFO: Attempting archive.today for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:58.630299 INFO: No existing archive found, creating new archive for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:34:59.563257 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:34:59.563701 INFO: Attempting archive.is for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:03.112034 INFO: Attempting archive.li for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:06.167059 INFO: Attempting archive.fo for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:08.669368 INFO: Attempting archive.ph for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:11.471288 INFO: Attempting Googlebot spoof for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:12.648886 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:35:12.648997 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:12.649023 INFO: Attempting Enhanced Wayback Machine for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:12.761240 INFO: Found Wayback snapshot from 20250820041749: http://web.archive.org/web/20250820041749/https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:12.955026 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:35:12.955147 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:12.955179 INFO: Attempting Wayback Machine for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:13.089489 INFO: Found Wayback snapshot: http://web.archive.org/web/20250820041749/https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:13.289755 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:35:13.289876 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:13.289916 ERROR: All fetch strategies failed or returned low-quality content for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit. Attempting Google Search fallback...
+2025-09-15T08:35:13.289980 INFO: Google Search fallback: searching for 'edit'
+2025-09-15T08:35:13.322639 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:35:13.330492 INFO: Attempting direct fetch for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:15.355295 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:35:15.405259 INFO: Suspicious title-to-content ratio: 0.15. Likely truncated.
+2025-09-15T08:35:15.405374 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:15.405412 INFO: Attempting Reader Mode strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:16.746096 ERROR: Reader mode fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:35:16.751203 INFO: Attempting JS Disabled strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:17.953546 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:35:17.953682 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:17.953711 INFO: Attempting Refresh Stop strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:18.389971 ERROR: Refresh stop fetch failed for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit: cannot use a string pattern on a bytes-like object
+2025-09-15T08:35:18.392320 INFO: Attempting Inspect Element strategy for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:19.578624 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T08:35:19.578736 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:19.578779 INFO: Attempting removepaywalls.com bypass for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:24.318436 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:35:24.318548 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:35:24.318577 INFO: Attempting archive.today for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:28.679044 INFO: No existing archive found, creating new archive for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:29.565556 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:35:29.565986 INFO: Attempting archive.is for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:32.236365 INFO: Attempting archive.li for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit
+2025-09-15T08:35:34.355961 INFO: Attempting archive.fo for https://docs.google.com/document/d/1diMvsMeRphUH7E6D1d_J7R6WbDdgnzFHDHPx9HXzR5o/edit

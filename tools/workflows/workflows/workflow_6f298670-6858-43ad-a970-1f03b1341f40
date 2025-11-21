@@ -1,0 +1,100 @@
+2025-09-15T08:26:52.029898 INFO: Attempting direct fetch for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.304688 ERROR: Direct fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.304880 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.859195 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:26:52.861218 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.892282 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.892484 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.929017 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:26:52.929205 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.957903 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:52.958101 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:55.848668 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:26:55.848762 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:26:55.848789 INFO: Attempting archive.today for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:58.005818 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:26:58.883752 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:26:58.884625 INFO: Attempting archive.is for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:02.081495 INFO: Attempting archive.li for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:04.529153 INFO: Attempting archive.fo for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:08.160975 INFO: Attempting archive.ph for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:11.447993 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:11.505041 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:11.505248 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:26.303709 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:27:26.305455 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:26.433054 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T08:27:26.443154 INFO: Attempting direct fetch for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:26.471331 ERROR: Direct fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:26.471562 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:26.992892 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:27:26.995136 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:27.026227 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:27.026422 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:27.055318 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:27:27.055548 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:27.083788 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:27.083979 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:30.259420 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:27:30.259531 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:27:30.259559 INFO: Attempting archive.today for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:33.078811 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:33.940087 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:27:33.940811 INFO: Attempting archive.is for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:35.976502 INFO: Attempting archive.li for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:39.011548 INFO: Attempting archive.fo for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:41.971205 INFO: Attempting archive.ph for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:45.817417 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:45.870572 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:45.870796 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:47.270912 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:27:47.274726 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:47.421521 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T08:27:47.423631 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:27:47.424231 INFO: Google Search fallback: searching for 'in egypt the lure of leaving.html'
+2025-09-15T08:27:47.457649 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:27:47.466519 INFO: Attempting direct fetch for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:47.498284 ERROR: Direct fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:47.498484 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:48.039095 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:27:48.041438 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:48.073082 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:48.073281 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:48.101073 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:27:48.101245 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:48.131630 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:48.131831 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:52.720791 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:27:52.720895 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:27:52.720925 INFO: Attempting archive.today for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:54.891546 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:55.786037 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:27:55.797894 INFO: Attempting direct fetch for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:55.881131 ERROR: Direct fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:55.881330 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:56.787259 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:27:56.789527 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:56.851953 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:56.852155 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:56.911755 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T08:27:56.911958 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:56.969626 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:56.969826 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:27:59.763920 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:27:59.764030 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:27:59.764058 INFO: Attempting archive.today for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:02.593690 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:03.502570 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:28:03.503388 INFO: Attempting archive.is for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:05.708558 INFO: Attempting archive.li for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:08.463149 INFO: Attempting archive.fo for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:10.680927 INFO: Attempting archive.ph for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:13.758019 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:13.843724 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:13.843947 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:15.315164 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T08:28:15.316729 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print
+2025-09-15T08:28:15.459515 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T08:28:15.461828 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/08/28/magazine/in-egypt-the-lure-of-leaving.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T08:28:15.462512 INFO: Google Search fallback: searching for 'in egypt the lure of leaving.html'
+2025-09-15T08:28:15.496531 INFO: Google Search fallback did not find alternative URL

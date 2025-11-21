@@ -1,0 +1,127 @@
+2025-09-15T19:04:24.927477 INFO: Attempting direct fetch for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:26.013039 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:04:26.121386 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:04:26.121503 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:04:26.121547 INFO: Attempting Reader Mode strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:26.860806 ERROR: Reader mode fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:04:26.862744 INFO: Attempting JS Disabled strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:27.696568 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:04:27.696735 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:04:27.696772 INFO: Attempting Refresh Stop strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:28.435808 ERROR: Refresh stop fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:04:28.437647 INFO: Attempting Inspect Element strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:29.288147 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:04:29.288260 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:04:29.288291 INFO: Attempting removepaywalls.com bypass for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:33.852821 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T19:04:33.852934 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:04:33.852962 INFO: Attempting archive.today for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:38.104321 INFO: No existing archive found, creating new archive for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:39.010855 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:04:39.011259 INFO: Attempting archive.is for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:41.361640 INFO: Attempting archive.li for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:45.151570 INFO: Attempting archive.fo for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:48.762734 INFO: Attempting archive.ph for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:04:51.912042 INFO: Attempting Googlebot spoof for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:06.970066 ERROR: Googlebot spoof failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: HTTPSConnectionPool(host='hbr.org', port=443): Read timed out. (read timeout=15)
+2025-09-15T19:05:06.970199 INFO: Attempting Enhanced Wayback Machine for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:49.640302 INFO: Found Wayback snapshot from 20201113020151: http://web.archive.org/web/20201113020151/https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:50.261118 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-15T19:05:50.261247 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:05:50.261275 INFO: Attempting Wayback Machine for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:50.384115 ERROR: Wayback Machine failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: No archived snapshots found
+2025-09-15T19:05:50.385928 ERROR: All fetch strategies failed or returned low-quality content for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents. Attempting Google Search fallback...
+2025-09-15T19:05:50.386055 INFO: Google Search fallback: searching for 'the free market has failed u s working parents'
+2025-09-15T19:05:50.417836 INFO: Google Search fallback did not find alternative URL
+2025-09-15T19:05:50.425433 INFO: Attempting direct fetch for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:51.414781 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:05:51.529550 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:05:51.529705 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:05:51.529747 INFO: Attempting Reader Mode strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:52.279459 ERROR: Reader mode fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:05:52.281384 INFO: Attempting JS Disabled strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:53.155752 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:05:53.155865 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:05:53.155891 INFO: Attempting Refresh Stop strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:53.914778 ERROR: Refresh stop fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:05:53.917407 INFO: Attempting Inspect Element strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:54.814733 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:05:54.814849 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:05:54.814876 INFO: Attempting removepaywalls.com bypass for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:05:58.009038 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T19:05:58.009150 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:05:58.009175 INFO: Attempting archive.today for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:00.949197 INFO: No existing archive found, creating new archive for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:01.846927 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:06:01.859905 INFO: Attempting direct fetch for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:02.878690 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:02.990466 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:02.990580 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:02.990655 INFO: Attempting Reader Mode strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:03.709679 ERROR: Reader mode fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:06:03.712180 INFO: Attempting JS Disabled strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:04.588966 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:04.589073 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:04.589118 INFO: Attempting Refresh Stop strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:05.402482 ERROR: Refresh stop fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:06:05.404718 INFO: Attempting Inspect Element strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:06.278887 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:06.279005 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:06.279031 INFO: Attempting removepaywalls.com bypass for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:09.178548 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T19:06:09.178677 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:09.178707 INFO: Attempting archive.today for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:13.340638 INFO: No existing archive found, creating new archive for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:14.226267 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:06:14.226750 INFO: Attempting archive.is for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:17.964085 INFO: Attempting archive.li for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:20.325538 INFO: Attempting archive.fo for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:23.287781 INFO: Attempting archive.ph for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:26.752357 INFO: Attempting Googlebot spoof for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:27.549385 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:27.549506 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:27.549536 INFO: Attempting Enhanced Wayback Machine for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:28.741855 INFO: Found Wayback snapshot from 20201113020151: http://web.archive.org/web/20201113020151/https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:28.852762 INFO: Paywall phrase 'subscribe for unlimited access' detected.
+2025-09-15T19:06:28.852879 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:28.852903 INFO: Attempting Wayback Machine for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:28.986338 ERROR: Wayback Machine failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: No archived snapshots found
+2025-09-15T19:06:28.988556 ERROR: All fetch strategies failed or returned low-quality content for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents. Attempting Google Search fallback...
+2025-09-15T19:06:28.988954 INFO: Google Search fallback: searching for 'the free market has failed u s working parents'
+2025-09-15T19:06:29.020994 INFO: Google Search fallback did not find alternative URL
+2025-09-15T19:06:29.028891 INFO: Attempting direct fetch for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:29.830954 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:29.940193 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:29.940309 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:29.940345 INFO: Attempting Reader Mode strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:31.194713 ERROR: Reader mode fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:06:31.197409 INFO: Attempting JS Disabled strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:31.973039 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:31.973147 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:31.973175 INFO: Attempting Refresh Stop strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:32.472906 ERROR: Refresh stop fetch failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: cannot use a string pattern on a bytes-like object
+2025-09-15T19:06:32.475319 INFO: Attempting Inspect Element strategy for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:33.391536 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:33.391692 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:33.391729 INFO: Attempting removepaywalls.com bypass for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:35.881029 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T19:06:35.881141 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:35.881167 INFO: Attempting archive.today for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:39.133249 INFO: No existing archive found, creating new archive for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:39.993001 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:06:39.993443 INFO: Attempting archive.is for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:43.402551 INFO: Attempting archive.li for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:46.666959 INFO: Attempting archive.fo for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:50.309112 INFO: Attempting archive.ph for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:53.145556 INFO: Attempting Googlebot spoof for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:54.014276 INFO: Content is very short (96 words). Likely a teaser.
+2025-09-15T19:06:54.014391 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:06:54.014451 INFO: Attempting Enhanced Wayback Machine for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:55.226494 INFO: Found Wayback snapshot from 20201113020151: http://web.archive.org/web/20201113020151/https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:06:55.226662 INFO: Timeframe 20120101 failed: [Errno 32] Broken pipe
+2025-09-15T19:07:00.406040 ERROR: Enhanced Wayback Machine failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: No archived snapshots found in any timeframe
+2025-09-15T19:07:00.407623 INFO: Attempting Wayback Machine for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents
+2025-09-15T19:07:00.524234 ERROR: Wayback Machine failed for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents: No archived snapshots found
+2025-09-15T19:07:00.526256 ERROR: All fetch strategies failed or returned low-quality content for https://hbr.org/2020/11/the-free-market-has-failed-u-s-working-parents. Attempting Google Search fallback...
+2025-09-15T19:07:00.526920 INFO: Google Search fallback: searching for 'the free market has failed u s working parents'
+2025-09-15T19:07:00.560114 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,122 @@
+# Batch Atlas Capture Shortcut
+# Process multiple URLs or text items efficiently
+
+Name: Batch Atlas Capture
+Icon: square.stack.3d.up.fill
+Color: Orange
+Description: Capture multiple URLs or text items in batch with smart routing
+
+## Actions Sequence:
+
+1. **Get Current Location**
+   - Action: Location → Get Current Location
+   - Privacy: Single location request for entire batch
+
+2. **Get Source App Info**
+   - Action: Device → Get Details of App
+   - App: Current App
+
+3. **Get Batch Input**
+   - Action: Scripting → Ask for Input
+   - Input Type: Text
+   - Prompt: "Enter URLs or text items (one per line):"
+   - Allow Multiline: Yes
+
+4. **Split into Items**
+   - Action: Text → Split Text
+   - Text: Provided Input
+   - Separator: New Lines
+   - Store in: item_list
+
+5. **Initialize Counters**
+   - Action: Scripting → Set Variable
+   - Variable: total_items
+   - Value: Count of item_list
+   
+   - Action: Scripting → Set Variable
+   - Variable: processed_count = 0
+   
+   - Action: Scripting → Set Variable
+   - Variable: success_count = 0
+
+6. **Process Each Item**
+   - Action: Scripting → Repeat with Each
+   - Input: item_list
+   - Actions for each item:
+
+   a. **Update Counters**
+      - Action: Scripting → Calculate
+      - Formula: processed_count + 1
+      - Store in: processed_count
+
+   b. **Skip Empty Lines**
+      - Action: Scripting → If
+      - Condition: Length of Trimmed Item equals 0
+      - If True: Continue to Next Item
+
+   c. **Determine Item Type**
+      - Action: Scripting → If
+      - Condition: Item matches regular expression "^https?://"
+      - If True: Set Variable "item_type" = "url"
+      - If False: Set Variable "item_type" = "text"
+
+   d. **Capture Item**
+      - Action: Web → Get Contents of URL
+      - URL: http://YOUR_ATLAS_SERVER:5000/api/capture
+      - Method: POST
+      - Headers: Content-Type: application/json
+      - Request Body (JSON):
+        ```json
+        {
+          "type": "[item_type variable]",
+          "content": "[current item]",
+          "metadata": {
+            "source": "batch_capture_v2",
+            "batch_info": "[processed_count]/[total_items]"
+          },
+          "source_device": "iPhone",
+          "location": {
+            "latitude": "[location_latitude]",
+            "longitude": "[location_longitude]",
+            "accuracy": "[location_accuracy]", 
+            "timestamp": "[location_timestamp]"
+          },
+          "source_app": "[app_name variable]",
+          "capture_context": "batch_processing"
+        }
+        ```
+
+   e. **Track Success**
+      - Action: Scripting → If
+      - Condition: Success property from Contents of URL equals true
+      - If True:
+        - Action: Scripting → Calculate
+        - Formula: success_count + 1
+        - Store in: success_count
+
+   f. **Rate Limiting**
+      - Action: Scripting → Wait
+      - Wait Time: 1 second
+      - Purpose: Avoid overwhelming server
+
+7. **Show Results**
+   - Action: Scripting → Show Result
+   - Text: "Batch capture complete!\n\nProcessed: [success_count]/[total_items] items\n\nAll items are queued for processing and will appear in Atlas within 5-30 minutes."
+
+## Usage Tips:
+- One URL or text item per line
+- Empty lines are automatically skipped
+- Progress is tracked and reported
+- Automatic 1-second delay between items
+- Works with any combination of URLs and text
+
+## Setup Instructions:
+1. Replace YOUR_ATLAS_SERVER with your actual Atlas server URL
+2. Test with 2-3 items first
+3. For large batches (50+ items), consider splitting into smaller groups
+4. Add to Siri with phrase "Batch Atlas Capture"
+
+## Error Handling:
+- Failed items are logged in the final report
+- Network errors don't stop the batch process
+- Server rate limiting is respected with delays

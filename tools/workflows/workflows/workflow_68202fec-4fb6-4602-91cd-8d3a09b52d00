@@ -1,0 +1,116 @@
+2025-09-14T23:08:54.551713 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:54.803895 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:54.804080 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:55.471347 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:08:55.472995 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:55.505977 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:55.506179 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:55.536776 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:08:55.536978 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:55.577754 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:55.577952 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:08:59.364513 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:08:59.364657 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:08:59.364689 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:02.297244 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:03.174037 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:09:03.174441 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:06.441262 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:10.008399 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:12.542841 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:16.252999 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:16.283183 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:16.283368 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:48.286576 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:09:48.289304 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:48.467884 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T23:09:48.469443 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:09:48.469934 INFO: Google Search fallback: searching for 'mag 27Poker t.html'
+2025-09-14T23:09:48.553542 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:09:48.567253 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:48.614105 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:48.614291 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:49.132660 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:09:49.136456 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:49.168489 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:49.169747 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:49.205509 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:09:49.205803 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:49.239551 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:49.239793 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:52.806317 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:09:52.806430 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:09:52.806490 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:55.151674 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:56.054513 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:09:56.054983 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:09:59.303488 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:01.592979 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:05.455386 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:08.710316 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:08.854958 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:08.855149 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:10.207325 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:10:10.208800 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:10.341830 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T23:10:10.344394 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:10:10.344912 INFO: Google Search fallback: searching for 'mag 27Poker t.html'
+2025-09-14T23:10:10.420888 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:10:10.432970 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:10.494150 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:10.494319 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:11.195290 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:10:11.197162 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:11.265973 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:11.266167 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:11.327000 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:10:11.327218 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:11.391192 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:11.391371 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:15.589002 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:10:15.589125 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:10:15.589152 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:17.911405 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:18.784887 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:10:18.785321 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:21.433401 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:24.595325 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:26.505257 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:29.633554 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:29.696850 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:29.697131 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:31.015348 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:10:31.016761 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:31.216666 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T23:10:31.218191 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:10:31.218675 INFO: Google Search fallback: searching for 'mag 27Poker t.html'
+2025-09-14T23:10:31.251213 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:10:31.260170 INFO: Attempting direct fetch for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:31.328103 ERROR: Direct fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:31.328325 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:32.013572 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:10:32.015434 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:32.076688 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:32.076892 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:32.137216 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-14T23:10:32.137406 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:32.195024 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:32.195214 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:34.659963 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:10:34.660073 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:10:34.660101 INFO: Attempting archive.today for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:36.580452 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:37.484840 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:10:37.485276 INFO: Attempting archive.is for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:41.039092 INFO: Attempting archive.li for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:43.594818 INFO: Attempting archive.fo for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:46.979145 INFO: Attempting archive.ph for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:50.832732 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:50.918117 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:50.918314 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:52.331782 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-14T23:10:52.333094 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-14T23:10:52.497977 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-14T23:10:52.499403 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/03/27/magazine/mag-27Poker-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-14T23:10:52.499999 INFO: Google Search fallback: searching for 'mag 27Poker t.html'
+2025-09-14T23:10:52.566008 INFO: Google Search fallback did not find alternative URL

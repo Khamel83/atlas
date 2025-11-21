@@ -1,0 +1,25 @@
+2025-09-15T04:04:36.216386 INFO: Attempting direct fetch for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:37.075323 ERROR: Direct fetch failed for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/: 404 Client Error: Not Found for url: https://theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:37.076958 INFO: Attempting Reader Mode strategy for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:37.899010 ERROR: Reader mode fetch failed for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/: 404 Client Error: Not Found for url: https://theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:37.901070 INFO: Attempting JS Disabled strategy for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:38.388015 ERROR: JS disabled fetch failed for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/: 404 Client Error: Not Found for url: https://theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:38.389458 INFO: Attempting Refresh Stop strategy for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:39.017069 ERROR: Refresh stop fetch failed for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/: cannot use a string pattern on a bytes-like object
+2025-09-15T04:04:39.018509 INFO: Attempting Inspect Element strategy for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:39.633380 ERROR: Inspect element fetch failed for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/: 404 Client Error: Not Found for url: https://theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:39.634771 INFO: Attempting removepaywalls.com bypass for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:42.798934 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:04:42.799050 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:04:42.799079 INFO: Attempting archive.today for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:46.517052 INFO: No existing archive found, creating new archive for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:47.401611 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:04:47.402374 INFO: Attempting archive.is for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:49.623883 INFO: Attempting archive.li for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:52.073038 INFO: Attempting archive.fo for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:54.742940 INFO: Attempting archive.ph for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:57.489045 INFO: Attempting Googlebot spoof for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:57.789335 ERROR: Googlebot spoof failed for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/: 404 Client Error: Not Found for url: https://theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:57.790747 INFO: Attempting Enhanced Wayback Machine for http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:04:58.099838 INFO: Found Wayback snapshot from 20130601164250: http://web.archive.org/web/20130601164250/http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/
+2025-09-15T04:05:00.121535 INFO: Successfully fetched http://www.theonion.com/articles/rex-grossman-happy-to-take-an-afternoon-to-teach-r,28090/ using wayback_machine_enhanced

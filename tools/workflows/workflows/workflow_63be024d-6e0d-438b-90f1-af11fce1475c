@@ -1,0 +1,50 @@
+2025-09-15T00:50:20.045001 INFO: Attempting direct fetch for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:20.259229 ERROR: Direct fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:20.260415 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:20.766343 ERROR: Reader mode fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: cannot use a string pattern on a bytes-like object
+2025-09-15T00:50:20.768471 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:20.845205 ERROR: JS disabled fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:20.846902 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:20.920786 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: cannot use a string pattern on a bytes-like object
+2025-09-15T00:50:20.922330 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:21.007781 ERROR: Inspect element fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:21.009442 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:26.037262 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:50:26.037379 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:50:26.037408 INFO: Attempting archive.today for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:30.281437 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:31.188809 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:50:31.189224 INFO: Attempting archive.is for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:33.897017 INFO: Attempting archive.li for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:36.813465 INFO: Attempting archive.fo for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:40.658818 INFO: Attempting archive.ph for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:43.106880 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:43.179631 ERROR: Googlebot spoof failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:43.180837 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:54.001218 INFO: Found Wayback snapshot from 20211126163816: http://web.archive.org/web/20211126163816/https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.127584 INFO: Successfully fetched https://www.nytimes.com/2021/04/27/opinion/republican-party.html using wayback_machine_enhanced
+2025-09-15T00:50:55.136359 INFO: Attempting direct fetch for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.231931 ERROR: Direct fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.233385 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.692251 ERROR: Reader mode fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: cannot use a string pattern on a bytes-like object
+2025-09-15T00:50:55.694327 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.773117 ERROR: JS disabled fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.774632 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.849521 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: cannot use a string pattern on a bytes-like object
+2025-09-15T00:50:55.851091 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.925524 ERROR: Inspect element fetch failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:50:55.927087 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:00.276912 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:51:00.277016 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:51:00.277043 INFO: Attempting archive.today for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:03.285910 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:04.171160 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:51:04.171543 INFO: Attempting archive.is for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:07.349763 INFO: Attempting archive.li for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:09.827849 INFO: Attempting archive.fo for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:12.196449 INFO: Attempting archive.ph for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:14.847844 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:14.945024 ERROR: Googlebot spoof failed for https://www.nytimes.com/2021/04/27/opinion/republican-party.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:14.946236 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:15.315120 INFO: Found Wayback snapshot from 20211126163816: http://web.archive.org/web/20211126163816/https://www.nytimes.com/2021/04/27/opinion/republican-party.html
+2025-09-15T00:51:15.477865 INFO: Successfully fetched https://www.nytimes.com/2021/04/27/opinion/republican-party.html using wayback_machine_enhanced

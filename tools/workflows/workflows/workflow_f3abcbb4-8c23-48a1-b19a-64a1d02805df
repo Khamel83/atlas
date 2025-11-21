@@ -1,0 +1,100 @@
+2025-09-15T19:24:43.826117 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:45.499143 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:24:45.622188 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:24:45.622303 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:24:45.622341 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:46.147436 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:24:46.150113 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:46.704457 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:24:46.704566 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:24:46.704620 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:47.200806 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:24:47.203434 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:47.535317 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:24:47.535428 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:24:47.535454 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:51.706949 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T19:24:51.707059 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:24:51.707089 INFO: Attempting archive.today for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:55.005766 INFO: No existing archive found, creating new archive for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:55.910119 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:24:55.910671 INFO: Attempting archive.is for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:24:59.753929 INFO: Attempting archive.li for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:02.424377 INFO: Attempting archive.fo for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:04.651967 INFO: Attempting archive.ph for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:06.788305 INFO: Attempting Googlebot spoof for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:06.943001 ERROR: Googlebot spoof failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:06.944473 INFO: Attempting Enhanced Wayback Machine for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:18.367146 INFO: Found Wayback snapshot from 20211223210352: http://web.archive.org/web/20211223210352/https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:19.270491 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:19.270639 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:19.270680 INFO: Attempting Wayback Machine for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:19.388146 ERROR: Wayback Machine failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: No archived snapshots found
+2025-09-15T19:25:19.390684 ERROR: All fetch strategies failed or returned low-quality content for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook. Attempting Google Search fallback...
+2025-09-15T19:25:19.390813 INFO: Google Search fallback: searching for 'facebook and mark zuckerberg need trump even more than trump needs facebook'
+2025-09-15T19:25:19.423642 INFO: Google Search fallback did not find alternative URL
+2025-09-15T19:25:19.430908 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:19.772995 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:19.891758 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:19.891872 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:19.891914 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:20.161007 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:25:20.163343 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:20.787517 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:20.787658 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:20.787686 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:21.449717 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:25:21.452647 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:22.081329 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:22.081445 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:22.081475 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:22.089319 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:22.370697 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:22.488656 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:22.488794 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:22.488840 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:22.914584 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:25:22.917070 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:23.308101 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:23.308217 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:23.308242 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:23.527332 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:25:23.529968 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:23.890199 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:23.890315 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:23.890343 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:27.741142 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T19:25:27.741252 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:27.741280 INFO: Attempting archive.today for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:31.711656 INFO: No existing archive found, creating new archive for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:33.008116 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T19:25:33.008542 INFO: Attempting archive.is for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:35.304787 INFO: Attempting archive.li for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:38.807619 INFO: Attempting archive.fo for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:41.597751 INFO: Attempting archive.ph for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:43.769765 INFO: Attempting Googlebot spoof for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:43.945404 ERROR: Googlebot spoof failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:43.946766 INFO: Attempting Enhanced Wayback Machine for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:44.326260 INFO: Found Wayback snapshot from 20211223210352: http://web.archive.org/web/20211223210352/https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:44.600817 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:44.600927 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:44.600958 INFO: Attempting Wayback Machine for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:44.712730 ERROR: Wayback Machine failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: No archived snapshots found
+2025-09-15T19:25:44.715040 ERROR: All fetch strategies failed or returned low-quality content for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook. Attempting Google Search fallback...
+2025-09-15T19:25:44.715421 INFO: Google Search fallback: searching for 'facebook and mark zuckerberg need trump even more than trump needs facebook'
+2025-09-15T19:25:44.747521 INFO: Google Search fallback did not find alternative URL
+2025-09-15T19:25:44.755298 INFO: Attempting direct fetch for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:45.162244 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:45.284452 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:45.284565 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:45.284635 INFO: Attempting Reader Mode strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:45.548532 ERROR: Reader mode fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:25:45.551035 INFO: Attempting JS Disabled strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:45.882894 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:45.882999 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:45.883024 INFO: Attempting Refresh Stop strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:46.501276 ERROR: Refresh stop fetch failed for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook: cannot use a string pattern on a bytes-like object
+2025-09-15T19:25:46.504158 INFO: Attempting Inspect Element strategy for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook
+2025-09-15T19:25:46.892641 INFO: Content is very short (146 words). Likely a teaser.
+2025-09-15T19:25:46.892795 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T19:25:46.892823 INFO: Attempting removepaywalls.com bypass for https://www.bloomberg.com/news/features/2020-09-17/facebook-and-mark-zuckerberg-need-trump-even-more-than-trump-needs-facebook

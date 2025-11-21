@@ -1,0 +1,152 @@
+2025-09-14T23:11:35.143996 INFO: Attempting direct fetch for https://evals.alignment.org/
+2025-09-14T23:11:35.580036 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:11:35.649226 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:11:35.649339 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:35.649387 INFO: Attempting Reader Mode strategy for https://evals.alignment.org/
+2025-09-14T23:11:35.907669 ERROR: Reader mode fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:11:35.909500 INFO: Attempting JS Disabled strategy for https://evals.alignment.org/
+2025-09-14T23:11:36.126533 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:11:36.126708 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:36.126745 INFO: Attempting Refresh Stop strategy for https://evals.alignment.org/
+2025-09-14T23:11:36.320653 ERROR: Refresh stop fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:11:36.323184 INFO: Attempting Inspect Element strategy for https://evals.alignment.org/
+2025-09-14T23:11:36.593369 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:11:36.593469 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:36.593499 INFO: Attempting removepaywalls.com bypass for https://evals.alignment.org/
+2025-09-14T23:11:41.077029 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:11:41.077142 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:41.077169 INFO: Attempting archive.today for https://evals.alignment.org/
+2025-09-14T23:11:44.649763 INFO: No existing archive found, creating new archive for https://evals.alignment.org/
+2025-09-14T23:11:45.560183 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:11:45.561073 INFO: Attempting archive.is for https://evals.alignment.org/
+2025-09-14T23:11:48.504544 INFO: Attempting archive.li for https://evals.alignment.org/
+2025-09-14T23:11:51.090935 INFO: Attempting archive.fo for https://evals.alignment.org/
+2025-09-14T23:11:54.456351 INFO: Attempting archive.ph for https://evals.alignment.org/
+2025-09-14T23:11:56.972076 INFO: Attempting Googlebot spoof for https://evals.alignment.org/
+2025-09-14T23:11:57.189237 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:11:57.189357 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:57.189391 INFO: Attempting Enhanced Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:11:57.819813 INFO: Found Wayback snapshot from 20250810035717: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:11:59.601715 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:11:59.601835 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:59.601867 INFO: Attempting Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:11:59.736896 INFO: Found Wayback snapshot: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:11:59.837103 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:11:59.837219 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:11:59.837257 ERROR: All fetch strategies failed or returned low-quality content for https://evals.alignment.org/. Attempting Google Search fallback...
+2025-09-14T23:11:59.837321 INFO: Google Search fallback: searching for 'article evals.alignment.org'
+2025-09-14T23:11:59.870083 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:11:59.878783 INFO: Attempting direct fetch for https://evals.alignment.org/
+2025-09-14T23:12:00.151763 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:00.218269 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:00.218385 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:00.218430 INFO: Attempting Reader Mode strategy for https://evals.alignment.org/
+2025-09-14T23:12:00.381419 ERROR: Reader mode fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:12:00.383054 INFO: Attempting JS Disabled strategy for https://evals.alignment.org/
+2025-09-14T23:12:00.523508 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:00.523658 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:00.523690 INFO: Attempting Refresh Stop strategy for https://evals.alignment.org/
+2025-09-14T23:12:00.648314 ERROR: Refresh stop fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:12:00.652873 INFO: Attempting Inspect Element strategy for https://evals.alignment.org/
+2025-09-14T23:12:00.873812 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:00.875651 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:00.875732 INFO: Attempting removepaywalls.com bypass for https://evals.alignment.org/
+2025-09-14T23:12:04.557176 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:12:04.557275 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:04.557302 INFO: Attempting archive.today for https://evals.alignment.org/
+2025-09-14T23:12:06.492442 INFO: No existing archive found, creating new archive for https://evals.alignment.org/
+2025-09-14T23:12:07.368909 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:12:07.369500 INFO: Attempting archive.is for https://evals.alignment.org/
+2025-09-14T23:12:10.641335 INFO: Attempting archive.li for https://evals.alignment.org/
+2025-09-14T23:12:13.394877 INFO: Attempting archive.fo for https://evals.alignment.org/
+2025-09-14T23:12:15.610795 INFO: Attempting archive.ph for https://evals.alignment.org/
+2025-09-14T23:12:18.544902 INFO: Attempting Googlebot spoof for https://evals.alignment.org/
+2025-09-14T23:12:18.903420 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:18.903528 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:18.903566 INFO: Attempting Enhanced Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:12:19.073109 INFO: Found Wayback snapshot from 20250810035717: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:12:19.184967 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:12:19.185064 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:19.185098 INFO: Attempting Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:12:19.315435 INFO: Found Wayback snapshot: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:12:19.430815 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:12:19.430941 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:19.430985 ERROR: All fetch strategies failed or returned low-quality content for https://evals.alignment.org/. Attempting Google Search fallback...
+2025-09-14T23:12:19.431130 INFO: Google Search fallback: searching for 'article evals.alignment.org'
+2025-09-14T23:12:19.500368 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:12:19.511465 INFO: Attempting direct fetch for https://evals.alignment.org/
+2025-09-14T23:12:19.690203 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:19.750815 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:19.750944 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:19.750996 INFO: Attempting Reader Mode strategy for https://evals.alignment.org/
+2025-09-14T23:12:19.848156 ERROR: Reader mode fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:12:19.849549 INFO: Attempting JS Disabled strategy for https://evals.alignment.org/
+2025-09-14T23:12:20.079952 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:20.080066 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:20.080094 INFO: Attempting Refresh Stop strategy for https://evals.alignment.org/
+2025-09-14T23:12:20.190730 ERROR: Refresh stop fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:12:20.192873 INFO: Attempting Inspect Element strategy for https://evals.alignment.org/
+2025-09-14T23:12:20.365966 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:20.366083 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:20.366111 INFO: Attempting removepaywalls.com bypass for https://evals.alignment.org/
+2025-09-14T23:12:25.512323 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:12:25.512415 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:25.512441 INFO: Attempting archive.today for https://evals.alignment.org/
+2025-09-14T23:12:28.245684 INFO: No existing archive found, creating new archive for https://evals.alignment.org/
+2025-09-14T23:12:29.147112 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:12:29.149112 INFO: Attempting archive.is for https://evals.alignment.org/
+2025-09-14T23:12:31.256102 INFO: Attempting archive.li for https://evals.alignment.org/
+2025-09-14T23:12:33.952298 INFO: Attempting archive.fo for https://evals.alignment.org/
+2025-09-14T23:12:37.851434 INFO: Attempting archive.ph for https://evals.alignment.org/
+2025-09-14T23:12:41.392130 INFO: Attempting Googlebot spoof for https://evals.alignment.org/
+2025-09-14T23:12:41.754253 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:41.754357 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:41.754384 INFO: Attempting Enhanced Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:12:41.887958 INFO: Found Wayback snapshot from 20250810035717: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:12:41.994310 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:12:41.994425 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:41.994462 INFO: Attempting Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:12:42.109437 INFO: Found Wayback snapshot: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:12:42.217110 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:12:42.217225 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:42.217258 ERROR: All fetch strategies failed or returned low-quality content for https://evals.alignment.org/. Attempting Google Search fallback...
+2025-09-14T23:12:42.217328 INFO: Google Search fallback: searching for 'article evals.alignment.org'
+2025-09-14T23:12:42.249984 INFO: Google Search fallback did not find alternative URL
+2025-09-14T23:12:42.258849 INFO: Attempting direct fetch for https://evals.alignment.org/
+2025-09-14T23:12:42.409818 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:42.476548 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:42.476686 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:42.476739 INFO: Attempting Reader Mode strategy for https://evals.alignment.org/
+2025-09-14T23:12:42.577277 ERROR: Reader mode fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:12:42.579120 INFO: Attempting JS Disabled strategy for https://evals.alignment.org/
+2025-09-14T23:12:42.775782 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:42.775895 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:42.775923 INFO: Attempting Refresh Stop strategy for https://evals.alignment.org/
+2025-09-14T23:12:42.950648 ERROR: Refresh stop fetch failed for https://evals.alignment.org/: cannot use a string pattern on a bytes-like object
+2025-09-14T23:12:42.952541 INFO: Attempting Inspect Element strategy for https://evals.alignment.org/
+2025-09-14T23:12:43.132023 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:12:43.132136 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:43.132168 INFO: Attempting removepaywalls.com bypass for https://evals.alignment.org/
+2025-09-14T23:12:47.250402 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T23:12:47.250516 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:12:47.250547 INFO: Attempting archive.today for https://evals.alignment.org/
+2025-09-14T23:12:49.307742 INFO: No existing archive found, creating new archive for https://evals.alignment.org/
+2025-09-14T23:12:50.215841 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T23:12:50.216522 INFO: Attempting archive.is for https://evals.alignment.org/
+2025-09-14T23:12:54.018938 INFO: Attempting archive.li for https://evals.alignment.org/
+2025-09-14T23:12:57.994558 INFO: Attempting archive.fo for https://evals.alignment.org/
+2025-09-14T23:13:01.482735 INFO: Attempting archive.ph for https://evals.alignment.org/
+2025-09-14T23:13:03.990723 INFO: Attempting Googlebot spoof for https://evals.alignment.org/
+2025-09-14T23:13:04.146914 INFO: Content is very short (107 words). Likely a teaser.
+2025-09-14T23:13:04.147026 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:13:04.147053 INFO: Attempting Enhanced Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:13:04.258363 INFO: Found Wayback snapshot from 20250810035717: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:13:04.362410 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:13:04.362525 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:13:04.362565 INFO: Attempting Wayback Machine for https://evals.alignment.org/
+2025-09-14T23:13:04.496584 INFO: Found Wayback snapshot: http://web.archive.org/web/20250810035717/https://evals.alignment.org/
+2025-09-14T23:13:04.605092 INFO: Content is very short (50 words). Likely a teaser.
+2025-09-14T23:13:04.605197 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T23:13:04.605239 ERROR: All fetch strategies failed or returned low-quality content for https://evals.alignment.org/. Attempting Google Search fallback...
+2025-09-14T23:13:04.605300 INFO: Google Search fallback: searching for 'article evals.alignment.org'
+2025-09-14T23:13:04.638195 INFO: Google Search fallback did not find alternative URL

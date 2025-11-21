@@ -1,0 +1,32 @@
+[Unit]
+Description=Atlas Transcript Discovery Service
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+ExecStartPre=/bin/bash -c 'source .env && export $(cat .env | grep -v ^# | xargs)'
+ExecStart=/home/ubuntu/dev/atlas/venv/bin/python scripts/prioritized_transcript_discovery.py --continuous
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-discovery
+
+# Resource limits
+MemoryMax=512M
+TasksMax=50
+
+# Restart policy
+RestartKillSignal=SIGINT
+KillMode=mixed
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+2025-09-15T05:21:49.580313 INFO: Attempting direct fetch for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:49.922326 ERROR: Direct fetch failed for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:49.923912 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:50.486042 ERROR: Reader mode fetch failed for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:21:50.488347 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:50.488657 ERROR: JS disabled fetch failed for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html: [Errno 32] Broken pipe
+2025-09-15T05:21:50.488716 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:50.609046 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html: cannot use a string pattern on a bytes-like object
+2025-09-15T05:21:50.611350 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:50.727293 ERROR: Inspect element fetch failed for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:50.728888 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:54.059684 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:21:54.059792 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:54.059821 INFO: Attempting archive.today for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:57.864842 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:21:58.766153 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:21:58.766583 INFO: Attempting archive.is for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:01.946333 INFO: Attempting archive.li for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:04.774863 INFO: Attempting archive.fo for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:07.993736 INFO: Attempting archive.ph for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:10.209901 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:10.348398 ERROR: Googlebot spoof failed for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:10.349880 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:10.807161 INFO: Found Wayback snapshot from 20250722072921: http://web.archive.org/web/20250722072921/https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html
+2025-09-15T05:22:12.365195 INFO: Successfully fetched https://www.nytimes.com/2018/06/18/magazine/how-desus-mero-conquered-late-night.html using wayback_machine_enhanced

@@ -1,0 +1,139 @@
+2025-09-15T14:47:35.929888 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:36.753272 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:47:36.839514 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:47:36.839651 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:47:36.839694 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:37.336133 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:47:37.338011 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:38.080944 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:47:38.081042 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:47:38.081072 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:38.564867 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:47:38.566489 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:39.097783 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:47:39.097886 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:47:39.097916 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:41.306436 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:47:41.306562 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:47:41.306632 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:43.307400 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:44.221182 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:47:44.221696 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:47.534465 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:50.198577 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:52.829663 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:56.284120 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:56.503986 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:47:56.504105 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:47:56.504177 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:57.395462 INFO: Found Wayback snapshot from 20250829085220: http://web.archive.org/web/20250829085220/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:57.395636 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T14:47:57.808836 INFO: Found Wayback snapshot from 20241227234036: http://web.archive.org/web/20241227234036/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:59.751773 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:47:59.751888 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:47:59.751915 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:47:59.891001 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829085220/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:00.839839 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:00.839986 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:00.840023 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/toy-story-5/. Attempting Google Search fallback...
+2025-09-15T14:48:00.840093 INFO: Google Search fallback: searching for 'toy story 5'
+2025-09-15T14:48:00.871645 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:48:00.879321 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:01.096935 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:01.355449 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:01.355570 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:01.355634 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:01.448020 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:48:01.449965 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:01.662870 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:48:01.662976 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:01.663001 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:01.800641 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:48:01.802447 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:02.264295 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:48:02.264409 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:02.264436 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:06.677409 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:48:06.677527 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:06.677556 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:08.981854 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:09.862816 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:48:09.863482 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:13.340646 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:15.689163 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:19.430897 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:22.473750 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:22.695266 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:22.695392 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:22.695418 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:22.911633 INFO: Found Wayback snapshot from 20250829085220: http://web.archive.org/web/20250829085220/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:23.057707 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:23.057826 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:23.057853 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:23.187740 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829085220/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:23.349188 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:23.349310 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:23.349344 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/toy-story-5/. Attempting Google Search fallback...
+2025-09-15T14:48:23.349415 INFO: Google Search fallback: searching for 'toy story 5'
+2025-09-15T14:48:23.380547 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:48:23.387874 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:23.520945 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:23.780607 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:23.780724 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:23.780765 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:23.874055 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:48:23.876395 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:24.181852 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:48:24.181955 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:24.181980 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:24.345100 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:48:24.347229 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:24.818074 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:48:24.818182 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:24.818208 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:28.705085 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:48:28.705209 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:28.705237 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:31.908360 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:32.791187 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:48:32.791992 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:35.728780 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:38.868135 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:38.877988 INFO: Attempting direct fetch for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:39.013040 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:39.099379 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:39.099500 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:39.099539 INFO: Attempting Reader Mode strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:39.191199 ERROR: Reader mode fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:48:39.192878 INFO: Attempting JS Disabled strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:39.486249 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:48:39.486363 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:39.486391 INFO: Attempting Refresh Stop strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:39.623463 ERROR: Refresh stop fetch failed for https://www.hollywoodreporter.com/t/toy-story-5/: cannot use a string pattern on a bytes-like object
+2025-09-15T14:48:39.625328 INFO: Attempting Inspect Element strategy for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:40.074533 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T14:48:40.074666 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:40.074697 INFO: Attempting removepaywalls.com bypass for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:44.657488 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:48:44.657621 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:44.657652 INFO: Attempting archive.today for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:46.691563 INFO: No existing archive found, creating new archive for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:47.609640 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:48:47.610152 INFO: Attempting archive.is for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:51.211102 INFO: Attempting archive.li for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:54.398357 INFO: Attempting archive.fo for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:57.248070 INFO: Attempting archive.ph for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:59.349843 INFO: Attempting Googlebot spoof for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:59.487500 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:48:59.487636 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:48:59.487668 INFO: Attempting Enhanced Wayback Machine for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:48:59.618792 INFO: Found Wayback snapshot from 20250829085220: http://web.archive.org/web/20250829085220/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:49:00.023666 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:49:00.023775 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:49:00.023805 INFO: Attempting Wayback Machine for https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:49:00.281221 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829085220/https://www.hollywoodreporter.com/t/toy-story-5/
+2025-09-15T14:49:00.439041 INFO: Paywall phrase 'subscribe for full access' detected.
+2025-09-15T14:49:00.439171 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:49:00.439210 ERROR: All fetch strategies failed or returned low-quality content for https://www.hollywoodreporter.com/t/toy-story-5/. Attempting Google Search fallback...
+2025-09-15T14:49:00.439281 INFO: Google Search fallback: searching for 'toy story 5'
+2025-09-15T14:49:00.471111 INFO: Google Search fallback did not find alternative URL

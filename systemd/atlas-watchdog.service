@@ -1,0 +1,32 @@
+[Unit]
+Description=Atlas Progress Watchdog
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/dev/atlas
+Environment=PYTHONPATH=/home/ubuntu/dev/atlas
+Environment=ATLAS_DB_PATH=data/atlas.db
+ExecStartPre=/bin/bash -c 'source .env && export $(cat .env | grep -v ^# | xargs)'
+ExecStart=/home/ubuntu/dev/atlas/venv/bin/python maintenance/enhanced_progress_watchdog.py --continuous --interval 5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-watchdog
+
+# Resource limits
+MemoryMax=256M
+TasksMax=20
+
+# Restart policy
+RestartKillSignal=SIGINT
+KillMode=mixed
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

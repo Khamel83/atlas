@@ -1,0 +1,112 @@
+2025-09-15T20:00:01.676463 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:01.897142 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:01.986487 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:01.986629 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:01.986673 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:02.043211 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:02.045606 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:02.247903 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:02.248002 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:02.248033 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:02.310445 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:02.312702 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:02.736808 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T20:00:02.736920 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:02.736947 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:05.081121 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:00:05.081251 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:05.081282 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:08.707537 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:09.565089 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T20:00:09.565716 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:12.951009 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:14.902744 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:18.512113 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:21.291272 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:21.489101 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:21.489205 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:21.489233 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:21.616467 INFO: Found Wayback snapshot from 20250909165804: http://web.archive.org/web/20250909165804/https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:21.971696 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:21.971804 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:21.971830 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:22.127533 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909165804/https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:22.340355 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:22.340465 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:22.340499 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times. Attempting Google Search fallback...
+2025-09-15T20:00:22.340566 INFO: Google Search fallback: searching for 'how patrick soon shiong made his fortune before buying the la times'
+2025-09-15T20:00:22.375793 INFO: Google Search fallback did not find alternative URL
+2025-09-15T20:00:22.383952 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:22.483653 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:22.567903 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:22.568038 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:22.568083 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:22.631669 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:22.634629 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:22.827177 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:22.827285 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:22.827316 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:22.881142 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:22.883632 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:23.163730 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T20:00:23.163835 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:23.163862 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:27.421284 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:00:27.421396 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:27.421422 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:27.428989 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:27.529844 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:27.607746 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:27.607871 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:27.607913 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:27.665034 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:27.668114 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:27.858913 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:27.859028 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:27.859055 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:27.910901 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:27.913465 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:28.327573 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T20:00:28.327694 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:28.327721 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:32.433292 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:00:32.433426 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:32.433455 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:36.006113 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:36.868504 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T20:00:36.869153 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:40.076634 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:42.992463 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:45.287209 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:48.919997 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:49.157266 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:49.157405 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:49.157439 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:49.277731 INFO: Found Wayback snapshot from 20250909165804: http://web.archive.org/web/20250909165804/https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:49.477030 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:49.477162 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:49.477189 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:49.591277 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909165804/https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:49.825174 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:49.825309 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:49.825345 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times. Attempting Google Search fallback...
+2025-09-15T20:00:49.825417 INFO: Google Search fallback: searching for 'how patrick soon shiong made his fortune before buying the la times'
+2025-09-15T20:00:49.858320 INFO: Google Search fallback did not find alternative URL
+2025-09-15T20:00:49.865728 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:49.961721 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:50.038660 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:50.038780 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:50.038824 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:50.095878 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:50.098521 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:50.290721 INFO: Paywall element '.paywall' detected.
+2025-09-15T20:00:50.290838 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:50.290869 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:50.343999 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times: cannot use a string pattern on a bytes-like object
+2025-09-15T20:00:50.346557 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:50.642581 INFO: Content is very short (15 words). Likely a teaser.
+2025-09-15T20:00:50.642721 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:50.642752 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times
+2025-09-15T20:00:54.404253 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T20:00:54.404377 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T20:00:54.404406 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2021/11/01/how-patrick-soon-shiong-made-his-fortune-before-buying-the-la-times

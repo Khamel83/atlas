@@ -1,0 +1,24 @@
+2025-09-15T10:59:00.911738 INFO: Attempting direct fetch for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T10:59:31.119549 ERROR: Direct fetch failed for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/: HTTPConnectionPool(host='www.1984produkts.com', port=80): Max retries exceeded with url: /civilwarroundtable/2015/07/15/glued-to-ruin/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1fad23d0>, 'Connection to www.1984produkts.com timed out. (connect timeout=30)'))
+2025-09-15T10:59:31.119692 INFO: Attempting Reader Mode strategy for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T10:59:51.229831 ERROR: Reader mode fetch failed for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/: HTTPConnectionPool(host='www.1984produkts.com', port=80): Max retries exceeded with url: /civilwarroundtable/2015/07/15/glued-to-ruin/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1e6e5110>, 'Connection to www.1984produkts.com timed out. (connect timeout=20)'))
+2025-09-15T10:59:51.229936 INFO: Attempting JS Disabled strategy for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:11.317982 ERROR: JS disabled fetch failed for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/: HTTPConnectionPool(host='www.1984produkts.com', port=80): Max retries exceeded with url: /civilwarroundtable/2015/07/15/glued-to-ruin/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1e98b7c0>, 'Connection to www.1984produkts.com timed out. (connect timeout=20)'))
+2025-09-15T11:00:11.318081 INFO: Attempting Refresh Stop strategy for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:14.390759 INFO: Attempting Inspect Element strategy for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:34.406656 ERROR: Inspect element fetch failed for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/: HTTPConnectionPool(host='www.1984produkts.com', port=80): Max retries exceeded with url: /civilwarroundtable/2015/07/15/glued-to-ruin/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1e501e20>, 'Connection to www.1984produkts.com timed out. (connect timeout=20)'))
+2025-09-15T11:00:34.406777 INFO: Attempting removepaywalls.com bypass for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:37.528819 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:00:37.528934 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:00:37.528964 INFO: Attempting archive.today for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:41.140925 INFO: No existing archive found, creating new archive for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:42.024138 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:00:42.024981 INFO: Attempting archive.is for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:44.993922 INFO: Attempting archive.li for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:47.916109 INFO: Attempting archive.fo for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:52.056501 INFO: Attempting archive.ph for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:00:55.817121 INFO: Attempting Googlebot spoof for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:01:10.889938 ERROR: Googlebot spoof failed for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/: HTTPConnectionPool(host='www.1984produkts.com', port=80): Max retries exceeded with url: /civilwarroundtable/2015/07/15/glued-to-ruin/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x206173d0>, 'Connection to www.1984produkts.com timed out. (connect timeout=15)'))
+2025-09-15T11:01:10.890072 INFO: Attempting Enhanced Wayback Machine for http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:01:16.692542 INFO: Found Wayback snapshot from 20201130073926: http://web.archive.org/web/20201130073926/https://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/
+2025-09-15T11:01:18.310072 INFO: Successfully fetched http://www.1984produkts.com/civilwarroundtable/2015/07/15/glued-to-ruin/ using wayback_machine_enhanced

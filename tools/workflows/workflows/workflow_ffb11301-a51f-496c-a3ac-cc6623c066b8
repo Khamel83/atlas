@@ -1,0 +1,148 @@
+2025-09-15T03:22:17.484044 INFO: Attempting direct fetch for https://www.propublica.org
+2025-09-15T03:22:18.867010 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:19.060927 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:19.061025 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:19.061069 INFO: Attempting Reader Mode strategy for https://www.propublica.org
+2025-09-15T03:22:19.290001 ERROR: Reader mode fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:22:19.293212 INFO: Attempting JS Disabled strategy for https://www.propublica.org
+2025-09-15T03:22:19.583041 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:19.583194 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:19.583224 INFO: Attempting Refresh Stop strategy for https://www.propublica.org
+2025-09-15T03:22:19.787671 ERROR: Refresh stop fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:22:19.789583 INFO: Attempting Inspect Element strategy for https://www.propublica.org
+2025-09-15T03:22:20.185636 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:20.185750 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:20.185777 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org
+2025-09-15T03:22:25.207008 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:22:25.207150 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:25.207183 INFO: Attempting archive.today for https://www.propublica.org
+2025-09-15T03:22:29.433975 INFO: No existing archive found, creating new archive for https://www.propublica.org
+2025-09-15T03:22:30.305490 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:22:30.305947 INFO: Attempting archive.is for https://www.propublica.org
+2025-09-15T03:22:33.094887 INFO: Attempting archive.li for https://www.propublica.org
+2025-09-15T03:22:36.022553 INFO: Attempting archive.fo for https://www.propublica.org
+2025-09-15T03:22:39.247744 INFO: Attempting archive.ph for https://www.propublica.org
+2025-09-15T03:22:42.594036 INFO: Attempting Googlebot spoof for https://www.propublica.org
+2025-09-15T03:22:42.852353 ERROR: Googlebot spoof failed for https://www.propublica.org: 403 Client Error: Forbidden for url: https://www.propublica.org/
+2025-09-15T03:22:42.853681 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org
+2025-09-15T03:22:43.305759 INFO: Found Wayback snapshot from 20250914141332: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:22:50.279629 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:50.279787 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:50.279818 INFO: Attempting Wayback Machine for https://www.propublica.org
+2025-09-15T03:22:50.400074 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:22:50.400210 ERROR: Wayback Machine failed for https://www.propublica.org: [Errno 32] Broken pipe
+2025-09-15T03:22:50.401846 ERROR: All fetch strategies failed or returned low-quality content for https://www.propublica.org. Attempting Google Search fallback...
+2025-09-15T03:22:50.402046 INFO: Google Search fallback: searching for 'article www.propublica.org'
+2025-09-15T03:22:50.433178 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:22:50.440712 INFO: Attempting direct fetch for https://www.propublica.org
+2025-09-15T03:22:50.674544 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:50.859110 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:50.859224 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:50.859281 INFO: Attempting Reader Mode strategy for https://www.propublica.org
+2025-09-15T03:22:51.066112 ERROR: Reader mode fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:22:51.067640 INFO: Attempting JS Disabled strategy for https://www.propublica.org
+2025-09-15T03:22:51.399850 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:51.399953 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:51.399983 INFO: Attempting Refresh Stop strategy for https://www.propublica.org
+2025-09-15T03:22:51.593659 ERROR: Refresh stop fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:22:51.595568 INFO: Attempting Inspect Element strategy for https://www.propublica.org
+2025-09-15T03:22:51.895507 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:22:51.895633 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:51.895667 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org
+2025-09-15T03:22:55.700005 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:22:55.700114 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:22:55.700144 INFO: Attempting archive.today for https://www.propublica.org
+2025-09-15T03:22:59.218221 INFO: No existing archive found, creating new archive for https://www.propublica.org
+2025-09-15T03:23:00.110811 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:23:00.111015 INFO: Attempting archive.is for https://www.propublica.org
+2025-09-15T03:23:03.929210 INFO: Attempting archive.li for https://www.propublica.org
+2025-09-15T03:23:07.319000 INFO: Attempting archive.fo for https://www.propublica.org
+2025-09-15T03:23:10.415024 INFO: Attempting archive.ph for https://www.propublica.org
+2025-09-15T03:23:13.264907 INFO: Attempting Googlebot spoof for https://www.propublica.org
+2025-09-15T03:23:13.387864 ERROR: Googlebot spoof failed for https://www.propublica.org: 403 Client Error: Forbidden for url: https://www.propublica.org/
+2025-09-15T03:23:13.389469 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org
+2025-09-15T03:23:13.501422 INFO: Found Wayback snapshot from 20250914141332: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:23:13.762564 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:13.762731 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:13.762764 INFO: Attempting Wayback Machine for https://www.propublica.org
+2025-09-15T03:23:13.880512 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:23:14.138480 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:14.138632 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:14.138673 ERROR: All fetch strategies failed or returned low-quality content for https://www.propublica.org. Attempting Google Search fallback...
+2025-09-15T03:23:14.138738 INFO: Google Search fallback: searching for 'article www.propublica.org'
+2025-09-15T03:23:14.170484 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:23:14.177998 INFO: Attempting direct fetch for https://www.propublica.org
+2025-09-15T03:23:14.526303 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:14.719350 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:14.719474 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:14.719514 INFO: Attempting Reader Mode strategy for https://www.propublica.org
+2025-09-15T03:23:14.926014 ERROR: Reader mode fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:23:14.927586 INFO: Attempting JS Disabled strategy for https://www.propublica.org
+2025-09-15T03:23:15.173447 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:15.173562 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:15.173629 INFO: Attempting Refresh Stop strategy for https://www.propublica.org
+2025-09-15T03:23:15.276373 ERROR: Refresh stop fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:23:15.277877 INFO: Attempting Inspect Element strategy for https://www.propublica.org
+2025-09-15T03:23:15.567879 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:15.567987 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:15.568016 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org
+2025-09-15T03:23:20.564266 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:23:20.564379 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:20.564405 INFO: Attempting archive.today for https://www.propublica.org
+2025-09-15T03:23:23.637725 INFO: No existing archive found, creating new archive for https://www.propublica.org
+2025-09-15T03:23:24.545279 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:23:24.545742 INFO: Attempting archive.is for https://www.propublica.org
+2025-09-15T03:23:28.439479 INFO: Attempting archive.li for https://www.propublica.org
+2025-09-15T03:23:31.312027 INFO: Attempting archive.fo for https://www.propublica.org
+2025-09-15T03:23:33.808811 INFO: Attempting archive.ph for https://www.propublica.org
+2025-09-15T03:23:36.938085 INFO: Attempting Googlebot spoof for https://www.propublica.org
+2025-09-15T03:23:37.425239 ERROR: Googlebot spoof failed for https://www.propublica.org: 403 Client Error: Forbidden for url: https://www.propublica.org/
+2025-09-15T03:23:37.428616 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org
+2025-09-15T03:23:37.575773 INFO: Found Wayback snapshot from 20250914141332: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:23:37.943155 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:37.943281 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:37.943307 INFO: Attempting Wayback Machine for https://www.propublica.org
+2025-09-15T03:23:38.116110 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:23:38.374033 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:38.374159 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:38.374197 ERROR: All fetch strategies failed or returned low-quality content for https://www.propublica.org. Attempting Google Search fallback...
+2025-09-15T03:23:38.374261 INFO: Google Search fallback: searching for 'article www.propublica.org'
+2025-09-15T03:23:38.408107 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:23:38.408275 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T03:23:38.415798 INFO: Attempting direct fetch for https://www.propublica.org
+2025-09-15T03:23:38.801275 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:38.983463 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:38.983583 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:38.983671 INFO: Attempting Reader Mode strategy for https://www.propublica.org
+2025-09-15T03:23:39.074111 ERROR: Reader mode fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:23:39.075858 INFO: Attempting JS Disabled strategy for https://www.propublica.org
+2025-09-15T03:23:39.419709 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:39.419808 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:39.419834 INFO: Attempting Refresh Stop strategy for https://www.propublica.org
+2025-09-15T03:23:39.630213 ERROR: Refresh stop fetch failed for https://www.propublica.org: cannot use a string pattern on a bytes-like object
+2025-09-15T03:23:39.632841 INFO: Attempting Inspect Element strategy for https://www.propublica.org
+2025-09-15T03:23:40.052499 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:40.052675 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:40.052747 INFO: Attempting removepaywalls.com bypass for https://www.propublica.org
+2025-09-15T03:23:43.965367 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:23:43.965474 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:43.965502 INFO: Attempting archive.today for https://www.propublica.org
+2025-09-15T03:23:48.045070 INFO: No existing archive found, creating new archive for https://www.propublica.org
+2025-09-15T03:23:48.914512 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:23:48.914959 INFO: Attempting archive.is for https://www.propublica.org
+2025-09-15T03:23:51.078348 INFO: Attempting archive.li for https://www.propublica.org
+2025-09-15T03:23:53.323159 INFO: Attempting archive.fo for https://www.propublica.org
+2025-09-15T03:23:55.676994 INFO: Attempting archive.ph for https://www.propublica.org
+2025-09-15T03:23:58.022202 INFO: Attempting Googlebot spoof for https://www.propublica.org
+2025-09-15T03:23:58.326438 ERROR: Googlebot spoof failed for https://www.propublica.org: 403 Client Error: Forbidden for url: https://www.propublica.org/
+2025-09-15T03:23:58.327757 INFO: Attempting Enhanced Wayback Machine for https://www.propublica.org
+2025-09-15T03:23:58.472653 INFO: Found Wayback snapshot from 20250914141332: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:23:58.727333 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:58.727454 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:58.727483 INFO: Attempting Wayback Machine for https://www.propublica.org
+2025-09-15T03:23:58.843783 INFO: Found Wayback snapshot: http://web.archive.org/web/20250914141332/https://www.propublica.org/
+2025-09-15T03:23:59.092032 INFO: Content is very short (63 words). Likely a teaser.
+2025-09-15T03:23:59.092144 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:23:59.092181 ERROR: All fetch strategies failed or returned low-quality content for https://www.propublica.org. Attempting Google Search fallback...
+2025-09-15T03:23:59.092242 INFO: Google Search fallback: searching for 'article www.propublica.org'
+2025-09-15T03:23:59.123307 INFO: Google Search fallback did not find alternative URL

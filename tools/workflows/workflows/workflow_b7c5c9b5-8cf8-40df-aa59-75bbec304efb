@@ -1,0 +1,97 @@
+2025-09-15T12:00:06.321553 INFO: Attempting direct fetch for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:07.346492 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:08.068028 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:08.068140 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:08.068185 INFO: Attempting Reader Mode strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:08.428172 ERROR: Reader mode fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:00:08.430732 INFO: Attempting JS Disabled strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:09.102344 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:09.102460 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:09.102490 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:09.244836 ERROR: Refresh stop fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:00:09.247610 INFO: Attempting Inspect Element strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:10.313380 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:10.313496 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:10.313524 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:15.170516 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:00:15.170641 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:15.170672 INFO: Attempting archive.today for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:19.354191 INFO: No existing archive found, creating new archive for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:20.217290 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:00:20.226415 INFO: Attempting direct fetch for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:21.098655 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:21.792348 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:21.792469 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:21.792514 INFO: Attempting Reader Mode strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:22.001079 ERROR: Reader mode fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:00:22.003473 INFO: Attempting JS Disabled strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:22.667915 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:22.668082 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:22.668110 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:22.794445 ERROR: Refresh stop fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:00:22.796928 INFO: Attempting Inspect Element strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:23.887834 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:23.887948 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:23.887975 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:27.406691 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:00:27.406800 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:27.406827 INFO: Attempting archive.today for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:31.118464 INFO: No existing archive found, creating new archive for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:32.027177 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:00:32.027627 INFO: Attempting archive.is for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:34.560113 INFO: Attempting archive.li for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:38.087844 INFO: Attempting archive.fo for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:40.054136 INFO: Attempting archive.ph for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:43.046614 INFO: Attempting Googlebot spoof for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:43.722421 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:43.722548 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:43.722580 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:50.298217 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com#tooltip-3: No archived snapshots found in any timeframe
+2025-09-15T12:00:50.299931 INFO: Attempting Wayback Machine for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:50.613988 ERROR: Wayback Machine failed for https://www.nytimes.com#tooltip-3: No archived snapshots found
+2025-09-15T12:00:50.616218 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com#tooltip-3. Attempting Google Search fallback...
+2025-09-15T12:00:50.616965 INFO: Google Search fallback: searching for 'article www.nytimes.com'
+2025-09-15T12:00:50.650653 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:00:50.658343 INFO: Attempting direct fetch for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:51.537571 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:52.223800 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:52.223939 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:52.223983 INFO: Attempting Reader Mode strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:52.491026 ERROR: Reader mode fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:00:52.493483 INFO: Attempting JS Disabled strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:53.145037 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:53.145148 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:53.145203 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:53.272809 ERROR: Refresh stop fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:00:53.275255 INFO: Attempting Inspect Element strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:54.337665 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:00:54.337777 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:54.337803 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com#tooltip-3
+2025-09-15T12:00:56.616866 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:00:56.616976 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:00:56.617004 INFO: Attempting archive.today for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:00.202079 INFO: No existing archive found, creating new archive for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:01.095404 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:01:01.095892 INFO: Attempting archive.is for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:03.136385 INFO: Attempting archive.li for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:05.986365 INFO: Attempting archive.fo for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:09.352421 INFO: Attempting archive.ph for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:11.947372 INFO: Attempting Googlebot spoof for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:12.569269 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:01:12.569380 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:01:12.569406 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:15.494083 ERROR: Enhanced Wayback Machine failed for https://www.nytimes.com#tooltip-3: No archived snapshots found in any timeframe
+2025-09-15T12:01:15.495748 INFO: Attempting Wayback Machine for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:15.614468 ERROR: Wayback Machine failed for https://www.nytimes.com#tooltip-3: No archived snapshots found
+2025-09-15T12:01:15.616676 ERROR: All fetch strategies failed or returned low-quality content for https://www.nytimes.com#tooltip-3. Attempting Google Search fallback...
+2025-09-15T12:01:15.617662 INFO: Google Search fallback: searching for 'article www.nytimes.com'
+2025-09-15T12:01:15.650447 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:01:15.658254 INFO: Attempting direct fetch for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:16.532203 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:01:17.216629 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:01:17.216746 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:01:17.216797 INFO: Attempting Reader Mode strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:17.440103 ERROR: Reader mode fetch failed for https://www.nytimes.com#tooltip-3: cannot use a string pattern on a bytes-like object
+2025-09-15T12:01:17.442488 INFO: Attempting JS Disabled strategy for https://www.nytimes.com#tooltip-3
+2025-09-15T12:01:18.097458 INFO: Content is very short (32 words). Likely a teaser.
+2025-09-15T12:01:18.097562 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...

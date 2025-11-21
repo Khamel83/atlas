@@ -1,0 +1,102 @@
+2025-09-15T07:18:04.362268 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:04.396721 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:04.396916 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:05.038922 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:18:05.041067 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:05.083002 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:05.083282 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:05.113505 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:18:05.113737 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:05.141726 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:05.141897 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:08.867811 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:18:08.867935 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:18:08.867962 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:11.893403 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:12.796241 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:18:12.796896 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:15.745716 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:19.219526 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:22.901701 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:26.033121 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:26.089545 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:26.089806 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:46.307581 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T07:18:46.309001 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:46.454804 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T07:18:46.456546 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T07:18:46.457116 INFO: Google Search fallback: searching for '12FOB medium t.html'
+2025-09-15T07:18:46.457356 ERROR: Google Search fallback failed: [Errno 32] Broken pipe
+2025-09-15T07:18:46.465003 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:46.540004 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:46.540185 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:47.019653 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:18:47.021572 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:47.052007 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:47.052236 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:47.082250 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:18:47.082429 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:47.109897 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:47.110089 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:50.716052 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:18:50.716215 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:18:50.716247 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:52.724980 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:53.625769 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:18:53.626314 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:55.761734 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:18:59.277871 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:01.436297 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:04.015895 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:04.055113 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:04.055305 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:05.613273 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T07:19:05.614640 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:05.838394 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T07:19:05.840012 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T07:19:05.840648 INFO: Google Search fallback: searching for '12FOB medium t.html'
+2025-09-15T07:19:05.872337 INFO: Google Search fallback did not find alternative URL
+2025-09-15T07:19:05.879414 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:05.909620 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:05.909824 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:06.637511 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:19:06.639626 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:06.671584 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:06.671809 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:06.701382 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:19:06.701562 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:06.730194 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:06.730380 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:11.334702 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:19:11.334814 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:19:11.334843 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:13.752684 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:13.772333 INFO: Attempting direct fetch for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:13.804206 ERROR: Direct fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:13.804386 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:14.348167 ERROR: Reader mode fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:19:14.350279 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:14.382509 ERROR: JS disabled fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:14.382713 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:14.412253 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T07:19:14.412427 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:14.442174 ERROR: Inspect element fetch failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:14.442380 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:16.930621 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T07:19:16.930722 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T07:19:16.930747 INFO: Attempting archive.today for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:19.094993 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:19.969372 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T07:19:19.970060 INFO: Attempting archive.is for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:21.978853 INFO: Attempting archive.li for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:25.443964 INFO: Attempting archive.fo for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:29.266525 INFO: Attempting archive.ph for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:31.212403 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:31.242836 ERROR: Googlebot spoof failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:31.243044 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:32.771460 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T07:19:32.772910 INFO: Attempting Wayback Machine for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print
+2025-09-15T07:19:32.881405 ERROR: Wayback Machine failed for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print: No archived snapshots found
+2025-09-15T07:19:32.883165 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2010/12/12/magazine/12FOB-medium-t.html?partner=rss&emc=rss&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T07:19:32.883736 INFO: Google Search fallback: searching for '12FOB medium t.html'
+2025-09-15T07:19:32.916148 INFO: Google Search fallback did not find alternative URL

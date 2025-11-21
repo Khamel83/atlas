@@ -1,0 +1,25 @@
+2025-09-15T01:23:10.971455 INFO: Attempting direct fetch for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:10.971684 ERROR: Direct fetch failed for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html: [Errno 32] Broken pipe
+2025-09-15T01:23:10.971739 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:11.616938 ERROR: Reader mode fetch failed for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html: cannot use a string pattern on a bytes-like object
+2025-09-15T01:23:11.619038 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:11.681310 ERROR: JS disabled fetch failed for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:11.681520 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:11.742575 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html: cannot use a string pattern on a bytes-like object
+2025-09-15T01:23:11.742833 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:11.801041 ERROR: Inspect element fetch failed for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:11.801250 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:16.343847 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:23:16.343961 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:23:16.343987 INFO: Attempting archive.today for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:19.882338 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:20.784474 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:23:20.784990 INFO: Attempting archive.is for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:24.320856 INFO: Attempting archive.li for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:26.267043 INFO: Attempting archive.fo for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:29.996905 INFO: Attempting archive.ph for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:33.482307 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:33.740723 ERROR: Googlebot spoof failed for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html: 403 Client Error: Forbidden for url: http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:33.740951 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:34.795551 INFO: Found Wayback snapshot from 20221128072349: http://web.archive.org/web/20221128072349/https://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html
+2025-09-15T01:23:38.924799 INFO: Successfully fetched http://www.nytimes.com/2015/04/21/magazine/the-next-era-of-campaign-finance-craziness-is-already-underway.html using wayback_machine_enhanced

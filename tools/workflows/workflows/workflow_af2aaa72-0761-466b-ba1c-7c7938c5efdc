@@ -1,0 +1,125 @@
+2025-09-15T13:05:06.753704 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:07.189460 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:07.272104 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:07.272203 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:07.272244 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:07.482118 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:05:07.482386 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:07.981738 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:07.981848 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:07.981873 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:08.045644 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:05:08.045901 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:08.376793 INFO: Content is very short (115 words). Likely a teaser.
+2025-09-15T13:05:08.376887 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:08.376913 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:12.871442 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:05:12.871558 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:12.871583 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:14.615774 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:15.517584 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:05:15.518575 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:17.606341 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:20.399565 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:22.508286 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:24.487301 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:24.790428 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:24.790542 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:24.790568 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:27.810256 INFO: Found Wayback snapshot from 20140504014133: http://web.archive.org/web/20140504014133/http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:29.195102 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T13:05:29.195215 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:29.195240 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:29.318490 INFO: Found Wayback snapshot: http://web.archive.org/web/20140504014133/http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:29.407159 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T13:05:29.407259 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:29.407293 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true. Attempting Google Search fallback...
+2025-09-15T13:05:29.407359 INFO: Google Search fallback: searching for '110808fa fact schmidle'
+2025-09-15T13:05:29.445038 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:05:29.453638 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:29.572915 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:29.661955 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:29.662110 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:29.662151 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:29.740216 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:05:29.740524 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:29.949835 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:29.949944 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:29.949972 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:30.012464 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:05:30.012760 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:30.330721 INFO: Content is very short (115 words). Likely a teaser.
+2025-09-15T13:05:30.330828 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:30.330856 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:33.621882 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:05:33.622006 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:33.622033 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:36.763295 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:37.646332 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:05:37.646874 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:39.614937 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:41.963850 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:44.300847 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:44.310489 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:44.421783 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:44.503454 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:44.503582 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:44.503661 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:44.571253 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:05:44.571541 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:44.936512 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:05:44.936655 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:44.936687 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:44.999976 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:05:45.000249 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:45.336863 INFO: Content is very short (115 words). Likely a teaser.
+2025-09-15T13:05:45.336976 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:45.337001 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:48.482949 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:05:48.483064 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:05:48.483091 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:51.220018 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:52.122524 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:05:52.123485 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:56.045269 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:05:59.366465 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:02.902807 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:05.887550 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.058031 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:06:06.058157 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:06.058186 INFO: Attempting Enhanced Wayback Machine for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.255782 INFO: Found Wayback snapshot from 20140504014133: http://web.archive.org/web/20140504014133/http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.426286 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T13:06:06.426411 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:06.426437 INFO: Attempting Wayback Machine for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.546834 INFO: Found Wayback snapshot: http://web.archive.org/web/20140504014133/http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.638509 INFO: Paywall phrase 'subscribe now' detected.
+2025-09-15T13:06:06.638654 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:06.638693 ERROR: All fetch strategies failed or returned low-quality content for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true. Attempting Google Search fallback...
+2025-09-15T13:06:06.638764 INFO: Google Search fallback: searching for '110808fa fact schmidle'
+2025-09-15T13:06:06.671860 INFO: Google Search fallback did not find alternative URL
+2025-09-15T13:06:06.679427 INFO: Attempting direct fetch for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.799072 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:06:06.892994 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:06:06.893121 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:06.893161 INFO: Attempting Reader Mode strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:06.968145 ERROR: Reader mode fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:06:06.968450 INFO: Attempting JS Disabled strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:07.186327 INFO: Paywall element '.paywall' detected.
+2025-09-15T13:06:07.186435 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:07.186465 INFO: Attempting Refresh Stop strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:07.257134 ERROR: Refresh stop fetch failed for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T13:06:07.257519 INFO: Attempting Inspect Element strategy for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:07.657878 INFO: Content is very short (115 words). Likely a teaser.
+2025-09-15T13:06:07.657990 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:07.658019 INFO: Attempting removepaywalls.com bypass for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:12.764623 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T13:06:12.764745 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T13:06:12.764772 INFO: Attempting archive.today for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:16.263799 INFO: No existing archive found, creating new archive for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:17.178330 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T13:06:17.178910 INFO: Attempting archive.is for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:20.940962 INFO: Attempting archive.li for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:23.207394 INFO: Attempting archive.fo for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:26.766394 INFO: Attempting archive.ph for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true
+2025-09-15T13:06:28.817225 INFO: Attempting Googlebot spoof for http://www.newyorker.com/reporting/2011/08/08/110808fa_fact_schmidle?printable=true

@@ -1,0 +1,79 @@
+2025-09-15T03:36:13.328740 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:13.658081 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:13.659548 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:13.820369 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:13.822477 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:13.981137 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:13.982608 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:14.142244 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: cannot use a string pattern on a bytes-like object
+2025-09-15T03:36:14.143939 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:14.304540 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:14.306016 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:18.929349 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T03:36:18.929475 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:36:18.929501 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:21.857357 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:22.755751 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:36:22.756663 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:26.458857 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:28.620460 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:31.989566 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:35.735121 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:35.894672 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:35.896277 INFO: Attempting Enhanced Wayback Machine for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:44.608764 ERROR: Enhanced Wayback Machine failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: No archived snapshots found in any timeframe
+2025-09-15T03:36:44.610193 INFO: Attempting Wayback Machine for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:44.728060 ERROR: Wayback Machine failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: No archived snapshots found
+2025-09-15T03:36:44.729496 ERROR: All fetch strategies failed or returned low-quality content for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module. Attempting Google Search fallback...
+2025-09-15T03:36:44.729951 INFO: Google Search fallback: searching for 'SB10001424127887323644904578272151551627948.html'
+2025-09-15T03:36:44.761691 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:36:44.769201 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:45.001879 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:45.003339 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:45.159433 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:45.161512 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:45.331191 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:45.341164 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:45.499116 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:45.501003 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:45.659409 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:45.661122 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:45.840426 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:45.841886 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:46.021394 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: cannot use a string pattern on a bytes-like object
+2025-09-15T03:36:46.022736 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:46.201123 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:36:46.203384 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:50.263367 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T03:36:50.263466 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:36:50.263494 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:53.255441 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:54.139790 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:36:54.140774 INFO: Attempting archive.is for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:57.395649 INFO: Attempting archive.li for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:36:59.703055 INFO: Attempting archive.fo for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:03.329366 INFO: Attempting archive.ph for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:06.028600 INFO: Attempting Googlebot spoof for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:06.340139 ERROR: Googlebot spoof failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:37:06.341689 INFO: Attempting Enhanced Wayback Machine for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:07.684550 ERROR: Enhanced Wayback Machine failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: No archived snapshots found in any timeframe
+2025-09-15T03:37:07.688264 INFO: Attempting Wayback Machine for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:07.822792 ERROR: Wayback Machine failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: No archived snapshots found
+2025-09-15T03:37:07.824460 ERROR: All fetch strategies failed or returned low-quality content for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module. Attempting Google Search fallback...
+2025-09-15T03:37:07.824949 INFO: Google Search fallback: searching for 'SB10001424127887323644904578272151551627948.html'
+2025-09-15T03:37:07.875842 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:37:07.885143 INFO: Attempting direct fetch for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:08.097493 ERROR: Direct fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:37:08.099276 INFO: Attempting Reader Mode strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:08.290388 ERROR: Reader mode fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:37:08.293363 INFO: Attempting JS Disabled strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:08.460437 ERROR: JS disabled fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:37:08.462499 INFO: Attempting Refresh Stop strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:08.643578 ERROR: Refresh stop fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: cannot use a string pattern on a bytes-like object
+2025-09-15T03:37:08.645210 INFO: Attempting Inspect Element strategy for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:08.828331 ERROR: Inspect element fetch failed for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/SB10001424127887323644904578272151551627948
+2025-09-15T03:37:08.829875 INFO: Attempting removepaywalls.com bypass for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:13.502207 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T03:37:13.502328 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:37:13.502355 INFO: Attempting archive.today for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module
+2025-09-15T03:37:15.557355 INFO: No existing archive found, creating new archive for http://online.wsj.com/article/SB10001424127887323644904578272151551627948.html?mod=WSJ_myyahoo_module

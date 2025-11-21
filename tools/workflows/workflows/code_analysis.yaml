@@ -1,0 +1,165 @@
+# Comprehensive Code Analysis Workflow
+# Analyze codebase for issues, patterns, and metrics
+
+id: code_analysis
+name: Comprehensive Code Analysis
+description: Perform comprehensive code analysis including linting, security scanning, and performance analysis
+version: "1.0"
+
+variables:
+  repository_path: "."
+  output_format: "json"
+  include_security: true
+  include_performance: true
+  include_quality: true
+  include_documentation: true
+  fail_on_errors: true
+  generate_report: true
+
+config:
+  timeout: 600  # 10 minutes
+  parallel_steps: true
+  fail_fast: false
+
+steps:
+  - id: lint_code
+    name: Run Code Linter
+    command: lint-code
+    parameters:
+      path: "${repository_path}"
+      strict_mode: ${fail_on_errors}
+      output_format: "${output_format}"
+    depends_on: []
+    condition: success
+    timeout: 120
+    max_retries: 2
+    description: "Run static code analysis and linting"
+
+  - id: security_scan
+    name: Security Vulnerability Scan
+    command: security-scan
+    parameters:
+      path: "${repository_path}"
+      scan_dependencies: true
+      scan_code: true
+      output_format: "${output_format}"
+    depends_on: []
+    condition: success
+    timeout: 180
+    max_retries: 2
+    parallel: true
+    description: "Scan for security vulnerabilities and issues"
+
+  - id: performance_analysis
+    name: Performance Analysis
+    command: analyze-performance
+    parameters:
+      path: "${repository_path}"
+      include_bottlenecks: true
+      include_memory_analysis: true
+      output_format: "${output_format}"
+    depends_on: []
+    condition: success
+    timeout: 150
+    max_retries: 2
+    parallel: true
+    description: "Analyze code performance and identify bottlenecks"
+
+  - id: quality_metrics
+    name: Code Quality Metrics
+    command: calculate-quality-metrics
+    parameters:
+      path: "${repository_path}"
+      include_complexity: true
+      include_coverage: true
+      include_maintainability: true
+      output_format: "${output_format}"
+    depends_on: []
+    condition: success
+    timeout: 90
+    max_retries: 2
+    parallel: true
+    description: "Calculate code quality metrics and statistics"
+
+  - id: documentation_analysis
+    name: Documentation Analysis
+    command: analyze-documentation
+    parameters:
+      path: "${repository_path}"
+      check_coverage: true
+      check_quality: true
+      output_format: "${output_format}"
+    depends_on: []
+    condition: success
+    timeout: 60
+    max_retries: 2
+    parallel: true
+    description: "Analyze documentation coverage and quality"
+
+  - id: dependency_analysis
+    name: Dependency Analysis
+    command: analyze-dependencies
+    parameters:
+      path: "${repository_path}"
+      check_updates: true
+      check_vulnerabilities: true
+      output_format: "${output_format}"
+    depends_on: []
+    condition: success
+    timeout: 90
+    max_retries: 2
+    parallel: true
+    description: "Analyze project dependencies and updates"
+
+  - id: generate_summary
+    name: Generate Analysis Summary
+    command: generate-analysis-summary
+    parameters:
+      lint_results: "${lint_code.output}"
+      security_results: "${security_scan.output}"
+      performance_results: "${performance_analysis.output}"
+      quality_results: "${quality_metrics.output}"
+      documentation_results: "${documentation_analysis.output}"
+      dependency_results: "${dependency_analysis.output}"
+      output_format: "${output_format}"
+    depends_on: ["lint_code", "security_scan", "performance_analysis", "quality_metrics", "documentation_analysis", "dependency_analysis"]
+    condition: success
+    timeout: 60
+    description: "Generate comprehensive analysis summary"
+
+  - id: create_report
+    name: Create Analysis Report
+    command: create-analysis-report
+    parameters:
+      summary_data: "${generate_summary.output}"
+      include_recommendations: true
+      include_visualizations: true
+      output_format: "${output_format}"
+    depends_on: ["generate_summary"]
+    condition: success
+    timeout: 90
+    description: "Create detailed analysis report with recommendations"
+
+  - id: notify_results
+    name: Notify Analysis Results
+    command: notify-analysis-results
+    parameters:
+      report_path: "${create_report.output.report_file}"
+      severity_level: "${generate_summary.output.severity_level}"
+      include_recommendations: true
+    depends_on: ["create_report"]
+    condition: success
+    timeout: 30
+    description: "Send notification with analysis results"
+
+  - id: archive_results
+    name: Archive Analysis Results
+    command: archive-analysis
+    parameters:
+      results_data: "${create_report.output}"
+      archive_format: "tar.gz"
+      retention_days: 30
+    depends_on: ["create_report"]
+    condition: success
+    timeout: 45
+    description: "Archive analysis results for future reference"

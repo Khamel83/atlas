@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "host": "mac-mini.local",
+  "user": "atlas",
+  "transcription_model": "large-v3",
+  "concurrent_jobs": 2,
+  "ssh_key": "~/.ssh/mac_mini_key",
+  "working_directory": "/tmp/atlas-transcription",
+  "max_audio_size_mb": 500,
+  "timeout_minutes": 30,
+  "whisper_options": {
+    "language": "en",
+    "task": "transcribe",
+    "output_format": "txt",
+    "word_timestamps": false
+  },
+  "audio_formats": ["mp3", "m4a", "wav", "flac"],
+  "retry_attempts": 2,
+  "cleanup_audio_files": true
+}

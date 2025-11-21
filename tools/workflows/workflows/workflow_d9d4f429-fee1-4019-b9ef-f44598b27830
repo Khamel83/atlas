@@ -1,0 +1,30 @@
+2025-09-14T22:00:50.532134 INFO: Attempting direct fetch for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:00:50.926458 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:00:51.045261 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:00:51.045395 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:00:51.045438 INFO: Attempting Reader Mode strategy for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:00:51.173059 ERROR: Reader mode fetch failed for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill: cannot use a string pattern on a bytes-like object
+2025-09-14T22:00:51.175020 INFO: Attempting JS Disabled strategy for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:00:51.432109 INFO: Content is very short (73 words). Likely a teaser.
+2025-09-14T22:00:51.432209 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:00:51.432236 INFO: Attempting Refresh Stop strategy for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:00:51.655406 ERROR: Refresh stop fetch failed for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill: cannot use a string pattern on a bytes-like object
+2025-09-14T22:00:51.659683 INFO: Attempting Inspect Element strategy for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:00:52.011640 INFO: Content is very short (73 words). Likely a teaser.
+2025-09-14T22:00:52.011740 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:00:52.011766 INFO: Attempting removepaywalls.com bypass for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:00:56.547674 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T22:00:56.547793 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:00:56.547819 INFO: Attempting archive.today for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:00.267117 INFO: No existing archive found, creating new archive for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:01.173839 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T22:01:01.174696 INFO: Attempting archive.is for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:04.690936 INFO: Attempting archive.li for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:08.079922 INFO: Attempting archive.fo for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:10.707479 INFO: Attempting archive.ph for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:13.411975 INFO: Attempting Googlebot spoof for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:13.766087 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T22:01:13.766204 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T22:01:13.766230 INFO: Attempting Enhanced Wayback Machine for https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:17.081424 INFO: Found Wayback snapshot from 20241207154242: http://web.archive.org/web/20241207154242/https://food52.com/blog/24241-best-plants-that-are-hard-to-kill
+2025-09-14T22:01:17.993841 INFO: Successfully fetched https://food52.com/blog/24241-best-plants-that-are-hard-to-kill using wayback_machine_enhanced

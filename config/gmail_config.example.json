@@ -1,0 +1,17 @@
+{
+  "gmail": {
+    "credentials_path": "config/gmail_credentials.json",
+    "token_path": "config/gmail_token.json",
+    "watch_labels": ["Atlas", "Newsletter"],
+    "webhook_secret": "your-webhook-secret-key-here"
+  },
+  "server": {
+    "host": "localhost",
+    "port": 8080
+  },
+  "processing": {
+    "max_attachment_size": 25165824,
+    "enable_webhook": true,
+    "webhook_endpoint": "/webhook/gmail"
+  }
+}

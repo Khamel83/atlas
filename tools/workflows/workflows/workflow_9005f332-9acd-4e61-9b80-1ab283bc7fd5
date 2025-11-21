@@ -1,0 +1,25 @@
+2025-09-14T21:07:16.132412 INFO: Attempting direct fetch for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:16.472524 ERROR: Direct fetch failed for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:16.473732 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:17.145955 ERROR: Reader mode fetch failed for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:07:17.147920 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:17.272051 ERROR: JS disabled fetch failed for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:17.273237 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:17.400048 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html: cannot use a string pattern on a bytes-like object
+2025-09-14T21:07:17.401226 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:17.528512 ERROR: Inspect element fetch failed for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:17.529699 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:19.935187 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:07:19.935301 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:07:19.935327 INFO: Attempting archive.today for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:23.876279 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:24.813442 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:07:24.813889 INFO: Attempting archive.is for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:26.821067 INFO: Attempting archive.li for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:28.909921 INFO: Attempting archive.fo for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:32.303558 INFO: Attempting archive.ph for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:34.687465 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:34.822885 ERROR: Googlebot spoof failed for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:34.824173 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:45.598567 INFO: Found Wayback snapshot from 20211230230233: http://web.archive.org/web/20211230230233/https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html
+2025-09-14T21:07:46.298528 INFO: Successfully fetched https://www.nytimes.com/2018/10/16/magazine/felon-attorney-crime-yale-law.html using wayback_machine_enhanced

@@ -1,0 +1,25 @@
+2025-09-15T00:11:07.275540 INFO: Attempting direct fetch for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.570770 ERROR: Direct fetch failed for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true: 403 Client Error: Forbidden for url: http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.570973 INFO: Attempting Reader Mode strategy for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.682413 ERROR: Reader mode fetch failed for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true: 403 Client Error: Forbidden for url: http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.682859 INFO: Attempting JS Disabled strategy for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.807200 ERROR: JS disabled fetch failed for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true: 403 Client Error: Forbidden for url: http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.807579 INFO: Attempting Refresh Stop strategy for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:07.922107 ERROR: Refresh stop fetch failed for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true: cannot use a string pattern on a bytes-like object
+2025-09-15T00:11:07.922502 INFO: Attempting Inspect Element strategy for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:08.034170 ERROR: Inspect element fetch failed for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true: 403 Client Error: Forbidden for url: http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:08.034573 INFO: Attempting removepaywalls.com bypass for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:10.869442 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:11:10.869695 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:11:10.869868 INFO: Attempting archive.today for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:15.298802 INFO: No existing archive found, creating new archive for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:16.181089 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:11:16.181475 INFO: Attempting archive.is for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:18.522050 INFO: Attempting archive.li for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:20.882293 INFO: Attempting archive.fo for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:23.070203 INFO: Attempting archive.ph for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:25.837037 INFO: Attempting Googlebot spoof for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:25.950083 ERROR: Googlebot spoof failed for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true: 403 Client Error: Forbidden for url: http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:25.950581 INFO: Attempting Enhanced Wayback Machine for http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:26.453583 INFO: Found Wayback snapshot from 20150225140812: http://web.archive.org/web/20150225140812/http://www.gourmet.com:80/magazine/2000s/2000/10/pocketful?printable=true
+2025-09-15T00:11:27.319223 INFO: Successfully fetched http://www.gourmet.com/magazine/2000s/2000/10/pocketful?printable=true using wayback_machine_enhanced

@@ -1,0 +1,105 @@
+2025-09-15T02:18:46.234035 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:46.297928 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:46.298104 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:46.930691 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:18:46.933213 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:46.994018 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:46.994216 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:47.060024 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:18:47.060206 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:47.118020 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:47.118232 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:50.256166 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:18:50.256280 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:18:50.256310 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:53.776077 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:54.650898 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:18:54.651928 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:18:58.279550 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:01.307105 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:03.788294 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:07.086079 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:07.177634 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:07.177830 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:31.608561 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:19:31.609916 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:31.610426 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T02:19:31.610493 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:19:31.610561 INFO: Google Search fallback: searching for '13Irish t.html'
+2025-09-15T02:19:31.643632 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:19:31.651106 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:31.715986 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:31.716159 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:32.299406 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:19:32.301875 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:32.362204 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:32.362408 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:32.420178 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:19:32.420365 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:32.477365 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:32.477569 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:35.353985 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:19:35.354112 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:19:35.354143 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:37.280513 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:38.168047 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:19:38.168916 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:41.873577 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:44.404072 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:47.697106 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:50.082451 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:50.190831 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:50.191048 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:51.745157 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:19:51.746523 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:51.868520 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T02:19:51.870546 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:19:51.871327 INFO: Google Search fallback: searching for '13Irish t.html'
+2025-09-15T02:19:51.904474 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:19:51.913315 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:51.974922 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:51.975150 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:52.235202 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:19:52.237983 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:52.299828 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:52.300033 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:52.359531 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:19:52.359780 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:52.417227 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:52.417429 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:55.326838 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:19:55.326954 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:19:55.326983 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:58.058454 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:19:58.954024 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:19:58.954874 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.370897 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.382139 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.470693 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.470895 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.725501 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:20:01.727988 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.788620 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.788816 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.851984 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T02:20:01.852164 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.909745 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:01.909983 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:05.323709 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:20:05.323819 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:20:05.323846 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:07.198623 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:08.110952 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:20:08.111843 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:10.863518 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:14.505548 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:17.972719 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:21.620877 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:21.679730 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:21.679942 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:22.958126 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T02:20:22.959648 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print
+2025-09-15T02:20:23.076826 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print: No archived snapshots found
+2025-09-15T02:20:23.079345 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/13/magazine/13Irish-t.html?hpw=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T02:20:23.080353 INFO: Google Search fallback: searching for '13Irish t.html'
+2025-09-15T02:20:23.114415 INFO: Google Search fallback did not find alternative URL

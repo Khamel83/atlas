@@ -1,0 +1,64 @@
+# Atlas API Configuration
+# REST API settings for mobile and desktop integration
+
+# Server settings
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  reload: true
+
+# API settings
+api:
+  title: "Atlas API"
+  version: "1.0.0"
+  description: "Simple content management system API"
+  docs_url: "/docs"
+  redoc_url: "/redoc"
+
+# CORS settings
+cors:
+  allow_origins: ["*"]  # In production, specify exact origins
+  allow_credentials: true
+  allow_methods: ["*"]
+  allow_headers: ["*"]
+
+# Rate limiting
+rate_limit:
+  enabled: true
+  requests_per_minute: 60
+  requests_per_hour: 1000
+
+# Content processing limits
+content:
+  max_content_length: 1000000  # 1MB
+  max_batch_size: 100
+  processing_timeout: 300  # 5 minutes
+
+# Search settings
+search:
+  default_limit: 50
+  max_limit: 200
+  min_query_length: 2
+
+# Pagination
+pagination:
+  default_limit: 50
+  max_limit: 200
+
+# Health check
+health:
+  check_interval: 60
+  database_timeout: 5
+  processor_timeout: 10
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/api.log"
+
+# Security
+security:
+  api_key_required: false  # Set to true to require API keys
+  api_key_header: "X-API-Key"

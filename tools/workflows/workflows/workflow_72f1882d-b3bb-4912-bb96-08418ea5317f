@@ -1,0 +1,142 @@
+2025-09-15T05:46:31.933344 INFO: Attempting direct fetch for https://forecastingresearch.org/
+2025-09-15T05:46:32.196893 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:46:32.275160 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:46:32.275275 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:46:32.275312 INFO: Attempting Reader Mode strategy for https://forecastingresearch.org/
+2025-09-15T05:46:32.448021 ERROR: Reader mode fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:46:32.449939 INFO: Attempting JS Disabled strategy for https://forecastingresearch.org/
+2025-09-15T05:46:32.667833 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:46:32.667950 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:46:32.667976 INFO: Attempting Refresh Stop strategy for https://forecastingresearch.org/
+2025-09-15T05:46:32.821674 ERROR: Refresh stop fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:46:32.823813 INFO: Attempting Inspect Element strategy for https://forecastingresearch.org/
+2025-09-15T05:46:33.028868 INFO: Suspicious title-to-content ratio: 0.56. Likely truncated.
+2025-09-15T05:46:33.028976 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:46:33.029001 INFO: Attempting removepaywalls.com bypass for https://forecastingresearch.org/
+2025-09-15T05:46:37.426067 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:46:37.426173 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:46:37.426198 INFO: Attempting archive.today for https://forecastingresearch.org/
+2025-09-15T05:46:40.086486 INFO: No existing archive found, creating new archive for https://forecastingresearch.org/
+2025-09-15T05:46:40.967744 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:46:40.968371 INFO: Attempting archive.is for https://forecastingresearch.org/
+2025-09-15T05:46:44.057949 INFO: Attempting archive.li for https://forecastingresearch.org/
+2025-09-15T05:46:46.321566 INFO: Attempting archive.fo for https://forecastingresearch.org/
+2025-09-15T05:46:50.061056 INFO: Attempting archive.ph for https://forecastingresearch.org/
+2025-09-15T05:46:52.617845 INFO: Attempting Googlebot spoof for https://forecastingresearch.org/
+2025-09-15T05:46:52.758422 ERROR: Googlebot spoof failed for https://forecastingresearch.org/: 403 Client Error: Forbidden for url: https://forecastingresearch.org/
+2025-09-15T05:46:52.760170 INFO: Attempting Enhanced Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:47:03.646270 INFO: Found Wayback snapshot from 20221213122901: http://web.archive.org/web/20221213122901/https://forecastingresearch.org/
+2025-09-15T05:47:03.646411 INFO: Timeframe 20220101 failed: [Errno 32] Broken pipe
+2025-09-15T05:47:08.594850 INFO: Found Wayback snapshot from 20221213122901: http://web.archive.org/web/20221213122901/https://forecastingresearch.org/
+2025-09-15T05:47:10.975854 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:10.975971 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:10.975998 INFO: Attempting Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:47:11.140292 ERROR: Wayback Machine failed for https://forecastingresearch.org/: No archived snapshots found
+2025-09-15T05:47:11.142312 ERROR: All fetch strategies failed or returned low-quality content for https://forecastingresearch.org/. Attempting Google Search fallback...
+2025-09-15T05:47:11.142563 INFO: Google Search fallback: searching for 'article forecastingresearch.org'
+2025-09-15T05:47:11.174284 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:47:11.181795 INFO: Attempting direct fetch for https://forecastingresearch.org/
+2025-09-15T05:47:11.418807 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:11.493810 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:11.493923 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:11.493963 INFO: Attempting Reader Mode strategy for https://forecastingresearch.org/
+2025-09-15T05:47:11.637295 ERROR: Reader mode fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:47:11.639085 INFO: Attempting JS Disabled strategy for https://forecastingresearch.org/
+2025-09-15T05:47:11.854164 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:11.854280 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:11.854308 INFO: Attempting Refresh Stop strategy for https://forecastingresearch.org/
+2025-09-15T05:47:12.041027 ERROR: Refresh stop fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:47:12.043169 INFO: Attempting Inspect Element strategy for https://forecastingresearch.org/
+2025-09-15T05:47:12.262724 INFO: Suspicious title-to-content ratio: 0.56. Likely truncated.
+2025-09-15T05:47:12.262827 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:12.262853 INFO: Attempting removepaywalls.com bypass for https://forecastingresearch.org/
+2025-09-15T05:47:14.553659 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:47:14.553764 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:14.553791 INFO: Attempting archive.today for https://forecastingresearch.org/
+2025-09-15T05:47:16.268448 INFO: No existing archive found, creating new archive for https://forecastingresearch.org/
+2025-09-15T05:47:17.140432 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:47:17.141086 INFO: Attempting archive.is for https://forecastingresearch.org/
+2025-09-15T05:47:19.149840 INFO: Attempting archive.li for https://forecastingresearch.org/
+2025-09-15T05:47:22.004658 INFO: Attempting archive.fo for https://forecastingresearch.org/
+2025-09-15T05:47:25.611657 INFO: Attempting archive.ph for https://forecastingresearch.org/
+2025-09-15T05:47:29.484999 INFO: Attempting Googlebot spoof for https://forecastingresearch.org/
+2025-09-15T05:47:29.602267 ERROR: Googlebot spoof failed for https://forecastingresearch.org/: 403 Client Error: Forbidden for url: https://forecastingresearch.org/
+2025-09-15T05:47:29.603838 INFO: Attempting Enhanced Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:47:30.079398 INFO: Found Wayback snapshot from 20221213122901: http://web.archive.org/web/20221213122901/https://forecastingresearch.org/
+2025-09-15T05:47:30.200769 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:30.200886 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:30.200915 INFO: Attempting Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:47:30.325809 ERROR: Wayback Machine failed for https://forecastingresearch.org/: No archived snapshots found
+2025-09-15T05:47:30.327905 ERROR: All fetch strategies failed or returned low-quality content for https://forecastingresearch.org/. Attempting Google Search fallback...
+2025-09-15T05:47:30.328153 INFO: Google Search fallback: searching for 'article forecastingresearch.org'
+2025-09-15T05:47:30.360090 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:47:30.367572 INFO: Attempting direct fetch for https://forecastingresearch.org/
+2025-09-15T05:47:30.570772 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:30.650361 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:30.650478 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:30.650534 INFO: Attempting Reader Mode strategy for https://forecastingresearch.org/
+2025-09-15T05:47:30.825882 ERROR: Reader mode fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:47:30.827929 INFO: Attempting JS Disabled strategy for https://forecastingresearch.org/
+2025-09-15T05:47:31.044423 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:31.044532 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:31.044558 INFO: Attempting Refresh Stop strategy for https://forecastingresearch.org/
+2025-09-15T05:47:31.197068 ERROR: Refresh stop fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:47:31.199227 INFO: Attempting Inspect Element strategy for https://forecastingresearch.org/
+2025-09-15T05:47:31.805720 INFO: Suspicious title-to-content ratio: 0.56. Likely truncated.
+2025-09-15T05:47:31.805832 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:31.805858 INFO: Attempting removepaywalls.com bypass for https://forecastingresearch.org/
+2025-09-15T05:47:36.239232 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:47:36.239353 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:36.239380 INFO: Attempting archive.today for https://forecastingresearch.org/
+2025-09-15T05:47:38.920395 INFO: No existing archive found, creating new archive for https://forecastingresearch.org/
+2025-09-15T05:47:39.804980 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:47:39.805508 INFO: Attempting archive.is for https://forecastingresearch.org/
+2025-09-15T05:47:43.385334 INFO: Attempting archive.li for https://forecastingresearch.org/
+2025-09-15T05:47:45.905981 INFO: Attempting archive.fo for https://forecastingresearch.org/
+2025-09-15T05:47:49.528937 INFO: Attempting archive.ph for https://forecastingresearch.org/
+2025-09-15T05:47:51.913218 INFO: Attempting Googlebot spoof for https://forecastingresearch.org/
+2025-09-15T05:47:52.055171 ERROR: Googlebot spoof failed for https://forecastingresearch.org/: 403 Client Error: Forbidden for url: https://forecastingresearch.org/
+2025-09-15T05:47:52.057121 INFO: Attempting Enhanced Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:47:52.486300 INFO: Found Wayback snapshot from 20221213122901: http://web.archive.org/web/20221213122901/https://forecastingresearch.org/
+2025-09-15T05:47:52.618507 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:52.618642 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:52.618671 INFO: Attempting Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:47:52.618745 ERROR: Wayback Machine failed for https://forecastingresearch.org/: [Errno 32] Broken pipe
+2025-09-15T05:47:52.618846 ERROR: All fetch strategies failed or returned low-quality content for https://forecastingresearch.org/. Attempting Google Search fallback...
+2025-09-15T05:47:52.618909 INFO: Google Search fallback: searching for 'article forecastingresearch.org'
+2025-09-15T05:47:52.651144 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:47:52.658699 INFO: Attempting direct fetch for https://forecastingresearch.org/
+2025-09-15T05:47:52.897622 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:52.979388 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:52.979505 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:52.979543 INFO: Attempting Reader Mode strategy for https://forecastingresearch.org/
+2025-09-15T05:47:53.120224 ERROR: Reader mode fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:47:53.122421 INFO: Attempting JS Disabled strategy for https://forecastingresearch.org/
+2025-09-15T05:47:53.311838 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:47:53.311940 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:53.311965 INFO: Attempting Refresh Stop strategy for https://forecastingresearch.org/
+2025-09-15T05:47:53.503752 ERROR: Refresh stop fetch failed for https://forecastingresearch.org/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:47:53.506034 INFO: Attempting Inspect Element strategy for https://forecastingresearch.org/
+2025-09-15T05:47:53.729696 INFO: Suspicious title-to-content ratio: 0.56. Likely truncated.
+2025-09-15T05:47:53.729800 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:53.729825 INFO: Attempting removepaywalls.com bypass for https://forecastingresearch.org/
+2025-09-15T05:47:55.944312 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:47:55.944411 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:47:55.944441 INFO: Attempting archive.today for https://forecastingresearch.org/
+2025-09-15T05:47:57.717518 INFO: No existing archive found, creating new archive for https://forecastingresearch.org/
+2025-09-15T05:47:58.619082 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:47:58.619897 INFO: Attempting archive.is for https://forecastingresearch.org/
+2025-09-15T05:48:01.057807 INFO: Attempting archive.li for https://forecastingresearch.org/
+2025-09-15T05:48:04.275343 INFO: Attempting archive.fo for https://forecastingresearch.org/
+2025-09-15T05:48:06.696840 INFO: Attempting archive.ph for https://forecastingresearch.org/
+2025-09-15T05:48:10.089902 INFO: Attempting Googlebot spoof for https://forecastingresearch.org/
+2025-09-15T05:48:10.205132 ERROR: Googlebot spoof failed for https://forecastingresearch.org/: 403 Client Error: Forbidden for url: https://forecastingresearch.org/
+2025-09-15T05:48:10.206899 INFO: Attempting Enhanced Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:48:10.617541 INFO: Found Wayback snapshot from 20221213122901: http://web.archive.org/web/20221213122901/https://forecastingresearch.org/
+2025-09-15T05:48:10.734156 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T05:48:10.734268 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:48:10.734296 INFO: Attempting Wayback Machine for https://forecastingresearch.org/
+2025-09-15T05:48:10.855987 ERROR: Wayback Machine failed for https://forecastingresearch.org/: No archived snapshots found
+2025-09-15T05:48:10.858234 ERROR: All fetch strategies failed or returned low-quality content for https://forecastingresearch.org/. Attempting Google Search fallback...
+2025-09-15T05:48:10.858347 INFO: Google Search fallback: searching for 'article forecastingresearch.org'
+2025-09-15T05:48:10.890385 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,125 @@
+2025-09-15T12:24:18.292129 INFO: Attempting direct fetch for https://a.flextv.cc/
+2025-09-15T12:24:18.538184 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:18.557205 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:18.557311 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:18.557348 INFO: Attempting Reader Mode strategy for https://a.flextv.cc/
+2025-09-15T12:24:18.750088 ERROR: Reader mode fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:24:18.751758 INFO: Attempting JS Disabled strategy for https://a.flextv.cc/
+2025-09-15T12:24:18.961396 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:18.961509 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:18.961537 INFO: Attempting Refresh Stop strategy for https://a.flextv.cc/
+2025-09-15T12:24:19.160320 ERROR: Refresh stop fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:24:19.161948 INFO: Attempting Inspect Element strategy for https://a.flextv.cc/
+2025-09-15T12:24:19.377918 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:19.378025 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:19.378053 INFO: Attempting removepaywalls.com bypass for https://a.flextv.cc/
+2025-09-15T12:24:23.444746 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:24:23.444857 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:23.444886 INFO: Attempting archive.today for https://a.flextv.cc/
+2025-09-15T12:24:25.966728 INFO: No existing archive found, creating new archive for https://a.flextv.cc/
+2025-09-15T12:24:26.833063 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:24:26.833540 INFO: Attempting archive.is for https://a.flextv.cc/
+2025-09-15T12:24:28.981299 INFO: Attempting archive.li for https://a.flextv.cc/
+2025-09-15T12:24:31.218440 INFO: Attempting archive.fo for https://a.flextv.cc/
+2025-09-15T12:24:34.934711 INFO: Attempting archive.ph for https://a.flextv.cc/
+2025-09-15T12:24:37.755792 INFO: Attempting Googlebot spoof for https://a.flextv.cc/
+2025-09-15T12:24:37.963167 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:37.963274 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:37.963300 INFO: Attempting Enhanced Wayback Machine for https://a.flextv.cc/
+2025-09-15T12:24:38.337686 INFO: Found Wayback snapshot from 20250507163714: http://web.archive.org/web/20250507163714/https://a.flextv.cc/
+2025-09-15T12:24:39.947969 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:39.948080 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:39.948107 INFO: Attempting Wayback Machine for https://a.flextv.cc/
+2025-09-15T12:24:40.093466 INFO: Found Wayback snapshot: http://web.archive.org/web/20250507163714/https://a.flextv.cc/
+2025-09-15T12:24:40.150856 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:40.150958 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:40.150991 ERROR: All fetch strategies failed or returned low-quality content for https://a.flextv.cc/. Attempting Google Search fallback...
+2025-09-15T12:24:40.151051 INFO: Google Search fallback: searching for 'article a.flextv.cc'
+2025-09-15T12:24:40.183126 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:24:40.190550 INFO: Attempting direct fetch for https://a.flextv.cc/
+2025-09-15T12:24:40.399740 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:40.414963 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:40.415065 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:40.415120 INFO: Attempting Reader Mode strategy for https://a.flextv.cc/
+2025-09-15T12:24:40.607980 ERROR: Reader mode fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:24:40.609541 INFO: Attempting JS Disabled strategy for https://a.flextv.cc/
+2025-09-15T12:24:40.819932 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:40.820058 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:40.820087 INFO: Attempting Refresh Stop strategy for https://a.flextv.cc/
+2025-09-15T12:24:41.021321 ERROR: Refresh stop fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:24:41.032361 INFO: Attempting direct fetch for https://a.flextv.cc/
+2025-09-15T12:24:41.238408 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:41.253306 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:41.253406 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:41.253439 INFO: Attempting Reader Mode strategy for https://a.flextv.cc/
+2025-09-15T12:24:41.445975 ERROR: Reader mode fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:24:41.447395 INFO: Attempting JS Disabled strategy for https://a.flextv.cc/
+2025-09-15T12:24:41.654852 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:41.654961 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:41.654987 INFO: Attempting Refresh Stop strategy for https://a.flextv.cc/
+2025-09-15T12:24:41.853405 ERROR: Refresh stop fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:24:41.854799 INFO: Attempting Inspect Element strategy for https://a.flextv.cc/
+2025-09-15T12:24:42.071761 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:24:42.071864 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:42.071889 INFO: Attempting removepaywalls.com bypass for https://a.flextv.cc/
+2025-09-15T12:24:45.167715 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:24:45.167826 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:45.167852 INFO: Attempting archive.today for https://a.flextv.cc/
+2025-09-15T12:24:48.597420 INFO: No existing archive found, creating new archive for https://a.flextv.cc/
+2025-09-15T12:24:49.462233 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:24:49.462743 INFO: Attempting archive.is for https://a.flextv.cc/
+2025-09-15T12:24:53.586927 INFO: Attempting archive.li for https://a.flextv.cc/
+2025-09-15T12:24:55.710793 INFO: Attempting archive.fo for https://a.flextv.cc/
+2025-09-15T12:24:59.181693 INFO: Attempting archive.ph for https://a.flextv.cc/
+2025-09-15T12:25:01.374801 INFO: Attempting Googlebot spoof for https://a.flextv.cc/
+2025-09-15T12:25:01.594751 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:01.594850 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:01.594879 INFO: Attempting Enhanced Wayback Machine for https://a.flextv.cc/
+2025-09-15T12:25:01.767014 INFO: Found Wayback snapshot from 20250507163714: http://web.archive.org/web/20250507163714/https://a.flextv.cc/
+2025-09-15T12:25:01.824177 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:01.824279 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:01.824305 INFO: Attempting Wayback Machine for https://a.flextv.cc/
+2025-09-15T12:25:02.020468 INFO: Found Wayback snapshot: http://web.archive.org/web/20250507163714/https://a.flextv.cc/
+2025-09-15T12:25:02.081705 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:02.081821 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:02.081854 ERROR: All fetch strategies failed or returned low-quality content for https://a.flextv.cc/. Attempting Google Search fallback...
+2025-09-15T12:25:02.081914 INFO: Google Search fallback: searching for 'article a.flextv.cc'
+2025-09-15T12:25:02.113681 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:25:02.123033 INFO: Attempting direct fetch for https://a.flextv.cc/
+2025-09-15T12:25:02.335846 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:02.351190 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:02.351331 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:02.351371 INFO: Attempting Reader Mode strategy for https://a.flextv.cc/
+2025-09-15T12:25:02.545959 ERROR: Reader mode fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:02.547584 INFO: Attempting JS Disabled strategy for https://a.flextv.cc/
+2025-09-15T12:25:02.756677 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:02.756789 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:02.756815 INFO: Attempting Refresh Stop strategy for https://a.flextv.cc/
+2025-09-15T12:25:02.953088 ERROR: Refresh stop fetch failed for https://a.flextv.cc/: cannot use a string pattern on a bytes-like object
+2025-09-15T12:25:02.954680 INFO: Attempting Inspect Element strategy for https://a.flextv.cc/
+2025-09-15T12:25:03.171549 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:03.171672 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:03.171702 INFO: Attempting removepaywalls.com bypass for https://a.flextv.cc/
+2025-09-15T12:25:05.663531 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:25:05.663676 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:05.663707 INFO: Attempting archive.today for https://a.flextv.cc/
+2025-09-15T12:25:08.333018 INFO: No existing archive found, creating new archive for https://a.flextv.cc/
+2025-09-15T12:25:09.242825 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:25:09.243351 INFO: Attempting archive.is for https://a.flextv.cc/
+2025-09-15T12:25:12.813105 INFO: Attempting archive.li for https://a.flextv.cc/
+2025-09-15T12:25:14.793971 INFO: Attempting archive.fo for https://a.flextv.cc/
+2025-09-15T12:25:18.288766 INFO: Attempting archive.ph for https://a.flextv.cc/
+2025-09-15T12:25:21.846242 INFO: Attempting Googlebot spoof for https://a.flextv.cc/
+2025-09-15T12:25:22.053802 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:22.053915 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:22.053942 INFO: Attempting Enhanced Wayback Machine for https://a.flextv.cc/
+2025-09-15T12:25:22.206412 INFO: Found Wayback snapshot from 20250507163714: http://web.archive.org/web/20250507163714/https://a.flextv.cc/
+2025-09-15T12:25:22.309675 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:22.309777 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:22.309802 INFO: Attempting Wayback Machine for https://a.flextv.cc/
+2025-09-15T12:25:22.436741 INFO: Found Wayback snapshot: http://web.archive.org/web/20250507163714/https://a.flextv.cc/
+2025-09-15T12:25:22.499882 INFO: Content is very short (97 words). Likely a teaser.
+2025-09-15T12:25:22.499985 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:25:22.500015 ERROR: All fetch strategies failed or returned low-quality content for https://a.flextv.cc/. Attempting Google Search fallback...
+2025-09-15T12:25:22.500088 INFO: Google Search fallback: searching for 'article a.flextv.cc'
+2025-09-15T12:25:22.531721 INFO: Google Search fallback did not find alternative URL

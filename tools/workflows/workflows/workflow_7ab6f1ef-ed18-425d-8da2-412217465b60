@@ -1,0 +1,101 @@
+2025-09-15T05:44:29.105617 INFO: Attempting direct fetch for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.311829 ERROR: Direct fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.312072 INFO: Attempting Reader Mode strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.411839 ERROR: Reader mode fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.412123 INFO: Attempting JS Disabled strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.556694 ERROR: JS disabled fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.556965 INFO: Attempting Refresh Stop strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.611975 ERROR: Refresh stop fetch failed for http://www.citypages.com/content/printVersion/1782234/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:44:29.612198 INFO: Attempting Inspect Element strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.666198 ERROR: Inspect element fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.673582 INFO: Attempting direct fetch for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.727961 ERROR: Direct fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.728184 INFO: Attempting Reader Mode strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.779833 ERROR: Reader mode fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.780061 INFO: Attempting JS Disabled strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.886531 ERROR: JS disabled fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.886792 INFO: Attempting Refresh Stop strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:29.939044 ERROR: Refresh stop fetch failed for http://www.citypages.com/content/printVersion/1782234/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:44:29.939260 INFO: Attempting Inspect Element strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:30.044197 ERROR: Inspect element fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:30.044428 INFO: Attempting removepaywalls.com bypass for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:34.413099 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:44:34.413193 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:44:34.413222 INFO: Attempting archive.today for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:37.645051 INFO: No existing archive found, creating new archive for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:38.549265 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:44:38.549822 INFO: Attempting archive.is for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:41.613865 INFO: Attempting archive.li for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:44.047277 INFO: Attempting archive.fo for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:46.480581 INFO: Attempting archive.ph for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:49.106863 INFO: Attempting Googlebot spoof for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:49.215159 ERROR: Googlebot spoof failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:49.215653 INFO: Attempting Enhanced Wayback Machine for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:55.732795 INFO: Found Wayback snapshot from 20210502054740: http://web.archive.org/web/20210502054740/http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.157394 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T05:44:58.157502 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:44:58.157527 INFO: Attempting Wayback Machine for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.284332 ERROR: Wayback Machine failed for http://www.citypages.com/content/printVersion/1782234/: No archived snapshots found
+2025-09-15T05:44:58.285945 ERROR: All fetch strategies failed or returned low-quality content for http://www.citypages.com/content/printVersion/1782234/. Attempting Google Search fallback...
+2025-09-15T05:44:58.286537 INFO: Google Search fallback: searching for 'printVersion'
+2025-09-15T05:44:58.318316 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:44:58.325762 INFO: Attempting direct fetch for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.426957 ERROR: Direct fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.427179 INFO: Attempting Reader Mode strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.481048 ERROR: Reader mode fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.481268 INFO: Attempting JS Disabled strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.577743 ERROR: JS disabled fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.577978 INFO: Attempting Refresh Stop strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.678396 ERROR: Refresh stop fetch failed for http://www.citypages.com/content/printVersion/1782234/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:44:58.678646 INFO: Attempting Inspect Element strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.731310 ERROR: Inspect element fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:44:58.731569 INFO: Attempting removepaywalls.com bypass for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:01.154024 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:45:01.154140 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:45:01.154165 INFO: Attempting archive.today for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:04.012090 INFO: No existing archive found, creating new archive for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:04.913977 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:45:04.914622 INFO: Attempting archive.is for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:07.176878 INFO: Attempting archive.li for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:10.551834 INFO: Attempting archive.fo for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:13.068291 INFO: Attempting archive.ph for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.260579 INFO: Attempting Googlebot spoof for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.369024 ERROR: Googlebot spoof failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.369265 INFO: Attempting Enhanced Wayback Machine for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.596719 INFO: Found Wayback snapshot from 20210502054740: http://web.archive.org/web/20210502054740/http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.652435 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T05:45:15.652540 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:45:15.652569 INFO: Attempting Wayback Machine for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.786441 ERROR: Wayback Machine failed for http://www.citypages.com/content/printVersion/1782234/: No archived snapshots found
+2025-09-15T05:45:15.788095 ERROR: All fetch strategies failed or returned low-quality content for http://www.citypages.com/content/printVersion/1782234/. Attempting Google Search fallback...
+2025-09-15T05:45:15.795869 INFO: Attempting direct fetch for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.850350 ERROR: Direct fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.850578 INFO: Attempting Reader Mode strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.957629 ERROR: Reader mode fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:15.957860 INFO: Attempting JS Disabled strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:16.067767 ERROR: JS disabled fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:16.068004 INFO: Attempting Refresh Stop strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:16.171089 ERROR: Refresh stop fetch failed for http://www.citypages.com/content/printVersion/1782234/: cannot use a string pattern on a bytes-like object
+2025-09-15T05:45:16.171296 INFO: Attempting Inspect Element strategy for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:16.267494 ERROR: Inspect element fetch failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:16.267972 INFO: Attempting removepaywalls.com bypass for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:20.864670 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:45:20.864780 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:45:20.864807 INFO: Attempting archive.today for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:24.255454 INFO: No existing archive found, creating new archive for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:25.115991 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:45:25.116538 INFO: Attempting archive.is for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:28.670417 INFO: Attempting archive.li for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:32.112890 INFO: Attempting archive.fo for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:34.155600 INFO: Attempting archive.ph for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:36.465466 INFO: Attempting Googlebot spoof for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:36.639824 ERROR: Googlebot spoof failed for http://www.citypages.com/content/printVersion/1782234/: 403 Client Error: Forbidden for url: http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:36.640256 INFO: Attempting Enhanced Wayback Machine for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:36.914783 INFO: Found Wayback snapshot from 20210502054740: http://web.archive.org/web/20210502054740/http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:36.972182 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T05:45:36.972310 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:45:36.972336 INFO: Attempting Wayback Machine for http://www.citypages.com/content/printVersion/1782234/
+2025-09-15T05:45:37.101435 ERROR: Wayback Machine failed for http://www.citypages.com/content/printVersion/1782234/: No archived snapshots found
+2025-09-15T05:45:37.103673 ERROR: All fetch strategies failed or returned low-quality content for http://www.citypages.com/content/printVersion/1782234/. Attempting Google Search fallback...
+2025-09-15T05:45:37.104244 INFO: Google Search fallback: searching for 'printVersion'
+2025-09-15T05:45:37.155175 INFO: Google Search fallback did not find alternative URL

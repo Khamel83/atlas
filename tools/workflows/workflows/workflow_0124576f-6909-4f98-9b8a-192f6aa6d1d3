@@ -1,0 +1,95 @@
+2025-09-15T11:03:52.649535 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:52.903302 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:52.904417 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.038046 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.041384 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.199342 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.201777 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.326961 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: cannot use a string pattern on a bytes-like object
+2025-09-15T11:03:53.330181 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.494121 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:53.497476 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:57.138691 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:03:57.138808 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:03:57.138837 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:03:59.691796 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:00.626325 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:04:00.627171 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:02.591584 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:06.351372 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:08.883850 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:11.250481 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:11.342681 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:11.344536 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.431728 ERROR: Enhanced Wayback Machine failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: No archived snapshots found in any timeframe
+2025-09-15T11:04:35.433183 INFO: Attempting Wayback Machine for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.601071 ERROR: Wayback Machine failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: No archived snapshots found
+2025-09-15T11:04:35.602975 ERROR: All fetch strategies failed or returned low-quality content for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841. Attempting Google Search fallback...
+2025-09-15T11:04:35.603835 INFO: Google Search fallback: searching for 'apa.14841'
+2025-09-15T11:04:35.636507 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:04:35.643920 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.727178 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.728475 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.823373 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.824742 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.936265 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:35.937612 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.033680 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: cannot use a string pattern on a bytes-like object
+2025-09-15T11:04:36.042464 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.142769 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.144503 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.465964 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.467709 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.583481 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.585239 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.680496 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: cannot use a string pattern on a bytes-like object
+2025-09-15T11:04:36.682383 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.836308 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:36.838891 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:41.938813 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:04:41.938922 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:04:41.938950 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:44.484052 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:45.348421 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:04:45.349257 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:47.505538 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:50.740235 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:54.473223 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:57.640202 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:57.751498 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:57.755412 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:59.460665 ERROR: Enhanced Wayback Machine failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: No archived snapshots found in any timeframe
+2025-09-15T11:04:59.462327 INFO: Attempting Wayback Machine for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:59.578539 ERROR: Wayback Machine failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: No archived snapshots found
+2025-09-15T11:04:59.580565 ERROR: All fetch strategies failed or returned low-quality content for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841. Attempting Google Search fallback...
+2025-09-15T11:04:59.581431 INFO: Google Search fallback: searching for 'apa.14841'
+2025-09-15T11:04:59.614011 INFO: Google Search fallback did not find alternative URL
+2025-09-15T11:04:59.621460 INFO: Attempting direct fetch for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:59.978363 ERROR: Direct fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:04:59.980210 INFO: Attempting Reader Mode strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.066964 ERROR: Reader mode fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.068888 INFO: Attempting JS Disabled strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.197127 ERROR: JS disabled fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.198982 INFO: Attempting Refresh Stop strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.307525 ERROR: Refresh stop fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: cannot use a string pattern on a bytes-like object
+2025-09-15T11:05:00.309371 INFO: Attempting Inspect Element strategy for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.397863 ERROR: Inspect element fetch failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:00.399787 INFO: Attempting removepaywalls.com bypass for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:05.387532 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T11:05:05.387662 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T11:05:05.387693 INFO: Attempting archive.today for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:08.654136 INFO: No existing archive found, creating new archive for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:09.570766 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T11:05:09.571607 INFO: Attempting archive.is for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:12.471581 INFO: Attempting archive.li for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:14.873364 INFO: Attempting archive.fo for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:18.543581 INFO: Attempting archive.ph for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:21.871546 INFO: Attempting Googlebot spoof for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:21.970575 ERROR: Googlebot spoof failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:21.972444 INFO: Attempting Enhanced Wayback Machine for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:23.948174 ERROR: Enhanced Wayback Machine failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: No archived snapshots found in any timeframe
+2025-09-15T11:05:23.949680 INFO: Attempting Wayback Machine for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841
+2025-09-15T11:05:24.068298 ERROR: Wayback Machine failed for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841: No archived snapshots found
+2025-09-15T11:05:24.071083 ERROR: All fetch strategies failed or returned low-quality content for https://onlinelibrary.wiley.com/doi/10.1111/apa.14841. Attempting Google Search fallback...
+2025-09-15T11:05:24.071970 INFO: Google Search fallback: searching for 'apa.14841'
+2025-09-15T11:05:24.104265 INFO: Google Search fallback did not find alternative URL

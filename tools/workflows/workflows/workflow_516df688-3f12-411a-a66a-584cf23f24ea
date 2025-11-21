@@ -1,0 +1,128 @@
+2025-09-14T21:46:47.440050 INFO: Attempting direct fetch for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:47.689968 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:46:47.699894 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:46:47.699998 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:46:47.700033 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:47.871037 ERROR: Reader mode fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:47.872561 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:48.108252 ERROR: JS disabled fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:48.109908 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:48.404915 ERROR: Refresh stop fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: cannot use a string pattern on a bytes-like object
+2025-09-14T21:46:48.406441 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:48.568430 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:46:48.568537 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:46:48.568565 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:51.657380 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:46:51.657485 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:46:51.657513 INFO: Attempting archive.today for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:54.780751 INFO: No existing archive found, creating new archive for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:55.684385 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:46:55.685006 INFO: Attempting archive.is for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:57.706261 INFO: Attempting archive.li for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:46:59.935225 INFO: Attempting archive.fo for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:02.346439 INFO: Attempting archive.ph for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:04.268046 INFO: Attempting Googlebot spoof for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:04.447280 ERROR: Googlebot spoof failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:04.449049 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:15.368152 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found in any timeframe
+2025-09-14T21:47:15.369566 INFO: Attempting Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:15.481719 ERROR: Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found
+2025-09-14T21:47:15.484635 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*. Attempting Google Search fallback...
+2025-09-14T21:47:15.485137 INFO: Google Search fallback: searching for '151070177X)*,*'
+2025-09-14T21:47:15.550873 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:47:15.563110 INFO: Attempting direct fetch for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:15.743234 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:15.758703 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:15.758805 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:15.758843 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:15.987191 ERROR: Reader mode fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:15.990256 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:16.237173 ERROR: JS disabled fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:16.240975 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:16.479356 ERROR: Refresh stop fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: cannot use a string pattern on a bytes-like object
+2025-09-14T21:47:16.483272 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:16.714709 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:16.714816 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:16.714843 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:20.135534 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:47:20.135699 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:20.135734 INFO: Attempting archive.today for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:22.289093 INFO: No existing archive found, creating new archive for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:23.192814 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:47:23.193329 INFO: Attempting archive.is for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:26.351874 INFO: Attempting archive.li for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:28.680196 INFO: Attempting archive.fo for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:32.555647 INFO: Attempting archive.ph for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:35.193530 INFO: Attempting Googlebot spoof for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:35.338179 ERROR: Googlebot spoof failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:35.339817 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:36.754775 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found in any timeframe
+2025-09-14T21:47:36.758549 INFO: Attempting Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:36.914421 ERROR: Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found
+2025-09-14T21:47:36.918362 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*. Attempting Google Search fallback...
+2025-09-14T21:47:36.918973 INFO: Google Search fallback: searching for '151070177X)*,*'
+2025-09-14T21:47:37.005895 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:47:37.024568 INFO: Attempting direct fetch for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:37.201561 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:37.219038 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:37.219131 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:37.219165 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:37.410440 ERROR: Reader mode fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:37.412248 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:37.635104 ERROR: JS disabled fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:37.636815 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:37.887697 ERROR: Refresh stop fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: cannot use a string pattern on a bytes-like object
+2025-09-14T21:47:37.889470 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:38.048638 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:38.048745 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:38.048770 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:42.211583 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:47:42.211698 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:42.211726 INFO: Attempting archive.today for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:44.407711 INFO: No existing archive found, creating new archive for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:45.313262 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:47:45.313823 INFO: Attempting archive.is for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:48.387971 INFO: Attempting archive.li for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:50.393963 INFO: Attempting archive.fo for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:53.712573 INFO: Attempting archive.ph for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:56.892105 INFO: Attempting Googlebot spoof for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:57.181532 ERROR: Googlebot spoof failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:57.183555 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:58.446868 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found in any timeframe
+2025-09-14T21:47:58.448322 INFO: Attempting Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:58.556794 ERROR: Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found
+2025-09-14T21:47:58.558511 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*. Attempting Google Search fallback...
+2025-09-14T21:47:58.559124 INFO: Google Search fallback: searching for '151070177X)*,*'
+2025-09-14T21:47:58.591201 INFO: Google Search fallback did not find alternative URL
+2025-09-14T21:47:58.599943 INFO: Attempting direct fetch for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:58.749302 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:58.761354 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:58.761458 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:58.761493 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:58.934990 ERROR: Reader mode fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:58.936662 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:59.177830 ERROR: JS disabled fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 404 Client Error: Not Found for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:59.179443 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:59.417242 ERROR: Refresh stop fetch failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: cannot use a string pattern on a bytes-like object
+2025-09-14T21:47:59.418852 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:47:59.578882 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-14T21:47:59.578983 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:47:59.579012 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:04.418731 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T21:48:04.418850 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T21:48:04.418877 INFO: Attempting archive.today for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:07.418728 INFO: No existing archive found, creating new archive for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:08.310034 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T21:48:08.310658 INFO: Attempting archive.is for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:10.883724 INFO: Attempting archive.li for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:14.318748 INFO: Attempting archive.fo for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:17.332160 INFO: Attempting archive.ph for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:19.451168 INFO: Attempting Googlebot spoof for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:19.599076 ERROR: Googlebot spoof failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:19.601018 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:20.832197 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found in any timeframe
+2025-09-14T21:48:20.833500 INFO: Attempting Wayback Machine for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*
+2025-09-14T21:48:20.950701 ERROR: Wayback Machine failed for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*: No archived snapshots found
+2025-09-14T21:48:20.952374 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Framed-Michael-Skakel-Decade-Prison/dp/151070177X)*,*. Attempting Google Search fallback...
+2025-09-14T21:48:20.952909 INFO: Google Search fallback: searching for '151070177X)*,*'
+2025-09-14T21:48:20.985847 INFO: Google Search fallback did not find alternative URL

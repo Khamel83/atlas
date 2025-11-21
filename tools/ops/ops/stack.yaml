@@ -1,0 +1,29 @@
+stack:
+  sot: sqlite_wal
+  mirror:
+    google_sheets: true
+    writeback_fields: ["approved", "notes"]
+  ui:
+    browse: datasette_readonly
+    edit: sqlite_web_localhost_tunnel
+  scheduler: systemd
+  logging: jsonl_logrotate
+  backups:
+    local_snapshots: keep_7_nightly
+    object_storage_weekly_export: optional
+    oci_block_volume_backups: enabled
+  blobs:
+    root: ${OOS_DATA_ROOT}
+    offsite_sync: optional
+  search: sqlite_fts5
+  alerts:
+    telegram: true
+    uptime_kuma_daily_status: true
+  safety:
+    pause_writers_for_edits: true
+    admin_audit_log: true
+  security:
+    network_binding: localhost_only
+    auth_method: ssh_keys
+    secrets_encryption: sops_age
+    disk_encryption: recommended

@@ -1,0 +1,34 @@
+- name: Setup Environment
+  tasks:
+    - [ ] Install Python packages
+    - [ ] Configure .env file
+    - [ ] Set up Tailscale (if remote dev)
+
+- name: Ingest YouTube History
+  tasks:
+    - [ ] Authenticate YouTube API
+    - [ ] Download watch history
+    - [ ] Extract metadata
+    - [ ] Save video transcript (if available)
+    - [ ] Save to data/raw and data/transcripts
+
+- name: Ingest Overcast Podcasts
+  tasks:
+    - [ ] Load OPML
+    - [ ] Fetch RSS metadata
+    - [ ] Download MP3s
+    - [ ] Transcribe audio
+    - [ ] Save to data/transcripts and data/parsed
+
+- name: Ingest Shared Web Articles
+  tasks:
+    - [ ] Receive link (manually or via share sheet)
+    - [ ] Fetch article HTML
+    - [ ] Extract readable content
+    - [ ] Save to data/raw and data/parsed
+
+- name: General
+  tasks:
+    - [ ] Save raw + markdown formats
+    - [ ] Track related/collateral links
+    - [ ] Log all steps + errors

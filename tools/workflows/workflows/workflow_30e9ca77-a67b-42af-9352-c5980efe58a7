@@ -1,0 +1,134 @@
+2025-09-15T05:20:03.889903 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:04.094268 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:04.359394 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:04.359495 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:04.359536 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:04.504865 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:20:04.508541 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:04.826671 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:04.826776 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:04.826807 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:04.894288 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:20:04.896731 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:05.214966 INFO: Content is very short (33 words). Likely a teaser.
+2025-09-15T05:20:05.215062 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:05.215091 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:07.704676 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:20:07.704785 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:07.704811 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:12.493308 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:13.366095 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:20:13.366672 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:15.593131 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:17.951630 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:20.658619 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:22.808746 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:23.010500 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:23.010643 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:23.010678 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:23.586378 INFO: Found Wayback snapshot from 20250829022719: http://web.archive.org/web/20250829022719/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:23.586519 INFO: Timeframe  failed: [Errno 32] Broken pipe
+2025-09-15T05:20:24.014370 INFO: Found Wayback snapshot from 20231202013456: http://web.archive.org/web/20231202013456/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:30.764091 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:30.764220 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:30.764245 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:30.937728 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829022719/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:39.854090 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:39.854223 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:39.854257 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule. Attempting Google Search fallback...
+2025-09-15T05:20:39.854324 INFO: Google Search fallback: searching for 'elon musks shadow rule'
+2025-09-15T05:20:39.886913 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:20:39.895508 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:39.997436 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:40.075413 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:40.075538 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:40.075578 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:40.138132 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:20:40.140972 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:40.336803 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:40.336914 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:40.336942 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:40.390229 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:20:40.392767 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:40.673745 INFO: Content is very short (33 words). Likely a teaser.
+2025-09-15T05:20:40.673840 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:40.673872 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:43.230636 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:20:43.230756 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:43.230783 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:47.251058 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:48.118656 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:20:48.119085 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:50.780160 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:52.845768 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:56.639799 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:58.803475 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:58.967306 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:58.967418 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:58.967458 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:59.088106 INFO: Found Wayback snapshot from 20250829022719: http://web.archive.org/web/20250829022719/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:59.294914 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:59.295022 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:59.295049 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:59.416444 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829022719/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:59.758693 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:59.758817 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:59.758852 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule. Attempting Google Search fallback...
+2025-09-15T05:20:59.758921 INFO: Google Search fallback: searching for 'elon musks shadow rule'
+2025-09-15T05:20:59.791557 INFO: Google Search fallback did not find alternative URL
+2025-09-15T05:20:59.799627 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:20:59.907714 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:59.987900 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:20:59.988008 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:20:59.988050 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:00.052378 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:21:00.054893 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:00.331919 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:00.332033 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:00.332064 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:00.384474 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:21:00.386780 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:00.700123 INFO: Content is very short (33 words). Likely a teaser.
+2025-09-15T05:21:00.700340 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:00.700369 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:04.185988 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:21:04.186104 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:04.186130 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:04.193479 INFO: Attempting direct fetch for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:04.389826 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:04.468190 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:04.468310 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:04.468350 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:04.526227 ERROR: Reader mode fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:21:04.529064 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:04.732196 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:04.732310 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:04.732344 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:04.787073 ERROR: Refresh stop fetch failed for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule: cannot use a string pattern on a bytes-like object
+2025-09-15T05:21:04.789655 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:05.070571 INFO: Content is very short (33 words). Likely a teaser.
+2025-09-15T05:21:05.070701 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:05.070731 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:07.665313 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T05:21:07.665434 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:07.665462 INFO: Attempting archive.today for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:10.808898 INFO: No existing archive found, creating new archive for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:11.690292 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T05:21:11.690742 INFO: Attempting archive.is for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:15.343112 INFO: Attempting archive.li for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:18.514857 INFO: Attempting archive.fo for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:21.973049 INFO: Attempting archive.ph for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:24.004142 INFO: Attempting Googlebot spoof for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:24.245828 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:24.245944 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:24.245972 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:24.380428 INFO: Found Wayback snapshot from 20250829022719: http://web.archive.org/web/20250829022719/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:24.845708 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:24.845824 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:24.845850 INFO: Attempting Wayback Machine for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:24.958123 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829022719/https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule
+2025-09-15T05:21:25.275830 INFO: Paywall element '.paywall' detected.
+2025-09-15T05:21:25.275958 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T05:21:25.275991 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/magazine/2023/08/28/elon-musks-shadow-rule. Attempting Google Search fallback...
+2025-09-15T05:21:25.276108 INFO: Google Search fallback: searching for 'elon musks shadow rule'
+2025-09-15T05:21:25.308562 INFO: Google Search fallback did not find alternative URL

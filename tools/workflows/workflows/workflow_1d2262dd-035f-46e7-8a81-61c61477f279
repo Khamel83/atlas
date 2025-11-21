@@ -1,0 +1,25 @@
+2025-09-15T02:41:14.095679 INFO: Attempting direct fetch for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.260162 ERROR: Direct fetch failed for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.261330 INFO: Attempting Reader Mode strategy for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.496811 ERROR: Reader mode fetch failed for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:41:14.498216 INFO: Attempting JS Disabled strategy for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.615035 ERROR: JS disabled fetch failed for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.616191 INFO: Attempting Refresh Stop strategy for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.732906 ERROR: Refresh stop fetch failed for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html: cannot use a string pattern on a bytes-like object
+2025-09-15T02:41:14.734182 INFO: Attempting Inspect Element strategy for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.849860 ERROR: Inspect element fetch failed for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:14.851030 INFO: Attempting removepaywalls.com bypass for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:18.622749 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:41:18.622863 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:41:18.622888 INFO: Attempting archive.today for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:21.376322 INFO: No existing archive found, creating new archive for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:22.258366 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:41:22.258796 INFO: Attempting archive.is for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:25.079137 INFO: Attempting archive.li for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:27.095830 INFO: Attempting archive.fo for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:29.499125 INFO: Attempting archive.ph for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:33.124783 INFO: Attempting Googlebot spoof for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:33.247442 ERROR: Googlebot spoof failed for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html: 403 Client Error: Forbidden for url: https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:33.248989 INFO: Attempting Enhanced Wayback Machine for https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:33.962173 INFO: Found Wayback snapshot from 20250817084141: http://web.archive.org/web/20250817084141/https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html
+2025-09-15T02:41:35.192012 INFO: Successfully fetched https://www.nytimes.com/2022/11/28/magazine/cardboard-international-paper.html using wayback_machine_enhanced

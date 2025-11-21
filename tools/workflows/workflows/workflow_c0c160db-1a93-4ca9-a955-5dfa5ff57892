@@ -1,0 +1,114 @@
+2025-09-15T08:37:54.567317 INFO: Attempting direct fetch for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:37:54.834667 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:37:54.952982 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:37:54.953092 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:37:54.953140 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:37:55.050660 ERROR: Reader mode fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:37:55.053023 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:37:55.206045 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:37:55.206153 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:37:55.206183 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:37:55.294500 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:37:55.296711 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:37:55.606020 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:37:55.606130 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:37:55.606158 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:37:59.521836 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:37:59.521949 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:37:59.521978 INFO: Attempting archive.today for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:02.116283 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:02.971188 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:38:02.972072 INFO: Attempting archive.is for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:05.142350 INFO: Attempting archive.li for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:07.496040 INFO: Attempting archive.fo for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:09.486496 INFO: Attempting archive.ph for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:13.006820 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:13.232466 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:13.232607 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:13.232652 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:13.678896 INFO: Found Wayback snapshot from 20250901112918: http://web.archive.org/web/20250901112918/https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:16.256785 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:16.256908 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:16.256934 INFO: Attempting Wayback Machine for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:16.398384 INFO: Found Wayback snapshot: http://web.archive.org/web/20250901112918/https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:16.576703 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:16.576804 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:16.576837 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/. Attempting Google Search fallback...
+2025-09-15T08:38:16.576906 INFO: Google Search fallback: searching for 'advice on making early bets from an investor whos backed 60 successes'
+2025-09-15T08:38:16.615491 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:38:16.627606 INFO: Attempting direct fetch for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:16.849626 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:16.948148 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:16.948313 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:16.948358 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:17.041523 ERROR: Reader mode fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:17.043471 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:17.259634 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:38:17.259743 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:17.259771 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:17.352645 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:17.354438 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:17.660444 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:38:17.660539 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:17.660568 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:21.747758 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:38:21.747866 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:21.747895 INFO: Attempting archive.today for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:24.700803 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:24.710664 INFO: Attempting direct fetch for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:24.991485 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:25.096021 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:25.096136 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:25.096175 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:25.180053 ERROR: Reader mode fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:25.182488 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:25.400359 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:38:25.400467 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:25.400493 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:25.545006 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:25.547136 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:25.853466 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:38:25.853558 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:25.853585 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:30.107716 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:38:30.107830 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:30.107858 INFO: Attempting archive.today for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:32.570689 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:33.476080 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T08:38:33.476976 INFO: Attempting archive.is for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:36.314776 INFO: Attempting archive.li for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:39.078078 INFO: Attempting archive.fo for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:42.974479 INFO: Attempting archive.ph for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:45.102005 INFO: Attempting Googlebot spoof for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:45.318952 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:45.319066 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:45.319101 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:45.435806 INFO: Found Wayback snapshot from 20250901112918: http://web.archive.org/web/20250901112918/https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:45.605999 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:45.606097 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:45.606127 INFO: Attempting Wayback Machine for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:45.781299 INFO: Found Wayback snapshot: http://web.archive.org/web/20250901112918/https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:45.943579 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:45.943721 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:45.943755 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/. Attempting Google Search fallback...
+2025-09-15T08:38:45.943828 INFO: Google Search fallback: searching for 'advice on making early bets from an investor whos backed 60 successes'
+2025-09-15T08:38:45.975550 INFO: Google Search fallback did not find alternative URL
+2025-09-15T08:38:45.983182 INFO: Attempting direct fetch for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:46.201227 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:46.298108 INFO: Login/subscription form detected near the top of the page.
+2025-09-15T08:38:46.298229 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:46.298277 INFO: Attempting Reader Mode strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:46.439974 ERROR: Reader mode fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:46.441900 INFO: Attempting JS Disabled strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:46.589217 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:38:46.589320 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:46.589349 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:46.740018 ERROR: Refresh stop fetch failed for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/: cannot use a string pattern on a bytes-like object
+2025-09-15T08:38:46.743048 INFO: Attempting Inspect Element strategy for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:47.128779 INFO: Content is very short (69 words). Likely a teaser.
+2025-09-15T08:38:47.128890 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:47.128918 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:49.334214 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T08:38:49.334332 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T08:38:49.334360 INFO: Attempting archive.today for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/
+2025-09-15T08:38:52.571655 INFO: No existing archive found, creating new archive for https://techcrunch.com/video/advice-on-making-early-bets-from-an-investor-whos-backed-60-successes/

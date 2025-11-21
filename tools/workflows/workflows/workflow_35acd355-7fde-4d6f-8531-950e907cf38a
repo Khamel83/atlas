@@ -1,0 +1,134 @@
+2025-09-15T12:22:08.928957 INFO: Attempting direct fetch for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:14.333672 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:22:14.442956 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:22:14.443074 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:22:14.443111 INFO: Attempting Reader Mode strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:14.766545 ERROR: Reader mode fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:22:14.766840 INFO: Attempting JS Disabled strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:19.006284 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:22:19.006388 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:22:19.006414 INFO: Attempting Refresh Stop strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:19.348232 ERROR: Refresh stop fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:22:19.348549 INFO: Attempting Inspect Element strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:19.944366 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:22:19.944461 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:22:19.944487 INFO: Attempting removepaywalls.com bypass for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:22.372356 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:22:22.372471 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:22:22.372498 INFO: Attempting archive.today for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:24.546714 INFO: No existing archive found, creating new archive for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:25.434478 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:22:25.434915 INFO: Attempting archive.is for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:29.069344 INFO: Attempting archive.li for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:32.978578 INFO: Attempting archive.fo for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:36.210459 INFO: Attempting archive.ph for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:38.383464 INFO: Attempting Googlebot spoof for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:22:38.919272 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:22:38.919386 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:22:38.919414 INFO: Attempting Enhanced Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:07.086375 ERROR: Enhanced Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found in any timeframe
+2025-09-15T12:23:07.090250 INFO: Attempting Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:07.283758 ERROR: Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found
+2025-09-15T12:23:07.285301 ERROR: All fetch strategies failed or returned low-quality content for http://www.readability.com/articles/2tyjqd8v. Attempting Google Search fallback...
+2025-09-15T12:23:07.292963 INFO: Attempting direct fetch for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:07.757118 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:07.863304 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:07.863411 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:07.863446 INFO: Attempting Reader Mode strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:08.298330 ERROR: Reader mode fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:23:08.298622 INFO: Attempting JS Disabled strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:08.634999 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:08.635086 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:08.635114 INFO: Attempting Refresh Stop strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:09.039739 ERROR: Refresh stop fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:23:09.040149 INFO: Attempting Inspect Element strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:09.427697 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:09.427806 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:09.427832 INFO: Attempting removepaywalls.com bypass for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:13.805785 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:23:13.805901 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:13.805928 INFO: Attempting archive.today for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:15.927695 INFO: No existing archive found, creating new archive for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:16.905584 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:23:16.905991 INFO: Attempting archive.is for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:19.097467 INFO: Attempting archive.li for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:21.605096 INFO: Attempting archive.fo for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:24.033523 INFO: Attempting archive.ph for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:27.139377 INFO: Attempting Googlebot spoof for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:27.778956 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:27.779073 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:27.779099 INFO: Attempting Enhanced Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:29.397101 ERROR: Enhanced Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found in any timeframe
+2025-09-15T12:23:29.399011 INFO: Attempting Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:29.564193 ERROR: Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found
+2025-09-15T12:23:29.566329 ERROR: All fetch strategies failed or returned low-quality content for http://www.readability.com/articles/2tyjqd8v. Attempting Google Search fallback...
+2025-09-15T12:23:29.566997 INFO: Google Search fallback: searching for '2tyjqd8v'
+2025-09-15T12:23:29.600267 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:23:29.608302 INFO: Attempting direct fetch for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:30.099897 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:30.215794 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:30.215886 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:30.215919 INFO: Attempting Reader Mode strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:30.527938 ERROR: Reader mode fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:23:30.528344 INFO: Attempting JS Disabled strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:31.036480 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:31.036583 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:31.036634 INFO: Attempting Refresh Stop strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:31.372923 ERROR: Refresh stop fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:23:31.373238 INFO: Attempting Inspect Element strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:31.894026 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:31.894129 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:31.894155 INFO: Attempting removepaywalls.com bypass for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:36.729581 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:23:36.729703 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:36.729732 INFO: Attempting archive.today for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:39.078800 INFO: No existing archive found, creating new archive for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:39.963307 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:23:39.964069 INFO: Attempting archive.is for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:42.664373 INFO: Attempting archive.li for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:44.706410 INFO: Attempting archive.fo for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:48.171846 INFO: Attempting archive.ph for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:50.758739 INFO: Attempting Googlebot spoof for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:51.183920 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:51.184022 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:51.184052 INFO: Attempting Enhanced Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:53.648183 ERROR: Enhanced Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found in any timeframe
+2025-09-15T12:23:53.649772 INFO: Attempting Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:53.869009 ERROR: Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found
+2025-09-15T12:23:53.870789 ERROR: All fetch strategies failed or returned low-quality content for http://www.readability.com/articles/2tyjqd8v. Attempting Google Search fallback...
+2025-09-15T12:23:53.871579 INFO: Google Search fallback: searching for '2tyjqd8v'
+2025-09-15T12:23:53.904428 INFO: Google Search fallback did not find alternative URL
+2025-09-15T12:23:53.914850 INFO: Attempting direct fetch for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:54.281656 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:54.389867 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:54.389976 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:54.390016 INFO: Attempting Reader Mode strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:54.390079 ERROR: Reader mode fetch failed for http://www.readability.com/articles/2tyjqd8v: [Errno 32] Broken pipe
+2025-09-15T12:23:54.390122 INFO: Attempting JS Disabled strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:54.724582 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:54.724736 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:54.724776 INFO: Attempting Refresh Stop strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:55.054307 ERROR: Refresh stop fetch failed for http://www.readability.com/articles/2tyjqd8v: cannot use a string pattern on a bytes-like object
+2025-09-15T12:23:55.054811 INFO: Attempting Inspect Element strategy for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:55.624557 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:23:55.624698 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:55.624727 INFO: Attempting removepaywalls.com bypass for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:23:59.657405 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T12:23:59.657513 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:23:59.657539 INFO: Attempting archive.today for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:02.771176 INFO: No existing archive found, creating new archive for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:03.652985 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T12:24:03.653443 INFO: Attempting archive.is for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:07.294111 INFO: Attempting archive.li for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:10.569075 INFO: Attempting archive.fo for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:12.914083 INFO: Attempting archive.ph for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:15.614460 INFO: Attempting Googlebot spoof for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:16.139611 INFO: Content is very short (14 words). Likely a teaser.
+2025-09-15T12:24:16.139725 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T12:24:16.139752 INFO: Attempting Enhanced Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:18.042775 ERROR: Enhanced Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found in any timeframe
+2025-09-15T12:24:18.044505 INFO: Attempting Wayback Machine for http://www.readability.com/articles/2tyjqd8v
+2025-09-15T12:24:18.196938 ERROR: Wayback Machine failed for http://www.readability.com/articles/2tyjqd8v: No archived snapshots found
+2025-09-15T12:24:18.198458 ERROR: All fetch strategies failed or returned low-quality content for http://www.readability.com/articles/2tyjqd8v. Attempting Google Search fallback...
+2025-09-15T12:24:18.198972 INFO: Google Search fallback: searching for '2tyjqd8v'
+2025-09-15T12:24:18.230863 INFO: Google Search fallback did not find alternative URL

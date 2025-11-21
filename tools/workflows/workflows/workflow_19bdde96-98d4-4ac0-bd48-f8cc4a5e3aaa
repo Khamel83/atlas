@@ -1,0 +1,100 @@
+2025-09-15T10:38:56.798096 INFO: Attempting direct fetch for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:56.908158 ERROR: Direct fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:56.908369 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:57.634807 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:38:57.636678 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:57.699820 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:57.700032 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:57.773905 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:38:57.774120 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:57.843758 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:38:57.843945 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:01.718825 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:39:01.718940 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:39:01.718966 INFO: Attempting archive.today for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:04.204792 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:05.059487 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:39:05.059963 INFO: Attempting archive.is for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:07.107874 INFO: Attempting archive.li for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:09.352244 INFO: Attempting archive.fo for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:12.774023 INFO: Attempting archive.ph for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:15.651090 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:15.735777 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:15.735963 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:23.295013 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T10:39:23.296350 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:23.432640 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T10:39:23.434311 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T10:39:23.434851 INFO: Google Search fallback: searching for '25legal.html'
+2025-09-15T10:39:23.468196 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:39:23.477133 INFO: Attempting direct fetch for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:23.544883 ERROR: Direct fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:23.545068 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:24.092729 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:39:24.094533 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:24.157437 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:24.157679 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:24.218622 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:39:24.218825 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:24.279390 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:24.279585 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:28.886966 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:39:28.887095 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:39:28.887123 INFO: Attempting archive.today for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:31.743061 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:32.641462 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:39:32.642015 INFO: Attempting archive.is for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:35.628498 INFO: Attempting archive.li for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:38.808389 INFO: Attempting archive.fo for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.038405 INFO: Attempting archive.ph for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.048391 INFO: Attempting direct fetch for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.106586 ERROR: Direct fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.106805 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.637904 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:39:42.639492 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.700319 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.700541 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.761725 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:39:42.761895 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.817995 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:42.818172 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:47.155296 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:39:47.155397 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:39:47.155423 INFO: Attempting archive.today for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:49.768727 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:50.642494 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:39:50.643064 INFO: Attempting archive.is for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:52.571691 INFO: Attempting archive.li for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:55.095923 INFO: Attempting archive.fo for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:39:58.868900 INFO: Attempting archive.ph for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:01.987507 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:02.092557 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:02.094889 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:03.809219 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T10:40:03.810513 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:03.970521 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T10:40:03.972404 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T10:40:03.972987 INFO: Google Search fallback: searching for '25legal.html'
+2025-09-15T10:40:04.006275 INFO: Google Search fallback did not find alternative URL
+2025-09-15T10:40:04.015584 INFO: Attempting direct fetch for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.045152 ERROR: Direct fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.045335 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.753872 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:40:04.755345 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.786726 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.786912 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.817191 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T10:40:04.817363 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.846376 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:04.846556 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:07.123013 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T10:40:07.123129 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T10:40:07.123157 INFO: Attempting archive.today for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:10.231999 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:11.095726 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T10:40:11.096119 INFO: Attempting archive.is for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:14.639945 INFO: Attempting archive.li for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:16.590557 INFO: Attempting archive.fo for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:19.572814 INFO: Attempting archive.ph for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:21.988466 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print
+2025-09-15T10:40:22.028742 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/07/25/us/politics/25legal.html?hp=&pagewanted=print

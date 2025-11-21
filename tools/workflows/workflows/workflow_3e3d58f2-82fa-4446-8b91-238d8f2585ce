@@ -1,0 +1,26 @@
+2025-09-15T14:18:17.970076 INFO: Attempting direct fetch for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:19.601161 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:18:19.693872 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:18:19.693990 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:19.694028 INFO: Attempting Reader Mode strategy for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:19.694088 ERROR: Reader mode fetch failed for https://www.jpost.com/israel-news/culture/article-816535: [Errno 32] Broken pipe
+2025-09-15T14:18:19.694123 INFO: Attempting JS Disabled strategy for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:20.333866 INFO: Attempting Refresh Stop strategy for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:21.392658 ERROR: Refresh stop fetch failed for https://www.jpost.com/israel-news/culture/article-816535: cannot use a string pattern on a bytes-like object
+2025-09-15T14:18:21.395200 INFO: Attempting Inspect Element strategy for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:21.822085 INFO: Attempting removepaywalls.com bypass for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:26.133976 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:18:26.134093 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:26.134120 INFO: Attempting archive.today for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:29.347732 INFO: No existing archive found, creating new archive for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:30.253073 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:18:30.254104 INFO: Attempting archive.is for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:34.110831 INFO: Attempting archive.li for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:36.555311 INFO: Attempting archive.fo for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:39.469415 INFO: Attempting archive.ph for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:41.828641 INFO: Attempting Googlebot spoof for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:42.003458 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T14:18:42.003574 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:18:42.003622 INFO: Attempting Enhanced Wayback Machine for https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:42.307781 INFO: Found Wayback snapshot from 20250125034836: http://web.archive.org/web/20250125034836/https://www.jpost.com/israel-news/culture/article-816535
+2025-09-15T14:18:43.296210 INFO: Successfully fetched https://www.jpost.com/israel-news/culture/article-816535 using wayback_machine_enhanced

@@ -1,0 +1,98 @@
+2025-09-15T02:52:12.526890 INFO: Attempting direct fetch for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.058735 ERROR: Direct fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.060323 INFO: Attempting Reader Mode strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.105576 ERROR: Reader mode fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.107124 INFO: Attempting JS Disabled strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.152380 ERROR: JS disabled fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.153870 INFO: Attempting Refresh Stop strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.200606 ERROR: Refresh stop fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: cannot use a string pattern on a bytes-like object
+2025-09-15T02:52:13.202152 INFO: Attempting Inspect Element strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.247726 ERROR: Inspect element fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:13.249277 INFO: Attempting removepaywalls.com bypass for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:18.193296 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:52:18.193403 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:18.193429 INFO: Attempting archive.today for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:21.518980 INFO: No existing archive found, creating new archive for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:22.409365 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:52:22.409983 INFO: Attempting archive.is for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:25.021899 INFO: Attempting archive.li for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:28.743407 INFO: Attempting archive.fo for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:30.952056 INFO: Attempting archive.ph for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:34.233945 INFO: Attempting Googlebot spoof for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:34.280798 ERROR: Googlebot spoof failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:34.282868 INFO: Attempting Enhanced Wayback Machine for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:34.993677 INFO: Found Wayback snapshot from 20241112222214: http://web.archive.org/web/20241112222214/https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:36.820306 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:52:36.820413 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:36.820441 INFO: Attempting Wayback Machine for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:36.942916 INFO: Found Wayback snapshot: http://web.archive.org/web/20241112222214/https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:36.998042 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:52:36.998139 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:36.998170 ERROR: All fetch strategies failed or returned low-quality content for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj. Attempting Google Search fallback...
+2025-09-15T02:52:36.998228 INFO: Google Search fallback: searching for 'hasan minhaj'
+2025-09-15T02:52:37.033877 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:52:37.041840 INFO: Attempting direct fetch for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.090398 ERROR: Direct fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.092412 INFO: Attempting Reader Mode strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.138945 ERROR: Reader mode fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.140907 INFO: Attempting JS Disabled strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.187353 ERROR: JS disabled fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.189320 INFO: Attempting Refresh Stop strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.239967 ERROR: Refresh stop fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: cannot use a string pattern on a bytes-like object
+2025-09-15T02:52:37.242255 INFO: Attempting Inspect Element strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.287953 ERROR: Inspect element fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.298166 INFO: Attempting direct fetch for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.344039 ERROR: Direct fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.345891 INFO: Attempting Reader Mode strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.390637 ERROR: Reader mode fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.392321 INFO: Attempting JS Disabled strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.439317 ERROR: JS disabled fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.441215 INFO: Attempting Refresh Stop strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.488504 ERROR: Refresh stop fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: cannot use a string pattern on a bytes-like object
+2025-09-15T02:52:37.490445 INFO: Attempting Inspect Element strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.536078 ERROR: Inspect element fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:37.537942 INFO: Attempting removepaywalls.com bypass for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:40.441419 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:52:40.441529 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:40.441556 INFO: Attempting archive.today for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:43.727038 INFO: No existing archive found, creating new archive for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:44.633908 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:52:44.634915 INFO: Attempting archive.is for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:47.100108 INFO: Attempting archive.li for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:50.728000 INFO: Attempting archive.fo for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:54.308899 INFO: Attempting archive.ph for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:57.759272 INFO: Attempting Googlebot spoof for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:57.808244 ERROR: Googlebot spoof failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:57.810320 INFO: Attempting Enhanced Wayback Machine for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:57.934246 INFO: Found Wayback snapshot from 20241112222214: http://web.archive.org/web/20241112222214/https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:57.986730 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:52:57.986828 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:57.986855 INFO: Attempting Wayback Machine for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.120496 INFO: Found Wayback snapshot: http://web.archive.org/web/20241112222214/https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.178793 INFO: Content is very short (0 words). Likely a teaser.
+2025-09-15T02:52:58.178887 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:52:58.178918 ERROR: All fetch strategies failed or returned low-quality content for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj. Attempting Google Search fallback...
+2025-09-15T02:52:58.178976 INFO: Google Search fallback: searching for 'hasan minhaj'
+2025-09-15T02:52:58.211291 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:52:58.218816 INFO: Attempting direct fetch for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.266562 ERROR: Direct fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.268400 INFO: Attempting Reader Mode strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.314005 ERROR: Reader mode fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.315912 INFO: Attempting JS Disabled strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.360201 ERROR: JS disabled fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.362002 INFO: Attempting Refresh Stop strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.407224 ERROR: Refresh stop fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: cannot use a string pattern on a bytes-like object
+2025-09-15T02:52:58.409038 INFO: Attempting Inspect Element strategy for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.454138 ERROR: Inspect element fetch failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:52:58.456077 INFO: Attempting removepaywalls.com bypass for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:03.206672 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:53:03.206781 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:53:03.206808 INFO: Attempting archive.today for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:05.731476 INFO: No existing archive found, creating new archive for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:06.590141 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:53:06.590977 INFO: Attempting archive.is for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:09.378221 INFO: Attempting archive.li for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:12.000924 INFO: Attempting archive.fo for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:15.848497 INFO: Attempting archive.ph for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:18.986041 INFO: Attempting Googlebot spoof for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj
+2025-09-15T02:53:19.079859 ERROR: Googlebot spoof failed for https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj: 404 Client Error: Not Found for url: https://shows.acast.com/612830d1407ad60013fa691a/episodes/hasan-minhaj

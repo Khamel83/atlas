@@ -1,0 +1,83 @@
+2025-09-15T14:35:51.256283 INFO: Attempting direct fetch for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.478862 ERROR: Direct fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.481433 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.579918 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.582482 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.681779 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.686289 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.814142 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: cannot use a string pattern on a bytes-like object
+2025-09-15T14:35:51.821254 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.946938 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:51.950995 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:35:56.072544 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T14:35:56.073777 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:35:56.073828 INFO: Attempting archive.today for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:00.351028 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:01.281002 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:36:01.281561 INFO: Attempting archive.is for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:04.707395 INFO: Attempting archive.li for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:08.088385 INFO: Attempting archive.fo for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:10.541679 INFO: Attempting archive.ph for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:14.067296 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:14.146326 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:14.148014 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:19.824125 INFO: Found Wayback snapshot from 20221205175136: http://web.archive.org/web/20221205175136/https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.521496 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T14:36:21.521672 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:36:21.521705 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.645012 ERROR: Wayback Machine failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: No archived snapshots found
+2025-09-15T14:36:21.646989 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331. Attempting Google Search fallback...
+2025-09-15T14:36:21.647141 INFO: Google Search fallback: searching for 'a home smart system that helps with religious observances 11570026331'
+2025-09-15T14:36:21.679650 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:36:21.687206 INFO: Attempting direct fetch for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.764693 ERROR: Direct fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.766072 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.848410 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.850012 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.929248 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:21.930682 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.012348 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: cannot use a string pattern on a bytes-like object
+2025-09-15T14:36:22.031291 INFO: Attempting direct fetch for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.112949 ERROR: Direct fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.114466 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.198447 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.200646 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.294430 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.295970 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.387870 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: cannot use a string pattern on a bytes-like object
+2025-09-15T14:36:22.390251 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.482315 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:22.483979 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:25.005664 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T14:36:25.005783 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:36:25.005813 INFO: Attempting archive.today for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:29.283137 INFO: No existing archive found, creating new archive for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:30.147691 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:36:30.148233 INFO: Attempting archive.is for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:32.472902 INFO: Attempting archive.li for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:35.007167 INFO: Attempting archive.fo for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:37.858832 INFO: Attempting archive.ph for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:41.684734 INFO: Attempting Googlebot spoof for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:41.765401 ERROR: Googlebot spoof failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:41.767156 INFO: Attempting Enhanced Wayback Machine for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.066210 INFO: Found Wayback snapshot from 20221205175136: http://web.archive.org/web/20221205175136/https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.229325 INFO: Content is very short (102 words). Likely a teaser.
+2025-09-15T14:36:42.229443 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:36:42.229471 INFO: Attempting Wayback Machine for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.358925 ERROR: Wayback Machine failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: No archived snapshots found
+2025-09-15T14:36:42.360806 ERROR: All fetch strategies failed or returned low-quality content for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331. Attempting Google Search fallback...
+2025-09-15T14:36:42.360930 INFO: Google Search fallback: searching for 'a home smart system that helps with religious observances 11570026331'
+2025-09-15T14:36:42.392807 INFO: Google Search fallback did not find alternative URL
+2025-09-15T14:36:42.400468 INFO: Attempting direct fetch for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.479949 ERROR: Direct fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.481293 INFO: Attempting Reader Mode strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.558770 ERROR: Reader mode fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.560114 INFO: Attempting JS Disabled strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.638651 ERROR: JS disabled fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.640026 INFO: Attempting Refresh Stop strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.727744 ERROR: Refresh stop fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: cannot use a string pattern on a bytes-like object
+2025-09-15T14:36:42.729300 INFO: Attempting Inspect Element strategy for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.810845 ERROR: Inspect element fetch failed for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331: 401 Client Error: HTTP Forbidden for url: https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:42.812320 INFO: Attempting removepaywalls.com bypass for https://www.wsj.com/articles/a-home-smart-system-that-helps-with-religious-observances-11570026331
+2025-09-15T14:36:44.996289 INFO: Content is very short (22 words). Likely a teaser.
+2025-09-15T14:36:44.996391 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...

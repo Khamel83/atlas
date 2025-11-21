@@ -1,0 +1,100 @@
+2025-09-15T09:32:35.532899 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:35.666281 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:35.666488 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:36.627197 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:32:36.629690 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:36.693481 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:36.693719 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:36.752797 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:32:36.753005 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:36.813047 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:36.813247 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:41.009263 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:32:41.009361 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:32:41.009391 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:44.435525 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:45.350723 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:32:45.351515 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:48.922868 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:51.186427 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:54.695220 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:57.978438 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:58.065452 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:32:58.065699 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:06.393642 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T09:33:06.395162 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:06.515691 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T09:33:06.517630 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T09:33:06.518224 INFO: Google Search fallback: searching for '30lost.html'
+2025-09-15T09:33:06.550634 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:33:06.558388 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:06.620243 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:06.620803 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:07.282262 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:33:07.284668 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:07.347215 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:07.347424 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:07.406469 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:33:07.406673 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:07.465305 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:07.465508 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:10.848438 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:33:10.848549 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:33:10.848579 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:13.002347 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:13.858781 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:33:13.859562 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:16.717955 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:20.303308 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:24.015935 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:27.840015 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:27.848930 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:27.922397 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:27.922579 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:28.509816 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:33:28.512126 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:28.571754 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:28.571949 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:28.633955 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:33:28.634128 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:28.692396 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:28.692579 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:32.649569 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:33:32.649719 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:33:32.649750 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:35.619275 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:36.509939 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:33:36.510820 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:40.298376 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:43.097059 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:45.731618 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:49.098987 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:49.181872 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:49.182084 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:50.613090 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T09:33:50.614604 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:50.760738 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T09:33:50.762768 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T09:33:50.763341 INFO: Google Search fallback: searching for '30lost.html'
+2025-09-15T09:33:50.795583 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:33:50.804321 INFO: Attempting direct fetch for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:50.862970 ERROR: Direct fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:50.863155 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:51.561235 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:33:51.562888 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:51.623048 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:51.623241 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:51.682410 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:33:51.682609 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:51.741717 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:51.741904 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:56.711712 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:33:56.711824 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:33:56.711856 INFO: Attempting archive.today for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:33:59.269979 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:34:00.208394 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:34:00.208871 INFO: Attempting archive.is for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:34:03.308812 INFO: Attempting archive.li for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:34:05.683631 INFO: Attempting archive.fo for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:34:09.289680 INFO: Attempting archive.ph for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print
+2025-09-15T09:34:12.458236 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/01/30/arts/television/30lost.html?hp=&pagewanted=print

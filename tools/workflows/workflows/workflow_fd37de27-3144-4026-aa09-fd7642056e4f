@@ -1,0 +1,30 @@
+2025-09-14T20:39:27.806294 INFO: Attempting direct fetch for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:28.250219 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T20:39:28.334963 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T20:39:28.335086 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:28.335121 INFO: Attempting Reader Mode strategy for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:28.507610 ERROR: Reader mode fetch failed for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend: cannot use a string pattern on a bytes-like object
+2025-09-14T20:39:28.507796 INFO: Attempting JS Disabled strategy for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:28.745021 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-14T20:39:28.745129 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:28.745156 INFO: Attempting Refresh Stop strategy for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:28.934940 ERROR: Refresh stop fetch failed for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend: cannot use a string pattern on a bytes-like object
+2025-09-14T20:39:28.935131 INFO: Attempting Inspect Element strategy for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:29.251080 INFO: Content is very short (60 words). Likely a teaser.
+2025-09-14T20:39:29.251197 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:29.251224 INFO: Attempting removepaywalls.com bypass for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:34.376209 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:39:34.376322 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:34.376351 INFO: Attempting archive.today for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:37.317505 INFO: No existing archive found, creating new archive for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:38.174039 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:39:38.174494 INFO: Attempting archive.is for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:40.420877 INFO: Attempting archive.li for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:43.367292 INFO: Attempting archive.fo for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:46.016310 INFO: Attempting archive.ph for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:48.803888 INFO: Attempting Googlebot spoof for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:49.107277 INFO: Login/subscription form detected near the top of the page.
+2025-09-14T20:39:49.107398 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:49.107424 INFO: Attempting Enhanced Wayback Machine for http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:50.761245 INFO: Found Wayback snapshot from 20240424164153: http://web.archive.org/web/20240424164153/https://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend
+2025-09-14T20:39:52.085029 INFO: Successfully fetched http://food52.com/blog/15416-remembering-elena-parker-longtime-food52-videographer-columnist-and-friend using wayback_machine_enhanced

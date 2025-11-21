@@ -1,0 +1,107 @@
+2025-09-15T09:25:23.475218 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:23.504031 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:23.504246 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:24.083012 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:25:24.084719 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:24.113347 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:24.113546 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:24.143068 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:25:24.143243 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:24.171154 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:24.171349 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:26.367792 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:25:26.367902 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:25:26.367930 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:28.616004 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:29.492166 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:25:29.493022 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:33.326435 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:37.101476 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:40.690225 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:43.269061 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:43.406383 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:43.406578 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:58.353985 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T09:25:58.355573 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:58.882416 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T09:25:58.884416 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T09:25:58.892302 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:58.950316 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:58.950500 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:59.712456 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:25:59.714785 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:59.773645 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:59.773845 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:59.832411 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:25:59.832584 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:59.890869 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:25:59.891049 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:04.505079 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:26:04.505191 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:26:04.505218 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:07.777077 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:08.683624 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:26:08.684513 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:11.953328 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:15.281944 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:18.463061 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:20.622830 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:20.706405 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:20.707630 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:22.526761 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T09:26:22.528429 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:22.683301 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T09:26:22.685532 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T09:26:22.686580 INFO: Google Search fallback: searching for '07gerecht.html'
+2025-09-15T09:26:22.724801 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:26:22.733159 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:22.791497 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:22.791704 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:23.560748 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:26:23.562277 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:23.623671 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:23.623861 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:23.684606 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:26:23.684787 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:23.742973 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:23.743162 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:27.750926 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:26:27.751034 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:26:27.751061 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:30.588209 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:31.465160 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:26:31.465577 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:33.440815 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:35.394796 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:37.806202 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:40.524941 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:40.584699 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:40.592836 INFO: Attempting direct fetch for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:40.652824 ERROR: Direct fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:40.653010 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:41.348242 ERROR: Reader mode fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:26:41.352656 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:41.417041 ERROR: JS disabled fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:41.417229 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:41.484546 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T09:26:41.484799 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:41.547208 ERROR: Inspect element fetch failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:41.547391 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:45.510569 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:26:45.510687 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:26:45.510717 INFO: Attempting archive.today for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:48.778799 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:49.638346 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:26:49.639119 INFO: Attempting archive.is for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:53.334980 INFO: Attempting archive.li for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:57.123765 INFO: Attempting archive.fo for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:26:59.526913 INFO: Attempting archive.ph for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:27:01.597692 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:27:01.691060 ERROR: Googlebot spoof failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:27:01.691255 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:27:03.337406 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T09:27:03.338701 INFO: Attempting Wayback Machine for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print
+2025-09-15T09:27:03.466916 ERROR: Wayback Machine failed for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print: No archived snapshots found
+2025-09-15T09:27:03.468784 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2011/02/07/opinion/07gerecht.html?hp=&pagewanted=print. Attempting Google Search fallback...
+2025-09-15T09:27:03.469548 INFO: Google Search fallback: searching for '07gerecht.html'
+2025-09-15T09:27:03.501745 INFO: Google Search fallback did not find alternative URL

@@ -1,0 +1,106 @@
+2025-09-15T01:44:58.524515 INFO: Attempting direct fetch for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:44:59.342069 ERROR: Direct fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:44:59.344815 INFO: Attempting Reader Mode strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:44:59.689540 ERROR: Reader mode fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:44:59.692249 INFO: Attempting JS Disabled strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:00.047511 ERROR: JS disabled fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:00.050075 INFO: Attempting Refresh Stop strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:00.408802 ERROR: Refresh stop fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:45:00.410844 INFO: Attempting Inspect Element strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:00.758191 ERROR: Inspect element fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:00.761723 INFO: Attempting removepaywalls.com bypass for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:03.007738 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:45:03.007846 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:45:03.007873 INFO: Attempting archive.today for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:05.865866 INFO: No existing archive found, creating new archive for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:06.758900 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:45:06.759647 INFO: Attempting archive.is for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:10.357693 INFO: Attempting archive.li for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:13.224024 INFO: Attempting archive.fo for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:15.717082 INFO: Attempting archive.ph for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:19.073012 INFO: Attempting Googlebot spoof for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:19.423434 ERROR: Googlebot spoof failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:19.429092 INFO: Attempting Enhanced Wayback Machine for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:19.955132 INFO: Found Wayback snapshot from 20190527161417: http://web.archive.org/web/20190527161417/http://www.thesartorialist.com:80/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:21.604279 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T01:45:21.604388 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:45:21.604429 INFO: Attempting Wayback Machine for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:21.728494 INFO: Found Wayback snapshot: http://web.archive.org/web/20190527161417/http://www.thesartorialist.com:80/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:21.891157 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T01:45:21.891273 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:45:21.891306 ERROR: All fetch strategies failed or returned low-quality content for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/. Attempting Google Search fallback...
+2025-09-15T01:45:21.891369 INFO: Google Search fallback: searching for 'on the street wooster st new york 4'
+2025-09-15T01:45:21.923183 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:45:21.930691 INFO: Attempting direct fetch for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:22.263237 ERROR: Direct fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:22.264534 INFO: Attempting Reader Mode strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:22.603849 ERROR: Reader mode fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:22.605192 INFO: Attempting JS Disabled strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:22.966825 ERROR: JS disabled fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:22.968106 INFO: Attempting Refresh Stop strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:23.295039 ERROR: Refresh stop fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:45:23.296799 INFO: Attempting Inspect Element strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:23.630041 ERROR: Inspect element fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:23.632164 INFO: Attempting removepaywalls.com bypass for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:27.057276 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:45:27.057382 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:45:27.057410 INFO: Attempting archive.today for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:29.640149 INFO: No existing archive found, creating new archive for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:30.497432 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:45:30.498043 INFO: Attempting archive.is for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:34.216648 INFO: Attempting archive.li for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:36.649225 INFO: Attempting archive.fo for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:39.199722 INFO: Attempting archive.ph for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:39.209777 INFO: Attempting direct fetch for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:39.712355 ERROR: Direct fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:39.714330 INFO: Attempting Reader Mode strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:40.209346 ERROR: Reader mode fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:40.211228 INFO: Attempting JS Disabled strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:40.953060 ERROR: JS disabled fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:40.954963 INFO: Attempting Refresh Stop strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:41.388863 ERROR: Refresh stop fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:45:41.390922 INFO: Attempting Inspect Element strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:41.863564 ERROR: Inspect element fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:41.865844 INFO: Attempting removepaywalls.com bypass for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:45.983749 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:45:45.983860 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:45:45.983886 INFO: Attempting archive.today for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:48.976024 INFO: No existing archive found, creating new archive for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:49.829142 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:45:49.829751 INFO: Attempting archive.is for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:52.480962 INFO: Attempting archive.li for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:54.770146 INFO: Attempting archive.fo for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:45:56.884853 INFO: Attempting archive.ph for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:00.763210 INFO: Attempting Googlebot spoof for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:01.110915 ERROR: Googlebot spoof failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:01.112631 INFO: Attempting Enhanced Wayback Machine for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:01.460419 INFO: Found Wayback snapshot from 20190527161417: http://web.archive.org/web/20190527161417/http://www.thesartorialist.com:80/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:01.629551 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T01:46:01.629698 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:46:01.629727 INFO: Attempting Wayback Machine for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:01.747134 INFO: Found Wayback snapshot: http://web.archive.org/web/20190527161417/http://www.thesartorialist.com:80/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:01.905675 INFO: Content is very short (21 words). Likely a teaser.
+2025-09-15T01:46:01.905788 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:46:01.905821 ERROR: All fetch strategies failed or returned low-quality content for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/. Attempting Google Search fallback...
+2025-09-15T01:46:01.905883 INFO: Google Search fallback: searching for 'on the street wooster st new york 4'
+2025-09-15T01:46:01.936804 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:46:01.944011 INFO: Attempting direct fetch for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:02.284132 ERROR: Direct fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:02.285437 INFO: Attempting Reader Mode strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:02.623363 ERROR: Reader mode fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:02.624671 INFO: Attempting JS Disabled strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:02.967133 ERROR: JS disabled fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:02.968423 INFO: Attempting Refresh Stop strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:03.328507 ERROR: Refresh stop fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: cannot use a string pattern on a bytes-like object
+2025-09-15T01:46:03.329919 INFO: Attempting Inspect Element strategy for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:03.699757 ERROR: Inspect element fetch failed for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/: 404 Client Error: Not Found for url: https://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:03.703464 INFO: Attempting removepaywalls.com bypass for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:07.195730 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:46:07.195845 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:46:07.195874 INFO: Attempting archive.today for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:08.853065 INFO: No existing archive found, creating new archive for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:09.734427 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:46:09.734924 INFO: Attempting archive.is for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:11.645114 INFO: Attempting archive.li for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:15.011211 INFO: Attempting archive.fo for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/
+2025-09-15T01:46:18.666370 INFO: Attempting archive.ph for http://www.thesartorialist.com/photos/on-the-street-wooster-st-new-york-4/

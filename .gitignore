@@ -1,0 +1,86 @@
+# Environment and secrets
+.env
+*.env
+.env.*
+!.env.template
+!.env.example
+
+# Large files and backups
+*.tar.gz
+*.zip
+*.7z
+*.rar
+*.db.backup
+*_backup_*
+atlas_reorganization_backup_*
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+tools/crawl4ai_env/
+tools/*/env/
+
+# Database files (keep only small ones)
+data/databases/*.db.backup
+data/databases/*_broken.db
+data/databases/large_*.db
+
+# Logs and runtime files
+*.log
+*.pid
+logs/
+atlas_*.log
+atlas_*.pid
+
+# Cache and temporary files
+.cache/
+.cache_*/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node modules and web assets
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Data exports and large datasets
+exports/
+exports/*/*.json
+exports/*/*.csv
+test_exports/
+archive/large_*
+
+# Processing directories
+processing/
+temp/
+tmp/
+workspaces/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini

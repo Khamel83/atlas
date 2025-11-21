@@ -1,0 +1,114 @@
+2025-09-15T01:08:42.890951 INFO: Attempting direct fetch for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.056902 ERROR: Direct fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.058244 INFO: Attempting Reader Mode strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.147564 ERROR: Reader mode fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.148901 INFO: Attempting JS Disabled strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.235976 ERROR: JS disabled fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.237367 INFO: Attempting Refresh Stop strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.350120 ERROR: Refresh stop fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: cannot use a string pattern on a bytes-like object
+2025-09-15T01:08:43.351530 INFO: Attempting Inspect Element strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.437949 ERROR: Inspect element fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:43.439327 INFO: Attempting removepaywalls.com bypass for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:46.643923 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:08:46.644033 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:08:46.644058 INFO: Attempting archive.today for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:48.891422 INFO: No existing archive found, creating new archive for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:49.746276 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:08:49.746632 INFO: Attempting archive.is for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:51.720368 INFO: Attempting archive.li for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:55.536265 INFO: Attempting archive.fo for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:08:57.941824 INFO: Attempting archive.ph for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:01.371008 INFO: Attempting Googlebot spoof for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:01.472667 ERROR: Googlebot spoof failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:01.474663 INFO: Attempting Enhanced Wayback Machine for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:12.848679 INFO: Found Wayback snapshot from 20240410040932: http://web.archive.org/web/20240410040932/https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:13.806224 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T01:09:13.806417 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:09:13.806468 INFO: Attempting Wayback Machine for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:13.945512 ERROR: Wayback Machine failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: No archived snapshots found
+2025-09-15T01:09:13.948104 ERROR: All fetch strategies failed or returned low-quality content for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996. Attempting Google Search fallback...
+2025-09-15T01:09:13.948507 INFO: Google Search fallback: searching for 'iai.64.10.4319 4323.1996'
+2025-09-15T01:09:13.981693 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:09:13.989826 INFO: Attempting direct fetch for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.072050 ERROR: Direct fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.073223 INFO: Attempting Reader Mode strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.171069 ERROR: Reader mode fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.172245 INFO: Attempting JS Disabled strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.254510 ERROR: JS disabled fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.255765 INFO: Attempting Refresh Stop strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.352914 ERROR: Refresh stop fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: cannot use a string pattern on a bytes-like object
+2025-09-15T01:09:14.354011 INFO: Attempting Inspect Element strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.443403 ERROR: Inspect element fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:14.444567 INFO: Attempting removepaywalls.com bypass for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:18.090820 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:09:18.091289 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:09:18.091343 INFO: Attempting archive.today for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:21.552299 INFO: No existing archive found, creating new archive for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:22.443016 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:09:22.443887 INFO: Attempting archive.is for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:25.726137 INFO: Attempting archive.li for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:28.303160 INFO: Attempting archive.fo for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:30.641659 INFO: Attempting archive.ph for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:33.272814 INFO: Attempting Googlebot spoof for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:33.365053 ERROR: Googlebot spoof failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:33.366961 INFO: Attempting Enhanced Wayback Machine for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:33.728789 INFO: Found Wayback snapshot from 20240410040932: http://web.archive.org/web/20240410040932/https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:33.966661 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T01:09:33.966781 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:09:33.976958 INFO: Attempting direct fetch for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.065176 ERROR: Direct fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.067144 INFO: Attempting Reader Mode strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.159844 ERROR: Reader mode fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.161487 INFO: Attempting JS Disabled strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.267918 ERROR: JS disabled fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.269900 INFO: Attempting Refresh Stop strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.359137 ERROR: Refresh stop fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: cannot use a string pattern on a bytes-like object
+2025-09-15T01:09:34.360800 INFO: Attempting Inspect Element strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.444345 ERROR: Inspect element fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:34.446069 INFO: Attempting removepaywalls.com bypass for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:37.225458 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:09:37.225569 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:09:37.225625 INFO: Attempting archive.today for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:39.785791 INFO: No existing archive found, creating new archive for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:40.674652 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:09:40.675335 INFO: Attempting archive.is for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:43.484649 INFO: Attempting archive.li for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:46.578691 INFO: Attempting archive.fo for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:48.765380 INFO: Attempting archive.ph for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:52.260471 INFO: Attempting Googlebot spoof for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:52.358268 ERROR: Googlebot spoof failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:52.360032 INFO: Attempting Enhanced Wayback Machine for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:52.722282 INFO: Found Wayback snapshot from 20240410040932: http://web.archive.org/web/20240410040932/https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:52.949417 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T01:09:52.949544 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:09:52.949570 INFO: Attempting Wayback Machine for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.082419 ERROR: Wayback Machine failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: No archived snapshots found
+2025-09-15T01:09:53.084662 ERROR: All fetch strategies failed or returned low-quality content for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996. Attempting Google Search fallback...
+2025-09-15T01:09:53.084956 INFO: Google Search fallback: searching for 'iai.64.10.4319 4323.1996'
+2025-09-15T01:09:53.131792 INFO: Google Search fallback did not find alternative URL
+2025-09-15T01:09:53.139748 INFO: Attempting direct fetch for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.223159 ERROR: Direct fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.224257 INFO: Attempting Reader Mode strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.308251 ERROR: Reader mode fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.309373 INFO: Attempting JS Disabled strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.393278 ERROR: JS disabled fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.394403 INFO: Attempting Refresh Stop strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.485818 ERROR: Refresh stop fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: cannot use a string pattern on a bytes-like object
+2025-09-15T01:09:53.486960 INFO: Attempting Inspect Element strategy for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.571436 ERROR: Inspect element fetch failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:53.572583 INFO: Attempting removepaywalls.com bypass for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:55.952008 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T01:09:55.952115 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T01:09:55.952142 INFO: Attempting archive.today for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:59.049781 INFO: No existing archive found, creating new archive for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:09:59.940708 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T01:09:59.941433 INFO: Attempting archive.is for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:03.014235 INFO: Attempting archive.li for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:05.296207 INFO: Attempting archive.fo for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:07.337655 INFO: Attempting archive.ph for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:10.081378 INFO: Attempting Googlebot spoof for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:10.168837 ERROR: Googlebot spoof failed for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996: 403 Client Error: Forbidden for url: https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:10.170530 INFO: Attempting Enhanced Wayback Machine for https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:10.550230 INFO: Found Wayback snapshot from 20240410040932: http://web.archive.org/web/20240410040932/https://journals.asm.org/doi/10.1128/iai.64.10.4319-4323.1996
+2025-09-15T01:10:10.778497 INFO: Content is very short (16 words). Likely a teaser.
+2025-09-15T01:10:10.778641 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...

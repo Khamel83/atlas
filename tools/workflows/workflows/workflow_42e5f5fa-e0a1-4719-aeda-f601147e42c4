@@ -1,0 +1,25 @@
+2025-09-15T14:22:00.461670 INFO: Attempting direct fetch for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.621689 ERROR: Direct fetch failed for https://news.ycombinator.com/item?id=30356382: 403 Client Error: Forbidden for url: https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.623324 INFO: Attempting Reader Mode strategy for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.695185 ERROR: Reader mode fetch failed for https://news.ycombinator.com/item?id=30356382: 403 Client Error: Forbidden for url: https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.696881 INFO: Attempting JS Disabled strategy for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.768230 ERROR: JS disabled fetch failed for https://news.ycombinator.com/item?id=30356382: 403 Client Error: Forbidden for url: https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.769887 INFO: Attempting Refresh Stop strategy for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.841484 ERROR: Refresh stop fetch failed for https://news.ycombinator.com/item?id=30356382: cannot use a string pattern on a bytes-like object
+2025-09-15T14:22:00.843160 INFO: Attempting Inspect Element strategy for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.916696 ERROR: Inspect element fetch failed for https://news.ycombinator.com/item?id=30356382: 403 Client Error: Forbidden for url: https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:00.918311 INFO: Attempting removepaywalls.com bypass for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:04.970643 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T14:22:04.970754 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T14:22:04.970784 INFO: Attempting archive.today for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:07.059715 INFO: No existing archive found, creating new archive for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:07.984092 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T14:22:07.984522 INFO: Attempting archive.is for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:11.652260 INFO: Attempting archive.li for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:14.698336 INFO: Attempting archive.fo for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:17.671442 INFO: Attempting archive.ph for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:21.431513 INFO: Attempting Googlebot spoof for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:21.690722 ERROR: Googlebot spoof failed for https://news.ycombinator.com/item?id=30356382: 403 Client Error: Forbidden for url: https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:21.692412 INFO: Attempting Enhanced Wayback Machine for https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:27.303375 INFO: Found Wayback snapshot from 20231107171016: http://web.archive.org/web/20231107171016/https://news.ycombinator.com/item?id=30356382
+2025-09-15T14:22:31.150243 INFO: Successfully fetched https://news.ycombinator.com/item?id=30356382 using wayback_machine_enhanced

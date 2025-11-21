@@ -1,0 +1,95 @@
+2025-09-15T04:28:15.180402 INFO: Attempting direct fetch for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:15.395170 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:15.405926 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:15.406020 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:28:15.406057 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:15.580320 ERROR: Reader mode fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:28:15.582186 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:15.811539 ERROR: JS disabled fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:28:15.813888 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:16.040266 ERROR: Refresh stop fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: cannot use a string pattern on a bytes-like object
+2025-09-15T04:28:16.044906 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:16.222701 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:16.222804 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:28:16.222832 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:20.500337 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:28:20.500448 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:28:20.500475 INFO: Attempting archive.today for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:24.177511 INFO: No existing archive found, creating new archive for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:25.055385 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:28:25.056151 INFO: Attempting archive.is for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:27.170503 INFO: Attempting archive.li for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:30.881094 INFO: Attempting archive.fo for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:32.971837 INFO: Attempting archive.ph for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:36.167652 INFO: Attempting Googlebot spoof for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:36.311808 ERROR: Googlebot spoof failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 503 Server Error: Service Unavailable for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:28:36.313817 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:57.749481 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: No archived snapshots found in any timeframe
+2025-09-15T04:28:57.751324 INFO: Attempting Wayback Machine for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:57.869278 ERROR: Wayback Machine failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: No archived snapshots found
+2025-09-15T04:28:57.871465 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”. Attempting Google Search fallback...
+2025-09-15T04:28:57.872389 INFO: Google Search fallback: searching for '0140422161)*,”'
+2025-09-15T04:28:57.906095 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:28:57.914459 INFO: Attempting direct fetch for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:58.064169 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:58.076780 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:58.076887 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:28:58.076927 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:58.255979 ERROR: Reader mode fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:28:58.266497 INFO: Attempting direct fetch for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:58.415161 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:58.425722 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:58.425823 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:28:58.425861 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:58.643027 ERROR: Reader mode fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:28:58.644950 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:58.872875 ERROR: JS disabled fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:28:58.874717 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:59.108540 ERROR: Refresh stop fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: cannot use a string pattern on a bytes-like object
+2025-09-15T04:28:59.110506 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:28:59.272912 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:28:59.273017 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:28:59.273043 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:02.228396 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:29:02.228507 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:29:02.228534 INFO: Attempting archive.today for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:05.034247 INFO: No existing archive found, creating new archive for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:05.945243 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:29:05.945993 INFO: Attempting archive.is for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:09.402695 INFO: Attempting archive.li for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:12.452112 INFO: Attempting archive.fo for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:15.627107 INFO: Attempting archive.ph for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:19.237657 INFO: Attempting Googlebot spoof for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:19.481113 ERROR: Googlebot spoof failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:29:19.482984 INFO: Attempting Enhanced Wayback Machine for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:20.766136 ERROR: Enhanced Wayback Machine failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: No archived snapshots found in any timeframe
+2025-09-15T04:29:20.767399 INFO: Attempting Wayback Machine for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:20.890528 ERROR: Wayback Machine failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: No archived snapshots found
+2025-09-15T04:29:20.892414 ERROR: All fetch strategies failed or returned low-quality content for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”. Attempting Google Search fallback...
+2025-09-15T04:29:20.893225 INFO: Google Search fallback: searching for '0140422161)*,”'
+2025-09-15T04:29:20.930664 INFO: Google Search fallback did not find alternative URL
+2025-09-15T04:29:20.937825 INFO: Attempting direct fetch for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:21.092198 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:29:21.102893 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:29:21.103002 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:29:21.103040 INFO: Attempting Reader Mode strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:21.280564 ERROR: Reader mode fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:29:21.282758 INFO: Attempting JS Disabled strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:21.530083 ERROR: JS disabled fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D
+2025-09-15T04:29:21.532140 INFO: Attempting Refresh Stop strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:21.766446 ERROR: Refresh stop fetch failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: cannot use a string pattern on a bytes-like object
+2025-09-15T04:29:21.768557 INFO: Attempting Inspect Element strategy for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:21.934853 INFO: Content is very short (7 words). Likely a teaser.
+2025-09-15T04:29:21.934948 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:29:21.934989 INFO: Attempting removepaywalls.com bypass for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:26.058842 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T04:29:26.058960 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T04:29:26.058987 INFO: Attempting archive.today for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:28.975258 INFO: No existing archive found, creating new archive for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:30.249841 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T04:29:30.250581 INFO: Attempting archive.is for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:34.038619 INFO: Attempting archive.li for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:37.251691 INFO: Attempting archive.fo for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:39.237951 INFO: Attempting archive.ph for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:43.102019 INFO: Attempting Googlebot spoof for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”
+2025-09-15T04:29:43.274749 ERROR: Googlebot spoof failed for https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,”: 404 Client Error: Not Found for url: https://www.amazon.com/Penguin-Classics-George-Gordon-Byron/dp/0140422161)*,%E2%80%9D

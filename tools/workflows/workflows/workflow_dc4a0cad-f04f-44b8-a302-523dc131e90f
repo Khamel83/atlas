@@ -1,0 +1,148 @@
+2025-09-15T02:39:46.998577 INFO: Attempting direct fetch for https://techcrunch.com/category/venture/
+2025-09-15T02:39:47.281176 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:39:47.514397 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:39:47.514509 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:39:47.514551 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:39:47.666293 ERROR: Reader mode fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:39:47.668131 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:39:47.886187 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:39:47.886295 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:39:47.886322 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:39:47.972802 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:39:47.974348 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:39:48.328722 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:39:48.328831 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:39:48.328857 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/venture/
+2025-09-15T02:39:51.123204 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:39:51.123304 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:39:51.123333 INFO: Attempting archive.today for https://techcrunch.com/category/venture/
+2025-09-15T02:39:53.000203 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/venture/
+2025-09-15T02:39:53.872916 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:39:53.873446 INFO: Attempting archive.is for https://techcrunch.com/category/venture/
+2025-09-15T02:39:56.583390 INFO: Attempting archive.li for https://techcrunch.com/category/venture/
+2025-09-15T02:39:58.887218 INFO: Attempting archive.fo for https://techcrunch.com/category/venture/
+2025-09-15T02:40:01.681030 INFO: Attempting archive.ph for https://techcrunch.com/category/venture/
+2025-09-15T02:40:05.015397 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/venture/
+2025-09-15T02:40:05.300988 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:05.301095 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:05.301122 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:40:06.053912 INFO: Found Wayback snapshot from 20250909000704: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:40:08.646566 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:08.646727 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:08.646757 INFO: Attempting Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:40:08.768949 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:40:09.045538 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:09.045653 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:09.045689 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/venture/. Attempting Google Search fallback...
+2025-09-15T02:40:09.045756 INFO: Google Search fallback: searching for 'venture'
+2025-09-15T02:40:09.077144 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:40:09.086779 INFO: Attempting direct fetch for https://techcrunch.com/category/venture/
+2025-09-15T02:40:09.682096 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:09.921126 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:09.921218 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:09.921256 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:10.066798 ERROR: Reader mode fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:40:10.068775 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:10.354181 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:10.354294 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:10.354324 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:10.442498 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:40:10.444421 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:10.816092 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:10.816203 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:10.816230 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/venture/
+2025-09-15T02:40:15.251969 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:40:15.252072 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:15.252101 INFO: Attempting archive.today for https://techcrunch.com/category/venture/
+2025-09-15T02:40:17.723858 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/venture/
+2025-09-15T02:40:18.624024 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:40:18.624639 INFO: Attempting archive.is for https://techcrunch.com/category/venture/
+2025-09-15T02:40:20.653099 INFO: Attempting archive.li for https://techcrunch.com/category/venture/
+2025-09-15T02:40:23.622523 INFO: Attempting archive.fo for https://techcrunch.com/category/venture/
+2025-09-15T02:40:26.696301 INFO: Attempting archive.ph for https://techcrunch.com/category/venture/
+2025-09-15T02:40:28.836203 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/venture/
+2025-09-15T02:40:29.175047 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:29.175167 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:29.175199 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:40:29.297782 INFO: Found Wayback snapshot from 20250909000704: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:40:29.592075 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:29.592193 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:29.592224 INFO: Attempting Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:40:29.702855 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:40:29.987894 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:29.988003 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:29.988038 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/venture/. Attempting Google Search fallback...
+2025-09-15T02:40:29.996884 INFO: Attempting direct fetch for https://techcrunch.com/category/venture/
+2025-09-15T02:40:30.323939 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:30.724428 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:30.724548 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:30.724671 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:30.868867 ERROR: Reader mode fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:40:30.871258 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:31.189641 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:31.189750 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:31.189778 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:31.280167 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:40:31.282384 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:31.725969 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:31.726063 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:31.726090 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/venture/
+2025-09-15T02:40:34.098558 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:40:34.098691 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:34.098719 INFO: Attempting archive.today for https://techcrunch.com/category/venture/
+2025-09-15T02:40:37.524662 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/venture/
+2025-09-15T02:40:38.435247 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:40:38.436913 INFO: Attempting archive.is for https://techcrunch.com/category/venture/
+2025-09-15T02:40:41.136751 INFO: Attempting archive.li for https://techcrunch.com/category/venture/
+2025-09-15T02:40:44.894517 INFO: Attempting archive.fo for https://techcrunch.com/category/venture/
+2025-09-15T02:40:47.288182 INFO: Attempting archive.ph for https://techcrunch.com/category/venture/
+2025-09-15T02:40:50.209314 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/venture/
+2025-09-15T02:40:50.542986 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:50.543102 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:50.543129 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:40:50.675674 INFO: Found Wayback snapshot from 20250909000704: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:40:51.022855 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:51.022980 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:51.023007 INFO: Attempting Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:40:51.170806 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:40:51.467010 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:51.467135 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:51.467169 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/venture/. Attempting Google Search fallback...
+2025-09-15T02:40:51.467232 INFO: Google Search fallback: searching for 'venture'
+2025-09-15T02:40:51.499484 INFO: Google Search fallback did not find alternative URL
+2025-09-15T02:40:51.508308 INFO: Attempting direct fetch for https://techcrunch.com/category/venture/
+2025-09-15T02:40:51.796982 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:52.033566 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:52.033714 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:52.033761 INFO: Attempting Reader Mode strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:52.116384 ERROR: Reader mode fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:40:52.118310 INFO: Attempting JS Disabled strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:52.354345 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:52.354458 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:52.354486 INFO: Attempting Refresh Stop strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:52.443563 ERROR: Refresh stop fetch failed for https://techcrunch.com/category/venture/: cannot use a string pattern on a bytes-like object
+2025-09-15T02:40:52.445168 INFO: Attempting Inspect Element strategy for https://techcrunch.com/category/venture/
+2025-09-15T02:40:53.023451 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:40:53.023569 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:53.023622 INFO: Attempting removepaywalls.com bypass for https://techcrunch.com/category/venture/
+2025-09-15T02:40:55.618038 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T02:40:55.618159 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:40:55.618186 INFO: Attempting archive.today for https://techcrunch.com/category/venture/
+2025-09-15T02:40:58.512304 INFO: No existing archive found, creating new archive for https://techcrunch.com/category/venture/
+2025-09-15T02:40:59.385868 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T02:40:59.386710 INFO: Attempting archive.is for https://techcrunch.com/category/venture/
+2025-09-15T02:41:02.446536 INFO: Attempting archive.li for https://techcrunch.com/category/venture/
+2025-09-15T02:41:05.251558 INFO: Attempting archive.fo for https://techcrunch.com/category/venture/
+2025-09-15T02:41:08.795326 INFO: Attempting archive.ph for https://techcrunch.com/category/venture/
+2025-09-15T02:41:11.545072 INFO: Attempting Googlebot spoof for https://techcrunch.com/category/venture/
+2025-09-15T02:41:11.887704 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:41:11.887819 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:41:11.887846 INFO: Attempting Enhanced Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:41:12.093320 INFO: Found Wayback snapshot from 20250909000704: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:41:12.397941 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:41:12.398060 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:41:12.398086 INFO: Attempting Wayback Machine for https://techcrunch.com/category/venture/
+2025-09-15T02:41:12.512108 INFO: Found Wayback snapshot: http://web.archive.org/web/20250909000704/https://techcrunch.com/category/venture/
+2025-09-15T02:41:12.805470 INFO: Content is very short (42 words). Likely a teaser.
+2025-09-15T02:41:12.805610 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T02:41:12.805649 ERROR: All fetch strategies failed or returned low-quality content for https://techcrunch.com/category/venture/. Attempting Google Search fallback...

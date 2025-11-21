@@ -1,0 +1,102 @@
+2025-09-15T09:51:56.201696 INFO: Attempting direct fetch for https://www.loewe.com/
+2025-09-15T09:51:57.178648 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:51:57.346483 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:51:57.346614 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:51:57.346664 INFO: Attempting Reader Mode strategy for https://www.loewe.com/
+2025-09-15T09:51:58.135212 ERROR: Reader mode fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:51:58.144222 INFO: Attempting JS Disabled strategy for https://www.loewe.com/
+2025-09-15T09:51:59.360475 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:51:59.360604 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:51:59.360634 INFO: Attempting Refresh Stop strategy for https://www.loewe.com/
+2025-09-15T09:52:00.875211 ERROR: Refresh stop fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:52:00.879520 INFO: Attempting Inspect Element strategy for https://www.loewe.com/
+2025-09-15T09:52:02.115960 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:02.116051 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:02.116078 INFO: Attempting removepaywalls.com bypass for https://www.loewe.com/
+2025-09-15T09:52:04.698659 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:52:04.698758 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:04.698784 INFO: Attempting archive.today for https://www.loewe.com/
+2025-09-15T09:52:08.894335 INFO: No existing archive found, creating new archive for https://www.loewe.com/
+2025-09-15T09:52:09.762559 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:52:09.772694 INFO: Attempting direct fetch for https://www.loewe.com/
+2025-09-15T09:52:10.489619 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:10.582796 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:10.582892 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:10.582934 INFO: Attempting Reader Mode strategy for https://www.loewe.com/
+2025-09-15T09:52:11.211435 ERROR: Reader mode fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:52:11.215012 INFO: Attempting JS Disabled strategy for https://www.loewe.com/
+2025-09-15T09:52:12.519578 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:12.519723 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:12.519750 INFO: Attempting Refresh Stop strategy for https://www.loewe.com/
+2025-09-15T09:52:14.191811 ERROR: Refresh stop fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:52:14.195260 INFO: Attempting Inspect Element strategy for https://www.loewe.com/
+2025-09-15T09:52:15.495425 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:15.495531 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:15.495558 INFO: Attempting removepaywalls.com bypass for https://www.loewe.com/
+2025-09-15T09:52:18.347816 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:52:18.347928 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:18.347956 INFO: Attempting archive.today for https://www.loewe.com/
+2025-09-15T09:52:21.569983 INFO: No existing archive found, creating new archive for https://www.loewe.com/
+2025-09-15T09:52:22.469453 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:52:22.470015 INFO: Attempting archive.is for https://www.loewe.com/
+2025-09-15T09:52:25.900497 INFO: Attempting archive.li for https://www.loewe.com/
+2025-09-15T09:52:28.900664 INFO: Attempting archive.fo for https://www.loewe.com/
+2025-09-15T09:52:32.208267 INFO: Attempting archive.ph for https://www.loewe.com/
+2025-09-15T09:52:34.273878 INFO: Attempting Googlebot spoof for https://www.loewe.com/
+2025-09-15T09:52:34.995986 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T09:52:34.996107 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:34.996134 INFO: Attempting Enhanced Wayback Machine for https://www.loewe.com/
+2025-09-15T09:52:35.727324 INFO: Found Wayback snapshot from 20211106062054: http://web.archive.org/web/20211106062054/http://loewe.com/
+2025-09-15T09:52:38.493191 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T09:52:38.493304 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:38.493333 INFO: Attempting Wayback Machine for https://www.loewe.com/
+2025-09-15T09:52:38.608949 INFO: Found Wayback snapshot: http://web.archive.org/web/20211106062054/http://loewe.com/
+2025-09-15T09:52:38.664936 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T09:52:38.665048 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:38.665080 ERROR: All fetch strategies failed or returned low-quality content for https://www.loewe.com/. Attempting Google Search fallback...
+2025-09-15T09:52:38.665140 INFO: Google Search fallback: searching for 'article www.loewe.com'
+2025-09-15T09:52:38.696883 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:52:38.705006 INFO: Attempting direct fetch for https://www.loewe.com/
+2025-09-15T09:52:39.491971 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:39.584139 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:39.584258 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:39.584300 INFO: Attempting Reader Mode strategy for https://www.loewe.com/
+2025-09-15T09:52:40.181743 ERROR: Reader mode fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:52:40.185365 INFO: Attempting JS Disabled strategy for https://www.loewe.com/
+2025-09-15T09:52:41.649837 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:41.649931 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:41.649958 INFO: Attempting Refresh Stop strategy for https://www.loewe.com/
+2025-09-15T09:52:43.277620 ERROR: Refresh stop fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object
+2025-09-15T09:52:43.281200 INFO: Attempting Inspect Element strategy for https://www.loewe.com/
+2025-09-15T09:52:44.596972 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:52:44.597089 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:44.597116 INFO: Attempting removepaywalls.com bypass for https://www.loewe.com/
+2025-09-15T09:52:49.071487 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T09:52:49.071628 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:52:49.071663 INFO: Attempting archive.today for https://www.loewe.com/
+2025-09-15T09:52:52.255195 INFO: No existing archive found, creating new archive for https://www.loewe.com/
+2025-09-15T09:52:53.167047 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T09:52:53.167562 INFO: Attempting archive.is for https://www.loewe.com/
+2025-09-15T09:52:55.891668 INFO: Attempting archive.li for https://www.loewe.com/
+2025-09-15T09:52:59.595911 INFO: Attempting archive.fo for https://www.loewe.com/
+2025-09-15T09:53:02.227399 INFO: Attempting archive.ph for https://www.loewe.com/
+2025-09-15T09:53:04.687454 INFO: Attempting Googlebot spoof for https://www.loewe.com/
+2025-09-15T09:53:05.427381 INFO: Content is very short (25 words). Likely a teaser.
+2025-09-15T09:53:05.427495 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:53:05.427521 INFO: Attempting Enhanced Wayback Machine for https://www.loewe.com/
+2025-09-15T09:53:05.770920 INFO: Found Wayback snapshot from 20211106062054: http://web.archive.org/web/20211106062054/http://loewe.com/
+2025-09-15T09:53:05.914072 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T09:53:05.914181 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:53:05.914209 INFO: Attempting Wayback Machine for https://www.loewe.com/
+2025-09-15T09:53:06.054941 INFO: Found Wayback snapshot: http://web.archive.org/web/20211106062054/http://loewe.com/
+2025-09-15T09:53:06.116844 INFO: Content is very short (36 words). Likely a teaser.
+2025-09-15T09:53:06.116952 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:53:06.116985 ERROR: All fetch strategies failed or returned low-quality content for https://www.loewe.com/. Attempting Google Search fallback...
+2025-09-15T09:53:06.117046 INFO: Google Search fallback: searching for 'article www.loewe.com'
+2025-09-15T09:53:06.149487 INFO: Google Search fallback did not find alternative URL
+2025-09-15T09:53:06.156900 INFO: Attempting direct fetch for https://www.loewe.com/
+2025-09-15T09:53:06.953022 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:53:07.046621 INFO: Content is very short (23 words). Likely a teaser.
+2025-09-15T09:53:07.046733 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T09:53:07.046776 INFO: Attempting Reader Mode strategy for https://www.loewe.com/
+2025-09-15T09:53:07.693243 ERROR: Reader mode fetch failed for https://www.loewe.com/: cannot use a string pattern on a bytes-like object

@@ -1,0 +1,114 @@
+2025-09-14T20:38:15.237967 INFO: Attempting direct fetch for https://www.stoneskimming.com/
+2025-09-14T20:38:15.945067 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:16.022497 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:16.022634 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:16.022675 INFO: Attempting Reader Mode strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:16.577876 ERROR: Reader mode fetch failed for https://www.stoneskimming.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:38:16.579445 INFO: Attempting JS Disabled strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:17.193069 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:17.193180 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:17.193206 INFO: Attempting Refresh Stop strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:17.772375 ERROR: Refresh stop fetch failed for https://www.stoneskimming.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:38:17.774269 INFO: Attempting Inspect Element strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:18.418936 INFO: Suspicious title-to-content ratio: 0.94. Likely truncated.
+2025-09-14T20:38:18.419093 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:18.419124 INFO: Attempting removepaywalls.com bypass for https://www.stoneskimming.com/
+2025-09-14T20:38:22.727435 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:38:22.727556 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:22.727584 INFO: Attempting archive.today for https://www.stoneskimming.com/
+2025-09-14T20:38:26.126557 INFO: No existing archive found, creating new archive for https://www.stoneskimming.com/
+2025-09-14T20:38:27.033065 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:38:27.033498 INFO: Attempting archive.is for https://www.stoneskimming.com/
+2025-09-14T20:38:29.963575 INFO: Attempting archive.li for https://www.stoneskimming.com/
+2025-09-14T20:38:32.352715 INFO: Attempting archive.fo for https://www.stoneskimming.com/
+2025-09-14T20:38:35.090970 INFO: Attempting archive.ph for https://www.stoneskimming.com/
+2025-09-14T20:38:37.483908 INFO: Attempting Googlebot spoof for https://www.stoneskimming.com/
+2025-09-14T20:38:38.104336 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:38.104455 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:38.104483 INFO: Attempting Enhanced Wayback Machine for https://www.stoneskimming.com/
+2025-09-14T20:38:38.629437 INFO: Found Wayback snapshot from 20250829120633: http://web.archive.org/web/20250829120633/https://www.stoneskimming.com/
+2025-09-14T20:38:39.225133 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:39.225249 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:39.225281 INFO: Attempting Wayback Machine for https://www.stoneskimming.com/
+2025-09-14T20:38:39.341036 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829120633/https://www.stoneskimming.com/
+2025-09-14T20:38:39.480837 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:39.480952 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:39.480989 ERROR: All fetch strategies failed or returned low-quality content for https://www.stoneskimming.com/. Attempting Google Search fallback...
+2025-09-14T20:38:39.481052 INFO: Google Search fallback: searching for 'article www.stoneskimming.com'
+2025-09-14T20:38:39.513031 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:38:39.521187 INFO: Attempting direct fetch for https://www.stoneskimming.com/
+2025-09-14T20:38:40.209452 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:40.305377 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:40.305477 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:40.305517 INFO: Attempting Reader Mode strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:40.879295 ERROR: Reader mode fetch failed for https://www.stoneskimming.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:38:40.880917 INFO: Attempting JS Disabled strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:41.497159 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:38:41.497271 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:41.497298 INFO: Attempting Refresh Stop strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:42.071191 ERROR: Refresh stop fetch failed for https://www.stoneskimming.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:38:42.073465 INFO: Attempting Inspect Element strategy for https://www.stoneskimming.com/
+2025-09-14T20:38:42.721490 INFO: Suspicious title-to-content ratio: 0.94. Likely truncated.
+2025-09-14T20:38:42.721648 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:42.721682 INFO: Attempting removepaywalls.com bypass for https://www.stoneskimming.com/
+2025-09-14T20:38:46.209002 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:38:46.209116 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:38:46.209145 INFO: Attempting archive.today for https://www.stoneskimming.com/
+2025-09-14T20:38:49.513816 INFO: No existing archive found, creating new archive for https://www.stoneskimming.com/
+2025-09-14T20:38:50.414446 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:38:50.415142 INFO: Attempting archive.is for https://www.stoneskimming.com/
+2025-09-14T20:38:54.024417 INFO: Attempting archive.li for https://www.stoneskimming.com/
+2025-09-14T20:38:57.376530 INFO: Attempting archive.fo for https://www.stoneskimming.com/
+2025-09-14T20:38:59.667084 INFO: Attempting archive.ph for https://www.stoneskimming.com/
+2025-09-14T20:39:02.283647 INFO: Attempting Googlebot spoof for https://www.stoneskimming.com/
+2025-09-14T20:39:02.934891 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:02.935012 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:02.935042 INFO: Attempting Enhanced Wayback Machine for https://www.stoneskimming.com/
+2025-09-14T20:39:03.111667 INFO: Found Wayback snapshot from 20250829120633: http://web.archive.org/web/20250829120633/https://www.stoneskimming.com/
+2025-09-14T20:39:03.249226 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:03.249343 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:03.249371 INFO: Attempting Wayback Machine for https://www.stoneskimming.com/
+2025-09-14T20:39:03.364332 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829120633/https://www.stoneskimming.com/
+2025-09-14T20:39:03.505471 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:03.505583 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:03.505643 ERROR: All fetch strategies failed or returned low-quality content for https://www.stoneskimming.com/. Attempting Google Search fallback...
+2025-09-14T20:39:03.505707 INFO: Google Search fallback: searching for 'article www.stoneskimming.com'
+2025-09-14T20:39:03.538656 INFO: Google Search fallback did not find alternative URL
+2025-09-14T20:39:03.546716 INFO: Attempting direct fetch for https://www.stoneskimming.com/
+2025-09-14T20:39:04.221192 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:04.399048 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:04.399164 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:04.399203 INFO: Attempting Reader Mode strategy for https://www.stoneskimming.com/
+2025-09-14T20:39:04.960374 ERROR: Reader mode fetch failed for https://www.stoneskimming.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:39:04.963066 INFO: Attempting JS Disabled strategy for https://www.stoneskimming.com/
+2025-09-14T20:39:05.567232 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:05.567353 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:05.567380 INFO: Attempting Refresh Stop strategy for https://www.stoneskimming.com/
+2025-09-14T20:39:06.143500 ERROR: Refresh stop fetch failed for https://www.stoneskimming.com/: cannot use a string pattern on a bytes-like object
+2025-09-14T20:39:06.146001 INFO: Attempting Inspect Element strategy for https://www.stoneskimming.com/
+2025-09-14T20:39:06.811095 INFO: Suspicious title-to-content ratio: 0.94. Likely truncated.
+2025-09-14T20:39:06.811197 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:06.811224 INFO: Attempting removepaywalls.com bypass for https://www.stoneskimming.com/
+2025-09-14T20:39:09.830124 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-14T20:39:09.830227 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:09.830255 INFO: Attempting archive.today for https://www.stoneskimming.com/
+2025-09-14T20:39:13.732351 INFO: No existing archive found, creating new archive for https://www.stoneskimming.com/
+2025-09-14T20:39:14.641877 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-14T20:39:14.642331 INFO: Attempting archive.is for https://www.stoneskimming.com/
+2025-09-14T20:39:16.577029 INFO: Attempting archive.li for https://www.stoneskimming.com/
+2025-09-14T20:39:19.887867 INFO: Attempting archive.fo for https://www.stoneskimming.com/
+2025-09-14T20:39:24.309343 INFO: Attempting archive.ph for https://www.stoneskimming.com/
+2025-09-14T20:39:26.438899 INFO: Attempting Googlebot spoof for https://www.stoneskimming.com/
+2025-09-14T20:39:27.065149 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:27.065266 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:27.065293 INFO: Attempting Enhanced Wayback Machine for https://www.stoneskimming.com/
+2025-09-14T20:39:27.223861 INFO: Found Wayback snapshot from 20250829120633: http://web.archive.org/web/20250829120633/https://www.stoneskimming.com/
+2025-09-14T20:39:27.376444 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:27.376550 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:27.376577 INFO: Attempting Wayback Machine for https://www.stoneskimming.com/
+2025-09-14T20:39:27.572094 INFO: Found Wayback snapshot: http://web.archive.org/web/20250829120633/https://www.stoneskimming.com/
+2025-09-14T20:39:27.730082 INFO: Content is very short (80 words). Likely a teaser.
+2025-09-14T20:39:27.730184 INFO: 12ft succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-14T20:39:27.730217 ERROR: All fetch strategies failed or returned low-quality content for https://www.stoneskimming.com/. Attempting Google Search fallback...
+2025-09-14T20:39:27.730282 INFO: Google Search fallback: searching for 'article www.stoneskimming.com'
+2025-09-14T20:39:27.764521 INFO: Google Search fallback did not find alternative URL

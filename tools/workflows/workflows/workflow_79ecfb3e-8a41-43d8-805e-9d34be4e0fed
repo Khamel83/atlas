@@ -1,0 +1,91 @@
+2025-09-15T03:57:21.908779 INFO: Attempting direct fetch for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:21.966456 ERROR: Direct fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:21.966669 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:21.966751 ERROR: Reader mode fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: [Errno 32] Broken pipe
+2025-09-15T03:57:21.966803 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:22.032914 ERROR: JS disabled fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:22.033088 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:22.090238 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:57:22.090438 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:22.146050 ERROR: Inspect element fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:22.146215 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:26.138041 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:57:26.138154 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:57:26.138181 INFO: Attempting archive.today for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:28.198073 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:29.119884 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:57:29.120338 INFO: Attempting archive.is for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:32.412967 INFO: Attempting archive.li for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:34.622136 INFO: Attempting archive.fo for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:37.848448 INFO: Attempting archive.ph for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:40.807725 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:40.889584 ERROR: Googlebot spoof failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:57:40.889845 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:10.069884 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:58:10.071410 INFO: Attempting Wayback Machine for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:10.191142 ERROR: Wayback Machine failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: No archived snapshots found
+2025-09-15T03:58:10.194806 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:58:10.195455 INFO: Google Search fallback: searching for 'craig venters bugs might save the world.html'
+2025-09-15T03:58:10.232294 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:58:10.240898 INFO: Attempting direct fetch for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:10.323778 ERROR: Direct fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:10.323954 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:11.003904 ERROR: Reader mode fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:11.005412 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:11.063166 ERROR: JS disabled fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:11.063352 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:11.131210 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:11.131375 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:11.187640 ERROR: Inspect element fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:11.187821 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:14.470334 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:58:14.470449 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:14.470478 INFO: Attempting archive.today for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:16.529917 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:17.426387 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:58:17.426812 INFO: Attempting archive.is for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:20.261914 INFO: Attempting archive.li for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:23.484085 INFO: Attempting archive.fo for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:23.495215 INFO: Attempting direct fetch for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:23.575431 ERROR: Direct fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:23.575646 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:24.215829 ERROR: Reader mode fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:24.217476 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:24.275539 ERROR: JS disabled fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:24.275751 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:24.333840 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:24.334020 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:24.392310 ERROR: Inspect element fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:24.392488 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:27.195288 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:58:27.195396 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:27.195423 INFO: Attempting archive.today for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:30.670803 INFO: No existing archive found, creating new archive for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:31.556356 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:58:31.556908 INFO: Attempting archive.is for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:35.220631 INFO: Attempting archive.li for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:38.225670 INFO: Attempting archive.fo for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:41.844385 INFO: Attempting archive.ph for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:45.199442 INFO: Attempting Googlebot spoof for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:45.267438 ERROR: Googlebot spoof failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:45.267670 INFO: Attempting Enhanced Wayback Machine for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:46.534916 ERROR: Enhanced Wayback Machine failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: No archived snapshots found in any timeframe
+2025-09-15T03:58:46.536654 INFO: Attempting Wayback Machine for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:46.647574 ERROR: Wayback Machine failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: No archived snapshots found
+2025-09-15T03:58:46.649125 ERROR: All fetch strategies failed or returned low-quality content for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print. Attempting Google Search fallback...
+2025-09-15T03:58:46.649559 INFO: Google Search fallback: searching for 'craig venters bugs might save the world.html'
+2025-09-15T03:58:46.686981 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:58:46.696028 INFO: Attempting direct fetch for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:46.757414 ERROR: Direct fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:46.757636 INFO: Attempting Reader Mode strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:47.748073 ERROR: Reader mode fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:47.749936 INFO: Attempting JS Disabled strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:47.815353 ERROR: JS disabled fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:47.815553 INFO: Attempting Refresh Stop strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:47.872516 ERROR: Refresh stop fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: cannot use a string pattern on a bytes-like object
+2025-09-15T03:58:47.872730 INFO: Attempting Inspect Element strategy for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:47.928086 ERROR: Inspect element fetch failed for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print: 403 Client Error: Forbidden for url: http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:47.928291 INFO: Attempting removepaywalls.com bypass for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print
+2025-09-15T03:58:50.786069 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:58:50.786171 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:58:50.786197 INFO: Attempting archive.today for http://www.nytimes.com/2012/06/03/magazine/craig-venters-bugs-might-save-the-world.html?pagewanted=print

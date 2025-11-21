@@ -1,0 +1,119 @@
+2025-09-15T03:54:32.721300 INFO: Attempting direct fetch for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:34.517379 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:54:34.687788 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:54:34.687902 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:54:34.687944 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:34.936243 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:54:34.938271 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:35.150456 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:54:35.150564 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:54:35.150613 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:35.230363 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:54:35.232355 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:35.462726 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:54:35.462834 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:54:35.462862 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:38.305672 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:54:38.305782 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:54:38.305809 INFO: Attempting archive.today for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:40.823105 INFO: No existing archive found, creating new archive for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:41.717285 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:54:41.717866 INFO: Attempting archive.is for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:44.250965 INFO: Attempting archive.li for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:47.462964 INFO: Attempting archive.fo for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:50.468512 INFO: Attempting archive.ph for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:53.053507 INFO: Attempting Googlebot spoof for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:53.386748 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:54:53.386862 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:54:53.386890 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:54:58.945888 INFO: Found Wayback snapshot from 20240226115334: http://web.archive.org/web/20240226115334/https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:03.905505 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:03.905665 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:03.905699 INFO: Attempting Wayback Machine for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:04.017119 ERROR: Wayback Machine failed for https://www.newyorker.com/tag/roe-v-wade: No archived snapshots found
+2025-09-15T03:55:04.019364 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/tag/roe-v-wade. Attempting Google Search fallback...
+2025-09-15T03:55:04.019734 INFO: Google Search fallback: searching for 'roe v wade'
+2025-09-15T03:55:04.051808 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:55:04.059737 INFO: Attempting direct fetch for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:04.259839 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:04.539395 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:04.539512 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:04.539551 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:04.615862 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:55:04.618347 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:04.783454 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:04.783568 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:04.783616 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:04.837686 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:55:04.847529 INFO: Attempting direct fetch for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:05.052752 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:05.231018 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:05.231134 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:05.231176 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:05.285190 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:55:05.287721 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:05.449325 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:05.449422 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:05.449452 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:05.503364 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:55:05.505760 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:05.741543 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:05.741691 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:05.741721 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:09.097707 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:55:09.097818 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:09.097844 INFO: Attempting archive.today for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:12.453997 INFO: No existing archive found, creating new archive for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:13.343684 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:55:13.344635 INFO: Attempting archive.is for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:16.767620 INFO: Attempting archive.li for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:20.180357 INFO: Attempting archive.fo for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:23.420575 INFO: Attempting archive.ph for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:26.964375 INFO: Attempting Googlebot spoof for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:27.329556 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:27.329685 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:27.329718 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:27.591391 INFO: Found Wayback snapshot from 20240226115334: http://web.archive.org/web/20240226115334/https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:27.851330 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:27.851445 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:27.851473 INFO: Attempting Wayback Machine for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:27.974076 ERROR: Wayback Machine failed for https://www.newyorker.com/tag/roe-v-wade: No archived snapshots found
+2025-09-15T03:55:27.976555 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/tag/roe-v-wade. Attempting Google Search fallback...
+2025-09-15T03:55:27.977036 INFO: Google Search fallback: searching for 'roe v wade'
+2025-09-15T03:55:28.009646 INFO: Google Search fallback did not find alternative URL
+2025-09-15T03:55:28.017067 INFO: Attempting direct fetch for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:28.218444 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:28.387809 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:28.387906 INFO: direct succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:28.387948 INFO: Attempting Reader Mode strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:28.448347 ERROR: Reader mode fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:55:28.454364 INFO: Attempting JS Disabled strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:28.643800 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:28.643892 INFO: js_disabled succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:28.643923 INFO: Attempting Refresh Stop strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:28.695568 ERROR: Refresh stop fetch failed for https://www.newyorker.com/tag/roe-v-wade: cannot use a string pattern on a bytes-like object
+2025-09-15T03:55:28.697891 INFO: Attempting Inspect Element strategy for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:28.929942 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:28.930050 INFO: inspect_element succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:28.930078 INFO: Attempting removepaywalls.com bypass for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:33.247117 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T03:55:33.247229 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:33.247254 INFO: Attempting archive.today for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:35.616777 INFO: No existing archive found, creating new archive for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:36.524601 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T03:55:36.525628 INFO: Attempting archive.is for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:40.439048 INFO: Attempting archive.li for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:43.715890 INFO: Attempting archive.fo for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:47.460556 INFO: Attempting archive.ph for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:50.739790 INFO: Attempting Googlebot spoof for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:51.126582 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:51.126720 INFO: googlebot_spoof succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:51.126748 INFO: Attempting Enhanced Wayback Machine for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:51.360478 INFO: Found Wayback snapshot from 20240226115334: http://web.archive.org/web/20240226115334/https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:51.608792 INFO: Content is very short (37 words). Likely a teaser.
+2025-09-15T03:55:51.608906 INFO: wayback_machine_enhanced succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T03:55:51.608937 INFO: Attempting Wayback Machine for https://www.newyorker.com/tag/roe-v-wade
+2025-09-15T03:55:51.720915 ERROR: Wayback Machine failed for https://www.newyorker.com/tag/roe-v-wade: No archived snapshots found
+2025-09-15T03:55:51.723455 ERROR: All fetch strategies failed or returned low-quality content for https://www.newyorker.com/tag/roe-v-wade. Attempting Google Search fallback...
+2025-09-15T03:55:51.724012 INFO: Google Search fallback: searching for 'roe v wade'
+2025-09-15T03:55:51.757012 INFO: Google Search fallback did not find alternative URL

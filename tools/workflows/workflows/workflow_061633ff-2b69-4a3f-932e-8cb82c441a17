@@ -1,0 +1,94 @@
+2025-09-15T00:05:03.582871 INFO: Attempting direct fetch for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.730872 ERROR: Direct fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.732279 INFO: Attempting Reader Mode strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.782660 ERROR: Reader mode fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.784013 INFO: Attempting JS Disabled strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.836430 ERROR: JS disabled fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.838078 INFO: Attempting Refresh Stop strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.891320 ERROR: Refresh stop fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-15T00:05:03.893410 INFO: Attempting Inspect Element strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.943715 ERROR: Inspect element fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:03.945779 INFO: Attempting removepaywalls.com bypass for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:06.748211 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:05:06.748317 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:05:06.748344 INFO: Attempting archive.today for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:09.284629 INFO: No existing archive found, creating new archive for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:10.192886 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:05:10.193897 INFO: Attempting archive.is for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:12.236382 INFO: Attempting archive.li for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:15.993009 INFO: Attempting archive.fo for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:18.600675 INFO: Attempting archive.ph for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:20.824336 INFO: Attempting Googlebot spoof for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:20.877835 ERROR: Googlebot spoof failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:20.879912 INFO: Attempting Enhanced Wayback Machine for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:35.686215 ERROR: Enhanced Wayback Machine failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: No archived snapshots found in any timeframe
+2025-09-15T00:05:35.687836 INFO: Attempting Wayback Machine for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:35.816445 ERROR: Wayback Machine failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: No archived snapshots found
+2025-09-15T00:05:35.818462 ERROR: All fetch strategies failed or returned low-quality content for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico. Attempting Google Search fallback...
+2025-09-15T00:05:35.819074 INFO: Google Search fallback: searching for 'favicon.ico'
+2025-09-15T00:05:35.851542 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:05:35.859111 INFO: Attempting direct fetch for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:35.913395 ERROR: Direct fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:35.915370 INFO: Attempting Reader Mode strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:35.964795 ERROR: Reader mode fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:35.966816 INFO: Attempting JS Disabled strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:36.017963 ERROR: JS disabled fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:36.019962 INFO: Attempting Refresh Stop strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:36.070735 ERROR: Refresh stop fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-15T00:05:36.072768 INFO: Attempting Inspect Element strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:36.124610 ERROR: Inspect element fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:36.127076 INFO: Attempting removepaywalls.com bypass for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:38.789701 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:05:38.789817 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:05:38.789843 INFO: Attempting archive.today for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:41.232937 INFO: No existing archive found, creating new archive for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.090968 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:05:42.091838 INFO: Attempting archive.is for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.100760 INFO: Attempting direct fetch for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.150345 ERROR: Direct fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.152147 INFO: Attempting Reader Mode strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.202365 ERROR: Reader mode fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.204306 INFO: Attempting JS Disabled strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.254749 ERROR: JS disabled fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.256607 INFO: Attempting Refresh Stop strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.309308 ERROR: Refresh stop fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-15T00:05:42.311160 INFO: Attempting Inspect Element strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.360533 ERROR: Inspect element fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:42.362607 INFO: Attempting removepaywalls.com bypass for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:47.044221 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:05:47.044334 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:05:47.044361 INFO: Attempting archive.today for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:49.207299 INFO: No existing archive found, creating new archive for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:50.084651 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:05:50.085451 INFO: Attempting archive.is for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:52.820825 INFO: Attempting archive.li for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:56.454188 INFO: Attempting archive.fo for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:05:59.619376 INFO: Attempting archive.ph for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:01.941253 INFO: Attempting Googlebot spoof for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:01.993621 ERROR: Googlebot spoof failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:01.995797 INFO: Attempting Enhanced Wayback Machine for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.411561 ERROR: Enhanced Wayback Machine failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: No archived snapshots found in any timeframe
+2025-09-15T00:06:03.413048 INFO: Attempting Wayback Machine for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.590011 ERROR: Wayback Machine failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: No archived snapshots found
+2025-09-15T00:06:03.592106 ERROR: All fetch strategies failed or returned low-quality content for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico. Attempting Google Search fallback...
+2025-09-15T00:06:03.592749 INFO: Google Search fallback: searching for 'favicon.ico'
+2025-09-15T00:06:03.625741 INFO: Google Search fallback did not find alternative URL
+2025-09-15T00:06:03.633796 INFO: Attempting direct fetch for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.686634 ERROR: Direct fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.688294 INFO: Attempting Reader Mode strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.743270 ERROR: Reader mode fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.744940 INFO: Attempting JS Disabled strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.796902 ERROR: JS disabled fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.798397 INFO: Attempting Refresh Stop strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.852203 ERROR: Refresh stop fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: cannot use a string pattern on a bytes-like object
+2025-09-15T00:06:03.853711 INFO: Attempting Inspect Element strategy for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.908297 ERROR: Inspect element fetch failed for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico: 403 Client Error: Forbidden for url: https://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:03.910419 INFO: Attempting removepaywalls.com bypass for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:07.679622 INFO: Suspicious title-to-content ratio: 0.11. Likely truncated.
+2025-09-15T00:06:07.679736 INFO: paywall_bypass succeeded but content appears truncated/low quality, trying next strategy...
+2025-09-15T00:06:07.679763 INFO: Attempting archive.today for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:10.433297 INFO: No existing archive found, creating new archive for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:11.339572 INFO: Rate limited on archive.today, trying next mirror...
+2025-09-15T00:06:11.340452 INFO: Attempting archive.is for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:14.398383 INFO: Attempting archive.li for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
+2025-09-15T00:06:17.174445 INFO: Attempting archive.fo for http://www.vanityfair.com/web/20110529092155im_/http://www.vanityfair.com/favicon.ico
