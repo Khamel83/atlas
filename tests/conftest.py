@@ -1,183 +1,240 @@
-"""
-Pytest configuration and shared fixtures for Atlas v4 testing.
-"""
+"""Pytest configuration and fixtures for Atlas API tests."""
 
 import pytest
 import tempfile
 import shutil
-import sys
 from pathlib import Path
-from typing import Dict, Any, Generator
-from unittest.mock import MagicMock
+from unittest.mock import Mock, AsyncMock
+import json
+from datetime import datetime
 
-# Add src directory to Python path
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-
-from atlas.config import AtlasConfig, VaultConfig, LoggingConfig
+# Add web/api to Python path
+import sys
+web_api_path = Path(__file__).parent.parent / "web" / "api"
+sys.path.insert(0, str(web_api_path))
 
 @pytest.fixture
-def temp_dir() -> Generator[Path, None, None]:
-    """Create a temporary directory for tests."""
-    temp_path = Path(tempfile.mkdtemp(prefix="atlas_test_"))
-    yield temp_path
+def temp_dir():
+    """Create a temporary directory for test files."""
+    temp_path = tempfile.mkdtemp()
+    yield Path(temp_path)
     shutil.rmtree(temp_path)
 
 
 @pytest.fixture
-def sample_config() -> AtlasConfig:
-    """Create a sample Atlas configuration for testing."""
-    return AtlasConfig(
-        vault=VaultConfig(root="./test_vault"),
-        logging=LoggingConfig(level="DEBUG", enable_console=False)
-    )
-
-
-@pytest.fixture
-def config_file(temp_dir: Path, sample_config: AtlasConfig) -> Path:
-    """Create a temporary configuration file."""
-    config_path = temp_dir / "test_config.yaml"
-
-    # Create basic config file
-    config_content = """
-version: "4.0.0"
-
-vault:
-  root: "./test_vault"
-  inbox_dir: "inbox"
-  logs_dir: "logs"
-  failures_dir: "failures"
-
-logging:
-  level: "DEBUG"
-  enable_console: false
-
-processing:
-  max_concurrent_jobs: 2
-  timeout_seconds: 60
-  retry_attempts: 1
-"""
-
-    config_path.write_text(config_content)
-    return config_path
-
-
-@pytest.fixture
-def sample_rss_content() -> str:
-    """Sample RSS feed content for testing."""
-    return """<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-    <channel>
-        <title>Test Podcast</title>
-        <description>A test podcast for Atlas</description>
-        <link>https://example.com/podcast</link>
-        <language>en</language>
-        <item>
-            <title>Test Episode 1</title>
-            <description>This is a test episode description with enough content to be valid.</description>
-            <link>https://example.com/episode1</link>
-            <pubDate>Mon, 16 Oct 2024 12:00:00 GMT</pubDate>
-            <guid>episode1-12345</guid>
-            <enclosure url="https://example.com/episode1.mp3" type="audio/mpeg" length="1000000" />
-        </item>
-        <item>
-            <title>Test Episode 2</title>
-            <description>Another test episode with different content for testing deduplication.</description>
-            <link>https://example.com/episode2</link>
-            <pubDate>Tue, 17 Oct 2024 14:30:00 GMT</pubDate>
-            <guid>episode2-67890</guid>
-            <enclosure url="https://example.com/episode2.mp3" type="audio/mpeg" length="1500000" />
-        </item>
-    </channel>
-</rss>"""
-
-
-@pytest.fixture
-def sample_article_content() -> str:
-    """Sample article content for testing."""
-    return """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Test Article: Atlas Development</title>
-    <meta name="author" content="Test Author">
-    <meta name="description" content="A test article about Atlas development">
-    <meta property="article:published_time" content="2024-10-16T12:00:00Z">
-</head>
-<body>
-    <article>
-        <h1>Building Atlas v4</h1>
-        <p>This is a comprehensive test article about building Atlas v4, the personal knowledge automation system. It contains multiple paragraphs to ensure it meets the minimum content requirements for validation testing.</p>
-
-        <h2>Core Principles</h2>
-        <p>Atlas follows the philosophy of simplicity over complexity. Each module is designed to be under 300 lines of code and focus on doing one thing well. This approach ensures maintainability and reliability.</p>
-
-        <h2>Architecture</h2>
-        <p>The system is built with independent ingestion modules that can run standalone. Content is stored as Markdown+YAML files, making it compatible with Obsidian and other knowledge management tools.</p>
-
-        <p>This article provides sufficient content length for testing the ingestion and validation pipeline. It includes proper structure and metadata that would be found in a real article.</p>
-    </article>
-</body>
-</html>
-"""
-
-
-@pytest.fixture
-def sample_content_item() -> Dict[str, Any]:
-    """Sample content item data structure."""
+def sample_trojanhorse_note():
+    """Sample TrojanHorse note for testing."""
     return {
-        "id": "test-article-2024-10-16",
-        "type": "article",
-        "source": "test-source",
-        "title": "Test Article: Atlas Development",
-        "date": "2024-10-16T12:00:00Z",
-        "author": "Test Author",
-        "url": "https://example.com/test-article",
-        "content_hash": "abcd1234567890abcd1234567890abcd1234567890abcd1234567890abcd1234",
-        "tags": ["test", "atlas", "development"],
-        "ingested_at": "2024-10-16T12:30:00Z",
-        "content": "# Test Article: Atlas Development\n\nThis is the content of the test article..."
+        "id": "test-note-123",
+        "path": "/Users/user/WorkVault/Processed/work/meetings/2024/test-note.md",
+        "title": "Project Sync Meeting",
+        "source": "drafts",
+        "raw_type": "meeting_transcript",
+        "class_type": "work",
+        "category": "meeting",
+        "project": "project-x",
+        "tags": ["project-x", "sync", "weekly"],
+        "created_at": "2024-01-15T14:30:00.000Z",
+        "updated_at": "2024-01-15T14:35:00.000Z",
+        "summary": "Weekly project sync meeting discussing timeline and blockers",
+        "body": "# Project Sync Meeting\n\n## Attendees\n- John (PM)\n- Sarah (Dev)\n- Mike (Designer)\n\n## Discussion\nDiscussed the Q1 roadmap and timeline for the payment integration project.",
+        "frontmatter": {
+            "meeting_type": "weekly_sync",
+            "duration_minutes": 45,
+            "priority": "high",
+            "attendees": ["John", "Sarah", "Mike"]
+        }
     }
 
 
 @pytest.fixture
-def mock_requests_response():
-    """Create a mock requests Response object."""
-    mock_response = MagicMock()
-    mock_response.status_code = 200
-    mock_response.ok = True
-    mock_response.text = "<html><body>Test content</body></html>"
-    mock_response.content = b"<html><body>Test content</body></html>"
-    mock_response.headers = {"Content-Type": "text/html"}
-    return mock_response
+def sample_trojanhorse_notes_batch():
+    """Sample batch of TrojanHorse notes for testing."""
+    return [
+        {
+            "id": "note-1",
+            "title": "Meeting: Project Planning",
+            "body": "# Project Planning Meeting\n\nDiscussed Q1 objectives and timeline.",
+            "category": "meeting",
+            "project": "project-x",
+            "tags": ["planning", "q1"],
+            "class_type": "work",
+            "source": "drafts"
+        },
+        {
+            "id": "note-2",
+            "title": "Idea: Mobile App Feature",
+            "body": "# Mobile App Idea\n\nAdd real-time notifications to improve user engagement.",
+            "category": "idea",
+            "project": "mobile-app",
+            "tags": ["idea", "mobile", "notifications"],
+            "class_type": "work",
+            "source": "macwhisper"
+        },
+        {
+            "id": "note-3",
+            "title": "Task: Fix Payment Bug",
+            "body": "# Payment Bug Fix\n\nCritical issue in payment processing needs immediate attention.",
+            "category": "task",
+            "project": "payments",
+            "tags": ["bug", "urgent", "payments"],
+            "class_type": "work",
+            "source": "clipboard"
+        }
+    ]
 
 
 @pytest.fixture
-def vault_structure(temp_dir: Path) -> Path:
-    """Create a sample vault directory structure."""
-    vault_path = temp_dir / "vault"
+def mock_simple_database():
+    """Mock SimpleDatabase for testing."""
+    db = Mock()
 
-    # Create vault structure
-    (vault_path / "inbox" / "newsletters" / "2024" / "10").mkdir(parents=True)
-    (vault_path / "inbox" / "podcasts" / "2024" / "10").mkdir(parents=True)
-    (vault_path / "inbox" / "articles" / "2024" / "10").mkdir(parents=True)
-    (vault_path / "inbox" / "youtube" / "2024" / "10").mkdir(parents=True)
-    (vault_path / "inbox" / "emails" / "2024" / "10").mkdir(parents=True)
-    (vault_path / "logs").mkdir(parents=True)
-    (vault_path / "failures").mkdir(parents=True)
+    # Mock connection context manager
+    mock_conn = Mock()
+    mock_cursor = Mock()
 
-    return vault_path
+    def get_connection():
+        from contextlib import contextmanager
+
+        @contextmanager
+        def _context():
+            yield mock_conn
+        return _context()
+
+    db.get_connection = get_connection
+    mock_conn.__enter__ = Mock(return_value=mock_conn)
+    mock_conn.__exit__ = Mock(return_value=None)
+    mock_conn.execute = Mock(return_value=mock_cursor)
+    mock_cursor.fetchone = Mock()
+    mock_cursor.fetchall = Mock()
+
+    return db
 
 
+@pytest.fixture
+def mock_env_vars(monkeypatch):
+    """Mock environment variables for testing."""
+    monkeypatch.setenv("ATLAS_API_KEY", "test-api-key")
+    monkeypatch.setenv("ATLAS_VAULT", "/test/atlas")
+    return monkeypatch
+
+
+@pytest.fixture
+def test_client():
+    """Create a test client for Atlas FastAPI app."""
+    from fastapi.testclient import TestClient
+    from main import app
+
+    # Mock database dependencies
+    with patch('helpers.simple_database.SimpleDatabase'):
+        return TestClient(app)
+
+
+@pytest.fixture
+async def async_test_client():
+    """Create an async test client for Atlas FastAPI app."""
+    import httpx
+    from main import app
+
+    # Mock database dependencies
+    with patch('helpers.simple_database.SimpleDatabase'):
+        async with httpx.AsyncClient(app=app, base_url="http://test") as client:
+            yield client
+
+
+@pytest.fixture
+def sample_atlas_stats():
+    """Sample Atlas statistics response."""
+    return {
+        "trojanhorse_stats": {
+            "total_notes": 1250,
+            "work_notes": 890,
+            "personal_notes": 360,
+            "meeting_notes": 234,
+            "idea_notes": 189,
+            "task_notes": 145,
+            "unique_projects": 12
+        },
+        "recent_activity": [
+            {
+                "title": "Project Sync Meeting",
+                "created_at": "2024-01-15T14:30:00.000Z",
+                "category": "meeting"
+            },
+            {
+                "title": "New Feature Idea",
+                "created_at": "2024-01-15T11:20:00.000Z",
+                "category": "idea"
+            }
+        ],
+        "project_breakdown": [
+            {
+                "project": "project-x",
+                "count": 89
+            },
+            {
+                "project": "dashboard",
+                "count": 45
+            },
+            {
+                "project": "payments",
+                "count": 23
+            }
+        ]
+    }
+
+
+@pytest.fixture
+def create_test_file(temp_dir):
+    """Helper function to create test files."""
+    def _create_file(filename: str, content: str = "Test content"):
+        file_path = temp_dir / filename
+        file_path.parent.mkdir(parents=True, exist_ok=True)
+        file_path.write_text(content)
+        return file_path
+    return _create_file
+
+
+@pytest.fixture
+def invalid_trojanhorse_note():
+    """Invalid TrojanHorse note for validation testing."""
+    return {
+        "id": "",  # Empty ID should fail validation
+        "title": "Test Note",
+        "body": "Content here",
+        "category": "test",
+        "project": "test"
+    }
+
+
+@pytest.fixture
+def oversized_trojanhorse_note():
+    """Oversized TrojanHorse note for size limit testing."""
+    return {
+        "id": "oversized-note",
+        "title": "Oversized Note",
+        "body": "x" * 2000000,  # 2MB+ content should fail validation
+        "category": "test",
+        "project": "test"
+    }
+
+
+@pytest.fixture
+def trojanhorse_note_with_many_tags():
+    """TrojanHorse note with too many tags for validation testing."""
+    return {
+        "id": "many-tags-note",
+        "title": "Note with Many Tags",
+        "body": "Content here",
+        "category": "test",
+        "project": "test",
+        "tags": [f"tag-{i}" for i in range(100)]  # 100 tags should fail validation
+    }
+
+
+# Mock the SimpleDatabase import for all tests
 @pytest.fixture(autouse=True)
-def cleanup_env(monkeypatch):
-    """Clean up environment variables for tests."""
-    # Clear potentially problematic environment variables
-    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
-    monkeypatch.delenv("TELEGRAM_USER_ID", raising=False)
-    monkeypatch.delenv("ATLAS_CONFIG", raising=False)
-
-
-@pytest.fixture
-def mock_logger():
-    """Create a mock logger for testing."""
-    return MagicMock()
+def mock_database_import():
+    """Automatically mock SimpleDatabase import for all tests."""
+    with patch('helpers.simple_database.SimpleDatabase'):
+        yield
