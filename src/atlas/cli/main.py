@@ -18,7 +18,8 @@ from .commands import (
     QueryCommand,
     StatusCommand,
     ConfigCommand,
-    CleanupCommand
+    CleanupCommand,
+    APICommand
 )
 
 
@@ -41,6 +42,7 @@ Examples:
   atlas status --detailed
   atlas cleanup --old-days 30
   atlas config --validate --file ~/.atlas/config.yaml
+  atlas api --host 0.0.0.0 --port 8787
         """
     )
 
@@ -119,6 +121,13 @@ Examples:
         help="Clean up old data and optimize storage"
     )
     CleanupCommand.configure_parser(cleanup_parser)
+
+    # API command
+    api_parser = subparsers.add_parser(
+        "api",
+        help="Start Atlas REST API server"
+    )
+    APICommand.configure_parser(api_parser)
 
     return parser
 
@@ -269,7 +278,8 @@ def main(argv: Optional[List[str]] = None) -> int:
             'query': QueryCommand,
             'status': StatusCommand,
             'config': ConfigCommand,
-            'cleanup': CleanupCommand
+            'cleanup': CleanupCommand,
+            'api': APICommand
         }
 
         command_class = command_classes.get(args.command)

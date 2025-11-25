@@ -14,6 +14,13 @@
 ./start_atlas.sh
 ```
 
+**Start API Server:**
+```bash
+atlas api                    # Default: localhost:7444
+atlas api --host 0.0.0.0 --port 8787    # Custom host/port
+atlas api --reload           # Auto-reload for development
+```
+
 ---
 
 ## 📊 System Status
@@ -96,12 +103,124 @@
 
 ---
 
+## 🌐 REST API Integration
+
+Atlas includes a comprehensive REST API that enables integration with external systems like TrojanHorse, web applications, and automation scripts.
+
+### Start API Server
+
+```bash
+atlas api                              # Default: localhost:7444
+atlas api --host 0.0.0.0 --port 8787  # Custom host/port
+atlas api --reload                     # Auto-reload for development
+atlas api --workers 4                  # Multiple workers
+```
+
+### API Endpoints
+
+#### Core API (prefix: `/api/v1/`)
+- **Health Check**: `GET /api/v1/health`
+- **Content Search**: `GET /api/v1/search`
+- **Content Management**: `/api/v1/content/*`
+- **Analytics**: `/api/v1/dashboard/*`
+
+#### TrojanHorse Integration (prefix: `/trojanhorse/`)
+- **Health**: `GET /trojanhorse/health`
+- **Ingest Single**: `POST /trojanhorse/ingest`
+- **Ingest Batch**: `POST /trojanhorse/ingest/batch`
+- **Statistics**: `GET /trojanhorse/stats`
+
+### TrojanHorse Integration
+
+Atlas provides dedicated endpoints for ingesting notes from TrojanHorse:
+
+```bash
+# Check Atlas health
+curl http://localhost:7444/trojanhorse/health
+
+# Ingest single note (with authentication)
+curl -X POST http://localhost:7444/trojanhorse/ingest \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: your-atlas-api-key" \
+  -d '{
+    "id": "note-123",
+    "title": "Meeting about Project X",
+    "body": "Discussed timeline and deliverables...",
+    "category": "meeting",
+    "project": "project-x"
+  }'
+
+# Ingest batch notes
+curl -X POST http://localhost:7444/trojanhorse/ingest/batch \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: your-atlas-api-key" \
+  -d '{
+    "notes": [
+      {"id": "note-1", "title": "Idea 1", "body": "..."},
+      {"id": "note-2", "title": "Task 2", "body": "..."}
+    ]
+  }'
+```
+
+#### Environment Configuration
+
+For TrojanHorse integration, set these environment variables:
+
+```bash
+# Required for TrojanHorse to find Atlas
+export ATLAS_API_URL="http://localhost:7444"
+
+# Optional (if Atlas requires authentication)
+export ATLAS_API_KEY="your-secret-api-key"
+```
+
+#### Workflow Example
+
+```bash
+# 1. Start Atlas API
+atlas api --host 0.0.0.0 --port 8787
+
+# 2. Configure TrojanHorse (in separate terminal)
+export ATLAS_API_URL="http://localhost:8787"
+export ATLAS_API_KEY="your-key"
+
+# 3. Promote TrojanHorse notes to Atlas
+th promote-to-atlas "note1,note2,note3"
+```
+
+### API Documentation
+
+- **Interactive Docs**: http://localhost:7444/docs
+- **TrojanHorse Integration**: http://localhost:7444/trojanhorse/docs
+- **OpenAPI Schema**: http://localhost:7444/openapi.json
+
+### Authentication
+
+Atlas supports API key authentication for secure integrations:
+
+```bash
+# Set API key in Atlas environment
+export ATLAS_API_KEY="your-secure-api-key"
+
+# Use in requests
+curl -H "X-API-Key: your-secure-api-key" http://localhost:7444/api/v1/...
+```
+
+### Rate Limiting & Security
+
+- Localhost-only binding by default (127.0.0.1)
+- API key authentication for cross-origin requests
+- Request validation and sanitization
+- Error handling and logging
+
 ## 📝 Quick Reference
 
 | Command | Purpose |
 |---------|---------|
 | `./atlas_status.sh` | **Check system status** |
 | `./start_atlas.sh` | Start Atlas processing |
+| `atlas api` | Start REST API server |
+| `curl http://localhost:7444/health` | Check API health |
 | `tail -f logs/atlas_manager.log` | View live processing logs |
 | `sqlite3 data/databases/atlas_content_before_reorg.db "SELECT COUNT(*) FROM episodes WHERE transcript_found = 1;"` | Quick transcript count |
 

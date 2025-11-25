@@ -12,7 +12,7 @@ import magic
 # Add parent directory to Python path for module imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from api.routers import content, search, cognitive, auth, dashboard, transcription, worker, shortcuts, transcript_search, transcript_stats, podcast_progress
+from api.routers import content, search, cognitive, auth, dashboard, transcription, worker, shortcuts, transcript_search, transcript_stats, podcast_progress, trojanhorse
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -49,11 +49,21 @@ app.include_router(shortcuts.router, prefix="/api/v1/shortcuts", tags=["shortcut
 app.include_router(transcript_search.router, prefix="/api/v1/transcripts", tags=["transcript_search"])
 app.include_router(transcript_stats.router, prefix="/api/v1/transcripts", tags=["transcript_stats"])
 app.include_router(podcast_progress.router, prefix="/api/v1/podcast-progress", tags=["podcast_progress"])
+app.include_router(trojanhorse.router, prefix="/trojanhorse", tags=["trojanhorse"])
 
 @app.get("/api/v1/health")
 async def health_check():
     # Google Custom Search API now configured
     return {"status": "healthy"}
+
+@app.get("/health")
+async def trojanhorse_health_check():
+    """Health check endpoint for TrojanHorse integration (root level)."""
+    return {
+        "status": "healthy",
+        "service": "Atlas API",
+        "timestamp": datetime.datetime.now().isoformat()
+    }
 
 @app.get("/search")
 async def search_redirect(
