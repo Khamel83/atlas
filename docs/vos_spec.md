@@ -142,6 +142,12 @@ PROCESSOR_SLEEP_SECONDS=60
   - `mcp check worker` – run worker against fixture queue and assert DB inserts
   - `mcp check api` – start FastAPI (uvicorn) and run health/search tests
 - All checks run before each push.
+ - **New CLI check scripts:** 
+   - `scripts/mcp_check_queue.sh` runs `pytest tests/test_queue.py`
+   - `scripts/mcp_check_worker.sh` executes `python3 -m vos.cli worker --max-iterations 5`
+   - `scripts/mcp_check_ingest.sh` polls RSS + Gmail (if creds provided) and confirms new jobs
+   - `scripts/mcp_check_status.sh` reports queue summary, Whoosh docs, and SQLite content count
+   These scripts are lightweight self-checks you can wrap into MCP tooling or cron jobs for automated reliability scans.
 
 ## 13. Rollout Plan
 1. Finish spec (this doc) and commit.
