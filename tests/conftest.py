@@ -1,17 +1,20 @@
 """Pytest configuration and fixtures for Atlas API tests."""
 
-import pytest
-import tempfile
-import shutil
-from pathlib import Path
-from unittest.mock import Mock, AsyncMock
 import json
-from datetime import datetime
+import shutil
 
 # Add web/api to Python path
 import sys
+import tempfile
+from datetime import datetime
+from pathlib import Path
+from unittest.mock import AsyncMock, Mock, patch
+
+import pytest
+
 web_api_path = Path(__file__).parent.parent / "web" / "api"
 sys.path.insert(0, str(web_api_path))
+
 
 @pytest.fixture
 def temp_dir():
@@ -42,8 +45,8 @@ def sample_trojanhorse_note():
             "meeting_type": "weekly_sync",
             "duration_minutes": 45,
             "priority": "high",
-            "attendees": ["John", "Sarah", "Mike"]
-        }
+            "attendees": ["John", "Sarah", "Mike"],
+        },
     }
 
 
@@ -59,7 +62,7 @@ def sample_trojanhorse_notes_batch():
             "project": "project-x",
             "tags": ["planning", "q1"],
             "class_type": "work",
-            "source": "drafts"
+            "source": "drafts",
         },
         {
             "id": "note-2",
@@ -69,7 +72,7 @@ def sample_trojanhorse_notes_batch():
             "project": "mobile-app",
             "tags": ["idea", "mobile", "notifications"],
             "class_type": "work",
-            "source": "macwhisper"
+            "source": "macwhisper",
         },
         {
             "id": "note-3",
@@ -79,8 +82,8 @@ def sample_trojanhorse_notes_batch():
             "project": "payments",
             "tags": ["bug", "urgent", "payments"],
             "class_type": "work",
-            "source": "clipboard"
-        }
+            "source": "clipboard",
+        },
     ]
 
 
@@ -99,6 +102,7 @@ def mock_simple_database():
         @contextmanager
         def _context():
             yield mock_conn
+
         return _context()
 
     db.get_connection = get_connection
@@ -126,7 +130,7 @@ def test_client():
     from main import app
 
     # Mock database dependencies
-    with patch('helpers.simple_database.SimpleDatabase'):
+    with patch("helpers.simple_database.SimpleDatabase"):
         return TestClient(app)
 
 
@@ -137,7 +141,7 @@ async def async_test_client():
     from main import app
 
     # Mock database dependencies
-    with patch('helpers.simple_database.SimpleDatabase'):
+    with patch("helpers.simple_database.SimpleDatabase"):
         async with httpx.AsyncClient(app=app, base_url="http://test") as client:
             yield client
 
@@ -153,45 +157,38 @@ def sample_atlas_stats():
             "meeting_notes": 234,
             "idea_notes": 189,
             "task_notes": 145,
-            "unique_projects": 12
+            "unique_projects": 12,
         },
         "recent_activity": [
             {
                 "title": "Project Sync Meeting",
                 "created_at": "2024-01-15T14:30:00.000Z",
-                "category": "meeting"
+                "category": "meeting",
             },
             {
                 "title": "New Feature Idea",
                 "created_at": "2024-01-15T11:20:00.000Z",
-                "category": "idea"
-            }
+                "category": "idea",
+            },
         ],
         "project_breakdown": [
-            {
-                "project": "project-x",
-                "count": 89
-            },
-            {
-                "project": "dashboard",
-                "count": 45
-            },
-            {
-                "project": "payments",
-                "count": 23
-            }
-        ]
+            {"project": "project-x", "count": 89},
+            {"project": "dashboard", "count": 45},
+            {"project": "payments", "count": 23},
+        ],
     }
 
 
 @pytest.fixture
 def create_test_file(temp_dir):
     """Helper function to create test files."""
+
     def _create_file(filename: str, content: str = "Test content"):
         file_path = temp_dir / filename
         file_path.parent.mkdir(parents=True, exist_ok=True)
         file_path.write_text(content)
         return file_path
+
     return _create_file
 
 
@@ -203,7 +200,7 @@ def invalid_trojanhorse_note():
         "title": "Test Note",
         "body": "Content here",
         "category": "test",
-        "project": "test"
+        "project": "test",
     }
 
 
@@ -215,7 +212,7 @@ def oversized_trojanhorse_note():
         "title": "Oversized Note",
         "body": "x" * 2000000,  # 2MB+ content should fail validation
         "category": "test",
-        "project": "test"
+        "project": "test",
     }
 
 
@@ -228,7 +225,7 @@ def trojanhorse_note_with_many_tags():
         "body": "Content here",
         "category": "test",
         "project": "test",
-        "tags": [f"tag-{i}" for i in range(100)]  # 100 tags should fail validation
+        "tags": [f"tag-{i}" for i in range(100)],  # 100 tags should fail validation
     }
 
 
@@ -236,5 +233,5 @@ def trojanhorse_note_with_many_tags():
 @pytest.fixture(autouse=True)
 def mock_database_import():
     """Automatically mock SimpleDatabase import for all tests."""
-    with patch('helpers.simple_database.SimpleDatabase'):
+    with patch("helpers.simple_database.SimpleDatabase"):
         yield
