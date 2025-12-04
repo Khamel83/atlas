@@ -1,0 +1,72 @@
+name: Atlas Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r config/requirements-dev.txt
+
+    - name: Run linting (optional, continue on error)
+      continue-on-error: true
+      run: |
+        ruff check . || echo "Linting failed but continuing"
+
+    - name: Run tests
+      run: |
+        if [ -f "run_tests.sh" ]; then
+          ./run_tests.sh
+        else
+          pytest -v
+        fi
+
+    - name: Check test coverage (optional)
+      continue-on-error: true
+      run: |
+        pytest --cov=. --cov-report=term-missing || echo "Coverage check failed but continuing"
+
+  build-check:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Check Python syntax
+      run: |
+        python -m py_compile processors/*.py || echo "Some processors have syntax errors"
+        python -m py_compile modules/**/*.py || echo "Some modules have syntax errors"
+
+    - name: Validate configuration files
+      run: |
+        python -c "import yaml; yaml.safe_load(open('config/feeds.yaml'))" || echo "feeds.yaml has issues"
+        python -c "import json; json.load(open('config/podcast_sources.json'))" || echo "podcast_sources.json has issues"

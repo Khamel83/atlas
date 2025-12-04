@@ -1,0 +1,78 @@
+# Atlas - Podcast Transcript Discovery System
+# Root-level dependencies for end-to-end operation
+# Last updated: 2025-12-04
+
+# ==============================================================================
+# CORE WEB & API
+# ==============================================================================
+fastapi>=0.68.0              # REST API framework
+uvicorn[standard]>=0.15.0    # ASGI server
+typer                        # CLI framework (for atlas commands)
+
+# ==============================================================================
+# DATA VALIDATION & CONFIGURATION
+# ==============================================================================
+pydantic>=1.8.0              # Data validation
+python-dotenv                # .env file support
+pyyaml                       # YAML config parsing
+
+# ==============================================================================
+# CONTENT FETCHING & PARSING
+# ==============================================================================
+requests                     # HTTP client (synchronous)
+httpx                        # HTTP client (async support)
+beautifulsoup4               # HTML parsing
+lxml                         # XML/HTML parser (faster)
+readability-lxml             # Article extraction
+feedparser                   # RSS/Atom feed parsing
+
+# ==============================================================================
+# GOOGLE API INTEGRATION (Gmail, YouTube)
+# ==============================================================================
+google-api-python-client>=2.0.0
+google-auth>=2.0.0
+google-auth-oauthlib>=0.5.0
+google-auth-httplib2>=0.1.0
+
+# ==============================================================================
+# SEARCH & INDEXING
+# ==============================================================================
+whoosh                       # Full-text search indexing
+
+# ==============================================================================
+# UTILITIES
+# ==============================================================================
+python-slugify               # URL-safe string generation
+tenacity                     # Retry logic
+python-dateutil>=2.8.2       # Date parsing
+python-multipart>=0.0.5      # Multipart form data parsing
+
+# ==============================================================================
+# ANALYTICS & VISUALIZATION (optional, for dashboards)
+# ==============================================================================
+# Uncomment if using analytics dashboard
+# flask>=2.0.0
+# matplotlib>=3.5.0
+# pandas>=1.3.0
+# numpy>=1.21.0
+
+# ==============================================================================
+# TESTING (development only - see config/requirements-dev.txt for full list)
+# ==============================================================================
+pytest>=8.0.0
+pytest-asyncio>=0.21.0
+
+# ==============================================================================
+# NOTES
+# ==============================================================================
+# - For development dependencies (linting, formatting, coverage):
+#     pip install -r config/requirements-dev.txt
+#
+# - For specific feature sets:
+#     config/requirements-vos.txt      - VOS pipeline
+#     config/requirements-email.txt    - Email processing only
+#     config/requirements-api.txt      - API server only
+#
+# - Current Tier: SQLite + File-based processing
+# - Upgrade Trigger: > 500K episodes OR multi-instance coordination needed
+# - Next Tier: PostgreSQL with connection pooling

@@ -4,18 +4,28 @@
 
 ## 🚀 Quick Start
 
-**Check Status Anytime:**
+### Using Makefile (Recommended)
 ```bash
-./atlas_status.sh
+make setup    # First time: create venv and install dependencies
+make status   # Check system status
+make run      # Start Atlas processor
+make api      # Start REST API server
+make test     # Run test suite
 ```
 
-**Start Processing:**
+### Traditional Commands
 ```bash
-./start_atlas.sh
+./atlas_status.sh           # Check status
+./start_atlas.sh            # Start processing (if script exists)
+python3 processors/atlas_manager.py  # Run processor directly
 ```
 
-**Start API Server:**
+### REST API
 ```bash
+# Using Makefile
+make api
+
+# Or directly
 atlas api                    # Default: localhost:7444
 atlas api --host 0.0.0.0 --port 8787    # Custom host/port
 atlas api --reload           # Auto-reload for development
@@ -217,12 +227,16 @@ curl -H "X-API-Key: your-secure-api-key" http://localhost:7444/api/v1/...
 
 | Command | Purpose |
 |---------|---------|
-| `./atlas_status.sh` | **Check system status** |
-| `./start_atlas.sh` | Start Atlas processing |
-| `atlas api` | Start REST API server |
+| `make setup` | **First-time setup** (create venv, install deps) |
+| `make status` | **Check system status** |
+| `make run` | Start Atlas processing |
+| `make api` | Start REST API server |
+| `make test` | Run test suite |
+| `make clean` | Remove generated files |
 | `curl http://localhost:7444/health` | Check API health |
 | `tail -f logs/atlas_manager.log` | View live processing logs |
-| `sqlite3 data/databases/atlas_content_before_reorg.db "SELECT COUNT(*) FROM episodes WHERE transcript_found = 1;"` | Quick transcript count |
+
+**See `Makefile` for all available commands.**
 
 ---
 
@@ -231,6 +245,22 @@ curl -H "X-API-Key: your-secure-api-key" http://localhost:7444/api/v1/...
 **Goal:** Discover transcripts for all defined episodes across 73 curated podcasts
 **Method:** Direct crawling of defined transcript sources per podcast
 **Status:** Active processing with 750 transcripts discovered
+
+---
+
+## 📚 Documentation
+
+- **[Setup Guide](docs/SETUP.md)** - First-time setup and configuration
+- **[Architecture](docs/CURRENT_ARCHITECTURE.md)** - System design and components
+- **[Configuration](docs/CONFIGURATION.md)** - Environment variables and settings
+- **[Operations Runbook](docs/RUNBOOK.md)** - Day-to-day operations and troubleshooting
+- **[Testing Guide](docs/TESTING.md)** - Running and writing tests
+- **[API Documentation](API_DOCUMENTATION.md)** - REST API reference
+- **[Migration History](docs/migrations/)** - Historical migration reports
+
+**Current Tier**: SQLite + File-based processing
+**Upgrade Trigger**: > 500K episodes OR multi-instance coordination needed
+**Next Tier**: PostgreSQL + connection pooling
 
 ---
 

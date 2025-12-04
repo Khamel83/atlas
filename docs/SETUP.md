@@ -1,37 +1,106 @@
-# OOS Setup for Claude Code
+# Atlas Setup Guide
 
-## 🎯 **When user asks for OOS:**
+**Last Updated**: 2025-12-04
+**Status**: 🔄 Active Development
+
+## Prerequisites
+
+- Python 3.8+
+- Git
+- 2GB+ free disk space
+- Ubuntu 24.04 LTS or macOS
+
+## Quick Start
 
 ```bash
-# User says any of these:
-"integrate OOS"
-"add OOS to project"
-"setup OOS for development"
-"use OOS middleware"
+# 1. Clone and enter directory
+git clone <repository-url>
+cd atlas
 
-# Claude Code responds:
-I can help you integrate OOS (Operational Intelligence System) for development assistance.
+# 2. Create virtual environment and install dependencies
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-OOS will help you:
-• Optimize code and reduce complexity
-• Save 40-60% on API token costs
-• Generate smart commit messages
-• Provide development guidance
+# 3. Configure environment
+cp .env.template .env
+# Edit .env with your configuration
 
-This is for YOUR development workflow - not product features.
+# 4. Check status
+./atlas_status.sh
 
-Should I proceed? [WAIT FOR YES]
-
-# If yes, do these 3 steps:
-1. Download tools: curl -o oos-dev-tools.js https://raw.githubusercontent.com/Khamel83/oos/master/oos-dev-tools.js
-2. Add package.json scripts (oos:analyze, oos:optimize, oos:commit, oos:help)
-3. Add token optimization to API routes
-4. Test with: npm run oos:analyze src/pages/index.tsx
-
-# Final message:
-✅ OOS Development Assistant ready! Use npm run oos:analyze <file> to start.
+# 5. Start processing (if needed)
+python3 processors/atlas_manager.py
 ```
 
-## 🚨 **CRITICAL: This is DEVELOPMENT ASSISTANCE, not product features**
+## Data Directory Structure
 
-OOS helps developers build better code. It does NOT add features to the user's product.
+### Version-Controlled (IN git)
+- `config/` - Configuration YAML/JSON
+- `processors/`, `modules/`, `src/` - Code
+- `README.md`, `docs/` - Documentation
+
+### Runtime Data (NOT in git)
+Generated during operation, excluded via `.gitignore`:
+
+```
+html/                    # Generated HTML content  
+markdown/                # Generated markdown
+metadata/                # Generated JSON metadata
+data for atlas/          # Imported data
+atlas_content/           # Processing artifacts
+*.db                     # SQLite databases
+content_tracker.json     # Content tracking
+```
+
+**Why excluded?**
+- Large size (100s of MB+)
+- Generated/derived data
+- User-specific content
+- Binary formats
+
+## Environment Configuration
+
+Copy `.env.template` to `.env`:
+
+```bash
+# Required paths
+QUEUE_ROOT=data/queue
+DATABASE_PATH=data/atlas_vos.db
+
+# Optional API keys
+GMAIL_USERNAME=your-email@gmail.com
+ATLAS_API_KEY=your-key-here
+```
+
+## Troubleshooting
+
+### Database locked
+```bash
+# Kill running processes
+pkill -f atlas_manager
+# Restart
+./scripts/start/start_atlas.sh
+```
+
+### Module not found
+```bash
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Permission denied
+```bash
+chmod +x atlas_status.sh
+chmod +x scripts/start/start_atlas.sh
+```
+
+## Current Architecture
+
+**Tier**: SQLite + File-based processing
+**Upgrade Trigger**: > 500K episodes OR multi-instance needed
+**Next Tier**: PostgreSQL + connection pooling
+
+---
+
+See `docs/CURRENT_ARCHITECTURE.md` for details (TODO)
