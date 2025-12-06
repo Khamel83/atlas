@@ -1,0 +1,66 @@
+# ONE_SHOT Checkpoint File
+# Tracks project state for session continuity
+
+checkpoint:
+  version: "3.0"
+  project: "atlas"
+  created: "2025-12-06"
+  last_updated: "2025-12-06"
+
+  # Current project phase
+  phase: "production"
+  status: "active"
+
+  # ONE_SHOT retrofit status
+  retrofit:
+    completed: true
+    date: "2025-12-06"
+    artifacts:
+      - AGENTS.md
+      - LLM-OVERVIEW.md
+      - PRD.md
+      - scripts/setup.sh
+      - scripts/start.sh
+      - scripts/stop.sh
+      - scripts/status.sh
+      - .oneshot/checkpoint.yaml
+
+  # Project metrics
+  metrics:
+    episodes_total: 2373
+    transcripts_found: 750
+    completion_percent: 31
+    podcasts_tracked: 73
+
+  # Last session context
+  last_session:
+    date: "2025-12-06"
+    task: "ONE_SHOT v3.0 retrofit"
+    outcome: "completed"
+    notes: "Applied ONE_SHOT standard to existing Atlas project"
+
+  # Pending work (from PRD v1.1)
+  pending:
+    - "YouTube transcript extraction"
+    - "Reach 50% transcript coverage"
+    - "Consolidate processor files (135 → ~20)"
+
+  # Agent handoff notes
+  handoff:
+    context: |
+      Atlas is a mature, production-ready podcast transcript discovery system.
+      The ONE_SHOT retrofit added standard artifacts and scripts.
+      The codebase is real and functional, not stubs.
+
+    quick_commands:
+      start: "./scripts/start.sh"
+      stop: "./scripts/stop.sh"
+      status: "./scripts/status.sh"
+      api: "make api"
+      test: "make test"
+
+    key_files:
+      processor: "processors/atlas_manager.py"
+      api: "web/api.py"
+      database: "podcast_processing.db"
+      config: "config/feeds.yaml"
