@@ -54,8 +54,9 @@ data/content/article/2025/12/09/{content_id}/
 | Add cookie support | ✅ Done |
 | Create URL resurrector | ✅ Done |
 | Update storage format | ✅ Done |
-| Process 850 failed URLs | Pending |
-| Soft 404 detection | Pending |
+| Process 850 failed URLs | ✅ Running (via `scripts/retry_failed_urls.py`) |
+| Soft 404 detection | ✅ Done |
+| Integrate into content pipeline | ✅ Done |
 
 ### Usage
 

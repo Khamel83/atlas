@@ -49,6 +49,42 @@ from readability import Document
 
 logger = logging.getLogger(__name__)
 
+# Soft 404 detection patterns - pages that return 200 but are actually error pages
+SOFT_404_PATTERNS = [
+    r"page\s*(not\s*found|doesn't\s*exist|could\s*not\s*be\s*found)",
+    r"(404|not\s*found)\s*error",
+    r"(this\s*)?(page|article|content)\s*(has\s*been\s*)?(deleted|removed|expired)",
+    r"no\s*longer\s*available",
+    r"content\s*unavailable",
+    r"we\s*couldn't\s*find\s*(that|the)\s*page",
+    r"sorry,?\s*we\s*can('|no)t\s*find",
+    r"the\s*requested\s*(url|page|resource)\s*was\s*not\s*found",
+    r"oops[!,]?\s*(page|that)?\s*not\s*found",
+    r"this\s*link\s*(may\s*be\s*)?(broken|expired)",
+]
+
+# URL patterns that should be skipped (not real content)
+SKIP_URL_PATTERNS = [
+    r'/unsubscribe',
+    r'/subscribe/?$',
+    r'/join/?(\?|$)',
+    r'/signup/?$',
+    r'/login/?$',
+    r'/logout/?$',
+    r'/account/?$',
+    r'/settings/?$',
+    r'/preferences/?$',
+    r'/manage/?$',
+    r'subscribe__coupon=',
+    r'facebook\.com/',
+    r'twitter\.com/',
+    r'linkedin\.com/',
+    r'instagram\.com/',
+    r'/e/c/eyJ',  # Base64 encoded email redirect
+    r'^https?://[^/]*s3\.amazonaws\.com/[^?]+\.(png|jpg|jpeg|gif|webp)$',  # Direct S3 image URLs only
+    r'^https?://[^/]*cloudfront\.net/[^?]+\.(png|jpg|jpeg|gif|webp)$',  # Direct CloudFront image URLs
+]
+
 # Optional imports - gracefully handle missing dependencies
 try:
     import waybackpy
@@ -92,6 +128,129 @@ class FetchResult:
             "metadata": self.metadata,
             "image_count": len(self.images),
         }
+
+
+def is_soft_404(html: str, title: str = None) -> bool:
+    """
+    Detect soft 404 pages - pages that return 200 but are actually error pages.
+
+    Args:
+        html: HTML content to check
+        title: Page title (optional, for additional checks)
+
+    Returns:
+        True if this appears to be a soft 404
+    """
+    if not html:
+        return True
+
+    # Check content for soft 404 patterns
+    content_lower = html.lower()
+
+    # Check in title
+    if title:
+        title_lower = title.lower()
+        for pattern in SOFT_404_PATTERNS:
+            if re.search(pattern, title_lower, re.IGNORECASE):
+                return True
+
+    # Check for patterns in the first 5000 chars (where error messages usually appear)
+    check_text = content_lower[:5000]
+
+    for pattern in SOFT_404_PATTERNS:
+        if re.search(pattern, check_text, re.IGNORECASE):
+            # Additional check: make sure it's in a visible area (not just navigation)
+            # Look for the pattern in the body
+            body_match = re.search(r'<body[^>]*>(.*?)</body>', html, re.IGNORECASE | re.DOTALL)
+            if body_match:
+                body_text = body_match.group(1).lower()[:5000]
+                if re.search(pattern, body_text, re.IGNORECASE):
+                    return True
+            else:
+                # No body tag found, check the whole thing
+                return True
+
+    # Check for very short content (usually error pages)
+    visible_text = re.sub(r'<[^>]+>', '', html)
+    visible_text = re.sub(r'\s+', ' ', visible_text).strip()
+    if len(visible_text) < 200:
+        return True
+
+    return False
+
+
+def should_skip_url(url: str) -> tuple[bool, str]:
+    """
+    Check if a URL should be skipped (not real content).
+
+    Returns:
+        Tuple of (should_skip, reason)
+    """
+    url_lower = url.lower()
+
+    for pattern in SKIP_URL_PATTERNS:
+        if re.search(pattern, url_lower, re.IGNORECASE):
+            return True, f"Matches skip pattern: {pattern}"
+
+    return False, ""
+
+
+class EmailRedirectDecoder:
+    """Decode email tracking/redirect URLs to get the real URL."""
+
+    @staticmethod
+    def decode(url: str) -> str:
+        """
+        Try to decode email redirect URLs to get the real destination.
+
+        Handles:
+        - Base64 encoded URLs (email.puck.news, etc.)
+        - Substack redirects
+        - Customer.io tracking links
+        """
+        import base64
+        import urllib.parse
+
+        # Handle base64 encoded email redirects (email.*.../e/c/eyJ...)
+        if '/e/c/eyJ' in url or '/e/o/eyJ' in url:
+            try:
+                # Extract the base64 part
+                match = re.search(r'/e/[co]/(eyJ[^/]+)', url)
+                if match:
+                    b64_part = match.group(1)
+                    # Add padding if needed
+                    padding = 4 - len(b64_part) % 4
+                    if padding != 4:
+                        b64_part += '=' * padding
+
+                    decoded = base64.urlsafe_b64decode(b64_part).decode('utf-8')
+                    # Parse the JSON
+                    data = json.loads(decoded)
+                    if 'href' in data:
+                        return data['href']
+            except Exception as e:
+                logger.debug(f"Failed to decode base64 URL: {e}")
+
+        # Handle Substack redirects
+        if 'substack.com/redirect/' in url:
+            try:
+                # Follow the redirect to get the real URL
+                response = requests.head(url, allow_redirects=True, timeout=10)
+                if response.url != url:
+                    return response.url
+            except Exception:
+                pass
+
+        # Handle URLs with encoded parameters
+        parsed = urlparse(url)
+        if parsed.query:
+            params = urllib.parse.parse_qs(parsed.query)
+            # Check for common redirect parameters
+            for param in ['url', 'redirect', 'target', 'dest', 'destination', 'href']:
+                if param in params:
+                    return params[param][0]
+
+        return url
 
 
 class RateLimiter:
@@ -498,7 +657,25 @@ class RobustFetcher:
         Returns:
             FetchResult with content and metadata
         """
+        original_url = url
         result = FetchResult(success=False, url=url)
+
+        # Pre-processing: Decode email tracking URLs
+        decoded_url = EmailRedirectDecoder.decode(url)
+        if decoded_url != url:
+            logger.info(f"Decoded redirect URL: {url[:50]}... -> {decoded_url[:80]}...")
+            url = decoded_url
+            result.url = url
+            result.metadata['original_url'] = original_url
+
+        # Check if URL should be skipped
+        should_skip, skip_reason = should_skip_url(url)
+        if should_skip:
+            result.error = f"Skipped: {skip_reason}"
+            result.attempts.append({"method": "skip_check", "success": False, "reason": skip_reason})
+            logger.info(f"Skipping URL: {skip_reason}")
+            return result
+
         domain = urlparse(url).netloc
 
         # Strategy 1: Direct fetch with trafilatura
@@ -507,19 +684,26 @@ class RobustFetcher:
         html = self._direct_fetch(url)
 
         if html:
-            content_md, content_html, meta = self._extract_content(html, url)
-            if content_md and len(content_md) > 500:
-                result.success = True
-                result.method = "direct"
-                result.raw_html = html
-                result.content_md = content_md
-                result.content_html = content_html
-                result.title = meta.get('title')
-                result.metadata = meta
-                result.attempts.append({"method": "direct", "success": True})
-                return self._finalize_result(result, url, content_type)
-
-        result.attempts.append({"method": "direct", "success": False, "error": "No content or blocked"})
+            # Check for soft 404
+            if is_soft_404(html):
+                result.attempts.append({"method": "direct", "success": False, "error": "Soft 404 detected"})
+                logger.info(f"Soft 404 detected on direct fetch")
+            else:
+                content_md, content_html, meta = self._extract_content(html, url)
+                if content_md and len(content_md) > 500:
+                    result.success = True
+                    result.method = "direct"
+                    result.raw_html = html
+                    result.content_md = content_md
+                    result.content_html = content_html
+                    result.title = meta.get('title')
+                    result.metadata = {**result.metadata, **meta}
+                    result.attempts.append({"method": "direct", "success": True})
+                    return self._finalize_result(result, url, content_type)
+                else:
+                    result.attempts.append({"method": "direct", "success": False, "error": "No content or blocked"})
+        else:
+            result.attempts.append({"method": "direct", "success": False, "error": "Fetch failed"})
 
         # Strategy 2: Playwright (headless browser)
         if PLAYWRIGHT_AVAILABLE:
@@ -527,19 +711,25 @@ class RobustFetcher:
             html = self.playwright_fetcher.fetch(url)
 
             if html:
-                content_md, content_html, meta = self._extract_content(html, url)
-                if content_md and len(content_md) > 500:
-                    result.success = True
-                    result.method = "playwright"
-                    result.raw_html = html
-                    result.content_md = content_md
-                    result.content_html = content_html
-                    result.title = meta.get('title')
-                    result.metadata = meta
-                    result.attempts.append({"method": "playwright", "success": True})
-                    return self._finalize_result(result, url, content_type)
-
-            result.attempts.append({"method": "playwright", "success": False})
+                if is_soft_404(html):
+                    result.attempts.append({"method": "playwright", "success": False, "error": "Soft 404 detected"})
+                    logger.info(f"Soft 404 detected on Playwright fetch")
+                else:
+                    content_md, content_html, meta = self._extract_content(html, url)
+                    if content_md and len(content_md) > 500:
+                        result.success = True
+                        result.method = "playwright"
+                        result.raw_html = html
+                        result.content_md = content_md
+                        result.content_html = content_html
+                        result.title = meta.get('title')
+                        result.metadata = {**result.metadata, **meta}
+                        result.attempts.append({"method": "playwright", "success": True})
+                        return self._finalize_result(result, url, content_type)
+                    else:
+                        result.attempts.append({"method": "playwright", "success": False, "error": "No content"})
+            else:
+                result.attempts.append({"method": "playwright", "success": False, "error": "Fetch failed"})
 
         # Strategy 3: Archive.is
         logger.info(f"Attempting archive.is lookup: {url}")
