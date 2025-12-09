@@ -37,6 +37,11 @@ class NetworkTranscriptResolver:
             'pocketcasts.com': self._resolve_pocketcasts
         }
 
+    def resolve(self, episode, podcast_config: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Standard resolver interface - wraps resolve_for_episode."""
+        podcast_name = podcast_config.get('name', '')
+        return self.resolve_for_episode(episode.title, podcast_name, episode.url)
+
     def resolve_for_episode(self, episode_title: str, podcast_name: str, episode_url: str) -> List[Dict[str, Any]]:
         """Main resolver - detect network and use appropriate method."""
         results = []
@@ -90,9 +95,11 @@ class NetworkTranscriptResolver:
                     if len(text) > 500:  # Minimum viable transcript
                         results.append({
                             'url': episode_url,
-                            'text': text,
-                            'source': 'npr_official',
+                            'confidence': 0.95,
+                            'resolver': 'network_transcripts',
                             'metadata': {
+                                'content': text,
+                                'content_length': len(text),
                                 'accuracy': 'very_high',
                                 'method': 'npr_network',
                                 'selector': selector
@@ -126,9 +133,11 @@ class NetworkTranscriptResolver:
                         if len(text) > 1000:
                             results.append({
                                 'url': transcript_url,
-                                'text': text,
-                                'source': 'this_american_life_official',
+                                'confidence': 0.95,
+                                'resolver': 'network_transcripts',
                                 'metadata': {
+                                    'content': text,
+                                    'content_length': len(text),
                                     'accuracy': 'very_high',
                                     'method': 'tal_official',
                                     'episode_id': episode_id.group(1)
@@ -164,9 +173,11 @@ class NetworkTranscriptResolver:
                     if len(text) > 500:
                         results.append({
                             'url': episode_url,
-                            'text': text,
-                            'source': 'radiolab_official',
+                            'confidence': 0.95,
+                            'resolver': 'network_transcripts',
                             'metadata': {
+                                'content': text,
+                                'content_length': len(text),
                                 'accuracy': 'very_high',
                                 'method': 'radiolab_wnyc'
                             }
@@ -198,9 +209,11 @@ class NetworkTranscriptResolver:
                 if len(text) > 1000:  # Slate articles are longer
                     results.append({
                         'url': episode_url,
-                        'text': text,
-                        'source': 'slate_official',
+                        'confidence': 0.85,
+                        'resolver': 'network_transcripts',
                         'metadata': {
+                            'content': text,
+                            'content_length': len(text),
                             'accuracy': 'high',
                             'method': 'slate_network'
                         }

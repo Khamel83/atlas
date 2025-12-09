@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Atlas YouTube Retry weekly (Sundays at 3 AM)
+
+[Timer]
+# Run weekly on Sunday at 3 AM
+OnCalendar=Sun *-*-* 03:00:00
+Persistent=true
+RandomizedDelaySec=1800
+
+[Install]
+WantedBy=timers.target

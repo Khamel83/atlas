@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Atlas Transcript Fetcher every 4 hours
+
+[Timer]
+# Every 4 hours, offset by 30 min from discovery
+OnCalendar=*-*-* 00,04,08,12,16,20:30:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

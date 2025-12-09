@@ -72,7 +72,9 @@ class RSSParser:
             # Extract basic info
             guid = entry.get("guid", entry.get("id", ""))
             title = entry.get("title", "")
-            url = entry.get("link", "")
+
+            # Get episode URL - prioritize episode-specific links over generic feed link
+            url = self._extract_episode_url(entry, base_url)
 
             if not guid or not title:
                 self.logger.warning(f"Skipping entry without guid/title: {entry}")
@@ -123,6 +125,103 @@ class RSSParser:
         except Exception as e:
             self.logger.error(f"Error parsing RSS entry: {e}")
             return None
+
+    def _extract_episode_url(self, entry, base_url: str) -> str:
+        """
+        Extract the best episode-specific URL from an RSS entry.
+
+        Priority order:
+        1. Entry 'link' if it looks episode-specific (has path segments)
+        2. 'alternate' link from links array
+        3. Page URL from enclosure/media
+        4. GUID if it's a URL
+        5. Fallback to base_url (worst case)
+        """
+        # 1. Check the main link - but verify it's not just the homepage
+        main_link = entry.get("link", "")
+        if main_link and self._is_episode_specific_url(main_link, base_url):
+            return main_link
+
+        # 2. Check links array for 'alternate' type (common in Atom feeds)
+        if hasattr(entry, "links"):
+            for link in entry.links:
+                href = link.get("href", "")
+                rel = link.get("rel", "")
+                link_type = link.get("type", "")
+
+                # Prefer alternate/html links that look episode-specific
+                if rel == "alternate" or "html" in link_type:
+                    if href and self._is_episode_specific_url(href, base_url):
+                        return href
+
+                # Some feeds put episode page in a 'via' or 'related' link
+                if rel in ("via", "related") and href:
+                    if self._is_episode_specific_url(href, base_url):
+                        return href
+
+        # 3. Check for website URL in content/itunes extensions
+        for attr in ["itunes_episode_url", "content_url", "feedburner_origlink"]:
+            if hasattr(entry, attr):
+                url = getattr(entry, attr)
+                if url and self._is_episode_specific_url(url, base_url):
+                    return url
+
+        # 4. Check if GUID is a usable URL (many podcasts use episode URL as GUID)
+        guid = entry.get("guid", entry.get("id", ""))
+        if guid and guid.startswith("http") and self._is_episode_specific_url(guid, base_url):
+            # Make sure it's not an audio file URL
+            if not any(ext in guid.lower() for ext in [".mp3", ".m4a", ".wav", ".ogg"]):
+                return guid
+
+        # 5. Return main link even if generic (better than nothing)
+        if main_link:
+            return main_link
+
+        # 6. Last resort: base URL
+        return base_url
+
+    def _is_episode_specific_url(self, url: str, base_url: str) -> bool:
+        """Check if a URL appears to be episode-specific vs just a homepage"""
+        if not url:
+            return False
+
+        try:
+            parsed = urlparse(url)
+            base_parsed = urlparse(base_url)
+
+            # If it's a different domain entirely, consider it specific
+            if parsed.netloc and parsed.netloc != base_parsed.netloc:
+                return True
+
+            # Check path depth - episode URLs usually have path segments
+            path = parsed.path.strip("/")
+            if not path:
+                return False  # Just homepage
+
+            # Count path segments
+            segments = [s for s in path.split("/") if s]
+
+            # Single segment like "/episodes" is probably a list page, not an episode
+            # But "/episodes/123" or "/2024/episode-title" is likely an episode
+            if len(segments) >= 2:
+                return True
+
+            # Single segment that looks like an episode identifier
+            if len(segments) == 1:
+                segment = segments[0]
+                # Numeric IDs, slugs with hyphens, etc.
+                if any([
+                    segment.isdigit(),  # /123
+                    "-" in segment and len(segment) > 10,  # /my-episode-title
+                    "_" in segment,  # /my_episode
+                    len(segment) > 20,  # Long slugs are usually episodes
+                ]):
+                    return True
+
+            return False
+
+        except Exception:
+            return False
 
     def _extract_transcript_links(
         self, entry, description: str, base_url: str

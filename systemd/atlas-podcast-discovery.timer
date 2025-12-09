@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Atlas Podcast Discovery twice daily (finds new episodes)
+
+[Timer]
+# Run at 6am and 6pm to find new episodes from RSS
+OnCalendar=*-*-* 06,18:00:00
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,19 @@
+[Unit]
+Description=Atlas Content Retry Pipeline
+After=network.target
+
+[Service]
+Type=simple
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+Environment=PYTHONPATH=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/venv/bin/python3 /home/khamel83/github/atlas/modules/pipeline/continuous_retry.py
+Restart=on-failure
+RestartSec=60
+
+# Logging
+StandardOutput=append:/home/khamel83/github/atlas/logs/content-retry.log
+StandardError=append:/home/khamel83/github/atlas/logs/content-retry.log
+
+[Install]
+WantedBy=multi-user.target

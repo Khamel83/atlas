@@ -263,6 +263,13 @@ class GenericHTMLResolver:
         """Find transcript links within HTML content"""
         links = []
 
+        # Domains to skip (share buttons, social media, login pages)
+        skip_domains = [
+            'linkedin.com', 'facebook.com', 'twitter.com', 'x.com',
+            'tumblr.com', 'pinterest.com', 'reddit.com', 'instagram.com',
+            'mailto:', 'tel:', 'javascript:', 'tg://', '#'
+        ]
+
         try:
             from bs4 import BeautifulSoup
 
@@ -273,6 +280,14 @@ class GenericHTMLResolver:
                 href = link.get("href")
                 text = link.get_text().lower()
 
+                # Skip share/social links
+                if any(skip in href.lower() for skip in skip_domains):
+                    continue
+
+                # Skip login/signup/share URLs
+                if any(word in href.lower() for word in ['login', 'signup', 'signin', 'share', 'auth']):
+                    continue
+
                 # Check link text
                 if any(
                     word in text
@@ -280,7 +295,6 @@ class GenericHTMLResolver:
                         "transcript",
                         "transcription",
                         "full text",
-                        "read more",
                         "view transcript",
                         "episode transcript",
                     ]
@@ -301,7 +315,7 @@ class GenericHTMLResolver:
         except Exception as e:
             logger.error(f"Error finding transcript links: {e}")
 
-        return list(set(links))  # Remove duplicates
+        return list(set(links))[:5]  # Remove duplicates, limit to 5 links max
 
     def _calculate_confidence(self, url: str, content: str, episode: Episode) -> float:
         """Calculate confidence score for extracted content"""

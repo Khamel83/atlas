@@ -1,0 +1,23 @@
+[Unit]
+Description=Atlas YouTube History Sync
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+# Uses browser automation with saved cookies - run --login first
+ExecStart=/home/khamel83/github/atlas/.venv/bin/python -m modules.ingest.youtube_history_scraper --scrape --days 7
+Environment=SOPS_AGE_KEY_FILE=/home/khamel83/.age/key.txt
+
+# Logging
+StandardOutput=append:/var/log/atlas/youtube.log
+StandardError=append:/var/log/atlas/youtube.log
+
+# Restart on failure
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,22 @@
+[Unit]
+Description=Atlas Inbox Processor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/.venv/bin/python -m modules.ingest.inbox_processor
+Environment=SOPS_AGE_KEY_FILE=/home/khamel83/.age/key.txt
+
+# Logging
+StandardOutput=append:/var/log/atlas/inbox.log
+StandardError=append:/var/log/atlas/inbox.log
+
+# Restart on failure
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

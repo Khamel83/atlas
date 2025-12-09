@@ -1,0 +1,30 @@
+[Unit]
+Description=Atlas Podcast Transcript Fetcher
+After=network-online.target
+Wants=network-online.target
+Documentation=https://github.com/khamel83/atlas
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+
+# Load environment with proxy settings
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+
+# Fetch transcripts using smart limits from config/podcast_limits.json
+# No --limit flag needed - respects per-podcast limits automatically
+ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.podcasts.cli fetch-transcripts --all
+
+# Logging
+StandardOutput=append:/var/log/atlas/transcripts.log
+StandardError=append:/var/log/atlas/transcripts.log
+
+# Don't restart on failure (timer will retry)
+Restart=no
+
+# Timeout after 2 hours (transcript fetching can be slow)
+TimeoutStartSec=7200
+
+[Install]
+WantedBy=multi-user.target

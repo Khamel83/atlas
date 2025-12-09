@@ -101,6 +101,10 @@ class PodcastStore:
     def _init_database(self):
         """Initialize database schema"""
         with self._get_connection() as conn:
+            # Enable WAL mode for better concurrency
+            conn.execute("PRAGMA journal_mode=WAL")
+            conn.execute("PRAGMA busy_timeout=30000")
+
             # Podcasts table
             conn.execute(
                 """

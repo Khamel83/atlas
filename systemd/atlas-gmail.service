@@ -1,0 +1,22 @@
+[Unit]
+Description=Atlas Gmail Ingester
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/scripts/run_with_secrets.sh python -m modules.ingest.gmail_ingester --since-days 7
+Environment=SOPS_AGE_KEY_FILE=/home/khamel83/.age/key.txt
+
+# Logging
+StandardOutput=append:/var/log/atlas/gmail.log
+StandardError=append:/var/log/atlas/gmail.log
+
+# Restart on failure
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Atlas Content Retry Timer
+Requires=atlas-content-retry.service
+
+[Timer]
+# Run every 6 hours to check for new failures
+OnCalendar=*-*-* 00,06,12,18:00:00
+# Also run 5 minutes after boot
+OnBootSec=5min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,34 +1,30 @@
 # Atlas Current Architecture
 
-**Last Updated**: 2025-12-04
-**Status**: 🔄 In Transition (Homelab Migration)
+**Last Updated**: 2025-12-06
+**Status**: Clean Architecture Implemented
 
 ## Executive Summary
 
-Atlas is a podcast transcript discovery and content ingestion system using a file-first architecture with SQLite for tracking. Currently processing 2,373 episodes across 73 podcasts with 750 transcripts found (31% completion).
+Atlas is a podcast transcript discovery and content ingestion system. The codebase has been cleaned up with:
+- 34 passing tests
+- Clean FastAPI REST API
+- Modular structure in `modules/`
 
 ## Active Components
 
-### Production Processor
-**`processors/atlas_manager.py`** - Primary coordinator
-- **Status**: ✅ Active
-- **Started by**: `scripts/start/start_atlas.sh`
-- **Systemd**: `systemd/atlas-manager.service`
-- **Architecture**: Log-stream based processing
-- **Function**: Continuous transcript discovery and processing
-
 ### REST API
-**Location**: `web/api/` or `api/main.py`
+**Location**: `api/main.py`
 - **Port**: 7444 (default)
-- **Endpoints**: `/health`, `/api/v1/*`, `/trojanhorse/*`
-- **Systemd**: `systemd/atlas-api.service`
-- **Function**: REST API for external integrations (TrojanHorse, etc.)
+- **Routers**: health, podcasts, content, search
+- **Function**: REST API for external integrations
 
-### Content Processing
-**Recently Active**: `atlas_simple_processor.py` (root level)
-- **Purpose**: One-time bulk content processing
-- **Status**: ⏳ Used for migrations
-- **Last Run**: Nov 30, 2025 (Mac archive migration)
+### Core Modules
+**Location**: `modules/`
+- **podcasts/**: Podcast management with PodcastStore
+- **storage/**: FileStore + IndexManager
+- **pipeline/**: Content processing
+- **ingest/**: Gmail, YouTube ingestion
+- **notifications/**: Telegram/ntfy alerts
 
 ## Data Flow
 
@@ -36,7 +32,7 @@ Atlas is a podcast transcript discovery and content ingestion system using a fil
 1. Content Sources
    ├── RSS Feeds (config/feeds.yaml)
    ├── Email (Gmail integration)
-   ├── Web APIs (YouTube, etc.)
+   ├── YouTube
    └── Manual imports
 
 2. Processing Pipeline
@@ -46,184 +42,183 @@ Atlas is a podcast transcript discovery and content ingestion system using a fil
    └── Storage (files + SQLite tracking)
 
 3. Storage Layer
-   ├── Files: markdown/, html/, metadata/
-   ├── Database: podcast_processing.db (SQLite)
-   └── Tracking: content_tracker.json
+   ├── Files: data/content/ (organized by type/date)
+   ├── Podcasts: data/podcasts/atlas_podcasts.db
+   └── Index: data/indexes/atlas_index.db
 
 4. Access Layer
    ├── REST API (port 7444)
-   ├── CLI (atlas status, etc.)
+   ├── CLI (python -m modules.podcasts.cli)
    └── Direct database queries
 ```
 
 ## Database Schema
 
-**Primary Database**: `podcast_processing.db` (SQLite)
+### Podcast Store (`modules/podcasts/store.py`)
 
-**Key Tables**:
-- `podcasts` - Podcast metadata
-- `episodes` - Episode tracking (2,373 records)
-- `processing_queue` - Work queue
-- `processing_log` - Execution history
+**Location**: `data/podcasts/atlas_podcasts.db`
 
-**Location**: `data/databases/` or root level
+```sql
+-- Podcast metadata
+CREATE TABLE podcasts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    slug TEXT UNIQUE NOT NULL,
+    rss_url TEXT NOT NULL,
+    site_url TEXT,
+    resolver TEXT DEFAULT 'generic_html',
+    episode_selector TEXT,
+    transcript_selector TEXT,
+    config TEXT DEFAULT '{}',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-**TODO**: Document full schema
+-- Episode tracking
+CREATE TABLE episodes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    podcast_id INTEGER NOT NULL,
+    guid TEXT NOT NULL,
+    title TEXT NOT NULL,
+    url TEXT NOT NULL,
+    publish_date TIMESTAMP,
+    transcript_url TEXT,
+    transcript_status TEXT DEFAULT 'unknown',
+    transcript_path TEXT,
+    metadata TEXT DEFAULT '{}',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (podcast_id) REFERENCES podcasts (id),
+    UNIQUE (podcast_id, guid)
+);
+
+-- Transcript sources discovered
+CREATE TABLE transcript_sources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    episode_id INTEGER NOT NULL,
+    resolver TEXT NOT NULL,
+    url TEXT NOT NULL,
+    confidence REAL DEFAULT 0.0,
+    metadata TEXT DEFAULT '{}',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (episode_id) REFERENCES episodes (id)
+);
+
+-- Discovery run tracking
+CREATE TABLE discovery_runs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    podcast_id INTEGER NOT NULL,
+    resolver TEXT NOT NULL,
+    episodes_found INTEGER DEFAULT 0,
+    transcripts_found INTEGER DEFAULT 0,
+    errors INTEGER DEFAULT 0,
+    duration_seconds REAL DEFAULT 0.0,
+    status TEXT DEFAULT 'running',
+    started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    completed_at TIMESTAMP,
+    FOREIGN KEY (podcast_id) REFERENCES podcasts (id)
+);
+```
+
+### Content Index (`modules/storage/index_manager.py`)
+
+**Location**: `data/indexes/atlas_index.db`
+
+```sql
+CREATE TABLE content_index (
+    content_id TEXT PRIMARY KEY,
+    content_type TEXT NOT NULL,
+    source_type TEXT NOT NULL,
+    title TEXT NOT NULL,
+    source_url TEXT,
+    status TEXT DEFAULT 'pending',
+    file_path TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+### Transcript Status Values
+
+| Status | Description |
+|--------|-------------|
+| `unknown` | Not yet processed |
+| `found` | Transcript URL discovered |
+| `missing` | No transcript available |
+| `fetched` | Transcript downloaded |
+| `failed` | Processing error |
 
 ## File Architecture
-
-### File-First Principle
-Atlas prioritizes file-based storage over database:
-- **Raw content**: Files in native format
-- **Database**: Tracking, metadata, relationships only
-- **Benefits**: IO-throttled (not database-locked), portable, scalable
 
 ### Directory Structure
 ```
 atlas/
-├── processors/          # Processing code (147 active after cleanup)
-│   ├── atlas_manager.py # Main coordinator ✅
-│   └── archive/         # Deprecated processors
-├── data/                # Runtime data (NOT in git)
-│   ├── databases/       # SQLite databases
-│   ├── queue/           # Processing queues
-│   └── archives/        # Archived content
-├── html/                # Generated HTML (NOT in git)
-├── markdown/            # Generated markdown (NOT in git)
-├── metadata/            # Generated metadata (NOT in git)
-├── config/              # YAML/JSON configuration
-├── api/                 # REST API code
-└── scripts/             # Automation scripts
+├── api/                 # REST API
+│   ├── main.py         # FastAPI app entry
+│   └── routers/        # Endpoint routers
+├── modules/            # Core business logic
+│   ├── podcasts/       # Podcast management
+│   ├── storage/        # File/index storage
+│   ├── pipeline/       # Content processing
+│   ├── ingest/         # Ingestion handlers
+│   └── notifications/  # Alerts
+├── tests/              # Test suite (34 tests)
+├── scripts/            # Operational scripts
+├── config/             # Configuration
+├── data/               # Runtime data (gitignored)
+└── archive/            # Archived legacy code
 ```
 
-## Deployment
+## Running Atlas
 
-### Current: Development/Manual
-- **Start**: `./scripts/start/start_atlas.sh` or `make run`
-- **Status**: `./atlas_status.sh` or `make status`
-- **Stop**: `pkill -f atlas_manager.py` or `make stop`
-
-### Available: Systemd
+### Quick Start
 ```bash
-# Install service
-sudo cp systemd/atlas-manager.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable atlas-manager
-sudo systemctl start atlas-manager
-
-# Check status
-sudo systemctl status atlas-manager
+./scripts/setup.sh          # Create venv, install deps
+./scripts/status.sh         # Check system health
+./venv/bin/uvicorn api.main:app --port 7444  # Start API
+./venv/bin/pytest tests/ -v # Run tests
 ```
 
-**TODO**: Verify systemd service configuration for current paths
+### API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/health` | GET | Health check |
+| `/metrics` | GET | System metrics |
+| `/api/podcasts/` | GET | List podcasts |
+| `/api/podcasts/stats` | GET | Statistics |
+| `/api/content/` | GET | List content |
+| `/api/search/?q=` | GET | Search |
 
 ## Key Technologies
 
 | Component | Technology | Why |
 |-----------|-----------|-----|
-| **Language** | Python 3.8+ | Ecosystem, libraries |
-| **Database** | SQLite | Single-file, no server, < 500K records |
+| **Language** | Python 3.12+ | Modern async |
+| **Database** | SQLite | Single-file, no server |
 | **Web API** | FastAPI | Modern, async, auto-docs |
 | **Search** | Whoosh | Pure Python, file-based |
-| **Content Parse** | BeautifulSoup, lxml | Robust HTML/XML parsing |
-
-## Integration Points
-
-### TrojanHorse Integration
-- **Endpoints**: `/trojanhorse/ingest`, `/trojanhorse/stats`
-- **Function**: Ingest notes from TrojanHorse system
-- **Auth**: Optional API key via `X-API-Key` header
-
-### Email Integration
-- **Gmail API**: Fetch emails with specific labels
-- **Config**: `GMAIL_USERNAME`, `GMAIL_APP_PASSWORD` in `.env`
-
-### YouTube Integration
-- **YouTube API**: Fetch video transcripts
-- **Config**: `YOUTUBE_API_KEY` (optional)
+| **Testing** | pytest | Clean, simple |
 
 ## Current Tier & Upgrade Path
 
 ### Current Tier: SQLite + Files
-- **Episodes**: 2,373 (31% with transcripts)
-- **Storage**: Mixed (files + SQLite tracking)
+- **Tests**: 34 passing
+- **API Routers**: 4
+- **Modules**: 5 core
 - **Deployment**: Single-machine
-- **Performance**: Adequate for current scale
 
 ### Upgrade Trigger
-Move to next tier when:
-- **> 500K episodes** OR
-- **Multi-instance coordination needed** OR
-- **Current architecture hits performance limits**
+Move to PostgreSQL when:
+- > 500K episodes OR
+- Multi-instance coordination needed
 
-### Next Tier: PostgreSQL + Workers
-- **Database**: PostgreSQL with connection pooling
-- **Processing**: Multiple worker processes
-- **Coordination**: Distributed task queue
+## Archived Code
 
-## Known Issues & TODOs
-
-### Immediate
-- [ ] Verify active processor (atlas_manager.py vs others)
-- [ ] Document complete database schema
-- [ ] Consolidate processor duplicates (147 → ~20 core files)
-- [ ] Update systemd services for current paths
-
-### Migration Context
-- Recent Mac → Ubuntu homelab migration
-- 29,417 content files processed
-- 352MB+ data migrated
-- Migration docs in root (need to move to `docs/migrations/`)
-
-## Monitoring & Observability
-
-### Health Checks
-```bash
-# System status
-./atlas_status.sh
-
-# API health
-curl http://localhost:7444/health
-
-# Database check
-sqlite3 podcast_processing.db "SELECT COUNT(*) FROM episodes"
-```
-
-### Logs
-- **Manager**: `logs/atlas_manager.log`
-- **Systemd**: `journalctl -u atlas-manager`
-- **API**: stdout/journald
-
-### Metrics
-- **Endpoint**: `/metrics` (TODO: verify)
-- **Database**: Episode counts, transcript discovery rates
-- **Processing**: Items processed per minute
-
-## Architecture Decisions & Rationale
-
-### Why SQLite?
-- **Single-file portability** (easy backup)
-- **No server overhead**
-- **Sufficient for < 500K records** (currently 2,373)
-- **Upgrade path clear** (→ PostgreSQL when needed)
-
-### Why File-First?
-- **Avoid database locking** (IO-throttled instead)
-- **Content in native format** (markdown, HTML)
-- **Easy to inspect/debug** (just read files)
-- **Portable** (tar/zip entire directory)
-
-### Why Log-Stream Architecture?
-- **High-performance** (as per atlas_manager.py)
-- **Event-driven** (not polling)
-- **Fast file operations** (vs database bottlenecks)
-
-## Development
-
-See `docs/SETUP.md` for setup instructions.
-See `README.md` for quick start guide.
-See `Makefile` for common tasks.
+Legacy code is preserved but not used:
+- `archive/legacy_api/` - 12 broken API routers
+- `archive/legacy_tests/` - 79 broken test files
+- `archive/legacy_processors/` - 216 old processors
 
 ---
 
-**Questions?** Check `processors/README.md` for processor details.
+*For API docs, run the API and visit `/docs`*

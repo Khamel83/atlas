@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Atlas Gmail Ingester every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

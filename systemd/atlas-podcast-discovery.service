@@ -1,0 +1,24 @@
+[Unit]
+Description=Atlas Podcast Episode Discovery
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+# Discover new episodes from RSS feeds for all podcasts
+ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.podcasts.cli discover --all
+
+# Logging
+StandardOutput=append:/var/log/atlas/podcast-discovery.log
+StandardError=append:/var/log/atlas/podcast-discovery.log
+
+# Don't restart on failure (timer will retry)
+Restart=no
+
+# Timeout after 30 minutes
+TimeoutStartSec=1800
+
+[Install]
+WantedBy=multi-user.target

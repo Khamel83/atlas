@@ -1,71 +1,101 @@
+"""
+Tests for the API endpoints.
+"""
+
 import pytest
 from fastapi.testclient import TestClient
-import sys
-import os
-
-# Add project root to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from api.main import app
 
 client = TestClient(app)
 
-def test_health_check():
-    """Test the health check endpoint"""
-    response = client.get("/api/v1/health")
-    assert response.status_code == 200
-    assert response.json() == {"status": "healthy"}
 
-def test_auth_generate_key():
-    """Test API key generation"""
-    response = client.post("/api/v1/auth/generate", json={"name": "test_key"})
-    assert response.status_code == 200
-    data = response.json()
-    assert "api_key" in data
-    assert "name" in data
-    assert data["name"] == "test_key"
+class TestHealthEndpoints:
+    """Test health check endpoints."""
 
-def test_content_list():
-    """Test content listing"""
-    response = client.get("/api/v1/content/")
-    assert response.status_code == 200
-    data = response.json()
-    assert "items" in data
-    assert "total" in data
+    def test_root(self):
+        """Test root endpoint."""
+        response = client.get("/")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["name"] == "Atlas API"
+        assert "version" in data
 
-def test_cognitive_proactive():
-    """Test proactive content endpoint"""
-    response = client.get("/api/v1/cognitive/proactive")
-    # This might return 501 if cognitive features aren't available
-    assert response.status_code in [200, 501]
+    def test_health(self):
+        """Test health endpoint."""
+        response = client.get("/health")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["status"] == "healthy"
+        assert "timestamp" in data
 
-def test_cognitive_temporal():
-    """Test temporal relationships endpoint"""
-    response = client.get("/api/v1/cognitive/temporal")
-    # This might return 501 if cognitive features aren't available
-    assert response.status_code in [200, 501]
+    def test_metrics(self):
+        """Test metrics endpoint."""
+        response = client.get("/metrics")
+        assert response.status_code == 200
+        data = response.json()
+        assert "timestamp" in data
 
-def test_cognitive_socratic():
-    """Test Socratic questions endpoint"""
-    # The endpoint expects a form parameter
-    response = client.post("/api/v1/cognitive/socratic", data={"content": "The sky is blue."})
-    # This might return 501 if cognitive features aren't available
-    assert response.status_code in [200, 501]
 
-def test_cognitive_recall():
-    """Test recall items endpoint"""
-    response = client.get("/api/v1/cognitive/recall")
-    # This might return 501 if cognitive features aren't available
-    assert response.status_code in [200, 501]
+class TestPodcastEndpoints:
+    """Test podcast endpoints."""
 
-def test_cognitive_patterns():
-    """Test patterns endpoint"""
-    response = client.get("/api/v1/cognitive/patterns")
-    # This might return 501 if cognitive features aren't available
-    assert response.status_code in [200, 501]
+    def test_list_podcasts(self):
+        """Test listing podcasts."""
+        response = client.get("/api/podcasts/")
+        assert response.status_code == 200
+        data = response.json()
+        assert isinstance(data, list)
 
-def test_search_index():
-    """Test search index creation"""
-    response = client.post("/api/v1/search/index")
-    # This might return 500 if there's no content to index
-    assert response.status_code in [200, 500]
+    def test_get_stats(self):
+        """Test getting podcast stats."""
+        response = client.get("/api/podcasts/stats")
+        assert response.status_code == 200
+        data = response.json()
+        assert "total_podcasts" in data
+        assert "episodes_by_status" in data
+
+    def test_get_nonexistent_podcast(self):
+        """Test getting a podcast that doesn't exist."""
+        response = client.get("/api/podcasts/99999")
+        assert response.status_code == 404
+
+
+class TestContentEndpoints:
+    """Test content endpoints."""
+
+    def test_list_content(self):
+        """Test listing content."""
+        response = client.get("/api/content/")
+        assert response.status_code == 200
+        data = response.json()
+        assert "items" in data
+        assert "total" in data
+
+    def test_get_content_stats(self):
+        """Test getting content stats."""
+        response = client.get("/api/content/stats")
+        assert response.status_code == 200
+
+    def test_get_nonexistent_content(self):
+        """Test getting content that doesn't exist."""
+        response = client.get("/api/content/nonexistent123")
+        assert response.status_code == 404
+
+
+class TestSearchEndpoints:
+    """Test search endpoints."""
+
+    def test_search_requires_query(self):
+        """Test that search requires a query parameter."""
+        response = client.get("/api/search/")
+        assert response.status_code == 422  # Validation error
+
+    def test_search_with_query(self):
+        """Test searching with a query."""
+        response = client.get("/api/search/?q=test")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["query"] == "test"
+        assert "results" in data
+        assert "total" in data
