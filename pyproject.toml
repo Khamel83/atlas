@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlas"
+version = "2.0.0"
+description = "Personal content ingestion and knowledge management system"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Khamel", email = "khamel83@gmail.com"}
+]
+
+dependencies = [
+    "fastapi>=0.68.0",
+    "uvicorn[standard]>=0.15.0",
+    "typer",
+    "pydantic>=1.8.0",
+    "python-dotenv",
+    "pyyaml",
+    "requests",
+    "httpx",
+    "beautifulsoup4",
+    "lxml",
+    "readability-lxml",
+    "feedparser",
+    "google-api-python-client>=2.0.0",
+    "google-auth>=2.0.0",
+    "google-auth-oauthlib>=0.5.0",
+    "google-auth-httplib2>=0.1.0",
+    "whoosh",
+    "python-slugify",
+    "tenacity",
+    "python-dateutil>=2.8.2",
+    "python-multipart>=0.0.5",
+    "python-magic",
+    # Robust content fetching
+    "trafilatura>=1.6.0",
+    "html2text>=2020.1.16",
+    "waybackpy>=3.0.0",
+    "playwright>=1.40.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.21.0",
+    "ruff",
+    "black",
+]
+
+[project.scripts]
+atlas = "atlas.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "atlas*",
+    "helpers*",
+    "modules*",
+    "integrations*",
+    "processors*",
+    "vos*",
+    "web*",
+    "src*",
+    "config*",
+    "tools*",
+    "scripts*",
+]
+exclude = [
+    "tests*",
+    "docs*",
+    "archive*",
+    ".venv*",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.yaml", "*.yml", "*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_mode = "auto"
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]

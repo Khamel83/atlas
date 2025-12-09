@@ -1,88 +1,213 @@
-# Atlas TODO List (Rationalized)
+# Atlas TODO List
 
-**Last Updated**: 2025-12-06
-**Total Items**: 13 actionable TODOs
+**Last Updated**: 2025-12-09
+**Status**: Podcast transcript system operational - limits enforced
 
 ---
 
-## Code TODOs (5 items)
+## Current Focus: Robust Content Fetcher
+
+### Goal: "Never Fail" URL → Content System
+
+Build a content fetcher that guarantees one of:
+1. ✅ Full content saved (HTML + images + markdown)
+2. ⚠️ Archived version found (with note about source)
+3. ❌ Truly unavailable (with explanation of what was tried)
+
+### Fetching Strategy (Cascading Fallbacks)
+
+```
+1. Direct fetch (Trafilatura)
+   ↓ if 403/paywall
+2. Fetch with browser cookies
+   ↓ if still blocked
+3. Headless browser (Playwright)
+   ↓ if still blocked
+4. Archive.is lookup
+   ↓ if not archived
+5. Wayback Machine lookup
+   ↓ if not there
+6. URL Resurrection: Parse slug → Google search → find alternative
+```
+
+### Storage Format
+
+```
+data/content/article/2025/12/09/{content_id}/
+├── metadata.json     # Title, URL, dates, status
+├── content.md        # Clean markdown (searchable)
+├── article.html      # Readability-cleaned HTML
+├── raw.html          # Original HTML (backup)
+└── images/           # Downloaded images
+    ├── img_001.jpg
+    └── img_002.png
+```
+
+### Tasks
+
+| Task | Status |
+|------|--------|
+| Create `modules/ingest/robust_fetcher.py` | ✅ Done |
+| Add Wayback/archive.is integration | ✅ Done |
+| Add Playwright for JS/paywall | ✅ Done |
+| Add image downloading | ✅ Done |
+| Add cookie support | ✅ Done |
+| Create URL resurrector | ✅ Done |
+| Update storage format | ✅ Done |
+| Process 850 failed URLs | Pending |
+| Soft 404 detection | Pending |
+
+### Usage
+
+```bash
+# Fetch a single URL
+python -m modules.ingest.robust_fetcher "https://example.com/article"
+
+# From Python
+from modules.ingest.robust_fetcher import RobustFetcher
+fetcher = RobustFetcher()
+result = fetcher.fetch("https://example.com/article")
+```
+
+---
+
+## Podcast Transcripts (Automated) ✅
+
+**Status**: Running via systemd timers. Backlog processing.
+
+### Current Stats
+
+| Metric | Count | Notes |
+|--------|-------|-------|
+| Total (in scope) | 6,716 | Per-podcast limits applied |
+| Fetched | ~4,350 | 64.7% coverage |
+| Pending | ~2,360 | Being processed |
+| Failed | ~9 | YouTube-only, retry weekly |
+
+### Systemd Timers (Installed)
+
+| Timer | Schedule | Purpose |
+|-------|----------|---------|
+| `atlas-podcast-discovery` | 6am & 6pm | Find new episodes |
+| `atlas-transcripts` | Every 4 hours | Fetch transcripts |
+| `atlas-youtube-retry` | Weekly (Sun 3am) | Retry YouTube w/VPN |
+
+### Episode Limits
+
+Per-podcast limits defined in `config/podcast_limits.json`:
+- High priority (1000): Acquired, Conversations with Tyler, Hard Fork, Stratechery
+- Medium priority (100): Planet Money, Dwarkesh, Ezra Klein, This American Life
+- Regular (10-20): ATP, 99% Invisible, Lex Fridman, EconTalk
+- Low priority (1-5): Political Gabfest, NPR Politics, Vergecast
+
+### Working Resolvers
+
+| Resolver | Coverage | Status |
+|----------|----------|--------|
+| Podscripts | 47 popular shows | ✅ Working |
+| NPR Crawler | NPR shows | ✅ Working |
+| Network Transcripts | NPR, Slate, WNYC | ✅ Working |
+| Generic HTML | Sites with transcripts | ✅ Working |
+| YouTube | Any with YouTube | ⚠️ IP blocked from cloud |
+
+### CLI Commands
+
+```bash
+# Discover episodes (respects limits from config)
+python -m modules.podcasts.cli discover --all
+
+# Fetch transcripts (auto-respects limits per podcast)
+python -m modules.podcasts.cli fetch-transcripts --all
+
+# Prune excess episodes beyond limits
+python -m modules.podcasts.cli prune --apply
+
+# Status
+python -m modules.podcasts.cli status
+```
+
+---
+
+## Remaining Work
 
 ### P1 - Should Fix
 
-| File | Line | TODO | Status |
-|------|------|------|--------|
-| `processors/simple_working_processor.py` | 184 | Add YouTube transcript extraction | Pending |
-| `processors/optimized_transcript_discovery.py` | 69 | Replace with actual Google Custom Search API | Pending - has fallback |
-| `modules/transcript_discovery/podcast_transcript_scraper.py` | 238 | Add more podcast-specific scrapers | Pending |
+| Task | Status |
+|------|--------|
+| YouTube proxy setup for cloud IP | Pending |
+| Site-specific scrapers for non-Podscripts shows | Pending |
 
 ### P2 - Nice to Have
 
-| File | Line | TODO | Status |
-|------|------|------|--------|
-| `scripts/run-bot.py` | 286 | Implement daemon mode | Pending |
-| `scripts/podemos_rss_server.py` | 241 | Configure base_url from env | Pending |
+| Task | Status |
+|------|--------|
+| Systemd timers for automated runs | Pending |
+| Progress dashboard | Pending |
 
 ---
 
-## Documentation TODOs (8 items)
+## Architecture Status: HEALTHY
 
-### P1 - Should Fix
+| Component | Status | Tests |
+|-----------|--------|-------|
+| `modules/` | Working | 34 passing |
+| `api/` | Working | 11 passing |
+| `tests/` | Clean | 34 total |
 
-| File | Line | TODO | Status |
-|------|------|------|--------|
-| `docs/CURRENT_ARCHITECTURE.md` | 71 | Document full database schema | Pending |
-| `docs/CURRENT_ARCHITECTURE.md` | 118 | Verify systemd service configuration for current paths | Pending |
-| `docs/TESTING.md` | 121 | Measure current test coverage | Pending |
-| `processors/README.md` | 37 | Verify which processors are active vs experimental | Pending |
+### Core Modules (`modules/`)
+- **podcasts/** - Podcast management with 7 transcript resolvers
+- **storage/** - File-based content storage with SQLite index
+- **pipeline/** - Content processing pipeline
+- **ingest/** - Gmail, YouTube, newsletter ingestion
+- **notifications/** - Telegram/ntfy alerts
 
-### P2 - Nice to Have
-
-| File | Line | TODO | Status |
-|------|------|------|--------|
-| `docs/CURRENT_ARCHITECTURE.md` | 198 | Verify /metrics endpoint exists | Pending |
-| `docs/RUNBOOK.md` | 260 | Create TROUBLESHOOTING.md | Pending |
-| `docs/SETUP.md` | 106 | Link to architecture details | Pending |
-| `processors/README.md` | 146 | Create processor architecture doc | Pending |
-
----
-
-## Completed (Removed from codebase TODOs)
-
-These were implicit TODOs addressed by the ONE_SHOT retrofit:
-
-- [x] Create LLM-OVERVIEW.md for project context
-- [x] Create PRD.md for requirements
-- [x] Standardize operational scripts (setup/start/stop/status)
-- [x] Document current architecture status
+### API (`api/`)
+Clean FastAPI application:
+- `GET /health` - Health check
+- `GET /metrics` - System metrics
+- `GET /api/podcasts/` - List podcasts
+- `GET /api/podcasts/stats` - Podcast statistics
+- `GET /api/content/` - List content
+- `GET /api/search/?q=` - Search content
 
 ---
 
-## Recommended Cleanup
+## Quick Reference
 
-### Remove Unused TODO Infrastructure
+```bash
+# Run tests
+./venv/bin/pytest tests/ -v
 
-The following files comprise 2,717 lines of TODO management code that **is not being used** (no `master_todos.json` exists):
+# Start API
+./venv/bin/uvicorn api.main:app --port 7444
 
-```
-scripts/unified_todo_manager.py   # 1,052 lines - unused
-scripts/todo_consolidator.py      #   686 lines - unused
-scripts/rationalize_todos.py      #   370 lines - unused
-scripts/todo_api.py               #   224 lines - unused
-scripts/todo_helpers.py           #   385 lines - unused
-docs/TODO_MANAGEMENT.md           #   404 lines - documents unused system
+# Process podcasts
+./venv/bin/python -m modules.podcasts.cli --help
 ```
 
-**Recommendation**: Delete these files and use this simple TODO.md instead.
+---
+
+## Completed (2025-12-09 Session)
+
+1. **Podcast Limits System**
+   - [x] Created `config/podcast_limits.json` from user spreadsheet
+   - [x] Modified `cmd_discover()` to respect limits
+   - [x] Added `cmd_prune()` to exclude excess episodes
+   - [x] Modified `cmd_fetch_transcripts()` for smart limit-aware fetching
+   - [x] Enabled WAL mode on SQLite for better concurrency
+
+2. **Data Cleanup**
+   - [x] Pruned 85k episodes down to ~6.7k active
+   - [x] Preserved all 4,341 already-fetched transcripts
+
+## Completed (2025-12-06 Session)
+
+1. **Architecture Cleanup**
+   - [x] Archived broken `web/api/` routers (12 files)
+   - [x] Archived broken tests (79 files)
+   - [x] Created clean `api/` module with working routers
+   - [x] Created clean `tests/` with 34 passing tests
 
 ---
 
-## Next Actions
-
-1. **YouTube transcript extraction** - Biggest impact on transcript coverage
-2. **Google Search API integration** - Currently has fallback, not urgent
-3. **Document database schema** - Helps future development
-4. **Processor consolidation** - 135 files → ~20 core files
-
----
-
-*This file replaces the 2,717-line unused TODO management system with a simple, maintainable list.*
+*Clean architecture. Working podcast system. Limits enforced.*

@@ -1,0 +1,38 @@
+[Unit]
+Description=Atlas YouTube Transcript Retry (rate-limited)
+After=network-online.target
+Wants=network-online.target
+Documentation=https://github.com/khamel83/atlas
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+
+# Load environment with proxy settings
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+
+# Override rate limit to be very conservative for retries
+Environment=YOUTUBE_RATE_LIMIT_SECONDS=60
+
+# First, rotate VPN IP if SSH is available (ignore failures)
+ExecStartPre=-/usr/bin/ssh -o ConnectTimeout=5 -o BatchMode=yes khamel83@100.112.130.100 "nordvpn disconnect && sleep 2 && nordvpn connect us"
+
+# Wait for VPN to stabilize
+ExecStartPre=/bin/sleep 5
+
+# Retry failed episodes only (YouTube-blocked episodes)
+ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.podcasts.cli fetch-transcripts --all --status failed
+
+# Logging
+StandardOutput=append:/var/log/atlas/youtube-retry.log
+StandardError=append:/var/log/atlas/youtube-retry.log
+
+# Don't restart on failure
+Restart=no
+
+# Timeout after 4 hours (slow due to rate limiting)
+TimeoutStartSec=14400
+
+[Install]
+WantedBy=multi-user.target
