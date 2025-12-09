@@ -509,9 +509,20 @@ class AtlasPodCLI:
             all_sources = []
 
             # Define resolver priority - reliable sources first, then fallbacks
-            resolver_priority = ['rss_link', 'network_transcripts', 'podscripts', 'youtube_transcript', 'generic_html', 'pattern']
+            # If podcast has a specific resolver configured, prioritize it
+            configured_resolver = podcast_config.get('resolver', '')
 
-            # Try each resolver in priority order, stop early if we get high-confidence content
+            # Base priority order
+            base_priority = ['rss_link', 'network_transcripts', 'podscripts', 'generic_html', 'youtube_transcript', 'pattern']
+
+            # If podcast specifies generic_html (like Stratechery with cookies), move it earlier
+            if configured_resolver == 'generic_html':
+                # Put generic_html right after rss_link for sites with full transcripts
+                resolver_priority = ['rss_link', 'generic_html', 'network_transcripts', 'podscripts', 'youtube_transcript', 'pattern']
+            else:
+                resolver_priority = base_priority
+
+            # Try each resolver in priority order, stop early if we get good content
             for resolver_name in resolver_priority:
                 if resolver_name not in self.resolvers:
                     continue
@@ -520,10 +531,16 @@ class AtlasPodCLI:
                     sources = resolver.resolve(episode, podcast_config)
                     all_sources.extend(sources)
 
-                    # If we got a high-confidence source with content, no need to try more resolvers
+                    # Stop early if we got substantial content (>5000 chars = likely full transcript)
+                    # This avoids unnecessary YouTube lookups when we already have the transcript
                     for source in sources:
-                        if source.get('confidence', 0) >= 0.8 and source.get('metadata', {}).get('content'):
-                            logger.debug(f"Got high-confidence source from {resolver_name}, skipping remaining resolvers")
+                        content = source.get('metadata', {}).get('content', '')
+                        content_len = len(content) if content else 0
+                        confidence = source.get('confidence', 0)
+
+                        # Good enough to stop: either high confidence OR substantial content
+                        if confidence >= 0.7 or (confidence >= 0.3 and content_len > 5000):
+                            logger.debug(f"Got good source from {resolver_name} ({content_len} chars, conf={confidence:.2f}), skipping remaining resolvers")
                             break
                     else:
                         continue

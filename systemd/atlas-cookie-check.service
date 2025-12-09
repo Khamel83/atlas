@@ -1,0 +1,14 @@
+[Unit]
+Description=Atlas Cookie Expiration Check
+After=network.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/check_cookies.py --alert --ntfy
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

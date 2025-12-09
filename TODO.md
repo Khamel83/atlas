@@ -135,15 +135,68 @@ python -m modules.podcasts.cli status
 
 | Task | Status |
 |------|--------|
-| YouTube proxy setup for cloud IP | Pending |
-| Site-specific scrapers for non-Podscripts shows | Pending |
+| YouTube proxy setup for cloud IP | ✅ Done (NordVPN @ 100.112.130.100:8118) |
+| Site-specific scrapers for non-Podscripts shows | ✅ Done (network_transcripts, generic_html) |
+| Stratechery full archive | 🔄 Running |
 
 ### P2 - Nice to Have
 
 | Task | Status |
 |------|--------|
-| Systemd timers for automated runs | Pending |
-| Progress dashboard | Pending |
+| Systemd timers for automated runs | ✅ Done (7 timers installed) |
+| Progress dashboard | ✅ Done (API + web endpoints) |
+| Parallel YouTube workers | ✅ Done (3 workers) |
+| Cookie expiration alerts | ✅ Done (daily check + ntfy) |
+
+---
+
+## Stratechery Full Archive
+
+**Status**: 🔄 Running (started 2025-12-09)
+
+### What's Being Crawled
+
+| Content Type | Source | Status |
+|--------------|--------|--------|
+| Podcasts (Sharp Tech, Interviews) | `modules.podcasts.cli` | 🔄 290 episodes |
+| Daily Updates | `stratechery_crawler.py` | 🔄 Crawling |
+| Weekly Articles | `stratechery_crawler.py` | 🔄 Crawling |
+| All subscriber content | Authenticated via cookies | 🔄 Active |
+
+### Authentication
+
+- **Cookies**: `~/.config/atlas/stratechery_cookies.json`
+- **Email**: stratecheryusc@khamel.com
+- **Expires**: ~6 months (refresh via magic link when needed)
+
+### Rate Limiting
+
+- 5 second delay between requests (very conservative)
+- Exponential backoff on errors
+- Progress saved to `data/stratechery/crawl_progress.json`
+
+### Output
+
+```
+data/stratechery/
+├── podcasts/          # Podcast episodes with transcripts
+├── articles/          # Daily Updates and Weekly Articles
+└── crawl_progress.json  # Resume state
+```
+
+### Commands
+
+```bash
+# Check progress
+tail -f /tmp/stratechery-archive.log
+tail -f /tmp/stratechery-fetch.log
+
+# Resume if interrupted
+python scripts/stratechery_crawler.py --type all --delay 5 --resume
+
+# Crawl specific type
+python scripts/stratechery_crawler.py --type articles --since 2024-01-01
+```
 
 ---
 
@@ -188,7 +241,57 @@ Clean FastAPI application:
 
 ---
 
-## Completed (2025-12-09 Session)
+## Completed (2025-12-09 Session - Part 3)
+
+1. **Parallel YouTube Workers**
+   - [x] Created `scripts/parallel_youtube_worker.py`
+   - [x] 3 workers: direct, proxy-1, proxy-2
+   - [x] Automatic podcast assignment by worker
+   - [x] Run with `--parallel` or `--sequential`
+
+2. **Progress Dashboard**
+   - [x] Added `/api/dashboard/status` endpoint
+   - [x] Real-time podcast stats, process status, timer status
+   - [x] Stratechery archive progress tracking
+   - [x] Log viewing endpoint `/api/dashboard/logs/{name}`
+
+3. **Cookie Expiration Alerts**
+   - [x] Created `scripts/check_cookies.py`
+   - [x] Monitors Stratechery + YouTube cookies
+   - [x] Alerts via ntfy.sh (and Telegram optional)
+   - [x] Daily check via systemd timer (9am)
+   - [x] Warning at 7 days, Critical at 2 days
+
+4. **Episode URL Fixer**
+   - [x] Created `scripts/fix_episode_urls.py`
+   - [x] Fixed 848 episode URLs for Acquired, CWT, EconTalk, etc.
+   - [x] Enables generic_html resolver to find transcripts
+
+## Completed (2025-12-09 Session - Part 2)
+
+1. **YouTube Rate Limiting**
+   - [x] Researched safe rate limits (1-2s often safe, we use 15s)
+   - [x] Lowered from 30s to 15s in `systemd/atlas-podcasts.env`
+   - [x] Added early-stop logic when >5000 chars content found
+
+2. **Stratechery Full Archive**
+   - [x] Set up cookie-based authentication
+   - [x] Created `scripts/stratechery_crawler.py` for full site archive
+   - [x] Updated generic_html resolver with cookie support
+   - [x] Prioritized generic_html before YouTube for sites with transcripts
+   - [x] Started full archive crawl (podcasts + articles)
+
+3. **URL Retry Batch**
+   - [x] Completed processing 767 failed URLs
+   - [x] 524 success (68%), 243 still failed
+   - [x] Added soft 404 detection
+   - [x] Added URL skip patterns for marketing/tracking URLs
+
+4. **Resolver Priority Improvements**
+   - [x] generic_html now runs before youtube_transcript for configured podcasts
+   - [x] Early-stop when substantial content found (avoids wasted YouTube calls)
+
+## Completed (2025-12-09 Session - Part 1)
 
 1. **Podcast Limits System**
    - [x] Created `config/podcast_limits.json` from user spreadsheet

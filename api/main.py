@@ -8,7 +8,7 @@ via HTTP endpoints.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routers import health, podcasts, content, search
+from api.routers import health, podcasts, content, search, dashboard
 
 # Create app
 app = FastAPI(
@@ -31,6 +31,7 @@ app.include_router(health.router)
 app.include_router(podcasts.router, prefix="/api/podcasts")
 app.include_router(content.router, prefix="/api/content")
 app.include_router(search.router, prefix="/api/search")
+app.include_router(dashboard.router, prefix="/api")
 
 
 @app.get("/")

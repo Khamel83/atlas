@@ -4,18 +4,56 @@ Generic HTML Resolver
 
 Fetches episode pages and extracts transcript content using CSS selectors
 and pattern matching.
+
+Supports cookie-based authentication for paywalled sites like Stratechery.
 """
 
 import logging
 import requests
 import time
+import json
+import os
+from pathlib import Path
 from typing import List, Dict, Any, Optional
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import re
 
 from modules.podcasts.store import Episode
 
 logger = logging.getLogger(__name__)
+
+# Cookie files for authenticated access (domain -> cookie file path)
+COOKIE_FILES = {
+    "stratechery.com": Path.home() / ".config/atlas/stratechery_cookies.json",
+}
+
+
+def load_cookies_for_domain(domain: str) -> Optional[Dict[str, str]]:
+    """Load cookies for a specific domain from config file"""
+    # Find matching cookie file
+    cookie_file = None
+    for cookie_domain, path in COOKIE_FILES.items():
+        if cookie_domain in domain:
+            cookie_file = path
+            break
+
+    if not cookie_file or not cookie_file.exists():
+        return None
+
+    try:
+        with open(cookie_file) as f:
+            cookies_list = json.load(f)
+
+        # Convert to dict format for requests
+        cookies = {}
+        for c in cookies_list:
+            cookies[c['name']] = c['value']
+
+        logger.debug(f"Loaded {len(cookies)} cookies for {domain}")
+        return cookies
+    except Exception as e:
+        logger.warning(f"Failed to load cookies for {domain}: {e}")
+        return None
 
 
 class GenericHTMLResolver:
@@ -83,8 +121,12 @@ class GenericHTMLResolver:
         sources = []
 
         try:
-            # Fetch page content
-            response = self.session.get(url, timeout=self.timeout)
+            # Check for domain-specific cookies (for paywalled sites)
+            domain = urlparse(url).netloc
+            cookies = load_cookies_for_domain(domain)
+
+            # Fetch page content with optional authentication
+            response = self.session.get(url, timeout=self.timeout, cookies=cookies)
             response.raise_for_status()
 
             html = response.text
