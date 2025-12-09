@@ -1,14 +1,18 @@
 [Unit]
 Description=Atlas Cookie Expiration Check
-After=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=oneshot
 User=khamel83
 WorkingDirectory=/home/khamel83/github/atlas
-ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/check_cookies.py --alert --ntfy
-StandardOutput=journal
-StandardError=journal
+ExecStart=/home/khamel83/github/atlas/scripts/run_with_secrets.sh python scripts/check_cookies.py --alert --telegram
+Environment=SOPS_AGE_KEY_FILE=/home/khamel83/.age/key.txt
+
+# Logging
+StandardOutput=append:/var/log/atlas/cookie-check.log
+StandardError=append:/var/log/atlas/cookie-check.log
 
 [Install]
 WantedBy=multi-user.target
