@@ -165,7 +165,7 @@ class TavilyTranscriptFinder:
         try:
             from urllib.parse import urlparse
             return urlparse(url).netloc
-        except:
+        except (ValueError, AttributeError):
             return url
 
     def test_found_sources(self, sources: List[Dict]) -> List[Dict]:

@@ -113,22 +113,72 @@ async def get_content_item(content_id: str):
     )
 
 
-@router.post("/submit")
+@router.post("/submit", status_code=201)
 async def submit_content(request: ContentSubmitRequest):
     """Submit a URL for processing."""
+    from fastapi.responses import JSONResponse
     from modules.pipeline.content_pipeline import ContentPipeline
 
     pipeline = ContentPipeline()
     item = pipeline.process_url(request.url)
 
     if item:
-        return {
-            "status": "processed",
-            "content_id": item.content_id,
-            "title": item.title,
-        }
+        return JSONResponse(
+            status_code=201,
+            content={
+                "status": "created",
+                "content_id": item.content_id,
+                "title": item.title,
+            }
+        )
     else:
-        return {
-            "status": "skipped",
-            "message": "Duplicate or failed to process",
-        }
+        return JSONResponse(
+            status_code=200,
+            content={
+                "status": "skipped",
+                "message": "Duplicate or failed to process",
+            }
+        )
+
+
+class ContentDetailResponse(ContentItemResponse):
+    """Extended content response with text/html."""
+    text: Optional[str] = None
+    html: Optional[str] = None
+    metadata: Optional[dict] = None
+
+
+@router.get("/{content_id}/text")
+async def get_content_text(content_id: str):
+    """Get just the text content for an item."""
+    from pathlib import Path
+
+    store = get_file_store()
+    item = store.load(content_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="Content not found")
+
+    # Try to find the content file
+    base_path = store.base_path / item.content_type.value
+    content_path = None
+
+    # Look for content.md or content.txt
+    for date_dir in base_path.iterdir() if base_path.exists() else []:
+        if not date_dir.is_dir():
+            continue
+        content_dir = date_dir / content_id
+        if content_dir.exists():
+            for filename in ["content.md", "content.txt", "article.html"]:
+                path = content_dir / filename
+                if path.exists():
+                    content_path = path
+                    break
+            break
+
+    if not content_path:
+        raise HTTPException(status_code=404, detail="Content file not found")
+
+    try:
+        return {"text": content_path.read_text(), "filename": content_path.name}
+    except (IOError, UnicodeDecodeError) as e:
+        raise HTTPException(status_code=500, detail=f"Error reading content: {e}")

@@ -1,0 +1,18 @@
+{
+  "id": "2a443d8924264181938a04676839e4d9",
+  "type": "backlog",
+  "source": "instapaper_csv",
+  "payload": {
+    "row": {
+      "URL": "https://marginalrevolution.com/marginalrevolution/2022/01/how-decentralized-really-are-blockchains.html",
+      "Title": "How decentralized really are blockchains Marginal Revolution",
+      "Selection": "At this point, there are basically two companies. Almost all dApps use either\u00a0Infura\u00a0or\u00a0Alchemy\u00a0in order to interact with the blockchain. In fact, even when you connect a wallet like MetaMask to a dApp, and the dApp interacts with the blockchain via your wallet, MetaMask is just making calls to Infura!\n\nThese client APIs are not using anything to verify blockchain state or the authenticity of responses. The results aren\u2019t even signed. An app like Autonomous Art says \u201chey what\u2019s the output of this view function on this smart contract,\u201d Alchemy or Infura responds with a JSON blob that says \u201cthis is the output,\u201d and the app renders it.\n\nThis was surprising to me. So much work, energy, and time has gone into creating a trustless distributed consensus mechanism, but virtually all clients that wish to access it do so by simply trusting the outputs from these two companies without any further verification. It also doesn\u2019t seem like the best privacy situation. Imagine if every time you interacted with a website in Chrome, your request first went to Google before being routed to the destination and back. That\u2019s the situation with ethereum today. All write traffic is obviously already public on the blockchain, but these companies also have visibility into almost all read requests from almost all users in almost all dApps.\n\nHere is the full essay by Momxie (?), interesting throughout.\u00a0 And more generally:\n\nOne thing that has always felt strange to me about the cryptocurrency world is the lack of attention to the client/server interface. When people talk about blockchains, they talk about distributed trust, leaderless consensus, and all the mechanics of how that works, but often gloss over the reality that clients ultimately can\u2019t participate in those mechanics. All the network diagrams are of servers, the trust model is between servers, everything is about servers. Blockchains are designed to be a network of peers, but not designed such that it\u2019s really possible for your mobile device or your browser to be one of those peers.\n\nRecommended.\u00a0 Via Nabeel.\n\nThe post How decentralized really are blockchains? appeared first on Marginal REVOLUTION.\n",
+      "Folder": "Feedly",
+      "Timestamp": "1641709386",
+      "Tags": "[]"
+    },
+    "source_path": "data/backlog/source_drops/Instapaper-Export-2025-03-26_20_23_56.csv"
+  },
+  "origin_manifest_id": "497cd2c549404409861b3a1098bd5186",
+  "created_at": "2025-11-28T04:26:59.051820Z"
+}

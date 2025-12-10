@@ -60,58 +60,39 @@ def get_podcast_store():
 
 
 def get_podcast_stats() -> OverallStats:
-    """Get podcast transcript statistics"""
+    """Get podcast transcript statistics using efficient single-query methods"""
     store = get_podcast_store()
 
-    podcasts = store.list_podcasts()
-    podcast_stats = []
+    # Get all podcast stats in a single query (was N+1 queries before)
+    all_stats = store.get_all_podcast_stats()
 
-    total_all = 0
-    fetched_all = 0
-    pending_all = 0
-    failed_all = 0
+    # Get overall stats in a single query
+    overall = store.get_overall_stats()
 
-    for podcast in podcasts:
-        episodes = store.get_episodes_by_podcast(podcast.id)
-
-        # Only count non-excluded
-        active = [e for e in episodes if e.transcript_status != 'excluded']
-
-        total = len(active)
-        fetched = len([e for e in active if e.transcript_status == 'fetched'])
-        pending = len([e for e in active if e.transcript_status in ('unknown', 'found')])
-        failed = len([e for e in active if e.transcript_status == 'failed'])
-
-        if total > 0:
-            coverage = (fetched / total) * 100
-            podcast_stats.append(PodcastStats(
-                slug=podcast.slug,
-                name=podcast.name,
-                total=total,
-                fetched=fetched,
-                pending=pending,
-                failed=failed,
-                coverage=round(coverage, 1)
-            ))
-
-            total_all += total
-            fetched_all += fetched
-            pending_all += pending
-            failed_all += failed
-
-    # Sort by pending (most work remaining first)
+    # Convert to PodcastStats objects and sort by pending
+    podcast_stats = [
+        PodcastStats(
+            slug=s['slug'],
+            name=s['name'],
+            total=s['total'],
+            fetched=s['fetched'],
+            pending=s['pending'],
+            failed=s['failed'],
+            coverage=s['coverage']
+        )
+        for s in all_stats
+    ]
     podcast_stats.sort(key=lambda x: x.pending, reverse=True)
 
-    coverage_all = (fetched_all / total_all * 100) if total_all > 0 else 0
     # Estimate: ~11 seconds per episode average
-    estimated_hours = (pending_all * 11) / 3600
+    estimated_hours = (overall['pending'] * 11) / 3600
 
     return OverallStats(
-        total_episodes=total_all,
-        fetched=fetched_all,
-        pending=pending_all,
-        failed=failed_all,
-        coverage=round(coverage_all, 1),
+        total_episodes=overall['total_episodes'],
+        fetched=overall['fetched'],
+        pending=overall['pending'],
+        failed=overall['failed'],
+        coverage=overall['coverage'],
         estimated_hours=round(estimated_hours, 1),
         podcasts=podcast_stats[:20]  # Top 20 by pending
     )
@@ -224,25 +205,13 @@ async def get_dashboard_status():
 
 @router.get("/podcasts")
 async def get_all_podcast_stats():
-    """Get stats for all podcasts"""
+    """Get stats for all podcasts using efficient single query"""
     store = get_podcast_store()
-    podcasts = store.list_podcasts()
 
-    stats = []
-    for podcast in podcasts:
-        episodes = store.get_episodes_by_podcast(podcast.id)
-        active = [e for e in episodes if e.transcript_status != 'excluded']
+    # Get all stats in a single query (was N+1 before)
+    stats = store.get_all_podcast_stats()
 
-        if active:
-            fetched = len([e for e in active if e.transcript_status == 'fetched'])
-            stats.append({
-                'slug': podcast.slug,
-                'name': podcast.name,
-                'total': len(active),
-                'fetched': fetched,
-                'coverage': round((fetched / len(active)) * 100, 1)
-            })
-
+    # Sort by coverage (lowest first to show what needs work)
     stats.sort(key=lambda x: x['coverage'])
     return stats
 

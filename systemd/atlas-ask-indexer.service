@@ -1,0 +1,22 @@
+[Unit]
+Description=Atlas Ask Content Indexer
+After=network.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+ExecStart=/home/khamel83/github/atlas/scripts/run_with_secrets.sh /home/khamel83/github/atlas/venv/bin/python -m modules.ask.indexer --all
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-ask-indexer
+
+# Resource limits
+MemoryMax=2G
+CPUQuota=80%
+
+[Install]
+WantedBy=multi-user.target

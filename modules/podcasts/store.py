@@ -365,6 +365,74 @@ class PodcastStore:
                 )
         return episodes
 
+    def get_all_podcast_stats(self) -> List[dict]:
+        """
+        Get aggregated stats for all podcasts in a single query.
+
+        Returns list of dicts with: slug, name, total, fetched, pending, failed, coverage
+        """
+        with self._get_connection() as conn:
+            rows = conn.execute(
+                """
+                SELECT
+                    p.slug,
+                    p.name,
+                    COUNT(CASE WHEN e.transcript_status != 'excluded' THEN 1 END) as total,
+                    COUNT(CASE WHEN e.transcript_status = 'fetched' THEN 1 END) as fetched,
+                    COUNT(CASE WHEN e.transcript_status IN ('unknown', 'found') THEN 1 END) as pending,
+                    COUNT(CASE WHEN e.transcript_status = 'failed' THEN 1 END) as failed
+                FROM podcasts p
+                LEFT JOIN episodes e ON p.id = e.podcast_id
+                GROUP BY p.id, p.slug, p.name
+                HAVING total > 0
+                ORDER BY p.name
+                """
+            ).fetchall()
+
+            return [
+                {
+                    'slug': row['slug'],
+                    'name': row['name'],
+                    'total': row['total'],
+                    'fetched': row['fetched'],
+                    'pending': row['pending'],
+                    'failed': row['failed'],
+                    'coverage': round((row['fetched'] / row['total']) * 100, 1) if row['total'] > 0 else 0
+                }
+                for row in rows
+            ]
+
+    def get_overall_stats(self) -> dict:
+        """
+        Get overall transcript statistics in a single query.
+
+        Returns dict with: total_episodes, fetched, pending, failed, coverage
+        """
+        with self._get_connection() as conn:
+            row = conn.execute(
+                """
+                SELECT
+                    COUNT(CASE WHEN transcript_status != 'excluded' THEN 1 END) as total,
+                    COUNT(CASE WHEN transcript_status = 'fetched' THEN 1 END) as fetched,
+                    COUNT(CASE WHEN transcript_status IN ('unknown', 'found') THEN 1 END) as pending,
+                    COUNT(CASE WHEN transcript_status = 'failed' THEN 1 END) as failed
+                FROM episodes
+                """
+            ).fetchone()
+
+            total = row['total'] or 0
+            fetched = row['fetched'] or 0
+            pending = row['pending'] or 0
+            failed = row['failed'] or 0
+
+            return {
+                'total_episodes': total,
+                'fetched': fetched,
+                'pending': pending,
+                'failed': failed,
+                'coverage': round((fetched / total) * 100, 1) if total > 0 else 0
+            }
+
     def update_episode_transcript_status(
         self, episode_id: int, status: str, transcript_path: Optional[str] = None
     ):

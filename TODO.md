@@ -1,7 +1,119 @@
-# Atlas TODO List
+# TODO - Atlas
 
-**Last Updated**: 2025-12-09
-**Status**: Podcast transcript system operational - limits enforced
+> Project tasks organized by status. Updated: 2025-12-10
+
+---
+
+### Done ✓
+
+- [x] Podcast transcript system with 7 resolvers 2025-12-06
+- [x] Per-podcast episode limits with auto-pruning 2025-12-09
+- [x] Robust URL fetcher with 5 fallback strategies 2025-12-09
+- [x] Cookie-based auth for Stratechery 2025-12-09
+- [x] Cookie expiration monitoring with ntfy alerts 2025-12-09
+- [x] 7 systemd timers for automation 2025-12-09
+- [x] YouTube VPN proxy setup (NordVPN @ 100.112.130.100:8118) 2025-12-09
+- [x] Bulk import for messy folders (Instapaper, Pocket, etc.) 2025-12-10
+- [x] Podcast source validation script 2025-12-10
+- [x] Fixed recursive link spider bug in generic_html 2025-12-10
+- [x] Fixed duplicate YAML config entries 2025-12-10
+- [x] Atlas Ask module built (not enabled) 2025-12-09
+
+### In Progress
+
+- [ ] Complete podcast transcript backlog (~2,300 pending, ~7 hours) ~7h #podcasts
+- [ ] Stratechery full archive crawl (running in background) #stratechery
+
+### Backlog (From Code Quality Review 2025-12-10)
+
+#### Security (COMPLETED)
+- [x] Fix command injection in crawl4ai_podcast_scraper.py #security
+- [x] Fix CORS misconfiguration in api/main.py #security
+- [x] Add SSRF prevention to robust_fetcher.py #security
+- [x] Fix SQL injection in crawl4ai (parameterized queries) #security
+
+#### Performance (COMPLETED)
+- [x] Fix N+1 dashboard queries (50+ queries → 2 queries) #performance
+
+#### Code Quality (COMPLETED)
+- [x] Replace bare except clauses (17 → 0 remaining) #code-quality
+- [x] Consolidate modules/ingest/ and modules/ingestion/ #refactor
+
+#### Architecture Improvements (FROM REVIEW)
+- [ ] Create modules/common/ for shared utilities (RateLimiter, HTTP client) #refactor
+- [ ] Split robust_fetcher.py (1,066 lines) into focused modules #refactor
+- [ ] Split podcasts/cli.py (1,384 lines) into command modules #refactor
+- [ ] Clarify/consolidate transcript_discovery/ vs podcasts/resolvers/ #refactor
+
+#### Testing Gaps (FROM REVIEW)
+- [ ] Add resolver tests (11 resolvers, 0 tests) #testing
+- [ ] Add robust_fetcher integration tests #testing
+- [ ] Add content pipeline tests #testing
+- [ ] Add API endpoint tests for dashboard, submit #testing
+- [ ] Target: 140-190 new tests for 50% coverage #testing
+
+#### API Improvements (PARTIAL)
+- [x] Add GET /api/podcasts/{id}/episodes/{id} endpoint #api
+- [x] Add GET /api/podcasts/{id}/episodes/{id}/transcript endpoint #api
+- [x] Add GET /api/content/{id}/text endpoint #api
+- [x] Fix POST /submit to return 201 Created #api
+- [ ] Add filtering/sorting to list endpoints #api
+- [ ] Standardize error response schema #api
+- [ ] Fix UTC timestamp inconsistencies #api
+
+### Original Backlog
+
+- [ ] Enable Atlas Ask after ingestion stabilizes #ask
+- [ ] Process Instapaper export archives #bulk-import
+- [ ] Add more podcast-specific scrapers if needed #podcasts
+
+---
+
+## Atlas Ask (Semantic Search & Q&A) - READY
+
+**Status**: Built and tested. NOT ENABLED. Waiting for ingestion to be finalized.
+
+### What's Built
+
+| Component | File | Status |
+|-----------|------|--------|
+| Config | `config/ask_config.yml` | ✅ Done |
+| Embeddings | `modules/ask/embeddings.py` | ✅ Done |
+| Chunking | `modules/ask/chunker.py` | ✅ Done |
+| Vector Store | `modules/ask/vector_store.py` | ✅ Done |
+| Hybrid Retriever | `modules/ask/retriever.py` | ✅ Done |
+| LLM Synthesis | `modules/ask/synthesizer.py` | ✅ Done |
+| Content Indexer | `modules/ask/indexer.py` | ✅ Done |
+| CLI | `modules/ask/cli.py` | ✅ Done |
+| Systemd Timer | `systemd/atlas-ask-indexer.*` | ✅ Done (disabled) |
+
+### Models (via OpenRouter)
+
+- **Embeddings**: `openai/text-embedding-3-small`
+- **LLM**: `google/gemini-2.5-flash-lite`
+
+### Activation Steps (when ready)
+
+```bash
+# 1. Bulk index all existing content
+./scripts/run_with_secrets.sh python -m modules.ask.indexer --all
+
+# 2. Enable timer for ongoing indexing
+sudo cp systemd/atlas-ask-indexer.* /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now atlas-ask-indexer.timer
+
+# 3. Test
+./scripts/run_with_secrets.sh python -m modules.ask.cli ask "test question"
+```
+
+### Content Auto-Discovery
+
+Indexer finds content from:
+- `data/podcasts/{slug}/transcripts/*.md`
+- `data/content/article/{date}/{id}/content.md`
+- `data/content/newsletter/{date}/{id}/content.md`
+- `data/stratechery/{articles,podcasts}/*.md`
 
 ---
 
@@ -214,6 +326,7 @@ python scripts/stratechery_crawler.py --type articles --since 2024-01-01
 - **pipeline/** - Content processing pipeline
 - **ingest/** - Gmail, YouTube, newsletter ingestion
 - **notifications/** - Telegram/ntfy alerts
+- **ask/** - Semantic search & Q&A (built, not enabled)
 
 ### API (`api/`)
 Clean FastAPI application:

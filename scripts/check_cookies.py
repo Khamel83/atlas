@@ -33,11 +33,15 @@ COOKIE_FILES = {
 def send_telegram_alert(message: str, critical: bool = False):
     """Send alert via Telegram"""
     try:
-        from modules.notifications.telegram import send_message
+        from modules.notifications.telegram import TelegramNotifier
+
+        notifier = TelegramNotifier()
+        if not notifier.enabled:
+            print("Telegram not configured (missing TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID)")
+            return False
 
         prefix = "🚨 CRITICAL" if critical else "⚠️ WARNING"
-        send_message(f"{prefix}: {message}")
-        return True
+        return notifier.send_message(f"{prefix}: {message}")
     except Exception as e:
         print(f"Failed to send Telegram alert: {e}")
         return False

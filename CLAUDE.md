@@ -34,11 +34,12 @@ atlas/
 │   └── routers/
 │       └── dashboard.py  # Progress monitoring endpoints
 ├── scripts/              # Utility scripts
-│   ├── stratechery_crawler.py    # Full Stratechery archive
-│   ├── parallel_youtube_worker.py # Multi-worker YouTube fetch
-│   ├── check_cookies.py          # Cookie expiration alerts
-│   ├── fix_episode_urls.py       # Fix bad episode URLs
-│   └── retry_failed_urls.py      # Batch URL retry
+│   ├── stratechery_crawler.py       # Full Stratechery archive
+│   ├── parallel_youtube_worker.py   # Multi-worker YouTube fetch
+│   ├── check_cookies.py             # Cookie expiration alerts
+│   ├── fix_episode_urls.py          # Fix bad episode URLs
+│   ├── retry_failed_urls.py         # Batch URL retry
+│   └── validate_podcast_sources.py  # Verify transcript availability
 ├── config/
 │   ├── mapping.yml           # Podcast resolver config
 │   └── podcast_limits.json   # Per-podcast episode limits
@@ -106,6 +107,29 @@ journalctl -u atlas-cookie-check --since today
 - `fetched` - Complete, transcript on disk
 - `failed` - All resolvers failed (retry weekly)
 - `excluded` - Beyond per-podcast limit
+
+### Transcript Source Coverage (Validated)
+
+**All 46 podcasts have confirmed transcript sources.** Run `scripts/validate_podcast_sources.py` to verify.
+
+| Source Type | Podcasts | How It Works |
+|-------------|----------|--------------|
+| Website (direct HTML) | 6 | Scrape transcript from episode page using CSS selectors |
+| Podscripts.co | 40 | AI-generated transcripts, good quality, covers most shows |
+
+**Podcasts with direct website transcripts (highest quality):**
+- `stratechery` → `.entry-content` (requires auth cookies)
+- `acquired` → `.transcript-container`
+- `planet-money` → `.storytext` (NPR)
+- `the-npr-politics-podcast` → `.storytext` (NPR)
+- `lex-fridman-podcast` → `.entry-content`
+- `conversations-with-tyler` → `.generic__content`
+
+**Why this works:**
+1. Major podcasts publish transcripts on their websites (accessibility, SEO)
+2. Podscripts.co uses AI transcription and covers 40+ shows we follow
+3. YouTube auto-captions serve as fallback for shows with video versions
+4. The resolver chain tries sources in priority order until one succeeds
 
 ### CLI Commands
 
@@ -179,6 +203,50 @@ cat data/stratechery/crawl_progress.json
 ```
 
 **Output:** `data/stratechery/{articles,podcasts}/*.md`
+
+---
+
+## Bulk Import (Messy Folder Processing)
+
+Drop any folder of mixed files and it auto-detects and processes everything:
+
+```bash
+# Dry run - see what would be imported
+python -m modules.ingest.bulk_import /path/to/messy/folder --dry-run
+
+# Actually import
+python -m modules.ingest.bulk_import /path/to/messy/folder
+```
+
+**Supported file types (auto-detected):**
+- Instapaper HTML exports
+- Pocket JSON exports
+- URL lists (`.txt`, one per line)
+- CSV files with URL columns
+- Markdown files (extracts `[text](url)` links)
+- HTML articles (extracts canonical URL)
+
+**Deduplication:**
+- URLs are hashed for dedup (normalized, tracking params stripped)
+- Safe to re-run on same folder - duplicates are skipped
+- Checks both in-memory (this batch) and database (previously processed)
+
+**Example:**
+```
+$ python -m modules.ingest.bulk_import ~/Downloads/instapaper-exports --dry-run
+
+BULK IMPORT RESULTS
+============================================================
+Files scanned:    47
+URLs found:       1,234
+  New:            892
+  Duplicate:      342
+
+By file type:
+  instapaper_html: 12
+  url_list: 8
+  markdown: 27
+```
 
 ---
 
@@ -294,6 +362,28 @@ Some RSS feeds have bad URLs. Fix with:
 python scripts/fix_episode_urls.py --all --apply
 ```
 
+### Validate Transcript Sources
+
+Before bulk fetching, verify all podcasts have working transcript sources:
+
+```bash
+# Check all pending podcasts
+python scripts/validate_podcast_sources.py
+
+# Check specific podcast
+python scripts/validate_podcast_sources.py --slug acquired
+
+# Output as JSON for scripting
+python scripts/validate_podcast_sources.py --json
+```
+
+The script checks each podcast for:
+- **Website transcripts** - Tests configured CSS selectors against sample episode
+- **Podscripts.co** - Checks if podcast is available on podscripts.co
+- **YouTube** - Checks if podcast is known to have YouTube versions
+
+Output shows ✅ (can fetch) or ❌ (no known source) for each podcast.
+
 ### Debug Transcript Issues
 
 ```bash
@@ -372,3 +462,133 @@ python -m modules.podcasts.cli status
 systemctl list-timers | grep atlas
 ps aux | grep python.*atlas
 ```
+
+---
+
+## Atlas Ask (Semantic Search & Q&A)
+
+**Status**: Built, NOT ENABLED. Ready to activate after ingestion is finalized.
+
+Atlas Ask provides semantic search and LLM-powered Q&A over all your indexed content.
+
+### Architecture
+
+```
+modules/ask/
+├── config.py         # Loads config/ask_config.yml
+├── embeddings.py     # OpenRouter embeddings (openai/text-embedding-3-small)
+├── chunker.py        # Tiktoken chunking (512 tokens, 50 overlap)
+├── vector_store.py   # SQLite-vec storage
+├── retriever.py      # Hybrid search (vector + FTS5 + RRF fusion)
+├── synthesizer.py    # LLM answers (google/gemini-2.5-flash-lite)
+├── indexer.py        # Content discovery and indexing
+└── cli.py            # CLI for testing
+```
+
+### Configuration
+
+All settings in `config/ask_config.yml`:
+- **Embeddings**: `openai/text-embedding-3-small` via OpenRouter
+- **LLM**: `google/gemini-2.5-flash-lite` via OpenRouter
+- **Chunking**: 512 tokens max, 50 token overlap
+- **Retrieval**: 70% vector weight, 30% keyword weight
+
+### Content Sources (Auto-discovered)
+
+| Source | Path |
+|--------|------|
+| Podcasts | `data/podcasts/{slug}/transcripts/*.md` |
+| Articles | `data/content/article/{date}/{id}/content.md` |
+| Newsletters | `data/content/newsletter/{date}/{id}/content.md` |
+| Stratechery | `data/stratechery/{articles,podcasts}/*.md` |
+
+### CLI Commands
+
+```bash
+# Ask a question (retrieves + synthesizes answer)
+./scripts/run_with_secrets.sh python -m modules.ask.cli ask "What is AI?"
+
+# Search without synthesis
+./scripts/run_with_secrets.sh python -m modules.ask.cli search "nuclear power" --limit 10
+
+# Index all content (one-time bulk)
+./scripts/run_with_secrets.sh python -m modules.ask.indexer --all
+
+# Index specific type
+./scripts/run_with_secrets.sh python -m modules.ask.indexer --type podcasts
+
+# Dry run (see what would be indexed)
+./scripts/run_with_secrets.sh python -m modules.ask.indexer --all --dry-run
+
+# Show stats
+./scripts/run_with_secrets.sh python -m modules.ask.cli stats
+```
+
+### Python Usage
+
+```python
+from modules.ask import ask, retrieve, index_single
+
+# Full Q&A
+answer = ask("What are the implications of AI for jobs?")
+print(answer.answer)
+print(f"Confidence: {answer.confidence}")
+print(f"Sources: {answer.sources}")
+
+# Just retrieval
+results = retrieve("nuclear energy", limit=10)
+for r in results:
+    print(f"{r.score:.3f} - {r.metadata.get('title')}")
+
+# Index single item (call from ingest pipeline)
+index_single(
+    content_id="podcast:acquired:episode-123",
+    text="transcript text...",
+    title="Episode Title",
+    content_type="podcast",
+    metadata={"slug": "acquired"}
+)
+```
+
+### Systemd Timer (DISABLED by default)
+
+```bash
+# Install (but don't enable)
+sudo cp systemd/atlas-ask-indexer.* /etc/systemd/system/
+sudo systemctl daemon-reload
+
+# Enable when ready (runs every 6 hours)
+sudo systemctl enable --now atlas-ask-indexer.timer
+
+# Check status
+systemctl status atlas-ask-indexer.timer
+journalctl -u atlas-ask-indexer -f
+```
+
+### Activation Checklist
+
+When ready to enable Atlas Ask:
+
+1. **Bulk index existing content:**
+   ```bash
+   ./scripts/run_with_secrets.sh python -m modules.ask.indexer --all
+   ```
+
+2. **Enable the timer:**
+   ```bash
+   sudo systemctl enable --now atlas-ask-indexer.timer
+   ```
+
+3. **Verify:**
+   ```bash
+   ./scripts/run_with_secrets.sh python -m modules.ask.cli stats
+   ./scripts/run_with_secrets.sh python -m modules.ask.cli ask "test question"
+   ```
+
+### Database
+
+Vector store at `data/indexes/atlas_vectors.db`:
+- `chunks` - Text chunks with metadata
+- `chunk_vectors` - SQLite-vec embeddings (1536 dimensions)
+- `chunks_fts` - FTS5 table for keyword search
+- `enrichments` - LLM-generated summaries and tags (future)

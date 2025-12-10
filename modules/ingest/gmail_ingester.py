@@ -28,6 +28,14 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass
+class EmailAttachment:
+    """Email attachment."""
+    filename: str
+    content_type: str
+    data: bytes
+
+
+@dataclass
 class EmailMessage:
     """Parsed email message."""
     email_id: str
@@ -39,6 +47,11 @@ class EmailMessage:
     body_text: str
     body_html: str
     urls: List[str]
+    attachments: List[EmailAttachment] = None
+
+    def __post_init__(self):
+        if self.attachments is None:
+            self.attachments = []
 
 
 class GmailIngester:
@@ -47,7 +60,7 @@ class GmailIngester:
     # Labels to watch
     WATCH_LABELS = ["atlas", "Atlas", "Newsletter", "newsletter"]
 
-    # URL patterns to skip
+    # URL patterns to skip - tracking links, redirects, marketing junk
     SKIP_URL_PATTERNS = [
         r"unsubscribe",
         r"preferences",
@@ -62,6 +75,40 @@ class GmailIngester:
         r"\.gif$",
         r"\.png$",
         r"\.jpg$",
+        # Tracking/redirect URLs
+        r"substack\.com/redirect",
+        r"bloom\.bg/",
+        r"bit\.ly/",
+        r"tinyurl\.com/",
+        r"t\.co/",
+        r"ow\.ly/",
+        r"clicks\.",
+        r"click\.",
+        r"track\.",
+        r"tracking\.",
+        r"redirect\.",
+        r"links\.message\.",
+        r"email\.mg\.",
+        r"mailchi\.mp/",
+        r"list-manage\.com",
+        r"campaign-archive\.com",
+        r"utm_",
+        r"email\..*\.com/e/",  # Generic email tracking
+        r"/beacon",
+        r"/pixel",
+        r"/open\?",
+        r"/click\?",
+        r"404media\.co/r/",  # 404media tracking redirects
+        r"puck\.news.*utm",  # Puck tracking links
+        r"customeriomail\.com",
+        r"assets\.",  # Asset/image servers
+    ]
+
+    # Newsletter senders where the email body IS the content
+    # Skip URL processing for these - don't chase tracking links
+    NEWSLETTER_SENDERS_SKIP_URLS = [
+        "bloomberg.com",
+        "bloom.bg",
     ]
 
     def __init__(
@@ -158,8 +205,8 @@ class GmailIngester:
         email_ids = []
 
         try:
-            # Select inbox first
-            self.mail.select("INBOX")
+            # Select All Mail to find labeled emails anywhere (not just inbox)
+            self.mail.select('"[Gmail]/All Mail"')
 
             # Search by label
             since_date = (datetime.now() - timedelta(days=since_days)).strftime("%d-%b-%Y")
@@ -229,6 +276,32 @@ class GmailIngester:
         item_dir = self.file_store.save(email_item, content=content)
         self.index_manager.index_item(email_item, str(item_dir), search_text=content)
 
+        # Save attachments
+        if parsed.attachments:
+            attachments_dir = item_dir / "attachments"
+            attachments_dir.mkdir(exist_ok=True)
+            for attachment in parsed.attachments:
+                attachment_path = attachments_dir / attachment.filename
+                with open(attachment_path, "wb") as f:
+                    f.write(attachment.data)
+                logger.info(f"Saved attachment: {attachment_path}")
+                self.stats["attachments_saved"] = self.stats.get("attachments_saved", 0) + 1
+
+                # Process PDFs for text extraction
+                if attachment.content_type == "application/pdf":
+                    self._process_pdf_attachment(attachment, email_content_id, item_dir)
+
+        # Check if this is a newsletter where the email body IS the content
+        # Skip URL processing for these senders - their tracking links fail anyway
+        skip_url_processing = any(
+            sender in parsed.from_addr.lower()
+            for sender in self.NEWSLETTER_SENDERS_SKIP_URLS
+        )
+
+        if skip_url_processing:
+            logger.info(f"Skipping URL processing for newsletter from {parsed.from_addr}")
+            return
+
         # Process URLs from email
         self.stats["urls_extracted"] += len(parsed.urls)
 
@@ -284,19 +357,44 @@ class GmailIngester:
         if gmail_labels:
             labels = [l.strip() for l in gmail_labels.split(",")]
 
-        # Extract body and URLs
+        # Extract body, URLs, and attachments
         body_text = ""
         body_html = ""
         urls = []
+        attachments = []
 
         if msg.is_multipart():
             for part in msg.walk():
                 content_type = part.get_content_type()
+                content_disposition = str(part.get("Content-Disposition", ""))
+
                 try:
                     payload = part.get_payload(decode=True)
                     if not payload:
                         continue
 
+                    # Check if this is an attachment - save ANY file with a filename
+                    filename = part.get_filename()
+                    if filename or "attachment" in content_disposition:
+                        if not filename:
+                            # Generate filename from content type
+                            ext = content_type.split("/")[-1] if "/" in content_type else "bin"
+                            filename = f"attachment.{ext}"
+                        # Decode filename if needed
+                        decoded_filename = decode_header(filename)
+                        if decoded_filename and isinstance(decoded_filename[0][0], bytes):
+                            filename = decoded_filename[0][0].decode(
+                                decoded_filename[0][1] or "utf-8", errors="ignore"
+                            )
+                        attachments.append(EmailAttachment(
+                            filename=filename,
+                            content_type=content_type,
+                            data=payload,
+                        ))
+                        logger.info(f"Found attachment: {filename} ({content_type})")
+                        continue
+
+                    # Extract text content
                     charset = part.get_content_charset() or "utf-8"
                     text = payload.decode(charset, errors="ignore")
 
@@ -335,6 +433,7 @@ class GmailIngester:
             body_text=body_text,
             body_html=body_html,
             urls=urls,
+            attachments=attachments,
         )
 
     def _extract_urls(self, text: str) -> List[str]:
@@ -374,7 +473,43 @@ class GmailIngester:
             marker = "[skipped]" if skip else ""
             content += f"- {url} {marker}\n"
 
+        if parsed.attachments:
+            content += "\n## Attachments\n\n"
+            for att in parsed.attachments:
+                content += f"- {att.filename} ({att.content_type})\n"
+
         return content
+
+    def _process_pdf_attachment(self, attachment: EmailAttachment, parent_id: str, item_dir) -> None:
+        """Extract text from PDF attachment and index it."""
+        try:
+            import pymupdf  # PyMuPDF
+        except ImportError:
+            logger.warning("PyMuPDF not installed, skipping PDF text extraction")
+            return
+
+        try:
+            # Extract text from PDF
+            doc = pymupdf.open(stream=attachment.data, filetype="pdf")
+            text_parts = []
+            for page in doc:
+                text_parts.append(page.get_text())
+            doc.close()
+
+            pdf_text = "\n\n".join(text_parts)
+            if not pdf_text.strip():
+                logger.info(f"PDF {attachment.filename} has no extractable text (may be scanned)")
+                return
+
+            # Save extracted text alongside the PDF
+            text_path = item_dir / "attachments" / f"{attachment.filename}.txt"
+            with open(text_path, "w", encoding="utf-8") as f:
+                f.write(pdf_text)
+
+            logger.info(f"Extracted {len(pdf_text)} chars from PDF {attachment.filename}")
+
+        except Exception as e:
+            logger.error(f"Error extracting text from PDF {attachment.filename}: {e}")
 
 
 def ingest_gmail():

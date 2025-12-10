@@ -1,9 +1,10 @@
 # Atlas - Product Requirements Document
 
-**Version**: 1.0
+**Version**: 1.1
 **Created**: 2025-12-06
-**ONE_SHOT Version**: 3.0
-**Status**: Approved (existing system retrofit)
+**Updated**: 2025-12-10
+**ONE_SHOT Version**: 4.0
+**Status**: Approved - Production
 
 ---
 
@@ -27,22 +28,19 @@ Atlas is a multi-service system with:
 
 ### Q2: What Problem Does It Solve?
 
-**Problem**: Podcast transcripts exist but are fragmented across dozens of sources (official sites, Podscribe, Rev.com, HappyScribe, RSS feeds, etc.). Manually finding and organizing them is:
-- Time-consuming (hours per podcast)
-- Error-prone (missing episodes, duplicates)
-- Unsustainable (new episodes constantly added)
+**Problem**: Content is scattered across the internet - podcast transcripts on various sites, articles saved in Instapaper, newsletters in Gmail. Manually organizing this is tedious and unsearchable.
 
 **Solution**: Atlas automates the entire workflow:
-1. Tracks 73 curated podcasts (2,373 episodes)
-2. Discovers transcript sources automatically
-3. Downloads and processes content
+1. Tracks 46 curated podcasts (6,729 episodes in scope)
+2. Discovers transcripts from 6 sources (website HTML, Podscripts, YouTube, etc.)
+3. Ingests articles via Gmail labels, inbox folder, or bulk import
 4. Stores in searchable, file-based format
-5. Runs continuously without intervention
+5. Runs 24/7 via systemd timers
 
 ### Q2.5: Reality Check
 
-**Is this being used?** Yes - actively processing transcripts daily.
-**Evidence**: 750 transcripts found (31% completion), continuous processor running.
+**Is this being used?** Yes - running 24/7 on homelab.
+**Evidence**: 4,367 transcripts fetched (65% of 6,729), 7 systemd timers active.
 
 ### Q3: Philosophy / Constraints
 
@@ -56,24 +54,26 @@ Atlas is a multi-service system with:
 
 #### P0 - Must Have (Done)
 - [x] RSS feed parsing for episode discovery
-- [x] SQLite episode tracking database
-- [x] Multi-strategy transcript discovery
+- [x] SQLite episode tracking with WAL mode
+- [x] 7 transcript resolvers (generic_html, podscripts, youtube, etc.)
 - [x] REST API for external integrations
 - [x] Health endpoints (`/health`, `/metrics`)
-- [x] Continuous background processing
-- [x] TrojanHorse note ingestion
+- [x] 7 systemd timers for automation
+- [x] Per-podcast episode limits
 
-#### P1 - Should Have (Partial)
-- [x] Email ingestion (Gmail integration)
-- [ ] YouTube transcript extraction (TODO)
-- [x] Fallback strategies for failed extractions
-- [x] Processing queue with retry logic
+#### P1 - Should Have (Done)
+- [x] Gmail ingestion (label watching)
+- [x] YouTube transcript extraction (via VPN proxy)
+- [x] Cascading fallback strategies (5 levels)
+- [x] Bulk import for Instapaper/Pocket exports
+- [x] Cookie-based auth for Stratechery
+- [x] Cookie expiration monitoring with alerts
+- [x] Podcast source validation script
 
-#### P2 - Nice to Have (Future)
+#### P2 - Nice to Have (Ready, Not Enabled)
+- [x] Semantic search (Atlas Ask module built)
 - [ ] Full-text search UI
-- [ ] Podcast recommendation engine
 - [ ] Auto-categorization of content
-- [ ] Multi-user support
 
 ### Q5: Non-Goals (Explicitly Out of Scope)
 
@@ -151,20 +151,21 @@ entities:
 
 ### Q12: Definition of Done (v1.0)
 
-v1.0 is **COMPLETE**. Current state:
+v1.0 is **COMPLETE**. v1.1 is **IN PROGRESS**:
 
-- [x] Process 70+ podcasts automatically
-- [x] Find transcripts from multiple sources
+- [x] Process 46 podcasts automatically
+- [x] Find transcripts from 6 sources
 - [x] Store in searchable format
 - [x] REST API for integrations
 - [x] Health monitoring
-- [x] Continuous operation without intervention
-- [x] Documentation for operations
+- [x] 7 systemd timers for automation
+- [x] Documentation (CLAUDE.md, LLM-OVERVIEW.md, TODO.md)
 
-**v1.1 targets**:
-- [ ] YouTube transcript extraction
-- [ ] 50% transcript coverage (currently 31%)
-- [ ] Consolidated processor codebase (135 files → ~20)
+**v1.1 targets (current)**:
+- [x] YouTube transcript extraction (via VPN proxy)
+- [ ] 100% transcript coverage (currently 65%)
+- [x] Clean architecture (archived 300+ legacy files)
+- [ ] Enable Atlas Ask semantic search
 
 ### Q13: Naming Conventions
 
@@ -241,18 +242,19 @@ sudo systemctl status atlas-manager
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0 | 2025-12-06 | Initial PRD (retrofit from existing system) |
+| 1.1 | 2025-12-10 | Updated with completed features, current stats |
 
 ---
 
 ## Approval
 
-**PRD Status**: Approved (existing system - documenting current state)
+**PRD Status**: Approved - Production
 
 This PRD documents Atlas as it exists today. Future changes requiring PRD updates:
 - Storage tier upgrade (SQLite → PostgreSQL)
+- Enable Atlas Ask (after ingestion stabilizes)
 - New major feature (P2 items)
-- Architecture changes
 
 ---
 
-*Generated as part of ONE_SHOT v3.0 retrofit*
+*ONE_SHOT v4.0 enabled. 22 skills available.*

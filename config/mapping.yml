@@ -1,5 +1,31 @@
 # Podcast mapping configuration for transcript discovery
 # Each podcast can have custom selectors and resolver settings
+#
+# Resolver types:
+#   - rss_link: Extract transcript links from RSS feed
+#   - network_transcripts: Network-specific extractors (NPR, Slate, etc.)
+#   - podscripts: Fetch from podscripts.co (AI transcripts)
+#   - youtube_transcript: Get from YouTube version
+#   - generic_html: Scrape episode pages
+#   - pattern: URL pattern matching
+#   - bulk_crawl: Dedicated transcript site crawl
+
+# ============================================================================
+# TECH PODCASTS
+# ============================================================================
+
+# ATP has a dedicated transcript site with all episodes
+accidental-tech-podcast:
+  rss_url: https://atp.fm/episodes.rss
+  site_url: https://atp.fm
+  transcript_site: https://catatp.fm
+  resolver: bulk_crawl
+  transcript_url_pattern: "https://catatp.fm/{year}/{month}/{day}/atp{episode}.mp3/"
+  transcript_selector: '.transcript-content, .episode-transcript'
+  config:
+    user_agent: "Atlas-Pod/1.0"
+    rate_limit: 1.0
+    bulk_crawl: true
 
 political-gabfest:
   rss_url: https://feeds.megaphone.fm/slatespoliticalgabfest
@@ -16,27 +42,27 @@ conversations-with-tyler:
   site_url: https://conversationswithtyler.com
   resolver: generic_html
   episode_selector: 'a[href*="/episodes/"]'
-  transcript_selector: '.transcript-content, .episode-transcript, .full-transcript'
+  transcript_selector: '.generic__content, .content-box, .graf--p'
   config:
     user_agent: "Atlas-Pod/1.0"
     rate_limit: 1.5
 
 acquired:
   rss_url: https://feeds.megaphone.fm/acquired
-  site_url: https://acquired.fm
+  site_url: https://www.acquired.fm
   resolver: generic_html
   episode_selector: 'a[href*="/episodes/"]'
-  transcript_selector: '.episode-content .transcript, .show-notes'
+  transcript_selector: '.transcript-container, .rich-text-block-6'
   config:
     user_agent: "Atlas-Pod/1.0"
     rate_limit: 2.0
 
 acq2-by-acquired:
   rss_url: https://feeds.megaphone.fm/acq2
-  site_url: https://acquired.fm
+  site_url: https://www.acquired.fm
   resolver: generic_html
   episode_selector: 'a[href*="/episodes/"]'
-  transcript_selector: '.episode-content .transcript, .show-notes'
+  transcript_selector: '.transcript-container, .rich-text-block-6'
   config:
     user_agent: "Atlas-Pod/1.0"
     rate_limit: 2.0
@@ -99,4 +125,261 @@ stratechery:
   transcript_selector: '.post-content, .entry-content'
   config:
     user_agent: "Atlas-Pod/1.0"
+    rate_limit: 2.0
+
+decoder-with-nilay-patel:
+  rss_url: https://feeds.megaphone.fm/decoder
+  site_url: https://www.theverge.com/decoder-podcast-with-nilay-patel
+  resolver: podscripts
+  transcript_selector: '.duet--article--article-body-component'
+  config:
+    podscripts_id: decoder-with-nilay-patel
+    rate_limit: 2.0
+
+cortex:
+  rss_url: https://www.relay.fm/cortex/feed
+  site_url: https://www.relay.fm/cortex
+  resolver: podscripts
+  config:
+    podscripts_id: cortex
+    rate_limit: 2.0
+
+all-in-with-chamath-jason-sacks-amp-friedberg:
+  rss_url: https://feeds.megaphone.fm/all-in
+  site_url: https://www.allinpodcast.co
+  resolver: podscripts
+  config:
+    podscripts_id: all-in-with-chamath-jason-sacks-friedberg
+    rate_limit: 2.0
+
+# ============================================================================
+# ECONOMICS / BUSINESS PODCASTS
+# ============================================================================
+
+freakonomics-radio:
+  rss_url: https://feeds.simplecast.com/Y8lFbOT4
+  site_url: https://freakonomics.com
+  resolver: generic_html
+  transcript_selector: '.episode-transcript, .transcript, .post-content'
+  config:
+    rate_limit: 2.0
+
+econtalk:
+  rss_url: https://feeds.simplecast.com/wgl4xEgL
+  site_url: https://www.econtalk.org
+  resolver: generic_html
+  transcript_selector: '.transcript, .entry-content'
+  config:
+    rate_limit: 2.0
+
+animal-spirits-podcast:
+  rss_url: https://feeds.megaphone.fm/animalspirits
+  site_url: https://www.theirrelevantinvestor.com
+  resolver: podscripts
+  config:
+    podscripts_id: animal-spirits
+    rate_limit: 2.0
+
+# ============================================================================
+# NEWS / ANALYSIS PODCASTS
+# ============================================================================
+
+the-daily:
+  rss_url: https://feeds.simplecast.com/54nAGcIl
+  site_url: https://nytimes.com/the-daily
+  resolver: generic_html
+  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
+  config:
+    rate_limit: 3.0
+
+hidden-brain:
+  rss_url: https://feeds.npr.org/510308/podcast.xml
+  site_url: https://hiddenbrain.org
+  resolver: network_transcripts
+  transcript_selector: '.transcript, .storytext'
+  config:
+    network: npr
+    rate_limit: 2.0
+
+99-invisible:
+  rss_url: https://feeds.simplecast.com/BqbsxVfO
+  site_url: https://99percentinvisible.org
+  resolver: generic_html
+  transcript_selector: '.episode-transcript, .transcript, .post-content'
+  config:
+    rate_limit: 2.0
+
+this-american-life:
+  rss_url: https://www.thisamericanlife.org/podcast/rss.xml
+  site_url: https://www.thisamericanlife.org
+  resolver: network_transcripts
+  transcript_selector: '.transcript, .act-content'
+  config:
+    network: tal
+    rate_limit: 2.0
+
+# ============================================================================
+# INTERVIEW / LONG-FORM PODCASTS
+# ============================================================================
+
+lex-fridman-podcast:
+  rss_url: https://lexfridman.com/feed/podcast/
+  site_url: https://lexfridman.com/podcast
+  resolver: podscripts
+  transcript_selector: '.entry-content, .podcast-transcript'
+  config:
+    podscripts_id: lex-fridman-podcast
+    rate_limit: 2.0
+
+dwarkesh-podcast:
+  rss_url: https://feeds.megaphone.fm/dwarkesh
+  site_url: https://www.dwarkeshpatel.com/podcast
+  resolver: generic_html
+  transcript_selector: '.post-content, .transcript'
+  config:
+    rate_limit: 2.0
+
+# ============================================================================
+# STORYTELLING / DOCUMENTARY
+# ============================================================================
+
+radiolab:
+  rss_url: https://feeds.wnyc.org/radiolab
+  site_url: https://radiolab.org
+  resolver: network_transcripts
+  episode_selector: 'a[href*="/story/"], a[href*="/episodes/"]'
+  transcript_selector: '.episode-transcript, .transcript, .story-text'
+  config:
+    network: wnyc
+    rate_limit: 2.0
+
+revisionist-history:
+  rss_url: https://feeds.megaphone.fm/revisionisthistory
+  site_url: https://www.pushkin.fm/podcasts/revisionist-history
+  resolver: podscripts
+  config:
+    podscripts_id: revisionist-history
+    rate_limit: 2.0
+
+heavyweight:
+  rss_url: https://feeds.megaphone.fm/heavyweight
+  site_url: https://gimletmedia.com/shows/heavyweight
+  resolver: podscripts
+  config:
+    podscripts_id: heavyweight
+    rate_limit: 2.0
+
+# ============================================================================
+# TECH NEWS
+# ============================================================================
+
+a16z-podcast:
+  rss_url: https://feeds.simplecast.com/JGE3yC0V
+  site_url: https://a16z.com/podcasts
+  resolver: podscripts
+  config:
+    podscripts_id: a16z-podcast
+    rate_limit: 2.0
+
+# ============================================================================
+# COMEDY / ENTERTAINMENT
+# ============================================================================
+
+conan-obrien-needs-a-friend:
+  rss_url: https://feeds.simplecast.com/dHoohVNH
+  site_url: https://www.teamcoco.com/podcasts/conan-obrien-needs-a-friend
+  resolver: podscripts
+  config:
+    podscripts_id: conan-obrien-needs-a-friend
+    rate_limit: 2.0
+
+smartless:
+  rss_url: https://feeds.simplecast.com/rl5vqaAd
+  site_url: https://www.smartless.com
+  resolver: podscripts
+  config:
+    podscripts_id: smartless
+    rate_limit: 2.0
+
+# ============================================================================
+# SLATE PODCASTS (use network resolver)
+# ============================================================================
+
+political-gabfest:
+  rss_url: https://feeds.megaphone.fm/slatespoliticalgabfest
+  site_url: https://slate.com/podcasts/political-gabfest
+  resolver: network_transcripts
+  episode_selector: 'a[href*="/podcasts/political-gabfest/"]'
+  transcript_selector: 'section[data-component="Transcript"], .transcript'
+  config:
+    network: slate
+    rate_limit: 2.0
+
+decoder-ring:
+  rss_url: https://feeds.megaphone.fm/decoder-ring
+  site_url: https://slate.com/podcasts/decoder-ring
+  resolver: network_transcripts
+  transcript_selector: 'section[data-component="Transcript"], .transcript'
+  config:
+    network: slate
+    rate_limit: 2.0
+
+# ============================================================================
+# NYT PODCASTS
+# ============================================================================
+
+hard-fork:
+  rss_url: https://feeds.simplecast.com/KqTCbOXZ
+  site_url: https://nytimes.com/column/hard-fork
+  resolver: podscripts
+  episode_selector: 'a[href*="/hard-fork/"]'
+  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
+  config:
+    podscripts_id: hard-fork
+    rate_limit: 3.0
+
+ezra-klein-show:
+  rss_url: https://feeds.simplecast.com/82FI35Px
+  site_url: https://nytimes.com/column/ezra-klein-podcast
+  resolver: podscripts
+  episode_selector: 'a[href*="/ezra-klein-podcast/"]'
+  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
+  config:
+    podscripts_id: the-ezra-klein-show
+    rate_limit: 3.0
+
+# ============================================================================
+# NPR PODCASTS (use network resolver)
+# ============================================================================
+
+planet-money:
+  rss_url: https://feeds.npr.org/510289/podcast.xml
+  site_url: https://npr.org/sections/money
+  resolver: network_transcripts
+  episode_selector: 'a[href*="/planet-money/"], a[href*="/money/"]'
+  transcript_selector: '.transcript, .storytext, #transcript'
+  config:
+    network: npr
+    rate_limit: 2.0
+
+the-npr-politics-podcast:
+  rss_url: https://feeds.npr.org/510310/podcast.xml
+  site_url: https://npr.org/podcasts/510310/npr-politics-podcast
+  resolver: network_transcripts
+  transcript_selector: '.transcript, .storytext'
+  config:
+    network: npr
+    rate_limit: 2.0
+
+# ============================================================================
+# STRATECHERY
+# ============================================================================
+
+sharp-tech:
+  rss_url: https://feeds.stratechery.com/sharp-tech
+  site_url: https://stratechery.com
+  resolver: generic_html
+  episode_selector: 'a[href*="/sharp-tech/"]'
+  transcript_selector: '.post-content, .entry-content'
+  config:
     rate_limit: 2.0

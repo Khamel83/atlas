@@ -113,3 +113,77 @@ async def get_episodes(podcast_id: int):
         )
         for e in episodes
     ]
+
+
+class EpisodeDetailResponse(EpisodeResponse):
+    """Extended episode response with transcript content."""
+    transcript_path: Optional[str] = None
+    transcript_text: Optional[str] = None
+    metadata: Optional[dict] = None
+
+
+@router.get("/{podcast_id}/episodes/{episode_id}", response_model=EpisodeDetailResponse)
+async def get_episode(podcast_id: int, episode_id: int):
+    """Get a specific episode with optional transcript content."""
+    from pathlib import Path
+
+    store = get_store()
+    podcast = store.get_podcast(podcast_id)
+    if not podcast:
+        raise HTTPException(status_code=404, detail="Podcast not found")
+
+    episodes = store.get_episodes_by_podcast(podcast_id)
+    episode = next((e for e in episodes if e.id == episode_id), None)
+    if not episode:
+        raise HTTPException(status_code=404, detail="Episode not found")
+
+    # Try to load transcript content if available
+    transcript_text = None
+    if episode.transcript_path:
+        transcript_path = Path(episode.transcript_path)
+        if transcript_path.exists():
+            try:
+                transcript_text = transcript_path.read_text()
+            except (IOError, UnicodeDecodeError):
+                pass  # Transcript file not readable
+
+    return EpisodeDetailResponse(
+        id=episode.id,
+        podcast_id=episode.podcast_id,
+        title=episode.title,
+        url=episode.url,
+        publish_date=episode.publish_date,
+        transcript_status=episode.transcript_status,
+        transcript_url=episode.transcript_url,
+        transcript_path=episode.transcript_path,
+        transcript_text=transcript_text,
+        metadata=episode.metadata,
+    )
+
+
+@router.get("/{podcast_id}/episodes/{episode_id}/transcript")
+async def get_episode_transcript(podcast_id: int, episode_id: int):
+    """Get just the transcript text for an episode."""
+    from pathlib import Path
+
+    store = get_store()
+    podcast = store.get_podcast(podcast_id)
+    if not podcast:
+        raise HTTPException(status_code=404, detail="Podcast not found")
+
+    episodes = store.get_episodes_by_podcast(podcast_id)
+    episode = next((e for e in episodes if e.id == episode_id), None)
+    if not episode:
+        raise HTTPException(status_code=404, detail="Episode not found")
+
+    if not episode.transcript_path:
+        raise HTTPException(status_code=404, detail="No transcript available")
+
+    transcript_path = Path(episode.transcript_path)
+    if not transcript_path.exists():
+        raise HTTPException(status_code=404, detail="Transcript file not found")
+
+    try:
+        return {"transcript": transcript_path.read_text()}
+    except (IOError, UnicodeDecodeError) as e:
+        raise HTTPException(status_code=500, detail=f"Error reading transcript: {e}")

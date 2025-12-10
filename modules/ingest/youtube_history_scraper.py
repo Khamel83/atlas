@@ -154,8 +154,8 @@ class YouTubeHistoryScraper:
                 if upload_date_str and upload_date_str != "NA":
                     try:
                         upload_date = datetime.strptime(upload_date_str, "%Y%m%d")
-                    except:
-                        pass
+                    except (ValueError, TypeError):
+                        pass  # Invalid date format
 
                 videos.append(
                     {

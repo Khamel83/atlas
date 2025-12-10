@@ -167,17 +167,16 @@ class GenericHTMLResolver:
                         }
                     )
 
-            # Also look for additional transcript links on the page
-            additional_links = self._find_transcript_links(html, url)
-            for link in additional_links:
-                if link != url:  # Avoid circular references
-                    try:
-                        nested_sources = self._extract_from_url(
-                            link, episode, podcast_config
-                        )
-                        sources.extend(nested_sources)
-                    except Exception as e:
-                        logger.debug(f"Error extracting from nested link {link}: {e}")
+            # DISABLED: Link following was causing infinite loops chasing
+            # Wikipedia/encyclopedia links containing "transcript" in the text.
+            # The podcasts we care about have transcripts directly on the page.
+            # If we need link following later, add strict domain whitelisting.
+            #
+            # additional_links = self._find_transcript_links(html, url)
+            # for link in additional_links:
+            #     if link != url:
+            #         nested_sources = self._extract_from_url(link, episode, podcast_config)
+            #         sources.extend(nested_sources)
 
         except requests.exceptions.RequestException as e:
             logger.warning(f"Failed to fetch {url}: {e}")

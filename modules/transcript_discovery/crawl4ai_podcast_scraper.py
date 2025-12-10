@@ -93,22 +93,26 @@ class Crawl4AIPodcastScraper:
         """Get total episodes for progress tracking"""
         conn = sqlite3.connect(str(self.db_path))
 
-        # Handle podcast name variations
+        # Handle podcast name variations with parameterized queries
         if "|" in podcast_name:
-            parts = podcast_name.split("|")
-            where_clause = f"WHERE name LIKE '%{parts[0].strip()}%'"
+            search_term = f"%{podcast_name.split('|')[0].strip()}%"
+            query = """
+                SELECT COUNT(*) as total
+                FROM episodes e
+                JOIN podcasts p ON e.podcast_id = p.id
+                WHERE name LIKE ?
+            """
         else:
-            where_clause = f"WHERE name = '{podcast_name}'"
-
-        query = f"""
-            SELECT COUNT(*) as total
-            FROM episodes e
-            JOIN podcasts p ON e.podcast_id = p.id
-            {where_clause}
-        """
+            search_term = podcast_name
+            query = """
+                SELECT COUNT(*) as total
+                FROM episodes e
+                JOIN podcasts p ON e.podcast_id = p.id
+                WHERE name = ?
+            """
 
         try:
-            cursor = conn.execute(query)
+            cursor = conn.execute(query, (search_term,))
             result = cursor.fetchone()
             return result[0] if result else 0
         except Exception as e:
@@ -227,29 +231,31 @@ class Crawl4AIPodcastScraper:
 
         # Create simplified title for matching
         simplified_title = title[:100].lower().replace('"', '').replace("'", "").replace(":", "")
+        # Create parameterized podcast search term
+        podcast_search = f"%{podcast_name.split()[0]}%"
 
         try:
-            # Try exact match first
-            cursor = conn.execute(f"""
+            # Try exact match first with parameterized query
+            cursor = conn.execute("""
                 SELECT e.id FROM episodes e
                 JOIN podcasts p ON e.podcast_id = p.id
-                WHERE p.name LIKE '%{podcast_name.split()[0]}%'
+                WHERE p.name LIKE ?
                 AND LOWER(e.title) LIKE ?
                 LIMIT 1
-            """, (f"%{simplified_title}%",))
+            """, (podcast_search, f"%{simplified_title}%"))
 
             result = cursor.fetchone()
             if result:
                 return result[0]
 
-            # Try fuzzy matching
-            cursor = conn.execute(f"""
+            # Try fuzzy matching with parameterized query
+            cursor = conn.execute("""
                 SELECT e.id, e.title FROM episodes e
                 JOIN podcasts p ON e.podcast_id = p.id
-                WHERE p.name LIKE '%{podcast_name.split()[0]}%'
+                WHERE p.name LIKE ?
                 ORDER BY e.id DESC
                 LIMIT 50
-            """)
+            """, (podcast_search,))
 
             episodes = cursor.fetchall()
             for episode_id, episode_title in episodes:
@@ -330,10 +336,12 @@ if __name__ == "__main__":
     try:
         import crawl4ai
     except ImportError:
+        import subprocess
+        import sys
         print("Installing Crawl4AI...")
-        os.system("pip install crawl4ai")
+        subprocess.run([sys.executable, "-m", "pip", "install", "crawl4ai"], check=True)
         print("Crawl4AI installed. Please run the script again.")
-        exit()
+        sys.exit(0)
 
     # Run the scraper
     asyncio.run(main())

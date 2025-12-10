@@ -251,8 +251,8 @@ class SmartDiscoveryResolver:
                 try:
                     url = pattern.url_pattern.format(**safe_data)
                     urls.append(url)
-                except:
-                    pass
+                except (KeyError, ValueError, IndexError):
+                    pass  # Pattern doesn't match available data
 
         except Exception as e:
             logger.error(f"Error generating URLs from pattern: {e}")

@@ -50,9 +50,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Rate limiting - VERY conservative for Stratechery
-BASE_DELAY = 5.0  # 5 seconds between requests
+import random
+BASE_DELAY = 6.0  # Base delay
 MAX_DELAY = 300.0  # 5 minutes max backoff
 DELAY_MULTIPLIER = 2.0
+DELAY_JITTER = 0.5  # +/- 50% randomization
 
 # Output directories
 OUTPUT_BASE = Path("data/stratechery")
@@ -62,19 +64,51 @@ PROGRESS_FILE = OUTPUT_BASE / "crawl_progress.json"
 
 
 class StrategyCrawler:
-    """Crawler for Stratechery content with careful rate limiting"""
+    """Crawler for Stratechery content with careful rate limiting.
+
+    Uses Playwright for browser-based fetching to handle OAuth redirects properly.
+    """
 
     def __init__(self, cookies: Dict[str, str] = None):
-        self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": "Atlas-Stratechery/1.0 (personal archive)",
-            "Accept": "text/html,application/xhtml+xml",
-        })
         self.cookies = cookies or load_cookies_for_domain("stratechery.com")
         self.current_delay = BASE_DELAY
         self.request_count = 0
         self.crawled_urls: Set[str] = set()
         self.progress = self._load_progress()
+        self.browser = None
+        self.page = None
+
+    def _init_browser(self):
+        """Initialize Playwright browser with cookies"""
+        if self.browser:
+            return
+
+        from playwright.sync_api import sync_playwright
+        self.playwright = sync_playwright().start()
+        self.browser = self.playwright.chromium.launch(headless=True)
+        self.context = self.browser.new_context(
+            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+        )
+
+        # Load cookies into browser context
+        cookie_list = []
+        for name, value in self.cookies.items():
+            cookie_list.append({
+                "name": name,
+                "value": value,
+                "domain": "stratechery.com",
+                "path": "/"
+            })
+        self.context.add_cookies(cookie_list)
+        self.page = self.context.new_page()
+        logger.info("Playwright browser initialized with cookies")
+
+    def _close_browser(self):
+        """Close Playwright browser"""
+        if self.browser:
+            self.browser.close()
+            self.playwright.stop()
+            self.browser = None
 
     def _load_progress(self) -> Dict:
         """Load crawl progress from disk"""
@@ -100,44 +134,37 @@ class StrategyCrawler:
             json.dump(self.progress, f, indent=2)
 
     def _fetch(self, url: str) -> Optional[str]:
-        """Fetch URL with rate limiting and backoff"""
+        """Fetch URL with Playwright browser (handles OAuth redirects)"""
         if url in self.crawled_urls:
             logger.debug(f"Skipping already crawled: {url}")
             return None
 
-        # Rate limit
-        time.sleep(self.current_delay)
+        # Initialize browser on first fetch
+        self._init_browser()
+
+        # Rate limit with random jitter (looks more human)
+        jitter = random.uniform(1 - DELAY_JITTER, 1 + DELAY_JITTER)
+        delay = self.current_delay * jitter
+        time.sleep(delay)
         self.request_count += 1
 
         try:
-            response = self.session.get(
-                url,
-                cookies=self.cookies,
-                timeout=30,
-                allow_redirects=True
-            )
-            response.raise_for_status()
+            self.page.goto(url, wait_until="networkidle", timeout=60000)
+
+            # Check if we got redirected to login
+            if "passport" in self.page.url and "login" in self.page.url:
+                logger.error(f"Redirected to login - cookies expired")
+                self.progress["failed_urls"].append({"url": url, "error": "auth"})
+                return None
+
+            html = self.page.content()
 
             # Success - reset delay
             self.current_delay = BASE_DELAY
             self.crawled_urls.add(url)
 
             logger.info(f"[{self.request_count}] Fetched: {url[:80]}...")
-            return response.text
-
-        except requests.exceptions.HTTPError as e:
-            if e.response.status_code == 429:
-                # Rate limited - back off
-                self.current_delay = min(self.current_delay * DELAY_MULTIPLIER, MAX_DELAY)
-                logger.warning(f"Rate limited. Backing off to {self.current_delay}s")
-                time.sleep(self.current_delay)
-                return self._fetch(url)  # Retry
-            elif e.response.status_code in (401, 403):
-                logger.error(f"Auth error on {url} - cookies may have expired")
-                self.progress["failed_urls"].append({"url": url, "error": "auth"})
-            else:
-                logger.error(f"HTTP {e.response.status_code} for {url}")
-                self.progress["failed_urls"].append({"url": url, "error": str(e)})
+            return html
 
         except Exception as e:
             logger.error(f"Error fetching {url}: {e}")
@@ -224,66 +251,85 @@ class StrategyCrawler:
         return filepath
 
     def get_archive_urls(self, content_type: str = "all", since: str = None) -> List[str]:
-        """Get list of article/podcast URLs from archive pages"""
+        """Get list of article/podcast URLs from year-based archive pages.
+
+        Stratechery uses year-based archives like /2024/, /2023/, etc. with pagination.
+        This is more reliable than category pages which have inconsistent pagination.
+        """
         urls = []
+        seen_urls = set()
 
-        # Archive pages to crawl
-        archive_pages = []
+        # Determine year range
+        current_year = datetime.now().year
+        start_year = 2013  # Stratechery started in 2013
 
-        if content_type in ("all", "articles"):
-            archive_pages.append("https://stratechery.com/category/articles/")
-            archive_pages.append("https://stratechery.com/category/daily-email/")
+        if since:
+            start_year = max(start_year, int(since[:4]))
 
-        if content_type in ("all", "podcasts"):
-            archive_pages.append("https://stratechery.com/category/podcasts/")
-            archive_pages.append("https://stratechery.com/category/sharp-tech/")
-            archive_pages.append("https://stratechery.com/category/dithering/")
-
-        for archive_url in archive_pages:
+        # Crawl each year from most recent to oldest
+        for year in range(current_year, start_year - 1, -1):
             page = 1
+            consecutive_empty = 0
+
             while True:
                 if page == 1:
-                    url = archive_url
+                    url = f"https://stratechery.com/{year}/"
                 else:
-                    url = f"{archive_url}page/{page}/"
+                    url = f"https://stratechery.com/{year}/page/{page}/"
 
                 html = self._fetch(url)
                 if not html:
+                    # 404 or error - move to next year
                     break
 
                 soup = BeautifulSoup(html, "html.parser")
 
-                # Find article links
-                article_links = soup.select("article a[href*='stratechery.com/20'], h2 a[href*='stratechery.com/20']")
-                if not article_links:
-                    break
-
-                for link in article_links:
+                # Find all article links on the page
+                # Look for links in article titles, entry titles, post titles
+                found_on_page = 0
+                for link in soup.find_all("a", href=True):
                     href = link.get("href", "")
-                    if href and "stratechery.com/20" in href:
-                        # Filter by date if specified
-                        if since:
-                            # Extract year from URL (e.g., stratechery.com/2024/...)
-                            match = re.search(r"/(\d{4})/", href)
-                            if match:
-                                year = int(match.group(1))
-                                since_year = int(since[:4])
-                                if year < since_year:
-                                    continue
-
-                        if href not in urls:
+                    # Match article URLs like stratechery.com/2024/article-slug/
+                    if re.match(rf"https?://stratechery\.com/{year}/[a-z0-9-]+/?$", href):
+                        # Skip category/tag/page URLs
+                        if any(x in href for x in ["/category/", "/tag/", "/page/", "/author/"]):
+                            continue
+                        if href not in seen_urls:
+                            seen_urls.add(href)
                             urls.append(href)
+                            found_on_page += 1
 
-                logger.info(f"Found {len(urls)} URLs from {url}")
+                logger.info(f"Found {found_on_page} new URLs from {url} (total: {len(urls)})")
 
-                # Check for next page
-                next_page = soup.select_one("a.next, .nav-next a, a[rel='next']")
-                if not next_page:
+                if found_on_page == 0:
+                    consecutive_empty += 1
+                    if consecutive_empty >= 2:
+                        # Two empty pages in a row - done with this year
+                        break
+                else:
+                    consecutive_empty = 0
+
+                # Check for next page link
+                next_link = soup.select_one("a.next, .nav-next a, a[rel='next'], .pagination a.next")
+                if not next_link:
+                    # No explicit next link - try a few more pages anyway
+                    if page < 3 or found_on_page > 0:
+                        page += 1
+                        time.sleep(2)
+                        continue
                     break
+
                 page += 1
 
                 # Extra delay between archive pages
                 time.sleep(2)
+
+                # Safety limit per year
+                if page > 100:
+                    logger.warning(f"Hit page limit for year {year}")
+                    break
+
+            logger.info(f"Year {year} complete: {len(urls)} total URLs so far")
 
         return urls
 

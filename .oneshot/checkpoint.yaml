@@ -2,65 +2,86 @@
 # Tracks project state for session continuity
 
 checkpoint:
-  version: "3.0"
+  version: "3.1"
   project: "atlas"
   created: "2025-12-06"
   last_updated: "2025-12-06"
 
   # Current project phase
   phase: "production"
-  status: "active"
+  status: "healthy"
 
-  # ONE_SHOT retrofit status
-  retrofit:
+  # Architecture cleanup status
+  cleanup:
     completed: true
     date: "2025-12-06"
-    artifacts:
-      - AGENTS.md
-      - LLM-OVERVIEW.md
-      - PRD.md
-      - scripts/setup.sh
-      - scripts/start.sh
-      - scripts/stop.sh
-      - scripts/status.sh
-      - .oneshot/checkpoint.yaml
+    changes:
+      - "Archived broken web/api/ routers (12 files) → archive/legacy_api/"
+      - "Archived broken tests (79 files) → archive/legacy_tests/"
+      - "Archived old processors (216 files) → archive/legacy_processors/"
+      - "Created new clean api/ module with 4 routers"
+      - "Created new clean tests/ with 34 passing tests"
+
+  # Current architecture
+  architecture:
+    api_entry: "api/main.py"
+    api_routers:
+      - "api/routers/health.py"
+      - "api/routers/podcasts.py"
+      - "api/routers/content.py"
+      - "api/routers/search.py"
+    modules:
+      - "modules/podcasts/"
+      - "modules/storage/"
+      - "modules/pipeline/"
+      - "modules/ingest/"
+      - "modules/notifications/"
+    tests:
+      - "tests/test_api.py"
+      - "tests/test_podcasts.py"
+      - "tests/test_storage.py"
 
   # Project metrics
   metrics:
-    episodes_total: 2373
-    transcripts_found: 750
-    completion_percent: 31
-    podcasts_tracked: 73
+    tests_passing: 34
+    api_routers: 4
+    core_modules: 5
+    archived_files: 307
 
   # Last session context
   last_session:
     date: "2025-12-06"
-    task: "ONE_SHOT v3.0 retrofit"
+    task: "Architecture cleanup and test infrastructure rebuild"
     outcome: "completed"
-    notes: "Applied ONE_SHOT standard to existing Atlas project"
+    notes: |
+      Major cleanup: removed all broken code referencing non-existent helpers.*
+      User explicitly rejected stubs/compatibility - wanted clean solution.
+      Created new api/ and tests/ from scratch with 34 passing tests.
 
-  # Pending work (from PRD v1.1)
+  # Pending work
   pending:
-    - "YouTube transcript extraction"
-    - "Reach 50% transcript coverage"
-    - "Consolidate processor files (135 → ~20)"
+    - "Add more podcast-specific scrapers (modules/transcript_discovery/)"
+    - "Implement daemon mode for run-bot.py"
+    - "Configure base_url from env in podemos_rss_server.py"
 
   # Agent handoff notes
   handoff:
     context: |
-      Atlas is a mature, production-ready podcast transcript discovery system.
-      The ONE_SHOT retrofit added standard artifacts and scripts.
-      The codebase is real and functional, not stubs.
+      Atlas has been cleaned up with a new architecture.
+      Old broken code is in archive/ (not deleted, just moved).
+      New code uses modules/ structure with clean FastAPI API.
+      All 34 tests pass.
 
     quick_commands:
       start: "./scripts/start.sh"
       stop: "./scripts/stop.sh"
       status: "./scripts/status.sh"
-      api: "make api"
-      test: "make test"
+      api: "./venv/bin/uvicorn api.main:app --port 7444"
+      test: "./venv/bin/pytest tests/ -v"
 
     key_files:
-      processor: "processors/atlas_manager.py"
-      api: "web/api.py"
-      database: "podcast_processing.db"
-      config: "config/feeds.yaml"
+      api_entry: "api/main.py"
+      podcast_store: "modules/podcasts/store.py"
+      file_store: "modules/storage/file_store.py"
+      index_manager: "modules/storage/index_manager.py"
+      database: "data/podcasts/atlas_podcasts.db"

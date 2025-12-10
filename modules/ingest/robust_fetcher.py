@@ -101,6 +101,93 @@ except ImportError:
     logger.warning("playwright not installed - headless browser fallback disabled")
 
 
+# SSRF Protection - Block requests to internal/private networks
+import ipaddress
+import socket
+
+def is_safe_url(url: str) -> tuple[bool, str]:
+    """
+    Validate URL is safe to fetch (SSRF prevention).
+
+    Blocks:
+    - Private IP ranges (10.x, 192.168.x, 172.16-31.x)
+    - Localhost and loopback addresses
+    - Link-local addresses (169.254.x.x)
+    - Internal hostnames
+    - Non-HTTP(S) schemes
+
+    Returns:
+        Tuple of (is_safe, reason)
+    """
+    try:
+        parsed = urlparse(url)
+
+        # Only allow HTTP and HTTPS
+        if parsed.scheme not in ('http', 'https'):
+            return False, f"Invalid scheme: {parsed.scheme}"
+
+        hostname = parsed.hostname
+        if not hostname:
+            return False, "No hostname in URL"
+
+        # Block internal hostnames
+        internal_patterns = [
+            'localhost',
+            'internal',
+            'intranet',
+            'local',
+            '.local',
+            '.internal',
+            '.corp',
+            '.lan',
+        ]
+        hostname_lower = hostname.lower()
+        for pattern in internal_patterns:
+            if hostname_lower == pattern or hostname_lower.endswith(pattern):
+                return False, f"Internal hostname blocked: {hostname}"
+
+        # Resolve hostname and check IP
+        try:
+            resolved_ips = socket.getaddrinfo(hostname, parsed.port or (443 if parsed.scheme == 'https' else 80))
+            for family, _, _, _, sockaddr in resolved_ips:
+                ip_str = sockaddr[0]
+                try:
+                    ip = ipaddress.ip_address(ip_str)
+
+                    # Block private IPs
+                    if ip.is_private:
+                        return False, f"Private IP blocked: {ip_str}"
+
+                    # Block loopback
+                    if ip.is_loopback:
+                        return False, f"Loopback IP blocked: {ip_str}"
+
+                    # Block link-local
+                    if ip.is_link_local:
+                        return False, f"Link-local IP blocked: {ip_str}"
+
+                    # Block reserved ranges
+                    if ip.is_reserved:
+                        return False, f"Reserved IP blocked: {ip_str}"
+
+                    # Block multicast
+                    if ip.is_multicast:
+                        return False, f"Multicast IP blocked: {ip_str}"
+
+                except ValueError:
+                    continue  # Skip invalid IPs
+
+        except socket.gaierror:
+            # DNS resolution failed - could be typo or non-existent domain
+            # Allow the request to fail naturally with a better error message
+            pass
+
+        return True, ""
+
+    except Exception as e:
+        return False, f"URL validation error: {e}"
+
+
 @dataclass
 class FetchResult:
     """Result of a content fetch operation."""
@@ -674,6 +761,14 @@ class RobustFetcher:
             result.error = f"Skipped: {skip_reason}"
             result.attempts.append({"method": "skip_check", "success": False, "reason": skip_reason})
             logger.info(f"Skipping URL: {skip_reason}")
+            return result
+
+        # SSRF Prevention: Validate URL before fetching
+        is_safe, ssrf_reason = is_safe_url(url)
+        if not is_safe:
+            result.error = f"SSRF blocked: {ssrf_reason}"
+            result.attempts.append({"method": "ssrf_check", "success": False, "reason": ssrf_reason})
+            logger.warning(f"SSRF protection blocked URL: {ssrf_reason}")
             return result
 
         domain = urlparse(url).netloc

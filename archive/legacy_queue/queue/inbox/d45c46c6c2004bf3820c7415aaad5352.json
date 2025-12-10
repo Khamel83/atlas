@@ -1,0 +1,18 @@
+{
+  "id": "d45c46c6c2004bf3820c7415aaad5352",
+  "type": "backlog",
+  "source": "instapaper_csv",
+  "payload": {
+    "row": {
+      "URL": "http://www.theverge.com/2017/3/2/14790580/slack-vulnerability-authentication-token-postmessage-bounty",
+      "Title": "Slack vulnerability would have let hackers take over accounts and read archives The Verge",
+      "Selection": "This morning, a researcher reported a previously unknown vulnerability in Slack, which could be used to take over accounts and read archived messages by compromising a user\u2019s authentication token. First reported Tuesday evening, the vulnerability has already been patched by Slack shortly. The company claims there were no successful exploitations of the bug, based on an examination of the past two years of logs.\n\nThe vulnerability was discovered by Detectify\u2019s Frans Rosen, who created the proof-of-concept after noticing a weakness in the way Slack uses pop-up windows. When Slack initiates a call, it does so in a pop-up window \u2014 but Rosen discovered that that pop-up window wasn\u2019t verifying the messages between the new window and the original chat app. That meant that if you were running Rosen\u2019s malicious webpage in the background, the page could masquerade as a Slack server, sending a phony call to the newly opened call window. Along the way, Rosen\u2019s page could grab the users\u2019 authentication token \u2014 essentially the password for any single session -- which allowed full access to all account data, including message archives.\n\nThe key, according to Rosen, is a function called PostMessage, which is commonly used for asynchronous messaging services like Slack, but often leads to this sort of under-authentication. \u201c[PostMessage] requires you to be careful,\u201d Rosen wrote. \u201cIf you're not, and if you're not checking where the messages came from, messages could actually be sent from another web page.\u201d\n\nIt\u2019s not the first time Slack\u2019s authentication tokens have gotten the company in trouble. Last April, Detectify found more than 1,500 Slack tokens that had been inadvertently posted to Github as part of Slack integration code, exposing users to similar consequences.\n\nRosen contacted Slack about the vulnerability through the HackerOne disclosure service, and it was quickly solved by adding another layer of authentication. Slack had deployed the fix within five hours of being notified, and Rosen was paid $3,000 for the report. \u201cThis bug is exactly why we invest in our public bug bounty program,\u201d a Slack spokesperson told The Verge.\n\nThere\u2019s no indication anyone actively exploited the bug, but it plays on long-standing fears about the app\u2019s data security policies. In 2014, Slack\u2019s sign-up process was shown to accidentally reveal some of an organization\u2019s groups before a user was verified.",
+      "Folder": "Feedly",
+      "Timestamp": "1488549488",
+      "Tags": "[]"
+    },
+    "source_path": "data/backlog/source_drops/Instapaper-Export-2025-03-26_20_23_56.csv"
+  },
+  "origin_manifest_id": "497cd2c549404409861b3a1098bd5186",
+  "created_at": "2025-11-28T04:26:59.632077Z"
+}

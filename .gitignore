@@ -104,3 +104,15 @@ instapaper_dump.log*
 # Large archives and backups
 *.tar.gz
 ATLAS_EVERYTHING_FINAL.tar.gz
+.secrets-backup/
+
+# ONE_SHOT secrets
+.env
+.env.local
+*.key
+.age/
+!.env.example
+!*.encrypted
+secrets.env
+secrets.env.new
+secrets.env.encrypted.tmp

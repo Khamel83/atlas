@@ -5,6 +5,7 @@ This is the main FastAPI application that exposes modules/ functionality
 via HTTP endpoints.
 """
 
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -17,13 +18,19 @@ app = FastAPI(
     version="2.0.0",
 )
 
-# CORS middleware for web access
+# CORS configuration - restrict to specific origins
+# Set ATLAS_CORS_ORIGINS env var for custom origins (comma-separated)
+ALLOWED_ORIGINS = os.environ.get(
+    "ATLAS_CORS_ORIGINS",
+    "http://localhost:3000,http://localhost:7444,http://127.0.0.1:3000,http://127.0.0.1:7444"
+).split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Restrict in production
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=False,  # Disabled - not needed for API-only access
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
 # Include routers
@@ -47,4 +54,8 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=7444)
+    # Bind to localhost only by default for security
+    # Set ATLAS_API_HOST=0.0.0.0 to expose externally (use with caution)
+    host = os.environ.get("ATLAS_API_HOST", "127.0.0.1")
+    port = int(os.environ.get("ATLAS_API_PORT", "7444"))
+    uvicorn.run(app, host=host, port=port)

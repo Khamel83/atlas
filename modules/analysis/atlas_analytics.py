@@ -48,13 +48,13 @@ class AtlasAnalytics:
             # Parse timestamp
             try:
                 dt = datetime.fromisoformat(timestamp.replace('Z', '+00:00'))
-            except:
+            except (ValueError, TypeError):
                 dt = datetime.now(timezone.utc)
 
             # Parse JSON data
             try:
                 data = json.loads(data_json)
-            except:
+            except (json.JSONDecodeError, TypeError):
                 data = {}
 
             return {
