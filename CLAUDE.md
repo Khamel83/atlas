@@ -34,6 +34,9 @@ atlas/
 │   └── routers/
 │       └── dashboard.py  # Progress monitoring endpoints
 ├── scripts/              # Utility scripts
+│   ├── run_enrichment.py            # Full ad removal workflow
+│   ├── analyze_ads.py               # Ad detection analysis
+│   ├── enrich_improve_loop.py       # FP detection and fixing
 │   ├── stratechery_crawler.py       # Full Stratechery archive
 │   ├── parallel_youtube_worker.py   # Multi-worker YouTube fetch
 │   ├── check_cookies.py             # Cookie expiration alerts
@@ -43,7 +46,7 @@ atlas/
 ├── config/
 │   ├── mapping.yml           # Podcast resolver config
 │   └── podcast_limits.json   # Per-podcast episode limits
-├── systemd/              # 7 systemd timer services
+├── systemd/              # 8 systemd timer services
 │   └── atlas-podcasts.env    # Environment for services
 └── data/
     ├── podcasts/         # Transcript storage
@@ -54,7 +57,7 @@ atlas/
 
 ---
 
-## Systemd Services (7 Timers)
+## Systemd Services (9 Timers)
 
 All timers are installed and running. Check with: `systemctl list-timers | grep atlas`
 
@@ -68,6 +71,8 @@ All timers are installed and running. Check with: `systemctl list-timers | grep 
 | `atlas-content-retry` | Weekly | Retry failed URL fetches |
 | `atlas-cookie-check` | Daily 9am | Check cookie expiration → ntfy alert |
 | `atlas-backlog-fetcher` | Every 30min | Fetch 50 transcripts with proxy health check |
+| `atlas-enrich` | Sunday 4am | Clean ads from content, generate reports |
+| `atlas-link-pipeline` | Every 2 hours | Approve and ingest extracted links |
 
 **Install all:**
 ```bash
@@ -652,6 +657,246 @@ FROM episodes ORDER BY updated_at DESC LIMIT 10"
 python -m modules.podcasts.cli status
 systemctl list-timers | grep atlas
 ps aux | grep python.*atlas
+```
+
+---
+
+## Content Enrichment (Ad Removal, URL Cleanup, Link Queue)
+
+Multi-stage content enrichment pipeline:
+1. **Ad Removal**: Strip sponsor/ad content
+2. **URL Sanitization**: Remove tracking params (utm_, fbclid, etc.)
+3. **Link Extraction**: Queue high-value URLs for potential ingestion
+
+### Architecture
+
+```
+modules/enrich/
+├── ad_stripper.py        # Pattern-based ad detection
+├── content_cleaner.py    # Orchestration + quality scoring
+├── versioned_cleaner.py  # Non-destructive versioning
+├── url_sanitizer.py      # Strip tracking params from URLs
+├── link_extractor.py     # Extract and score URLs for ingestion
+├── review.py             # False positive tracking
+└── cli.py                # Command-line interface
+
+data/
+├── podcasts/             # ORIGINALS (never modified)
+├── content/              # ORIGINALS (never modified)
+├── clean/                # CLEANED VERSIONS (for indexing)
+│   ├── podcasts/{slug}/transcripts/*.md
+│   ├── article/*.md
+│   ├── newsletter/*.md
+│   ├── youtube/*.md
+│   └── stratechery/{articles,podcasts}/*.md
+└── enrich/
+    ├── enrich.db         # SQLite tracking database
+    ├── link_queue.db     # URLs queued for potential ingestion
+    ├── changes/*.json    # Detailed removal records
+    └── reports/*.md      # Weekly reports
+```
+
+### Commands
+
+```bash
+# Full enrichment workflow (ads, FPs, URL cleanup, link extraction, report)
+./venv/bin/python scripts/run_enrichment.py
+
+# Dry run
+./venv/bin/python scripts/run_enrichment.py --dry-run
+
+# Specific content type
+./venv/bin/python scripts/run_enrichment.py --type podcasts
+
+# Skip URL sanitization or link extraction
+./venv/bin/python scripts/run_enrichment.py --skip-sanitize
+./venv/bin/python scripts/run_enrichment.py --skip-links
+
+# Force re-clean everything
+./venv/bin/python scripts/run_enrichment.py --force
+
+# Just generate report
+./venv/bin/python scripts/run_enrichment.py --report
+```
+
+### URL Sanitization
+
+Strips tracking parameters while preserving content and auth params:
+
+```bash
+# Standalone sanitization
+./venv/bin/python -m modules.enrich.url_sanitizer --clean-dir
+
+# Preview changes
+./venv/bin/python -m modules.enrich.url_sanitizer --clean-dir --dry-run
+```
+
+**Removed**: `utm_*`, `fbclid`, `gclid`, `ref`, `affiliate`, etc.
+**Kept**: `token`, `key`, `auth`, `page`, `id`, `q`, etc.
+
+### Link Extraction
+
+Extracts URLs from content, scores them, and queues high-value ones for review:
+
+```bash
+# Extract links from all clean content
+./venv/bin/python -m modules.enrich.link_extractor --extract
+
+# View queue stats
+./venv/bin/python -m modules.enrich.link_extractor --stats
+
+# View pending high-value links
+./venv/bin/python -m modules.enrich.link_extractor --pending --min-score 0.7
+```
+
+**Scoring**: Domain reputation, context words, anchor text, URL structure
+**Skipped**: Social media, URL shorteners, ads/commerce, podcast platforms
+**High-value**: Tech news, research, business news, substacks
+
+### Link Queue Analysis
+
+Analyze extracted URLs to decide what to ingest:
+
+```bash
+# Quick summary
+./venv/bin/python scripts/analyze_link_queue.py --summary
+
+# Full domain analysis
+./venv/bin/python scripts/analyze_link_queue.py --domains
+
+# See which content links the most
+./venv/bin/python scripts/analyze_link_queue.py --sources
+
+# Sample high-value URLs (score >= 0.8)
+./venv/bin/python scripts/analyze_link_queue.py --samples
+
+# URLs mentioned in multiple sources (consensus = valuable)
+./venv/bin/python scripts/analyze_link_queue.py --duplicates
+
+# Analyze specific domain
+./venv/bin/python scripts/analyze_link_queue.py --domain nytimes.com
+
+# Export high-value to CSV for review
+./venv/bin/python scripts/analyze_link_queue.py --export --min-score 0.7
+```
+
+**Current Stats** (as of initial extraction):
+- 30k+ URLs extracted
+- ~34% high-value (score >= 0.8)
+- 4,400+ unique domains
+- Top sources: NPR, Stratechery, Substack, NYTimes, The Atlantic
+
+### Analysis & Improvement
+
+```bash
+# Analyze ad detection patterns
+./venv/bin/python scripts/analyze_ads.py
+
+# Focus on false positives
+./venv/bin/python scripts/analyze_ads.py --fp
+
+# Analyze specific pattern
+./venv/bin/python scripts/analyze_ads.py --pattern "Squarespace"
+
+# Improvement loop (analyze → fix → repeat)
+./venv/bin/python scripts/enrich_improve_loop.py
+./venv/bin/python scripts/enrich_improve_loop.py --fix
+```
+
+### How It Works
+
+1. **Ad Detection**: Regex patterns for sponsor phrases, advertiser names, URL patterns
+2. **Confidence tiers**: HIGH (>0.9) auto-remove, MEDIUM (0.7-0.9) review, LOW skip
+3. **Negative patterns**: Prevent false positives (e.g., "notion of" vs Notion app)
+4. **URL Sanitization**: Strip tracking params from all URLs in clean files
+5. **Link Extraction**: Score and queue URLs for potential ingestion
+6. **Feedback loop**: Analyze removals, add negative patterns, re-clean
+
+### Current Stats
+
+- **15,116 files** processed
+- **7,063 ads** removed (~3MB of ad content)
+- **0% false positive rate** (after pattern tuning)
+- Top advertisers: Squarespace, Betterment, Casper, ExpressVPN
+
+### Systemd Timer
+
+Runs weekly (Sunday 4am) via `atlas-enrich.timer`:
+```bash
+systemctl status atlas-enrich.timer
+journalctl -u atlas-enrich -f
+```
+
+---
+
+## Link Discovery & Ingestion Pipeline
+
+Unified system for extracting, approving, and ingesting URLs from any content source.
+
+### Architecture
+
+```
+modules/links/
+├── __init__.py      # Package exports
+├── models.py        # Link, LinkSource, ApprovalResult
+├── extractor.py     # Extract & score links from text
+├── approval.py      # YAML-based approval engine
+├── bridge.py        # link_queue.db → url_queue.txt
+├── shownotes.py     # Extract from podcast RSS descriptions
+└── cli.py           # Unified CLI
+
+Data Flow:
+  Sources → LinkExtractor → link_queue.db → ApprovalEngine → url_queue.txt → URL Fetcher
+```
+
+### CLI Commands
+
+```bash
+# Extract from podcast show notes (no HTTP - uses cached RSS data)
+./venv/bin/python -m modules.links.cli extract-shownotes --all
+./venv/bin/python -m modules.links.cli extract-shownotes --slug acquired
+
+# Extract from any text file
+./venv/bin/python -m modules.links.cli extract --file article.md --source article
+
+# Run approval workflow (uses config/link_approval_rules.yml)
+./venv/bin/python -m modules.links.cli approve --dry-run
+./venv/bin/python -m modules.links.cli approve --apply
+
+# Bridge approved links to URL queue (drip mode: 50 urls/run)
+./venv/bin/python -m modules.links.cli ingest --dry-run
+./venv/bin/python -m modules.links.cli ingest --drip
+
+# Pipeline status
+./venv/bin/python -m modules.links.cli status
+./venv/bin/python -m modules.links.cli stats --by-domain
+./venv/bin/python -m modules.links.cli stats --by-source
+```
+
+### Approval Rules
+
+Configuration in `config/link_approval_rules.yml`:
+- **Trusted domains**: Auto-approve (stratechery, nytimes, arxiv, etc.)
+- **Score threshold**: Auto-approve >= 0.85
+- **Reject threshold**: Auto-reject < 0.40
+- **Blocked domains**: Always reject (bit.ly, twitter, etc.)
+- **Drip settings**: 50 urls/run, 10 sec delay
+
+### Systemd Timer
+
+Runs every 2 hours via `atlas-link-pipeline.timer`:
+1. Run approval on pending links
+2. Bridge approved links to url_queue.txt (drip mode)
+
+```bash
+# Install
+sudo cp systemd/atlas-link-pipeline.* /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now atlas-link-pipeline.timer
+
+# Check
+systemctl status atlas-link-pipeline.timer
+journalctl -u atlas-link-pipeline -f
 ```
 
 ---
