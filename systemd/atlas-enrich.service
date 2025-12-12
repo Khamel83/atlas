@@ -1,0 +1,18 @@
+[Unit]
+Description=Atlas Content Enrichment (ad removal)
+After=network.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/run_enrichment.py --type all
+StandardOutput=journal
+StandardError=journal
+
+# Resource limits
+MemoryMax=2G
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target

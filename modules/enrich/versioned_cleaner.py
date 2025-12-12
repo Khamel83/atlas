@@ -252,25 +252,54 @@ class VersionedCleaner:
         """Generate unique content ID from path."""
         # podcast:acquired:2024-01-01_episode-title
         parts = original_path.parts
+        path_str = str(original_path)
+
+        # Check if this is Stratechery content (special path structure)
+        if "stratechery" in path_str:
+            # data/stratechery/articles/2024-01-01_title.md
+            # data/stratechery/podcasts/2024-01-01_title.md
+            subtype = "articles" if "articles" in path_str else "podcasts"
+            return f"stratechery:{subtype}:{original_path.stem}"
+
         if content_type == "podcast":
             # data/podcasts/{slug}/transcripts/{filename}
             slug = parts[-3] if len(parts) >= 3 else "unknown"
             filename = original_path.stem
             return f"podcast:{slug}:{filename}"
         elif content_type == "article":
-            # data/content/article/{date}/{id}/content.md
+            # data/content/article/{year}/{month}/{day}/{id}/content.md
+            # or data/content/article/{year}/{id}/content.md
             if len(parts) >= 4:
+                # Use the parent dir name as the article ID
                 return f"article:{parts[-3]}:{parts[-2]}"
             return f"article:{original_path.stem}"
+        elif content_type == "newsletter":
+            # data/content/newsletter/{year}/{month}/{day}/{id}/content.md
+            if len(parts) >= 4:
+                return f"newsletter:{parts[-3]}:{parts[-2]}"
+            return f"newsletter:{original_path.stem}"
+        elif content_type == "youtube":
+            # data/content/youtube/{year}/{id}/content.md
+            if len(parts) >= 3:
+                return f"youtube:{parts[-3]}:{parts[-2]}"
+            return f"youtube:{original_path.stem}"
         else:
+            # For other types, use the filename stem
             return f"{content_type}:{original_path.stem}"
 
     def _get_clean_path(self, original_path: Path, content_type: str) -> Path:
         """Get path for cleaned version."""
         content_id = self._generate_content_id(original_path, content_type)
         parts = content_id.split(":")
+        path_str = str(original_path)
 
-        if content_type == "podcast":
+        # Handle Stratechery content specially
+        if "stratechery" in path_str:
+            # stratechery:articles:filename -> data/clean/stratechery/articles/filename.md
+            subtype = parts[1] if len(parts) > 1 else "articles"
+            filename = parts[2] if len(parts) > 2 else original_path.stem
+            return self.clean_base / "stratechery" / subtype / f"{filename}.md"
+        elif content_type == "podcast":
             # data/clean/podcasts/{slug}/transcripts/{filename}.md
             slug = parts[1] if len(parts) > 1 else "unknown"
             filename = parts[2] if len(parts) > 2 else original_path.stem
@@ -468,6 +497,165 @@ class VersionedCleaner:
 
         return stats
 
+    def clean_all_content(
+        self,
+        content_type: str,
+        base_path: str,
+        pattern: str,
+        dry_run: bool = False,
+        limit: Optional[int] = None,
+        force: bool = False,
+    ) -> Dict[str, Any]:
+        """
+        Clean all content of a given type.
+
+        Args:
+            content_type: article, newsletter, youtube, etc.
+            base_path: Base directory to search
+            pattern: Glob pattern for files
+            dry_run: Preview what would be cleaned
+            limit: Max files to process
+            force: Re-clean everything
+
+        Returns:
+            Stats dictionary
+        """
+        import glob
+
+        full_pattern = f"{base_path}/{pattern}"
+        files = sorted(glob.glob(full_pattern, recursive=True))
+
+        if limit:
+            files = files[:limit]
+
+        stats = {
+            "total": len(files),
+            "cleaned": 0,
+            "skipped": 0,
+            "ads_found": 0,
+            "chars_removed": 0,
+        }
+
+        print(f"{'[DRY RUN] ' if dry_run else ''}Processing {len(files)} {content_type} files...")
+
+        content_type_enum = ContentType(content_type)
+
+        for filepath in files:
+            original_path = Path(filepath)
+            content_id = self._generate_content_id(original_path, content_type)
+
+            if dry_run:
+                original_text = original_path.read_text(encoding='utf-8')
+                original_hash = self._hash_content(original_text)
+
+                if not force and not self.db.needs_cleaning(content_id, original_hash):
+                    stats["skipped"] += 1
+                    continue
+
+                strip_result = self.cleaner.ad_stripper.strip(
+                    original_text, content_type_enum
+                )
+
+                if strip_result.ads_found > 0:
+                    print(f"  Would clean {original_path.name}: "
+                          f"{strip_result.ads_found} ads, {strip_result.percent_removed:.1f}%")
+
+                stats["cleaned"] += 1
+                stats["ads_found"] += strip_result.ads_found
+                stats["chars_removed"] += strip_result.chars_removed
+            else:
+                record = self.clean_file(filepath, content_type, force=force)
+
+                if record:
+                    stats["cleaned"] += 1
+                    stats["ads_found"] += record.ads_removed
+                    stats["chars_removed"] += record.chars_removed
+                else:
+                    stats["skipped"] += 1
+
+        return stats
+
+    def clean_all_articles(
+        self,
+        dry_run: bool = False,
+        limit: Optional[int] = None,
+        force: bool = False,
+    ) -> Dict[str, Any]:
+        """Clean all article content."""
+        return self.clean_all_content(
+            content_type="article",
+            base_path="data/content/article",
+            pattern="**/content.md",
+            dry_run=dry_run,
+            limit=limit,
+            force=force,
+        )
+
+    def clean_all_newsletters(
+        self,
+        dry_run: bool = False,
+        limit: Optional[int] = None,
+        force: bool = False,
+    ) -> Dict[str, Any]:
+        """Clean all newsletter content."""
+        return self.clean_all_content(
+            content_type="newsletter",
+            base_path="data/content/newsletter",
+            pattern="**/content.md",
+            dry_run=dry_run,
+            limit=limit,
+            force=force,
+        )
+
+    def clean_all_youtube(
+        self,
+        dry_run: bool = False,
+        limit: Optional[int] = None,
+        force: bool = False,
+    ) -> Dict[str, Any]:
+        """Clean all YouTube content."""
+        return self.clean_all_content(
+            content_type="youtube",
+            base_path="data/content/youtube",
+            pattern="**/content.md",
+            dry_run=dry_run,
+            limit=limit,
+            force=force,
+        )
+
+    def clean_all_stratechery(
+        self,
+        dry_run: bool = False,
+        limit: Optional[int] = None,
+        force: bool = False,
+    ) -> Dict[str, Any]:
+        """Clean all Stratechery content."""
+        stats_articles = self.clean_all_content(
+            content_type="article",
+            base_path="data/stratechery/articles",
+            pattern="*.md",
+            dry_run=dry_run,
+            limit=limit,
+            force=force,
+        )
+        stats_podcasts = self.clean_all_content(
+            content_type="podcast",
+            base_path="data/stratechery/podcasts",
+            pattern="*.md",
+            dry_run=dry_run,
+            limit=limit,
+            force=force,
+        )
+
+        # Combine stats
+        return {
+            "total": stats_articles["total"] + stats_podcasts["total"],
+            "cleaned": stats_articles["cleaned"] + stats_podcasts["cleaned"],
+            "skipped": stats_articles["skipped"] + stats_podcasts["skipped"],
+            "ads_found": stats_articles["ads_found"] + stats_podcasts["ads_found"],
+            "chars_removed": stats_articles["chars_removed"] + stats_podcasts["chars_removed"],
+        }
+
     def show_removals(self, content_id: str) -> Optional[Dict]:
         """Show what was removed from a specific piece of content."""
         safe_id = content_id.replace(":", "_").replace("/", "_")
@@ -497,6 +685,11 @@ if __name__ == "__main__":
     # clean command
     clean_parser = subparsers.add_parser("clean", help="Clean content")
     clean_parser.add_argument("--podcasts", action="store_true", help="Clean all podcasts")
+    clean_parser.add_argument("--articles", action="store_true", help="Clean all articles")
+    clean_parser.add_argument("--newsletters", action="store_true", help="Clean all newsletters")
+    clean_parser.add_argument("--youtube", action="store_true", help="Clean all YouTube content")
+    clean_parser.add_argument("--stratechery", action="store_true", help="Clean all Stratechery")
+    clean_parser.add_argument("--all", action="store_true", help="Clean ALL content types")
     clean_parser.add_argument("--file", help="Clean single file")
     clean_parser.add_argument("--type", "-t", default="podcast")
     clean_parser.add_argument("--dry-run", "-n", action="store_true")
@@ -518,19 +711,75 @@ if __name__ == "__main__":
 
     cleaner = VersionedCleaner()
 
+    def print_stats(stats, dry_run, label=""):
+        print(f"\n{'[DRY RUN] ' if dry_run else ''}{label}Results:")
+        print(f"  Total files: {stats['total']}")
+        print(f"  Cleaned: {stats['cleaned']}")
+        print(f"  Skipped: {stats['skipped']}")
+        print(f"  Ads found: {stats['ads_found']}")
+        print(f"  Chars removed: {stats['chars_removed']}")
+
     if args.command == "clean":
-        if args.podcasts:
+        if args.all:
+            # Clean everything
+            print("=" * 60)
+            print("CLEANING ALL CONTENT")
+            print("=" * 60)
+
+            total_stats = {"total": 0, "cleaned": 0, "skipped": 0, "ads_found": 0, "chars_removed": 0}
+
+            for content_type, method in [
+                ("Podcasts", cleaner.clean_all_podcasts),
+                ("Articles", cleaner.clean_all_articles),
+                ("Newsletters", cleaner.clean_all_newsletters),
+                ("YouTube", cleaner.clean_all_youtube),
+                ("Stratechery", cleaner.clean_all_stratechery),
+            ]:
+                print(f"\n--- {content_type} ---")
+                stats = method(dry_run=args.dry_run, limit=args.limit, force=args.force)
+                print_stats(stats, args.dry_run)
+
+                for k in total_stats:
+                    total_stats[k] += stats[k]
+
+            print("\n" + "=" * 60)
+            print_stats(total_stats, args.dry_run, "TOTAL ")
+
+        elif args.podcasts:
             stats = cleaner.clean_all_podcasts(
                 dry_run=args.dry_run,
                 limit=args.limit,
                 force=args.force,
             )
-            print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Results:")
-            print(f"  Total files: {stats['total']}")
-            print(f"  Cleaned: {stats['cleaned']}")
-            print(f"  Skipped: {stats['skipped']}")
-            print(f"  Ads found: {stats['ads_found']}")
-            print(f"  Chars removed: {stats['chars_removed']}")
+            print_stats(stats, args.dry_run)
+        elif args.articles:
+            stats = cleaner.clean_all_articles(
+                dry_run=args.dry_run,
+                limit=args.limit,
+                force=args.force,
+            )
+            print_stats(stats, args.dry_run)
+        elif args.newsletters:
+            stats = cleaner.clean_all_newsletters(
+                dry_run=args.dry_run,
+                limit=args.limit,
+                force=args.force,
+            )
+            print_stats(stats, args.dry_run)
+        elif args.youtube:
+            stats = cleaner.clean_all_youtube(
+                dry_run=args.dry_run,
+                limit=args.limit,
+                force=args.force,
+            )
+            print_stats(stats, args.dry_run)
+        elif args.stratechery:
+            stats = cleaner.clean_all_stratechery(
+                dry_run=args.dry_run,
+                limit=args.limit,
+                force=args.force,
+            )
+            print_stats(stats, args.dry_run)
         elif args.file:
             record = cleaner.clean_file(args.file, args.type, force=args.force)
             if record:

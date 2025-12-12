@@ -201,6 +201,7 @@ class AdStripper:
 
     # Negative patterns - things that LOOK like ads but aren't
     # When these match, reduce confidence significantly
+    # Updated based on analysis of 7,175 removals from enrich.db
     DEFAULT_NEGATIVE_PATTERNS = [
         # Historical/contextual references
         r"Radio Advertising Bureau",
@@ -241,6 +242,69 @@ class AdStripper:
         r"stock (?:price|value|dropped|rose)",
         r"earnings report",
         r"quarterly results",
+
+        # ===== LEARNED FROM DATA ANALYSIS (Dec 2024) =====
+        # Brand names used as common words (137 false positives identified)
+
+        # "Slack" as noun/verb (61 FPs)
+        r"slack\s+community",           # Slack community discussions
+        r"member.only\s+Slack",         # Member Slack groups
+        r"our\s+Slack",                 # "our Slack channel"
+        r"in\s+the\s+earliest\s+days\s+of\s+Slack",  # Historical Slack discussion
+        r"co-?founder.*Slack",          # Slack co-founder mentions
+        r"Slack\s+(?:channel|workspace|group|team)",  # Slack product discussions
+
+        # "Notion" as concept (37 FPs)
+        r"notion\s+of\b",               # "notion of productivity"
+        r"a\s+(?:vague\s+)?notion",     # "a vague notion"
+        r"some\s+notion",               # "some notion of"
+        r"this\s+notion",               # "this notion that"
+        r"the\s+notion\s+that",         # "the notion that X"
+        r"have\s+(?:a\s+)?notion",      # "have a notion"
+        r"rejects?\s+(?:a\s+)?notion",  # "rejects a notion"
+
+        # "Indeed" as adverb (40 FPs)
+        r"\bindeed[,.]?\s*$",           # "Indeed." at end of sentence
+        r"indeed[,]?\s+(?:I|we|it|the|this|that|there|an?|some)\b",  # "Indeed, I think..."
+        r"is\s+indeed\b",               # "this is indeed"
+        r"was\s+indeed\b",              # "it was indeed"
+        r"have\s+indeed\b",             # "I have indeed heard"
+        r"indeed\s+(?:true|correct|right|possible|likely)",  # "indeed true"
+
+        # Self-promotion links (not paid ads) - 17 FPs
+        r"check\s+out\s+my\s+book",     # Author self-promo
+        r"my\s+newsletter",             # Newsletter self-promo
+        r"my\s+substack",               # Substack self-promo
+        r"for\s+more\s+of\s+my\s+work", # Author bio
+        r"available\s+(?:on|at)\s+Amazon",  # Book availability (not ad)
+
+        # Company lists (not ads) - portfolio/competitor mentions
+        r"(?:Uber|Airbnb|Stripe|Snap|Discord|Asana|Notion|Slack).{0,30}(?:Uber|Airbnb|Stripe|Snap|Discord|Asana|Notion|Slack)",
+        r"portfolio\s+compan",          # "portfolio companies"
+        r"invested\s+in",               # "invested in Slack"
+        r"backed\s+by",                 # "backed by Benchmark"
+
+        # ===== URL PATTERN FALSE POSITIVES (112 found in analysis) =====
+        # Editorial/citation links with tracking params are NOT ads
+
+        # News/research citations
+        r"(?:survey|study|report|research|published|according to).*\?utm_",
+        r"\?utm_.*(?:survey|study|report|article)",
+
+        # Website navigation/footer links
+        r"(?:About|Press|Copyright|Contact|Privacy|Terms).*\?utm_",
+        r"youtube\.com/(?:about|press|creators|developers)",
+
+        # Editorial links in articles
+        r"(?:published|posted|wrote|reported).*\?(?:utm_|ref=)",
+        r"iopscience\.iop\.org",        # Scientific journals
+        r"arxiv\.org",
+        r"doi\.org",
+        r"\.gov/",                      # Government sites
+
+        # Substack/newsletter internal links
+        r"substack\.com.*\?utm_source=substack",
+        r"please\s+check\s+out.*(?:survey|this)",
     ]
 
     def __init__(

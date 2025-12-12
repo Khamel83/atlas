@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly Atlas Content Enrichment
+
+[Timer]
+# Run every Sunday at 4am (after podcast discovery at 3am)
+OnCalendar=Sun *-*-* 04:00:00
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target
