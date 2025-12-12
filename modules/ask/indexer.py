@@ -54,17 +54,22 @@ class ContentIndexer:
     - data/stratechery/{articles,podcasts}/*.md
     """
 
-    def __init__(self, config: Optional[AskConfig] = None):
+    def __init__(self, config: Optional[AskConfig] = None, use_clean: bool = True):
         self.config = config or get_config()
         self.embedding_client = EmbeddingClient(self.config)
         self.chunker = ContentChunker(self.config)
         self.vector_store = VectorStore(self.config)
+        self.use_clean = use_clean  # Prefer ad-free versions from data/clean/
 
         # Base paths
         self.data_dir = Path("data")
+        self.clean_dir = Path("data/clean")  # Ad-free versions
         self.podcasts_dir = self.data_dir / "podcasts"
         self.content_dir = self.data_dir / "content"
         self.stratechery_dir = self.data_dir / "stratechery"
+
+        # Load clean path mapping from enrich database
+        self._clean_path_mapping = self._load_clean_path_mapping() if use_clean else {}
 
     def get_indexed_content_ids(self) -> Set[str]:
         """Get set of already-indexed content IDs."""
@@ -72,6 +77,53 @@ class ContentIndexer:
         cursor = conn.cursor()
         cursor.execute("SELECT DISTINCT content_id FROM chunks")
         return {row[0] for row in cursor.fetchall()}
+
+    def _load_clean_path_mapping(self) -> dict[str, str]:
+        """Load original->clean path mapping from enrich database."""
+        enrich_db = Path("data/enrich/enrich.db")
+        if not enrich_db.exists():
+            return {}
+
+        mapping = {}
+        try:
+            conn = sqlite3.connect(enrich_db)
+            cursor = conn.execute("SELECT original_path, clean_path FROM cleaning_records")
+            for row in cursor.fetchall():
+                # Normalize paths for lookup
+                orig = str(Path(row[0]))
+                clean = str(Path(row[1]))
+                mapping[orig] = clean
+            conn.close()
+        except Exception as e:
+            logger.warning(f"Failed to load clean path mapping: {e}")
+        return mapping
+
+    def _get_clean_path(self, original_path: Path) -> Path:
+        """Get the clean version path for an original file."""
+        # First check the enrich database mapping
+        orig_str = str(original_path)
+        if orig_str in self._clean_path_mapping:
+            return Path(self._clean_path_mapping[orig_str])
+
+        # Fallback: direct path mapping for podcasts
+        # data/podcasts/{slug}/transcripts/... -> data/clean/podcasts/{slug}/transcripts/...
+        try:
+            rel_path = original_path.relative_to(self.data_dir)
+            return self.clean_dir / rel_path
+        except ValueError:
+            return original_path
+
+    def _read_content(self, original_path: Path) -> tuple[str, Path, bool]:
+        """
+        Read content, preferring clean version if available.
+
+        Returns (text, actual_path, is_clean).
+        """
+        if self.use_clean:
+            clean_path = self._get_clean_path(original_path)
+            if clean_path.exists():
+                return clean_path.read_text(), clean_path, True
+        return original_path.read_text(), original_path, False
 
     def discover_podcasts(self) -> Iterator[ContentItem]:
         """Discover podcast transcripts."""
@@ -90,7 +142,7 @@ class ContentIndexer:
                 content_id = f"podcast:{slug_dir.name}:{md_file.stem}"
 
                 try:
-                    text = md_file.read_text()
+                    text, actual_path, is_clean = self._read_content(md_file)
                     if len(text) < 100:
                         continue
 
@@ -103,11 +155,12 @@ class ContentIndexer:
                         content_type="podcast",
                         title=title,
                         text=text,
-                        source_path=md_file,
+                        source_path=actual_path,
                         metadata={
                             "slug": slug_dir.name,
                             "filename": md_file.name,
                             "title": title,
+                            "is_clean": is_clean,
                         }
                     )
                 except Exception as e:
@@ -134,7 +187,7 @@ class ContentIndexer:
                 content_id = f"article:{date_dir.name}:{content_dir.name}"
 
                 try:
-                    text = content_file.read_text()
+                    text, actual_path, is_clean = self._read_content(content_file)
                     if len(text) < 100:
                         continue
 
@@ -155,10 +208,11 @@ class ContentIndexer:
                         content_type="article",
                         title=title,
                         text=text,
-                        source_path=content_file,
+                        source_path=actual_path,
                         metadata={
                             "date": date_dir.name,
                             "title": title,
+                            "is_clean": is_clean,
                             **metadata,
                         }
                     )
@@ -186,7 +240,7 @@ class ContentIndexer:
                 content_id = f"newsletter:{date_dir.name}:{content_dir.name}"
 
                 try:
-                    text = content_file.read_text()
+                    text, actual_path, is_clean = self._read_content(content_file)
                     if len(text) < 100:
                         continue
 
@@ -206,10 +260,11 @@ class ContentIndexer:
                         content_type="newsletter",
                         title=title,
                         text=text,
-                        source_path=content_file,
+                        source_path=actual_path,
                         metadata={
                             "date": date_dir.name,
                             "title": title,
+                            "is_clean": is_clean,
                             **metadata,
                         }
                     )
@@ -232,7 +287,7 @@ class ContentIndexer:
                 content_id = f"stratechery:{subdir}:{md_file.stem}"
 
                 try:
-                    text = md_file.read_text()
+                    text, actual_path, is_clean = self._read_content(md_file)
                     if len(text) < 100:
                         continue
 
@@ -244,11 +299,12 @@ class ContentIndexer:
                         content_type=content_type,
                         title=title,
                         text=text,
-                        source_path=md_file,
+                        source_path=actual_path,
                         metadata={
                             "type": subdir,
                             "filename": md_file.name,
                             "title": title,
+                            "is_clean": is_clean,
                         }
                     )
                 except Exception as e:
@@ -418,6 +474,7 @@ def main():
     parser.add_argument("--force", action="store_true", help="Re-index existing content")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be indexed")
     parser.add_argument("--batch-size", type=int, default=50, help="Batch size for indexing")
+    parser.add_argument("--use-original", action="store_true", help="Use original files instead of clean (ad-free) versions")
 
     args = parser.parse_args()
 
@@ -434,7 +491,11 @@ def main():
     if args.content_type:
         content_types = [args.content_type]
 
-    indexer = ContentIndexer()
+    use_clean = not args.use_original
+    indexer = ContentIndexer(use_clean=use_clean)
+
+    if use_clean:
+        print("Using clean (ad-free) versions when available")
     try:
         items, chunks = indexer.index_all(
             content_types=content_types,
