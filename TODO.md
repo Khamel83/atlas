@@ -28,6 +28,32 @@
 - [ ] Complete podcast transcript backlog (~1,378 pending, 71.4% done) ~4h #podcasts
 - [ ] Stratechery full archive crawl (running in background) #stratechery
 
+---
+
+## Atlas Reader (read.khamel.com) - LAUNCHED 2025-12-12
+
+**Status**: Working. Basic read-it-later functionality at `read.khamel.com`
+
+### What's Done ✓
+
+- [x] Shiori-compatible API (`/api/v1/auth/login`, `/api/v1/bookmarks`, `/api/v1/bookmarks/{id}/readable`)
+- [x] Custom reader frontend (replaced broken Shiori Vue)
+- [x] Direct filesystem scanning (bypasses missing IndexManager)
+- [x] Full-screen reader view
+- [x] Traefik routing via `read.khamel.com`
+- [x] 30+ articles per page with pagination
+
+### Future Improvements
+
+- [ ] **Shareable URLs**: Add `/read/{content_id}` route so articles have unique URLs #reader
+- [ ] **Author display**: Show author in article list and reader header #reader
+- [ ] **Filter empty content**: Hide articles with <500 chars (old Instapaper excerpts) #reader
+- [ ] **iOS Shortcut**: Share sheet to save URLs (docs at `docs/IOS_SHORTCUT.md`) #reader
+- [ ] **Copy link button**: One-click copy permalink in reader view #reader
+- [ ] **Content types filter**: Toggle articles/newsletters/podcasts/youtube #reader
+
+---
+
 ### Backlog (From Code Quality Review 2025-12-10)
 
 #### Security (COMPLETED)
