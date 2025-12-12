@@ -67,6 +67,7 @@ All timers are installed and running. Check with: `systemctl list-timers | grep 
 | `atlas-inbox` | Every 5 min | Process inbox queue |
 | `atlas-content-retry` | Weekly | Retry failed URL fetches |
 | `atlas-cookie-check` | Daily 9am | Check cookie expiration → ntfy alert |
+| `atlas-backlog-fetcher` | Every 30min | Fetch 50 transcripts with proxy health check |
 
 **Install all:**
 ```bash
@@ -77,6 +78,120 @@ sudo ./systemd/install.sh --all
 ```bash
 journalctl -u atlas-transcripts -f
 journalctl -u atlas-cookie-check --since today
+```
+
+---
+
+## MVP: Simple Always-Running Fetchers
+
+Two dead-simple scripts that run forever. No complexity, just reliable slow fetching.
+
+### URL Fetcher (`scripts/simple_url_fetcher.py`)
+
+Always-running service that watches a queue file for URLs.
+
+**How it works:**
+1. Watches `data/url_queue.txt` for new URLs
+2. Fetches content using trafilatura (with BeautifulSoup fallback)
+3. Saves markdown to `data/articles/{domain}/{date}_{title}.md`
+4. Tracks state in `data/url_fetcher_state.json`
+
+**Usage:**
+```bash
+# Add URLs to queue
+echo "https://example.com/article" >> data/url_queue.txt
+
+# Service handles the rest - checks every 60 seconds
+# 10 second delay between fetches (polite)
+
+# Check what's been fetched
+cat data/url_fetcher_state.json | jq '.fetched | keys | length'
+
+# Check failures
+cat data/url_fetcher_state.json | jq '.failed'
+
+# View logs
+journalctl -u atlas-url-fetcher -f
+```
+
+**Service:** `systemd/atlas-url-fetcher.service`
+```bash
+sudo systemctl status atlas-url-fetcher
+sudo systemctl restart atlas-url-fetcher
+```
+
+### Transcript Fetcher (`scripts/simple_transcript_fetcher.py`)
+
+Always-running service that fetches podcast transcripts.
+
+**How it works:**
+1. Checks RSS feeds for new episodes
+2. Fetches transcripts from Podscripts.co or direct sources
+3. Saves markdown to `data/podcasts/{slug}/transcripts/`
+4. Tracks state in `data/fetcher_state.json`
+
+**Configuration:**
+Edit the `PODCASTS` dict in the script to add/remove podcasts:
+```python
+PODCASTS = {
+    'acquired': {
+        'rss': 'https://feeds.acquired.fm/acquired',
+        'source': 'podscripts',
+        'podscripts_slug': 'acquired'
+    },
+    # ... more podcasts
+}
+```
+
+**Service:** `systemd/atlas-simple-fetcher.service`
+```bash
+sudo systemctl status atlas-simple-fetcher
+sudo systemctl restart atlas-simple-fetcher
+journalctl -u atlas-simple-fetcher -f
+```
+
+### Key Design Principles
+
+1. **Simple queue files** - Just append URLs to a text file
+2. **State tracking** - JSON files track what's been fetched/failed
+3. **Slow and polite** - 10+ second delays, no rushing
+4. **Always running** - systemd restarts on failure
+5. **No dependencies** - Works standalone, no complex orchestration
+
+---
+
+## VPN Proxy (Gluetun)
+
+All YouTube and some web requests use the Gluetun VPN proxy for IP rotation.
+
+**Configuration:**
+- Container: `gluetun` with NordVPN WireGuard
+- HTTP Proxy: `localhost:8118`
+- Config: `/home/khamel83/github/homelab/services/gluetun/docker-compose.yml`
+
+**Health Check:**
+```bash
+# Check proxy health
+./venv/bin/python scripts/check_proxy_health.py
+
+# Force VPN rotation
+./venv/bin/python scripts/check_proxy_health.py --rotate
+
+# Check and auto-fix if needed
+./venv/bin/python scripts/check_proxy_health.py --fix
+```
+
+**Auto-rotation:**
+The `atlas-backlog-fetcher` timer runs every 30 minutes and:
+1. Checks proxy health first
+2. Rotates VPN if YouTube is blocked
+3. Fetches 50 transcripts per run
+
+**Manual VPN rotation:**
+```bash
+docker restart gluetun
+# Wait 30 seconds for reconnect
+docker logs gluetun --tail 5  # Check new IP
 ```
 
 ---
@@ -383,6 +498,82 @@ The script checks each podcast for:
 - **YouTube** - Checks if podcast is known to have YouTube versions
 
 Output shows ✅ (can fetch) or ❌ (no known source) for each podcast.
+
+---
+
+## Mac Mini Local Whisper Transcription
+
+For podcasts that can't be fetched online (paywalled, no transcript source), we download audio and transcribe locally using MacWhisper Pro.
+
+### Episode Status: `local`
+
+Episodes marked with `transcript_status = 'local'` need local transcription:
+- Dithering (101) - paywalled
+- Asianometry (100) - paywalled
+- Against the Rules (94) - no online source
+- CWT old episodes (187) - no transcripts on website
+
+### Server Side (Homelab)
+
+```bash
+# Download audio for local transcription (runs every 2 hours via timer)
+python scripts/download_for_whisper.py --limit 10
+
+# Download all at once
+python scripts/download_for_whisper.py --all
+
+# Check what's queued
+ls -la data/whisper_queue/audio/
+
+# Import completed transcripts back (runs hourly via timer)
+python scripts/import_whisper_transcripts.py
+```
+
+**Timers:**
+```bash
+sudo cp systemd/atlas-whisper-*.{service,timer} /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now atlas-whisper-download.timer
+sudo systemctl enable --now atlas-whisper-import.timer
+```
+
+### Mac Mini Setup
+
+1. **Mount SMB share:**
+   ```bash
+   # One-time mount
+   mount_smbfs //khamel83@homelab/atlas /Volumes/atlas
+
+   # Or add to Finder: Cmd+K -> smb://homelab/atlas
+   ```
+
+2. **Configure MacWhisper Pro:**
+   - Open MacWhisper Pro preferences
+   - Set Watch Folder: `/Volumes/atlas/data/whisper_queue/audio`
+   - Set Output Folder: `/Volumes/atlas/data/whisper_queue/transcripts`
+   - Output Format: TXT (plain text)
+   - Model: Large v3 (or whatever fits your RAM)
+   - Enable "Auto-transcribe files in watch folder"
+
+3. **That's it!** MacWhisper watches the folder and transcribes automatically.
+
+### Workflow
+
+```
+Server downloads audio -> SMB share -> Mac Mini MacWhisper watches
+                                              |
+                                              v
+                                       Transcribes to TXT
+                                              |
+                                              v
+Server imports transcripts <- SMB share <- Output folder
+```
+
+### File Naming
+
+- Audio: `{podcast_slug}_{episode_id}_{date}_{title}.mp3`
+- Transcript: MacWhisper outputs same name with `.txt`
+- Import script matches by episode ID in filename
 
 ### Debug Transcript Issues
 

@@ -1,0 +1,16 @@
+[Unit]
+Description=Atlas - Import Whisper transcripts from watch folder
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/import_whisper_transcripts.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

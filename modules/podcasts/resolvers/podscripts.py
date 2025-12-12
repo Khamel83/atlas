@@ -44,6 +44,7 @@ PODSCRIPTS_MAPPING = {
     'odd-lots': 'oddlots',
     'macro-voices': 'macro-voices',
     'animal-spirits-podcast': 'animal-spirits',
+    'animal-spirits': 'animal-spirits',
 
     # Knowledge/Education
     'no-such-thing-as-a-fish': 'no-such-thing-as-a-fish',
@@ -82,6 +83,30 @@ PODSCRIPTS_MAPPING = {
     'connected': 'connected',
     'mac-power-users': 'mac-power-users',
     'atp': 'accidental-tech-podcast',
+
+    # Added 2024-12-11 - podcasts confirmed on podscripts.co
+    'the-knowledge-project-with-shane-parrish': 'the-knowledge-project-with-shane-parrish',
+    'dwarkesh-podcast': 'dwarkesh-podcast',
+    'the-recipe-with-kenji-and-deb': 'the-recipe-with-kenji-and-deb',
+    'hyperfixed': 'hyperfixed',
+    'the-journal': 'the-journal',
+    'the-bill-simmons-podcast': 'the-bill-simmons-podcast',
+    'the-big-picture': 'the-big-picture',
+    'the-npr-politics-podcast': 'the-npr-politics-podcast',
+    'today-explained': 'today-explained',
+
+    # Added 2024-12-11 - bespoke podcasts (may or may not be on podscripts)
+    'the-rewatchables': 'the-rewatchables',
+    'against-the-rules-with-michael-lewis': 'against-the-rules-with-michael-lewis',
+    'land-of-the-giants': 'land-of-the-giants',
+    'plain-english-with-derek-thompson': 'plain-english-with-derek-thompson',
+    'the-watch': 'the-watch',
+    'bodega-boys': 'bodega-boys',
+    'channels-with-peter-kafka': 'channels-with-peter-kafka',
+    'the-prestige-tv-podcast': 'the-prestige-tv-podcast',
+    'recipe-club': 'recipe-club',
+    'bad-bets': 'bad-bets',
+    'the-layover': 'the-layover',
 }
 
 
@@ -184,43 +209,56 @@ class PodscriptsResolver:
         # Create episode slug from title
         episode_slug = self._create_slug(episode.title)
 
-        # Try direct URL construction first
-        potential_urls = [
-            f"{self.base_url}/podcasts/{podscripts_id}/{episode_slug}",
-            f"{self.base_url}/podcasts/{podscripts_id}/{episode_slug}/",
-        ]
+        # Try direct URL construction with GET instead of HEAD (HEAD gets 429 more often)
+        direct_url = f"{self.base_url}/podcasts/{podscripts_id}/{episode_slug}"
+        try:
+            response = self.session.head(direct_url, timeout=10, allow_redirects=True)
+            if response.status_code == 200:
+                return direct_url
+            elif response.status_code == 429:
+                logger.debug(f"Podscripts HEAD rate limited, falling back to page search")
+        except Exception:
+            pass
 
-        for url in potential_urls:
-            try:
-                response = self.session.head(url, timeout=10, allow_redirects=True)
-                if response.status_code == 200:
-                    return url
-            except Exception:
-                continue
-
-        # Try searching within the podcast's page
+        # Search the podcast's episode listing page
         search_url = f"{self.base_url}/podcasts/{podscripts_id}/"
         try:
             response = self.session.get(search_url, timeout=self.timeout)
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, 'html.parser')
 
-                # Look for links that might match our episode
-                title_words = set(word.lower() for word in re.findall(r'\w+', episode.title) if len(word) > 3)
-
+                # Get all episode links on the page
+                episode_links = []
                 for link in soup.find_all('a', href=True):
                     href = link.get('href', '')
-                    link_text = link.get_text().lower()
+                    # Only consider links to episodes (not the podcast page itself)
+                    if f'/podcasts/{podscripts_id}/' in href and href != search_url.rstrip('/') and href != f'/podcasts/{podscripts_id}/':
+                        episode_links.append((href, link.get_text()))
 
-                    # Check if this link matches our episode
-                    if podscripts_id in href and href != search_url:
-                        link_words = set(word.lower() for word in re.findall(r'\w+', link_text) if len(word) > 3)
+                # Try exact slug match first
+                for href, _ in episode_links:
+                    if episode_slug in href:
+                        return urljoin(self.base_url, href)
 
-                        # Calculate word overlap
-                        overlap = len(title_words & link_words)
-                        if overlap >= min(3, len(title_words) * 0.5):
-                            full_url = urljoin(self.base_url, href)
-                            return full_url
+                # Fall back to word overlap matching
+                title_words = set(word.lower() for word in re.findall(r'\w+', episode.title) if len(word) > 3)
+
+                best_match = None
+                best_overlap = 0
+
+                for href, link_text in episode_links:
+                    # Check both URL slug and link text
+                    href_words = set(word.lower() for word in re.findall(r'\w+', href) if len(word) > 3)
+                    text_words = set(word.lower() for word in re.findall(r'\w+', link_text) if len(word) > 3)
+                    combined_words = href_words | text_words
+
+                    overlap = len(title_words & combined_words)
+                    if overlap > best_overlap and overlap >= min(3, len(title_words) * 0.4):
+                        best_overlap = overlap
+                        best_match = href
+
+                if best_match:
+                    return urljoin(self.base_url, best_match)
 
         except Exception as e:
             logger.debug(f"Error searching Podscripts: {e}")

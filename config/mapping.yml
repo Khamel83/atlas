@@ -27,34 +27,27 @@ accidental-tech-podcast:
     rate_limit: 1.0
     bulk_crawl: true
 
-political-gabfest:
-  rss_url: https://feeds.megaphone.fm/slatespoliticalgabfest
-  site_url: https://slate.com/podcasts/political-gabfest
-  resolver: generic_html
-  episode_selector: 'a[href*="/podcasts/political-gabfest/"]'
-  transcript_selector: 'section[data-component="Transcript"], .transcript'
-  config:
-    user_agent: "Atlas-Pod/1.0"
-    rate_limit: 2.0
+# political-gabfest: moved to SLATE PODCASTS section with network_transcripts resolver
 
 conversations-with-tyler:
   rss_url: https://feeds.soundcloud.com/users/soundcloud:users:264034133/sounds.rss
   site_url: https://conversationswithtyler.com
-  resolver: generic_html
+  resolver: playwright
   episode_selector: 'a[href*="/episodes/"]'
-  transcript_selector: '.generic__content, .content-box, .graf--p'
+  transcript_selector: '.generic__content'
   config:
     user_agent: "Atlas-Pod/1.0"
-    rate_limit: 1.5
+    rate_limit: 3.0
+    url_transform: cwt_libsyn
 
 acquired:
   rss_url: https://feeds.megaphone.fm/acquired
   site_url: https://www.acquired.fm
-  resolver: generic_html
+  resolver: podscripts
   episode_selector: 'a[href*="/episodes/"]'
   transcript_selector: '.transcript-container, .rich-text-block-6'
   config:
-    user_agent: "Atlas-Pod/1.0"
+    podscripts_id: acquired
     rate_limit: 2.0
 
 acq2-by-acquired:
@@ -67,65 +60,26 @@ acq2-by-acquired:
     user_agent: "Atlas-Pod/1.0"
     rate_limit: 2.0
 
-hard-fork:
-  rss_url: https://feeds.simplecast.com/KqTCbOXZ
-  site_url: https://nytimes.com/column/hard-fork
-  resolver: generic_html
-  episode_selector: 'a[href*="/hard-fork/"]'
-  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
-  config:
-    user_agent: "Atlas-Pod/1.0"
-    rate_limit: 3.0
+# hard-fork: moved to NYT PODCASTS section (line ~340) with podscripts resolver
 
-ezra-klein-show:
-  rss_url: https://feeds.simplecast.com/82FI35Px
-  site_url: https://nytimes.com/column/ezra-klein-podcast
-  resolver: generic_html
-  episode_selector: 'a[href*="/ezra-klein-podcast/"]'
-  transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
-  config:
-    user_agent: "Atlas-Pod/1.0"
-    rate_limit: 3.0
+# ezra-klein-show: moved to NYT PODCASTS section (line ~345) with podscripts resolver
 
-planet-money:
-  rss_url: https://feeds.npr.org/510289/podcast.xml
-  site_url: https://npr.org/sections/money
-  resolver: generic_html
-  episode_selector: 'a[href*="/planet-money/"], a[href*="/money/"]'
-  transcript_selector: '.transcript, .storytext, #transcript'
-  config:
-    user_agent: "Atlas-Pod/1.0"
-    rate_limit: 2.0
+# planet-money: moved to NPR PODCASTS section with network_transcripts resolver
 
-radiolab:
-  rss_url: https://feeds.wnyc.org/radiolab
-  site_url: https://radiolab.org
-  resolver: generic_html
-  episode_selector: 'a[href*="/story/"], a[href*="/episodes/"]'
-  transcript_selector: '.episode-transcript, .transcript, .story-text'
-  config:
-    user_agent: "Atlas-Pod/1.0"
-    rate_limit: 2.0
+# radiolab: moved to STORYTELLING section with network_transcripts resolver
 
-sharp-tech:
-  rss_url: https://feeds.stratechery.com/sharp-tech
-  site_url: https://stratechery.com
-  resolver: generic_html
-  episode_selector: 'a[href*="/sharp-tech/"]'
-  transcript_selector: '.post-content, .entry-content'
-  config:
-    user_agent: "Atlas-Pod/1.0"
-    rate_limit: 2.0
+# sharp-tech: moved to STRATECHERY section
 
 stratechery:
   rss_url: https://feeds.stratechery.com/stratechery
   site_url: https://stratechery.com
-  resolver: generic_html
+  resolver: playwright
   episode_selector: 'a[href*="/podcast/"], a[href*="/sharp-tech/"]'
   transcript_selector: '.post-content, .entry-content'
   config:
     user_agent: "Atlas-Pod/1.0"
     rate_limit: 2.0
+    wait_for_js: true
 
 decoder-with-nilay-patel:
   rss_url: https://feeds.megaphone.fm/decoder
@@ -164,13 +118,7 @@ freakonomics-radio:
   config:
     rate_limit: 2.0
 
-econtalk:
-  rss_url: https://feeds.simplecast.com/wgl4xEgL
-  site_url: https://www.econtalk.org
-  resolver: generic_html
-  transcript_selector: '.transcript, .entry-content'
-  config:
-    rate_limit: 2.0
+# econtalk: moved to OFFICIAL WEBSITE TRANSCRIPTS section with better selectors
 
 animal-spirits-podcast:
   rss_url: https://feeds.megaphone.fm/animalspirits
@@ -222,6 +170,14 @@ this-american-life:
 # INTERVIEW / LONG-FORM PODCASTS
 # ============================================================================
 
+the-knowledge-project-with-shane-parrish:
+  rss_url: https://feeds.simplecast.com/bWa2pEOC
+  site_url: https://fs.blog/knowledge-project-podcast/
+  resolver: happyscribe
+  config:
+    happyscribe_id: the-knowledge-project-with-shane-parrish
+    rate_limit: 3.0
+
 lex-fridman-podcast:
   rss_url: https://lexfridman.com/feed/podcast/
   site_url: https://lexfridman.com/podcast
@@ -256,10 +212,10 @@ radiolab:
 revisionist-history:
   rss_url: https://feeds.megaphone.fm/revisionisthistory
   site_url: https://www.pushkin.fm/podcasts/revisionist-history
-  resolver: podscripts
+  resolver: podscribe
   config:
-    podscripts_id: revisionist-history
-    rate_limit: 2.0
+    podscribe_series_id: '1475'
+    rate_limit: 5.0
 
 heavyweight:
   rss_url: https://feeds.megaphone.fm/heavyweight
@@ -331,11 +287,10 @@ decoder-ring:
 hard-fork:
   rss_url: https://feeds.simplecast.com/KqTCbOXZ
   site_url: https://nytimes.com/column/hard-fork
-  resolver: podscripts
+  resolver: nyt
   episode_selector: 'a[href*="/hard-fork/"]'
   transcript_selector: '.StoryBodyCompanionColumn, .ArticleBody'
   config:
-    podscripts_id: hard-fork
     rate_limit: 3.0
 
 ezra-klein-show:
@@ -383,3 +338,176 @@ sharp-tech:
   transcript_selector: '.post-content, .entry-content'
   config:
     rate_limit: 2.0
+
+# ============================================================================
+# OFFICIAL WEBSITE TRANSCRIPTS (Added 2024-12-11)
+# These sites publish their own transcripts
+# ============================================================================
+
+# Slate podcasts have transcripts at slate.com/transcripts/...
+slate-culture:
+  rss_url: https://feeds.megaphone.fm/slatesculturegabfest
+  site_url: https://slate.com/podcasts/culture-gabfest
+  resolver: network_transcripts
+  transcript_selector: 'section[data-component="Transcript"], .transcript'
+  config:
+    network: slate
+    rate_limit: 2.0
+
+slate-money:
+  rss_url: https://feeds.megaphone.fm/slatemoney
+  site_url: https://slate.com/podcasts/slate-money
+  resolver: network_transcripts
+  transcript_selector: 'section[data-component="Transcript"], .transcript'
+  config:
+    network: slate
+    rate_limit: 2.0
+
+# 99pi publishes transcripts at /episode/.../transcript/
+articles-of-interest:
+  rss_url: https://feed.articlesofinterest.club/
+  site_url: https://99percentinvisible.org/aoi/
+  resolver: generic_html
+  transcript_selector: '.episode-transcript, .transcript'
+  config:
+    transcript_url_suffix: '/transcript/'
+    rate_limit: 2.0
+
+# Changelog publishes transcripts on GitHub
+practical-ai:
+  rss_url: https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm
+  site_url: https://changelog.com/practicalai
+  resolver: generic_html
+  transcript_selector: '.transcript'
+  config:
+    # GitHub: github.com/thechangelog/transcripts/tree/master/practicalai
+    rate_limit: 2.0
+
+# This American Life has full transcripts
+the-trojan-horse-affair:
+  rss_url: https://feeds.simplecast.com/B9KgArY4
+  site_url: https://www.thisamericanlife.org/761
+  resolver: network_transcripts
+  transcript_selector: '.transcript, .act-content'
+  config:
+    network: tal
+    rate_limit: 2.0
+
+# ATP fan transcripts at catatp.fm - defined in TECH PODCASTS section (line 18)
+
+# EconTalk has transcripts in article body
+econtalk:
+  rss_url: https://feeds.simplecast.com/wgl4xEgL
+  site_url: https://www.econtalk.org
+  resolver: generic_html
+  transcript_selector: 'article, .highlightsbox, .transcript'
+  config:
+    rate_limit: 2.0
+# ============================================================================
+# PLAYWRIGHT-REQUIRED SITES (JS-rendered)
+# ============================================================================
+
+dithering:
+  rss_url: https://dithering.fm/feed/
+  site_url: https://dithering.fm
+  resolver: playwright
+  transcript_selector: '.entry-content, .post-content, article'
+  config:
+    rate_limit: 5.0  # Be gentle with JS sites
+
+asianometry:
+  rss_url: https://asianometry.passport.online/feed/
+  site_url: https://asianometry.passport.online
+  resolver: playwright
+  transcript_selector: '.entry-content, .post-content, article'
+  config:
+    rate_limit: 5.0
+
+# Ringer podcasts (The Rewatchables, etc.)
+the-rewatchables:
+  rss_url: https://feeds.megaphone.fm/the-rewatchables
+  site_url: https://www.theringer.com/the-rewatchables
+  resolver: podscribe
+  config:
+    podscribe_series_id: '530'
+    rate_limit: 5.0
+
+against-the-rules-with-michael-lewis:
+  rss_url: https://feeds.megaphone.fm/against-the-rules
+  site_url: https://atrpod.com
+  resolver: podscripts
+  config:
+    podscripts_id: against-the-rules-with-michael-lewis
+    rate_limit: 3.0
+
+land-of-the-giants:
+  rss_url: https://feeds.megaphone.fm/land-of-the-giants
+  site_url: https://www.vox.com/land-of-the-giants
+  resolver: tapesearch
+  config:
+    tapesearch_id: '1465767420'
+    rate_limit: 3.0
+
+plain-english-with-derek-thompson:
+  rss_url: https://feeds.megaphone.fm/plain-english-with-derek-thompson
+  site_url: https://www.theringer.com/plain-english-with-derek-thompson
+  resolver: podscribe
+  config:
+    podscribe_series_id: '2143152'
+    rate_limit: 5.0
+
+the-watch:
+  rss_url: https://feeds.megaphone.fm/the-watch
+  site_url: https://www.theringer.com/the-watch
+  resolver: podscripts
+  config:
+    podscripts_id: the-watch
+    rate_limit: 3.0
+
+bodega-boys:
+  rss_url: https://feeds.megaphone.fm/bodega-boys
+  site_url: https://bodega-boys.com
+  resolver: podscripts
+  config:
+    podscripts_id: bodega-boys
+    rate_limit: 3.0
+
+channels-with-peter-kafka:
+  rss_url: https://feeds.megaphone.fm/channels
+  site_url: https://www.vox.com/channels
+  resolver: podscripts
+  config:
+    podscripts_id: channels-with-peter-kafka
+    rate_limit: 3.0
+
+the-prestige-tv-podcast:
+  rss_url: https://feeds.megaphone.fm/the-prestige-tv-podcast
+  site_url: https://www.theringer.com/the-prestige-tv-podcast
+  resolver: podscripts
+  config:
+    podscripts_id: the-prestige-tv-podcast
+    rate_limit: 3.0
+
+recipe-club:
+  rss_url: https://feeds.megaphone.fm/recipe-club
+  site_url: https://www.theringer.com/recipe-club
+  resolver: podscripts
+  config:
+    podscripts_id: recipe-club
+    rate_limit: 3.0
+
+bad-bets:
+  rss_url: https://feeds.megaphone.fm/bad-bets
+  site_url: https://www.wsj.com/podcasts/bad-bets
+  resolver: podscripts
+  config:
+    podscripts_id: bad-bets
+    rate_limit: 3.0
+
+the-layover:
+  rss_url: https://feeds.megaphone.fm/the-layover
+  site_url: https://nebula.tv/the-layover
+  resolver: podscripts
+  config:
+    podscripts_id: the-layover
+    rate_limit: 3.0

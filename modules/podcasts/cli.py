@@ -28,6 +28,11 @@ from modules.podcasts.resolvers.pattern import PatternResolver
 from modules.podcasts.resolvers.youtube_transcript import YouTubeTranscriptResolver
 from modules.podcasts.resolvers.network_transcripts import NetworkTranscriptResolver
 from modules.podcasts.resolvers.podscripts import PodscriptsResolver
+from modules.podcasts.resolvers.playwright_resolver import PlaywrightResolver
+from modules.podcasts.resolvers.tapesearch import TapesearchResolver
+from modules.podcasts.resolvers.podscribe import PodscribeResolver
+from modules.podcasts.resolvers.nyt_resolver import NYTResolver
+from modules.podcasts.resolvers.happyscribe import HappyScribeResolver
 
 # Configure logging
 logging.basicConfig(
@@ -46,10 +51,15 @@ class AtlasPodCLI:
         # Priority order: highest accuracy/reliability first
         self.resolvers = {
             "rss_link": RSSLinkResolver(),           # Best: direct links from RSS
+            "nyt": NYTResolver(),                    # Good: NYT official transcripts (Hard Fork, etc)
             "network_transcripts": NetworkTranscriptResolver(),  # Good: official network pages
             "podscripts": PodscriptsResolver(),      # Good: AI transcripts, many podcasts
-            "youtube_transcript": YouTubeTranscriptResolver(),   # Good but often blocked
-            "generic_html": GenericHTMLResolver(),   # Fallback: scrape episode pages
+            "podscribe": PodscribeResolver(),        # Good: AI transcripts (Rewatchables, etc)
+            "happyscribe": HappyScribeResolver(),    # Good: AI transcripts (Knowledge Project)
+            "tapesearch": TapesearchResolver(),      # Good: AI transcripts with timestamps
+            "generic_html": GenericHTMLResolver(),   # Good: scrape episode pages
+            "playwright": PlaywrightResolver(),      # For JS-rendered sites (slow but works)
+            "youtube_transcript": YouTubeTranscriptResolver(),   # Good but often blocked from cloud
             "pattern": PatternResolver(),            # Last resort: pattern matching
         }
 
@@ -461,15 +471,14 @@ class AtlasPodCLI:
             )
 
             podcast_config = mapping_config.get(podcast.slug, {})
-            podcast_config.update(
-                {
-                    "name": podcast.name,
-                    "slug": podcast.slug,
-                    "rss_url": podcast.rss_url,
-                    "site_url": podcast.site_url,
-                    "resolver": podcast.resolver,
-                }
-            )
+            # Only add metadata, don't override resolver from mapping.yml
+            podcast_config.setdefault("name", podcast.name)
+            podcast_config.setdefault("slug", podcast.slug)
+            podcast_config.setdefault("rss_url", podcast.rss_url)
+            podcast_config.setdefault("site_url", podcast.site_url)
+            # If mapping.yml doesn't specify resolver, fall back to database value
+            if "resolver" not in podcast_config:
+                podcast_config["resolver"] = podcast.resolver
 
             fetched_count = 0
             failed_count = 0
@@ -512,21 +521,28 @@ class AtlasPodCLI:
             # If podcast has a specific resolver configured, prioritize it
             configured_resolver = podcast_config.get('resolver', '')
 
-            # Base priority order
-            base_priority = ['rss_link', 'network_transcripts', 'podscripts', 'generic_html', 'youtube_transcript', 'pattern']
+            # Base priority order - includes all resolvers
+            base_priority = ['rss_link', 'nyt', 'network_transcripts', 'podscripts', 'podscribe', 'happyscribe', 'tapesearch', 'generic_html', 'playwright', 'youtube_transcript', 'pattern']
 
-            # If podcast specifies generic_html (like Stratechery with cookies), move it earlier
-            if configured_resolver == 'generic_html':
-                # Put generic_html right after rss_link for sites with full transcripts
-                resolver_priority = ['rss_link', 'generic_html', 'network_transcripts', 'podscripts', 'youtube_transcript', 'pattern']
+            # If podcast specifies a resolver, put it first (after rss_link)
+            if configured_resolver and configured_resolver in self.resolvers:
+                resolver_priority = ['rss_link', configured_resolver]
+                # Add remaining resolvers
+                for r in base_priority:
+                    if r not in resolver_priority:
+                        resolver_priority.append(r)
             else:
                 resolver_priority = base_priority
+
+            logger.info(f"Resolver priority for {podcast_config.get('slug')}: {resolver_priority[:5]}... (configured={configured_resolver})")
 
             # Try each resolver in priority order, stop early if we get good content
             for resolver_name in resolver_priority:
                 if resolver_name not in self.resolvers:
+                    logger.warning(f"Resolver {resolver_name} not in self.resolvers - skipping")
                     continue
                 resolver = self.resolvers[resolver_name]
+                logger.info(f"Trying resolver: {resolver_name}")
                 try:
                     sources = resolver.resolve(episode, podcast_config)
                     all_sources.extend(sources)

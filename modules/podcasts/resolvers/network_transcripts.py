@@ -154,11 +154,50 @@ class NetworkTranscriptResolver:
         results = []
 
         try:
+            # Radiolab has transcripts at /podcast/{slug}/transcript
+            # Try appending /transcript to the episode URL first
+            transcript_url = episode_url.rstrip('/') + '/transcript'
+
+            response = self.session.get(transcript_url, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+
+                # Radiolab transcript selectors
+                transcript_selectors = [
+                    'div.transcript-content',
+                    'div.episode-transcript',
+                    'section.transcript',
+                    'article.transcript',
+                    'div[data-transcript]',
+                    '.article-text',
+                    '.story-text',
+                    'main article'
+                ]
+
+                for selector in transcript_selectors:
+                    transcript_elem = soup.select_one(selector)
+                    if transcript_elem:
+                        text = self._clean_transcript_text(transcript_elem.get_text())
+                        if len(text) > 500:
+                            results.append({
+                                'url': transcript_url,
+                                'confidence': 0.95,
+                                'resolver': 'network_transcripts',
+                                'metadata': {
+                                    'content': text,
+                                    'content_length': len(text),
+                                    'accuracy': 'very_high',
+                                    'method': 'radiolab_transcript_suffix'
+                                }
+                            })
+                            return results
+
+            # Fallback: try the episode page itself
             response = self.session.get(episode_url, timeout=10)
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
 
-            # Radiolab transcript patterns
+            # Radiolab transcript patterns on main page
             transcript_selectors = [
                 'div.transcript-content',
                 'div.episode-transcript',

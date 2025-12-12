@@ -1,0 +1,29 @@
+[Unit]
+Description=Atlas Podcast Backlog Fetcher (with proxy health check)
+After=network-online.target docker.service
+Wants=network-online.target
+Documentation=https://github.com/khamel83/atlas
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+
+# Load environment with proxy settings
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+
+# First check proxy health, rotate if needed
+ExecStartPre=/home/khamel83/github/atlas/venv/bin/python scripts/check_proxy_health.py --fix
+
+# Then fetch transcripts (batch of 20 at a time - keeps runs under 30 min)
+ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.podcasts.cli fetch-transcripts --all --limit 20
+
+# Logging
+StandardOutput=append:/var/log/atlas/backlog-fetcher.log
+StandardError=append:/var/log/atlas/backlog-fetcher.log
+
+# Timeout after 30 minutes
+TimeoutStartSec=1800
+
+[Install]
+WantedBy=multi-user.target

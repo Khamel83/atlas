@@ -1,0 +1,16 @@
+[Unit]
+Description=Atlas - Download audio for Whisper transcription
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/download_for_whisper.py --limit 5 --delay 5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

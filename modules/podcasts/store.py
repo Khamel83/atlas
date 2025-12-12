@@ -365,6 +365,30 @@ class PodcastStore:
                 )
         return episodes
 
+    def get_episode_by_id(self, episode_id: int) -> Optional[Episode]:
+        """Get a single episode by ID."""
+        with self._get_connection() as conn:
+            row = conn.execute(
+                "SELECT * FROM episodes WHERE id = ?",
+                (episode_id,),
+            ).fetchone()
+            if row:
+                return Episode(
+                    id=row["id"],
+                    podcast_id=row["podcast_id"],
+                    guid=row["guid"],
+                    title=row["title"],
+                    url=row["url"],
+                    publish_date=row["publish_date"],
+                    transcript_url=row["transcript_url"],
+                    transcript_status=row["transcript_status"],
+                    transcript_path=row["transcript_path"],
+                    metadata=self._deserialize_dict(row["metadata"]),
+                    created_at=row["created_at"],
+                    updated_at=row["updated_at"],
+                )
+        return None
+
     def get_all_podcast_stats(self) -> List[dict]:
         """
         Get aggregated stats for all podcasts in a single query.

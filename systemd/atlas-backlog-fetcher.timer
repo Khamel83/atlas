@@ -1,0 +1,17 @@
+[Unit]
+Description=Run Atlas Podcast Backlog Fetcher every 30 minutes
+Documentation=https://github.com/khamel83/atlas
+
+[Timer]
+# Run every 30 minutes to make steady progress on backlog
+OnBootSec=5min
+OnUnitActiveSec=30min
+
+# Add some randomness to avoid thundering herd
+RandomizedDelaySec=60
+
+# Persist timer across reboots
+Persistent=true
+
+[Install]
+WantedBy=timers.target

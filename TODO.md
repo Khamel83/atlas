@@ -1,6 +1,6 @@
 # TODO - Atlas
 
-> Project tasks organized by status. Updated: 2025-12-10
+> Project tasks organized by status. Updated: 2025-12-11
 
 ---
 
@@ -18,10 +18,14 @@
 - [x] Fixed recursive link spider bug in generic_html 2025-12-10
 - [x] Fixed duplicate YAML config entries 2025-12-10
 - [x] Atlas Ask module built (not enabled) 2025-12-09
+- [x] MVP URL Fetcher (`scripts/simple_url_fetcher.py`) 2025-12-11
+- [x] MVP Transcript Fetcher (`scripts/simple_transcript_fetcher.py`) 2025-12-11
+- [x] Tapesearch resolver for Vox podcasts 2025-12-11
+- [x] Systemd services for both MVP fetchers 2025-12-11
 
 ### In Progress
 
-- [ ] Complete podcast transcript backlog (~2,300 pending, ~7 hours) ~7h #podcasts
+- [ ] Complete podcast transcript backlog (~1,378 pending, 71.4% done) ~4h #podcasts
 - [ ] Stratechery full archive crawl (running in background) #stratechery
 
 ### Backlog (From Code Quality Review 2025-12-10)

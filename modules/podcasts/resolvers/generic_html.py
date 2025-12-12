@@ -122,8 +122,14 @@ class GenericHTMLResolver:
 
         try:
             # Check for domain-specific cookies (for paywalled sites)
+            # Skip cookies if URL already has access_token (Passport auth)
+            # Using both causes redirect loops
             domain = urlparse(url).netloc
-            cookies = load_cookies_for_domain(domain)
+            if "access_token=" in url:
+                cookies = None
+                logger.debug(f"URL has access_token, skipping cookies for {domain}")
+            else:
+                cookies = load_cookies_for_domain(domain)
 
             # Fetch page content with optional authentication
             response = self.session.get(url, timeout=self.timeout, cookies=cookies)

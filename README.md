@@ -10,6 +10,45 @@ Content is scattered across the internet - podcast transcripts on various sites,
 
 **Current coverage**: 4,445 podcast transcripts (66% of 6,729 target), running 24/7
 
+## MVP: Always-Running Fetchers
+
+Two simple services that run forever, slowly fetching content. No rush, just reliable.
+
+### URL Fetcher
+```bash
+# Add URLs to queue (that's it)
+echo "https://example.com/article" >> data/url_queue.txt
+
+# Check status
+journalctl -u atlas-url-fetcher -f
+cat data/url_fetcher_state.json
+```
+- Checks queue every 60 seconds
+- 10 second delay between fetches
+- Saves to `data/articles/{domain}/{date}_{title}.md`
+- Uses trafilatura for clean extraction
+
+### Transcript Fetcher
+```bash
+# Just runs - checks RSS feeds for new episodes
+journalctl -u atlas-simple-fetcher -f
+cat data/fetcher_state.json
+```
+- 15 podcasts configured (expand in script)
+- Fetches from Podscripts.co and direct sources
+- Saves to `data/podcasts/{slug}/transcripts/`
+
+### Services
+```bash
+# Both run as systemd services
+sudo systemctl status atlas-url-fetcher
+sudo systemctl status atlas-simple-fetcher
+
+# View logs
+journalctl -u atlas-url-fetcher --since today
+journalctl -u atlas-simple-fetcher --since today
+```
+
 ## Quick Start
 
 ```bash

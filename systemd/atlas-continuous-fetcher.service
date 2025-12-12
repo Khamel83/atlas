@@ -1,0 +1,27 @@
+[Unit]
+Description=Atlas Continuous Transcript Fetcher (runs forever)
+After=network-online.target docker.service
+Wants=network-online.target
+Documentation=https://github.com/khamel83/atlas
+
+[Service]
+Type=simple
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+
+# Load environment with proxy settings
+EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+
+# Just run forever
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/continuous_fetcher.py
+
+# Restart if it crashes
+Restart=always
+RestartSec=30
+
+# No timeout - let it run forever
+TimeoutStartSec=infinity
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
