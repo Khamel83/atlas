@@ -1,0 +1,41 @@
+# Link Approval Rules
+# Processed by modules/links/approval.py
+
+version: 1
+
+# Auto-approve these domains (bypass score check)
+# Starting CONSERVATIVE - expand after reviewing results
+trusted_domains:
+  - stratechery.com
+  - arxiv.org
+  - nytimes.com
+  - wsj.com
+  - washingtonpost.com
+  - theatlantic.com
+  - newyorker.com
+  - nature.com
+  - science.org
+  - wired.com
+  - arstechnica.com
+  - reuters.com
+
+# Auto-approve if score >= threshold
+score_threshold: 0.85
+
+# Auto-reject below this score
+reject_threshold: 0.40
+
+# Always reject (even if high score)
+blocked_domains:
+  - bit.ly
+  - tinyurl.com
+  - facebook.com
+  - twitter.com
+  - x.com
+  - instagram.com
+  - linkedin.com
+
+# Drip settings for ingestion bridge
+drip:
+  urls_per_run: 50
+  delay_seconds: 10

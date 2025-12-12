@@ -1,0 +1,21 @@
+[Unit]
+Description=Atlas Link Discovery and Ingestion Pipeline
+After=network.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+Environment=PATH=/home/khamel83/github/atlas/venv/bin:/usr/bin
+
+# Step 1: Run approval on pending links
+ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.links.cli approve --apply
+
+# Step 2: Bridge approved links to URL queue (drip mode)
+ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.links.cli ingest --drip
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
