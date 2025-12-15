@@ -9,7 +9,7 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routers import health, podcasts, content, search, dashboard, shiori_compat
+from api.routers import health, podcasts, content, search, dashboard, shiori_compat, notes
 
 # Create app
 app = FastAPI(
@@ -42,6 +42,8 @@ app.include_router(search.router, prefix="/api/search")
 app.include_router(dashboard.router, prefix="/api")
 # Shiori-compatible endpoints (for Atlas Reader frontend)
 app.include_router(shiori_compat.router, prefix="/api")
+# Notes endpoints (short-form curated content)
+app.include_router(notes.router, prefix="/api/notes")
 
 
 # Root endpoint moved to /api/info to allow StaticFiles to serve Vue frontend at /

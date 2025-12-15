@@ -3,6 +3,9 @@
 ## Quick Reference
 
 ```bash
+# Verify ALL content quality (ALWAYS run this to get true numbers)
+./venv/bin/python scripts/verify_content.py --report
+
 # Check podcast transcript coverage
 ./venv/bin/python -m modules.podcasts.cli status
 
@@ -26,14 +29,19 @@ atlas/
 │   │   ├── store.py      # SQLite database
 │   │   ├── rss.py        # RSS feed parsing
 │   │   └── resolvers/    # Transcript sources (7 resolvers)
+│   ├── quality/          # Content verification system
+│   │   ├── verifier.py   # Core verification logic
+│   │   └── __init__.py   # verify_file(), verify_content()
 │   ├── storage/          # Content storage with SQLite index
 │   ├── ingest/           # Gmail, YouTube, robust URL fetcher
 │   │   └── robust_fetcher.py  # Cascading fallback fetcher
 │   └── pipeline/         # Content processing pipeline
 ├── api/                  # FastAPI REST API
 │   └── routers/
-│       └── dashboard.py  # Progress monitoring endpoints
+│       ├── dashboard.py  # Progress monitoring endpoints
+│       └── notes.py      # Notes API endpoints
 ├── scripts/              # Utility scripts
+│   ├── verify_content.py            # Content quality verification
 │   ├── run_enrichment.py            # Full ad removal workflow
 │   ├── analyze_ads.py               # Ad detection analysis
 │   ├── enrich_improve_loop.py       # FP detection and fixing
@@ -52,12 +60,15 @@ atlas/
     ├── podcasts/         # Transcript storage
     │   └── {slug}/transcripts/*.md
     ├── content/          # URL content storage
+    │   ├── article/      # Articles from URLs
+    │   ├── newsletter/   # Newsletters from Gmail
+    │   └── note/         # User notes (selections, highlights)
     └── stratechery/      # Stratechery archive
 ```
 
 ---
 
-## Systemd Services (9 Timers)
+## Systemd Services (10 Timers)
 
 All timers are installed and running. Check with: `systemctl list-timers | grep atlas`
 
@@ -73,6 +84,7 @@ All timers are installed and running. Check with: `systemctl list-timers | grep 
 | `atlas-backlog-fetcher` | Every 30min | Fetch 50 transcripts with proxy health check |
 | `atlas-enrich` | Sunday 4am | Clean ads from content, generate reports |
 | `atlas-link-pipeline` | Every 2 hours | Approve and ingest extracted links |
+| `atlas-verify` | Daily 5am | Content quality verification report |
 
 **Install all:**
 ```bash
@@ -422,6 +434,68 @@ GET /api/dashboard/logs/{name}  # View logs (transcripts, stratechery, retry)
 **Start API:**
 ```bash
 ./venv/bin/uvicorn api.main:app --port 7444
+```
+
+---
+
+## Notes System
+
+Notes are short-form user-curated content (selections, quotes, highlights). They are exempt from quality verification.
+
+**Storage:** `data/content/note/{YYYY/MM/DD}/{content_id}/`
+
+**Note Types:**
+- `selection` - Highlighted text from webpages (migrated from Instapaper)
+- `text` - Plain text notes
+
+### API Endpoints
+
+| Method | Path | Purpose |
+|--------|------|---------|
+| POST | `/api/notes/` | Create note from text |
+| POST | `/api/notes/url` | Create note from URL + selection (for iOS Shortcut) |
+| GET | `/api/notes/` | List notes |
+| GET | `/api/notes/{id}` | Get specific note |
+| DELETE | `/api/notes/{id}` | Delete note |
+| GET | `/api/notes/stats/summary` | Notes statistics |
+
+### Create Note from Selection (iOS Shortcut)
+
+```bash
+curl -X POST http://localhost:7444/api/notes/url \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url": "https://example.com/article",
+    "selection": "The highlighted text",
+    "title": "Optional title",
+    "fetch_full_article": true
+  }'
+```
+
+When `fetch_full_article` is true, the URL is also queued for full article fetch.
+
+### Migration Script
+
+786 old Instapaper selections were migrated to notes:
+
+```bash
+# Dry run
+python scripts/migrate_selections_to_notes.py --dry-run
+
+# Apply migration
+python scripts/migrate_selections_to_notes.py --apply
+```
+
+### Integration with Atlas Ask
+
+Notes are included in the semantic search index:
+
+```bash
+# Index notes
+./scripts/run_with_secrets.sh python -m modules.ask.indexer --type notes
+
+# Notes are also indexed with --all
+./scripts/run_with_secrets.sh python -m modules.ask.indexer --all
 ```
 
 ---
@@ -826,6 +900,131 @@ Runs weekly (Sunday 4am) via `atlas-enrich.timer`:
 systemctl status atlas-enrich.timer
 journalctl -u atlas-enrich -f
 ```
+
+---
+
+## Content Quality Verification
+
+Unified system to verify ALL content is real and valuable before reporting it as "done".
+
+### How It Works
+
+Every piece of content is validated with these checks:
+- **File size** >= 500 bytes
+- **Word count** >= 100 (articles) or 500 (transcripts)
+- **No paywall patterns** ("subscribe to continue", "sign in to read", etc.)
+- **No soft-404 patterns** ("page not found", "content unavailable")
+- **No JS-blocked content** ("enable javascript")
+- **Has actual paragraphs** (not just metadata)
+
+### Quality Levels
+
+- **GOOD**: Passed all checks, verified quality content
+- **MARGINAL**: Borderline, passed critical checks but missing some
+- **BAD**: Failed critical checks, needs action
+
+### Commands
+
+```bash
+# Full verification scan (generates report)
+./venv/bin/python scripts/verify_content.py --report
+
+# Quick scan of specific content type
+./venv/bin/python scripts/verify_content.py --type podcasts
+
+# JSON output for scripting
+./venv/bin/python scripts/verify_content.py --json
+
+# Show more problem files
+./venv/bin/python scripts/verify_content.py --problems 50
+```
+
+### Integration
+
+Quality gates are integrated into fetchers:
+- `simple_url_fetcher.py` - validates before marking "fetched"
+- `fetch_paywalled.py` - validates after Playwright fetch
+
+**New content is automatically verified before being counted as success.**
+
+### Reports
+
+Daily reports saved to: `data/reports/quality_YYYY-MM-DD.md`
+
+Nightly timer runs at 5am: `atlas-verify.timer`
+
+### Python API
+
+```python
+from modules.quality import verify_file, verify_content, QualityLevel
+
+# Verify a file
+result = verify_file("/path/to/content.md")
+if result.is_good:
+    print("Content verified!")
+else:
+    print(f"Issues: {result.issues}")
+
+# Verify content string (before saving)
+result = verify_content(content_text, 'article')
+if result.quality == QualityLevel.BAD:
+    # Don't save, mark as failed
+    pass
+```
+
+### Database
+
+Verification results stored in: `data/quality/verification.db`
+
+```sql
+-- Get quality breakdown
+SELECT quality, COUNT(*) FROM verifications GROUP BY quality;
+
+-- Find all bad files
+SELECT file_path, issues FROM verifications WHERE quality = 'bad';
+```
+
+### Current Stats (2025-12-15)
+
+| Quality | Count | Percentage |
+|---------|-------|------------|
+| Good | 35,385 | 80.1% |
+| Marginal | 8,002 | 18.1% |
+| Bad | 800 | 1.8% |
+
+### Marginal Recovery
+
+Marginal content is often failed fetches (grabbed metadata/navigation instead of article body). Use tiered recovery to re-fetch:
+
+```bash
+# Run tiered recovery (Tier 1 = high-value articles)
+./venv/bin/python scripts/recover_marginal_tiered.py --tier 1
+
+# Run all tiers in order
+./venv/bin/python scripts/recover_marginal_tiered.py --tier 1 2 3
+
+# Full background pipeline
+nohup ./scripts/run_full_marginal_recovery.sh > /tmp/full_recovery.log 2>&1 &
+
+# Monitor progress
+tail -f /tmp/full_recovery.log
+
+# Check recovery database
+sqlite3 data/quality/marginal_recovery.db "SELECT tier, status, COUNT(*) FROM marginal_recovery GROUP BY tier, status"
+```
+
+**Tier priorities:**
+- **Tier 1** (HIGH): `content/article`, `clean/article`, `stratechery`
+- **Tier 2** (MEDIUM): Major news sites (washingtonpost, nytimes, bloomberg)
+- **Tier 3** (LOW): Podcasts, newsletters, youtube (often legitimately short)
+
+### False Positive Prevention
+
+The verifier has smart exemptions to prevent false positives:
+- Files >5000 words are exempt from JS-blocked, paywall, and soft-404 checks
+- Only header/footer regions checked (first/last 1000 chars)
+- Files with 300+ words don't need 3 paragraphs
+- Paywall/404 requires 2+ pattern matches (single match = likely false positive)
 
 ---
 

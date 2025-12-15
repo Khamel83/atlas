@@ -110,3 +110,126 @@ javascript:(function(){var url=encodeURIComponent(window.location.href);window.l
 4. Tap it on any page to save
 
 Note: The bookmarklet requires you to be logged in already.
+
+---
+
+## iOS Shortcut: Save Selection as Note
+
+This shortcut captures highlighted text from a webpage and saves it as a note in Atlas.
+
+### What It Does
+
+1. Captures the selected text from a webpage
+2. Gets the page URL and title
+3. Creates a note in Atlas with the selection
+4. Optionally queues the URL for full article fetch
+
+### Setup Instructions
+
+#### 1. Create New Shortcut
+
+Open Shortcuts app and tap **+** to create a new shortcut.
+
+#### 2. Add Actions
+
+##### Action 1: Get Safari Selection
+- **Type:** "Get Details of Safari Web Page"
+- **Get:** "Page Selection"
+- **From:** Shortcut Input
+- This captures the highlighted text
+
+##### Action 2: Set Variable for Selection
+- **Type:** "Set Variable"
+- **Name:** "SelectedText"
+- **Input:** Previous action output
+
+##### Action 3: Get Page URL
+- **Type:** "Get Details of Safari Web Page"
+- **Get:** "URL"
+- **From:** Shortcut Input
+
+##### Action 4: Set Variable for URL
+- **Type:** "Set Variable"
+- **Name:** "PageURL"
+- **Input:** Previous action output
+
+##### Action 5: Get Page Title
+- **Type:** "Get Details of Safari Web Page"
+- **Get:** "Name"
+- **From:** Shortcut Input
+
+##### Action 6: Set Variable for Title
+- **Type:** "Set Variable"
+- **Name:** "PageTitle"
+- **Input:** Previous action output
+
+##### Action 7: POST to Atlas Notes API
+- **Type:** "Get Contents of URL"
+- **URL:** `https://YOUR-ATLAS-HOST:7444/api/notes/url`
+- **Method:** POST
+- **Headers:**
+  - `Content-Type`: `application/json`
+- **Request Body:** JSON
+  ```json
+  {
+    "url": "[PageURL variable]",
+    "selection": "[SelectedText variable]",
+    "title": "[PageTitle variable]",
+    "fetch_full_article": true
+  }
+  ```
+
+##### Action 8: Show Notification
+- **Type:** "Show Notification"
+- **Title:** "Saved to Atlas Notes"
+- **Body:** "Selection saved and article queued"
+
+#### 3. Name and Configure
+
+- Name it "Save to Atlas Notes"
+- Enable "Show in Share Sheet"
+- Set types to: Safari Web Pages
+
+### Usage
+
+1. Select/highlight text on a webpage in Safari
+2. Tap **Share** button
+3. Tap **"Save to Atlas Notes"**
+4. Done! The selection is saved and the full article is queued
+
+### API Endpoint Reference
+
+**POST `/api/notes/url`**
+
+```json
+{
+  "url": "https://example.com/article",
+  "selection": "The highlighted text from the page",
+  "title": "Optional custom title",
+  "fetch_full_article": true
+}
+```
+
+Response:
+```json
+{
+  "status": "created",
+  "content_id": "abc123def456",
+  "title": "Your Note Title",
+  "article_queued": true
+}
+```
+
+### Alternative: Direct Text Notes
+
+For notes without a source URL:
+
+**POST `/api/notes/`**
+
+```json
+{
+  "text": "Your note text here",
+  "title": "Optional title",
+  "source_url": "optional URL"
+}
+```

@@ -51,6 +51,7 @@ class ContentIndexer:
     - data/podcasts/{slug}/transcripts/*.md
     - data/content/article/{date}/{id}/content.md
     - data/content/newsletter/{date}/{id}/content.md
+    - data/content/note/{date}/{id}/content.md
     - data/stratechery/{articles,podcasts}/*.md
     """
 
@@ -271,6 +272,70 @@ class ContentIndexer:
                 except Exception as e:
                     logger.warning(f"Failed to read {content_file}: {e}")
 
+    def discover_notes(self) -> Iterator[ContentItem]:
+        """Discover user notes (selections, highlights)."""
+        notes_dir = self.content_dir / "note"
+        if not notes_dir.exists():
+            return
+
+        # Walk year/month/day directories
+        for year_dir in notes_dir.iterdir():
+            if not year_dir.is_dir() or not year_dir.name.isdigit():
+                continue
+
+            for month_dir in year_dir.iterdir():
+                if not month_dir.is_dir() or not month_dir.name.isdigit():
+                    continue
+
+                for day_dir in month_dir.iterdir():
+                    if not day_dir.is_dir() or not day_dir.name.isdigit():
+                        continue
+
+                    for content_dir in day_dir.iterdir():
+                        if not content_dir.is_dir():
+                            continue
+
+                        content_file = content_dir / "content.md"
+                        if not content_file.exists():
+                            continue
+
+                        date_str = f"{year_dir.name}/{month_dir.name}/{day_dir.name}"
+                        content_id = f"note:{date_str}:{content_dir.name}"
+
+                        try:
+                            text = content_file.read_text()
+                            # Notes can be short, lower threshold
+                            if len(text) < 20:
+                                continue
+
+                            # Try to get title from metadata.json
+                            metadata_file = content_dir / "metadata.json"
+                            metadata = {}
+                            title = content_dir.name
+
+                            if metadata_file.exists():
+                                try:
+                                    metadata = json.loads(metadata_file.read_text())
+                                    title = metadata.get("title", title)
+                                except (json.JSONDecodeError, IOError) as e:
+                                    logger.debug(f"Error reading metadata {metadata_file}: {e}")
+
+                            yield ContentItem(
+                                content_id=content_id,
+                                content_type="note",
+                                title=title,
+                                text=text,
+                                source_path=content_file,
+                                metadata={
+                                    "date": date_str,
+                                    "title": title,
+                                    "is_clean": True,  # Notes are user-curated
+                                    **metadata,
+                                }
+                            )
+                        except Exception as e:
+                            logger.warning(f"Failed to read {content_file}: {e}")
+
     def discover_stratechery(self) -> Iterator[ContentItem]:
         """Discover Stratechery archive content."""
         if not self.stratechery_dir.exists():
@@ -312,7 +377,7 @@ class ContentIndexer:
 
     def discover_all(self, content_types: Optional[List[str]] = None) -> Iterator[ContentItem]:
         """Discover all content, optionally filtered by type."""
-        types = content_types or ["podcasts", "articles", "newsletters", "stratechery"]
+        types = content_types or ["podcasts", "articles", "newsletters", "stratechery", "notes"]
 
         if "podcasts" in types:
             yield from self.discover_podcasts()
@@ -322,6 +387,8 @@ class ContentIndexer:
             yield from self.discover_newsletters()
         if "stratechery" in types:
             yield from self.discover_stratechery()
+        if "notes" in types:
+            yield from self.discover_notes()
 
     def index_content(
         self,
@@ -470,7 +537,7 @@ def main():
 
     parser = argparse.ArgumentParser(description="Index Atlas content")
     parser.add_argument("--all", action="store_true", help="Index all content types")
-    parser.add_argument("--type", dest="content_type", choices=["podcasts", "articles", "newsletters", "stratechery"], help="Index specific type")
+    parser.add_argument("--type", dest="content_type", choices=["podcasts", "articles", "newsletters", "stratechery", "notes"], help="Index specific type")
     parser.add_argument("--force", action="store_true", help="Re-index existing content")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be indexed")
     parser.add_argument("--batch-size", type=int, default=50, help="Batch size for indexing")
