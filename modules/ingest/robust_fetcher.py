@@ -447,24 +447,39 @@ class ArchiveFetcher:
         Fetch content from archive.is (archive.today).
 
         Archive.is is great for bypassing paywalls as it stores the full page.
+        Uses the search URL format with proper URL encoding.
         """
         self.rate_limiter.wait("archive.is")
 
-        # Try to find existing archive
-        search_url = f"https://archive.is/{url}"
+        # Use properly encoded search URL format
+        encoded_url = quote_plus(url)
+        search_url = f"https://archive.is/?url={encoded_url}"
 
         try:
             response = self.session.get(search_url, timeout=30, allow_redirects=True)
 
-            # If we got redirected to an archive page
-            if response.status_code == 200 and 'archive.is' in response.url:
-                logger.info(f"Found archive.is version: {response.url}")
-                return response.text
-
-            # Try alternate format
-            search_url2 = f"https://archive.today/{url}"
-            response = self.session.get(search_url2, timeout=30, allow_redirects=True)
+            # If we got redirected to an archive page (contains a snapshot ID)
             if response.status_code == 200:
+                # Check if we're on an actual archived page vs search results
+                if '/search/' not in response.url and re.search(r'archive\.(is|today)/[a-zA-Z0-9]+', response.url):
+                    logger.info(f"Found archive.is version: {response.url}")
+                    return response.text
+
+                # Try to find archive links in search results
+                soup = BeautifulSoup(response.text, 'html.parser')
+                archive_links = soup.select('a[href*="archive.is/"], a[href*="archive.today/"]')
+                for link in archive_links:
+                    href = link.get('href', '')
+                    if re.search(r'archive\.(is|today)/[a-zA-Z0-9]+$', href):
+                        logger.info(f"Found archive link in search: {href}")
+                        archive_response = self.session.get(href, timeout=30)
+                        if archive_response.status_code == 200:
+                            return archive_response.text
+
+            # Try alternate domain
+            search_url2 = f"https://archive.today/?url={encoded_url}"
+            response = self.session.get(search_url2, timeout=30, allow_redirects=True)
+            if response.status_code == 200 and '/search/' not in response.url:
                 return response.text
 
         except Exception as e:
@@ -474,33 +489,120 @@ class ArchiveFetcher:
 
     def fetch_wayback(self, url: str) -> Optional[str]:
         """
-        Fetch content from Wayback Machine.
+        Fetch content from Wayback Machine with multi-snapshot fallback.
 
-        Wayback stores historical snapshots of pages.
+        Tries multiple snapshots (newest, oldest, and middle samples) to find
+        one with quality content. Some snapshots are soft-404s or incomplete.
         """
         if not WAYBACK_AVAILABLE:
             return None
 
+        # Get available snapshots via CDX API
+        snapshots = self._get_wayback_snapshots(url, limit=20)
+        if not snapshots:
+            logger.debug(f"No Wayback snapshots found for: {url}")
+            return None
+
+        # Try snapshots in priority order: newest, oldest, then middle samples
+        to_try = []
+        if snapshots:
+            to_try.append(snapshots[-1])  # Newest (last by timestamp)
+            if len(snapshots) > 1:
+                to_try.append(snapshots[0])  # Oldest (first by timestamp)
+            # Add 3 evenly-spaced middle samples
+            if len(snapshots) > 4:
+                step = len(snapshots) // 4
+                for i in [step, step * 2, step * 3]:
+                    if snapshots[i] not in to_try:
+                        to_try.append(snapshots[i])
+
+        for snapshot in to_try:
+            self.rate_limiter.wait("web.archive.org")
+            archive_url = f"https://web.archive.org/web/{snapshot['timestamp']}/{url}"
+
+            try:
+                logger.debug(f"Trying Wayback snapshot: {snapshot['timestamp']}")
+                response = self.session.get(archive_url, timeout=30)
+
+                if response.status_code == 200:
+                    # Quality check: reject soft-404s
+                    if self._is_soft_404(response.text):
+                        logger.debug(f"Snapshot {snapshot['timestamp']} is a soft-404, skipping")
+                        continue
+
+                    # Check for minimum content length
+                    if len(response.text) < 2000:
+                        logger.debug(f"Snapshot {snapshot['timestamp']} too short ({len(response.text)} chars)")
+                        continue
+
+                    logger.info(f"Found quality Wayback archive from {snapshot['timestamp']}")
+                    return response.text
+
+            except Exception as e:
+                logger.debug(f"Wayback fetch failed for {snapshot['timestamp']}: {e}")
+                continue
+
+        logger.debug(f"All {len(to_try)} Wayback snapshots failed quality checks")
+        return None
+
+    def _get_wayback_snapshots(self, url: str, limit: int = 20) -> List[Dict[str, str]]:
+        """Get available snapshots from Wayback CDX API."""
         self.rate_limiter.wait("web.archive.org")
 
+        cdx_url = f"https://web.archive.org/cdx/search/cdx?url={quote_plus(url)}&output=json&limit={limit}"
+
         try:
-            wayback = waybackpy.Url(url)
+            response = self.session.get(cdx_url, timeout=30)
+            if response.status_code != 200:
+                return []
 
-            # Try to get the newest archive
-            try:
-                archive = wayback.newest()
-                logger.info(f"Found Wayback archive from {archive.timestamp}: {archive.archive_url}")
+            data = response.json()
+            if len(data) <= 1:  # First row is header
+                return []
 
-                response = self.session.get(archive.archive_url, timeout=30)
-                if response.status_code == 200:
-                    return response.text
-            except waybackpy.exceptions.NoCDXRecordFound:
-                logger.debug(f"No Wayback archive found for: {url}")
+            # Parse CDX response: [urlkey, timestamp, original, mimetype, statuscode, digest, length]
+            snapshots = []
+            for row in data[1:]:  # Skip header row
+                if len(row) >= 5 and row[4] == '200':  # Only 200 status
+                    snapshots.append({
+                        'timestamp': row[1],
+                        'original': row[2],
+                        'mimetype': row[3] if len(row) > 3 else 'text/html',
+                    })
+
+            return snapshots
 
         except Exception as e:
-            logger.debug(f"Wayback lookup failed: {e}")
+            logger.debug(f"CDX API failed: {e}")
+            return []
 
-        return None
+    def _is_soft_404(self, html: str) -> bool:
+        """Check if HTML content is a soft-404 (looks like error page)."""
+        if not html:
+            return True
+
+        html_lower = html.lower()
+
+        # Check first 5000 chars for error patterns
+        check_region = html_lower[:5000]
+
+        soft_404_patterns = [
+            'page not found',
+            'page cannot be found',
+            '404 error',
+            'not found</title>',
+            'error 404',
+            'this page doesn\'t exist',
+            'this page does not exist',
+            'content unavailable',
+            'content not available',
+            'no longer available',
+            'has been removed',
+            'has been deleted',
+        ]
+
+        matches = sum(1 for p in soft_404_patterns if p in check_region)
+        return matches >= 2  # Require multiple matches to avoid false positives
 
 
 class PlaywrightFetcher:

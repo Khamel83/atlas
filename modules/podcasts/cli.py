@@ -1213,6 +1213,53 @@ class AtlasPodCLI:
 
         return True
 
+    def cmd_exclude_pending(self, args):
+        """Mark pending/failed episodes as excluded for specific podcasts."""
+        if not self.store:
+            self.init_store()
+
+        slugs = [s.strip() for s in args.slugs.split(',')] if args.slugs else []
+        if not slugs:
+            print("❌ Must specify --slugs (comma-separated)")
+            return False
+
+        dry_run = not getattr(args, 'apply', False)
+        target_statuses = ['failed', 'unknown']  # Never touch 'fetched'
+
+        if dry_run:
+            print("🔍 DRY RUN: Showing what would be excluded (use --apply to execute)")
+        else:
+            print("📝 Marking episodes as excluded...")
+
+        total = 0
+        for slug in slugs:
+            podcast = self.store.get_podcast_by_slug(slug)
+            if not podcast:
+                print(f"   ⚠️  Podcast not found: {slug}")
+                continue
+
+            episodes = self.store.get_episodes_by_podcast(podcast.id)
+            to_exclude = [e for e in episodes if e.transcript_status in target_statuses]
+
+            if not to_exclude:
+                print(f"   {podcast.name}: no pending/failed episodes")
+                continue
+
+            if dry_run:
+                print(f"   {podcast.name}: would exclude {len(to_exclude)} episodes")
+            else:
+                for ep in to_exclude:
+                    self.store.update_episode_transcript_status(ep.id, "excluded")
+                print(f"   ✅ {podcast.name}: excluded {len(to_exclude)} episodes")
+
+            total += len(to_exclude)
+
+        print(f"\n📊 Total: {total} episodes {'would be ' if dry_run else ''}excluded")
+        if dry_run:
+            print("   Run with --apply to execute")
+
+        return True
+
 
 def main():
     """Main CLI entry point"""
@@ -1317,6 +1364,19 @@ def main():
         help="Actually prune episodes (default is dry-run)"
     )
 
+    # exclude-pending command
+    exclude_parser = subparsers.add_parser(
+        "exclude-pending", help="Mark pending/failed episodes as excluded for specific podcasts"
+    )
+    exclude_parser.add_argument(
+        "--slugs", required=True,
+        help="Comma-separated podcast slugs to process"
+    )
+    exclude_parser.add_argument(
+        "--apply", action="store_true",
+        help="Actually exclude episodes (default is dry-run)"
+    )
+
     # status command
     status_parser = subparsers.add_parser("status", help="Coverage dashboard")
     status_parser.add_argument(
@@ -1372,6 +1432,7 @@ def main():
             "doctor": cli.cmd_doctor,
             "sync": cli.cmd_sync,
             "prune": cli.cmd_prune,
+            "exclude-pending": cli.cmd_exclude_pending,
             "status": cli.cmd_status,
             "generate-queue": cli.cmd_generate_queue,
             "process-queue": cli.cmd_process_queue,

@@ -71,6 +71,7 @@ class NYTResolver:
         if not cookies_loaded:
             cookie_paths = [
                 Path.home() / ".config" / "atlas" / "nyt_cookies.json",
+                Path.home() / ".config" / "atlas" / "cookies" / "nytimes.com.json",
                 Path.home() / ".config" / "atlas" / "cookies" / "nytimes.json",
             ]
 

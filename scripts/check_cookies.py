@@ -27,6 +27,9 @@ CRITICAL_DAYS = 2
 COOKIE_FILES = {
     'stratechery': Path.home() / '.config/atlas/stratechery_cookies.json',
     'youtube': Path.home() / '.config/atlas/youtube_cookies.txt',
+    'nyt': Path.home() / '.config/atlas/cookies/nytimes.com.json',
+    'dithering': Path.home() / '.config/atlas/cookies/dithering.passport.online.json',
+    'asianometry': Path.home() / '.config/atlas/cookies/asianometry.passport.online.json',
 }
 
 
@@ -224,6 +227,21 @@ def main():
     # Check YouTube (Netscape format) if exists
     if COOKIE_FILES['youtube'].exists():
         result = check_netscape_cookies(COOKIE_FILES['youtube'], 'YouTube')
+        results.append(result)
+
+    # Check NYT (JSON format) if exists
+    if COOKIE_FILES['nyt'].exists():
+        result = check_json_cookies(COOKIE_FILES['nyt'], 'NYT')
+        results.append(result)
+
+    # Check Dithering (JSON format) if exists
+    if COOKIE_FILES['dithering'].exists():
+        result = check_json_cookies(COOKIE_FILES['dithering'], 'Dithering')
+        results.append(result)
+
+    # Check Asianometry (JSON format) if exists
+    if COOKIE_FILES['asianometry'].exists():
+        result = check_json_cookies(COOKIE_FILES['asianometry'], 'Asianometry')
         results.append(result)
 
     # Print results

@@ -9,11 +9,13 @@ Uses headless browser for JS-rendered sites like:
 - Tapesearch (tapesearch.com)
 """
 
+import json
 import logging
 import re
 import time
 from typing import List, Dict, Any, Optional
 from pathlib import Path
+from urllib.parse import urlparse
 
 from modules.podcasts.store import Episode
 
@@ -27,6 +29,16 @@ except ImportError:
     logger.warning("Playwright not available - JS-rendered sites won't work")
 
 
+# Cookie paths mapped by domain pattern
+COOKIE_PATHS = {
+    'stratechery.com': Path.home() / '.config/atlas/stratechery_cookies.json',
+    'dithering.fm': Path.home() / '.config/atlas/cookies/dithering.passport.online.json',
+    'dithering.passport.online': Path.home() / '.config/atlas/cookies/dithering.passport.online.json',
+    'asianometry.com': Path.home() / '.config/atlas/cookies/asianometry.passport.online.json',
+    'asianometry.passport.online': Path.home() / '.config/atlas/cookies/asianometry.passport.online.json',
+}
+
+
 class PlaywrightResolver:
     """Resolver that uses headless browser for JS-rendered transcript pages."""
 
@@ -38,6 +50,54 @@ class PlaywrightResolver:
         )
         self.timeout = timeout * 1000  # Convert to ms (60s default for slow JS sites)
         self.rate_limit_seconds = 3.0  # Be gentle with JS sites
+
+    def _load_cookies_for_url(self, url: str) -> List[Dict[str, Any]]:
+        """Load cookies for a URL from the appropriate cookie file."""
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+
+        # Find matching cookie file
+        cookie_path = None
+        for pattern, path in COOKIE_PATHS.items():
+            if pattern in domain:
+                cookie_path = path
+                break
+
+        if not cookie_path or not cookie_path.exists():
+            return []
+
+        try:
+            with open(cookie_path) as f:
+                cookies = json.load(f)
+
+            # Convert to Playwright format
+            playwright_cookies = []
+            for cookie in cookies:
+                pc = {
+                    'name': cookie.get('name', ''),
+                    'value': cookie.get('value', ''),
+                    'domain': cookie.get('domain', ''),
+                    'path': cookie.get('path', '/'),
+                }
+                # Handle secure and httpOnly
+                if cookie.get('secure'):
+                    pc['secure'] = True
+                if cookie.get('httpOnly'):
+                    pc['httpOnly'] = True
+                # Handle sameSite
+                same_site = cookie.get('sameSite', 'Lax')
+                if same_site in ('Strict', 'Lax', 'None'):
+                    pc['sameSite'] = same_site
+
+                if pc['name'] and pc['value']:
+                    playwright_cookies.append(pc)
+
+            logger.debug(f"Loaded {len(playwright_cookies)} cookies for {domain}")
+            return playwright_cookies
+
+        except Exception as e:
+            logger.warning(f"Failed to load cookies for {url}: {e}")
+            return []
 
     def resolve(self, episode: Episode, podcast_config: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
@@ -128,6 +188,12 @@ class PlaywrightResolver:
             with sync_playwright() as p:
                 browser = p.chromium.launch(headless=True)
                 context = browser.new_context(user_agent=self.user_agent)
+
+                # Load cookies for this URL if available
+                cookies = self._load_cookies_for_url(url)
+                if cookies:
+                    context.add_cookies(cookies)
+                    logger.info(f"Added {len(cookies)} cookies for {url}")
 
                 page = context.new_page()
                 # Use domcontentloaded instead of networkidle - faster and less prone to timeout
