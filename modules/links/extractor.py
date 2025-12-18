@@ -93,6 +93,13 @@ LOW_VALUE_CONTEXT = [
     'click here', 'learn more', 'get started',
 ]
 
+# Media file extensions to skip (not articles)
+MEDIA_EXTENSIONS = {
+    '.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.ico', '.bmp',  # Images
+    '.mp3', '.mp4', '.wav', '.m4a', '.ogg', '.flac', '.aac',  # Audio
+    '.webm', '.mkv', '.avi', '.mov',  # Video
+}
+
 
 class LinkExtractor:
     """Extract and score links from any text source."""
@@ -236,7 +243,7 @@ class LinkExtractor:
             category, score = self._score_link(url, domain, anchor, context)
 
             # Skip low-value categories
-            if category in (LinkCategory.AD, LinkCategory.NAVIGATION, LinkCategory.SOCIAL):
+            if category in (LinkCategory.AD, LinkCategory.NAVIGATION, LinkCategory.SOCIAL, LinkCategory.MEDIA):
                 return None
 
             return Link(
@@ -263,6 +270,13 @@ class LinkExtractor:
         context: str
     ) -> Tuple[LinkCategory, float]:
         """Score a link's value for ingestion."""
+        # Early exit for media files (images, audio, video)
+        parsed = urlparse(url)
+        path_lower = parsed.path.lower()
+        # Check for media extensions anywhere in URL (handles CDN query strings too)
+        if any(ext in path_lower for ext in MEDIA_EXTENSIONS):
+            return LinkCategory.MEDIA, 0.0
+
         score = 0.5  # Base score
         category = LinkCategory.UNKNOWN
 

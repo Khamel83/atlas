@@ -83,7 +83,7 @@ class Episode:
 class SimpleTranscriptFetcher:
     """Simple, reliable transcript fetcher."""
 
-    def __init__(self, output_dir: str = "data/transcripts", state_file: str = "data/fetcher_state.json"):
+    def __init__(self, output_dir: str = "data/podcasts", state_file: str = "data/fetcher_state.json"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.state_file = Path(state_file)
@@ -288,8 +288,8 @@ class SimpleTranscriptFetcher:
 
     def save_transcript(self, podcast_slug: str, episode: Episode, content: str) -> str:
         """Save transcript to disk."""
-        # Create directory
-        podcast_dir = self.output_dir / podcast_slug
+        # Create directory (matches main system: data/podcasts/{slug}/transcripts/)
+        podcast_dir = self.output_dir / podcast_slug / "transcripts"
         podcast_dir.mkdir(parents=True, exist_ok=True)
 
         # Create filename
@@ -378,7 +378,7 @@ def main():
     parser.add_argument('--once', action='store_true', help='Run once and exit')
     parser.add_argument('--podcast', type=str, help='Only process this podcast')
     parser.add_argument('--interval', type=int, default=60, help='Minutes between runs')
-    parser.add_argument('--output', type=str, default='data/transcripts', help='Output directory')
+    parser.add_argument('--output', type=str, default='data/podcasts', help='Output directory')
 
     args = parser.parse_args()
 

@@ -3,7 +3,7 @@ Description=Atlas Link Pipeline Timer (every 2 hours)
 
 [Timer]
 # Run every 2 hours
-OnCalendar=*:00/120
+OnCalendar=*-*-* 00/2:00:00
 # Run on boot after 5 minutes
 OnBootSec=5min
 # Persist timer across reboots

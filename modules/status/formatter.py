@@ -100,6 +100,14 @@ def format_status(status: AtlasStatus, color: bool = True) -> str:
             lines.append(f"  {DIM}{error}{RESET}")
         lines.append("")
 
+    # Detailed reports hint
+    lines.append(f"{BOLD}DETAILED REPORTS{RESET}")
+    lines.append(f"  {DIM}Per-podcast:{RESET}  ./scripts/atlas_status.py --podcasts")
+    lines.append(f"  {DIM}Per-domain:{RESET}   ./scripts/atlas_status.py --urls")
+    lines.append(f"  {DIM}Saved reports:{RESET} data/reports/podcast_status.md")
+    lines.append(f"                data/reports/url_status.md")
+    lines.append("")
+
     # Timestamp
     lines.append(f"{DIM}Updated: {status.timestamp.strftime('%Y-%m-%d %H:%M:%S')}{RESET}")
 

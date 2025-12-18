@@ -35,6 +35,7 @@ class LinkCategory(Enum):
     AD = 'ad'
     NAVIGATION = 'navigation'
     SOCIAL = 'social'
+    MEDIA = 'media'  # Images, audio, video files
     UNKNOWN = 'unknown'
 
 

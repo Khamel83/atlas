@@ -13,11 +13,14 @@ This single command shows everything: services, podcasts, content, URL queue, qu
 # UNIFIED STATUS - shows everything at once
 ./venv/bin/python scripts/atlas_status.py
 
+# PER-PODCAST STATUS - shows each podcast's transcript coverage
+./venv/bin/python scripts/atlas_status.py --podcasts
+
+# Brief summary only
+./venv/bin/python scripts/atlas_status.py --podcasts --brief
+
 # Detailed quality report (slower, scans all files)
 ./venv/bin/python scripts/verify_content.py --report
-
-# Per-podcast breakdown
-./venv/bin/python -m modules.podcasts.cli status -v
 
 # Run tests
 ./venv/bin/pytest tests/ -v

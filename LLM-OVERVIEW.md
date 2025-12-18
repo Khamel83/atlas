@@ -1,7 +1,7 @@
 # LLM-OVERVIEW: Atlas
 
 > Complete context for any LLM to understand this project.
-> **Last Updated**: 2025-12-10
+> **Last Updated**: 2025-12-15
 > **ONE_SHOT Version**: 4.0
 > **Status**: Production - Fully automated ingestion running
 
@@ -17,11 +17,12 @@ Content is scattered across the internet - podcast transcripts on various sites,
 
 ### Current State
 - **Status**: Production (ingestion running 24/7)
+- **Content Quality**: 35,385 good (80.1%), 8,002 marginal (18.1%), 800 bad (1.8%)
 - **Coverage**: 4,445 podcast transcripts fetched (66% of 6,729 target)
-- **Automation**: 7 systemd timers handling discovery, fetching, retries
+- **Automation**: 9 systemd timers handling discovery, fetching, retries
 - **Tests**: 34 passing (api, podcasts, storage)
 - **Security**: All OWASP issues fixed, secrets encrypted with SOPS + Age
-- **Next Milestone**: Complete podcast backlog (~7 hours), enable Atlas Ask
+- **Next Milestone**: Complete marginal recovery, enable Atlas Ask
 
 ---
 
@@ -156,6 +157,29 @@ python scripts/stratechery_crawler.py --type all --delay 5
 tail -f /tmp/stratechery-archive.log
 ```
 
+### Pipeline 5: Content Quality Verification (Automated)
+
+```
+All content files → Verifier checks → Good/Marginal/Bad classification
+```
+
+**Checks performed:**
+- Minimum file size (500 bytes)
+- Word count thresholds (100 for articles, 500 for transcripts)
+- Paywall pattern detection (2+ patterns required)
+- Soft-404 detection
+- JS-blocked content detection (exempt if >5000 words)
+- Paragraph structure
+
+**Commands:**
+```bash
+# Verify all content
+./venv/bin/python scripts/verify_content.py --report
+
+# Check stats
+sqlite3 data/quality/verification.db "SELECT quality, COUNT(*) FROM verifications GROUP BY quality"
+```
+
 ---
 
 ## 4. KEY FILES
@@ -168,6 +192,8 @@ tail -f /tmp/stratechery-archive.log
 | Bulk folder import | `modules/ingest/bulk_import.py` |
 | Gmail ingester | `modules/ingest/gmail_ingester.py` |
 | Content pipeline | `modules/pipeline/content_pipeline.py` |
+| Content verifier | `modules/quality/verifier.py` |
+| Marginal recovery | `scripts/recover_marginal_tiered.py` |
 | Podcast config | `config/mapping.yml` |
 | Podcast limits | `config/podcast_limits.json` |
 | API entry | `api/main.py` |
@@ -292,6 +318,9 @@ curl http://localhost:7444/health
 
 | Date | Change | Impact |
 |------|--------|--------|
+| 2025-12-15 | Content Quality Verification | 44K files classified: 80.1% good, 18.1% marginal, 1.8% bad |
+| 2025-12-15 | Fixed verifier false positives | JS check exempts >5000 words, smarter paragraph check |
+| 2025-12-15 | Marginal recovery scripts | Tiered approach to re-fetch failed scrapes |
 | 2025-12-10 | Security audit complete | Fixed command injection, CORS, SSRF, SQL injection |
 | 2025-12-10 | N+1 query fix | Dashboard queries: 50+ → 2 |
 | 2025-12-10 | API endpoints added | Episode detail, transcript, content text endpoints |

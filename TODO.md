@@ -1,6 +1,6 @@
 # TODO - Atlas
 
-> Project tasks organized by status. Updated: 2025-12-11
+> Project tasks organized by status. Updated: 2025-12-15
 
 ---
 
@@ -22,9 +22,14 @@
 - [x] MVP Transcript Fetcher (`scripts/simple_transcript_fetcher.py`) 2025-12-11
 - [x] Tapesearch resolver for Vox podcasts 2025-12-11
 - [x] Systemd services for both MVP fetchers 2025-12-11
+- [x] Content Quality Verification system 2025-12-15
+- [x] Fixed false positives: JS check exempts >5000 words 2025-12-15
+- [x] Fixed false positives: paragraph check for 300+ word content 2025-12-15
+- [x] Marginal content recovery scripts (tiered approach) 2025-12-15
 
 ### In Progress
 
+- [ ] Marginal recovery pipeline running (Tier 1: 289 high-priority articles) #quality
 - [ ] Complete podcast transcript backlog (~1,378 pending, 71.4% done) ~4h #podcasts
 - [ ] Stratechery full archive crawl (running in background) #stratechery
 
@@ -144,6 +149,64 @@ Indexer finds content from:
 - `data/content/article/{date}/{id}/content.md`
 - `data/content/newsletter/{date}/{id}/content.md`
 - `data/stratechery/{articles,podcasts}/*.md`
+
+---
+
+## Content Quality Verification & Recovery - 2025-12-15
+
+**Status**: Recovery pipeline running in background
+
+### Current Stats (Before Recovery)
+
+| Quality | Count | Percentage |
+|---------|-------|------------|
+| Good | 35,385 | 80.1% |
+| Marginal | 8,002 | 18.1% |
+| Bad | 800 | 1.8% |
+| **Total** | 44,187 | 100% |
+
+### Marginal Recovery Pipeline
+
+Running tiered recovery to re-fetch marginal content with better fetching strategies:
+
+**Tier 1** (High Priority - 289 files):
+- `data/content/article/` - Main articles
+- `data/clean/article/` - Cleaned copies
+- `data/stratechery/` - Stratechery content
+
+**Tier 2** (Medium Priority):
+- Washington Post, NYTimes, Bloomberg, WSJ articles
+
+**Tier 3** (Low Priority - often legitimately short):
+- Podcasts, newsletters, YouTube
+
+### Key Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/verify_content.py` | Run verification on all content |
+| `scripts/recover_marginal.py` | Recovery for all marginal files |
+| `scripts/recover_marginal_tiered.py` | Tiered recovery (high→low priority) |
+| `scripts/run_full_marginal_recovery.sh` | Full pipeline (background) |
+
+### Tracking
+
+- **Progress Log**: `/tmp/full_recovery.log`
+- **Recovery DB**: `data/quality/marginal_recovery.db`
+- **Verification DB**: `data/quality/verification.db`
+
+### Commands
+
+```bash
+# Check current verification stats
+sqlite3 data/quality/verification.db "SELECT quality, COUNT(*) FROM verifications GROUP BY quality"
+
+# Check recovery progress
+tail -f /tmp/full_recovery.log
+
+# Check recovery database stats
+sqlite3 data/quality/marginal_recovery.db "SELECT tier, status, COUNT(*) FROM marginal_recovery GROUP BY tier, status"
+```
 
 ---
 

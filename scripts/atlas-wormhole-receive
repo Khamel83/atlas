@@ -1,0 +1,15 @@
+#!/bin/bash
+# atlas-wormhole-receive - Receive files via magic-wormhole into Atlas
+#
+# Usage:
+#   atlas-wormhole-receive 7-crossword-potato
+#   atlas-wormhole-receive  # interactive, prompts for code
+#
+# Files are received to data/wormhole/, processed, then moved to data/inbox/
+# URLs are extracted and added to the fetch queue automatically.
+
+ATLAS_ROOT="/home/khamel83/github/atlas"
+cd "$ATLAS_ROOT"
+
+# Pass all args through - let Python handle them
+exec "$ATLAS_ROOT/venv/bin/python" -m modules.wormhole.receiver "$@"
