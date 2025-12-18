@@ -1,19 +1,23 @@
 # Atlas Project Instructions
 
+## Status Check (Do This First)
+
+When user asks "how are we doing?", "status?", "how is atlas running?", or any variant:
+**Immediately run** `./venv/bin/python scripts/atlas_status.py` - no questions, no preamble.
+
+This single command shows everything: services, podcasts, content, URL queue, quality.
+
 ## Quick Reference
 
 ```bash
-# Verify ALL content quality (ALWAYS run this to get true numbers)
+# UNIFIED STATUS - shows everything at once
+./venv/bin/python scripts/atlas_status.py
+
+# Detailed quality report (slower, scans all files)
 ./venv/bin/python scripts/verify_content.py --report
 
-# Check podcast transcript coverage
-./venv/bin/python -m modules.podcasts.cli status
-
-# Check with per-podcast breakdown
+# Per-podcast breakdown
 ./venv/bin/python -m modules.podcasts.cli status -v
-
-# Run transcript fetch manually
-./venv/bin/python -m modules.podcasts.cli fetch-transcripts --all
 
 # Run tests
 ./venv/bin/pytest tests/ -v

@@ -59,7 +59,7 @@ QUEUE_FILE = "data/url_queue.txt"
 OUTPUT_DIR = "data/articles"
 STATE_FILE = "data/url_fetcher_state.json"
 COOKIES_DIR = os.path.expanduser("~/.config/atlas/cookies")
-SLEEP_BETWEEN_URLS = 10  # seconds
+SLEEP_BETWEEN_URLS = 20  # seconds (gentle pace)
 LOOP_INTERVAL = 60  # seconds between queue checks
 
 # Logging

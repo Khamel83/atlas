@@ -6,9 +6,23 @@ After=network.target
 Type=simple
 User=khamel83
 WorkingDirectory=/home/khamel83/github/atlas
+Environment=PATH=/home/khamel83/github/atlas/venv/bin:/usr/local/bin:/usr/bin:/bin
+EnvironmentFile=-/home/khamel83/github/atlas/systemd/atlas-podcasts.env
 ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/simple_transcript_fetcher.py --interval 60
 Restart=always
 RestartSec=60
+
+# RESOURCE LIMITS - gentle pace, won't impact system
+CPUQuota=15%
+MemoryMax=512M
+Nice=15
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-simple-fetcher
 
 [Install]
 WantedBy=multi-user.target

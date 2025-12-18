@@ -2,7 +2,7 @@
 """
 Import completed Whisper transcripts back into the podcast database.
 
-Watches data/whisper_queue/transcripts/ for .txt or .md files
+Watches data/whisper_queue/transcripts/ AND audio/ for .txt or .md files
 and imports them, updating episode status to 'fetched'.
 
 Expected filename format: {podcast_slug}_{episode_id}.txt
@@ -33,19 +33,20 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
 
     store = PodcastStore()
     transcripts_dir = queue_dir / 'transcripts'
+    audio_dir = queue_dir / 'audio'  # MacWhisper outputs here by default
     processed_file = queue_dir / 'processed.json'
-
-    if not transcripts_dir.exists():
-        logger.error(f"Transcripts directory not found: {transcripts_dir}")
-        return
 
     # Load processed list
     processed = set()
     if processed_file.exists():
         processed = set(json.loads(processed_file.read_text()))
 
-    # Find transcript files
-    transcript_files = list(transcripts_dir.glob('*.txt')) + list(transcripts_dir.glob('*.md'))
+    # Find transcript files in both transcripts/ and audio/ folders
+    transcript_files = []
+    for search_dir in [transcripts_dir, audio_dir]:
+        if search_dir.exists():
+            transcript_files.extend(search_dir.glob('*.txt'))
+            transcript_files.extend(search_dir.glob('*.md'))
     logger.info(f"Found {len(transcript_files)} transcript files")
 
     imported = 0
