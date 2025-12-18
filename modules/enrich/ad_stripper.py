@@ -139,6 +139,19 @@ class AdStripper:
         # Newsletter-specific
         r"this (?:issue|edition|newsletter) is (?:brought|presented|sponsored)",
         r"thanks to .{3,50} for sponsoring",
+
+        # iHeart/Pushkin network patterns (learned from Whisper transcripts)
+        r"this is an iheart podcast",
+        r"guaranteed human",
+        r"learn more at .+\.com",
+        r"visit .+\.com",
+        r"prescription medicine used to treat",
+        r"tell your doctor if you have",
+        r"ask your doctor about",
+        r"call 1-800-",
+        r"to find more pushkin podcasts",
+        r"pushkin plus subscription",
+        r"listen ad-?free",
     ]
 
     # Common advertisers (case-insensitive matching)
@@ -174,6 +187,14 @@ class AdStripper:
         "simplisafe", "ring", "aura", "lifelock",
         "state farm", "geico", "progressive",
         "draftkings", "fanduel", "betmgm",
+
+        # iHeart/Pushkin network advertisers (learned from Whisper transcripts)
+        "t-mobile", "supermobile",
+        "coca-cola", "coca cola",
+        "bosch", "boschhomeus",
+        "ebclis", "evglyss", "librikizumab",  # Eli Lilly eczema medication
+        "earsay",  # iHeart podcast promo
+        "pushkin plus",  # Pushkin network subscription
     ]
 
     # URL patterns that indicate ads

@@ -28,6 +28,32 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def run_preprocessor(queue_dir: Path) -> int:
+    """Run the preprocessor on any .txt files that don't have .md equivalents."""
+    import subprocess
+
+    script_path = Path(__file__).parent / 'preprocess_whisper_transcript.py'
+    if not script_path.exists():
+        logger.warning("Preprocessor script not found, skipping preprocessing")
+        return 0
+
+    result = subprocess.run(
+        ['./venv/bin/python', str(script_path), '--queue-dir', str(queue_dir), '--all'],
+        capture_output=True,
+        text=True,
+        cwd=Path(__file__).parent.parent
+    )
+
+    if result.returncode != 0:
+        logger.error(f"Preprocessor failed: {result.stderr}")
+        return 0
+
+    # Count how many files were processed
+    import re
+    matches = re.findall(r'Processed: .+ -> .+', result.stdout)
+    return len(matches)
+
+
 def import_transcripts(queue_dir: Path, dry_run: bool = False):
     """Import completed transcripts from watch folder."""
 
@@ -36,17 +62,38 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
     audio_dir = queue_dir / 'audio'  # MacWhisper outputs here by default
     processed_file = queue_dir / 'processed.json'
 
+    # First, run preprocessor to convert .txt to .md with ad removal
+    if not dry_run:
+        preprocessed = run_preprocessor(queue_dir)
+        if preprocessed > 0:
+            logger.info(f"Preprocessed {preprocessed} transcript files")
+
     # Load processed list
     processed = set()
     if processed_file.exists():
         processed = set(json.loads(processed_file.read_text()))
 
-    # Find transcript files in both transcripts/ and audio/ folders
+    # Find transcript files - prefer .md over .txt
     transcript_files = []
+    seen_basenames = set()
+
+    # First pass: collect .md files (preprocessed, preferred)
     for search_dir in [transcripts_dir, audio_dir]:
         if search_dir.exists():
-            transcript_files.extend(search_dir.glob('*.txt'))
-            transcript_files.extend(search_dir.glob('*.md'))
+            for md_file in search_dir.glob('*.md'):
+                basename = md_file.stem
+                transcript_files.append(md_file)
+                seen_basenames.add(basename)
+
+    # Second pass: add .txt files only if no .md equivalent exists
+    for search_dir in [transcripts_dir, audio_dir]:
+        if search_dir.exists():
+            for txt_file in search_dir.glob('*.txt'):
+                basename = txt_file.stem
+                if basename not in seen_basenames:
+                    transcript_files.append(txt_file)
+                    seen_basenames.add(basename)
+
     logger.info(f"Found {len(transcript_files)} transcript files")
 
     imported = 0
@@ -55,7 +102,8 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
     for tf in transcript_files:
         # Parse filename: {podcast_slug}_{episode_id}_{date}_{title}.txt
         # or simpler: {podcast_slug}_{episode_id}.txt
-        match = re.match(r'^(.+?)_(\d+)(?:_[^.]+)?\.(txt|md|srt)$', tf.name)
+        # Note: files may have leading digits (1, 2) from MacWhisper batch numbering
+        match = re.match(r'^(?:\d+)?([a-z][a-z0-9-]+)_(\d+)(?:_[^.]+)?\.(txt|md|srt)$', tf.name, re.IGNORECASE)
         if not match:
             logger.warning(f"Skipping file with unexpected name format: {tf.name}")
             continue
@@ -97,16 +145,32 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
         if dry_run:
             logger.info(f"Would import: {tf.name} -> {output_path}")
         else:
-            # Write transcript with metadata header
-            header = f"""# {episode.title}
+            # Extract show notes from metadata
+            description = episode.metadata.get('description', '') if episode.metadata else ''
+            duration = episode.metadata.get('duration', '') if episode.metadata else ''
 
-**Podcast:** {podcast.name}
-**Date:** {episode.publish_date}
-**Source:** MacWhisper Pro (local transcription)
+            # Build header with all available metadata
+            header_parts = [
+                f"# {episode.title}",
+                "",
+                f"**Podcast:** {podcast.name}",
+                f"**Date:** {episode.publish_date}",
+            ]
+            if duration:
+                header_parts.append(f"**Duration:** {duration}")
+            header_parts.append("**Source:** MacWhisper Pro (local transcription)")
 
----
+            # Add show notes if available
+            if description:
+                header_parts.extend([
+                    "",
+                    "## Show Notes",
+                    "",
+                    description,
+                ])
 
-"""
+            header_parts.extend(["", "---", "", "## Transcript", ""])
+            header = "\n".join(header_parts) + "\n"
             output_path.write_text(header + content, encoding='utf-8')
 
             # Update database
