@@ -57,11 +57,15 @@ atlas/
 │   ├── check_cookies.py             # Cookie expiration alerts
 │   ├── fix_episode_urls.py          # Fix bad episode URLs
 │   ├── retry_failed_urls.py         # Batch URL retry
-│   └── validate_podcast_sources.py  # Verify transcript availability
+│   ├── validate_podcast_sources.py  # Verify transcript availability
+│   ├── download_for_whisper.py      # Download audio for local transcription
+│   ├── import_whisper_transcripts.py    # Import completed Whisper transcripts
+│   ├── preprocess_whisper_transcript.py # Format Whisper output (paragraphs)
+│   └── backfill_episode_metadata.py     # Update episodes from RSS metadata
 ├── config/
 │   ├── mapping.yml           # Podcast resolver config
 │   └── podcast_limits.json   # Per-podcast episode limits
-├── systemd/              # 8 systemd timer services
+├── systemd/              # 13 systemd timer services
 │   └── atlas-podcasts.env    # Environment for services
 └── data/
     ├── podcasts/         # Transcript storage
@@ -75,7 +79,7 @@ atlas/
 
 ---
 
-## Systemd Services (10 Timers)
+## Systemd Services (13 Timers)
 
 All timers are installed and running. Check with: `systemctl list-timers | grep atlas`
 
@@ -92,6 +96,8 @@ All timers are installed and running. Check with: `systemctl list-timers | grep 
 | `atlas-enrich` | Sunday 4am | Clean ads from content, generate reports |
 | `atlas-link-pipeline` | Every 2 hours | Approve and ingest extracted links |
 | `atlas-verify` | Daily 5am | Content quality verification report |
+| `atlas-whisper-download` | Every 2 hours | Download audio for local transcription |
+| `atlas-whisper-import` | Hourly | Import completed Whisper transcripts |
 
 **Install all:**
 ```bash
@@ -594,33 +600,55 @@ For podcasts that can't be fetched online (paywalled, no transcript source), we 
 ### Episode Status: `local`
 
 Episodes marked with `transcript_status = 'local'` need local transcription:
-- Dithering (101) - paywalled
-- Asianometry (100) - paywalled
-- Against the Rules (94) - no online source
-- CWT old episodes (187) - no transcripts on website
+- Dithering - paywalled
+- Asianometry - paywalled
+- Against the Rules - no online source
+- CWT old episodes - no transcripts on website
 
-### Server Side (Homelab)
+### Fully Automated Pipeline
 
-```bash
-# Download audio for local transcription (runs every 2 hours via timer)
-python scripts/download_for_whisper.py --limit 10
+The Whisper pipeline is **fully automated** via systemd timers:
 
-# Download all at once
-python scripts/download_for_whisper.py --all
+1. **Download** (`atlas-whisper-download.timer` - every 2 hours): Downloads audio for `local` episodes
+2. **MacWhisper Pro** (Mac Mini): Watches folder, transcribes automatically
+3. **Preprocess** (automatic): Formats single-line output into paragraphs
+4. **Import** (`atlas-whisper-import.timer` - hourly): Imports transcripts with show notes header
+5. **Enrich** (`atlas-enrich.timer` - Sunday 4am): Removes ads using standard patterns
 
-# Check what's queued
-ls -la data/whisper_queue/audio/
+**Key Design**: Whisper transcripts are treated identically to all other content after import. Ad removal happens in the normal enrichment pipeline, not during preprocessing.
 
-# Import completed transcripts back (runs hourly via timer)
-python scripts/import_whisper_transcripts.py
+### Processing Pipeline Detail
+
+```
+MacWhisper output (.txt)     Single continuous line, contains ads
+         |
+         v
+preprocess_whisper_transcript.py    Adds paragraph breaks ONLY (no ad removal)
+         |
+         v
+import_whisper_transcripts.py       Adds header with show notes from RSS metadata
+         |
+         v
+run_enrichment.py (weekly)          Removes ads using ad_stripper.py patterns
+         |
+         v
+data/clean/podcasts/                Clean version for indexing
 ```
 
-**Timers:**
+### Server Side Scripts
+
 ```bash
-sudo cp systemd/atlas-whisper-*.{service,timer} /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable --now atlas-whisper-download.timer
-sudo systemctl enable --now atlas-whisper-import.timer
+# Check what's queued for download
+ls -la data/whisper_queue/audio/
+
+# Check what's been transcribed (waiting for import)
+ls -la data/whisper_queue/transcripts/
+
+# Manual import (normally runs automatically)
+python scripts/import_whisper_transcripts.py
+
+# Backfill metadata for all episodes (one-time, already done)
+python scripts/backfill_episode_metadata.py
 ```
 
 ### Mac Mini Setup
@@ -643,23 +671,25 @@ sudo systemctl enable --now atlas-whisper-import.timer
 
 3. **That's it!** MacWhisper watches the folder and transcribes automatically.
 
-### Workflow
-
-```
-Server downloads audio -> SMB share -> Mac Mini MacWhisper watches
-                                              |
-                                              v
-                                       Transcribes to TXT
-                                              |
-                                              v
-Server imports transcripts <- SMB share <- Output folder
-```
-
 ### File Naming
 
 - Audio: `{podcast_slug}_{episode_id}_{date}_{title}.mp3`
-- Transcript: MacWhisper outputs same name with `.txt`
-- Import script matches by episode ID in filename
+- Transcript: MacWhisper outputs same name with `.txt` (may have leading batch number)
+- Import script matches by episode ID in filename (handles `1against-the-rules_123...` format)
+
+### Ad Patterns (iHeart/Pushkin Networks)
+
+Whisper transcripts from iHeart/Pushkin podcasts contain network-wide ads. These patterns are in `modules/enrich/ad_stripper.py`:
+
+- T-Mobile/Supermobile business plans
+- Coca-Cola HBCU promotions
+- EBCLIS/Evglyss medication (Eli Lilly)
+- Bosch home appliances
+- Earsay audiobook promos
+- "This is an iHeart podcast" / "Guaranteed human" tags
+- Pushkin Plus subscription pitches
+
+**Typical ad content**: 20-25% of raw Whisper output is ads (removed by enrichment)
 
 ### Debug Transcript Issues
 
