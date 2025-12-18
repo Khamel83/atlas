@@ -77,6 +77,15 @@ class QualityStats:
 
 
 @dataclass
+class WhisperQueueStats:
+    """Local Whisper transcription queue status."""
+    total_episodes: int = 0  # Episodes marked 'local'
+    audio_downloaded: int = 0  # Files in audio folder
+    transcripts_waiting: int = 0  # .txt/.md files waiting for import
+    imported: int = 0  # Already processed
+
+
+@dataclass
 class AtlasStatus:
     """Complete Atlas system status."""
     timestamp: datetime = field(default_factory=datetime.now)
@@ -86,6 +95,7 @@ class AtlasStatus:
     content: ContentStats = field(default_factory=ContentStats)
     url_queue: UrlQueueStats = field(default_factory=UrlQueueStats)
     quality: QualityStats = field(default_factory=QualityStats)
+    whisper_queue: WhisperQueueStats = field(default_factory=WhisperQueueStats)
     errors: list[str] = field(default_factory=list)
 
 
@@ -104,6 +114,7 @@ class StatusCollector:
         self._collect_content()
         self._collect_url_queue()
         self._collect_quality()
+        self._collect_whisper_queue()
         return self.status
 
     def _collect_services(self):
@@ -343,6 +354,45 @@ class StatusCollector:
             conn.close()
         except Exception as e:
             self.status.errors.append(f"Quality DB: {e}")
+
+    def _collect_whisper_queue(self):
+        """Get Whisper transcription queue status."""
+        whisper_dir = self.data_dir / "whisper_queue"
+        db_path = self.data_dir / "podcasts" / "atlas_podcasts.db"
+
+        try:
+            # Count episodes marked 'local' in database
+            if db_path.exists():
+                conn = sqlite3.connect(db_path)
+                cursor = conn.cursor()
+                cursor.execute(
+                    "SELECT COUNT(*) FROM episodes WHERE transcript_status = 'local'"
+                )
+                self.status.whisper_queue.total_episodes = cursor.fetchone()[0]
+                conn.close()
+
+            # Count audio files downloaded
+            audio_dir = whisper_dir / "audio"
+            if audio_dir.exists():
+                self.status.whisper_queue.audio_downloaded = len(list(
+                    audio_dir.glob("*.mp3")
+                ))
+
+            # Count transcripts waiting for import
+            transcripts_dir = whisper_dir / "transcripts"
+            if transcripts_dir.exists():
+                txt_files = len(list(transcripts_dir.glob("*.txt")))
+                md_files = len(list(transcripts_dir.glob("*.md")))
+                self.status.whisper_queue.transcripts_waiting = txt_files + md_files
+
+            # Count already processed
+            processed_dir = whisper_dir / "processed_files"
+            if processed_dir.exists():
+                self.status.whisper_queue.imported = len(list(
+                    processed_dir.iterdir()
+                ))
+        except Exception as e:
+            self.status.errors.append(f"Whisper queue: {e}")
 
 
 def collect_status(data_dir: Path = None) -> AtlasStatus:

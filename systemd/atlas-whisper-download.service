@@ -8,7 +8,7 @@ Type=oneshot
 User=khamel83
 WorkingDirectory=/home/khamel83/github/atlas
 EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
-ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/download_for_whisper.py --limit 5 --delay 5
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/download_for_whisper.py --all --delay 2
 StandardOutput=journal
 StandardError=journal
 

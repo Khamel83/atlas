@@ -77,6 +77,21 @@ def format_status(status: AtlasStatus, color: bool = True) -> str:
     lines.append(f"  Pending:    {status.url_queue.pending:,}")
     lines.append("")
 
+    # Whisper Queue (only show if there's activity)
+    wq = status.whisper_queue
+    if wq.total_episodes > 0 or wq.audio_downloaded > 0:
+        lines.append(f"{BOLD}WHISPER QUEUE{RESET}  {DIM}(Mac Mini local transcription){RESET}")
+        remaining = wq.total_episodes - wq.imported
+        if remaining > 0:
+            lines.append(f"  Episodes:   {remaining:,} remaining")
+        else:
+            lines.append(f"  Episodes:   {GREEN}0 remaining{RESET}")
+        lines.append(f"  Downloaded: {wq.audio_downloaded:,} audio files")
+        if wq.transcripts_waiting > 0:
+            lines.append(f"  Waiting:    {YELLOW}{wq.transcripts_waiting:,} transcripts to import{RESET}")
+        lines.append(f"  Imported:   {wq.imported:,}")
+        lines.append("")
+
     # Quality
     lines.append(f"{BOLD}QUALITY{RESET}")
     total = status.quality.total
@@ -159,6 +174,12 @@ def format_json(status: AtlasStatus) -> dict:
             "marginal": status.quality.marginal,
             "bad": status.quality.bad,
             "total": status.quality.total
+        },
+        "whisper_queue": {
+            "total_episodes": status.whisper_queue.total_episodes,
+            "audio_downloaded": status.whisper_queue.audio_downloaded,
+            "transcripts_waiting": status.whisper_queue.transcripts_waiting,
+            "imported": status.whisper_queue.imported
         },
         "errors": status.errors
     }
