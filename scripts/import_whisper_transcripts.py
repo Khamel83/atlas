@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """
-Import completed Whisper transcripts back into the podcast database.
+Import completed Whisper/WhisperX transcripts back into the podcast database.
 
-Watches data/whisper_queue/transcripts/ AND audio/ for .txt or .md files
+Watches data/whisper_queue/transcripts/ AND audio/ for .txt, .md, or .json files
 and imports them, updating episode status to 'fetched'.
 
-Expected filename format: {podcast_slug}_{episode_id}.txt
+Supports:
+- .txt files: Raw MacWhisper output (no speakers)
+- .md files: Preprocessed transcripts (no speakers)
+- .json files: WhisperX output with speaker diarization
+
+Expected filename format: {podcast_slug}_{episode_id}_{date}_{title}.{txt|md|json}
 """
 
 import argparse
@@ -15,11 +20,13 @@ import re
 import shutil
 from pathlib import Path
 from datetime import datetime
+from typing import List, Dict, Optional
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from modules.podcasts.store import PodcastStore
+from modules.podcasts.store import PodcastStore, EpisodeSpeaker
+from modules.podcasts.speaker_mapper import SpeakerMapper, SpeakerMapping
 
 logging.basicConfig(
     level=logging.INFO,
@@ -54,10 +61,88 @@ def run_preprocessor(queue_dir: Path) -> int:
     return len(matches)
 
 
+def parse_whisperx_json(json_path: Path) -> Dict:
+    """
+    Parse WhisperX JSON output file.
+
+    Returns dict with:
+    - segments: List of {speaker, text, start, end}
+    - num_speakers: Number of unique speakers detected
+    - language: Detected language
+    """
+    with open(json_path) as f:
+        data = json.load(f)
+
+    segments = data.get("segments", [])
+    speakers = set()
+
+    for seg in segments:
+        speaker = seg.get("speaker")
+        if speaker:
+            speakers.add(speaker)
+
+    return {
+        "segments": segments,
+        "num_speakers": len(speakers) if speakers else 1,
+        "language": data.get("language", "en"),
+        "raw": data
+    }
+
+
+def format_diarized_transcript(
+    segments: List[Dict],
+    speaker_mappings: List[SpeakerMapping]
+) -> str:
+    """
+    Format WhisperX segments into markdown with speaker attribution.
+
+    Args:
+        segments: WhisperX segments with 'speaker' and 'text' keys
+        speaker_mappings: List of SpeakerMapping objects
+
+    Returns:
+        Formatted markdown string
+    """
+    # Build speaker name lookup
+    speaker_names = {m.label: m.name for m in speaker_mappings}
+
+    lines = []
+    current_speaker = None
+    current_text = []
+
+    for segment in segments:
+        speaker = segment.get("speaker", "UNKNOWN")
+        text = segment.get("text", "").strip()
+
+        if not text:
+            continue
+
+        # New speaker - flush current text and start new paragraph
+        if speaker != current_speaker:
+            if current_speaker is not None and current_text:
+                prev_name = speaker_names.get(current_speaker, current_speaker)
+                lines.append(f"**{prev_name}:** {' '.join(current_text)}")
+                lines.append("")  # Blank line between speakers
+
+            current_speaker = speaker
+            current_text = [text]
+        else:
+            # Same speaker - accumulate text
+            current_text.append(text)
+
+    # Flush final speaker's text
+    if current_speaker is not None and current_text:
+        speaker_name = speaker_names.get(current_speaker, current_speaker)
+        lines.append(f"**{speaker_name}:** {' '.join(current_text)}")
+
+    return "\n".join(lines)
+
+
 def import_transcripts(queue_dir: Path, dry_run: bool = False):
     """Import completed transcripts from watch folder."""
 
     store = PodcastStore()
+    speaker_mapper = SpeakerMapper()
     transcripts_dir = queue_dir / 'transcripts'
     audio_dir = queue_dir / 'audio'  # MacWhisper outputs here by default
     processed_file = queue_dir / 'processed.json'
@@ -73,19 +158,31 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
     if processed_file.exists():
         processed = set(json.loads(processed_file.read_text()))
 
-    # Find transcript files - prefer .md over .txt
+    # Find transcript files - prefer .json (diarized) > .md > .txt
     transcript_files = []
     seen_basenames = set()
 
-    # First pass: collect .md files (preprocessed, preferred)
+    # First pass: collect .json files (WhisperX diarized, highest priority)
+    for search_dir in [transcripts_dir, audio_dir]:
+        if search_dir.exists():
+            for json_file in search_dir.glob('*.json'):
+                # Skip processed.json and other non-transcript files
+                if json_file.name in ['processed.json', 'diarization_queue.json']:
+                    continue
+                basename = json_file.stem
+                transcript_files.append(json_file)
+                seen_basenames.add(basename)
+
+    # Second pass: collect .md files (preprocessed)
     for search_dir in [transcripts_dir, audio_dir]:
         if search_dir.exists():
             for md_file in search_dir.glob('*.md'):
                 basename = md_file.stem
-                transcript_files.append(md_file)
-                seen_basenames.add(basename)
+                if basename not in seen_basenames:
+                    transcript_files.append(md_file)
+                    seen_basenames.add(basename)
 
-    # Second pass: add .txt files only if no .md equivalent exists
+    # Third pass: add .txt files only if no .json or .md equivalent exists
     for search_dir in [transcripts_dir, audio_dir]:
         if search_dir.exists():
             for txt_file in search_dir.glob('*.txt'):
@@ -100,16 +197,17 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
     errors = 0
 
     for tf in transcript_files:
-        # Parse filename: {podcast_slug}_{episode_id}_{date}_{title}.txt
-        # or simpler: {podcast_slug}_{episode_id}.txt
+        # Parse filename: {podcast_slug}_{episode_id}_{date}_{title}.{txt|md|json}
+        # or simpler: {podcast_slug}_{episode_id}.{txt|md|json}
         # Note: files may have leading digits (1, 2) from MacWhisper batch numbering
-        match = re.match(r'^(?:\d+)?([a-z][a-z0-9-]+)_(\d+)(?:_[^.]+)?\.(txt|md|srt)$', tf.name, re.IGNORECASE)
+        match = re.match(r'^(?:\d+)?([a-z][a-z0-9-]+)_(\d+)(?:_[^.]+)?\.(txt|md|json|srt)$', tf.name, re.IGNORECASE)
         if not match:
             logger.warning(f"Skipping file with unexpected name format: {tf.name}")
             continue
 
         podcast_slug = match.group(1)
         episode_id = int(match.group(2))
+        file_type = match.group(3).lower()
 
         if episode_id in processed:
             logger.debug(f"Already processed: {tf.name}")
@@ -128,8 +226,40 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             errors += 1
             continue
 
-        # Read transcript
-        content = tf.read_text(encoding='utf-8')
+        # Handle different file types
+        is_diarized = (file_type == 'json')
+        speaker_mappings = []
+        content = ""
+
+        if is_diarized:
+            # Parse WhisperX JSON with speaker diarization
+            try:
+                whisperx_data = parse_whisperx_json(tf)
+                segments = whisperx_data["segments"]
+                num_speakers = whisperx_data["num_speakers"]
+
+                # Get description from metadata
+                description = episode.metadata.get('description', '') if episode.metadata else ''
+
+                # Map speakers to names
+                speaker_mappings = speaker_mapper.map_speakers(
+                    podcast_slug=podcast.slug,
+                    episode_title=episode.title,
+                    episode_description=description,
+                    num_speakers=num_speakers
+                )
+
+                # Format transcript with speaker names
+                content = format_diarized_transcript(segments, speaker_mappings)
+
+                logger.info(f"Diarized: {num_speakers} speakers detected")
+            except Exception as e:
+                logger.error(f"Error parsing WhisperX JSON {tf.name}: {e}")
+                errors += 1
+                continue
+        else:
+            # Read plain text/markdown content
+            content = tf.read_text(encoding='utf-8')
 
         # Determine output path (use absolute path from project root)
         project_root = Path(__file__).parent.parent
@@ -144,6 +274,9 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
 
         if dry_run:
             logger.info(f"Would import: {tf.name} -> {output_path}")
+            if is_diarized and speaker_mappings:
+                for sm in speaker_mappings:
+                    logger.info(f"  {sm.label} -> {sm.name} (conf={sm.confidence:.2f})")
         else:
             # Extract show notes from metadata
             description = episode.metadata.get('description', '') if episode.metadata else ''
@@ -158,7 +291,12 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             ]
             if duration:
                 header_parts.append(f"**Duration:** {duration}")
-            header_parts.append("**Source:** MacWhisper Pro (local transcription)")
+
+            # Different source label for diarized vs non-diarized
+            if is_diarized:
+                header_parts.append("**Source:** WhisperX (local transcription with diarization)")
+            else:
+                header_parts.append("**Source:** MacWhisper Pro (local transcription)")
 
             # Add show notes if available
             if description:
@@ -173,10 +311,21 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             header = "\n".join(header_parts) + "\n"
             output_path.write_text(header + content, encoding='utf-8')
 
-            # Update database
+            # Update database - episode status
             store.update_episode_transcript_status(
                 episode_id, 'fetched', str(output_path)
             )
+
+            # Save speaker mappings to database if diarized
+            if is_diarized and speaker_mappings:
+                for sm in speaker_mappings:
+                    store.add_episode_speaker(EpisodeSpeaker(
+                        episode_id=episode_id,
+                        speaker_label=sm.label,
+                        speaker_name=sm.name,
+                        confidence=sm.confidence,
+                        source=sm.source
+                    ))
 
             # Mark as processed
             processed.add(episode_id)
@@ -186,7 +335,8 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             processed_dir.mkdir(exist_ok=True)
             shutil.move(str(tf), str(processed_dir / tf.name))
 
-            logger.info(f"Imported: {episode.title[:50]}...")
+            diarized_tag = " [diarized]" if is_diarized else ""
+            logger.info(f"Imported{diarized_tag}: {episode.title[:50]}...")
             imported += 1
 
     # Save processed list

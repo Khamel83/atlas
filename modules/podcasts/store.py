@@ -89,6 +89,31 @@ class DiscoveryRun:
     completed_at: Optional[str] = None
 
 
+@dataclass
+class PodcastSpeaker:
+    """Known speaker for a podcast (host, co-host, etc.)"""
+
+    id: Optional[int] = None
+    podcast_id: int = 0
+    name: str = ""
+    role: str = "host"  # host, co-host, regular_guest
+    voice_sample_path: Optional[str] = None
+    created_at: Optional[str] = None
+
+
+@dataclass
+class EpisodeSpeaker:
+    """Speaker mapping for a specific episode"""
+
+    id: Optional[int] = None
+    episode_id: int = 0
+    speaker_label: str = ""  # SPEAKER_00, SPEAKER_01, etc.
+    speaker_name: str = ""  # Michael Lewis, Guest, etc.
+    confidence: float = 1.0  # How confident in the mapping (0.0-1.0)
+    source: str = "manual"  # config, metadata, llm, manual
+    created_at: Optional[str] = None
+
+
 class PodcastStore:
     """SQLite database for podcast transcript management"""
 
@@ -181,6 +206,39 @@ class PodcastStore:
             """
             )
 
+            # Podcast speakers table (known hosts)
+            conn.execute(
+                """
+                CREATE TABLE IF NOT EXISTS podcast_speakers (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    podcast_id INTEGER NOT NULL,
+                    name TEXT NOT NULL,
+                    role TEXT DEFAULT 'host',
+                    voice_sample_path TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (podcast_id) REFERENCES podcasts (id),
+                    UNIQUE (podcast_id, name)
+                )
+            """
+            )
+
+            # Episode speakers table (per-episode speaker mappings)
+            conn.execute(
+                """
+                CREATE TABLE IF NOT EXISTS episode_speakers (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    episode_id INTEGER NOT NULL,
+                    speaker_label TEXT NOT NULL,
+                    speaker_name TEXT NOT NULL,
+                    confidence REAL DEFAULT 1.0,
+                    source TEXT DEFAULT 'manual',
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (episode_id) REFERENCES episodes (id),
+                    UNIQUE (episode_id, speaker_label)
+                )
+            """
+            )
+
             # Create indexes
             conn.execute(
                 "CREATE INDEX IF NOT EXISTS idx_episodes_podcast_id ON episodes (podcast_id)"
@@ -193,6 +251,12 @@ class PodcastStore:
             )
             conn.execute(
                 "CREATE INDEX IF NOT EXISTS idx_discovery_runs_podcast_id ON discovery_runs (podcast_id)"
+            )
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS idx_podcast_speakers_podcast_id ON podcast_speakers (podcast_id)"
+            )
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS idx_episode_speakers_episode_id ON episode_speakers (episode_id)"
             )
 
     @contextmanager
@@ -558,3 +622,102 @@ class PodcastStore:
             stats["recent_runs"] = [dict(row) for row in recent_runs]
 
         return stats
+
+    # Speaker CRUD operations
+    def add_podcast_speaker(self, speaker: PodcastSpeaker) -> int:
+        """Add a known speaker to a podcast, return ID"""
+        with self._get_connection() as conn:
+            cursor = conn.execute(
+                """
+                INSERT OR REPLACE INTO podcast_speakers
+                (podcast_id, name, role, voice_sample_path)
+                VALUES (?, ?, ?, ?)
+            """,
+                (
+                    speaker.podcast_id,
+                    speaker.name,
+                    speaker.role,
+                    speaker.voice_sample_path,
+                ),
+            )
+            return cursor.lastrowid
+
+    def get_podcast_speakers(self, podcast_id: int) -> List[PodcastSpeaker]:
+        """Get all known speakers for a podcast"""
+        speakers = []
+        with self._get_connection() as conn:
+            rows = conn.execute(
+                """
+                SELECT * FROM podcast_speakers WHERE podcast_id = ?
+                ORDER BY role, name
+            """,
+                (podcast_id,),
+            ).fetchall()
+            for row in rows:
+                speakers.append(
+                    PodcastSpeaker(
+                        id=row["id"],
+                        podcast_id=row["podcast_id"],
+                        name=row["name"],
+                        role=row["role"],
+                        voice_sample_path=row["voice_sample_path"],
+                        created_at=row["created_at"],
+                    )
+                )
+        return speakers
+
+    def add_episode_speaker(self, speaker: EpisodeSpeaker) -> int:
+        """Add a speaker mapping for an episode, return ID"""
+        with self._get_connection() as conn:
+            cursor = conn.execute(
+                """
+                INSERT OR REPLACE INTO episode_speakers
+                (episode_id, speaker_label, speaker_name, confidence, source)
+                VALUES (?, ?, ?, ?, ?)
+            """,
+                (
+                    speaker.episode_id,
+                    speaker.speaker_label,
+                    speaker.speaker_name,
+                    speaker.confidence,
+                    speaker.source,
+                ),
+            )
+            return cursor.lastrowid
+
+    def get_episode_speakers(self, episode_id: int) -> List[EpisodeSpeaker]:
+        """Get all speaker mappings for an episode"""
+        speakers = []
+        with self._get_connection() as conn:
+            rows = conn.execute(
+                """
+                SELECT * FROM episode_speakers WHERE episode_id = ?
+                ORDER BY speaker_label
+            """,
+                (episode_id,),
+            ).fetchall()
+            for row in rows:
+                speakers.append(
+                    EpisodeSpeaker(
+                        id=row["id"],
+                        episode_id=row["episode_id"],
+                        speaker_label=row["speaker_label"],
+                        speaker_name=row["speaker_name"],
+                        confidence=row["confidence"],
+                        source=row["source"],
+                        created_at=row["created_at"],
+                    )
+                )
+        return speakers
+
+    def get_speaker_name(self, episode_id: int, speaker_label: str) -> Optional[str]:
+        """Get the mapped name for a speaker label in an episode"""
+        with self._get_connection() as conn:
+            row = conn.execute(
+                """
+                SELECT speaker_name FROM episode_speakers
+                WHERE episode_id = ? AND speaker_label = ?
+            """,
+                (episode_id, speaker_label),
+            ).fetchone()
+            return row["speaker_name"] if row else None

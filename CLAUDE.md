@@ -35,6 +35,7 @@ atlas/
 │   │   ├── cli.py        # Main CLI interface
 │   │   ├── store.py      # SQLite database
 │   │   ├── rss.py        # RSS feed parsing
+│   │   ├── speaker_mapper.py  # Map speaker labels to names
 │   │   └── resolvers/    # Transcript sources (7 resolvers)
 │   ├── quality/          # Content verification system
 │   │   ├── verifier.py   # Core verification logic
@@ -61,10 +62,14 @@ atlas/
 │   ├── download_for_whisper.py      # Download audio for local transcription
 │   ├── import_whisper_transcripts.py    # Import completed Whisper transcripts
 │   ├── preprocess_whisper_transcript.py # Format Whisper output (paragraphs)
-│   └── backfill_episode_metadata.py     # Update episodes from RSS metadata
+│   ├── backfill_episode_metadata.py     # Update episodes from RSS metadata
+│   └── mac_mini/                    # Mac Mini WhisperX scripts
+│       ├── whisperx_watcher.py      # Watch folder, auto-transcribe
+│       └── com.atlas.whisperx.plist # LaunchAgent for auto-start
 ├── config/
 │   ├── mapping.yml           # Podcast resolver config
-│   └── podcast_limits.json   # Per-podcast episode limits
+│   ├── podcast_limits.json   # Per-podcast episode limits
+│   └── podcast_hosts.json    # Known hosts per podcast (for speaker mapping)
 ├── systemd/              # 13 systemd timer services
 │   └── atlas-podcasts.env    # Environment for services
 └── data/
@@ -595,7 +600,7 @@ Output shows ✅ (can fetch) or ❌ (no known source) for each podcast.
 
 ## Mac Mini Local Whisper Transcription
 
-For podcasts that can't be fetched online (paywalled, no transcript source), we download audio and transcribe locally using MacWhisper Pro.
+For podcasts that can't be fetched online (paywalled, no transcript source), we download audio and transcribe locally on Mac Mini M4.
 
 ### Episode Status: `local`
 
@@ -605,35 +610,65 @@ Episodes marked with `transcript_status = 'local'` need local transcription:
 - Against the Rules - no online source
 - CWT old episodes - no transcripts on website
 
+### Transcription Options
+
+**Option 1: WhisperX with Speaker Diarization (Recommended)**
+
+WhisperX = Whisper large-v3 + pyannote speaker diarization. Outputs JSON with speaker labels.
+
+Setup: See `scripts/mac_mini/README.md` for full instructions:
+1. Install WhisperX: `pip install whisperx pyannote.audio`
+2. Get HuggingFace token (free) and accept pyannote license
+3. Install LaunchAgent for auto-start
+
+**Option 2: MacWhisper Pro (Legacy)**
+
+GUI app, simpler setup, but no speaker labels. Outputs plain text.
+
 ### Fully Automated Pipeline
 
 The Whisper pipeline is **fully automated** via systemd timers:
 
 1. **Download** (`atlas-whisper-download.timer` - every 2 hours): Downloads audio for `local` episodes
-2. **MacWhisper Pro** (Mac Mini): Watches folder, transcribes automatically
-3. **Preprocess** (automatic): Formats single-line output into paragraphs
-4. **Import** (`atlas-whisper-import.timer` - hourly): Imports transcripts with show notes header
-5. **Enrich** (`atlas-enrich.timer` - Sunday 4am): Removes ads using standard patterns
-
-**Key Design**: Whisper transcripts are treated identically to all other content after import. Ad removal happens in the normal enrichment pipeline, not during preprocessing.
+2. **WhisperX** (Mac Mini): Watches folder, transcribes with speaker diarization → JSON output
+3. **Import** (`atlas-whisper-import.timer` - hourly): Imports transcripts, maps speakers to names
+4. **Enrich** (`atlas-enrich.timer` - Sunday 4am): Removes ads using standard patterns
 
 ### Processing Pipeline Detail
 
 ```
-MacWhisper output (.txt)     Single continuous line, contains ads
+Audio file (.mp3)              Downloaded to data/whisper_queue/audio/
          |
          v
-preprocess_whisper_transcript.py    Adds paragraph breaks ONLY (no ad removal)
+WhisperX (Mac Mini)            Transcribes with speaker diarization
          |
          v
-import_whisper_transcripts.py       Adds header with show notes from RSS metadata
+JSON output                    Contains segments with SPEAKER_00, SPEAKER_01, etc.
          |
          v
-run_enrichment.py (weekly)          Removes ads using ad_stripper.py patterns
+import_whisper_transcripts.py  Maps speakers to names using config + metadata
+         |                     Outputs: **Michael Lewis:** Hello...
+         v
+data/podcasts/{slug}/          Markdown with speaker attribution
          |
          v
-data/clean/podcasts/                Clean version for indexing
+run_enrichment.py (weekly)     Removes ads using ad_stripper.py patterns
+         |
+         v
+data/clean/podcasts/           Clean version for indexing
 ```
+
+### Speaker Mapping
+
+Speakers are automatically mapped from labels (SPEAKER_00) to names:
+
+1. **Known hosts** from `config/podcast_hosts.json` (60+ podcasts configured)
+2. **Guests** extracted from episode title ("with Guest Name") or description
+3. **Fallback** to "Speaker 1", "Speaker 2" if no match
+
+**Database tables:**
+- `podcast_speakers` - Known hosts/co-hosts per podcast
+- `episode_speakers` - Per-episode speaker mappings with confidence scores
 
 ### Server Side Scripts
 
@@ -651,31 +686,28 @@ python scripts/import_whisper_transcripts.py
 python scripts/backfill_episode_metadata.py
 ```
 
-### Mac Mini Setup
+### Mac Mini Setup (WhisperX)
 
-1. **Mount SMB share:**
-   ```bash
-   # One-time mount
-   mount_smbfs //khamel83@homelab/atlas /Volumes/atlas
+Full setup instructions: `scripts/mac_mini/README.md`
 
-   # Or add to Finder: Cmd+K -> smb://homelab/atlas
-   ```
+**Quick start:**
+1. Mount SMB share: `mount_smbfs //khamel83@homelab/atlas /Volumes/atlas`
+2. Install WhisperX virtual environment
+3. Get HuggingFace token and accept pyannote license
+4. Copy `whisperx_watcher.py` to `~/scripts/`
+5. Install LaunchAgent for auto-start
 
-2. **Configure MacWhisper Pro:**
-   - Open MacWhisper Pro preferences
-   - Set Watch Folder: `/Volumes/atlas/data/whisper_queue/audio`
-   - Set Output Folder: `/Volumes/atlas/data/whisper_queue/transcripts`
-   - Output Format: TXT (plain text)
-   - Model: Large v3 (or whatever fits your RAM)
-   - Enable "Auto-transcribe files in watch folder"
-
-3. **That's it!** MacWhisper watches the folder and transcribes automatically.
+**Files:**
+- `scripts/mac_mini/whisperx_watcher.py` - Watch folder script
+- `scripts/mac_mini/com.atlas.whisperx.plist` - LaunchAgent for auto-start
+- `scripts/mac_mini/README.md` - Detailed setup instructions
 
 ### File Naming
 
 - Audio: `{podcast_slug}_{episode_id}_{date}_{title}.mp3`
-- Transcript: MacWhisper outputs same name with `.txt` (may have leading batch number)
-- Import script matches by episode ID in filename (handles `1against-the-rules_123...` format)
+- WhisperX JSON: Same name with `.json` (contains speaker labels)
+- MacWhisper TXT: Same name with `.txt` (no speakers, legacy)
+- Import script matches by episode ID in filename
 
 ### Ad Patterns (iHeart/Pushkin Networks)
 
@@ -720,6 +752,8 @@ SQLite at `data/podcasts/atlas_podcasts.db` (WAL mode enabled).
 - `episodes` - Episode records with transcript status
 - `transcript_sources` - Discovered transcript URLs
 - `discovery_runs` - Run history
+- `podcast_speakers` - Known hosts/co-hosts per podcast
+- `episode_speakers` - Per-episode speaker mappings (SPEAKER_00 → "Michael Lewis")
 
 **Quick queries:**
 ```bash
@@ -734,6 +768,17 @@ GROUP BY p.slug ORDER BY COUNT(*) DESC"
 sqlite3 data/podcasts/atlas_podcasts.db "
 SELECT title, transcript_status, updated_at
 FROM episodes ORDER BY updated_at DESC LIMIT 10"
+
+# Episodes with speaker mappings
+sqlite3 data/podcasts/atlas_podcasts.db "
+SELECT e.title, es.speaker_label, es.speaker_name, es.confidence
+FROM episode_speakers es JOIN episodes e ON es.episode_id = e.id
+ORDER BY es.created_at DESC LIMIT 20"
+
+# Podcasts with configured hosts
+sqlite3 data/podcasts/atlas_podcasts.db "
+SELECT p.slug, ps.name, ps.role FROM podcast_speakers ps
+JOIN podcasts p ON ps.podcast_id = p.id ORDER BY p.slug"
 ```
 
 ---

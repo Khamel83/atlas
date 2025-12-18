@@ -79,7 +79,7 @@ def format_status(status: AtlasStatus, color: bool = True) -> str:
 
     # Whisper Queue (only show if there's activity)
     wq = status.whisper_queue
-    if wq.total_episodes > 0 or wq.audio_downloaded > 0:
+    if wq.total_episodes > 0 or wq.audio_downloaded > 0 or wq.episodes_with_speakers > 0:
         lines.append(f"{BOLD}WHISPER QUEUE{RESET}  {DIM}(Mac Mini local transcription){RESET}")
         remaining = wq.total_episodes - wq.imported
         if remaining > 0:
@@ -90,6 +90,16 @@ def format_status(status: AtlasStatus, color: bool = True) -> str:
         if wq.transcripts_waiting > 0:
             lines.append(f"  Waiting:    {YELLOW}{wq.transcripts_waiting:,} transcripts to import{RESET}")
         lines.append(f"  Imported:   {wq.imported:,}")
+
+        # Diarization stats (WhisperX with speaker labels)
+        if wq.diarized_transcripts > 0 or wq.diarized_audio > 0 or wq.episodes_with_speakers > 0:
+            lines.append(f"  {DIM}--- Diarization (speaker labels) ---{RESET}")
+            if wq.diarized_transcripts > 0:
+                lines.append(f"  Diarized:   {CYAN}{wq.diarized_transcripts:,}{RESET} JSON transcripts ready")
+            if wq.diarized_audio > 0:
+                lines.append(f"  Processed:  {wq.diarized_audio:,} audio files")
+            if wq.episodes_with_speakers > 0:
+                lines.append(f"  Speakers:   {GREEN}{wq.episodes_with_speakers:,}{RESET} episodes with speaker mappings")
         lines.append("")
 
     # Quality
@@ -179,7 +189,10 @@ def format_json(status: AtlasStatus) -> dict:
             "total_episodes": status.whisper_queue.total_episodes,
             "audio_downloaded": status.whisper_queue.audio_downloaded,
             "transcripts_waiting": status.whisper_queue.transcripts_waiting,
-            "imported": status.whisper_queue.imported
+            "imported": status.whisper_queue.imported,
+            "diarized_transcripts": status.whisper_queue.diarized_transcripts,
+            "diarized_audio": status.whisper_queue.diarized_audio,
+            "episodes_with_speakers": status.whisper_queue.episodes_with_speakers
         },
         "errors": status.errors
     }

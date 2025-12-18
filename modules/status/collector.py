@@ -83,6 +83,10 @@ class WhisperQueueStats:
     audio_downloaded: int = 0  # Files in audio folder
     transcripts_waiting: int = 0  # .txt/.md files waiting for import
     imported: int = 0  # Already processed
+    # Diarization stats (WhisperX with speaker labels)
+    diarized_transcripts: int = 0  # .json files with speaker labels
+    diarized_audio: int = 0  # Audio files moved after diarization
+    episodes_with_speakers: int = 0  # Episodes with speaker mappings in DB
 
 
 @dataclass
@@ -369,9 +373,20 @@ class StatusCollector:
                     "SELECT COUNT(*) FROM episodes WHERE transcript_status = 'local'"
                 )
                 self.status.whisper_queue.total_episodes = cursor.fetchone()[0]
+
+                # Count episodes with speaker mappings
+                try:
+                    cursor.execute(
+                        "SELECT COUNT(DISTINCT episode_id) FROM episode_speakers"
+                    )
+                    self.status.whisper_queue.episodes_with_speakers = cursor.fetchone()[0]
+                except sqlite3.OperationalError:
+                    # Table doesn't exist yet
+                    pass
+
                 conn.close()
 
-            # Count audio files downloaded
+            # Count audio files downloaded (pending transcription)
             audio_dir = whisper_dir / "audio"
             if audio_dir.exists():
                 self.status.whisper_queue.audio_downloaded = len(list(
@@ -383,7 +398,22 @@ class StatusCollector:
             if transcripts_dir.exists():
                 txt_files = len(list(transcripts_dir.glob("*.txt")))
                 md_files = len(list(transcripts_dir.glob("*.md")))
-                self.status.whisper_queue.transcripts_waiting = txt_files + md_files
+                json_files = len(list(transcripts_dir.glob("*.json")))
+                self.status.whisper_queue.transcripts_waiting = txt_files + md_files + json_files
+                # JSON files are WhisperX diarized output
+                self.status.whisper_queue.diarized_transcripts = json_files
+
+            # Also check audio folder for JSON (WhisperX may output there)
+            if audio_dir.exists():
+                json_in_audio = len(list(audio_dir.glob("*.json")))
+                self.status.whisper_queue.diarized_transcripts += json_in_audio
+
+            # Count diarized audio (moved after processing)
+            diarized_dir = whisper_dir / "diarized_audio"
+            if diarized_dir.exists():
+                self.status.whisper_queue.diarized_audio = len(list(
+                    diarized_dir.glob("*.mp3")
+                ))
 
             # Count already processed
             processed_dir = whisper_dir / "processed_files"

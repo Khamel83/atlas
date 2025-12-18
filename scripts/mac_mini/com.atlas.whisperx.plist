@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.atlas.whisperx</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/macmini/whisperx-env/bin/python</string>
+        <string>/Users/macmini/scripts/whisperx_watcher.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/khamel</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/macmini/logs/whisperx_stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/macmini/logs/whisperx_stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/Users/macmini/whisperx-env/bin</string>
+    </dict>
+
+    <!-- Restart if it crashes, but wait 30 seconds -->
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+</dict>
+</plist>
