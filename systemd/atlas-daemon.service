@@ -1,0 +1,34 @@
+[Unit]
+Description=Atlas Master Daemon - Content Ingestion
+After=network.target
+# This is THE ONLY content ingestion service that should run
+# See RESOURCE_POLICY.md - do not enable other atlas-*.service files
+
+[Service]
+Type=simple
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+Environment=PATH=/home/khamel83/github/atlas/venv/bin:/usr/local/bin:/usr/bin:/bin
+EnvironmentFile=-/home/khamel83/github/atlas/systemd/atlas-podcasts.env
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/atlas_daemon.py
+Restart=always
+RestartSec=60
+
+# RESOURCE LIMITS - prevent system overload
+# Max 50% CPU (on 4 cores = 2 cores equivalent)
+CPUQuota=50%
+# Max 2GB memory
+MemoryMax=2G
+# Run at lower priority (nice 10)
+Nice=10
+# IO scheduling - best effort, low priority
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-daemon
+
+[Install]
+WantedBy=multi-user.target

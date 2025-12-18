@@ -22,6 +22,11 @@ from urllib.parse import urljoin, urlparse
 
 logger = logging.getLogger(__name__)
 
+# RESOURCE POLICY: Maximum 1 browser at a time to prevent system overload
+# See RESOURCE_POLICY.md for details on why this limit exists
+_BROWSER_SEMAPHORE = asyncio.Semaphore(1)
+_MAX_BROWSERS = 1  # Change this to allow more concurrent browsers (not recommended)
+
 
 class Browser:
     """Headless browser wrapper using Playwright"""
@@ -96,11 +101,22 @@ class Browser:
             await self._playwright.stop()
 
     async def __aenter__(self):
-        await self.start()
-        return self
+        # Acquire semaphore to limit concurrent browsers (RESOURCE POLICY)
+        await _BROWSER_SEMAPHORE.acquire()
+        logger.debug("Acquired browser semaphore, starting browser")
+        try:
+            await self.start()
+            return self
+        except Exception:
+            _BROWSER_SEMAPHORE.release()
+            raise
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
-        await self.stop()
+        try:
+            await self.stop()
+        finally:
+            _BROWSER_SEMAPHORE.release()
+            logger.debug("Released browser semaphore")
 
     async def fetch(
         self,
