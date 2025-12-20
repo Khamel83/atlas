@@ -1,11 +1,11 @@
 # Link Approval Rules
 # Processed by modules/links/approval.py
 
-version: 1
+version: 2
 
 # Auto-approve these domains (bypass score check)
-# Starting CONSERVATIVE - expand after reviewing results
 trusted_domains:
+  # Original tier
   - stratechery.com
   - arxiv.org
   - nytimes.com
@@ -19,6 +19,69 @@ trusted_domains:
   - arstechnica.com
   - reuters.com
 
+  # News & Media
+  - npr.org
+  - apnews.com
+  - bbc.com
+  - bbc.co.uk
+  - theguardian.com
+  - economist.com
+  - bloomberg.com
+  - cnbc.com
+  - vox.com
+  - theverge.com
+  - techcrunch.com
+  - ft.com
+  - politico.com
+  - thehill.com
+  - axios.com
+  - businessinsider.com
+  - forbes.com
+  - fortune.com
+  - fastcompany.com
+  - qz.com
+  - slate.com
+  - salon.com
+  - theintercept.com
+  - propublica.org
+  - fivethirtyeight.com
+
+  # Research & Academic
+  - pubmed.ncbi.nlm.nih.gov
+  - ncbi.nlm.nih.gov
+  - pmc.ncbi.nlm.nih.gov
+  - nih.gov
+  - cdc.gov
+  - who.int
+  - sciencedirect.com
+  - cell.com
+  - pnas.org
+  - plato.stanford.edu
+  - brookings.edu
+  - nber.org
+  - pewresearch.org
+  - rand.org
+
+  # Government
+  - whitehouse.gov
+  - congress.gov
+  - federalreserve.gov
+  - sec.gov
+  - ftc.gov
+  - justice.gov
+  - treasury.gov
+  - state.gov
+  - census.gov
+  - bls.gov
+  - cbo.gov
+  - gao.gov
+
+  # Archives (valuable for dead links)
+  - web.archive.org
+
+  # Newsletters & Long-form
+  - substack.com
+
 # Auto-approve if score >= threshold
 score_threshold: 0.85
 
@@ -27,6 +90,7 @@ reject_threshold: 0.40
 
 # Always reject (even if high score)
 blocked_domains:
+  # Social media
   - bit.ly
   - tinyurl.com
   - facebook.com
@@ -34,6 +98,63 @@ blocked_domains:
   - x.com
   - instagram.com
   - linkedin.com
+  - tiktok.com
+  - pinterest.com
+  - threads.net
+
+  # CDN / Static assets (not articles)
+  - substackcdn.com
+  - static01.nyt.com
+  - static.nytimes.com
+  - media.npr.org
+  - npr.brightspotcdn.com
+  - cdn.theatlantic.com
+  - media.newyorker.com
+  - cdn.prod.website-files.com
+  - cdn.ncbi.nlm.nih.gov
+  - cdn.mos.cms.futurecdn.net
+  - media.cnn.com
+  - a.espncdn.com
+  - images.food52.com
+  - images.squarespace-cdn.com
+  - cdn-images-1.medium.com
+  - media.springernature.com
+  - assets.pewresearch.org
+  - cdn.rollingstone.com
+  - assets.bwbx.io
+  - media.wired.com
+  - ca-times.brightspotcdn.com
+  - static-content.springer.com
+  - images.ctfassets.net
+  - static.c-spanvideo.org
+
+  # Fastly CDN patterns
+  - runway-media-production.global.ssl.fastly.net
+
+  # Podcast/audio platforms (handled separately)
+  - spotify.com
+  - podcasts.apple.com
+  - overcast.fm
+  - pocketcasts.com
+  - podscripts.co
+  - catatp.fm
+
+  # Video platforms (handled separately)
+  - youtube.com
+  - youtu.be
+  - vimeo.com
+
+  # Reference (not news)
+  - en.wikipedia.org
+  - scholar.google.com
+  - doi.org
+  - britannica.com
+
+  # Commerce / Ads
+  - amazon.com
+  - amzn.to
+  - ebay.com
+  - etsy.com
 
 # Drip settings for ingestion bridge
 drip:
