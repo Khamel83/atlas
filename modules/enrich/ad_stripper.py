@@ -192,9 +192,13 @@ class AdStripper:
         "t-mobile", "supermobile",
         "coca-cola", "coca cola",
         "bosch", "boschhomeus",
-        "ebclis", "evglyss", "librikizumab",  # Eli Lilly eczema medication
+        "ebclis", "evglyss", "epglus", "epglys", "librikizumab",  # Eli Lilly eczema medication (+ Whisper misspellings)
+        "skyrizi", "skyrizzy", "sky rizzy", "rizin kizum", "plaque psoriasis",  # AbbVie psoriasis medication
+        "pluvicto",  # Novartis prostate cancer medication
         "earsay",  # iHeart podcast promo
         "pushkin plus",  # Pushkin network subscription
+        "odoo",  # Business software
+        "ritz-carlton yacht", "ritz carlton yacht",  # Luxury ads
     ]
 
     # URL patterns that indicate ads

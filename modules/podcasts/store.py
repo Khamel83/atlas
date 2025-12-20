@@ -453,6 +453,45 @@ class PodcastStore:
                 )
         return None
 
+    def search_episodes_by_title(self, podcast_slug: str, title_query: str) -> List[Episode]:
+        """Search for episodes by podcast slug and title (fuzzy match)."""
+        with self._get_connection() as conn:
+            # First get podcast ID
+            podcast_row = conn.execute(
+                "SELECT id FROM podcasts WHERE slug = ?",
+                (podcast_slug,)
+            ).fetchone()
+            if not podcast_row:
+                return []
+
+            # Search by title (case-insensitive, partial match)
+            rows = conn.execute(
+                """SELECT * FROM episodes
+                   WHERE podcast_id = ?
+                   AND LOWER(title) LIKE LOWER(?)
+                   ORDER BY publish_date DESC
+                   LIMIT 5""",
+                (podcast_row["id"], f"%{title_query}%")
+            ).fetchall()
+
+            return [
+                Episode(
+                    id=row["id"],
+                    podcast_id=row["podcast_id"],
+                    guid=row["guid"],
+                    title=row["title"],
+                    url=row["url"],
+                    publish_date=row["publish_date"],
+                    transcript_url=row["transcript_url"],
+                    transcript_status=row["transcript_status"],
+                    transcript_path=row["transcript_path"],
+                    metadata=self._deserialize_dict(row["metadata"]),
+                    created_at=row["created_at"],
+                    updated_at=row["updated_at"],
+                )
+                for row in rows
+            ]
+
     def get_all_podcast_stats(self) -> List[dict]:
         """
         Get aggregated stats for all podcasts in a single query.

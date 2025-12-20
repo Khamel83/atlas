@@ -7,15 +7,22 @@ Supports drip mode to be polite to target sites.
 
 import sqlite3
 import hashlib
+import json
+import re
 import time
 import logging
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Set
 from datetime import datetime
 
 from modules.links.models import ApprovalRules
 
 logger = logging.getLogger(__name__)
+
+# Content directories to check for existing URLs
+FETCHER_STATE_FILE = Path('data/url_fetcher_state.json')
+STRATECHERY_ARTICLES_DIR = Path('data/stratechery/articles')
+STRATECHERY_PODCASTS_DIR = Path('data/stratechery/podcasts')
 
 DEFAULT_LINK_DB = Path('data/enrich/link_queue.db')
 DEFAULT_URL_QUEUE = Path('data/url_queue.txt')
@@ -67,17 +74,59 @@ class LinkBridge:
         conn.close()
         return results
 
-    def get_existing_urls(self) -> set:
-        """Get URLs already in the queue file."""
-        if not self.url_queue_path.exists():
-            return set()
+    def get_existing_urls(self) -> Set[str]:
+        """
+        Get URLs that already exist in queue or have been fetched.
 
-        urls = set()
-        with open(self.url_queue_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith('#'):
-                    urls.add(line)
+        Checks multiple sources to prevent duplicates:
+        1. Queue file (pending fetches)
+        2. Fetcher state file (already fetched)
+        3. Stratechery content directories (already have content)
+        """
+        urls: Set[str] = set()
+
+        # 1. Queue file
+        if self.url_queue_path.exists():
+            with open(self.url_queue_path) as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        urls.add(line)
+            logger.debug(f"Found {len(urls)} URLs in queue file")
+
+        # 2. Fetcher state file (already fetched URLs)
+        if FETCHER_STATE_FILE.exists():
+            try:
+                with open(FETCHER_STATE_FILE) as f:
+                    state = json.load(f)
+                fetched_urls = set(state.get('fetched', {}).keys())
+                failed_urls = set(state.get('failed', {}).keys())
+                urls.update(fetched_urls)
+                urls.update(failed_urls)
+                logger.debug(f"Found {len(fetched_urls)} fetched, {len(failed_urls)} failed in state")
+            except (json.JSONDecodeError, IOError) as e:
+                logger.warning(f"Could not load fetcher state: {e}")
+
+        # 3. Stratechery content (extract URLs from filenames)
+        stratechery_count = 0
+        for content_dir in [STRATECHERY_ARTICLES_DIR, STRATECHERY_PODCASTS_DIR]:
+            if content_dir.exists():
+                for md_file in content_dir.glob('*.md'):
+                    # Extract URL from file - stratechery files have URL pattern in name
+                    # Files named like: 2024-01-15-article-slug.md
+                    # Build stratechery URL from slug
+                    stem = md_file.stem  # e.g., "2024-01-15-some-article-title"
+                    if stem and len(stem) > 10:
+                        # Construct possible stratechery URL
+                        stratechery_url = f"https://stratechery.com/{stem}/"
+                        urls.add(stratechery_url)
+                        # Also add variant without trailing slash
+                        urls.add(stratechery_url.rstrip('/'))
+                        stratechery_count += 1
+        if stratechery_count:
+            logger.debug(f"Found {stratechery_count} Stratechery content files")
+
+        logger.info(f"Total existing URLs: {len(urls)}")
         return urls
 
     def add_to_queue(self, url: str) -> bool:

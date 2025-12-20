@@ -213,12 +213,24 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             logger.debug(f"Already processed: {tf.name}")
             continue
 
-        # Get episode info
+        # Get episode info - try by ID first, then by title
         episode = store.get_episode_by_id(episode_id)
         if not episode:
-            logger.error(f"Episode not found: {episode_id}")
-            errors += 1
-            continue
+            # Fallback: try to find by podcast slug and title from filename
+            # Filename format: {slug}_{id}_{date}_{title}.json
+            title_match = re.match(r'^(?:\d+)?[a-z][a-z0-9-]+_\d+_\d{4}-\d{2}-\d{2}_(.+)\.(txt|md|json|srt)$', tf.name, re.IGNORECASE)
+            if title_match:
+                title_slug = title_match.group(1).replace('-', ' ').replace('_', ' ')
+                # Try to find episode by slug search
+                episodes = store.search_episodes_by_title(podcast_slug, title_slug[:50])
+                if episodes:
+                    episode = episodes[0]
+                    logger.info(f"Found episode by title fallback: {episode.id} - {episode.title}")
+
+            if not episode:
+                logger.error(f"Episode not found: {episode_id} (title fallback also failed)")
+                errors += 1
+                continue
 
         podcast = store.get_podcast(episode.podcast_id)
         if not podcast:
@@ -241,12 +253,13 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
                 # Get description from metadata
                 description = episode.metadata.get('description', '') if episode.metadata else ''
 
-                # Map speakers to names
+                # Map speakers to names (pass segments for self-identification)
                 speaker_mappings = speaker_mapper.map_speakers(
                     podcast_slug=podcast.slug,
                     episode_title=episode.title,
                     episode_description=description,
-                    num_speakers=num_speakers
+                    num_speakers=num_speakers,
+                    segments=segments
                 )
 
                 # Format transcript with speaker names
@@ -349,15 +362,160 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
     print(f"  Already processed: {len(transcript_files) - imported - errors}")
 
 
+def reprocess_transcripts(queue_dir: Path, dry_run: bool = False, limit: int = 0):
+    """
+    Re-process already-imported transcripts with updated speaker mapping.
+
+    Reads JSON files from processed_files/ and regenerates the markdown
+    transcripts with the new speaker mapping logic.
+    """
+    store = PodcastStore()
+    speaker_mapper = SpeakerMapper()
+    processed_dir = queue_dir / 'processed_files'
+
+    if not processed_dir.exists():
+        print("No processed_files directory found")
+        return
+
+    # Find JSON files (WhisperX diarized transcripts)
+    json_files = list(processed_dir.glob('*.json'))
+    # Filter out non-transcript files
+    json_files = [f for f in json_files if f.name not in ['processed.json', 'diarization_queue.json']]
+
+    if limit > 0:
+        json_files = json_files[:limit]
+
+    logger.info(f"Found {len(json_files)} JSON files to reprocess")
+
+    reprocessed = 0
+    errors = 0
+
+    for tf in json_files:
+        # Parse filename: {podcast_slug}_{episode_id}_{date}_{title}.json
+        match = re.match(r'^(?:\d+)?([a-z][a-z0-9-]+)_(\d+)(?:_[^.]+)?\.(json)$', tf.name, re.IGNORECASE)
+        if not match:
+            logger.warning(f"Skipping file with unexpected name format: {tf.name}")
+            continue
+
+        podcast_slug = match.group(1)
+        episode_id = int(match.group(2))
+
+        # Get episode info
+        episode = store.get_episode_by_id(episode_id)
+        if not episode:
+            # Try title fallback
+            title_match = re.match(r'^(?:\d+)?[a-z][a-z0-9-]+_\d+_\d{4}-\d{2}-\d{2}_(.+)\.json$', tf.name, re.IGNORECASE)
+            if title_match:
+                title_slug = title_match.group(1).replace('-', ' ').replace('_', ' ')
+                episodes = store.search_episodes_by_title(podcast_slug, title_slug[:50])
+                if episodes:
+                    episode = episodes[0]
+
+            if not episode:
+                logger.error(f"Episode not found: {episode_id}")
+                errors += 1
+                continue
+
+        podcast = store.get_podcast(episode.podcast_id)
+        if not podcast:
+            logger.error(f"Podcast not found for episode: {episode_id}")
+            errors += 1
+            continue
+
+        # Parse WhisperX JSON
+        try:
+            whisperx_data = parse_whisperx_json(tf)
+            segments = whisperx_data["segments"]
+            num_speakers = whisperx_data["num_speakers"]
+
+            description = episode.metadata.get('description', '') if episode.metadata else ''
+
+            # Map speakers with NEW logic
+            speaker_mappings = speaker_mapper.map_speakers(
+                podcast_slug=podcast.slug,
+                episode_title=episode.title,
+                episode_description=description,
+                num_speakers=num_speakers,
+                segments=segments
+            )
+
+            # Format transcript with speaker names
+            content = format_diarized_transcript(segments, speaker_mappings)
+
+        except Exception as e:
+            logger.error(f"Error parsing {tf.name}: {e}")
+            errors += 1
+            continue
+
+        # Determine output path
+        project_root = Path(__file__).parent.parent
+        transcript_dir = project_root / 'data' / 'podcasts' / podcast.slug / 'transcripts'
+
+        date_str = episode.publish_date[:10] if episode.publish_date else datetime.now().strftime('%Y-%m-%d')
+        title_slug = re.sub(r'[^\w\s-]', '', episode.title.lower())
+        title_slug = re.sub(r'[\s]+', '-', title_slug)[:80]
+        output_filename = f"{date_str}_{title_slug}.md"
+        output_path = transcript_dir / output_filename
+
+        if dry_run:
+            print(f"Would reprocess: {episode.title[:50]}...")
+            for sm in speaker_mappings:
+                if sm.confidence > 0.5 or not sm.name.startswith('Speaker'):
+                    print(f"  {sm.label} -> {sm.name} (conf={sm.confidence:.2f})")
+        else:
+            # Build header
+            duration = episode.metadata.get('duration', '') if episode.metadata else ''
+            header_parts = [
+                f"# {episode.title}",
+                "",
+                f"**Podcast:** {podcast.name}",
+                f"**Date:** {episode.publish_date}",
+            ]
+            if duration:
+                header_parts.append(f"**Duration:** {duration}")
+            header_parts.append("**Source:** WhisperX (local transcription with diarization)")
+
+            if description:
+                header_parts.extend(["", "## Show Notes", "", description])
+            header_parts.extend(["", "---", "", "## Transcript", ""])
+            header = "\n".join(header_parts) + "\n"
+
+            output_path.write_text(header + content, encoding='utf-8')
+
+            # Update speaker mappings in database
+            for sm in speaker_mappings:
+                store.add_episode_speaker(EpisodeSpeaker(
+                    episode_id=episode.id,
+                    speaker_label=sm.label,
+                    speaker_name=sm.name,
+                    confidence=sm.confidence,
+                    source=sm.source
+                ))
+
+            logger.info(f"Reprocessed: {episode.title[:50]}...")
+            reprocessed += 1
+
+    print(f"\nReprocess complete:")
+    print(f"  Reprocessed: {reprocessed}")
+    print(f"  Errors: {errors}")
+
+
 def main():
     parser = argparse.ArgumentParser(description='Import Whisper transcripts')
     parser.add_argument('--queue-dir', '-q', default='data/whisper_queue',
                         help='Queue directory')
     parser.add_argument('--dry-run', '-n', action='store_true',
                         help='Show what would be done')
+    parser.add_argument('--reprocess', '-r', action='store_true',
+                        help='Reprocess already-imported transcripts with updated speaker mapping')
+    parser.add_argument('--limit', '-l', type=int, default=0,
+                        help='Limit number of files to process (0 = no limit)')
     args = parser.parse_args()
 
-    import_transcripts(Path(args.queue_dir), args.dry_run)
+    if args.reprocess:
+        reprocess_transcripts(Path(args.queue_dir), args.dry_run, args.limit)
+    else:
+        import_transcripts(Path(args.queue_dir), args.dry_run)
 
 
 if __name__ == '__main__':
