@@ -213,22 +213,49 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             logger.debug(f"Already processed: {tf.name}")
             continue
 
-        # Get episode info - try by ID first, then by title
+        # Get episode info - try by ID first, then by date+title
         episode = store.get_episode_by_id(episode_id)
         if not episode:
-            # Fallback: try to find by podcast slug and title from filename
+            # Fallback: try to find by podcast slug, date, and title from filename
             # Filename format: {slug}_{id}_{date}_{title}.json
-            title_match = re.match(r'^(?:\d+)?[a-z][a-z0-9-]+_\d+_\d{4}-\d{2}-\d{2}_(.+)\.(txt|md|json|srt)$', tf.name, re.IGNORECASE)
-            if title_match:
-                title_slug = title_match.group(1).replace('-', ' ').replace('_', ' ')
-                # Try to find episode by slug search
-                episodes = store.search_episodes_by_title(podcast_slug, title_slug[:50])
-                if episodes:
-                    episode = episodes[0]
-                    logger.info(f"Found episode by title fallback: {episode.id} - {episode.title}")
+            date_title_match = re.match(
+                r'^(?:\d+)?[a-z][a-z0-9-]+_\d+_(\d{4}-\d{2}-\d{2})_(.+)\.(txt|md|json|srt)$',
+                tf.name, re.IGNORECASE
+            )
+            if date_title_match:
+                file_date = date_title_match.group(1)
+                title_slug = date_title_match.group(2).replace('-', ' ').replace('_', ' ')
+
+                # First try: exact date match
+                with store._get_connection() as conn:
+                    # Get podcast ID
+                    podcast_row = conn.execute(
+                        "SELECT id FROM podcasts WHERE slug = ?",
+                        (podcast_slug,)
+                    ).fetchone()
+                    if podcast_row:
+                        # Search by date (more reliable than title)
+                        rows = conn.execute(
+                            """SELECT * FROM episodes
+                               WHERE podcast_id = ?
+                               AND date(publish_date) = date(?)
+                               LIMIT 1""",
+                            (podcast_row["id"], file_date)
+                        ).fetchall()
+                        if rows:
+                            row = rows[0]
+                            episode = store.get_episode_by_id(row["id"])
+                            logger.info(f"Found episode by date fallback: {episode.id} - {episode.title}")
+
+                # Second try: title search
+                if not episode:
+                    episodes = store.search_episodes_by_title(podcast_slug, title_slug[:30])
+                    if episodes:
+                        episode = episodes[0]
+                        logger.info(f"Found episode by title fallback: {episode.id} - {episode.title}")
 
             if not episode:
-                logger.error(f"Episode not found: {episode_id} (title fallback also failed)")
+                logger.error(f"Episode not found: {episode_id} (date+title fallback also failed)")
                 errors += 1
                 continue
 
@@ -324,23 +351,23 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
             header = "\n".join(header_parts) + "\n"
             output_path.write_text(header + content, encoding='utf-8')
 
-            # Update database - episode status
+            # Update database - episode status (use episode.id, not episode_id from filename)
             store.update_episode_transcript_status(
-                episode_id, 'fetched', str(output_path)
+                episode.id, 'fetched', str(output_path)
             )
 
             # Save speaker mappings to database if diarized
             if is_diarized and speaker_mappings:
                 for sm in speaker_mappings:
                     store.add_episode_speaker(EpisodeSpeaker(
-                        episode_id=episode_id,
+                        episode_id=episode.id,
                         speaker_label=sm.label,
                         speaker_name=sm.name,
                         confidence=sm.confidence,
                         source=sm.source
                     ))
 
-            # Mark as processed
+            # Mark as processed (use original episode_id from filename for tracking)
             processed.add(episode_id)
 
             # Move original to processed folder
@@ -400,16 +427,40 @@ def reprocess_transcripts(queue_dir: Path, dry_run: bool = False, limit: int = 0
         podcast_slug = match.group(1)
         episode_id = int(match.group(2))
 
-        # Get episode info
+        # Get episode info - try by ID first, then by date+title
         episode = store.get_episode_by_id(episode_id)
         if not episode:
-            # Try title fallback
-            title_match = re.match(r'^(?:\d+)?[a-z][a-z0-9-]+_\d+_\d{4}-\d{2}-\d{2}_(.+)\.json$', tf.name, re.IGNORECASE)
-            if title_match:
-                title_slug = title_match.group(1).replace('-', ' ').replace('_', ' ')
-                episodes = store.search_episodes_by_title(podcast_slug, title_slug[:50])
-                if episodes:
-                    episode = episodes[0]
+            # Fallback: try by date and title from filename
+            date_title_match = re.match(
+                r'^(?:\d+)?[a-z][a-z0-9-]+_\d+_(\d{4}-\d{2}-\d{2})_(.+)\.json$',
+                tf.name, re.IGNORECASE
+            )
+            if date_title_match:
+                file_date = date_title_match.group(1)
+                title_slug = date_title_match.group(2).replace('-', ' ').replace('_', ' ')
+
+                # First try: exact date match
+                with store._get_connection() as conn:
+                    podcast_row = conn.execute(
+                        "SELECT id FROM podcasts WHERE slug = ?",
+                        (podcast_slug,)
+                    ).fetchone()
+                    if podcast_row:
+                        rows = conn.execute(
+                            """SELECT id FROM episodes
+                               WHERE podcast_id = ?
+                               AND date(publish_date) = date(?)
+                               LIMIT 1""",
+                            (podcast_row["id"], file_date)
+                        ).fetchall()
+                        if rows:
+                            episode = store.get_episode_by_id(rows[0]["id"])
+
+                # Second try: title search
+                if not episode:
+                    episodes = store.search_episodes_by_title(podcast_slug, title_slug[:30])
+                    if episodes:
+                        episode = episodes[0]
 
             if not episode:
                 logger.error(f"Episode not found: {episode_id}")

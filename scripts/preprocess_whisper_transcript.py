@@ -238,6 +238,9 @@ def preprocess_whisper_transcript(input_text: str) -> Tuple[str, dict]:
 
     stats['final_chars'] = len(text)
     stats['final_words'] = len(text.split())
+    stats['chars_removed'] = stats['original_chars'] - stats['final_chars']
+    stats['percent_removed'] = (stats['chars_removed'] / stats['original_chars'] * 100) if stats['original_chars'] > 0 else 0
+    stats['ad_blocks_removed'] = 0  # Ad removal happens in enrichment pipeline, not here
 
     return text, stats
 
