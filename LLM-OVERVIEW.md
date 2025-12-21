@@ -1,8 +1,8 @@
 # LLM-OVERVIEW: Atlas
 
 > Complete context for any LLM to understand this project.
-> **Last Updated**: 2025-12-15
-> **ONE_SHOT Version**: 4.0
+> **Last Updated**: 2025-12-21
+> **ONE_SHOT Version**: 5.5
 > **Status**: Production - Fully automated ingestion running
 
 ---
@@ -17,12 +17,13 @@ Content is scattered across the internet - podcast transcripts on various sites,
 
 ### Current State
 - **Status**: Production (ingestion running 24/7)
-- **Content Quality**: 35,385 good (80.1%), 8,002 marginal (18.1%), 800 bad (1.8%)
-- **Coverage**: 4,445 podcast transcripts fetched (66% of 6,729 target)
-- **Automation**: 9 systemd timers handling discovery, fetching, retries
+- **Podcast Coverage**: 6,490/6,827 transcripts (95.1%)
+- **Content Quality**: 74,307 good (83.4%), 13,837 marginal (15.5%), 988 bad (1.1%)
+- **URL Articles**: 7,439 fetched, ~2,000 processing
+- **Automation**: 14 systemd timers handling all pipelines
 - **Tests**: 34 passing (api, podcasts, storage)
 - **Security**: All OWASP issues fixed, secrets encrypted with SOPS + Age
-- **Next Milestone**: Complete marginal recovery, enable Atlas Ask
+- **Progress Tracking**: Hourly snapshots to `data/progress/snapshots.jsonl`
 
 ---
 
@@ -201,7 +202,7 @@ sqlite3 data/quality/verification.db "SELECT quality, COUNT(*) FROM verification
 
 ---
 
-## 5. SYSTEMD TIMERS (7 Running)
+## 5. SYSTEMD TIMERS (14 Running)
 
 | Timer | Schedule | Purpose |
 |-------|----------|---------|
@@ -212,11 +213,23 @@ sqlite3 data/quality/verification.db "SELECT quality, COUNT(*) FROM verification
 | `atlas-inbox` | Every 5 min | Process manual inbox folder |
 | `atlas-content-retry` | Weekly | Retry failed URL fetches |
 | `atlas-cookie-check` | Daily 9am | Alert on expiring cookies |
+| `atlas-whisper-download` | Every 2 hours | Download audio for Whisper |
+| `atlas-whisper-import` | Hourly | Import completed Whisper transcripts |
+| `atlas-enrich` | Sunday 4am | Ad removal, URL sanitization |
+| `atlas-link-pipeline` | Every 2 hours | Process extracted links |
+| `atlas-verify` | Daily 5am | Content quality verification |
+| `atlas-progress` | Hourly | Progress snapshots |
+| `atlas-status-report` | Daily 10pm | Status report |
+
+**Services (Always Running):**
+- `atlas-url-fetcher` - URL queue processing with robust fallback
+- `atlas-simple-fetcher` - Podcast transcript fetching
 
 **Check status:**
 ```bash
 systemctl list-timers | grep atlas
 journalctl -u atlas-transcripts -f
+./venv/bin/python scripts/progress_snapshot.py --report  # 24h progress
 ```
 
 ---
@@ -224,21 +237,25 @@ journalctl -u atlas-transcripts -f
 ## 6. CURRENT STATE
 
 ### What Works
-- Podcast transcript discovery and fetching (66% complete, automated)
-- Article/URL ingestion with cascading fallbacks
+- Podcast transcript discovery and fetching (95.1% complete, automated)
+- Article/URL ingestion with robust fallback (Playwright → archive.is → Wayback)
+- Whisper pipeline for paywalled podcasts (Dithering, Asianometry)
 - Bulk import from messy folders with deduplication
 - Gmail label watching for newsletters
-- Stratechery authenticated archive crawl
-- Cookie expiration monitoring with alerts (Telegram + ntfy)
+- Stratechery authenticated archive (2,538 files)
+- Cookie expiration monitoring with alerts (ntfy)
 - REST API with health/metrics/episode/transcript endpoints
 - Secrets management (SOPS + Age encryption)
+- Hourly progress tracking with 24h reports
+- Transcript disk↔DB reconciliation
 
 ### What's In Progress
-- Completing podcast backlog (~2,200 remaining, ~7 hours)
-- Stratechery full archive crawl (running in background)
+- URL backlog processing (~2,000 remaining, robust fallback running)
+- Whisper queue (103 audio files waiting for Mac Mini)
+- Podcast pending (144 remaining, mostly YouTube-blocked)
 
 ### What's Ready But Not Enabled
-- Atlas Ask semantic search (waiting for ingestion to stabilize)
+- Atlas Ask semantic search (waiting for URL backlog to complete)
 
 ---
 
@@ -318,20 +335,33 @@ curl http://localhost:7444/health
 
 | Date | Change | Impact |
 |------|--------|--------|
-| 2025-12-15 | Content Quality Verification | 44K files classified: 80.1% good, 18.1% marginal, 1.8% bad |
+| 2025-12-21 | Robust URL retry system | URLs retry weekly for 4 weeks with method tracking |
+| 2025-12-21 | Progress tracking | Hourly snapshots, 24h reports via `progress_snapshot.py` |
+| 2025-12-21 | Transcript reconciliation | Synced disk→DB, coverage jumped 65%→95% |
+| 2025-12-21 | Whisper queue cleanup | Cleared orphaned files, fresh audio download |
+| 2025-12-21 | URL backlog re-queue | 2,088 URLs re-queued with robust fallback |
+| 2025-12-15 | Content Quality Verification | 89K files: 83.4% good, 15.5% marginal, 1.1% bad |
 | 2025-12-15 | Fixed verifier false positives | JS check exempts >5000 words, smarter paragraph check |
 | 2025-12-15 | Marginal recovery scripts | Tiered approach to re-fetch failed scrapes |
 | 2025-12-10 | Security audit complete | Fixed command injection, CORS, SSRF, SQL injection |
 | 2025-12-10 | N+1 query fix | Dashboard queries: 50+ → 2 |
-| 2025-12-10 | API endpoints added | Episode detail, transcript, content text endpoints |
-| 2025-12-10 | Module consolidation | Archived unused modules/ingestion/ |
-| 2025-12-10 | Code quality fixes | All bare except clauses fixed (17 → 0) |
 | 2025-12-10 | Added bulk_import.py | Can now import messy folders of Instapaper exports |
-| 2025-12-10 | Added validate_podcast_sources.py | Verify all podcasts have working sources |
-| 2025-12-10 | Fixed recursive link spider bug | generic_html no longer chases Wikipedia links |
-| 2025-12-09 | Added Stratechery crawler | Full Ben Thompson archive in progress |
-| 2025-12-09 | Cookie expiration alerts | Daily check, ntfy/Telegram notifications |
+| 2025-12-09 | Added Stratechery crawler | Full Ben Thompson archive complete (2,538 files) |
+| 2025-12-09 | Cookie expiration alerts | Daily check, ntfy notifications |
 | 2025-12-06 | Architecture cleanup | Archived 300+ legacy files, 34 tests passing |
+
+---
+
+## 11. PROGRESS TRACKING
+
+**Check progress anytime:**
+```bash
+./venv/bin/python scripts/progress_snapshot.py --report   # 24h delta
+./venv/bin/python scripts/progress_snapshot.py --current  # Current state
+./venv/bin/python scripts/atlas_status.py                 # Full status
+```
+
+**Snapshots saved hourly** to `data/progress/snapshots.jsonl`
 
 ---
 

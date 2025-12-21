@@ -1,3 +1,23 @@
+<!-- ONE_SHOT v5.5 -->
+# IMPORTANT: Read AGENTS.md - it contains skill and agent routing rules.
+#
+# Skills (synchronous, shared context):
+#   "build me..."     → oneshot-core
+#   "plan..."         → create-plan
+#   "implement..."    → implement-plan
+#   "debug/fix..."    → debugger
+#   "deploy..."       → push-to-cloud
+#   "ultrathink..."   → thinking-modes
+#   "beads/ready..."  → beads (persistent tasks)
+#
+# Agents (isolated context, background):
+#   "security audit..." → security-auditor
+#   "explore/find all..." → deep-research
+#   "background/parallel..." → background-worker
+#   "coordinate agents..." → multi-agent-coordinator
+#
+# Always update TODO.md as you work.
+<!-- /ONE_SHOT -->
 # Atlas Project Instructions
 
 ## Status Check (Do This First)
