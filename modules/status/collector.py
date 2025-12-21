@@ -34,6 +34,15 @@ class TimerStatus:
 
 
 @dataclass
+class PathwayStats:
+    """Stats for a transcript pathway."""
+    podcasts: int = 0
+    fetched: int = 0
+    pending: int = 0
+    total: int = 0
+
+
+@dataclass
 class PodcastStats:
     total: int = 0
     fetched: int = 0
@@ -41,6 +50,8 @@ class PodcastStats:
     failed: int = 0
     excluded: int = 0
     coverage: float = 0.0
+    # Pathway breakdown
+    pathways: dict = field(default_factory=dict)  # pathway -> PathwayStats
 
 
 @dataclass
@@ -259,6 +270,29 @@ class StatusCollector:
                 self.status.podcasts.coverage = (
                     self.status.podcasts.fetched / self.status.podcasts.total
                 ) * 100
+
+            # Collect pathway stats
+            cursor.execute("""
+                SELECT
+                    COALESCE(p.pathway, 'unknown') as pathway,
+                    COUNT(DISTINCT p.id) as podcast_count,
+                    SUM(CASE WHEN e.transcript_status = 'fetched' THEN 1 ELSE 0 END) as fetched,
+                    SUM(CASE WHEN e.transcript_status IN ('unknown', 'local') THEN 1 ELSE 0 END) as pending,
+                    COUNT(*) as total
+                FROM podcasts p
+                LEFT JOIN episodes e ON p.id = e.podcast_id
+                WHERE e.transcript_status != 'excluded'
+                GROUP BY p.pathway
+                ORDER BY pending DESC
+            """)
+
+            for pathway, pod_count, fetched, pending, total in cursor.fetchall():
+                self.status.podcasts.pathways[pathway] = PathwayStats(
+                    podcasts=pod_count,
+                    fetched=fetched,
+                    pending=pending,
+                    total=total
+                )
 
             conn.close()
         except Exception as e:

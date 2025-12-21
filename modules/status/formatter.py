@@ -58,6 +58,28 @@ def format_status(status: AtlasStatus, color: bool = True) -> str:
     lines.append(f"  Coverage:   {coverage_color}{status.podcasts.coverage:.1f}%{RESET}  ({status.podcasts.fetched:,} / {status.podcasts.total:,})")
     lines.append(f"  Pending:    {status.podcasts.pending:,}")
     lines.append(f"  Failed:     {status.podcasts.failed:,}")
+
+    # Pathway breakdown
+    if status.podcasts.pathways:
+        lines.append(f"  {DIM}--- By Pathway ---{RESET}")
+        pathway_icons = {
+            'website': '🌐',
+            'network': '📻',
+            'nyt': '📰',
+            'podscripts': '🤖',
+            'youtube': '📺',
+            'whisper': '🎙️',
+            'unknown': '❓'
+        }
+        for pathway in ['website', 'network', 'nyt', 'podscripts', 'youtube', 'whisper', 'unknown']:
+            if pathway in status.podcasts.pathways:
+                stats = status.podcasts.pathways[pathway]
+                if stats.pending > 0 or stats.fetched > 0:
+                    icon = pathway_icons.get(pathway, '?')
+                    pct = (stats.fetched / stats.total * 100) if stats.total > 0 else 0
+                    pct_color = GREEN if pct >= 80 else YELLOW if pct >= 50 else ""
+                    pending_str = f"  {YELLOW}→ {stats.pending} pending{RESET}" if stats.pending > 0 else ""
+                    lines.append(f"  {icon} {pathway:<12} {pct_color}{stats.fetched:>4}{RESET}/{stats.total:<4}{pending_str}")
     lines.append("")
 
     # Content
@@ -165,7 +187,16 @@ def format_json(status: AtlasStatus) -> dict:
             "pending": status.podcasts.pending,
             "failed": status.podcasts.failed,
             "excluded": status.podcasts.excluded,
-            "coverage": round(status.podcasts.coverage, 1)
+            "coverage": round(status.podcasts.coverage, 1),
+            "pathways": {
+                pathway: {
+                    "podcasts": stats.podcasts,
+                    "fetched": stats.fetched,
+                    "pending": stats.pending,
+                    "total": stats.total
+                }
+                for pathway, stats in status.podcasts.pathways.items()
+            }
         },
         "content": {
             "articles": status.content.articles,

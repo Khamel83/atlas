@@ -173,9 +173,9 @@ this-american-life:
 the-knowledge-project-with-shane-parrish:
   rss_url: https://feeds.simplecast.com/bWa2pEOC
   site_url: https://fs.blog/knowledge-project-podcast/
-  resolver: happyscribe
+  resolver: podscripts
   config:
-    happyscribe_id: the-knowledge-project-with-shane-parrish
+    podscripts_id: the-knowledge-project-with-shane-parrish
     rate_limit: 3.0
 
 lex-fridman-podcast:
@@ -212,10 +212,10 @@ radiolab:
 revisionist-history:
   rss_url: https://feeds.megaphone.fm/revisionisthistory
   site_url: https://www.pushkin.fm/podcasts/revisionist-history
-  resolver: podscribe
+  resolver: podscripts
   config:
-    podscribe_series_id: '1475'
-    rate_limit: 5.0
+    podscripts_id: revisionist-history
+    rate_limit: 3.0
 
 heavyweight:
   rss_url: https://feeds.megaphone.fm/heavyweight
@@ -427,10 +427,10 @@ asianometry:
 the-rewatchables:
   rss_url: https://feeds.megaphone.fm/the-rewatchables
   site_url: https://www.theringer.com/the-rewatchables
-  resolver: podscribe
+  resolver: podscripts
   config:
-    podscribe_series_id: '530'
-    rate_limit: 5.0
+    podscripts_id: the-rewatchables
+    rate_limit: 3.0
 
 against-the-rules-with-michael-lewis:
   rss_url: https://feeds.megaphone.fm/against-the-rules
@@ -443,18 +443,18 @@ against-the-rules-with-michael-lewis:
 land-of-the-giants:
   rss_url: https://feeds.megaphone.fm/land-of-the-giants
   site_url: https://www.vox.com/land-of-the-giants
-  resolver: tapesearch
+  resolver: podscripts
   config:
-    tapesearch_id: '1465767420'
+    podscripts_id: land-of-the-giants
     rate_limit: 3.0
 
 plain-english-with-derek-thompson:
   rss_url: https://feeds.megaphone.fm/plain-english-with-derek-thompson
   site_url: https://www.theringer.com/plain-english-with-derek-thompson
-  resolver: podscribe
+  resolver: podscripts
   config:
-    podscribe_series_id: '2143152'
-    rate_limit: 5.0
+    podscripts_id: plain-english-with-derek-thompson
+    rate_limit: 3.0
 
 the-watch:
   rss_url: https://feeds.megaphone.fm/the-watch
@@ -510,4 +510,89 @@ the-layover:
   resolver: podscripts
   config:
     podscripts_id: the-layover
+    rate_limit: 3.0
+
+# ============================================================================
+# RINGER PODCASTS (The Big Picture, Bill Simmons, etc.)
+# ============================================================================
+
+the-big-picture:
+  rss_url: https://feeds.megaphone.fm/the-big-picture
+  site_url: https://www.theringer.com/the-big-picture
+  resolver: podscripts
+  config:
+    podscripts_id: the-big-picture
+    rate_limit: 3.0
+
+the-bill-simmons-podcast:
+  rss_url: https://feeds.megaphone.fm/the-bill-simmons-podcast
+  site_url: https://www.theringer.com/the-bill-simmons-podcast
+  resolver: podscripts
+  config:
+    podscripts_id: the-bill-simmons-podcast
+    rate_limit: 3.0
+
+# ============================================================================
+# VOX MEDIA PODCASTS
+# ============================================================================
+
+the-vergecast:
+  rss_url: https://feeds.megaphone.fm/vergecast
+  site_url: https://www.theverge.com/the-vergecast
+  resolver: podscripts
+  config:
+    podscripts_id: the-vergecast
+    rate_limit: 3.0
+
+today-explained:
+  rss_url: https://feeds.megaphone.fm/today-explained
+  site_url: https://www.vox.com/today-explained
+  resolver: network_transcripts
+  transcript_selector: '.c-entry-content, .article-content'
+  config:
+    network: vox
+    rate_limit: 2.0
+
+# ============================================================================
+# WSJ PODCASTS
+# ============================================================================
+
+the-journal:
+  rss_url: https://feeds.megaphone.fm/the-journal
+  site_url: https://www.wsj.com/podcasts/the-journal
+  resolver: podscripts
+  config:
+    podscripts_id: the-journal
+    rate_limit: 3.0
+
+odd-lots:
+  rss_url: https://feeds.megaphone.fm/odd-lots
+  site_url: https://www.bloomberg.com/oddlots-podcast
+  resolver: podscripts
+  config:
+    podscripts_id: odd-lots
+    rate_limit: 3.0
+
+# ============================================================================
+# FOOD PODCASTS
+# ============================================================================
+
+the-recipe-with-kenji-and-deb:
+  rss_url: https://feeds.megaphone.fm/the-recipe
+  site_url: https://www.theringer.com/the-recipe
+  resolver: podscripts
+  config:
+    podscripts_id: the-recipe-with-kenji-and-deb
+    rate_limit: 3.0
+
+# ============================================================================
+# iHEART PODCASTS
+# ============================================================================
+
+hyperfixed:
+  rss_url: https://feeds.megaphone.fm/hyperfixed
+  site_url: https://www.iheart.com/podcast/1119-hyperfixed/
+  resolver: podscripts
+  config:
+    podscripts_id: hyperfixed
     rate_limit: 3.0
