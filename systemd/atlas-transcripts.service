@@ -15,6 +15,7 @@ EnvironmentFile=/home/khamel83/github/atlas/systemd/atlas-podcasts.env
 # Fetch transcripts using smart limits from config/podcast_limits.json
 # No --limit flag needed - respects per-podcast limits automatically
 ExecStart=/home/khamel83/github/atlas/venv/bin/python -m modules.podcasts.cli fetch-transcripts --all
+ExecStartPost=/home/khamel83/github/atlas/venv/bin/python /home/khamel83/github/atlas/scripts/fallback_to_whisper.py --apply
 
 # Logging
 StandardOutput=append:/var/log/atlas/transcripts.log
