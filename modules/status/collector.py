@@ -66,8 +66,10 @@ class ContentStats:
 @dataclass
 class UrlQueueStats:
     fetched: int = 0
-    failed: int = 0
-    pending: int = 0
+    retrying: int = 0  # Will be retried in future
+    truly_failed: int = 0  # Exhausted all options over 4+ weeks
+    pending: int = 0  # New URLs not yet attempted
+    due_for_retry: int = 0  # Retrying URLs due today
 
 
 @dataclass
@@ -295,6 +297,26 @@ class StatusCollector:
                 )
 
             conn.close()
+
+            # Reconciliation check: compare DB fetched count vs disk file count
+            podcasts_dir = self.data_dir / "podcasts"
+            if podcasts_dir.exists():
+                disk_count = 0
+                for podcast_dir in podcasts_dir.iterdir():
+                    if podcast_dir.is_dir():
+                        transcript_dir = podcast_dir / "transcripts"
+                        if transcript_dir.exists():
+                            disk_count += len(list(transcript_dir.glob("*.md")))
+
+                # Warn if significant mismatch (>5% difference)
+                if self.status.podcasts.fetched > 0:
+                    diff_pct = abs(disk_count - self.status.podcasts.fetched) / self.status.podcasts.fetched * 100
+                    if diff_pct > 5:
+                        self.status.errors.append(
+                            f"DB/Disk mismatch: DB says {self.status.podcasts.fetched} fetched, "
+                            f"disk has {disk_count} files. Run: python scripts/reconcile_transcripts.py --apply"
+                        )
+
         except Exception as e:
             self.status.errors.append(f"Podcast DB: {e}")
 
@@ -346,20 +368,50 @@ class StatusCollector:
         queue_file = self.data_dir / "url_queue.txt"
 
         try:
+            fetched_hashes = set()
+            retrying_hashes = set()
+            truly_failed_hashes = set()
+            today = datetime.now().strftime('%Y-%m-%d')
+
             if state_file.exists():
                 with open(state_file) as f:
                     state = json.load(f)
-                    self.status.url_queue.fetched = len(state.get("fetched", {}))
-                    self.status.url_queue.failed = len(state.get("failed", {}))
+                    fetched_hashes = set(state.get("fetched", {}).keys())
+                    self.status.url_queue.fetched = len(fetched_hashes)
+
+                    # New structure: retrying and truly_failed
+                    retrying = state.get("retrying", {})
+                    retrying_hashes = set(retrying.keys())
+                    self.status.url_queue.retrying = len(retrying_hashes)
+
+                    # Count URLs due for retry today
+                    due_count = 0
+                    for info in retrying.values():
+                        next_retry = info.get('next_retry', '2000-01-01')
+                        if next_retry <= today:
+                            due_count += 1
+                    self.status.url_queue.due_for_retry = due_count
+
+                    truly_failed_hashes = set(state.get("truly_failed", {}).keys())
+                    self.status.url_queue.truly_failed = len(truly_failed_hashes)
+
+                    # Legacy: also check old 'failed' key
+                    if "failed" in state and "retrying" not in state:
+                        # Old format - count as retrying
+                        self.status.url_queue.retrying = len(state.get("failed", {}))
 
             if queue_file.exists():
                 with open(queue_file) as f:
-                    total_in_queue = sum(1 for line in f if line.strip())
-                # Pending = queue total - fetched - failed
-                self.status.url_queue.pending = max(
-                    0,
-                    total_in_queue - self.status.url_queue.fetched - self.status.url_queue.failed
-                )
+                    # Count truly new URLs (not in any state)
+                    import hashlib
+                    pending = 0
+                    for line in f:
+                        url = line.strip()
+                        if url and url.startswith('http'):
+                            h = hashlib.md5(url.lower().encode()).hexdigest()[:12]
+                            if h not in fetched_hashes and h not in retrying_hashes and h not in truly_failed_hashes:
+                                pending += 1
+                    self.status.url_queue.pending = pending
         except Exception as e:
             self.status.errors.append(f"URL queue: {e}")
 

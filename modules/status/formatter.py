@@ -94,9 +94,14 @@ def format_status(status: AtlasStatus, color: bool = True) -> str:
 
     # URL Queue
     lines.append(f"{BOLD}URL QUEUE{RESET}")
-    lines.append(f"  Fetched:    {status.url_queue.fetched:,}")
-    lines.append(f"  Failed:     {status.url_queue.failed:,}")
+    lines.append(f"  Fetched:    {GREEN}{status.url_queue.fetched:,}{RESET}")
     lines.append(f"  Pending:    {status.url_queue.pending:,}")
+    if status.url_queue.retrying > 0:
+        retry_color = YELLOW if status.url_queue.due_for_retry > 0 else DIM
+        due_str = f"  {YELLOW}→ {status.url_queue.due_for_retry} due today{RESET}" if status.url_queue.due_for_retry > 0 else ""
+        lines.append(f"  Retrying:   {retry_color}{status.url_queue.retrying:,}{RESET}{due_str}")
+    if status.url_queue.truly_failed > 0:
+        lines.append(f"  Failed:     {RED}{status.url_queue.truly_failed:,}{RESET}  {DIM}(exhausted after 4+ weeks){RESET}")
     lines.append("")
 
     # Whisper Queue (only show if there's activity)
@@ -207,8 +212,10 @@ def format_json(status: AtlasStatus) -> dict:
         },
         "url_queue": {
             "fetched": status.url_queue.fetched,
-            "failed": status.url_queue.failed,
-            "pending": status.url_queue.pending
+            "pending": status.url_queue.pending,
+            "retrying": status.url_queue.retrying,
+            "due_for_retry": status.url_queue.due_for_retry,
+            "truly_failed": status.url_queue.truly_failed
         },
         "quality": {
             "good": status.quality.good,

@@ -1,0 +1,21 @@
+{
+  "_comment": "Podcasts that need local Whisper transcription (no reliable online source)",
+  "_usage": "Used by download_for_whisper.py to determine which podcasts need audio download",
+  "podcasts": [
+    {
+      "slug": "dithering",
+      "reason": "Paywalled, no public transcripts",
+      "priority": 1
+    },
+    {
+      "slug": "asianometry",
+      "reason": "Paywalled, no public transcripts",
+      "priority": 1
+    },
+    {
+      "slug": "against-the-rules-with-michael-lewis",
+      "reason": "Podscripts has limited coverage, newer episodes need Whisper",
+      "priority": 2
+    }
+  ]
+}

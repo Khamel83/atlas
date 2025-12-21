@@ -209,9 +209,8 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
         episode_id = int(match.group(2))
         file_type = match.group(3).lower()
 
-        if episode_id in processed:
-            logger.debug(f"Already processed: {tf.name}")
-            continue
+        # NOTE: We check 'processed' AFTER matching episode, using episode.id not filename ID
+        # This allows fallback matching to work even if filename has old/invalid episode ID
 
         # Get episode info - try by ID first, then by date+title
         episode = store.get_episode_by_id(episode_id)
@@ -258,6 +257,11 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
                 logger.error(f"Episode not found: {episode_id} (date+title fallback also failed)")
                 errors += 1
                 continue
+
+        # Now check if this episode (by its actual ID) was already processed
+        if episode.id in processed:
+            logger.debug(f"Already processed (episode {episode.id}): {tf.name}")
+            continue
 
         podcast = store.get_podcast(episode.podcast_id)
         if not podcast:
@@ -367,8 +371,8 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
                         source=sm.source
                     ))
 
-            # Mark as processed (use original episode_id from filename for tracking)
-            processed.add(episode_id)
+            # Mark as processed (use matched episode.id, not filename ID)
+            processed.add(episode.id)
 
             # Move original to processed folder
             processed_dir = queue_dir / 'processed_files'

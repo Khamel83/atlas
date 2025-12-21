@@ -1,0 +1,14 @@
+[Unit]
+Description=Atlas Progress Snapshot
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/progress_snapshot.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

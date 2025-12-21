@@ -1,6 +1,34 @@
 # TODO - Atlas
 
-> Project tasks organized by status. Updated: 2025-12-15
+> Project tasks organized by status. Updated: 2025-12-21 21:45
+
+---
+
+## 📊 LIVE PROGRESS TRACKING
+
+**Check progress anytime:**
+```bash
+./venv/bin/python scripts/progress_snapshot.py --report   # 24h progress report
+./venv/bin/python scripts/progress_snapshot.py --current  # Current state
+./venv/bin/python scripts/atlas_status.py                 # Full system status
+```
+
+**Snapshots saved hourly** to `data/progress/snapshots.jsonl`
+
+---
+
+## Current State (2025-12-21 21:45)
+
+| System | Done | Pending | % Complete |
+|--------|------|---------|------------|
+| **Podcasts** | 6,490 | 170 | **94.8%** |
+| **URLs** | 7,426 | ~2,084 | processing... |
+| **Whisper** | - | 103 audio | waiting for Mac Mini |
+
+**URL Fetcher**: Running with robust fallback (Playwright → archive.is → Wayback)
+- Processing ~70-100/hour (fallbacks take 30-40 sec each)
+- Remaining: ~2,084
+- ETA: ~24-30 hours (will be done by Monday morning)
 
 ---
 
@@ -11,7 +39,7 @@
 - [x] Robust URL fetcher with 5 fallback strategies 2025-12-09
 - [x] Cookie-based auth for Stratechery 2025-12-09
 - [x] Cookie expiration monitoring with ntfy alerts 2025-12-09
-- [x] 7 systemd timers for automation 2025-12-09
+- [x] 13 systemd timers for automation 2025-12-09
 - [x] YouTube VPN proxy setup (NordVPN @ 100.112.130.100:8118) 2025-12-09
 - [x] Bulk import for messy folders (Instapaper, Pocket, etc.) 2025-12-10
 - [x] Podcast source validation script 2025-12-10
@@ -26,12 +54,16 @@
 - [x] Fixed false positives: JS check exempts >5000 words 2025-12-15
 - [x] Fixed false positives: paragraph check for 300+ word content 2025-12-15
 - [x] Marginal content recovery scripts (tiered approach) 2025-12-15
+- [x] Transcript reconciliation (disk→DB sync) 2025-12-21
+- [x] Whisper queue cleanup (old ID files deleted, fresh download) 2025-12-21
+- [x] URL retry system with proper state tracking 2025-12-21
+- [x] Hourly progress snapshot system 2025-12-21
 
 ### In Progress
 
-- [ ] Marginal recovery pipeline running (Tier 1: 289 high-priority articles) #quality
-- [ ] Complete podcast transcript backlog (~1,378 pending, 71.4% done) ~4h #podcasts
-- [ ] Stratechery full archive crawl (running in background) #stratechery
+- [ ] URL backlog processing (~2,084 remaining) - ETA 12h #urls
+- [ ] Podcast pending episodes (170 remaining) #podcasts
+- [ ] Whisper audio transcription (103 files on Mac Mini) #whisper
 
 ---
 

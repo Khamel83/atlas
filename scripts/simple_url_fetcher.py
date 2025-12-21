@@ -145,8 +145,21 @@ class SimpleURLFetcher:
         """Load state of what we've already fetched."""
         if self.state_file.exists():
             with open(self.state_file) as f:
-                return json.load(f)
-        return {'fetched': {}, 'failed': {}}
+                state = json.load(f)
+                # Migrate old 'failed' to 'retrying' if needed
+                if 'failed' in state and 'retrying' not in state:
+                    state['retrying'] = state.pop('failed')
+                    # Add attempt tracking to migrated entries
+                    for h, info in state['retrying'].items():
+                        if 'attempts' not in info:
+                            info['attempts'] = 1
+                            info['first_attempt'] = info.get('failed_at', datetime.now().isoformat())
+                            info['last_attempt'] = info.get('failed_at', datetime.now().isoformat())
+                            info['methods_tried'] = ['direct']
+                            # Schedule retry for 7 days after last attempt
+                            info['next_retry'] = (datetime.now()).isoformat()[:10]
+                return state
+        return {'fetched': {}, 'retrying': {}, 'truly_failed': {}}
 
     def _save_state(self):
         """Save state to disk."""
@@ -173,30 +186,105 @@ class SimpleURLFetcher:
         }
         self._save_state()
 
-    def _mark_failed(self, url: str, reason: str):
-        """Mark URL as failed."""
-        self.state['failed'][self._url_hash(url)] = {
-            'url': url,
-            'reason': reason,
-            'failed_at': datetime.now().isoformat()
-        }
+    def _mark_retrying(self, url: str, reason: str, methods_tried: list = None):
+        """Mark URL for retry later. Only becomes 'truly_failed' after 4 weeks of attempts."""
+        h = self._url_hash(url)
+        now = datetime.now()
+
+        # Get existing entry or create new one
+        existing = self.state.get('retrying', {}).get(h, {})
+        attempts = existing.get('attempts', 0) + 1
+        first_attempt = existing.get('first_attempt', now.isoformat())
+        prev_methods = existing.get('methods_tried', [])
+
+        # Merge methods tried
+        all_methods = list(set(prev_methods + (methods_tried or ['direct'])))
+
+        # Calculate next retry (7 days from now)
+        from datetime import timedelta
+        next_retry = (now + timedelta(days=7)).isoformat()[:10]
+
+        # Check if we should give up (4+ weeks of trying = 4+ attempts)
+        first_attempt_date = datetime.fromisoformat(first_attempt[:19])
+        weeks_trying = (now - first_attempt_date).days // 7
+
+        if weeks_trying >= 4 and attempts >= 4:
+            # Move to truly_failed
+            self.state.setdefault('truly_failed', {})[h] = {
+                'url': url,
+                'reason': f"Exhausted after {attempts} attempts over {weeks_trying} weeks: {reason}",
+                'attempts': attempts,
+                'first_attempt': first_attempt,
+                'last_attempt': now.isoformat(),
+                'methods_tried': all_methods,
+                'failed_at': now.isoformat()
+            }
+            # Remove from retrying
+            self.state.get('retrying', {}).pop(h, None)
+            logger.info(f"  💀 Truly failed after {attempts} attempts: {url[:60]}")
+        else:
+            # Update retrying entry
+            self.state.setdefault('retrying', {})[h] = {
+                'url': url,
+                'reason': reason,
+                'attempts': attempts,
+                'first_attempt': first_attempt,
+                'last_attempt': now.isoformat(),
+                'methods_tried': all_methods,
+                'next_retry': next_retry
+            }
+            logger.info(f"  🔄 Will retry (attempt {attempts}): {url[:60]}")
+
         self._save_state()
 
+    def _mark_failed(self, url: str, reason: str):
+        """Backwards compatibility - redirects to _mark_retrying."""
+        self._mark_retrying(url, reason)
+
     def get_pending_urls(self) -> list:
-        """Get URLs from queue that we haven't processed yet."""
+        """Get URLs from queue that we haven't processed yet, including retries due today."""
         if not self.queue_file.exists():
             return []
 
+        today = datetime.now().strftime('%Y-%m-%d')
         pending = []
+        retry_urls = []
+
+        # First, collect URLs from retry queue that are due
+        for h, info in self.state.get('retrying', {}).items():
+            next_retry = info.get('next_retry', '2000-01-01')
+            if next_retry <= today:
+                retry_urls.append(info['url'])
+
         with open(self.queue_file) as f:
             for line in f:
                 url = line.strip()
-                if url and url.startswith('http') and not self._is_fetched(url):
-                    # Skip if already failed (don't retry forever)
-                    if self._url_hash(url) not in self.state.get('failed', {}):
-                        pending.append(url)
+                if not url or not url.startswith('http'):
+                    continue
 
-        return pending
+                h = self._url_hash(url)
+
+                # Skip if already fetched successfully
+                if h in self.state.get('fetched', {}):
+                    continue
+
+                # Skip if truly failed (exhausted all options over 4+ weeks)
+                if h in self.state.get('truly_failed', {}):
+                    continue
+
+                # Skip if in retry queue but not due yet
+                if h in self.state.get('retrying', {}):
+                    next_retry = self.state['retrying'][h].get('next_retry', '2000-01-01')
+                    if next_retry > today:
+                        continue
+                    # Due for retry - will be picked up from retry_urls
+
+                # New URL or due for retry
+                if url not in retry_urls:
+                    pending.append(url)
+
+        # Combine: retries first (they've been waiting), then new URLs
+        return retry_urls + pending
 
     def fetch_content(self, url: str) -> Optional[Dict]:
         """Fetch and extract content from URL."""
@@ -292,6 +380,18 @@ class SimpleURLFetcher:
         """Process a single URL with verify+retry loop. Returns True if successful."""
         logger.info(f"Fetching: {url}")
 
+        # Track which methods we try
+        methods_tried = []
+
+        # Check if this is a retry - show attempt number
+        h = self._url_hash(url)
+        retry_info = self.state.get('retrying', {}).get(h)
+        if retry_info:
+            attempt = retry_info.get('attempts', 0) + 1
+            logger.info(f"  (Retry attempt #{attempt})")
+
+        # Try direct fetch first
+        methods_tried.append('direct')
         data = self.fetch_content(url)
 
         if data:
@@ -303,20 +403,23 @@ class SimpleURLFetcher:
 
                     # Auto-retry with robust_fetcher (archive.org, archive.is, etc)
                     if HAS_ROBUST:
-                        retry_data = self._retry_with_robust(url)
+                        methods_tried.append('robust_fallback')
+                        retry_data, fallback_methods = self._retry_with_robust(url)
+                        methods_tried.extend(fallback_methods)
+
                         if retry_data:
                             retry_result = verify_content(retry_data['content'], 'article')
                             if retry_result.quality != QualityLevel.BAD:
                                 data = retry_data
                                 logger.info(f"  ✅ Recovered via robust fallback")
                             else:
-                                self._mark_unrecoverable(url, f"All methods failed: {result.issues}")
+                                self._mark_unrecoverable(url, f"All methods failed: {result.issues}", methods_tried)
                                 return False
                         else:
-                            self._mark_unrecoverable(url, f"Robust fallback failed: {result.issues}")
+                            self._mark_unrecoverable(url, f"Robust fallback failed: {result.issues}", methods_tried)
                             return False
                     else:
-                        self._mark_failed(url, f"Quality check failed: {', '.join(result.issues[:2])}")
+                        self._mark_retrying(url, f"Quality check failed: {', '.join(result.issues[:2])}", methods_tried)
                         return False
                 elif result.quality == QualityLevel.MARGINAL:
                     logger.info(f"  ⚠️  Marginal quality (score {result.score})")
@@ -329,12 +432,15 @@ class SimpleURLFetcher:
             # Direct fetch failed, try robust fallback
             if HAS_ROBUST:
                 logger.info(f"  ⚠️  Direct fetch failed, trying robust fallback...")
-                retry_data = self._retry_with_robust(url)
+                methods_tried.append('robust_fallback')
+                retry_data, fallback_methods = self._retry_with_robust(url)
+                methods_tried.extend(fallback_methods)
+
                 if retry_data:
                     if HAS_QUALITY:
                         result = verify_content(retry_data['content'], 'article')
                         if result.quality == QualityLevel.BAD:
-                            self._mark_unrecoverable(url, f"Recovered but quality bad: {result.issues}")
+                            self._mark_unrecoverable(url, f"Recovered but quality bad: {result.issues}", methods_tried)
                             return False
 
                     filepath = self.save_article(retry_data)
@@ -342,12 +448,17 @@ class SimpleURLFetcher:
                     logger.info(f"  ✅ Recovered via robust fallback: {filepath}")
                     return True
 
-            self._mark_failed(url, "Could not extract content")
-            logger.warning(f"  ❌ Failed: {url}")
+            self._mark_retrying(url, "Could not extract content", methods_tried)
+            logger.warning(f"  ❌ Failed this attempt: {url}")
             return False
 
-    def _retry_with_robust(self, url: str) -> Optional[Dict]:
-        """Try fetching with robust_fetcher cascade (archive.org, etc)."""
+    def _retry_with_robust(self, url: str) -> tuple:
+        """Try fetching with robust_fetcher cascade (archive.org, archive.is, wayback, etc).
+
+        Returns:
+            tuple: (data_dict or None, list of methods tried)
+        """
+        methods_tried = []
         try:
             # Find cookie file for this URL's domain
             cookies_path = self._get_cookie_file_for_url(url)
@@ -356,18 +467,27 @@ class SimpleURLFetcher:
                 cookies_path=cookies_path
             )
             result = fetcher.fetch(url)
+
+            # Track which methods the robust fetcher tried
+            if hasattr(result, 'method') and result.method:
+                methods_tried.append(result.method)
+            else:
+                # Default methods attempted by robust fetcher
+                methods_tried.extend(['playwright', 'archive.is', 'wayback'])
+
             if result.success and result.output_dir:
                 content_file = Path(result.output_dir) / 'content.md'
                 if content_file.exists():
                     content = content_file.read_text()
-                    return {
+                    return ({
                         'title': result.title or url,
                         'content': content,
                         'url': url
-                    }
+                    }, methods_tried)
         except Exception as e:
             logger.error(f"  Robust fallback error: {e}")
-        return None
+            methods_tried.append('error')
+        return (None, methods_tried)
 
     def _get_cookie_file_for_url(self, url: str) -> Optional[Path]:
         """Find the cookie file for a URL's domain."""
@@ -393,16 +513,15 @@ class SimpleURLFetcher:
 
         return None
 
-    def _mark_unrecoverable(self, url: str, reason: str):
-        """Mark URL as unrecoverable (tried all methods)."""
-        self.state['failed'][self._url_hash(url)] = {
-            'url': url,
-            'reason': reason,
-            'status': 'unrecoverable',
-            'failed_at': datetime.now().isoformat()
-        }
-        self._save_state()
-        logger.warning(f"  ❌ Unrecoverable: {reason}")
+    def _mark_unrecoverable(self, url: str, reason: str, methods_tried: list = None):
+        """Mark URL as having failed this attempt with all methods tried.
+
+        This still uses _mark_retrying() which will eventually move to truly_failed
+        after 4+ weeks of attempts. This ensures we keep trying over multiple weeks.
+        """
+        all_methods = methods_tried or ['direct', 'robust_fallback']
+        self._mark_retrying(url, reason, methods_tried=all_methods)
+        logger.warning(f"  ❌ This attempt failed: {reason}")
 
     def run_once(self) -> int:
         """Process all pending URLs. Returns count of successful fetches."""

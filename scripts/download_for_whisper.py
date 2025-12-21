@@ -2,26 +2,28 @@
 """
 Download podcast audio files for local Whisper transcription.
 
-Downloads audio for episodes marked 'local' to a watch folder.
-MacWhisper Pro on Mac Mini watches this folder and transcribes automatically.
+Downloads audio for episodes that need Whisper transcription.
 
 Usage:
-    # Download 10 episodes
-    python scripts/download_for_whisper.py --limit 10
+    # Download from config (recommended)
+    python scripts/download_for_whisper.py --from-config --limit 10
 
-    # Download all
-    python scripts/download_for_whisper.py --all
+    # Download by status (legacy)
+    python scripts/download_for_whisper.py --status local --limit 10
 
     # Dry run
-    python scripts/download_for_whisper.py --limit 10 --dry-run
+    python scripts/download_for_whisper.py --from-config --dry-run
+
+Config file: config/whisper_podcasts.json
+  Defines which podcasts need Whisper (paywalled, no online source, etc.)
 
 Output folder: data/whisper_queue/audio/
   Files named: {podcast_slug}_{episode_id}_{date}_{title_slug}.mp3
 
-MacWhisper Pro config:
+MacWhisper/WhisperX config:
   - Watch folder: /path/to/smb/atlas/data/whisper_queue/audio
   - Output folder: /path/to/smb/atlas/data/whisper_queue/transcripts
-  - Output format: TXT or SRT
+  - Output format: JSON (WhisperX) or TXT (MacWhisper)
 """
 
 import argparse
@@ -82,6 +84,19 @@ def download_audio(url: str, output_path: Path, timeout: int = 600) -> bool:
         return False
 
 
+def load_whisper_config() -> list:
+    """Load podcasts that need Whisper from config file."""
+    config_path = Path(__file__).parent.parent / 'config' / 'whisper_podcasts.json'
+    if not config_path.exists():
+        logger.warning(f"Config not found: {config_path}")
+        return []
+
+    with open(config_path) as f:
+        data = json.load(f)
+
+    return [p['slug'] for p in data.get('podcasts', [])]
+
+
 def main():
     parser = argparse.ArgumentParser(description='Download audio for Whisper')
     parser.add_argument('--output', '-o', default='data/whisper_queue/audio',
@@ -95,7 +110,9 @@ def main():
     parser.add_argument('--delay', '-d', type=float, default=2.0,
                         help='Delay between downloads (seconds)')
     parser.add_argument('--status', '-s', default='local',
-                        help='Episode status to process')
+                        help='Episode status to process (legacy mode)')
+    parser.add_argument('--from-config', action='store_true',
+                        help='Use config/whisper_podcasts.json to determine podcasts')
     args = parser.parse_args()
 
     output_dir = Path(args.output)
@@ -110,15 +127,31 @@ def main():
     store = PodcastStore()
     podcasts = store.list_podcasts()
 
+    # Determine which podcasts to process
+    if args.from_config:
+        whisper_slugs = set(load_whisper_config())
+        if not whisper_slugs:
+            logger.error("No podcasts configured in config/whisper_podcasts.json")
+            return
+        logger.info(f"Using config: {len(whisper_slugs)} podcasts need Whisper")
+        # Filter podcasts to only those in config
+        podcasts = [p for p in podcasts if p.slug in whisper_slugs]
+        # For config mode, look for unknown or failed episodes
+        target_statuses = {'unknown', 'failed'}
+    else:
+        # Legacy mode: use --status flag
+        target_statuses = {args.status}
+
     # Collect episodes to download
     to_download = []
     for podcast in podcasts:
         episodes = store.get_episodes_by_podcast(podcast.id)
         for ep in episodes:
-            if ep.transcript_status == args.status and ep.id not in downloaded_ids:
+            if ep.transcript_status in target_statuses and ep.id not in downloaded_ids:
                 # Get audio URL from metadata or fall back to episode URL
                 audio_url = ep.metadata.get('audio_url') or ep.metadata.get('enclosure_url') or ep.url
-                to_download.append((podcast, ep, audio_url))
+                if audio_url:
+                    to_download.append((podcast, ep, audio_url))
 
     logger.info(f"Found {len(to_download)} episodes needing download")
 
