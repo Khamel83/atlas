@@ -398,6 +398,13 @@ class ContentIndexer:
         if "notes" in types:
             yield from self.discover_notes()
 
+    def is_content_indexed(self, content_id: str) -> bool:
+        """Check if content is already indexed (fast check, no embedding call)."""
+        conn = self.vector_store._get_connection()
+        cursor = conn.cursor()
+        cursor.execute("SELECT 1 FROM chunks WHERE content_id = ? LIMIT 1", (content_id,))
+        return cursor.fetchone() is not None
+
     def index_content(
         self,
         item: ContentItem,
@@ -408,12 +415,10 @@ class ContentIndexer:
 
         Returns number of chunks indexed.
         """
-        # Check if already indexed
-        if not force:
-            existing = self.vector_store.get_chunks_for_content(item.content_id)
-            if existing:
-                logger.debug(f"Already indexed: {item.content_id}")
-                return 0
+        # Check if already indexed BEFORE any expensive operations
+        if not force and self.is_content_indexed(item.content_id):
+            logger.debug(f"Already indexed: {item.content_id}")
+            return 0
 
         # Chunk the content
         chunks = self.chunker.chunk_text(
@@ -452,14 +457,20 @@ class ContentIndexer:
 
         Returns (items_indexed, chunks_indexed).
         """
+        # Pre-load indexed IDs for fast filtering, but also check DB in index_content
+        # This avoids most duplicate work while the DB check catches edge cases
         indexed_ids = set() if force else self.get_indexed_content_ids()
+        logger.info(f"Found {len(indexed_ids)} already-indexed content items")
 
         items_indexed = 0
         chunks_indexed = 0
+        skipped = 0
         batch = []
 
         for item in self.discover_all(content_types):
+            # Fast check against pre-loaded set
             if item.content_id in indexed_ids:
+                skipped += 1
                 continue
 
             if dry_run:

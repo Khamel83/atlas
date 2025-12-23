@@ -134,9 +134,10 @@ class VectorStore:
             json.dumps(chunk.metadata),
         ))
 
-        # Store embedding
+        # Store embedding (vec0 doesn't support REPLACE, so delete first if exists)
+        cursor.execute("DELETE FROM chunk_vectors WHERE chunk_id = ?", (chunk_id,))
         cursor.execute("""
-            INSERT OR REPLACE INTO chunk_vectors (chunk_id, embedding)
+            INSERT INTO chunk_vectors (chunk_id, embedding)
             VALUES (?, ?)
         """, (chunk_id, json.dumps(embedding)))
 
