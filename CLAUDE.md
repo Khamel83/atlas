@@ -50,20 +50,26 @@ This single command shows everything: services, podcasts, content, URL queue, qu
 
 ```
 atlas/
-├── modules/
+├── modules/              # 11 active modules (rationalized 2025-12-23)
 │   ├── podcasts/         # Podcast transcript system
 │   │   ├── cli.py        # Main CLI interface
 │   │   ├── store.py      # SQLite database
 │   │   ├── rss.py        # RSS feed parsing
 │   │   ├── speaker_mapper.py  # Map speaker labels to names
-│   │   └── resolvers/    # Transcript sources (7 resolvers)
+│   │   └── resolvers/    # 16 transcript resolvers (11 CLI + 4 bulk crawlers + 1 pattern)
 │   ├── quality/          # Content verification system
-│   │   ├── verifier.py   # Core verification logic
+│   │   ├── verifier.py   # Core verification logic + is_garbage_content()
 │   │   └── __init__.py   # verify_file(), verify_content()
 │   ├── storage/          # Content storage with SQLite index
 │   ├── ingest/           # Gmail, YouTube, robust URL fetcher
 │   │   └── robust_fetcher.py  # Cascading fallback fetcher
-│   └── pipeline/         # Content processing pipeline
+│   ├── pipeline/         # Content processing pipeline
+│   ├── enrich/           # Ad removal, URL sanitization, link extraction
+│   ├── links/            # Link discovery and approval pipeline
+│   ├── ask/              # Semantic search & Q&A (disabled, ready to activate)
+│   ├── status/           # Unified status reporting
+│   ├── browser/          # Playwright headless browser wrapper
+│   └── notifications/    # Alert system (Telegram, ntfy)
 ├── api/                  # FastAPI REST API
 │   └── routers/
 │       ├── dashboard.py  # Progress monitoring endpoints
@@ -1113,13 +1119,15 @@ SELECT quality, COUNT(*) FROM verifications GROUP BY quality;
 SELECT file_path, issues FROM verifications WHERE quality = 'bad';
 ```
 
-### Current Stats (2025-12-23)
+### Current Stats (2025-12-23, post-cleanup)
 
 | Quality | Count | Percentage |
 |---------|-------|------------|
-| Good | 75,572 | 88.3% |
-| Marginal | 8,531 | 10.0% |
-| Bad | 994 | 1.2% |
+| Good | 75,572 | 97.8% |
+| Marginal | 708 | 0.9% |
+| Bad | 994 | 1.3% |
+
+**Note:** 13,256 garbage files were removed (failed fetches masquerading as content).
 
 ### Marginal Cleanup
 
@@ -1373,3 +1381,56 @@ Vector store at `data/indexes/atlas_vectors.db`:
 - `chunk_vectors` - SQLite-vec embeddings (1536 dimensions)
 - `chunks_fts` - FTS5 table for keyword search
 - `enrichments` - LLM-generated summaries and tags (future)
+
+---
+
+## Codebase Rationalization (2025-12-23)
+
+The codebase was rationalized to remove ~8.7k lines of dead/duplicate code.
+
+### What Was Removed
+
+| Category | Files | LOC | Reason |
+|----------|-------|-----|--------|
+| `modules/transcript_discovery/` | 16 | ~6k | Zero imports; superseded by `podcasts/resolvers/` |
+| `modules/content_extraction/` | 3 | ~1.5k | Zero imports; superseded by `quality/` module |
+| `modules/analysis/` | 1 | ~500 | Zero imports; unused analytics |
+| `modules/wormhole/` | 2 | ~300 | Zero imports; unused wormhole integration |
+| `resolvers/google_search.py` | 1 | 508 | Never integrated into CLI |
+| `resolvers/smart_discovery.py` | 1 | 578 | Experimental only |
+
+### What Was Restored
+
+8 scripts moved from `scripts/_archive/` back to `scripts/` (referenced in docs):
+- `validate_podcast_sources.py`, `analyze_link_queue.py`, `analyze_ads.py`
+- `enrich_improve_loop.py`, `recover_marginal_tiered.py`
+- `stratechery_crawler.py`, `retry_failed_urls.py`, `fix_episode_urls.py`
+
+### Active Modules (11)
+
+```
+modules/
+├── podcasts/       # 16 resolvers (transcript sourcing)
+├── ingest/         # URL/content ingestion
+├── storage/        # File storage + SQLite index
+├── pipeline/       # Content orchestration
+├── quality/        # Content verification
+├── enrich/         # Ad removal, URL sanitization
+├── links/          # Link discovery pipeline
+├── ask/            # Semantic search (disabled)
+├── status/         # Unified monitoring
+├── browser/        # Playwright wrapper
+└── notifications/  # Alert system
+```
+
+### Rollback
+
+If issues arise:
+```bash
+./scripts/rollback_rationalization.sh
+# Or: git checkout codebase-rationalization-backup -- modules/ scripts/
+```
+
+### Plan File
+
+Full rationalization plan: `thoughts/shared/plans/2025-12-23-codebase-rationalization.md`
