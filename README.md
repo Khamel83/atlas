@@ -384,7 +384,25 @@ Speakers are automatically mapped from labels (SPEAKER_00) to names:
 
 ### Mac Mini Setup
 
-Full setup instructions: `scripts/mac_mini/README.md`
+**SMB Mount (Automatic):**
+- LaunchAgent: `~/Library/LaunchAgents/com.atlas.smb-mount.plist`
+- Mount script: `scripts/mac_mini/mount_atlas_whisper.sh`
+- Runs every 5 minutes to ensure mount is active
+
+**WhisperX Watcher:**
+- LaunchAgent: `~/Library/LaunchAgents/com.atlas.whisperx.plist`
+- Watcher script: `scripts/mac_mini/whisperx_watcher.py`
+- Watchdog features (added 2025-12-23):
+  - Kills hung processes (<5% CPU for 10 minutes)
+  - Hard timeout: 90 minutes per file
+  - Auto-recovery on next file
+
+**Check Status:**
+```bash
+# From homelab
+ssh macmini "ps aux | grep whisperx | grep -v grep"
+ssh macmini "ls /Volumes/atlas-whisper/transcripts/ | wc -l"
+```
 
 ---
 
@@ -568,6 +586,22 @@ Vector store at `data/indexes/atlas_vectors.db`:
 - `chunks` - Text chunks with metadata
 - `chunk_vectors` - SQLite-vec embeddings (1536 dimensions)
 - `chunks_fts` - FTS5 table for keyword search
+
+### Current Stats (2025-12-23)
+- **440,030 chunks** indexed
+- **339M tokens** embedded via Voyage AI
+- **6,869 episodes** total, 4,874 fetched (71%)
+
+### When Embeddings Are Complete
+
+Once all transcripts are fetched and indexed, Atlas Ask enables:
+
+1. **Query anything**: "What did Ben Thompson say about Apple's AI strategy?"
+2. **Cross-reference**: Find connections across podcasts, articles, newsletters
+3. **Research mode**: Deep dive on topics with full source attribution
+4. **Export**: Generate reports from semantic search results
+
+The 339M tokens represent ~5+ years of curated content, fully searchable.
 
 ---
 
