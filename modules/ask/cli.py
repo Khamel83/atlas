@@ -32,6 +32,134 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def cmd_annotate(args):
+    """Add an annotation to a chunk or content."""
+    from modules.ask.annotations import AnnotationStore, AnnotationType, Reaction
+
+    store = AnnotationStore()
+
+    if args.subcommand == "note":
+        ann = store.add_note(
+            target_id=args.target_id,
+            note=args.note,
+            target_type=args.type,
+        )
+        print(f"Added note [{ann.id}] to {args.type} {args.target_id}")
+
+    elif args.subcommand == "react":
+        try:
+            reaction = Reaction(args.reaction)
+        except ValueError:
+            print(f"Invalid reaction. Use: {', '.join(r.value for r in Reaction)}")
+            return 1
+
+        ann = store.add_reaction(
+            target_id=args.target_id,
+            reaction=reaction,
+            target_type=args.type,
+        )
+        print(f"Added {args.reaction} reaction [{ann.id}] to {args.type} {args.target_id}")
+
+    elif args.subcommand == "importance":
+        ann = store.set_importance(
+            chunk_id=args.chunk_id,
+            weight=args.weight,
+        )
+        print(f"Set importance weight {args.weight} for chunk {args.chunk_id}")
+
+    elif args.subcommand == "list":
+        annotations = store.list_annotated(limit=args.limit)
+
+        if not annotations:
+            print("No annotations found.")
+            return 0
+
+        print(f"\n{'='*60}")
+        print(f"ANNOTATIONS ({len(annotations)} found)")
+        print('='*60)
+
+        for ann in annotations:
+            print(f"\n[{ann.id}] {ann.annotation_type.value} on {ann.target_type} {ann.target_id}")
+            print(f"   Value: {ann.value[:100]}{'...' if len(ann.value) > 100 else ''}")
+            print(f"   Created: {ann.created_at.strftime('%Y-%m-%d %H:%M')}")
+
+    elif args.subcommand == "stats":
+        stats = store.stats()
+        print(f"\n{'='*60}")
+        print("ANNOTATION STATISTICS")
+        print('='*60)
+        for k, v in stats.items():
+            print(f"  {k}: {v}")
+
+    return 0
+
+
+def cmd_synthesize(args):
+    """Synthesize insights from multiple sources."""
+    from modules.ask.synthesis import MultiSourceSynthesizer
+
+    synth = MultiSourceSynthesizer()
+
+    try:
+        logger.info(f"Synthesizing: {args.query} (mode: {args.mode})")
+
+        # Parse source filter if provided
+        source_filter = None
+        if args.sources:
+            source_filter = [s.strip() for s in args.sources.split(",")]
+
+        result = synth.synthesize(
+            query=args.query,
+            mode=args.mode,
+            min_sources=args.min_sources,
+            max_chunks_per_source=args.chunks_per_source,
+            source_filter=source_filter,
+        )
+
+        print(f"\n{'='*60}")
+        print(f"SYNTHESIS ({result.mode.upper()}) - {len(result.sources)} sources")
+        print('='*60)
+
+        # Handle output format
+        if args.output:
+            from modules.ask.output_formats import (
+                format_as_briefing,
+                format_as_email,
+                format_as_markdown,
+                save_output,
+            )
+
+            if args.output == "briefing":
+                output = format_as_briefing(result, audience=args.audience)
+            elif args.output == "email":
+                output = format_as_email(result, recipient_context=args.recipient or "")
+            else:
+                output = format_as_markdown(result)
+
+            print(f"\n{output.content}")
+
+            if args.save:
+                filepath = save_output(output)
+                print(f"\nSaved to: {filepath}")
+
+            print(f"\n[Format: {args.output} | Tokens: {output.tokens_used}]")
+        else:
+            print(f"\n{result.synthesis}")
+
+            print(f"\n{'='*60}")
+            print(f"[Confidence: {result.confidence} | Sources: {len(result.sources)} | Tokens: {result.tokens_used}]")
+
+            if args.verbose:
+                print(f"\nSources used:")
+                for i, cluster in enumerate(result.clusters, 1):
+                    print(f"  {i}. {cluster.source_name} ({len(cluster.chunks)} chunks, avg: {cluster.avg_score:.4f})")
+
+        return 0
+
+    finally:
+        synth.close()
+
+
 def cmd_ask(args):
     """Ask a question and get an answer."""
     from modules.ask.config import get_config
@@ -290,14 +418,88 @@ def main():
     # stats command
     subparsers.add_parser("stats", help="Show statistics")
 
+    # synthesize command
+    synth_parser = subparsers.add_parser("synthesize", help="Multi-source synthesis")
+    synth_parser.add_argument("query", help="Research question")
+    synth_parser.add_argument(
+        "--mode", "-m",
+        choices=["compare", "timeline", "summarize", "contradict"],
+        default="summarize",
+        help="Synthesis mode (default: summarize)"
+    )
+    synth_parser.add_argument(
+        "--min-sources", type=int, default=3,
+        help="Minimum different sources to include (default: 3)"
+    )
+    synth_parser.add_argument(
+        "--chunks-per-source", type=int, default=3,
+        help="Max chunks per source (default: 3)"
+    )
+    synth_parser.add_argument(
+        "--sources", type=str, default=None,
+        help="Comma-separated source IDs to limit to"
+    )
+    synth_parser.add_argument("-v", "--verbose", action="store_true", help="Show source details")
+    synth_parser.add_argument(
+        "--output", "-o",
+        choices=["briefing", "email", "markdown"],
+        help="Output format (default: raw synthesis)"
+    )
+    synth_parser.add_argument(
+        "--audience",
+        choices=["general", "technical", "executive"],
+        default="general",
+        help="Audience for briefing format"
+    )
+    synth_parser.add_argument(
+        "--recipient",
+        help="Recipient context for email format"
+    )
+    synth_parser.add_argument(
+        "--save", "-s",
+        action="store_true",
+        help="Save output to file"
+    )
+
+    # annotate command with subcommands
+    ann_parser = subparsers.add_parser("annotate", help="Add annotations to chunks")
+    ann_subparsers = ann_parser.add_subparsers(dest="subcommand", help="Annotation type")
+
+    # annotate note
+    note_parser = ann_subparsers.add_parser("note", help="Add a text note")
+    note_parser.add_argument("target_id", help="Chunk or content ID")
+    note_parser.add_argument("note", help="Note text")
+    note_parser.add_argument("--type", "-t", default="chunk", choices=["chunk", "content"])
+
+    # annotate react
+    react_parser = ann_subparsers.add_parser("react", help="Add a reaction")
+    react_parser.add_argument("target_id", help="Chunk or content ID")
+    react_parser.add_argument("reaction", choices=["agree", "disagree", "interesting", "important", "question"])
+    react_parser.add_argument("--type", "-t", default="chunk", choices=["chunk", "content"])
+
+    # annotate importance
+    imp_parser = ann_subparsers.add_parser("importance", help="Set importance weight")
+    imp_parser.add_argument("chunk_id", help="Chunk ID")
+    imp_parser.add_argument("weight", type=float, help="Weight (1.0 = normal, 2.0 = double)")
+
+    # annotate list
+    list_parser = ann_subparsers.add_parser("list", help="List annotations")
+    list_parser.add_argument("--limit", "-l", type=int, default=20)
+
+    # annotate stats
+    ann_subparsers.add_parser("stats", help="Show annotation statistics")
+
     args = parser.parse_args()
 
     if not args.command:
         parser.print_help()
         return 1
 
-    # Check for API key
-    if not os.getenv("OPENROUTER_API_KEY"):
+    # Commands that don't need API key
+    no_api_key_commands = {"annotate", "stats"}
+
+    # Check for API key (not needed for some commands)
+    if args.command not in no_api_key_commands and not os.getenv("OPENROUTER_API_KEY"):
         print("OPENROUTER_API_KEY not set.")
         print("Run with: ./scripts/run_with_secrets.sh python -m modules.ask.cli ...")
         return 1
@@ -307,6 +509,8 @@ def main():
         "search": cmd_search,
         "index": cmd_index,
         "stats": cmd_stats,
+        "synthesize": cmd_synthesize,
+        "annotate": cmd_annotate,
     }
 
     return commands[args.command](args)

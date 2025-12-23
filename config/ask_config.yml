@@ -24,3 +24,10 @@ retrieval:
   vector_weight: 0.7
   keyword_weight: 0.3
   max_results: 20
+
+# Multi-source synthesis settings
+synthesis:
+  min_sources: 3
+  max_chunks_per_source: 3
+  max_total_chunks: 15
+  max_output_tokens: 2000

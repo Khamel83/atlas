@@ -14,11 +14,11 @@ Content is scattered across the internet - podcast transcripts on various sites,
 
 ### Current State
 - **Status**: Production (running 24/7 on homelab)
-- **Version**: 1.0
-- **Transcripts**: 4,874 fetched / 6,869 total (71%)
+- **Version**: 2.0 (Intelligence Layer)
+- **Transcripts**: 4,981 fetched / 6,869 total (73%)
 - **Embeddings**: 440,030 chunks indexed
-- **Last Milestone**: Fixed podcast resolvers, added WhisperX watchdog
-- **Next Milestone**: Clear ~2,000 pending transcripts, complete embeddings
+- **Last Milestone**: Added synthesis, capture, digest, and annotations modules
+- **Next Milestone**: WhisperX processing 1,045 files, then re-index embeddings
 
 ---
 
@@ -42,6 +42,11 @@ Transcription: WhisperX on Mac Mini M4 (via SMB mount)
 | 16 Resolvers | Source transcripts from various providers | `modules/podcasts/resolvers/` |
 | WhisperX Pipeline | Local transcription for paywalled podcasts | Mac Mini + `scripts/mac_mini/` |
 | Atlas Ask | Semantic search & Q&A | `modules/ask/` |
+| Multi-Source Synthesis | Compare/contrast across sources | `modules/ask/synthesis.py` |
+| Annotations | Personal notes & importance weighting | `modules/ask/annotations.py` |
+| Output Formats | Briefing, email, markdown export | `modules/ask/output_formats.py` |
+| Capture Inbox | Save now, process later | `modules/capture/` |
+| Weekly Digest | Topic clustering & summaries | `modules/digest/` |
 | Indexer | Generate and store embeddings | `modules/ask/indexer.py` |
 | Content Storage | File-based markdown with SQLite index | `modules/storage/` |
 | Quality Verifier | Detect garbage/truncated content | `modules/quality/` |
@@ -161,15 +166,20 @@ Linux Homelab                    Mac Mini M4
 - [x] Semantic search with 440K chunks
 - [x] Content enrichment (ad removal)
 - [x] Quality verification
+- [x] **Multi-source synthesis** (compare, timeline, summarize, contradict modes)
+- [x] **Capture inbox** (save URLs/text/files for later processing)
+- [x] **Weekly digest** (topic clustering and summaries)
+- [x] **Personal annotations** (notes, reactions, importance weighting)
+- [x] **Output formats** (briefing, email draft, markdown)
 
 ### What's In Progress
-- [ ] Clearing ~2,000 pending transcripts
 - [ ] WhisperX processing 1,045 files (~2-3 weeks)
-- [ ] Tyler (270 episodes being fetched)
+- [ ] Clearing ~1,600 pending transcripts
+- [ ] Re-index embeddings after transcripts complete
 
 ### Known Issues
 - YouTube transcript API rate-limited from homelab IP
-- Some podcast URLs in DB point to libsyn (fixed for Tyler)
+- Digest clustering requires scikit-learn (optional dep)
 
 ---
 
@@ -198,6 +208,15 @@ python -m modules.podcasts.cli fetch-transcripts --slug acquired --limit 10
 
 # Ask a question
 ./scripts/run_with_secrets.sh python -m modules.ask.cli ask "question here"
+
+# Multi-source synthesis
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "AI regulation" --mode compare
+
+# Capture for later
+python -m modules.capture.cli url "https://example.com" --tags ai,work
+
+# Weekly digest
+./scripts/run_with_secrets.sh python -m modules.digest.cli generate --save
 ```
 
 ### Database Queries

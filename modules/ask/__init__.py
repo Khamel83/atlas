@@ -21,6 +21,24 @@ from .chunker import ContentChunker, Chunk, chunk_content
 from .vector_store import VectorStore, SearchResult
 from .retriever import HybridRetriever, RetrievalResult, retrieve
 from .synthesizer import AnswerSynthesizer, SynthesizedAnswer, ask
+from .synthesis import MultiSourceSynthesizer, SynthesisResult, synthesize_query
+from .annotations import (
+    AnnotationStore,
+    Annotation,
+    AnnotationType,
+    Reaction,
+    annotate_note,
+    annotate_reaction,
+    set_importance,
+    get_annotations,
+)
+from .output_formats import (
+    FormattedOutput,
+    format_as_briefing,
+    format_as_email,
+    format_as_markdown,
+    save_output,
+)
 from .indexer import ContentIndexer, index_single
 
 __all__ = [
@@ -45,6 +63,25 @@ __all__ = [
     "AnswerSynthesizer",
     "SynthesizedAnswer",
     "ask",
+    # Multi-source synthesis
+    "MultiSourceSynthesizer",
+    "SynthesisResult",
+    "synthesize_query",
+    # Annotations
+    "AnnotationStore",
+    "Annotation",
+    "AnnotationType",
+    "Reaction",
+    "annotate_note",
+    "annotate_reaction",
+    "set_importance",
+    "get_annotations",
+    # Output formats
+    "FormattedOutput",
+    "format_as_briefing",
+    "format_as_email",
+    "format_as_markdown",
+    "save_output",
     # Indexer
     "ContentIndexer",
     "index_single",

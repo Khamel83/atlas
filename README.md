@@ -30,7 +30,7 @@ Content is scattered across the internet - podcast transcripts on various sites,
 
 ```
 atlas/
-├── modules/              # 11 active modules
+├── modules/              # 13 active modules
 │   ├── podcasts/         # Podcast transcript system
 │   │   ├── cli.py        # Main CLI interface
 │   │   ├── store.py      # SQLite database
@@ -47,6 +47,11 @@ atlas/
 │   ├── enrich/           # Ad removal, URL sanitization, link extraction
 │   ├── links/            # Link discovery and approval pipeline
 │   ├── ask/              # Semantic search & Q&A
+│   │   ├── synthesis.py      # Multi-source synthesis
+│   │   ├── annotations.py    # Personal notes & reactions
+│   │   └── output_formats.py # Briefing, email, markdown
+│   ├── capture/          # Quick inbox (save now, process later)
+│   ├── digest/           # Weekly content summaries
 │   ├── status/           # Unified status reporting
 │   ├── browser/          # Playwright headless browser wrapper
 │   └── notifications/    # Alert system (Telegram, ntfy)
@@ -602,6 +607,137 @@ Once all transcripts are fetched and indexed, Atlas Ask enables:
 4. **Export**: Generate reports from semantic search results
 
 The 339M tokens represent ~5+ years of curated content, fully searchable.
+
+---
+
+## Atlas Ask v2: Synthesis & Intelligence Layer
+
+Beyond simple Q&A, Atlas Ask v2 adds multi-source synthesis, annotations, and output formatting.
+
+### Multi-Source Synthesis
+
+Compare, contrast, and synthesize insights across multiple sources:
+
+```bash
+# Compare how sources agree/disagree
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "AI regulation" --mode compare
+
+# Timeline: how thinking evolved
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "Apple strategy" --mode timeline
+
+# Summarize key insights
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "remote work" --mode summarize
+
+# Find contradictions
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "crypto" --mode contradict
+```
+
+### Output Formats
+
+Transform synthesis into shareable formats:
+
+```bash
+# Executive briefing
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "AI hiring" --output briefing --audience executive
+
+# Email draft
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "competitor analysis" --output email --recipient "my manager"
+
+# Save to file
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "topic" --output markdown --save
+```
+
+### Personal Annotations
+
+Annotate chunks to improve retrieval and add personal context:
+
+```bash
+# Add a note
+python -m modules.ask.cli annotate note "chunk_id" "This contradicts what Tyler said"
+
+# React (boosts retrieval)
+python -m modules.ask.cli annotate react "chunk_id" important
+python -m modules.ask.cli annotate react "chunk_id" agree
+
+# Set importance weight (1.0=normal, 2.0=double)
+python -m modules.ask.cli annotate importance "chunk_id" 2.0
+
+# List annotations
+python -m modules.ask.cli annotate list
+```
+
+---
+
+## Capture System (Quick Inbox)
+
+Save URLs, text, or files now - process later. Perfect for capturing content when you don't have time to read it.
+
+### Quick Capture
+
+```bash
+# Capture a URL
+python -m modules.capture.cli url "https://example.com/article" --tags ai,work
+
+# Capture text snippet
+python -m modules.capture.cli text "Important thought I want to remember" --tags personal
+
+# Capture a file
+python -m modules.capture.cli file ~/Downloads/report.pdf --tags research
+```
+
+### Inbox Management
+
+```bash
+# List pending items
+python -m modules.capture.cli inbox --status pending
+
+# Process inbox (fetches, chunks, embeds)
+./scripts/run_with_secrets.sh python -m modules.capture.cli process --limit 10
+
+# Show stats
+python -m modules.capture.cli stats
+
+# Delete an item
+python -m modules.capture.cli delete <item_id>
+```
+
+### Data Location
+
+- SQLite database: `data/capture/inbox.db`
+- Processed items go to standard content locations
+
+---
+
+## Weekly Digest System
+
+Automatic clustering and summarization of recent content.
+
+### Generate Digest
+
+```bash
+# Generate digest for last 7 days
+./scripts/run_with_secrets.sh python -m modules.digest.cli generate
+
+# Custom period
+./scripts/run_with_secrets.sh python -m modules.digest.cli generate --days 14
+
+# Save to file
+./scripts/run_with_secrets.sh python -m modules.digest.cli generate --save
+
+# JSON output
+./scripts/run_with_secrets.sh python -m modules.digest.cli generate --json
+```
+
+### Digest History
+
+```bash
+python -m modules.digest.cli history
+```
+
+### Data Location
+
+- Saved digests: `data/digests/YYYY-MM-DD.md`
+- Uses k-means clustering on embeddings to find topics
 
 ---
 

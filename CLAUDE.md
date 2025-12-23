@@ -48,6 +48,22 @@ python -m modules.podcasts.cli discover --all
 ./scripts/run_with_secrets.sh python -m modules.ask.indexer --all
 ./scripts/run_with_secrets.sh python -m modules.ask.cli ask "question"
 
+# Multi-source Synthesis
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "topic" --mode compare
+./scripts/run_with_secrets.sh python -m modules.ask.cli synthesize "topic" --output briefing --audience executive
+
+# Capture (save for later)
+python -m modules.capture.cli url "https://example.com" --tags ai,work
+python -m modules.capture.cli inbox --status pending
+./scripts/run_with_secrets.sh python -m modules.capture.cli process --limit 10
+
+# Weekly Digest
+./scripts/run_with_secrets.sh python -m modules.digest.cli generate --save
+
+# Annotations
+python -m modules.ask.cli annotate note "chunk_id" "My note"
+python -m modules.ask.cli annotate react "chunk_id" important
+
 # Enrichment (ad removal)
 ./venv/bin/python scripts/run_enrichment.py
 
@@ -66,8 +82,10 @@ python -m modules.podcasts.cli discover --all
 | `data/clean/` | Ad-stripped versions (for indexing) |
 | `data/indexes/atlas_vectors.db` | Embeddings vector store |
 | `data/podcasts/atlas_podcasts.db` | Podcast/episode database |
+| `data/capture/inbox.db` | Capture inbox queue |
+| `data/digests/` | Weekly digest markdown files |
 
-## Active Modules (11)
+## Active Modules (13)
 
 ```
 modules/
@@ -78,7 +96,9 @@ modules/
 ├── quality/        # Content verification
 ├── enrich/         # Ad removal, URL cleanup
 ├── links/          # Link discovery pipeline
-├── ask/            # Semantic search & Q&A
+├── ask/            # Semantic search & Q&A (+ synthesis, annotations)
+├── capture/        # Quick inbox (save now, process later)
+├── digest/         # Weekly content summaries
 ├── status/         # Unified monitoring
 ├── browser/        # Playwright wrapper
 └── notifications/  # Alerts (Telegram, ntfy)
