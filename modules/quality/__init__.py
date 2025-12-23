@@ -24,6 +24,7 @@ from .verifier import (
     QualityLevel,
     verify_file,
     verify_content,
+    is_garbage_content,
 )
 
 __all__ = [
@@ -32,4 +33,5 @@ __all__ = [
     'QualityLevel',
     'verify_file',
     'verify_content',
+    'is_garbage_content',
 ]

@@ -23,8 +23,25 @@ from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any, Optional, Tuple
 from urllib.parse import urljoin
+from difflib import SequenceMatcher
 
 logger = logging.getLogger(__name__)
+
+
+def _normalize_title(title: str) -> str:
+    """Normalize title for fuzzy matching"""
+    title = title.lower()
+    title = re.sub(r'[^\w\s]', ' ', title)
+    title = ' '.join(title.split())
+    for prefix in ['episode ', 'ep ', '#', 'transcript ']:
+        if title.startswith(prefix):
+            title = title[len(prefix):]
+    return title.strip()
+
+
+def _fuzzy_match_score(a: str, b: str) -> float:
+    """Calculate fuzzy match score between two strings"""
+    return SequenceMatcher(None, _normalize_title(a), _normalize_title(b)).ratio()
 
 # Podcasts available on Podscripts that match our 73 podcast list
 # Podscripts uses AI-generated transcripts - free public access
@@ -167,8 +184,10 @@ class PodscriptsCrawler:
             'episodes_found': 0,
             'transcripts_saved': 0,
             'skipped_existing': 0,
+            'synced_to_db': 0,
             'errors': [],
         }
+        saved_files = []  # Track for DB sync
 
         print(f"\nCrawling {config['name']} from Podscripts.co (headless browser)...")
 
@@ -296,6 +315,11 @@ class PodscriptsCrawler:
                             f.write(transcript_content)
 
                         results['transcripts_saved'] += 1
+                        saved_files.append({
+                            'filepath': str(filepath),
+                            'title': title,
+                            'url': url
+                        })
                         print(f"    Saved: {filename} ({len(transcript_content)} chars)")
                     else:
                         results['errors'].append(f"Empty content: {url}")
@@ -308,8 +332,80 @@ class PodscriptsCrawler:
                     results['errors'].append(error_msg)
                     print(f"    Error: {str(e)}")
 
-        print(f"\nCompleted: {results['transcripts_saved']} new, {results['skipped_existing']} skipped")
+        # Sync to database
+        if saved_files:
+            synced = self._sync_to_database(slug, saved_files)
+            results['synced_to_db'] = synced
+            print(f"  Synced {synced} transcripts to database")
+
+        print(f"\nCompleted: {results['transcripts_saved']} new, {results['skipped_existing']} skipped, {results['synced_to_db']} synced to DB")
         return results
+
+    def _sync_to_database(self, podcast_slug: str, saved_files: List[Dict[str, str]]) -> int:
+        """Sync saved transcripts to the SQLite database
+
+        Matches transcripts to episodes by fuzzy title matching and updates
+        transcript_status to 'fetched'.
+        """
+        try:
+            from modules.podcasts.store import PodcastStore
+
+            store = PodcastStore()
+            podcast = store.get_podcast_by_slug(podcast_slug)
+
+            if not podcast:
+                logger.warning(f"Podcast '{podcast_slug}' not in database, skipping sync")
+                return 0
+
+            episodes = store.get_episodes(podcast.id)
+            if not episodes:
+                logger.warning(f"No episodes found for '{podcast_slug}' in database")
+                return 0
+
+            # Build lookup by normalized title
+            episode_by_title = {}
+            for ep in episodes:
+                normalized = _normalize_title(ep.title)
+                episode_by_title[normalized] = ep
+
+            synced_count = 0
+            for saved in saved_files:
+                title = saved['title']
+                filepath = saved['filepath']
+
+                # Try exact normalized match first
+                normalized_title = _normalize_title(title)
+                episode = episode_by_title.get(normalized_title)
+
+                # If no exact match, try fuzzy matching
+                if not episode:
+                    best_score = 0
+                    best_match = None
+                    for ep in episodes:
+                        score = _fuzzy_match_score(title, ep.title)
+                        if score > best_score and score >= 0.7:
+                            best_score = score
+                            best_match = ep
+                    episode = best_match
+
+                if episode:
+                    if episode.transcript_status == 'fetched' and episode.transcript_path:
+                        continue
+                    store.update_episode_transcript_status(
+                        episode.id,
+                        status='fetched',
+                        transcript_path=filepath
+                    )
+                    synced_count += 1
+
+            return synced_count
+
+        except ImportError as e:
+            logger.warning(f"Could not import store module: {e}")
+            return 0
+        except Exception as e:
+            logger.error(f"Error syncing to database: {e}")
+            return 0
 
     async def crawl_all(self, max_episodes_per_podcast: int = 0) -> List[Dict[str, Any]]:
         """Crawl all podcasts in PODSCRIPTS_PODCASTS"""

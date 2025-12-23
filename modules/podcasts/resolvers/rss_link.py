@@ -18,6 +18,8 @@ logger = logging.getLogger(__name__)
 class RSSLinkResolver:
     """Resolver that finds transcript links directly in RSS feeds"""
 
+    name = "rss_link"
+
     def __init__(self, user_agent: str = "Atlas-Pod/1.0", timeout: int = 30):
         self.user_agent = user_agent
         self.timeout = timeout

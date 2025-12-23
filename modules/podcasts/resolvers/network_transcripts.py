@@ -16,6 +16,8 @@ logger = logging.getLogger(__name__)
 class NetworkTranscriptResolver:
     """Resolves transcripts from major podcast networks."""
 
+    name = "network_transcripts"
+
     def __init__(self):
         self.session = requests.Session()
         self.session.headers.update({

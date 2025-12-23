@@ -59,6 +59,8 @@ def load_cookies_for_domain(domain: str) -> Optional[Dict[str, str]]:
 class GenericHTMLResolver:
     """Resolver that extracts transcripts from HTML pages"""
 
+    name = "generic_html"
+
     def __init__(self, user_agent: str = "Atlas-Pod/1.0", timeout: int = 30):
         self.user_agent = user_agent
         self.timeout = timeout

@@ -156,7 +156,7 @@ def execute_podcast_task(task: Dict[str, Any]) -> Dict[str, Any]:
     resolvers = {r.name: r for r in get_all_resolvers()}
 
     episode_id = task['episode_id']
-    episode = store.get_episode(episode_id)
+    episode = store.get_episode_by_id(episode_id)
 
     if not episode:
         task['status'] = 'failed'

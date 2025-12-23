@@ -113,6 +113,8 @@ PODSCRIPTS_MAPPING = {
 class PodscriptsResolver:
     """Resolver that fetches transcripts from podscripts.co"""
 
+    name = "podscripts"
+
     def __init__(self, user_agent: str = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", timeout: int = 30):
         self.user_agent = user_agent
         self.timeout = timeout

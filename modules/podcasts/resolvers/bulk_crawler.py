@@ -18,8 +18,27 @@ from typing import List, Dict, Any, Optional
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 import requests
+from difflib import SequenceMatcher
 
 logger = logging.getLogger(__name__)
+
+
+def _normalize_title(title: str) -> str:
+    """Normalize title for fuzzy matching"""
+    import re
+    title = title.lower()
+    title = re.sub(r'[^\w\s]', ' ', title)
+    title = ' '.join(title.split())
+    # Remove common prefixes
+    for prefix in ['episode ', 'ep ', '#', 'transcript ']:
+        if title.startswith(prefix):
+            title = title[len(prefix):]
+    return title.strip()
+
+
+def _fuzzy_match_score(a: str, b: str) -> float:
+    """Calculate fuzzy match score between two strings"""
+    return SequenceMatcher(None, _normalize_title(a), _normalize_title(b)).ratio()
 
 
 class BulkTranscriptCrawler:
@@ -280,12 +299,24 @@ class BulkTranscriptCrawler:
         """Synchronous wrapper for bulk crawling"""
         return asyncio.run(self.crawl_site_bulk_async(site_key, max_episodes))
 
-    def save_transcripts(self, results: List[Dict[str, Any]], podcast_slug: str):
-        """Save crawled transcripts to disk"""
+    def save_transcripts(self, results: List[Dict[str, Any]], podcast_slug: str,
+                         sync_db: bool = True) -> int:
+        """Save crawled transcripts to disk and optionally sync to database
+
+        Args:
+            results: List of transcript dictionaries with url, content, title, etc.
+            podcast_slug: The podcast slug (e.g., 'lex-fridman-podcast')
+            sync_db: If True, also update episode status in SQLite database
+
+        Returns:
+            Number of transcripts saved
+        """
         transcript_dir = self.output_dir / podcast_slug / "transcripts"
         transcript_dir.mkdir(parents=True, exist_ok=True)
 
         saved_count = 0
+        saved_files = []  # Track for DB sync
+
         for result in results:
             try:
                 # Generate filename from URL
@@ -307,12 +338,103 @@ class BulkTranscriptCrawler:
                     f.write(result['content'])
 
                 saved_count += 1
+                saved_files.append({
+                    'filepath': str(filepath),
+                    'title': result['title'],
+                    'url': result['url']
+                })
 
             except Exception as e:
                 logger.error(f"Error saving transcript {result.get('url', 'unknown')}: {e}")
 
         logger.info(f"Saved {saved_count} transcripts to {transcript_dir}")
+
+        # Sync to database if requested
+        if sync_db and saved_files:
+            synced = self._sync_to_database(podcast_slug, saved_files)
+            logger.info(f"Synced {synced} transcripts to database")
+
         return saved_count
+
+    def _sync_to_database(self, podcast_slug: str, saved_files: List[Dict[str, str]]) -> int:
+        """Sync saved transcripts to the SQLite database
+
+        Matches transcripts to episodes by fuzzy title matching and updates
+        transcript_status to 'fetched'.
+
+        Args:
+            podcast_slug: The podcast slug
+            saved_files: List of dicts with 'filepath', 'title', 'url'
+
+        Returns:
+            Number of episodes updated in database
+        """
+        try:
+            from modules.podcasts.store import PodcastStore
+
+            store = PodcastStore()
+            podcast = store.get_podcast_by_slug(podcast_slug)
+
+            if not podcast:
+                logger.warning(f"Podcast '{podcast_slug}' not in database, skipping sync")
+                return 0
+
+            # Get all episodes for this podcast
+            episodes = store.get_episodes(podcast.id)
+            if not episodes:
+                logger.warning(f"No episodes found for '{podcast_slug}' in database")
+                return 0
+
+            # Build lookup by normalized title
+            episode_by_title = {}
+            for ep in episodes:
+                normalized = _normalize_title(ep.title)
+                episode_by_title[normalized] = ep
+
+            synced_count = 0
+            for saved in saved_files:
+                title = saved['title']
+                filepath = saved['filepath']
+
+                # Try exact normalized match first
+                normalized_title = _normalize_title(title)
+                episode = episode_by_title.get(normalized_title)
+
+                # If no exact match, try fuzzy matching
+                if not episode:
+                    best_score = 0
+                    best_match = None
+                    for ep in episodes:
+                        score = _fuzzy_match_score(title, ep.title)
+                        if score > best_score and score >= 0.7:  # 70% threshold
+                            best_score = score
+                            best_match = ep
+                    episode = best_match
+
+                if episode:
+                    # Skip if already fetched
+                    if episode.transcript_status == 'fetched' and episode.transcript_path:
+                        continue
+
+                    # Update episode status
+                    store.update_episode_transcript_status(
+                        episode.id,
+                        status='fetched',
+                        transcript_path=filepath
+                    )
+                    synced_count += 1
+                    logger.debug(f"Synced: {episode.title[:50]}...")
+                else:
+                    logger.debug(f"No DB match for: {title[:50]}...")
+
+            return synced_count
+
+        except ImportError as e:
+            logger.warning(f"Could not import store module: {e}")
+            return 0
+        except Exception as e:
+            logger.error(f"Error syncing to database: {e}")
+            return 0
 
 
 def crawl_atp_transcripts(max_episodes: int = None):

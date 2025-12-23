@@ -46,6 +46,8 @@ _last_youtube_request = 0
 class YouTubeTranscriptResolver:
     """Resolves transcripts from YouTube for podcast episodes."""
 
+    name = "youtube_transcript"
+
     def __init__(self, cookies_path: str = None):
         self.session = requests.Session()
         self.session.headers.update({

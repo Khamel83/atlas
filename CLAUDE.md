@@ -775,6 +775,26 @@ SQLite at `data/podcasts/atlas_podcasts.db` (WAL mode enabled).
 - `podcast_speakers` - Known hosts/co-hosts per podcast
 - `episode_speakers` - Per-episode speaker mappings (SPEAKER_00 → "Michael Lewis")
 
+### Database Sync (Automatic)
+
+All crawlers now automatically sync to the database after saving transcripts:
+- `bulk_crawler.py` - Syncs after `save_transcripts()`
+- `podscripts_crawler.py` - Syncs after each crawl
+- `npr_crawler.py` - Syncs after each crawl
+- `import_whisper_transcripts.py` - Syncs during import
+
+**How it works:**
+1. Crawler saves transcript file to disk
+2. Crawler matches transcript title to episode in DB (fuzzy matching, 70% threshold)
+3. Updates `transcript_status = 'fetched'` and sets `transcript_path`
+
+**Reconciliation (for legacy data):**
+If DB/disk get out of sync (e.g., manual file copies), run:
+```bash
+python scripts/reconcile_transcripts.py --apply
+```
+This scans disk for transcript files and updates DB to match.
+
 **Quick queries:**
 ```bash
 # Pending by podcast
@@ -1058,7 +1078,7 @@ Nightly timer runs at 5am: `atlas-verify.timer`
 ### Python API
 
 ```python
-from modules.quality import verify_file, verify_content, QualityLevel
+from modules.quality import verify_file, verify_content, is_garbage_content, QualityLevel
 
 # Verify a file
 result = verify_file("/path/to/content.md")
@@ -1066,6 +1086,13 @@ if result.is_good:
     print("Content verified!")
 else:
     print(f"Issues: {result.issues}")
+
+# Quick garbage check before saving (use in fetchers)
+is_bad, reason = is_garbage_content(text_content)
+if is_bad:
+    logger.warning(f"Skipping garbage: {reason}")
+    return  # Don't save
+# Save content...
 
 # Verify content string (before saving)
 result = verify_content(content_text, 'article')
@@ -1086,17 +1113,34 @@ SELECT quality, COUNT(*) FROM verifications GROUP BY quality;
 SELECT file_path, issues FROM verifications WHERE quality = 'bad';
 ```
 
-### Current Stats (2025-12-15)
+### Current Stats (2025-12-23)
 
 | Quality | Count | Percentage |
 |---------|-------|------------|
-| Good | 35,385 | 80.1% |
-| Marginal | 8,002 | 18.1% |
-| Bad | 800 | 1.8% |
+| Good | 75,572 | 88.3% |
+| Marginal | 8,531 | 10.0% |
+| Bad | 994 | 1.2% |
 
-### Marginal Recovery
+### Marginal Cleanup
 
-Marginal content is often failed fetches (grabbed metadata/navigation instead of article body). Use tiered recovery to re-fetch:
+Many "marginal" files are actually **failed fetches** - nav pages, footers, index pages that got saved as content. Run cleanup to delete garbage and re-queue URLs:
+
+```bash
+# Preview cleanup
+./venv/bin/python scripts/cleanup_marginal_garbage.py --dry-run
+
+# Apply cleanup (deletes garbage, re-queues URLs)
+./venv/bin/python scripts/cleanup_marginal_garbage.py --apply
+```
+
+**What it does:**
+- Deletes files matching garbage patterns (YouTube footers, index pages)
+- Re-queues article URLs for refetch
+- Keeps legitimately short content (>150 words for podcasts, >100 for articles)
+
+### Marginal Recovery (Legacy)
+
+For remaining marginal content, use tiered recovery to re-fetch:
 
 ```bash
 # Run tiered recovery (Tier 1 = high-value articles)

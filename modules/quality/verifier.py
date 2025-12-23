@@ -95,6 +95,23 @@ JS_BLOCKED_PATTERNS = [
     r"noscript",
 ]
 
+# Garbage content patterns - nav/footer/index pages that aren't real content
+GARBAGE_PATTERNS = [
+    # YouTube footer junk
+    r'\[About\].*\[Press\].*\[Copyright\]',
+    r'\(C\) 20\d{2} Google LLC',
+    r'^\[\]\(/.*YouTube.*\)\[\]',
+    # Generic navigation/footer patterns
+    r'^(About|Contact|Terms|Privacy|Advertise)\s*\|',
+    r'All Rights Reserved',
+    # Index/tag page patterns
+    r'Latest News, Photos & Videos',
+    r'^\s*#\s*\w+\s*\|\s*Latest\s+News',
+]
+
+# Compile garbage patterns
+_GARBAGE_REGEXES = [re.compile(p, re.IGNORECASE | re.MULTILINE) for p in GARBAGE_PATTERNS]
+
 # Transcript quality indicators
 TRANSCRIPT_INDICATORS = [
     "transcript", "speaker", "host", "guest",
@@ -474,3 +491,51 @@ def verify_content(content: str, content_type: str = "article") -> VerificationR
     """Verify content string (for use in pipelines before saving)."""
     verifier = ContentVerifier()
     return verifier._verify_content("<memory>", content, content_type)
+
+
+def is_garbage_content(content: str, min_words: int = 100) -> tuple[bool, str]:
+    """Quick check if content is garbage (nav, footer, index pages).
+
+    Use this before saving content to avoid storing junk files.
+
+    Args:
+        content: The text content to check
+        min_words: Minimum word count to be considered valid
+
+    Returns:
+        Tuple of (is_garbage, reason) where is_garbage is True if content
+        should be rejected, and reason explains why.
+
+    Usage:
+        is_bad, reason = is_garbage_content(text)
+        if is_bad:
+            logger.warning(f"Skipping garbage content: {reason}")
+            return
+        # Save content...
+    """
+    word_count = len(content.split())
+
+    # If file has substantial content, it's not garbage even if it has boilerplate
+    if word_count > 300:
+        return False, ""
+
+    # Check for garbage patterns (only in short files)
+    for i, regex in enumerate(_GARBAGE_REGEXES):
+        if regex.search(content):
+            return True, f"matches garbage pattern: {GARBAGE_PATTERNS[i][:50]}"
+
+    # Check for empty body after YAML frontmatter
+    if content.startswith('---'):
+        parts = content.split('---', 2)
+        if len(parts) >= 3:
+            body = parts[2].strip()
+            if len(body) < 100:
+                return True, "empty body after YAML frontmatter"
+            if body.startswith('#') and '\n' not in body.strip():
+                return True, "body is just a title, no content"
+
+    # Check word count
+    if word_count < min_words:
+        return True, f"too few words: {word_count} (min {min_words})"
+
+    return False, ""
