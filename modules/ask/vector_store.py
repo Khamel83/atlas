@@ -44,9 +44,20 @@ class VectorStore:
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
 
     def _get_connection(self) -> sqlite3.Connection:
-        """Get or create database connection."""
+        """Get or create database connection with proper concurrency settings."""
         if self._conn is None:
-            self._conn = sqlite3.connect(str(self.db_path))
+            self._conn = sqlite3.connect(
+                str(self.db_path),
+                timeout=30.0,                    # Don't block forever on locks
+                check_same_thread=False,         # Allow multi-thread access
+                isolation_level="DEFERRED"       # Better transaction handling
+            )
+            # Enable WAL mode for concurrent reads during writes
+            self._conn.execute("PRAGMA journal_mode=WAL")
+            self._conn.execute("PRAGMA synchronous=NORMAL")
+            self._conn.execute("PRAGMA cache_size=-64000")  # 64MB cache
+            self._conn.execute("PRAGMA busy_timeout=30000")  # 30s busy timeout
+
             self._conn.enable_load_extension(True)
             sqlite_vec.load(self._conn)
             self._conn.enable_load_extension(False)

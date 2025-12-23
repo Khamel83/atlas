@@ -168,173 +168,181 @@ class ContentIndexer:
                     logger.warning(f"Failed to read {md_file}: {e}")
 
     def discover_articles(self) -> Iterator[ContentItem]:
-        """Discover article content."""
+        """Discover article content.
+
+        Structure: data/content/article/{year}/{month}/{day}/{content_id}/content.md
+        """
         articles_dir = self.content_dir / "article"
         if not articles_dir.exists():
             return
 
-        for date_dir in articles_dir.iterdir():
-            if not date_dir.is_dir():
-                continue
+        # Use glob to find all content.md files at any depth
+        for content_file in articles_dir.glob("**/content.md"):
+            content_dir = content_file.parent
+            content_id_hash = content_dir.name
 
-            for content_dir in date_dir.iterdir():
-                if not content_dir.is_dir():
+            # Extract date from path: article/{year}/{month}/{day}/{id}/content.md
+            try:
+                parts = content_file.relative_to(articles_dir).parts
+                if len(parts) >= 4:  # year/month/day/id/content.md
+                    date_str = f"{parts[0]}-{parts[1]}-{parts[2]}"
+                else:
+                    date_str = "unknown"
+            except Exception:
+                date_str = "unknown"
+
+            content_id = f"article:{date_str}:{content_id_hash}"
+
+            try:
+                text, actual_path, is_clean = self._read_content(content_file)
+                if len(text) < 100:
                     continue
 
-                content_file = content_dir / "content.md"
-                if not content_file.exists():
-                    continue
+                # Try to get title from metadata.json
+                metadata_file = content_dir / "metadata.json"
+                metadata = {}
+                title = content_id_hash
 
-                content_id = f"article:{date_dir.name}:{content_dir.name}"
+                if metadata_file.exists():
+                    try:
+                        metadata = json.loads(metadata_file.read_text())
+                        title = metadata.get("title", title)
+                    except (json.JSONDecodeError, IOError) as e:
+                        logger.debug(f"Error reading metadata {metadata_file}: {e}")
 
-                try:
-                    text, actual_path, is_clean = self._read_content(content_file)
-                    if len(text) < 100:
-                        continue
-
-                    # Try to get title from metadata.json
-                    metadata_file = content_dir / "metadata.json"
-                    metadata = {}
-                    title = content_dir.name
-
-                    if metadata_file.exists():
-                        try:
-                            metadata = json.loads(metadata_file.read_text())
-                            title = metadata.get("title", title)
-                        except (json.JSONDecodeError, IOError) as e:
-                            logger.debug(f"Error reading metadata {metadata_file}: {e}")
-
-                    yield ContentItem(
-                        content_id=content_id,
-                        content_type="article",
-                        title=title,
-                        text=text,
-                        source_path=actual_path,
-                        metadata={
-                            "date": date_dir.name,
-                            "title": title,
-                            "is_clean": is_clean,
-                            **metadata,
-                        }
-                    )
-                except Exception as e:
-                    logger.warning(f"Failed to read {content_file}: {e}")
+                yield ContentItem(
+                    content_id=content_id,
+                    content_type="article",
+                    title=title,
+                    text=text,
+                    source_path=actual_path,
+                    metadata={
+                        "date": date_str,
+                        "title": title,
+                        "is_clean": is_clean,
+                        **metadata,
+                    }
+                )
+            except Exception as e:
+                logger.warning(f"Failed to read {content_file}: {e}")
 
     def discover_newsletters(self) -> Iterator[ContentItem]:
-        """Discover newsletter content."""
+        """Discover newsletter content.
+
+        Structure: data/content/newsletter/{year}/{month}/{day}/{content_id}/content.md
+        """
         newsletters_dir = self.content_dir / "newsletter"
         if not newsletters_dir.exists():
             return
 
-        for date_dir in newsletters_dir.iterdir():
-            if not date_dir.is_dir():
-                continue
+        # Use glob to find all content.md files at any depth
+        for content_file in newsletters_dir.glob("**/content.md"):
+            content_dir = content_file.parent
+            content_id_hash = content_dir.name
 
-            for content_dir in date_dir.iterdir():
-                if not content_dir.is_dir():
+            # Extract date from path
+            try:
+                parts = content_file.relative_to(newsletters_dir).parts
+                if len(parts) >= 4:  # year/month/day/id/content.md
+                    date_str = f"{parts[0]}-{parts[1]}-{parts[2]}"
+                else:
+                    date_str = "unknown"
+            except Exception:
+                date_str = "unknown"
+
+            content_id = f"newsletter:{date_str}:{content_id_hash}"
+
+            try:
+                text, actual_path, is_clean = self._read_content(content_file)
+                if len(text) < 100:
                     continue
 
-                content_file = content_dir / "content.md"
-                if not content_file.exists():
-                    continue
+                metadata_file = content_dir / "metadata.json"
+                metadata = {}
+                title = content_id_hash
 
-                content_id = f"newsletter:{date_dir.name}:{content_dir.name}"
+                if metadata_file.exists():
+                    try:
+                        metadata = json.loads(metadata_file.read_text())
+                        title = metadata.get("title", title)
+                    except (json.JSONDecodeError, IOError) as e:
+                        logger.debug(f"Error reading metadata {metadata_file}: {e}")
 
-                try:
-                    text, actual_path, is_clean = self._read_content(content_file)
-                    if len(text) < 100:
-                        continue
-
-                    metadata_file = content_dir / "metadata.json"
-                    metadata = {}
-                    title = content_dir.name
-
-                    if metadata_file.exists():
-                        try:
-                            metadata = json.loads(metadata_file.read_text())
-                            title = metadata.get("title", title)
-                        except (json.JSONDecodeError, IOError) as e:
-                            logger.debug(f"Error reading metadata {metadata_file}: {e}")
-
-                    yield ContentItem(
-                        content_id=content_id,
-                        content_type="newsletter",
-                        title=title,
-                        text=text,
-                        source_path=actual_path,
-                        metadata={
-                            "date": date_dir.name,
-                            "title": title,
-                            "is_clean": is_clean,
-                            **metadata,
-                        }
-                    )
-                except Exception as e:
-                    logger.warning(f"Failed to read {content_file}: {e}")
+                yield ContentItem(
+                    content_id=content_id,
+                    content_type="newsletter",
+                    title=title,
+                    text=text,
+                    source_path=actual_path,
+                    metadata={
+                        "date": date_str,
+                        "title": title,
+                        "is_clean": is_clean,
+                        **metadata,
+                    }
+                )
+            except Exception as e:
+                logger.warning(f"Failed to read {content_file}: {e}")
 
     def discover_notes(self) -> Iterator[ContentItem]:
-        """Discover user notes (selections, highlights)."""
+        """Discover user notes (selections, highlights).
+
+        Structure: data/content/note/{year}/{month}/{day}/{content_id}/content.md
+        """
         notes_dir = self.content_dir / "note"
         if not notes_dir.exists():
             return
 
-        # Walk year/month/day directories
-        for year_dir in notes_dir.iterdir():
-            if not year_dir.is_dir() or not year_dir.name.isdigit():
-                continue
+        # Use glob to find all content.md files at any depth
+        for content_file in notes_dir.glob("**/content.md"):
+            content_dir = content_file.parent
+            content_id_hash = content_dir.name
 
-            for month_dir in year_dir.iterdir():
-                if not month_dir.is_dir() or not month_dir.name.isdigit():
+            # Extract date from path
+            try:
+                parts = content_file.relative_to(notes_dir).parts
+                if len(parts) >= 4:  # year/month/day/id/content.md
+                    date_str = f"{parts[0]}-{parts[1]}-{parts[2]}"
+                else:
+                    date_str = "unknown"
+            except Exception:
+                date_str = "unknown"
+
+            content_id = f"note:{date_str}:{content_id_hash}"
+
+            try:
+                text = content_file.read_text()
+                # Notes can be short, lower threshold
+                if len(text) < 20:
                     continue
 
-                for day_dir in month_dir.iterdir():
-                    if not day_dir.is_dir() or not day_dir.name.isdigit():
-                        continue
+                # Try to get title from metadata.json
+                metadata_file = content_dir / "metadata.json"
+                metadata = {}
+                title = content_id_hash
 
-                    for content_dir in day_dir.iterdir():
-                        if not content_dir.is_dir():
-                            continue
+                if metadata_file.exists():
+                    try:
+                        metadata = json.loads(metadata_file.read_text())
+                        title = metadata.get("title", title)
+                    except (json.JSONDecodeError, IOError) as e:
+                        logger.debug(f"Error reading metadata {metadata_file}: {e}")
 
-                        content_file = content_dir / "content.md"
-                        if not content_file.exists():
-                            continue
-
-                        date_str = f"{year_dir.name}/{month_dir.name}/{day_dir.name}"
-                        content_id = f"note:{date_str}:{content_dir.name}"
-
-                        try:
-                            text = content_file.read_text()
-                            # Notes can be short, lower threshold
-                            if len(text) < 20:
-                                continue
-
-                            # Try to get title from metadata.json
-                            metadata_file = content_dir / "metadata.json"
-                            metadata = {}
-                            title = content_dir.name
-
-                            if metadata_file.exists():
-                                try:
-                                    metadata = json.loads(metadata_file.read_text())
-                                    title = metadata.get("title", title)
-                                except (json.JSONDecodeError, IOError) as e:
-                                    logger.debug(f"Error reading metadata {metadata_file}: {e}")
-
-                            yield ContentItem(
-                                content_id=content_id,
-                                content_type="note",
-                                title=title,
-                                text=text,
-                                source_path=content_file,
-                                metadata={
-                                    "date": date_str,
-                                    "title": title,
-                                    "is_clean": True,  # Notes are user-curated
-                                    **metadata,
-                                }
-                            )
-                        except Exception as e:
-                            logger.warning(f"Failed to read {content_file}: {e}")
+                yield ContentItem(
+                    content_id=content_id,
+                    content_type="note",
+                    title=title,
+                    text=text,
+                    source_path=content_file,
+                    metadata={
+                        "date": date_str,
+                        "title": title,
+                        "is_clean": True,  # Notes are user-curated
+                        **metadata,
+                    }
+                )
+            except Exception as e:
+                logger.warning(f"Failed to read {content_file}: {e}")
 
     def discover_stratechery(self) -> Iterator[ContentItem]:
         """Discover Stratechery archive content."""
