@@ -32,12 +32,12 @@ accidental-tech-podcast:
 conversations-with-tyler:
   rss_url: https://feeds.soundcloud.com/users/soundcloud:users:264034133/sounds.rss
   site_url: https://conversationswithtyler.com
-  resolver: bulk_crawl
+  resolver: generic_html
   episode_selector: 'a[href*="/episodes/"]'
-  transcript_selector: '.generic__content'
+  transcript_selector: '.text-block'
   config:
     user_agent: "Atlas-Pod/1.0"
-    rate_limit: 3.0
+    rate_limit: 2.0
 
 acquired:
   rss_url: https://feeds.megaphone.fm/acquired
