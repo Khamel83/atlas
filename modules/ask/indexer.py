@@ -73,11 +73,42 @@ class ContentIndexer:
         self._clean_path_mapping = self._load_clean_path_mapping() if use_clean else {}
 
     def get_indexed_content_ids(self) -> Set[str]:
-        """Get set of already-indexed content IDs."""
+        """Get set of already-indexed content IDs (has chunks)."""
         conn = self.vector_store._get_connection()
         cursor = conn.cursor()
         cursor.execute("SELECT DISTINCT content_id FROM chunks")
         return {row[0] for row in cursor.fetchall()}
+
+    def get_fully_indexed_content_ids(self) -> Set[str]:
+        """Get content IDs where ALL chunks have vectors."""
+        conn = self.vector_store._get_connection()
+        cursor = conn.cursor()
+        # Find content_ids where every chunk has a corresponding vector
+        # Uses chunk_id match (not rowid - those are separate tables)
+        cursor.execute("""
+            SELECT content_id
+            FROM chunks
+            WHERE content_id NOT IN (
+                SELECT DISTINCT c.content_id
+                FROM chunks c
+                WHERE c.chunk_id NOT IN (SELECT chunk_id FROM chunk_vectors)
+            )
+            GROUP BY content_id
+        """)
+        return {row[0] for row in cursor.fetchall()}
+
+    def get_chunks_without_vectors(self) -> List[Tuple[str, str]]:
+        """Find chunks that exist but have no embedding vectors."""
+        conn = self.vector_store._get_connection()
+        cursor = conn.cursor()
+        # Uses chunk_id match (not rowid - those are separate tables)
+        cursor.execute("""
+            SELECT chunk_id, text
+            FROM chunks
+            WHERE chunk_id NOT IN (SELECT chunk_id FROM chunk_vectors)
+            ORDER BY content_id, chunk_index
+        """)
+        return cursor.fetchall()
 
     def _load_clean_path_mapping(self) -> dict[str, str]:
         """Load original->clean path mapping from enrich database."""
@@ -445,6 +476,81 @@ class ContentIndexer:
         logger.debug(f"Indexed {len(chunks)} chunks for: {item.content_id}")
         return len(chunks)
 
+    def resume_failed_embeddings(
+        self,
+        batch_size: int = 50,
+        dry_run: bool = False,
+        limit: Optional[int] = None
+    ) -> int:
+        """
+        Embed chunks that exist but have no vectors.
+
+        No re-chunking, no discovery. Just fills in missing vectors.
+        Safe to run repeatedly - only processes chunks without vectors.
+
+        Args:
+            batch_size: Number of chunks to embed per API call
+            dry_run: If True, just count without embedding
+            limit: Max total chunks to embed (None = all)
+        """
+        missing = self.get_chunks_without_vectors()
+
+        if not missing:
+            logger.info("No chunks without vectors found")
+            return 0
+
+        total_missing = len(missing)
+        if limit:
+            missing = missing[:limit]
+
+        logger.info(f"Found {total_missing} chunks without vectors, processing {len(missing)}")
+
+        if dry_run:
+            # Show breakdown by content type
+            by_type = {}
+            for chunk_id, _ in missing:
+                ctype = chunk_id.split(':')[0]
+                by_type[ctype] = by_type.get(ctype, 0) + 1
+            for ctype, count in sorted(by_type.items(), key=lambda x: -x[1]):
+                logger.info(f"  {ctype}: {count}")
+            return len(missing)
+
+        embedded = 0
+        failed_batches = 0
+        conn = self.vector_store._get_connection()
+
+        for i in range(0, len(missing), batch_size):
+            batch = missing[i:i+batch_size]
+            chunk_ids = [c[0] for c in batch]
+            texts = [c[1] for c in batch]
+
+            try:
+                embeddings = self.embedding_client.embed_chunks(texts)
+
+                # Store vectors only (chunks already exist)
+                for chunk_id, embedding in zip(chunk_ids, embeddings):
+                    conn.execute("DELETE FROM chunk_vectors WHERE chunk_id = ?", (chunk_id,))
+                    conn.execute(
+                        "INSERT INTO chunk_vectors (chunk_id, embedding) VALUES (?, ?)",
+                        (chunk_id, json.dumps(embedding))
+                    )
+                conn.commit()
+
+                embedded += len(batch)
+                failed_batches = 0  # Reset on success
+                logger.info(f"Progress: {embedded}/{len(missing)} chunks embedded")
+
+            except Exception as e:
+                logger.error(f"Batch failed at {embedded}: {e}")
+                conn.rollback()
+                failed_batches += 1
+                # Stop after 3 consecutive failures (likely API issue)
+                if failed_batches >= 3:
+                    logger.error("3 consecutive batch failures, stopping")
+                    break
+
+        return embedded
+
     def index_all(
         self,
         content_types: Optional[List[str]] = None,
@@ -457,10 +563,10 @@ class ContentIndexer:
 
         Returns (items_indexed, chunks_indexed).
         """
-        # Pre-load indexed IDs for fast filtering, but also check DB in index_content
-        # This avoids most duplicate work while the DB check catches edge cases
-        indexed_ids = set() if force else self.get_indexed_content_ids()
-        logger.info(f"Found {len(indexed_ids)} already-indexed content items")
+        # Pre-load FULLY indexed IDs (all chunks have vectors)
+        # This ensures partially-failed content gets retried
+        indexed_ids = set() if force else self.get_fully_indexed_content_ids()
+        logger.info(f"Found {len(indexed_ids)} fully-indexed content items")
 
         items_indexed = 0
         chunks_indexed = 0
@@ -557,14 +663,16 @@ def main():
     parser = argparse.ArgumentParser(description="Index Atlas content")
     parser.add_argument("--all", action="store_true", help="Index all content types")
     parser.add_argument("--type", dest="content_type", choices=["podcasts", "articles", "newsletters", "stratechery", "notes"], help="Index specific type")
+    parser.add_argument("--resume", action="store_true", help="Only embed chunks that failed previously (no re-chunking)")
     parser.add_argument("--force", action="store_true", help="Re-index existing content")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be indexed")
-    parser.add_argument("--batch-size", type=int, default=50, help="Batch size for indexing")
+    parser.add_argument("--batch-size", type=int, default=50, help="Batch size for API calls")
+    parser.add_argument("--limit", type=int, default=None, help="Max chunks to process (for testing)")
     parser.add_argument("--use-original", action="store_true", help="Use original files instead of clean (ad-free) versions")
 
     args = parser.parse_args()
 
-    if not args.all and not args.content_type:
+    if not args.all and not args.content_type and not args.resume:
         parser.print_help()
         return 1
 
@@ -573,12 +681,31 @@ def main():
         print("Run with: ./scripts/run_with_secrets.sh python -m modules.ask.indexer ...")
         return 1
 
+    use_clean = not args.use_original
+    indexer = ContentIndexer(use_clean=use_clean)
+
+    # Handle --resume mode (fill in missing vectors only)
+    if args.resume:
+        try:
+            embedded = indexer.resume_failed_embeddings(
+                batch_size=args.batch_size,
+                dry_run=args.dry_run,
+                limit=args.limit
+            )
+            if args.dry_run:
+                print(f"\nWould embed {embedded} chunks")
+            else:
+                print(f"\nEmbedded {embedded} previously-failed chunks")
+
+                stats = indexer.vector_store.get_stats()
+                print(f"Vector store: {stats['total_chunks']} total chunks")
+        finally:
+            indexer.close()
+        return 0
+
     content_types = None
     if args.content_type:
         content_types = [args.content_type]
-
-    use_clean = not args.use_original
-    indexer = ContentIndexer(use_clean=use_clean)
 
     if use_clean:
         print("Using clean (ad-free) versions when available")
