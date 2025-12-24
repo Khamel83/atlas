@@ -1,0 +1,15 @@
+[Unit]
+Description=Atlas WhisperX Push Pipeline
+After=network.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+Environment=PATH=/home/khamel83/github/atlas/venv/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/khamel83/github/atlas/scripts/whisper_push_pipeline.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

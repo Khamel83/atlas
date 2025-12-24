@@ -1,7 +1,7 @@
 # LLM-OVERVIEW: Atlas
 
 > Complete context for any LLM to understand this project.
-> **Last Updated**: 2025-12-23
+> **Last Updated**: 2025-12-24
 > **ONE_SHOT Version**: 5.5
 
 ## 1. WHAT IS THIS PROJECT?
@@ -15,10 +15,10 @@ Content is scattered across the internet - podcast transcripts on various sites,
 ### Current State
 - **Status**: Production (running 24/7 on homelab)
 - **Version**: 2.0 (Intelligence Layer)
-- **Transcripts**: 4,981 fetched / 6,869 total (73%)
+- **Transcripts**: 5,741 fetched / 6,869 total (83.6%)
 - **Embeddings**: 440,030 chunks indexed
-- **Last Milestone**: Added synthesis, capture, digest, and annotations modules
-- **Next Milestone**: WhisperX processing 1,045 files, then re-index embeddings
+- **Last Milestone**: MacWhisper Pro pipeline for local transcription
+- **Next Milestone**: Complete remaining 1,045 transcripts, re-index embeddings
 
 ---
 
@@ -31,7 +31,7 @@ Framework:   FastAPI (API), Click (CLI)
 Database:    SQLite (podcasts, embeddings via sqlite-vec)
 Search:      Voyage AI embeddings + FTS5 hybrid search
 Deployment:  systemd timers on Ubuntu homelab
-Transcription: WhisperX on Mac Mini M4 (via SMB mount)
+Transcription: MacWhisper Pro on Mac Mini M4 (Parakeet v3)
 ```
 
 ### Key Components
@@ -85,30 +85,36 @@ Resolvers try in priority order until one succeeds:
 
 ---
 
-## 4. MAC MINI WHISPERX PIPELINE
+## 4. MAC MINI TRANSCRIPTION PIPELINE
 
-### Architecture
+### Architecture (MacWhisper Pro + Local Storage)
 ```
 Linux Homelab                    Mac Mini M4
 ┌─────────────────┐              ┌─────────────────┐
-│ data/whisper_   │──── SMB ────▶│ /Volumes/atlas- │
-│ queue/audio/    │              │ whisper/audio/  │
-│                 │◀── SMB ──────│                 │
-│ queue/transcripts│             │ whisperx_watcher│
+│ staging/        │              │                 │
+│ (1035 mp3s)     │──── rsync ──▶│ ~/atlas-whisper/│
+│                 │              │   audio/ (10)   │
+│                 │              │      ↓          │
+│                 │              │ MacWhisper Pro  │
+│                 │              │ (Parakeet v3)   │
+│                 │              │      ↓          │
+│ transcripts/    │◀── rsync ────│   *.txt output  │
+│      ↓          │              │      ↓          │
+│ [import]        │              │ [delete mp3]    │
 └─────────────────┘              └─────────────────┘
 ```
 
 ### Key Files
-- `scripts/mac_mini/whisperx_watcher.py` - Watches for audio, transcribes
-- `scripts/mac_mini/mount_atlas_whisper.sh` - Mounts SMB share
-- `scripts/mac_mini/com.atlas.smb-mount.plist` - LaunchAgent for auto-mount
-- `scripts/download_for_whisper.py` - Downloads audio for queue
+- `scripts/whisper_local.sh` - Main pipeline (push/pull/import)
+- `scripts/whisper_sweep.sh` - Queue management
 - `scripts/import_whisper_transcripts.py` - Imports completed transcripts
 
-### Watchdog Features (Added 2025-12-23)
-- **CPU Monitoring**: Kills process if <5% CPU for 10 minutes
-- **Hard Timeout**: 90 minutes max per file
-- **Auto-Recovery**: Watcher restarts transcription on next file
+### Pipeline Features
+- **Batch processing**: 10 files at a time (minimal Mac storage)
+- **Local transcription**: Faster than SMB mount
+- **Failure handling**: Stuck files (>30min) → retry queue
+- **Auto-cleanup**: Deletes mp3 after successful transcription
+- **Systemd timer**: Runs every 5 minutes
 
 ---
 
