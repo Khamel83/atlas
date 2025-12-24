@@ -13,9 +13,9 @@ client = TestClient(app)
 class TestHealthEndpoints:
     """Test health check endpoints."""
 
-    def test_root(self):
-        """Test root endpoint."""
-        response = client.get("/")
+    def test_api_info(self):
+        """Test API info endpoint."""
+        response = client.get("/api/info")
         assert response.status_code == 200
         data = response.json()
         assert data["name"] == "Atlas API"
