@@ -126,9 +126,9 @@ async def get_quotes(
             QuoteResponse(
                 text=q.text,
                 source=q.source,
-                title=q.title,
+                title=q.source_title,
                 date=q.date,
-                score=q.score,
+                score=q.relevance_score,
             )
             for q in quotes
         ]
@@ -219,9 +219,35 @@ async def get_recommendations(
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@router.get("/overview")
+async def get_intelligence_overview():
+    """
+    Fast endpoint serving pre-computed intelligence data.
+
+    Data is refreshed hourly by refresh_intelligence.py.
+    Returns sources, trending topics, and stats instantly.
+    """
+    from pathlib import Path
+    import json
+
+    cache_file = Path("data/intelligence_cache/intelligence.json")
+
+    if not cache_file.exists():
+        raise HTTPException(
+            status_code=503,
+            detail="Intelligence cache not generated yet. Run: python scripts/refresh_intelligence.py"
+        )
+
+    try:
+        with open(cache_file) as f:
+            return json.load(f)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @router.get("/stats")
 async def get_intelligence_stats():
-    """Get overall intelligence layer stats."""
+    """Get overall intelligence layer stats (slower, real-time query)."""
     try:
         from modules.ask.config import get_config
         import sqlite3

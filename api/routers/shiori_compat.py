@@ -95,8 +95,68 @@ def scan_content_directories(limit: int = 100, content_types: List[str] = None) 
                 except Exception:
                     continue
 
-        # Sort by modified date (newest first)
-        items.sort(key=lambda x: x.get("modified", x.get("created", "")), reverse=True)
+        # Filter out garbage content
+        GARBAGE_PATTERNS = [
+            "requires javascript",
+            "please turn on javascript",
+            "unblock scripts",
+            "error occurred",
+            "retrieving sharing information",
+            "please try again later",
+            "| substack",  # Profile pages, not articles
+            "access denied",
+            "page not found",
+            "404",
+            "403 forbidden",
+            "[no-title]",
+            "no title",
+            "untitled",
+            "sign in",
+            "log in",
+            "loading...",
+            "redirecting",
+            "just a moment",
+            "bloomberg link",  # Tracking links
+            "spotify",  # App redirect pages
+        ]
+
+        def is_garbage(item):
+            title = (item.get("title") or "").lower()
+            desc = (item.get("description") or "").lower()
+            combined = title + " " + desc
+
+            # Check for garbage patterns
+            for pattern in GARBAGE_PATTERNS:
+                if pattern in combined:
+                    return True
+
+            # Very short titles that are just URLs or IDs
+            if title.startswith("http") or len(title) < 5:
+                return True
+
+            # Titles that are just the domain
+            source_url = item.get("source_url", "")
+            if source_url and title and title.lower() in source_url.lower():
+                return True
+
+            return False
+
+        items = [item for item in items if not is_garbage(item)]
+
+        # Sort by date (newest first) - check modified, created_at, created, or extract from path
+        def get_sort_date(x):
+            date = x.get("modified") or x.get("created_at") or x.get("created")
+            if date:
+                return date
+            # Try to extract date from content directory path (e.g., /youtube/2025/12/22/abc123/)
+            content_dir = x.get("_content_dir", "")
+            if content_dir:
+                import re
+                match = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', content_dir)
+                if match:
+                    return f"{match.group(1)}-{match.group(2)}-{match.group(3)}T00:00:00"
+            return ""
+        items.sort(key=get_sort_date, reverse=True)
 
         # Update cache
         _content_cache = items
@@ -188,14 +248,30 @@ def get_session_from_headers(
 
 def content_to_bookmark(item: Dict[str, Any], bookmark_id: int) -> Dict[str, Any]:
     """Convert Atlas content item to Shiori bookmark format."""
-    # Parse created_at for modified timestamp
-    created_at = item.get("created_at", "")
+    import re
+
+    # Parse created_at for modified timestamp, with fallback to directory path date
+    created_at = item.get("modified") or item.get("created_at") or item.get("created", "")
+    modified = None
+
     if isinstance(created_at, str) and created_at:
         try:
             modified = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
         except ValueError:
-            modified = datetime.now()
-    else:
+            pass
+
+    # Fallback: extract date from content directory path
+    if not modified:
+        content_dir = item.get("_content_dir", "")
+        if content_dir:
+            match = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', content_dir)
+            if match:
+                try:
+                    modified = datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)))
+                except ValueError:
+                    pass
+
+    if not modified:
         modified = datetime.now()
 
     # Extract domain from URL
@@ -609,22 +685,24 @@ async def get_bookmark_content(
         import json
         metadata = json.loads(metadata_file.read_text())
 
-    # Try to read content in order of preference: content.md, article.html
+    # Try to read content in order of preference: article.html (pre-rendered), content.md (raw markdown)
     content = None
     html = None
+    is_markdown = False
 
-    content_md = content_dir / "content.md"
-    if content_md.exists():
-        content = content_md.read_text()
-        # Convert markdown to simple HTML for display
-        html = content.replace('\n\n', '</p><p>').replace('\n', '<br>')
-        html = f"<p>{html}</p>"
-
+    # Check for pre-rendered HTML first
     article_html = content_dir / "article.html"
     if article_html.exists():
         html = article_html.read_text()
-        if not content:
-            content = html
+
+    # Check for markdown content
+    content_md = content_dir / "content.md"
+    if content_md.exists():
+        content = content_md.read_text()
+        is_markdown = True
+        # If no HTML, client will render markdown
+        if not html:
+            html = None  # Let client handle markdown rendering
 
     if not content and not html:
         raise HTTPException(status_code=404, detail="No readable content found")
@@ -632,10 +710,11 @@ async def get_bookmark_content(
     return {
         "id": bookmark_id,
         "title": metadata.get("title", "Untitled"),
-        "content": content or "",
-        "html": html or content or "",
+        "content": content or "",  # Raw markdown content for client-side rendering
+        "html": html or "",  # Pre-rendered HTML if available
+        "isMarkdown": is_markdown,  # Flag for client to know to parse markdown
         "author": metadata.get("author") or "",
-        "url": metadata.get("url", ""),
+        "url": metadata.get("source_url") or metadata.get("url", ""),
     }
 
 

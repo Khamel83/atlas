@@ -61,11 +61,11 @@ async def api_info():
     }
 
 
-# Mount Vue frontend for Atlas Reader (Shiori-compatible UI)
-# This must be AFTER API routes to avoid catching /api/* requests
+# Frontend pages
 from pathlib import Path
 from fastapi.responses import FileResponse
 WEBAPP_DIR = Path(__file__).parent.parent / "webapp" / "dist"
+
 if WEBAPP_DIR.exists():
     from fastapi.staticfiles import StaticFiles
 
@@ -73,16 +73,31 @@ if WEBAPP_DIR.exists():
     if (WEBAPP_DIR / "assets").exists():
         app.mount("/assets", StaticFiles(directory=str(WEBAPP_DIR / "assets")), name="assets")
 
-    # Catch-all route for Vue SPA - serves index.html for client-side routing
-    @app.get("/{full_path:path}")
-    async def serve_spa(full_path: str):
-        """Serve Vue SPA for all non-API routes."""
-        # Check if it's a static file that exists
-        file_path = WEBAPP_DIR / full_path
-        if file_path.is_file():
-            return FileResponse(file_path)
-        # Otherwise serve index.html for Vue Router to handle
+    # Explicit routes for each page
+    @app.get("/")
+    async def serve_home():
+        """Serve Atlas home page."""
+        return FileResponse(WEBAPP_DIR / "home.html")
+
+    @app.get("/reader")
+    async def serve_reader():
+        """Serve Atlas Reader."""
         return FileResponse(WEBAPP_DIR / "index.html")
+
+    @app.get("/intelligence")
+    async def serve_intelligence():
+        """Serve Intelligence dashboard."""
+        return FileResponse(WEBAPP_DIR / "intelligence.html")
+
+    @app.get("/dashboard")
+    async def serve_dashboard():
+        """Serve System dashboard."""
+        return FileResponse(WEBAPP_DIR / "dashboard.html")
+
+    @app.get("/favicon.ico")
+    async def serve_favicon():
+        """Serve favicon."""
+        return FileResponse(WEBAPP_DIR / "favicon.ico")
 
 
 if __name__ == "__main__":

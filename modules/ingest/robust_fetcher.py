@@ -1099,10 +1099,49 @@ class RobustFetcher:
 
         return extracted_md, clean_html, metadata
 
+    def _find_existing_content(self, content_id: str) -> Optional[Path]:
+        """
+        Search ALL content type directories for existing content with this ID.
+        Returns the path if found, None otherwise.
+
+        This prevents duplicates when the same URL is ingested as different content types.
+        """
+        content_types = ["article", "newsletter", "youtube", "podcast", "email"]
+
+        for content_type in content_types:
+            type_dir = self.output_base / content_type
+            if not type_dir.exists():
+                continue
+
+            # Walk through year/month/day directories
+            for year_dir in type_dir.iterdir():
+                if not year_dir.is_dir() or not year_dir.name.isdigit():
+                    continue
+                for month_dir in year_dir.iterdir():
+                    if not month_dir.is_dir() or not month_dir.name.isdigit():
+                        continue
+                    for day_dir in month_dir.iterdir():
+                        if not day_dir.is_dir() or not day_dir.name.isdigit():
+                            continue
+                        item_dir = day_dir / content_id
+                        if item_dir.exists():
+                            return item_dir
+
+        return None
+
     def _finalize_result(self, result: FetchResult, url: str, content_type: str) -> FetchResult:
         """Finalize result: download images, save files."""
         # Generate content ID
         content_id = hashlib.sha256(url.encode()).hexdigest()[:16]
+
+        # DEDUPLICATION CHECK: Search ALL content types for existing content
+        existing_dir = self._find_existing_content(content_id)
+        if existing_dir:
+            logger.info(f"Duplicate found at {existing_dir}, skipping save")
+            result.output_dir = existing_dir
+            result.metadata["duplicate"] = True
+            result.metadata["existing_path"] = str(existing_dir)
+            return result
 
         # Create output directory
         date_path = datetime.now().strftime("%Y/%m/%d")

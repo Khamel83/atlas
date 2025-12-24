@@ -68,19 +68,30 @@ push_audio() {
 pull_transcripts() {
     log "=== Pulling transcripts from Mac Mini ==="
 
-    # Pull any .txt files from transcripts folder
-    count=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/transcripts/*.txt 2>/dev/null | wc -l" | tr -d ' ')
+    # MacWhisper outputs .txt files NEXT TO the audio files (in audio/ folder)
+    # Look for .txt files in audio/ folder, not transcripts/
+    count=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/audio/*.txt 2>/dev/null | wc -l" | tr -d ' ')
 
     if [ "$count" -eq 0 ]; then
         log "No new transcripts to pull"
         return 0
     fi
 
-    log "Pulling $count transcripts"
-    scp -q "$MAC_HOST:$MAC_QUEUE/transcripts/*.txt" "$TRANSCRIPT_DIR/" 2>/dev/null || true
+    log "Pulling $count transcripts from audio folder"
 
-    # Clear pulled transcripts from Mac Mini
-    ssh "$MAC_HOST" "rm -f $MAC_QUEUE/transcripts/*.txt" 2>/dev/null || true
+    # Get list of completed transcripts
+    transcripts=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/audio/*.txt 2>/dev/null")
+
+    for txt in $transcripts; do
+        base=$(basename "$txt" .txt)
+
+        # Copy transcript to homelab
+        log "  Pulling: ${base}.txt"
+        scp -q "$MAC_HOST:$txt" "$TRANSCRIPT_DIR/" 2>/dev/null || continue
+
+        # Delete audio and txt from Mac (we have the transcript, don't need audio)
+        ssh "$MAC_HOST" "rm -f ~/atlas-whisper/audio/\"${base}.mp3\" ~/atlas-whisper/audio/\"${base}.txt\"" 2>/dev/null || true
+    done
 
     log "Pull complete"
 }
@@ -94,14 +105,15 @@ import_transcripts() {
 status() {
     local_pending=$(get_pending_files | wc -l)
     mac_audio=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/audio/*.mp3 2>/dev/null | wc -l" | tr -d ' ')
-    mac_transcripts=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/transcripts/*.txt 2>/dev/null | wc -l" | tr -d ' ')
-    mac_done=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/done/*.mp3 2>/dev/null | wc -l" | tr -d ' ')
+    # MacWhisper outputs .txt next to audio files
+    mac_transcripts=$(ssh "$MAC_HOST" "ls $MAC_QUEUE/audio/*.txt 2>/dev/null | wc -l" | tr -d ' ')
+    local_transcripts=$(ls "$TRANSCRIPT_DIR"/*.txt 2>/dev/null | wc -l)
 
     echo "=== MacWhisper Pipeline Status ==="
-    echo "Local pending:     $local_pending"
+    echo "Homelab pending:   $local_pending"
     echo "Mac processing:    $mac_audio"
     echo "Mac ready:         $mac_transcripts"
-    echo "Mac done:          $mac_done"
+    echo "Transcripts here:  $local_transcripts"
 }
 
 case "${1:-run}" in

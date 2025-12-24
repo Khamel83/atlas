@@ -336,7 +336,7 @@ KEY POINTS:
 
         try:
             response = requests.post(
-                f"{self.config.api_url}/chat/completions",
+                f"{self.config.base_url}/chat/completions",
                 headers={
                     "Authorization": f"Bearer {self.config.api_key}",
                     "Content-Type": "application/json",
@@ -725,7 +725,7 @@ If no contradictions exist, respond with: NO CONTRADICTIONS FOUND"""
 
         try:
             response = requests.post(
-                f"{self.config.api_url}/chat/completions",
+                f"{self.config.base_url}/chat/completions",
                 headers={
                     "Authorization": f"Bearer {self.config.api_key}",
                     "Content-Type": "application/json",
@@ -890,7 +890,7 @@ Question: {query}"""
         else:
             try:
                 response = requests.post(
-                    f"{self.config.api_url}/chat/completions",
+                    f"{self.config.base_url}/chat/completions",
                     headers={
                         "Authorization": f"Bearer {self.config.api_key}",
                         "Content-Type": "application/json",

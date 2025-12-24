@@ -88,8 +88,18 @@ class Browser:
 
             with open(self.cookies_file) as f:
                 cookies = json.load(f)
-                await self._context.add_cookies(cookies)
-                logger.info(f"Loaded {len(cookies)} cookies from {self.cookies_file}")
+                # Sanitize cookies for Playwright compatibility
+                sanitized = []
+                for cookie in cookies:
+                    c = dict(cookie)
+                    # Playwright requires sameSite to be Strict, Lax, or None
+                    if c.get('sameSite') not in ('Strict', 'Lax', 'None'):
+                        c['sameSite'] = 'Lax'  # Safe default
+                    # Ensure required fields
+                    if 'name' in c and 'value' in c and 'domain' in c:
+                        sanitized.append(c)
+                await self._context.add_cookies(sanitized)
+                logger.info(f"Loaded {len(sanitized)} cookies from {self.cookies_file}")
 
     async def stop(self):
         """Stop the browser and clean up resources"""

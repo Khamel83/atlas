@@ -165,10 +165,11 @@ def execute_podcast_task(task: Dict[str, Any]) -> Dict[str, Any]:
 
     strategy = task.get('resolution_strategy', 'retry_resolvers')
 
-    # Handle whisper_local separately
+    # Handle whisper_local separately - skip these, handled by download_for_whisper.py
     if strategy == 'whisper_local':
-        from scripts.execute_podcast_manifest import execute_whisper_local
-        return execute_whisper_local(task)
+        task['status'] = 'skipped'
+        task['error'] = 'whisper_local handled by dedicated timer'
+        return task
 
     # Try resolvers
     resolvers_to_try = task.get('resolvers_to_try', ['podscripts', 'generic_html', 'youtube_transcript'])
@@ -544,5 +545,53 @@ def main():
         run_daemon(limit=args.limit, task_type=args.type, once=args.once)
 
 
+def startup_self_test():
+    """
+    Validate all imports and dependencies before starting.
+    Prevents crash-loops by failing fast with a clear error.
+    """
+    errors = []
+
+    # Test core imports (must match actual imports used in the daemon)
+    try:
+        from modules.podcasts.store import PodcastStore
+    except ImportError as e:
+        errors.append(f"PodcastStore import failed: {e}")
+
+    try:
+        from modules.podcasts.resolvers import get_all_resolvers
+    except ImportError as e:
+        errors.append(f"resolvers import failed: {e}")
+
+    try:
+        from modules.ingest.robust_fetcher import RobustFetcher
+    except ImportError as e:
+        errors.append(f"robust_fetcher import failed: {e}")
+
+    # Validate critical paths exist
+    critical_paths = [
+        ATLAS_ROOT / "modules",
+        ATLAS_ROOT / "data",
+        MANIFESTS_DIR,
+    ]
+    for path in critical_paths:
+        if not path.exists():
+            errors.append(f"Critical path missing: {path}")
+
+    if errors:
+        logger.error("=" * 60)
+        logger.error("STARTUP SELF-TEST FAILED - daemon will not start")
+        logger.error("=" * 60)
+        for err in errors:
+            logger.error(f"  - {err}")
+        logger.error("")
+        logger.error("Fix these issues and restart the daemon.")
+        logger.error("=" * 60)
+        sys.exit(1)
+
+    logger.info("Startup self-test passed")
+
+
 if __name__ == '__main__':
+    startup_self_test()
     main()

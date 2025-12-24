@@ -202,6 +202,9 @@ class ContentValidator:
 class ContentRetryPipeline:
     """Retry failed content fetches with improved methods"""
 
+    # Cookie files for paywalled sites
+    COOKIE_DIR = Path.home() / ".config" / "atlas" / "cookies"
+
     def __init__(self, content_dir: str = "data/content"):
         self.content_dir = Path(content_dir)
         self.session = requests.Session()
@@ -220,6 +223,8 @@ class ContentRetryPipeline:
             'still_failed': 0,
             'content_improved': 0,
         }
+        # Load cookies for authenticated sites
+        self._load_cookies()
 
     def _rate_limit(self):
         """Enforce rate limiting"""
@@ -227,6 +232,57 @@ class ContentRetryPipeline:
         if elapsed < self.rate_limit:
             time.sleep(self.rate_limit - elapsed)
         self.last_request = time.time()
+
+    def _load_cookies(self):
+        """Load cookies from cookie files into requests session."""
+        if not self.COOKIE_DIR.exists():
+            logger.info("No cookie directory found")
+            return
+
+        loaded = []
+        for cookie_file in self.COOKIE_DIR.glob("*.json"):
+            try:
+                with open(cookie_file) as f:
+                    cookies = json.load(f)
+
+                # Handle both formats: list of cookies or dict
+                if isinstance(cookies, list):
+                    for cookie in cookies:
+                        if 'name' in cookie and 'value' in cookie:
+                            self.session.cookies.set(
+                                cookie['name'],
+                                cookie['value'],
+                                domain=cookie.get('domain', ''),
+                                path=cookie.get('path', '/')
+                            )
+                loaded.append(cookie_file.stem)
+            except Exception as e:
+                logger.warning(f"Failed to load cookies from {cookie_file}: {e}")
+
+        if loaded:
+            logger.info(f"Loaded cookies for: {', '.join(loaded)}")
+
+    def _get_cookie_file_for_url(self, url: str) -> Optional[Path]:
+        """Get the cookie file for a specific URL domain."""
+        from urllib.parse import urlparse
+        domain = urlparse(url).netloc.lower()
+
+        # Map domains to cookie files
+        domain_map = {
+            'wsj.com': 'wsj.com.json',
+            'www.wsj.com': 'wsj.com.json',
+            'bloomberg.com': 'bloomberg.com.json',
+            'www.bloomberg.com': 'bloomberg.com.json',
+            'nytimes.com': 'nytimes.com.json',
+            'www.nytimes.com': 'nytimes.com.json',
+        }
+
+        for key, filename in domain_map.items():
+            if key in domain:
+                cookie_path = self.COOKIE_DIR / filename
+                if cookie_path.exists():
+                    return cookie_path
+        return None
 
     def resolve_redirect(self, url: str) -> Tuple[str, bool]:
         """
@@ -301,7 +357,7 @@ class ContentRetryPipeline:
             return None, {'error': str(e)}
 
     async def fetch_with_browser(self, url: str) -> Tuple[Optional[str], Optional[Dict]]:
-        """Fetch content with headless browser"""
+        """Fetch content with headless browser, using cookies for paywalled sites"""
         import sys
         from pathlib import Path
         # Add project root to path if needed
@@ -310,10 +366,13 @@ class ContentRetryPipeline:
             sys.path.insert(0, str(project_root))
         from modules.browser import Browser
 
+        # Get cookie file for this URL
+        cookie_file = self._get_cookie_file_for_url(url)
+
         try:
-            async with Browser(timeout=45000) as browser:
+            async with Browser(timeout=45000, cookies_file=cookie_file) as browser:
                 # Get the rendered page
-                html = await browser.fetch(url, wait_for="load", wait_time=2000)
+                html = await browser.fetch(url, wait_for="load", wait_time=3000)
 
                 # Extract content
                 content = trafilatura.extract(
@@ -331,10 +390,70 @@ class ContentRetryPipeline:
                         'author': metadata.author or '',
                     }
 
+                if cookie_file and content and len(content) > 500:
+                    logger.info(f"Successfully fetched with cookies: {url[:50]}...")
+
                 return content, meta_dict
 
         except Exception as e:
             logger.warning(f"Browser fetch failed for {url}: {e}")
+            return None, {'error': str(e)}
+
+    def fetch_from_wayback(self, url: str) -> Tuple[Optional[str], Optional[Dict]]:
+        """
+        Fetch content from Wayback Machine as last resort.
+        This bypasses paywalls and bot detection since it's an archived snapshot.
+        """
+        from urllib.parse import quote_plus
+
+        try:
+            # Check if Wayback has this URL
+            check_url = f"https://archive.org/wayback/available?url={quote_plus(url)}"
+            response = self.session.get(check_url, timeout=15)
+            if response.status_code != 200:
+                return None, {'error': 'Wayback check failed'}
+
+            data = response.json()
+            snapshots = data.get('archived_snapshots', {})
+            closest = snapshots.get('closest', {})
+
+            if not closest.get('available'):
+                logger.debug(f"No Wayback snapshot for: {url}")
+                return None, {'error': 'No snapshot available'}
+
+            # Fetch the archived version
+            archive_url = closest['url']
+            logger.info(f"Fetching from Wayback: {archive_url[:60]}...")
+
+            archive_response = self.session.get(archive_url, timeout=30)
+            if archive_response.status_code != 200:
+                return None, {'error': f'Wayback fetch failed: {archive_response.status_code}'}
+
+            html = archive_response.text
+
+            # Extract content
+            content = trafilatura.extract(
+                html,
+                include_links=True,
+                include_images=True,
+                output_format="markdown"
+            )
+
+            metadata = trafilatura.extract_metadata(html)
+            meta_dict = {'wayback_url': archive_url}
+            if metadata:
+                meta_dict['title'] = metadata.title or ''
+                meta_dict['author'] = metadata.author or ''
+
+            if content and len(content) > 500:
+                logger.info(f"Successfully fetched from Wayback: {url[:50]}...")
+                self.stats['fetched_from_wayback'] = self.stats.get('fetched_from_wayback', 0) + 1
+                return content, meta_dict
+
+            return None, {'error': 'Content too short from Wayback'}
+
+        except Exception as e:
+            logger.warning(f"Wayback fetch failed for {url}: {e}")
             return None, {'error': str(e)}
 
     async def retry_item(self, item: Dict[str, Any]) -> bool:
@@ -358,7 +477,8 @@ class ContentRetryPipeline:
                 self.stats['resolved_redirects'] += 1
                 print(f"    -> Resolved to: {final_url[:60]}...")
 
-        # Step 2: Try fetching content
+        # Step 2: Try fetching content with fallback chain
+        # requests → browser → wayback
         content = None
         metadata = {}
 
@@ -378,6 +498,14 @@ class ContentRetryPipeline:
                 content, metadata = await self.fetch_with_browser(final_url)
                 if content and len(content) > 500:
                     self.stats['fetched_with_browser'] += 1
+
+        # Step 2.5: If still no content, try Wayback Machine
+        # This handles bot-blocked sites (WSJ, Bloomberg with DataDome)
+        if not content or len(content) < 500:
+            wayback_content, wayback_meta = self.fetch_from_wayback(final_url)
+            if wayback_content and len(wayback_content) > 500:
+                content = wayback_content
+                metadata = wayback_meta
 
         # Step 3: Update the content if we got something better
         if content and len(content) > 500:
@@ -441,6 +569,7 @@ class ContentRetryPipeline:
         print(f"Redirects resolved: {self.stats['resolved_redirects']}")
         print(f"Fetched (requests): {self.stats['fetched_with_requests']}")
         print(f"Fetched (browser):  {self.stats['fetched_with_browser']}")
+        print(f"Fetched (wayback):  {self.stats.get('fetched_from_wayback', 0)}")
         print(f"Content improved:   {self.stats['content_improved']}")
         print(f"Still failed:       {self.stats['still_failed']}")
         print(f"{'='*60}\n")

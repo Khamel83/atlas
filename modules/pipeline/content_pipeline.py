@@ -32,6 +32,7 @@ from bs4 import BeautifulSoup
 
 from modules.storage import FileStore, IndexManager, ContentItem, ContentType, SourceType
 from modules.storage.content_types import ProcessingStatus
+from modules.quality.content_validator import validate_before_save, is_garbage_content
 
 logger = logging.getLogger(__name__)
 
@@ -273,6 +274,13 @@ class ContentPipeline:
             self.stats["skipped_non_content"] += 1
             return None
 
+        # Pre-validate URL before fetching (catch obvious garbage early)
+        is_garbage, garbage_reason = is_garbage_content(url=url)
+        if is_garbage:
+            logger.info(f"Skipping garbage URL: {garbage_reason} - {url[:80]}")
+            self.stats["skipped_garbage"] = self.stats.get("skipped_garbage", 0) + 1
+            return None
+
         # Check for duplicate
         content_id = ContentItem.generate_id(source_url=url)
         if not force and self.file_store.exists(content_id):
@@ -300,24 +308,24 @@ class ContentPipeline:
         if not fetch_success:
             logger.error(f"Failed to fetch: {url}")
             self.stats["failed"] += 1
-
-            # Still create a record for tracking
-            item = ContentItem(
-                content_id=content_id,
-                content_type=content_type,
-                source_type=source_type,
-                title=f"Failed: {url[:50]}",
-                source_url=url,
-                status=ProcessingStatus.FAILED,
-                error_message=fetch_error,
-                extra=extra or {},
-            )
-            item_dir = self.file_store.save(item)
-            self.index_manager.index_item(item, str(item_dir))
-            return item
+            # Don't save failed fetches - they're garbage
+            return None
 
         # Extract metadata
         title = metadata.get("title", "") or url[:100]
+
+        # Validate content quality BEFORE saving
+        should_save, rejection_reason = validate_before_save(
+            url=url,
+            title=title,
+            content=content or "",
+            strict=True  # Reject anything that looks like garbage
+        )
+
+        if not should_save:
+            logger.info(f"Rejecting garbage content: {rejection_reason} - {url[:80]}")
+            self.stats["skipped_garbage"] = self.stats.get("skipped_garbage", 0) + 1
+            return None
         author = metadata.get("author", "")
         description = metadata.get("description", "")
 
@@ -437,6 +445,7 @@ def run_pipeline():
     print("=" * 50)
     print(f"Processed:     {stats['processed']}")
     print(f"Duplicates:    {stats['skipped_duplicate']}")
+    print(f"Garbage:       {stats.get('skipped_garbage', 0)}")
     print(f"Non-content:   {stats.get('skipped_non_content', 0)}")
     print(f"Failed:        {stats['failed']}")
 
