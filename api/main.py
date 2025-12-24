@@ -9,7 +9,7 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routers import health, podcasts, content, search, dashboard, shiori_compat, notes
+from api.routers import health, podcasts, content, search, dashboard, shiori_compat, notes, intelligence
 
 # Create app
 app = FastAPI(
@@ -23,7 +23,8 @@ app = FastAPI(
 ALLOWED_ORIGINS = os.environ.get(
     "ATLAS_CORS_ORIGINS",
     "http://localhost:3000,http://localhost:7444,http://127.0.0.1:3000,http://127.0.0.1:7444,"
-    "https://read.khamel.com,http://read.khamel.com"
+    "https://read.khamel.com,http://read.khamel.com,"
+    "https://atlas.khamel.com,http://atlas.khamel.com"
 ).split(",")
 
 app.add_middleware(
@@ -44,6 +45,8 @@ app.include_router(dashboard.router, prefix="/api")
 app.include_router(shiori_compat.router, prefix="/api")
 # Notes endpoints (short-form curated content)
 app.include_router(notes.router, prefix="/api/notes")
+# Intelligence endpoints (topic maps, quotes, recommendations)
+app.include_router(intelligence.router, prefix="/api/intelligence")
 
 
 # Root endpoint moved to /api/info to allow StaticFiles to serve Vue frontend at /

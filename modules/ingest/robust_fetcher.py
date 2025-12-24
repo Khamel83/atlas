@@ -608,6 +608,9 @@ class ArchiveFetcher:
 class PlaywrightFetcher:
     """Fetch content using headless browser for JS-rendered pages."""
 
+    # Default cookies directory
+    COOKIES_DIR = Path.home() / ".config" / "atlas" / "cookies"
+
     def __init__(self, cookies_path: Optional[Path] = None):
         self.cookies_path = cookies_path
 
@@ -635,9 +638,12 @@ class PlaywrightFetcher:
                               "Chrome/120.0.0.0 Safari/537.36"
                 )
 
-                # Load cookies if available
-                if self.cookies_path and self.cookies_path.exists():
-                    self._load_cookies(context)
+                # Load domain-specific cookies first, then fallback to provided path
+                domain = urlparse(url).netloc.lower().replace('www.', '')
+                cookies_loaded = self._load_domain_cookies(context, domain)
+
+                if not cookies_loaded and self.cookies_path and self.cookies_path.exists():
+                    self._load_cookies(context, self.cookies_path)
 
                 page = context.new_page()
                 page.goto(url, wait_until="networkidle", timeout=30000)
@@ -655,15 +661,57 @@ class PlaywrightFetcher:
             logger.error(f"Playwright fetch failed: {e}")
             return None
 
-    def _load_cookies(self, context):
+    def _load_domain_cookies(self, context, domain: str) -> bool:
+        """Load cookies for a specific domain from cookies directory."""
+        if not self.COOKIES_DIR.exists():
+            return False
+
+        # Try direct match first
+        cookie_file = self.COOKIES_DIR / f"{domain}.json"
+        if not cookie_file.exists():
+            # Try finding a partial match
+            for f in self.COOKIES_DIR.glob("*.json"):
+                if f.stem in domain or domain in f.stem:
+                    cookie_file = f
+                    break
+
+        if cookie_file.exists():
+            return self._load_cookies(context, cookie_file)
+        return False
+
+    def _load_cookies(self, context, cookie_path: Path) -> bool:
         """Load cookies from file into browser context."""
         try:
-            with open(self.cookies_path, 'r') as f:
+            with open(cookie_path, 'r') as f:
                 cookies = json.load(f)
-                context.add_cookies(cookies)
-                logger.debug(f"Loaded {len(cookies)} cookies")
+
+            # Convert to Playwright format if needed
+            pw_cookies = []
+            for cookie in cookies:
+                pw_cookie = {
+                    'name': cookie.get('name'),
+                    'value': cookie.get('value'),
+                    'domain': cookie.get('domain', ''),
+                    'path': cookie.get('path', '/'),
+                }
+                # Add optional fields if present
+                if cookie.get('secure'):
+                    pw_cookie['secure'] = True
+                if cookie.get('httpOnly'):
+                    pw_cookie['httpOnly'] = True
+                if cookie.get('sameSite'):
+                    # Playwright expects 'Lax', 'Strict', or 'None'
+                    ss = cookie.get('sameSite', '').capitalize()
+                    if ss in ('Lax', 'Strict', 'None'):
+                        pw_cookie['sameSite'] = ss
+                pw_cookies.append(pw_cookie)
+
+            context.add_cookies(pw_cookies)
+            logger.info(f"Loaded {len(pw_cookies)} cookies from {cookie_path.name}")
+            return True
         except Exception as e:
-            logger.warning(f"Failed to load cookies: {e}")
+            logger.warning(f"Failed to load cookies from {cookie_path}: {e}")
+            return False
 
 
 class URLResurrector:

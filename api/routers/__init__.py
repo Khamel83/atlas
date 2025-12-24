@@ -1,5 +1,5 @@
 """API Routers."""
 
-from . import health, podcasts, content, search
+from . import health, podcasts, content, search, dashboard, shiori_compat, notes, intelligence
 
-__all__ = ["health", "podcasts", "content", "search"]
+__all__ = ["health", "podcasts", "content", "search", "dashboard", "shiori_compat", "notes", "intelligence"]

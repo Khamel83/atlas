@@ -32,6 +32,376 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def cmd_quote(args):
+    """Extract quotable passages on a topic."""
+    from modules.ask.intelligence import QuoteExtractor
+
+    extractor = QuoteExtractor()
+    try:
+        source_filter = None
+        if args.source:
+            source_filter = [s.strip() for s in args.source.split(",")]
+
+        quotes = extractor.extract_quotes(
+            topic=args.topic,
+            limit=args.limit,
+            min_length=args.min_length,
+            max_length=args.max_length,
+            source_filter=source_filter,
+        )
+
+        if not quotes:
+            print(f"\nNo quotable passages found for: {args.topic}")
+            return 1
+
+        print(f"\n{'='*60}")
+        print(f"QUOTES: {args.topic}")
+        print('='*60)
+
+        for i, quote in enumerate(quotes, 1):
+            if args.markdown:
+                print(f"\n{quote.as_markdown()}")
+            else:
+                print(f"\n{i}. {quote}")
+            print(f"   [relevance: {quote.relevance_score:.3f}]")
+
+        return 0
+    finally:
+        extractor.close()
+
+
+def cmd_source(args):
+    """Query what a specific source thinks about a topic."""
+    from modules.ask.intelligence import SourceQueryEngine
+
+    engine = SourceQueryEngine()
+    try:
+        if args.compare:
+            # Compare multiple sources
+            sources = [s.strip() for s in args.source.split(",")]
+            perspectives = engine.compare_sources(sources, args.topic)
+
+            if not perspectives:
+                print(f"\nNo perspectives found for sources: {sources}")
+                return 1
+
+            print(f"\n{'='*60}")
+            print(f"SOURCE COMPARISON: {args.topic}")
+            print('='*60)
+
+            for source, perspective in perspectives.items():
+                print(f"\n## {source}")
+                print(f"{perspective.summary}")
+                if perspective.key_points:
+                    print("\nKey points:")
+                    for point in perspective.key_points:
+                        print(f"  • {point}")
+                if perspective.quotes:
+                    print("\nNotable quote:")
+                    print(f"  {perspective.quotes[0]}")
+        else:
+            # Single source perspective
+            perspective = engine.what_does_x_think(args.source, args.topic)
+
+            if not perspective:
+                print(f"\nNo content found from {args.source} about {args.topic}")
+                return 1
+
+            print(f"\n{'='*60}")
+            print(f"WHAT {args.source.upper()} THINKS ABOUT: {args.topic}")
+            print('='*60)
+
+            print(f"\n{perspective.summary}")
+
+            if perspective.key_points:
+                print("\nKey Points:")
+                for point in perspective.key_points:
+                    print(f"  • {point}")
+
+            if perspective.quotes:
+                print("\nQuotes:")
+                for quote in perspective.quotes[:2]:
+                    print(f"\n  {quote}")
+
+            print(f"\n[Based on {perspective.chunk_count} chunks, avg relevance: {perspective.avg_relevance:.3f}]")
+
+        return 0
+    finally:
+        engine.close()
+
+
+def cmd_thread(args):
+    """Manage research threads."""
+    from modules.ask.intelligence import ThreadStore
+
+    store = ThreadStore()
+
+    if args.subcommand == "new":
+        tags = [t.strip() for t in args.tags.split(",")] if args.tags else []
+        thread = store.create_thread(args.title, args.description, tags)
+        print(f"Created thread [{thread.id}]: {thread.title}")
+
+    elif args.subcommand == "list":
+        threads = store.list_threads(limit=args.limit)
+        if not threads:
+            print("No research threads found.")
+            return 0
+
+        print(f"\n{'='*60}")
+        print("RESEARCH THREADS")
+        print('='*60)
+
+        for t in threads:
+            tags_str = f" [{', '.join(t.tags)}]" if t.tags else ""
+            print(f"\n[{t.id}] {t.title}{tags_str}")
+            print(f"   {len(t.queries)} queries | Updated: {t.updated_at.strftime('%Y-%m-%d %H:%M')}")
+
+    elif args.subcommand == "show":
+        thread = store.get_thread(args.thread_id)
+        if not thread:
+            print(f"Thread not found: {args.thread_id}")
+            return 1
+
+        print(f"\n{'='*60}")
+        print(f"THREAD: {thread.title}")
+        print('='*60)
+
+        if thread.description:
+            print(f"\n{thread.description}")
+
+        print(f"\nQueries ({len(thread.queries)}):")
+        for q in thread.queries:
+            print(f"\n  Q: {q.query}")
+            print(f"  A: {q.answer[:200]}..." if len(q.answer) > 200 else f"  A: {q.answer}")
+
+    elif args.subcommand == "continue":
+        # Continue a thread with a new query
+        thread = store.get_thread(args.thread_id)
+        if not thread:
+            print(f"Thread not found: {args.thread_id}")
+            return 1
+
+        # Use conversational session with thread context
+        from modules.ask.intelligence import ConversationalSession
+
+        session = ConversationalSession()
+        try:
+            # Preload history from thread
+            for q in thread.queries[-3:]:  # Last 3 queries for context
+                session.history.append({"role": "user", "content": q.query})
+                session.history.append({"role": "assistant", "content": q.answer})
+
+            answer = session.ask(args.query)
+
+            # Save to thread
+            store.add_query(args.thread_id, args.query, answer, [])
+
+            print(f"\n{answer}")
+            print(f"\n[Added to thread: {thread.title}]")
+        finally:
+            session.close()
+
+    return 0
+
+
+def cmd_recommend(args):
+    """Get personalized content recommendations."""
+    from modules.ask.intelligence import RecommendationEngine
+
+    engine = RecommendationEngine()
+    try:
+        recommendations = engine.get_recommendations(limit=args.limit)
+
+        if not recommendations:
+            print("\nNo recommendations available. Try annotating some content first!")
+            return 1
+
+        print(f"\n{'='*60}")
+        print("RECOMMENDED FOR YOU")
+        print('='*60)
+
+        for i, r in enumerate(recommendations, 1):
+            title = r.metadata.get("title", r.content_id)
+            print(f"\n{i}. {title}")
+            print(f"   {r.text[:200]}...")
+            print(f"   [relevance: {r.score:.3f}]")
+
+        return 0
+    finally:
+        engine.close()
+
+
+def cmd_contradict(args):
+    """Find contradictions on a topic across sources."""
+    from modules.ask.intelligence import ContradictionRadar
+
+    radar = ContradictionRadar()
+    try:
+        contradictions = radar.find_contradictions(args.topic, min_sources=args.min_sources)
+
+        if not contradictions:
+            print(f"\nNo contradictions found across sources for: {args.topic}")
+            print("Sources seem to agree, or there's not enough coverage.")
+            return 0
+
+        print(f"\n{'='*60}")
+        print(f"CONTRADICTIONS: {args.topic}")
+        print('='*60)
+
+        for i, c in enumerate(contradictions, 1):
+            print(f"\n{i}. {c.topic}")
+            print(f"   {c.source_a}: {c.position_a}")
+            print(f"   vs")
+            print(f"   {c.source_b}: {c.position_b}")
+            print(f"\n   Explanation: {c.explanation}")
+            print(f"   [confidence: {c.confidence:.0%}]")
+
+        return 0
+    finally:
+        radar.close()
+
+
+def cmd_chat(args):
+    """Interactive conversational mode."""
+    from modules.ask.intelligence import ConversationalSession
+
+    session = ConversationalSession()
+
+    print(f"\n{'='*60}")
+    print("ATLAS CHAT - Conversational Research Mode")
+    print('='*60)
+    print("Type your questions. Use 'quit' to exit, 'reset' to clear context.")
+    print()
+
+    try:
+        while True:
+            try:
+                query = input("You: ").strip()
+            except EOFError:
+                break
+
+            if not query:
+                continue
+
+            if query.lower() in ("quit", "exit", "q"):
+                break
+
+            if query.lower() == "reset":
+                session.reset()
+                print("Context cleared.\n")
+                continue
+
+            if query.lower() == "history":
+                for turn in session.get_history():
+                    prefix = "You" if turn.role == "user" else "Atlas"
+                    print(f"{prefix}: {turn.content[:100]}...")
+                print()
+                continue
+
+            answer = session.ask(query)
+            print(f"\nAtlas: {answer}\n")
+
+    except KeyboardInterrupt:
+        print("\n")
+    finally:
+        session.close()
+
+    return 0
+
+
+def cmd_briefing(args):
+    """Generate a personalized daily briefing."""
+    from modules.ask.intelligence import RecommendationEngine, QuoteExtractor
+    from modules.digest.summarizer import generate_digest
+    from datetime import datetime
+
+    print(f"\n{'='*60}")
+    print(f"DAILY BRIEFING - {datetime.now().strftime('%A, %B %d, %Y')}")
+    print('='*60)
+
+    # Get recent digest
+    try:
+        digest = generate_digest(days=args.days, max_items=10)
+        if digest and digest.get("clusters"):
+            print("\n## What's New")
+            for cluster in digest["clusters"][:3]:
+                print(f"\n**{cluster.get('topic', 'Topic')}** ({cluster.get('count', 0)} items)")
+                if cluster.get("summary"):
+                    print(f"  {cluster['summary'][:200]}...")
+    except Exception as e:
+        logger.debug(f"Digest generation failed: {e}")
+
+    # Get recommendations
+    try:
+        engine = RecommendationEngine()
+        recommendations = engine.get_recommendations(limit=3)
+        engine.close()
+
+        if recommendations:
+            print("\n## Recommended Reading")
+            for r in recommendations:
+                title = r.metadata.get("title", r.content_id)
+                print(f"\n• **{title}**")
+                print(f"  {r.text[:150]}...")
+    except Exception as e:
+        logger.debug(f"Recommendations failed: {e}")
+
+    # Get a notable quote
+    try:
+        extractor = QuoteExtractor()
+        quotes = extractor.extract_quotes("important insights", limit=1)
+        extractor.close()
+
+        if quotes:
+            print("\n## Quote of the Day")
+            print(f"\n{quotes[0].as_markdown()}")
+    except Exception as e:
+        logger.debug(f"Quote extraction failed: {e}")
+
+    print(f"\n{'='*60}")
+    return 0
+
+
+def cmd_topicmap(args):
+    """Generate a topic map visualization."""
+    from modules.ask.topic_map import TopicMapper
+
+    mapper = TopicMapper()
+    print("Generating topic map...")
+
+    topic_map = mapper.generate_map(
+        limit=args.limit,
+        min_cluster_size=args.min_cluster,
+    )
+
+    if not topic_map.clusters:
+        print("\nNo topics found. Make sure content is indexed.")
+        return 1
+
+    print(f"\n{'='*60}")
+    print("TOPIC MAP")
+    print('='*60)
+
+    print(f"\nTotal content: {topic_map.total_content}")
+    print(f"Topic clusters: {len(topic_map.clusters)}")
+
+    print("\nTop Topics:")
+    for c in topic_map.clusters[:10]:
+        sources_str = ", ".join(c.sources[:3])
+        print(f"  • {c.label}: {c.content_count} items ({sources_str})")
+
+    print("\nSource Distribution:")
+    for source, count in list(topic_map.source_distribution.items())[:10]:
+        print(f"  • {source}: {count}")
+
+    if args.html:
+        output_path = mapper.save_html(topic_map)
+        print(f"\nHTML visualization saved to: {output_path}")
+        print("Open in browser to view interactive charts.")
+
+    return 0
+
+
 def cmd_annotate(args):
     """Add an annotation to a chunk or content."""
     from modules.ask.annotations import AnnotationStore, AnnotationType, Reaction
@@ -396,6 +766,63 @@ def main():
 
     subparsers = parser.add_subparsers(dest="command", help="Commands")
 
+    # quote command
+    quote_parser = subparsers.add_parser("quote", help="Extract quotable passages")
+    quote_parser.add_argument("topic", help="Topic to find quotes about")
+    quote_parser.add_argument("--limit", "-l", type=int, default=5, help="Max quotes")
+    quote_parser.add_argument("--source", "-s", help="Filter by source (comma-separated)")
+    quote_parser.add_argument("--min-length", type=int, default=50, help="Min quote length")
+    quote_parser.add_argument("--max-length", type=int, default=300, help="Max quote length")
+    quote_parser.add_argument("--markdown", "-m", action="store_true", help="Output as markdown")
+
+    # source command
+    source_parser = subparsers.add_parser("source", help="Query what a source thinks about a topic")
+    source_parser.add_argument("source", help="Source name (e.g., 'Ben Thompson')")
+    source_parser.add_argument("topic", help="Topic to query")
+    source_parser.add_argument("--compare", "-c", action="store_true",
+                              help="Compare multiple sources (comma-separated in source arg)")
+
+    # thread command
+    thread_parser = subparsers.add_parser("thread", help="Manage research threads")
+    thread_subparsers = thread_parser.add_subparsers(dest="subcommand")
+
+    thread_new = thread_subparsers.add_parser("new", help="Create a new thread")
+    thread_new.add_argument("title", help="Thread title")
+    thread_new.add_argument("--description", "-d", help="Thread description")
+    thread_new.add_argument("--tags", "-t", help="Comma-separated tags")
+
+    thread_list = thread_subparsers.add_parser("list", help="List threads")
+    thread_list.add_argument("--limit", "-l", type=int, default=20)
+
+    thread_show = thread_subparsers.add_parser("show", help="Show a thread")
+    thread_show.add_argument("thread_id", help="Thread ID")
+
+    thread_continue = thread_subparsers.add_parser("continue", help="Continue a thread")
+    thread_continue.add_argument("thread_id", help="Thread ID")
+    thread_continue.add_argument("query", help="New query")
+
+    # recommend command
+    recommend_parser = subparsers.add_parser("recommend", help="Get personalized recommendations")
+    recommend_parser.add_argument("--limit", "-l", type=int, default=5)
+
+    # contradict command
+    contradict_parser = subparsers.add_parser("contradict", help="Find contradictions on a topic")
+    contradict_parser.add_argument("topic", help="Topic to check for contradictions")
+    contradict_parser.add_argument("--min-sources", type=int, default=2)
+
+    # chat command
+    subparsers.add_parser("chat", help="Interactive conversational mode")
+
+    # briefing command
+    briefing_parser = subparsers.add_parser("briefing", help="Generate daily briefing")
+    briefing_parser.add_argument("--days", "-d", type=int, default=7, help="Days to include")
+
+    # topicmap command
+    topicmap_parser = subparsers.add_parser("topicmap", help="Generate topic map visualization")
+    topicmap_parser.add_argument("--limit", "-l", type=int, default=1000, help="Max content to analyze")
+    topicmap_parser.add_argument("--min-cluster", type=int, default=5, help="Min items per cluster")
+    topicmap_parser.add_argument("--html", action="store_true", help="Generate interactive HTML")
+
     # ask command
     ask_parser = subparsers.add_parser("ask", help="Ask a question")
     ask_parser.add_argument("query", help="Question to ask")
@@ -496,7 +923,7 @@ def main():
         return 1
 
     # Commands that don't need API key
-    no_api_key_commands = {"annotate", "stats"}
+    no_api_key_commands = {"annotate", "stats", "topicmap", "thread"}
 
     # Check for API key (not needed for some commands)
     if args.command not in no_api_key_commands and not os.getenv("OPENROUTER_API_KEY"):
@@ -511,6 +938,14 @@ def main():
         "stats": cmd_stats,
         "synthesize": cmd_synthesize,
         "annotate": cmd_annotate,
+        "quote": cmd_quote,
+        "source": cmd_source,
+        "thread": cmd_thread,
+        "recommend": cmd_recommend,
+        "contradict": cmd_contradict,
+        "chat": cmd_chat,
+        "briefing": cmd_briefing,
+        "topicmap": cmd_topicmap,
     }
 
     return commands[args.command](args)
