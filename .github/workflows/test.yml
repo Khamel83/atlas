@@ -1,5 +1,10 @@
 name: Atlas Tests
 
+# POLICY: Immediate feedback only - NO scheduled runs
+# This is a personal project, not a hosted service.
+# Tests run on push for instant feedback, not hourly/daily.
+# Do NOT add 'schedule:' trigger.
+
 on:
   push:
     branches: [ main ]
