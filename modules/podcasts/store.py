@@ -626,6 +626,25 @@ class PodcastStore:
                 ),
             )
 
+    def reset_stuck_discovery_runs(self, max_hours: int = 24) -> int:
+        """
+        Reset discovery runs stuck in 'running' state longer than max_hours.
+
+        Returns number of runs reset.
+        """
+        with self._get_connection() as conn:
+            cursor = conn.execute(
+                """
+                UPDATE discovery_runs
+                SET status = 'failed',
+                    completed_at = CURRENT_TIMESTAMP
+                WHERE status = 'running'
+                AND started_at < datetime('now', ? || ' hours')
+                """,
+                (f"-{max_hours}",),
+            )
+            return cursor.rowcount
+
     def get_stats(self) -> Dict[str, Any]:
         """Get database statistics"""
         with self._get_connection() as conn:

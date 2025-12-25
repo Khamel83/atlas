@@ -138,6 +138,61 @@ def format_diarized_transcript(
     return "\n".join(lines)
 
 
+def cleanup_orphaned_files(queue_dir: Path, processed: set, store: PodcastStore) -> int:
+    """
+    Move files that are already processed but weren't cleaned up.
+
+    This fixes the bug where fallback matching (by date) finds an episode,
+    marks it as processed, but the original file (with wrong ID) remains.
+    """
+    processed_dir = queue_dir / 'processed_files'
+    processed_dir.mkdir(exist_ok=True)
+    transcripts_dir = queue_dir / 'transcripts'
+
+    if not transcripts_dir.exists():
+        return 0
+
+    moved = 0
+    for tf in list(transcripts_dir.glob('*.*')):
+        if tf.suffix not in ['.md', '.txt', '.json', '.srt']:
+            continue
+
+        # Parse filename to extract podcast slug and date
+        match = re.match(
+            r'^(?:\d+)?([a-z][a-z0-9-]+)_(\d+)_(\d{4}-\d{2}-\d{2})_',
+            tf.name, re.IGNORECASE
+        )
+        if not match:
+            continue
+
+        podcast_slug = match.group(1)
+        file_date = match.group(3)
+
+        # Date fallback lookup - same logic as import
+        with store._get_connection() as conn:
+            podcast_row = conn.execute(
+                "SELECT id FROM podcasts WHERE slug = ?",
+                (podcast_slug,)
+            ).fetchone()
+            if podcast_row:
+                rows = conn.execute(
+                    """SELECT id FROM episodes
+                       WHERE podcast_id = ?
+                       AND date(publish_date) = date(?)
+                       LIMIT 1""",
+                    (podcast_row["id"], file_date)
+                ).fetchall()
+                if rows and rows[0]["id"] in processed:
+                    # Already imported - clean up
+                    shutil.move(str(tf), str(processed_dir / tf.name))
+                    moved += 1
+
+    if moved > 0:
+        logger.info(f"Cleaned up {moved} orphaned files (already imported)")
+
+    return moved
+
+
 def import_transcripts(queue_dir: Path, dry_run: bool = False):
     """Import completed transcripts from watch folder."""
 
@@ -157,6 +212,10 @@ def import_transcripts(queue_dir: Path, dry_run: bool = False):
     processed = set()
     if processed_file.exists():
         processed = set(json.loads(processed_file.read_text()))
+
+    # Clean up orphaned files before processing new ones
+    if not dry_run:
+        cleanup_orphaned_files(queue_dir, processed, store)
 
     # Find transcript files - prefer .json (diarized) > .md > .txt
     transcript_files = []

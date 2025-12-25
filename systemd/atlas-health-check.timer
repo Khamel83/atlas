@@ -1,0 +1,11 @@
+[Unit]
+Description=Atlas Podcast Pipeline Health Check Timer
+# Runs daily at 3am to validate all UID layers are in sync
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target

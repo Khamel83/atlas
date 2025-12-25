@@ -413,7 +413,7 @@ class NPRCrawler:
                 logger.warning(f"Podcast '{podcast_slug}' not in database, skipping sync")
                 return 0
 
-            episodes = store.get_episodes(podcast.id)
+            episodes = store.get_episodes_by_podcast(podcast.id)
             if not episodes:
                 logger.warning(f"No episodes found for '{podcast_slug}' in database")
                 return 0

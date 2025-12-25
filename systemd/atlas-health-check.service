@@ -1,0 +1,21 @@
+[Unit]
+Description=Atlas Podcast Pipeline Health Check
+After=network.target
+
+[Service]
+Type=oneshot
+User=khamel83
+WorkingDirectory=/home/khamel83/github/atlas
+ExecStart=/home/khamel83/github/atlas/venv/bin/python scripts/podcast_health_check.py --fix
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atlas-health-check
+
+# Resource limits
+MemoryMax=512M
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target

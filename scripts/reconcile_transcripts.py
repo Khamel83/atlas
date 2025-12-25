@@ -20,7 +20,7 @@ import re
 import sys
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any
 from dataclasses import dataclass
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -60,6 +60,57 @@ def normalize_title(title: str) -> str:
     normalized = re.sub(r'[^\w\s]', '', normalized)
     normalized = re.sub(r'\s+', ' ', normalized).strip()
     return normalized
+
+
+def find_missing_transcript_files(store: PodcastStore) -> List[Dict]:
+    """
+    Find episodes marked 'fetched' but transcript file doesn't exist.
+
+    Returns list of episodes that should be re-queued.
+    """
+    missing = []
+
+    with store._get_connection() as conn:
+        rows = conn.execute("""
+            SELECT e.id, e.title, e.transcript_path, p.slug
+            FROM episodes e
+            JOIN podcasts p ON e.podcast_id = p.id
+            WHERE e.transcript_status = 'fetched'
+            AND e.transcript_path IS NOT NULL
+        """).fetchall()
+
+        for row in rows:
+            if row["transcript_path"]:
+                path = Path(row["transcript_path"])
+                if not path.exists():
+                    missing.append({
+                        "id": row["id"],
+                        "title": row["title"],
+                        "path": row["transcript_path"],
+                        "slug": row["slug"]
+                    })
+
+    return missing
+
+
+def requeue_missing_episodes(store: PodcastStore, missing: List[Dict]) -> int:
+    """Re-queue episodes with missing transcript files (set status='unknown')."""
+    fixed = 0
+
+    with store._get_connection() as conn:
+        for ep in missing:
+            conn.execute(
+                """UPDATE episodes
+                   SET transcript_status = 'unknown',
+                       transcript_path = NULL,
+                       updated_at = datetime('now')
+                   WHERE id = ?""",
+                (ep["id"],)
+            )
+            fixed += 1
+        conn.commit()
+
+    return fixed
 
 
 def extract_date_and_title(filename: str) -> Tuple[Optional[str], str]:
@@ -266,8 +317,10 @@ def reconcile_podcast(
 
 def main():
     parser = argparse.ArgumentParser(description='Reconcile transcript files with database')
-    parser.add_argument('--dry-run', action='store_true', help='Show what would be done without making changes')
-    parser.add_argument('--apply', action='store_true', help='Actually update the database')
+    parser.add_argument('--check', action='store_true', help='Check mode: report issues only')
+    parser.add_argument('--fix', action='store_true', help='Fix mode: apply all fixes')
+    parser.add_argument('--dry-run', action='store_true', help='Alias for --check')
+    parser.add_argument('--apply', action='store_true', help='Alias for --fix')
     parser.add_argument('--verify', action='store_true', help='Verify content quality before marking fetched')
     parser.add_argument('--slug', type=str, help='Only reconcile specific podcast slug')
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose output')
@@ -277,19 +330,50 @@ def main():
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
 
-    if not args.apply and not args.dry_run:
-        print("Must specify --dry-run or --apply")
-        sys.exit(1)
-
+    # Normalize flags
     if args.dry_run:
-        print("🔍 DRY RUN - No changes will be made\n")
+        args.check = True
+    if args.apply:
+        args.fix = True
+
+    if not args.fix and not args.check:
+        args.check = True  # Default to check mode
+
+    if args.check and not args.fix:
+        print("=" * 60)
+        print("CHECK MODE - No changes will be made")
+        print("=" * 60 + "\n")
 
     store = PodcastStore()
     data_dir = Path("data/podcasts")
 
     if not data_dir.exists():
-        print("❌ Data directory not found: data/podcasts")
+        print("Data directory not found: data/podcasts")
         sys.exit(1)
+
+    # STEP 1: Find episodes with missing transcript files
+    print("Step 1: Finding episodes with missing transcript files...")
+    missing = find_missing_transcript_files(store)
+    print(f"  Found: {len(missing)} episodes marked 'fetched' but file missing")
+
+    if missing:
+        # Group by podcast
+        by_podcast: Dict[str, List] = {}
+        for ep in missing:
+            by_podcast.setdefault(ep["slug"], []).append(ep)
+
+        for slug, eps in sorted(by_podcast.items(), key=lambda x: -len(x[1]))[:10]:
+            print(f"    {slug}: {len(eps)} missing")
+
+        if args.fix:
+            print(f"\n  Re-queuing {len(missing)} episodes (setting status='unknown')...")
+            fixed = requeue_missing_episodes(store, missing)
+            print(f"  Re-queued: {fixed}")
+        else:
+            print("  (run with --fix to re-queue these)")
+
+    # STEP 2: Reconcile orphaned files on disk
+    print(f"\nStep 2: Finding orphaned transcript files on disk...")
 
     total_files = 0
     total_matched = 0
@@ -307,7 +391,7 @@ def main():
         if args.slug and podcast_dir.name != args.slug:
             continue
 
-        result = reconcile_podcast(store, podcast_dir, verify=args.verify, apply=args.apply)
+        result = reconcile_podcast(store, podcast_dir, verify=args.verify, apply=args.fix)
 
         if result.files_on_disk > 0:
             results.append(result)
@@ -342,10 +426,12 @@ def main():
     if args.verify:
         print(f"  Bad quality:      {total_bad:,}")
 
-    if args.apply:
-        print(f"\n✅ Database updated with {total_matched:,} new matches")
+    if args.fix:
+        print(f"\nDatabase updated:")
+        print(f"  - Re-queued {len(missing)} episodes with missing files")
+        print(f"  - Registered {total_matched:,} orphaned transcript files")
     else:
-        print(f"\n💡 Run with --apply to update database")
+        print(f"\nRun with --fix to apply these changes")
 
     # Show sample orphans if any
     if total_orphaned > 0 and args.verbose:

@@ -124,6 +124,13 @@ def main():
     if downloaded_file.exists():
         downloaded_ids = set(json.loads(downloaded_file.read_text()))
 
+    # Track failed downloads with retry counts
+    failed_file = output_dir.parent / 'failed_downloads.json'
+    failed_downloads = {}  # {episode_id: {"count": N, "last_attempt": "date"}}
+    if failed_file.exists():
+        failed_downloads = json.loads(failed_file.read_text())
+    MAX_RETRIES = 3
+
     store = PodcastStore()
     podcasts = store.list_podcasts()
 
@@ -144,14 +151,24 @@ def main():
 
     # Collect episodes to download
     to_download = []
+    skipped_max_retries = 0
     for podcast in podcasts:
         episodes = store.get_episodes_by_podcast(podcast.id)
         for ep in episodes:
             if ep.transcript_status in target_statuses and ep.id not in downloaded_ids:
+                # Skip if failed too many times
+                ep_id_str = str(ep.id)
+                if ep_id_str in failed_downloads:
+                    if failed_downloads[ep_id_str].get("count", 0) >= MAX_RETRIES:
+                        skipped_max_retries += 1
+                        continue
                 # Get audio URL from metadata or fall back to episode URL
                 audio_url = ep.metadata.get('audio_url') or ep.metadata.get('enclosure_url') or ep.url
                 if audio_url:
                     to_download.append((podcast, ep, audio_url))
+
+    if skipped_max_retries > 0:
+        logger.info(f"Skipped {skipped_max_retries} episodes (exceeded {MAX_RETRIES} retries)")
 
     logger.info(f"Found {len(to_download)} episodes needing download")
 
@@ -196,12 +213,23 @@ def main():
             logger.info(f"  Success: {size_mb:.1f} MB")
             downloaded_ids.add(ep.id)
             success += 1
+            # Remove from failed tracking if it was there
+            ep_id_str = str(ep.id)
+            if ep_id_str in failed_downloads:
+                del failed_downloads[ep_id_str]
         else:
             logger.error(f"  Failed!")
             failed += 1
+            # Track the failure
+            ep_id_str = str(ep.id)
+            if ep_id_str not in failed_downloads:
+                failed_downloads[ep_id_str] = {"count": 0, "url": audio_url}
+            failed_downloads[ep_id_str]["count"] += 1
+            failed_downloads[ep_id_str]["last_attempt"] = datetime.now().isoformat()
 
         # Save progress
         downloaded_file.write_text(json.dumps(list(downloaded_ids)))
+        failed_file.write_text(json.dumps(failed_downloads))
 
         time.sleep(args.delay)
 
