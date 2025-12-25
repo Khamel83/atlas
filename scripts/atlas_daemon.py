@@ -202,111 +202,9 @@ def execute_podcast_task(task: Dict[str, Any]) -> Dict[str, Any]:
     return task
 
 
-def execute_daringfireball_task(task: Dict[str, Any]) -> Dict[str, Any]:
-    """Execute a Daring Fireball fetch task."""
-    from scripts.crawl_daringfireball import fetch_article, save_article
-
-    url = task['url']
-
-    try:
-        result = fetch_article(url)
-
-        if result.get('error'):
-            task['status'] = 'failed'
-            task['error'] = result['error']
-            logger.warning(f"  FAILED: {result['error']}")
-        else:
-            content_path = save_article(task, result)
-            task['status'] = 'fetched'
-            task['fetched_at'] = datetime.now().isoformat()
-            task['content_path'] = content_path
-            logger.info(f"  SUCCESS: {content_path}")
-
-    except Exception as e:
-        task['status'] = 'failed'
-        task['error'] = str(e)
-        logger.error(f"  ERROR: {e}")
-
-    return task
-
-
-def execute_asianometry_task(task: Dict[str, Any]) -> Dict[str, Any]:
-    """Execute an Asianometry fetch task."""
-    from scripts.crawl_asianometry import fetch_article, save_article, get_session_with_cookies
-
-    session = get_session_with_cookies()
-    url = task['url']
-
-    try:
-        result = fetch_article(session, url)
-
-        if result.get('error'):
-            task['status'] = 'failed'
-            task['error'] = result['error']
-            logger.warning(f"  FAILED: {result['error']}")
-        else:
-            content_path = save_article(task, result)
-            task['status'] = 'fetched'
-            task['fetched_at'] = datetime.now().isoformat()
-            task['content_path'] = content_path
-            logger.info(f"  SUCCESS: {content_path}")
-
-    except Exception as e:
-        task['status'] = 'failed'
-        task['error'] = str(e)
-        logger.error(f"  ERROR: {e}")
-
-    return task
-
-
-def execute_dithering_task(task: Dict[str, Any]) -> Dict[str, Any]:
-    """Execute a Dithering fetch task."""
-    from scripts.crawl_dithering import (
-        fetch_episode, save_show_notes, add_urls_to_queue,
-        queue_audio_for_whisper, get_session_with_cookies
-    )
-
-    session = get_session_with_cookies()
-    url = task['url']
-
-    try:
-        result = fetch_episode(session, url)
-
-        if result.get('error'):
-            task['status'] = 'failed'
-            task['error'] = result['error']
-            logger.warning(f"  FAILED: {result['error']}")
-
-            # If paywall, mark specially
-            if result.get('is_paywall'):
-                task['status'] = 'paywall'
-
-        else:
-            show_notes_path = save_show_notes(task, result)
-            task['status'] = 'fetched'
-            task['fetched_at'] = datetime.now().isoformat()
-            task['show_notes_path'] = show_notes_path
-
-            # Extract URLs
-            urls = result.get('urls', [])
-            if urls:
-                added = add_urls_to_queue(urls, task['url_hash'])
-                task['urls_extracted'] = added
-                logger.info(f"  Added {added} URLs to queue")
-
-            # Queue audio
-            if result.get('audio_url'):
-                audio_queued = queue_audio_for_whisper(task, result['audio_url'])
-                task['audio_queued'] = audio_queued
-
-            logger.info(f"  SUCCESS: {show_notes_path}")
-
-    except Exception as e:
-        task['status'] = 'failed'
-        task['error'] = str(e)
-        logger.error(f"  ERROR: {e}")
-
-    return task
+# NOTE: Specialized crawlers (daringfireball, asianometry, dithering) were planned
+# but never implemented. These task types now route through execute_url_task()
+# which uses RobustFetcher to handle them generically.
 
 
 def execute_task(task: Dict[str, Any]) -> Dict[str, Any]:
@@ -319,12 +217,10 @@ def execute_task(task: Dict[str, Any]) -> Dict[str, Any]:
         return execute_url_task(task)
     elif task_type == 'podcast':
         return execute_podcast_task(task)
-    elif task_type == 'daringfireball':
-        return execute_daringfireball_task(task)
-    elif task_type == 'asianometry':
-        return execute_asianometry_task(task)
-    elif task_type == 'dithering':
-        return execute_dithering_task(task)
+    elif task_type in ('daringfireball', 'asianometry', 'dithering'):
+        # Route through general URL fetcher - specialized crawlers not implemented
+        logger.info(f"  Routing {task_type} through general URL fetcher")
+        return execute_url_task(task)
     else:
         task['status'] = 'failed'
         task['error'] = f'Unknown task type: {task_type}'
