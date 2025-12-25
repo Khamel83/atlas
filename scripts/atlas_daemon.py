@@ -28,6 +28,17 @@ Features:
     - Progress tracking in manifest
 """
 
+import os
+import sys
+
+# RESOURCE LOCKDOWN: Only run via systemd to enforce memory/CPU limits
+# See RESOURCE_POLICY.md for details
+if os.environ.get('INVOCATION_ID') is None and '--status' not in sys.argv:
+    print("ERROR: atlas_daemon must run via systemd to enforce resource limits.")
+    print("Use: systemctl --user start atlas-daemon")
+    print("Or for status: python scripts/atlas_daemon.py --status")
+    sys.exit(1)
+
 import argparse
 import json
 import logging

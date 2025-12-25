@@ -64,16 +64,36 @@ Nice=10
 
 ## Enforcement
 
-Run the lockdown script to ensure compliance:
+### Automatic (on boot)
+The lockdown script runs automatically via `cron @reboot`:
+```bash
+@reboot /home/khamel83/github/atlas/systemd/lockdown.sh
+```
+
+### Manual
 ```bash
 ./systemd/lockdown.sh
 ```
 
 This script:
-1. Stops all redundant services
-2. Disables them from auto-start
-3. Verifies only the daemon is running
-4. Reports current resource usage
+1. Kills any atlas Python process not managed by systemd
+2. Starts the daemon if not running
+3. Reports current resource usage
+4. Logs to `/tmp/atlas-lockdown.log`
+
+### Script Guard
+`atlas_daemon.py` refuses to run unless invoked by systemd:
+```python
+if os.environ.get('INVOCATION_ID') is None:
+    sys.exit(1)  # Must run via systemd
+```
+
+### Archived Scripts
+The following scripts were moved to `scripts/.archive/` as they bypass resource limits:
+- `simple_url_fetcher.py`
+- `simple_transcript_fetcher.py`
+
+**DO NOT restore these.** The daemon handles all their functions.
 
 ## If You're Tempted to Add Another Service
 
@@ -104,3 +124,4 @@ systemctl status atlas-daemon.service
 - **Dec 2025:** Discovered 7 services running, load avg 14, system unusable
 - **Dec 2025:** Consolidated to single daemon, load dropped to 4
 - **Dec 2025:** Added this policy and lockdown script
+- **Dec 25, 2025:** Added systemd guard to daemon, archived rogue scripts, auto-lockdown on boot

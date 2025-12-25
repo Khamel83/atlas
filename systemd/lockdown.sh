@@ -3,10 +3,18 @@
 # Ensures ONLY the daemon runs - kills rogue processes, enforces resource policy
 #
 # Usage: ./systemd/lockdown.sh
+# Runs automatically on boot via cron @reboot
+#
+# Allowed processes:
+#   - atlas-daemon.service (via systemd with 2GB/50% limits)
+#   - uvicorn API (optional)
+#
+# Everything else gets killed.
 
 set -e
 
-echo "=== Atlas Lockdown ==="
+LOG="/tmp/atlas-lockdown.log"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] === Atlas Lockdown ===" | tee -a "$LOG"
 echo ""
 
 # Kill any atlas Python processes NOT managed by systemd
